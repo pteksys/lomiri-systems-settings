@@ -54,6 +54,11 @@ ItemPage {
         id: powerSettings
         schema.id: batteryBackend.powerdRunning ? "com.lomiri.touch.system" : "org.gnome.desktop.session"
     }
+    
+    GSettings {
+        id: indicatorSettings
+        schema.id: "com.canonical.indicator.power"
+    }
 
     LomiriSecurityPrivacyPanel {
         id: securityPrivacy
@@ -289,6 +294,22 @@ ItemPage {
                 }
                 showDivider: false
             }
+            
+            SettingsItemTitle {
+                text: i18n.tr("In the top panel:")
+            }
+            
+            SettingsListItems.Standard {
+                    CheckBox {
+                        objectName: "batteryPercentage"
+                        SlotsLayout.position: SlotsLayout.First
+                        property bool serverChecked: indicatorSettings.showPercentage
+                        onServerCheckedChanged: checked = serverChecked
+                        Component.onCompleted: checked = serverChecked
+                        onTriggered: indicatorSettings.showPercentage = checked
+                    }
+                    text: i18n.tr("Show battery percentage")
+                }
 
             SettingsItemTitle {
                 text: i18n.tr("Ways to reduce battery use:")
