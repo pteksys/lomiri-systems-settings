@@ -79,7 +79,6 @@ Depends:
  python3-gi,
  python3-xdg,
  qmenumodel-qml,
- qml-module-biometryd,
  qml-module-ofono (>=0.90~),
  qml-module-qt-labs-folderlistmodel,
  qml-module-qtmultimedia | qml-module-qtmultimedia-gles,
