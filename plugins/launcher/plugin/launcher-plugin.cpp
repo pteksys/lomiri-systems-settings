@@ -20,7 +20,7 @@
 #include "launcher_impl.h"
 #include "launcher-plugin.h"
 
-#include <SystemSettings/ItemBase>
+#include <LomiriSystemSettings/ItemBase>
 #include <QObject>
 #include <QProcessEnvironment>
 #include <QQmlComponent>
@@ -28,7 +28,7 @@
 #include <QScopedPointer>
 #include <QUrl>
 
-using namespace SystemSettings;
+using namespace LomiriSystemSettings;
 
 class LauncherItem: public ItemBase
 {

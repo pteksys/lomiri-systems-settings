@@ -19,9 +19,9 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Ubuntu.DownloadManager 1.2
-import Ubuntu.SystemSettings.Update 1.0
+import Lomiri.SystemSettings.Update 1.0
 
 ListItem {
     id: root
@@ -68,5 +68,5 @@ ListItem {
         Item { width: 1; height: 1 }
     }
 
-    Behavior on height { UbuntuNumberAnimation {} }
+    Behavior on height { LomiriNumberAnimation {} }
 }

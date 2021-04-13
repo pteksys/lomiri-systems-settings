@@ -1,0 +1,8 @@
+usr/bin/lomiri-system-settings
+usr/lib/*/lomiri-system-settings
+usr/lib/ubuntu-push-client/legacy-helpers
+usr/share/applications
+usr/share/glib-2.0
+usr/share/locale
+usr/share/lomiri-system-settings
+usr/share/url-dispatcher

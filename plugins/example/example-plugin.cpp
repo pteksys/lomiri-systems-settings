@@ -22,9 +22,9 @@
 
 #include <QDebug>
 #include <QStringList>
-#include <SystemSettings/ItemBase>
+#include <LomiriSystemSettings/ItemBase>
 
-using namespace SystemSettings;
+using namespace LomiriSystemSettings;
 
 class ExampleItem: public ItemBase
 {

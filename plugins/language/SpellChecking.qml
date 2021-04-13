@@ -21,15 +21,15 @@
 import QtQuick 2.4
 import GSettings 1.0
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.SystemSettings.LanguagePlugin 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.SystemSettings.LanguagePlugin 1.0
 
 ItemPage {
     title: i18n.tr("Spell checking")
     flickable: scrollWidget
 
-    UbuntuLanguagePlugin {
+    LomiriLanguagePlugin {
         id: plugin
     }
 

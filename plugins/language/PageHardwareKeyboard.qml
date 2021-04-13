@@ -21,10 +21,10 @@
 
 import QtQuick 2.0
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.Settings.Components 0.1 as USC
-import Ubuntu.SystemSettings.LanguagePlugin 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.Settings.Components 0.1 as LSC
+import Lomiri.SystemSettings.LanguagePlugin 1.0
 
 ItemPage {
     id: root

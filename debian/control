@@ -1,9 +1,10 @@
-Source: ubuntu-system-settings
+Source: lomiri-system-settings
 Section: gnome
 Priority: optional
 Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
 Build-Depends:
  cmake,
+ cmake-extras,
  dbus-test-runner,
  debhelper (>= 9),
  dh-migrations,
@@ -22,12 +23,10 @@ Build-Depends:
  libgnome-desktop-3-dev,
  libgsettings-qt-dev,
  libicu-dev,
- libpolkit-agent-1-dev,
  libqmenumodel-dev,
  libqt5sql5-sqlite <!nocheck>,
  libqtdbusmock1-dev (>= 0.2+14.04.20140724) <!nocheck>,
  libqtdbustest1-dev <!nocheck>,
- libtrust-store-dev,
  libudev-dev,
  libupower-glib-dev,
  pep8 <!nocheck>,
@@ -45,15 +44,14 @@ Build-Depends:
  qml-module-qtquick2 <!nocheck>,
  qml-module-qtsysteminfo (>= 5.0~),
  qml-module-qttest <!nocheck>,
- qml-module-ubuntu-components | qml-module-ubuntu-components-gles <!nocheck>,
- qml-module-ubuntu-settings-components <!nocheck>,
+ qml-module-lomiri-components <!nocheck>,
+ qml-module-lomiri-settings-components <!nocheck>,
+ qml-module-lomiri-settings-menus <!nocheck>,
+ qml-module-lomiri-settings-vpn <!nocheck>,
  qtbase5-dev,
  qtbase5-private-dev <!nocheck>,
  qtdeclarative5-dev,
  qtdeclarative5-dev-tools,
- qtdeclarative5-ubuntu-download-manager0.1 (>= 1.3~),
- qtdeclarative5-ubuntu-history0.1,
- qtdeclarative5-ubuntu-keyboard-extensions0.1 [armhf arm64 amd64 i386],
  xvfb <!nocheck>,
 Standards-Version: 3.9.6
 Homepage: https://github.com/ubports/system-settings
@@ -61,7 +59,7 @@ Vcs-Git: https://github.com/ubports/system-settings
 X-Python3-Version: >= 3.2
 X-Ubuntu-Use-Langpack: yes
 
-Package: ubuntu-system-settings
+Package: lomiri-system-settings
 Architecture: any
 Depends:
  accountsservice,
@@ -81,14 +79,15 @@ Depends:
  python3-gi,
  python3-xdg,
  qmenumodel-qml,
- qml-module-biometryd,
  qml-module-ofono (>=0.90~),
  qml-module-qt-labs-folderlistmodel,
  qml-module-qtmultimedia | qml-module-qtmultimedia-gles,
  qml-module-qtsysteminfo,
- qml-module-ubuntu-components (>= 1.3.1584) | qml-module-ubuntu-components-gles (>= 1.3.1584),
+ qml-module-lomiri-components,
  qml-module-ubuntu-connectivity (>= 0.7.1),
- qml-module-ubuntu-settings-components (>= 0.12),
+ qml-module-lomiri-settings-components,
+ qml-module-lomiri-settings-menus,
+ qml-module-lomiri-settings-vpn,
  qtdeclarative5-gsettings1.0 (>=0.1+14.10.20140801.1),
  qtdeclarative5-ubuntu-content1,
  qtdeclarative5-ubuntu-ui-extras0.2 (>= 0.3),
@@ -112,12 +111,12 @@ Breaks:
  ubuntu-push-client (<<0.61),
 Replaces:
  ubuntu-push-client (<<0.61),
-Description: System Settings application for Ubuntu Touch
- This package contains the System Settings application used on the
- Ubuntu Touch images, it's designed for phones, tablets and convergent
+Description: System Settings application for Lomiri
+ Lomiri-system-settings is the System Settings application used in Lomiri
+ desktop environment. it's designed for phones, tablets and convergent
  devices.
 
-Package: libsystemsettings1
+Package: liblomirisystemsettings1
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -127,12 +126,14 @@ Depends:
 Pre-Depends:
  dpkg (>= 1.15.6~),
  ${misc:Pre-Depends},
-Description: System Settings Library for Ubuntu Touch
- This package contains the System Settings application used on the
- Ubuntu Touch images, it's designed for phones, tablets and convergent
+Description: System Settings application for Lomiri - plug-in library
+ Lomiri-system-settings is the System Settings application used in Lomiri
+ desktop environment. it's designed for phones, tablets and convergent
  devices.
+ .
+ This package contains the library used by settings plugins.
 
-Package: libsystemsettings-dev
+Package: liblomirisystemsettings-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
@@ -143,12 +144,14 @@ Depends:
 Pre-Depends:
  dpkg (>= 1.15.6~),
  ${misc:Pre-Depends},
-Description: System Settings for Ubuntu Touch - development files
- This package contains the System Settings application used on the
- Ubuntu Touch images, it's designed for phones, tablets and convergent
+Description: System Settings application for Lomiri - plug-in development files
+ Lomiri-system-settings is the System Settings application used in Lomiri
+ desktop environment. it's designed for phones, tablets and convergent
  devices.
+ .
+ This package contains the plug-in library's development files.
 
-Package: ubuntu-system-settings-autopilot
+Package: lomiri-system-settings-autopilot
 Architecture: all
 Depends:
  dpkg-dev,
@@ -158,11 +161,13 @@ Depends:
  python3-dateutil,
  python3-dbusmock (>= 0.14),
  python3-evdev,
- ubuntu-system-settings,
- ubuntu-ui-toolkit-autopilot,
+ lomiri-system-settings,
+ lomiri-ui-toolkit-autopilot,
  ${misc:Depends},
  ${python3:Depends},
-Description: System Settings for Ubuntu Touch - Autopilot tests
- This package contains the System Settings application used on the
- Ubuntu Touch images, it's designed for phones, tablets and convergent
+Description: System Settings application for Lomiri - Autopilot tests
+ Lomiri-system-settings is the System Settings application used in Lomiri
+ desktop environment. it's designed for phones, tablets and convergent
  devices.
+ .
+ This package contains the autopilot tests for lomiri-system-settings.

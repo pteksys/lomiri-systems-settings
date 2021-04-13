@@ -1,7 +1,7 @@
-# Set up and optionally install a mock plugin for ubuntu-system-setting.
-# add_uss_mock(plugin version path)
+# Set up and optionally install a mock plugin for lomiri-system-setting.
+# add_lss_mock(plugin version path)
 
-macro(add_uss_mock PLUGIN VERSION PATH)
+macro(add_lss_mock PLUGIN VERSION PATH)
     cmake_parse_arguments(MOCK "" "${single}" "" ${ARGN})
 
     if(NOT QMLFILES_SEARCH_PATH)
@@ -32,6 +32,7 @@ macro(add_uss_mock PLUGIN VERSION PATH)
 endmacro()
 
 add_subdirectory(GSettings.1.0)
+add_subdirectory(Lomiri)
 add_subdirectory(QMenuModel)
 add_subdirectory(SystemSettings)
 add_subdirectory(Ubuntu)

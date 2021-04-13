@@ -1,7 +1,7 @@
 import QtQuick 2.4
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.StorageAbout 1.0
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.StorageAbout 1.0
 
 ItemPage {
     property string binary;
@@ -11,7 +11,7 @@ ItemPage {
     title: binary
     flickable: scrollWidget
 
-    UbuntuStorageAboutPanel {
+    LomiriStorageAboutPanel {
         id: backendInfo
     }
 

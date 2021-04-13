@@ -22,8 +22,8 @@ import QtQuick 2.4
 import QtSystemInfo 5.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.StorageAbout 1.0
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.StorageAbout 1.0
 
 ItemPage {
     id: storagePage
@@ -83,41 +83,41 @@ ItemPage {
                 return backendInfo.getFreeSpace("/home")
             }
 
-            property real usedByUbuntu: diskSpace -
+            property real usedBySystem: diskSpace -
                                         freediskSpace -
                                         backendInfo.homeSize -
                                         backendInfo.totalClickSize
             property real otherSize: diskSpace -
                                      freediskSpace -
-                                     usedByUbuntu -
+                                     usedBySystem -
                                      backendInfo.totalClickSize -
                                      backendInfo.moviesSize -
                                      backendInfo.picturesSize -
                                      backendInfo.audioSize
             //TODO: Let's consider use unified colors in a ¿file?
             property variant spaceColors: [
-                UbuntuColors.orange,
+                LomiriColors.orange,
                 "#a52a00", //System Maroon
                 "#006a97", //System Blue
                 "#198400", //Dark System Green
                 "#f5d412", //System Yellow
-                UbuntuColors.lightAubergine]
+                LomiriColors.lightAubergine]
             property variant spaceLabels: [
-                i18n.tr("Used by Ubuntu"),
+                i18n.tr("Used by system"),
                 i18n.tr("Videos"),
                 i18n.tr("Audio"),
                 i18n.tr("Pictures"),
                 i18n.tr("Other files"),
                 i18n.tr("Used by apps")]
             property variant spaceValues: [
-                usedByUbuntu, // Used by Ubuntu
+                usedBySystem, // Used by system
                 backendInfo.moviesSize,
                 backendInfo.audioSize,
                 backendInfo.picturesSize,
                 otherSize, //Other Files
                 backendInfo.totalClickSize]
             property variant spaceObjectNames: [
-                "usedByUbuntuItem",
+                "usedBySystemItem",
                 "moviesItem",
                 "audioItem",
                 "picturesItem",
@@ -126,10 +126,10 @@ ItemPage {
 
             GSettings {
                 id: settingsId
-                schema.id: "com.ubuntu.touch.system-settings"
+                schema.id: "com.lomiri.lomiri-system-settings"
             }
 
-            UbuntuStorageAboutPanel {
+            LomiriStorageAboutPanel {
                 id: backendInfo
                 property bool ready: false
                 // All of these events come simultaneously

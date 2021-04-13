@@ -1,7 +1,7 @@
 include_directories(${GLIB_INCLUDE_DIRS})
 
 add_definitions(-DI18N_DIRECTORY="${CMAKE_INSTALL_PREFIX}/share/locale")
-add_definitions(-DI18N_DOMAIN="ubuntu-system-settings")
+add_definitions(-DI18N_DOMAIN="lomiri-system-settings")
 add_definitions(-DPLUGIN_PRIVATE_MODULE_DIR="${PLUGIN_PRIVATE_MODULE_DIR}")
 add_definitions(-DMANIFEST_DIR="${MANIFEST_DIR}")
 add_definitions(-DPLUGIN_MANIFEST_DIR="${PLUGIN_MANIFEST_DIR}")
@@ -36,23 +36,23 @@ set(QML_SOURCES
 
 QT5_ADD_RESOURCES(system-settings-resources ui.qrc)
 
-add_executable(system-settings ${USS_SOURCES} ${QML_SOURCES} ${system-settings-resources})
-target_link_libraries(system-settings Qt5::Core Qt5::Gui Qt5::Quick Qt5::Qml Qt5::DBus Qt5::Widgets SystemSettings ${GLIB_LDFLAGS})
-install(TARGETS system-settings RUNTIME DESTINATION bin)
+add_executable(lomiri-system-settings ${USS_SOURCES} ${QML_SOURCES} ${system-settings-resources})
+target_link_libraries(lomiri-system-settings Qt5::Core Qt5::Gui Qt5::Quick Qt5::Qml Qt5::DBus Qt5::Widgets LomiriSystemSettings ${GLIB_LDFLAGS})
+install(TARGETS lomiri-system-settings RUNTIME DESTINATION bin)
 
-add_library(uss-accountsservice SHARED accountsservice.h accountsservice.cpp)
-target_link_libraries(uss-accountsservice Qt5::Core Qt5::Qml Qt5::DBus)
-set_target_properties(uss-accountsservice PROPERTIES VERSION 0.0 SOVERSION 0.0)
-install(TARGETS uss-accountsservice LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
+add_library(lss-accountsservice SHARED accountsservice.h accountsservice.cpp)
+target_link_libraries(lss-accountsservice Qt5::Core Qt5::Qml Qt5::DBus)
+set_target_properties(lss-accountsservice PROPERTIES VERSION 0.0 SOVERSION 0.0)
+install(TARGETS lss-accountsservice LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
 
-add_library(uss-sessionservice SHARED sessionservice.h sessionservice.cpp)
-target_link_libraries(uss-sessionservice Qt5::Core Qt5::Qml Qt5::DBus)
-set_target_properties(uss-sessionservice PROPERTIES VERSION 0.0 SOVERSION 0.0)
-install(TARGETS uss-sessionservice LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
+add_library(lss-sessionservice SHARED sessionservice.h sessionservice.cpp)
+target_link_libraries(lss-sessionservice Qt5::Core Qt5::Qml Qt5::DBus)
+set_target_properties(lss-sessionservice PROPERTIES VERSION 0.0 SOVERSION 0.0)
+install(TARGETS lss-sessionservice LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
 
-add_library(uss-systemimage SHARED systemimage.h systemimage.cpp i18n.cpp)
-target_link_libraries(uss-systemimage Qt5::Core Qt5::Qml Qt5::DBus)
-set_target_properties(uss-systemimage PROPERTIES VERSION 0.0 SOVERSION 0.0)
-install(TARGETS uss-systemimage LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
+add_library(lss-systemimage SHARED systemimage.h systemimage.cpp i18n.cpp)
+target_link_libraries(lss-systemimage Qt5::Core Qt5::Qml Qt5::DBus)
+set_target_properties(lss-systemimage PROPERTIES VERSION 0.0 SOVERSION 0.0)
+install(TARGETS lss-systemimage LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
 
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/url-map.ini DESTINATION ${PLUGIN_MANIFEST_DIR})

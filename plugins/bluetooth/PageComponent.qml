@@ -1,5 +1,5 @@
 /*
- * This file is part of ubuntu-system-settings
+ * This file is part of lomiri-system-settings
  *
  * Copyright (C) 2013-2016 Canonical Ltd.
  *
@@ -22,10 +22,10 @@ import QMenuModel 0.1
 import QtQuick 2.4
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.SystemSettings.Bluetooth 1.0
-import Ubuntu.Settings.Components 0.1 as USC
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.SystemSettings.Bluetooth 1.0
+import Lomiri.Settings.Components 0.1 as LSC
 
 
 ItemPage {
@@ -45,7 +45,7 @@ ItemPage {
         root.currentDevice = null
     }
 
-    UbuntuBluetoothPanel {
+    LomiriBluetoothPanel {
         id: backend
 
         onDevicePairingDone: {
@@ -236,7 +236,7 @@ ItemPage {
                 Switch {
                     id: btSwitch
                     property bool serverChecked: bluetoothActionGroup.enabled.state != undefined ? bluetoothActionGroup.enabled.state : false
-                    USC.ServerPropertySynchroniser {
+                    LSC.ServerPropertySynchroniser {
                         userTarget: btSwitch
                         userProperty: "checked"
                         serverTarget: btSwitch

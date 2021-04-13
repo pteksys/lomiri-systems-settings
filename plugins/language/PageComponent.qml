@@ -22,13 +22,13 @@ import QtQuick 2.4
 import QtSystemInfo 5.5
 import GSettings 1.0
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.Settings.Menus 0.1 as Menus
-import Ubuntu.SystemSettings.LanguagePlugin 1.0
-import Ubuntu.Settings.Components 0.1 as USC
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.Settings.Menus 0.1 as Menus
+import Lomiri.SystemSettings.LanguagePlugin 1.0
+import Lomiri.Settings.Components 0.1 as LSC
 
 ItemPage {
     id: root
@@ -58,7 +58,7 @@ ItemPage {
         }
     }
 
-    UbuntuLanguagePlugin {
+    LomiriLanguagePlugin {
         id: plugin
     }
 
@@ -332,7 +332,7 @@ ItemPage {
                 live: true
 
                 property real serverValue: settings.opacity
-                USC.ServerPropertySynchroniser {
+                LSC.ServerPropertySynchroniser {
                     userTarget: opacity
                     userProperty: "value"
                     serverTarget: opacity

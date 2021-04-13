@@ -23,10 +23,10 @@
 
 import GSettings 1.0
 import QtQuick 2.7
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
 import SystemSettings 1.0
-import Ubuntu.SystemSettings.Battery 1.0
+import Lomiri.SystemSettings.Battery 1.0
 
 ItemPage {
     id: root
@@ -37,7 +37,7 @@ ItemPage {
     property bool lockOnSuspend
     readonly property variant idleValues: [30, 60, 120, 180, 240, 300, 600, 0]
 
-    UbuntuBatteryPanel {
+    LomiriBatteryPanel {
         id: batteryBackend
     }
 

@@ -21,15 +21,15 @@
 import QtQuick 2.4
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.SystemSettings.TimeDate 1.1
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.SystemSettings.TimeDate 1.1
 
 ItemPage {
     id: changeTimeZonePage
     title: i18n.tr("Time zone")
     flickable: locationsListView
-    property UbuntuTimeDatePanel timeDatePanel
+    property LomiriTimeDatePanel timeDatePanel
 
     Timer {
         id: goBackTimer

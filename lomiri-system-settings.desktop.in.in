@@ -1,0 +1,17 @@
+[Desktop Entry]
+_Name=System Settings
+_Categories=System;
+_Keywords=Preferences;Settings;
+Icon=@SETTINGS_SHARE_DIR@/system-settings.svg
+Exec=lomiri-system-settings %u
+Terminal=false
+Type=Application
+StartupNotify=true
+X-Screenshot=@SETTINGS_SHARE_DIR@/screenshot.png
+X-Lomiri-Gettext-Domain=lomiri-system-settings
+X-Lomiri-Touch=true
+X-Lomiri-StageHint=SideStage
+X-Lomiri-Single-Instance=true
+X-Lomiri-Default-Department-ID=accessories
+X-Lomiri-Splash-Image=@SETTINGS_SHARE_DIR@/system-settings-app-splash.svg
+X-Lomiri-Splash-Color=#454545

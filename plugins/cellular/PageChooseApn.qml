@@ -26,10 +26,10 @@
 import QtQuick 2.4
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import MeeGo.QOfono 0.2
-import Ubuntu.SystemSettings.Cellular 1.0
+import Lomiri.SystemSettings.Cellular 1.0
 import "apn_manager.js" as Manager
 
 ItemPage {

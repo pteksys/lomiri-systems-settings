@@ -17,15 +17,15 @@
 import QtQuick 2.4
 import Qt.labs.folderlistmodel 2.1
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.SecurityPrivacy 1.0
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.SecurityPrivacy 1.0
 
 ItemPage {
     title: i18n.tr("Nokia HERE")
     flickable: scrollWidget
     id: termsPage
 
-    UbuntuSecurityPrivacyPanel {
+    LomiriSecurityPrivacyPanel {
         id: securityPrivacy
     }
 

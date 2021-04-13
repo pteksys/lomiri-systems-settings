@@ -25,7 +25,7 @@ import logging
 import logging.handlers
 from xdg.BaseDirectory import save_cache_path
 
-_ = gettext.translation('ubuntu-system-settings', fallback=True).gettext
+_ = gettext.translation('lomiri-system-settings', fallback=True).gettext
 
 SYS_UPDATE = "system-image-update"
 
@@ -58,9 +58,9 @@ class SystemImage:
         if self.notify:
             logging.debug("Notifying.")
             # remove any older notifications about this
-            self.postal.ClearPersistent("_ubuntu-system-settings", SYS_UPDATE)
+            self.postal.ClearPersistent("_lomiri-system-settings", SYS_UPDATE)
             # send ours. This will of course come back to this same script.
-            self.postal.Post("_ubuntu-system-settings", json.dumps(SYS_UPDATE))
+            self.postal.Post("_lomiri-system-settings", json.dumps(SYS_UPDATE))
         self.loop.quit()
 
     def available_cb(self, available, downloading, *ignored):
@@ -142,7 +142,7 @@ def main():
     obj = {}
     if arg == "system-image-update":
         logging.debug("system-image-update; requesting regular notification.")
-        icon = "/usr/share/ubuntu/settings/system/icons/" + \
+        icon = "/usr/share/lomiri-system-settings/icons/" + \
                "settings-system-update.svg"
         obj = {
             "notification": {
@@ -185,7 +185,7 @@ def main():
 
 
 if __name__ == '__main__':
-    logdir = save_cache_path("ubuntu-system-settings")
+    logdir = save_cache_path("lomiri-system-settings")
     logfile = os.path.join(logdir, "software_updates_helper.log")
     rothandler = logging.handlers.TimedRotatingFileHandler(logfile, when="D",
                                                            backupCount=10)

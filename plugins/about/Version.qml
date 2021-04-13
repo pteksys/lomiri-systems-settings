@@ -24,8 +24,8 @@
 import QtQuick 2.4
 import Qt.labs.folderlistmodel 1.0
 import SystemSettings 1.0
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.StorageAbout 1.0
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.StorageAbout 1.0
 
 ItemPage {
     id: versionPage
@@ -35,7 +35,7 @@ ItemPage {
 
     property string version
 
-    UbuntuStorageAboutPanel {
+    LomiriStorageAboutPanel {
         id: storedInfo
     }
 

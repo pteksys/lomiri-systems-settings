@@ -27,9 +27,9 @@
 
 void BackendPlugin::registerTypes(const char *uri)
 {
-    Q_ASSERT(uri == QLatin1String("Ubuntu.SystemSettings.Battery"));
+    Q_ASSERT(uri == QLatin1String("Lomiri.SystemSettings.Battery"));
 
-    qmlRegisterType<Battery>(uri, 1, 0, "UbuntuBatteryPanel");
+    qmlRegisterType<Battery>(uri, 1, 0, "LomiriBatteryPanel");
 }
 
 void BackendPlugin::initializeEngine(QQmlEngine *engine, const char *uri)

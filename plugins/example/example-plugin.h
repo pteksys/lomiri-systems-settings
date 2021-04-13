@@ -22,18 +22,18 @@
 #define SYSTEM_SETTINGS_EXAMPLE_PLUGIN_H
 
 #include <QObject>
-#include <SystemSettings/PluginInterface>
+#include <LomiriSystemSettings/PluginInterface>
 
-class ExamplePlugin: public QObject, public SystemSettings::PluginInterface
+class ExamplePlugin: public QObject, public LomiriSystemSettings::PluginInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "com.ubuntu.SystemSettings.PluginInterface")
-    Q_INTERFACES(SystemSettings::PluginInterface)
+    Q_PLUGIN_METADATA(IID "com.lomiri.SystemSettings.PluginInterface")
+    Q_INTERFACES(LomiriSystemSettings::PluginInterface)
 
 public:
     ExamplePlugin();
 
-    SystemSettings::ItemBase *createItem(const QVariantMap &staticData,
+    LomiriSystemSettings::ItemBase *createItem(const QVariantMap &staticData,
                                          QObject *parent = 0);
 };
 

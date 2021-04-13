@@ -21,9 +21,9 @@ import QtQuick 2.4
 import GSettings 1.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.Cellular 1.0
-import Ubuntu.Components.ListItems 1.3 as ListItems
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.Cellular 1.0
+import Lomiri.Components.ListItems 1.3 as ListItems
 
 Column {
     id: multiSim
@@ -140,7 +140,7 @@ Column {
     }
 
 
-    UbuntuCellularPanel {
+    LomiriCellularPanel {
         id: phoneSettings
         Component.onCompleted: {
             // set default names

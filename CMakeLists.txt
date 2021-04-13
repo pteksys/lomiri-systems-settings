@@ -1,4 +1,4 @@
-project(ubuntu-system-settings C CXX)
+project(lomiri-system-settings C CXX)
 cmake_minimum_required(VERSION 2.8.10)
 
 if(${PROJECT_BINARY_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
@@ -51,7 +51,6 @@ pkg_search_module(ACCOUNTSSERVICE REQUIRED accountsservice)
 pkg_search_module(GEONAMES REQUIRED geonames)
 pkg_search_module(ICU REQUIRED icu-i18n)
 pkg_search_module(ANDR_PROP libandroid-properties)
-pkg_search_module(POLKIT_AGENT polkit-agent-1)
 pkg_search_module(CLICK REQUIRED click-0.4)
 pkg_check_modules(QTGSETTINGS REQUIRED gsettings-qt)
 
@@ -61,34 +60,34 @@ find_program(INTLTOOL_MERGE intltool-merge)
 find_program(INTLTOOL_EXTRACT intltool-extract)
 
 set(DATA_DIR share)
-set(MODULE_DIR ubuntu-system-settings)
-set(MANIFEST_DIR "ubuntu/settings/system")
+set(MODULE_DIR lomiri-system-settings)
+set(MANIFEST_DIR lomiri-system-settings)
 set(QML_DIR qml-plugins)
 set(PRIVATE_DIR private)
 
-# share/ubuntu/settings/system
+# share/lomiri-system-settings
 set(PLUGIN_MANIFEST_DIR_BASE ${DATA_DIR}/${MANIFEST_DIR})
-# ubuntu-system-settings
+# lomiri-system-settings
 set(PLUGIN_MODULE_DIR_BASE ${MODULE_DIR})
-# ubuntu-system-settings/private
+# lomiri-system-settings/private
 set(PLUGIN_PRIVATE_MODULE_DIR_BASE "${PLUGIN_MODULE_DIR_BASE}/${PRIVATE_DIR}")
-# share/ubuntu/settings/system/qml-plugins
+# share/lomiri-system-settings/qml-plugins
 set(PLUGIN_QML_DIR_BASE ${DATA_DIR}/${MANIFEST_DIR}/${QML_DIR})
-# E.g. /usr/share/ubuntu/settings/system
+# E.g. /usr/share/lomiri-system-settings
 set(PLUGIN_MANIFEST_DIR "${CMAKE_INSTALL_PREFIX}/${PLUGIN_MANIFEST_DIR_BASE}")
-# E.g. /usr/lib/ubuntu-system-settings
+# E.g. /usr/lib/lomiri-system-settings
 set(PLUGIN_MODULE_DIR "${CMAKE_INSTALL_PREFIX}/${LIBDIR}/${PLUGIN_MODULE_DIR_BASE}")
-# E.g. /usr/share/ubuntu/settings/system/qml-plugins
+# E.g. /usr/share/lomiri-system-settings/qml-plugins
 set(PLUGIN_QML_DIR "${CMAKE_INSTALL_PREFIX}/${PLUGIN_QML_DIR_BASE}")
-# E.g. /usr/lib/ubuntu-system-settings/private
+# E.g. /usr/lib/lomiri-system-settings/private
 set(PLUGIN_PRIVATE_MODULE_DIR "${CMAKE_INSTALL_PREFIX}/${LIBDIR}/${PLUGIN_PRIVATE_MODULE_DIR_BASE}")
 set(SETTINGS_SHARE_DIR "${CMAKE_INSTALL_PREFIX}/${PLUGIN_MANIFEST_DIR_BASE}")
 set(PUSH_HELPER_DIR "lib/ubuntu-push-client/legacy-helpers")
 
 SET(CMAKE_INSTALL_RPATH "${PLUGIN_MODULE_DIR}")
 
-set(DESKTOP_FILE ubuntu-system-settings.desktop)
-set(GETTEXT_PACKAGE ubuntu-system-settings)
+set(DESKTOP_FILE lomiri-system-settings.desktop)
+set(GETTEXT_PACKAGE lomiri-system-settings)
 
 add_subdirectory(po)
 add_subdirectory(schema)
@@ -112,11 +111,11 @@ add_custom_target(${DESKTOP_FILE} ALL
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}
         DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 
-install(FILES ubuntu-system-settings.url-dispatcher DESTINATION share/url-dispatcher/urls)
+install(FILES lomiri-system-settings.url-dispatcher DESTINATION share/url-dispatcher/urls)
 install(FILES screenshot.png DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings.svg DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings-app-splash.svg DESTINATION ${SETTINGS_SHARE_DIR})
-install(PROGRAMS push-helper/software_updates_helper.py DESTINATION ${PUSH_HELPER_DIR} RENAME ubuntu-system-settings)
+install(PROGRAMS push-helper/software_updates_helper.py DESTINATION ${PUSH_HELPER_DIR} RENAME lomiri-system-settings)
 
 if(cmake_build_type_lower MATCHES coverage)
   ENABLE_COVERAGE_REPORT(TARGETS system-settings FILTER /usr/include ${CMAKE_SOURCE_DIR}/tests/* ${CMAKE_BINARY_DIR}/*)

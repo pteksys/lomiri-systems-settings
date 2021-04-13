@@ -25,9 +25,9 @@
 #include <QDBusPendingReply>
 #include <QProcessEnvironment>
 #include <QtDBus>
-#include <SystemSettings/ItemBase>
+#include <LomiriSystemSettings/ItemBase>
 
-using namespace SystemSettings;
+using namespace LomiriSystemSettings;
 
 class CellularItem: public ItemBase
 {

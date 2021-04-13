@@ -22,9 +22,9 @@ import QtQuick 2.4
 import GSettings 1.0
 import SystemSettings 1.0
 import Ubuntu.Content 1.3
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.SystemSettings.Background 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.SystemSettings.Background 1.0
 import "utilities.js" as Utilities
 
 ItemPage {
@@ -54,7 +54,7 @@ ItemPage {
     }
 
     // qml bindings for background stuff
-    UbuntuBackgroundPanel {
+    LomiriBackgroundPanel {
         id: backgroundPanel
     }
 
@@ -75,14 +75,14 @@ ItemPage {
             }
 
             WallpaperGrid {
-                id: uArtGrid
-                objectName: "UbuntuArtGrid"
+                id: systemArtGrid
+                objectName: "SystemArtGrid"
                 anchors.left: parent.left
                 anchors.right: parent.right
                 columns: 3
-                bgmodel: backgroundPanel.ubuntuArt
+                bgmodel: backgroundPanel.systemArt
                 backgroundPanel: backgroundPanel
-                title: i18n.tr("Ubuntu Art")
+                title: i18n.tr("System Art")
                 current: welcomeBackground
                 onSelected: preview({ uri: uri })
             }

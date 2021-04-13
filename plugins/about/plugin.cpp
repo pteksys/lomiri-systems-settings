@@ -34,11 +34,11 @@ static QObject *siSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 
 void BackendPlugin::registerTypes(const char *uri)
 {
-    Q_ASSERT(uri == QLatin1String("Ubuntu.SystemSettings.StorageAbout"));
+    Q_ASSERT(uri == QLatin1String("Lomiri.SystemSettings.StorageAbout"));
 
     qRegisterMetaType<ClickModel::Roles>();
     qmlRegisterType<ClickModel>(uri, 1, 0, "ClickRoles");
-    qmlRegisterType<StorageAbout>(uri, 1, 0, "UbuntuStorageAboutPanel");
+    qmlRegisterType<StorageAbout>(uri, 1, 0, "LomiriStorageAboutPanel");
     qmlRegisterSingletonType<QSystemImage>(
         uri, 1, 0, "SystemImage", siSingletonProvider
     );

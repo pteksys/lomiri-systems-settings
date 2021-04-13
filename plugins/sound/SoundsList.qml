@@ -3,9 +3,9 @@ import QtQuick 2.4
 import QtMultimedia 5.6
 import SystemSettings 1.0
 import Ubuntu.Content 1.3
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.SystemSettings.Sound 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.SystemSettings.Sound 1.0
 import QMenuModel 0.1
 
 import "utilities.js" as Utilities
@@ -34,7 +34,7 @@ ItemPage {
         return backendInfo.listSounds([soundsDir, customDir])
     }
 
-    UbuntuSoundPanel {
+    LomiriSoundPanel {
         id: backendInfo
         onIncomingCallSoundChanged: {
             if (soundType == 0)

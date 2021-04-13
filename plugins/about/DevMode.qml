@@ -24,9 +24,9 @@ import QtQuick 2.4
 import Qt.labs.folderlistmodel 1.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.SecurityPrivacy 1.0
-import Ubuntu.SystemSettings.StorageAbout 1.0
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.SecurityPrivacy 1.0
+import Lomiri.SystemSettings.StorageAbout 1.0
 
 ItemPage {
     id: devModePage
@@ -34,11 +34,11 @@ ItemPage {
     title: i18n.tr("Developer Mode")
     flickable: scrollWidget
 
-    UbuntuStorageAboutPanel {
+    LomiriStorageAboutPanel {
         id: storedInfo
     }
 
-    UbuntuSecurityPrivacyPanel {
+    LomiriSecurityPrivacyPanel {
         id: securityPrivacy
     }
 
@@ -86,7 +86,7 @@ ItemPage {
             }
 
             SettingsListItems.Standard {
-                enabled: securityPrivacy.securityType !== UbuntuSecurityPrivacyPanel.Swipe
+                enabled: securityPrivacy.securityType !== LomiriSecurityPrivacyPanel.Swipe
                 text: i18n.tr("Developer Mode")
                 Switch {
                     id: devModeSwitch

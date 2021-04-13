@@ -21,13 +21,13 @@
 import QtQuick 2.4
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 MainView {
     id: main
     implicitWidth: units.gu(140)
     implicitHeight: units.gu(90)
-    applicationName: "ubuntu-system-settings"
+    applicationName: "lomiri-system-settings"
     objectName: "systemSettingsMainView"
     automaticOrientation: true
     anchorToKeyboard: true
@@ -71,8 +71,8 @@ MainView {
     }
 
     Component.onCompleted: {
-        i18n.domain = "ubuntu-system-settings"
-        i18n.bindtextdomain("ubuntu-system-settings", i18nDirectory)
+        i18n.domain = "lomiri-system-settings"
+        i18n.bindtextdomain("lomiri-system-settings", i18nDirectory)
 
         if (defaultPlugin) {
             if (!loadPluginByName(defaultPlugin, pluginOptions))

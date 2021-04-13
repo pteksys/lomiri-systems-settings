@@ -24,10 +24,10 @@ import QtQuick 2.4
 import QtSystemInfo 5.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Ubuntu.Components 1.3
-import Ubuntu.SystemSettings.Battery 1.0
-import Ubuntu.SystemSettings.SecurityPrivacy 1.0
-import Ubuntu.Settings.Components 0.1 as USC
+import Lomiri.Components 1.3
+import Lomiri.SystemSettings.Battery 1.0
+import Lomiri.SystemSettings.SecurityPrivacy 1.0
+import Lomiri.Settings.Components 0.1 as LSC
 
 ItemPage {
     id: root
@@ -55,7 +55,7 @@ ItemPage {
         schema.id: batteryBackend.powerdRunning ? "com.ubuntu.touch.system" : "org.gnome.desktop.session"
     }
 
-    UbuntuSecurityPrivacyPanel {
+    LomiriSecurityPrivacyPanel {
         id: securityPrivacy
     }
 
@@ -70,7 +70,7 @@ ItemPage {
         Component.onCompleted: start()
     }
 
-    UbuntuBatteryPanel {
+    LomiriBatteryPanel {
         id: batteryBackend
     }
 
@@ -319,7 +319,7 @@ ItemPage {
             SettingsListItems.SingleValueProgression {
                 property bool lockOnSuspend:
                     securityPrivacy.securityType !==
-                        UbuntuSecurityPrivacyPanel.Swipe
+                        LomiriSecurityPrivacyPanel.Swipe
                 text: lockOnSuspend ? i18n.tr("Lock when idle") : i18n.tr("Sleep when idle")
                 value: {
                     if (batteryBackend.powerdRunning ) {
@@ -380,7 +380,7 @@ ItemPage {
                         id: wifiSwitch
                         property bool serverChecked: networkActionGroup.enabled.state
 
-                        USC.ServerPropertySynchroniser {
+                        LSC.ServerPropertySynchroniser {
                             userTarget: wifiSwitch
                             userProperty: "checked"
                             serverTarget: wifiSwitch
@@ -416,7 +416,7 @@ ItemPage {
                         id: btSwitch
                         property bool serverChecked: bluetoothActionGroup.enabled.state
 
-                        USC.ServerPropertySynchroniser {
+                        LSC.ServerPropertySynchroniser {
                             userTarget: btSwitch
                             userProperty: "checked"
                             serverTarget: btSwitch
