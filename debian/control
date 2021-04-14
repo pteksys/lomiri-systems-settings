@@ -73,7 +73,7 @@ Depends:
  indicator-datetime,
  indicator-network (>= 0.7.1),
  indicator-power (>= 12.10.6+15.04.20150130),
- libsystemsettings1 (= ${binary:Version}),
+ liblomirisystemsettings1 (= ${binary:Version}),
  python3,
  python3-dbus,
  python3-gi,
@@ -138,7 +138,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends:
- libsystemsettings1 (= ${binary:Version}),
+ liblomirisystemsettings1 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Pre-Depends:
