@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-09 09:07+0000\n"
+"POT-Creation-Date: 2021-04-14 14:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3040,6 +3040,14 @@ msgstr ""
 
 #: ../plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
+msgstr ""
+
+#: ../push-helper/software_updates_helper.py:159
+msgid "There's an updated system image."
+msgstr ""
+
+#: ../push-helper/software_updates_helper.py:160
+msgid "Tap to open the system updater."
 msgstr ""
 
 #: ../src/qml/MainWindow.qml:170 lomiri-system-settings.desktop.in.in.h:1
