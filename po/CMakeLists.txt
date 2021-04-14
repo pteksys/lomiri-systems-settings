@@ -75,7 +75,7 @@ add_custom_target(pot-py
                             --sort-by-file
                             ${PYFILES}
     WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
-    DEPENDS ${PYFILES}
+    DEPENDS pot-cpp ${PYFILES}
 )
 
 add_custom_target(pot DEPENDS pot-desktop pot-qml pot-cpp pot-py)
