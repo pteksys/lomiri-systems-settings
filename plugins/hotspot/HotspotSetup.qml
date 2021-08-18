@@ -23,7 +23,7 @@ import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItems
 import Lomiri.Components.Popups 1.3
-import Ubuntu.Connectivity 1.0
+import Lomiri.Connectivity 1.0
 import Lomiri.SystemSettings.Cellular 1.0
 
 Component {

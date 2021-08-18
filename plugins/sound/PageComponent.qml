@@ -27,7 +27,7 @@ import Lomiri.SystemSettings.Sound 1.0
 import Lomiri.Settings.Menus 0.1 as Menus
 import Lomiri.Settings.Components 0.1 as LSC
 import QMenuModel 0.1
-import Ubuntu.Connectivity 1.0
+import Lomiri.Connectivity 1.0
 
 import "utilities.js" as Utilities
 

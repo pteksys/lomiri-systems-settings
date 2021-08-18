@@ -23,9 +23,9 @@
 #include "connectivity.h"
 
 namespace {
-    const QString conn_service("com.ubuntu.connectivity1");
-    const QString conn_object("/com/ubuntu/connectivity1/Private");
-    const QString conn_interface("com.ubuntu.connectivity1.Private");
+    const QString conn_service("com.lomiri.connectivity1");
+    const QString conn_object("/com/lomiri/connectivity1/Private");
+    const QString conn_interface("com.lomiri.connectivity1.Private");
     const QString conn_unlockmodem_method("UnlockModem");
 }
 

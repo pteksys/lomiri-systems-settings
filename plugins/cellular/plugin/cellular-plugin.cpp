@@ -55,12 +55,12 @@ CellularItem::CellularItem(const QVariantMap &staticData, QObject *parent):
     bool supportedDevice(false);
 
     QDBusInterface m_NetStatusPropertiesIface(
-            "com.ubuntu.connectivity1",
-            "/com/ubuntu/connectivity1/NetworkingStatus",
+            "com.lomiri.connectivity1",
+            "/com/lomiri/connectivity1/NetworkingStatus",
             "org.freedesktop.DBus.Properties",
             QDBusConnection::sessionBus());
     QDBusPendingReply<QVariant> modemReply = m_NetStatusPropertiesIface.call(
-        "Get", "com.ubuntu.connectivity1.NetworkingStatus", "ModemAvailable");
+        "Get", "com.lomiri.connectivity1.NetworkingStatus", "ModemAvailable");
     modemReply.waitForFinished();
     if (modemReply.isValid()) {
         supportedDevice = modemReply.argumentAt<0>().toBool();

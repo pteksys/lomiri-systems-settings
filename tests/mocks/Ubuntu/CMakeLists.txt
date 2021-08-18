@@ -1,2 +1,1 @@
-add_subdirectory(Connectivity)
 add_subdirectory(DownloadManager)

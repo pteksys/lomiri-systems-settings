@@ -23,7 +23,7 @@ import SystemSettings 1.0
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
-import Ubuntu.Connectivity 1.0
+import Lomiri.Connectivity 1.0
 import Lomiri.Settings.Vpn 0.1
 
 ItemPage {

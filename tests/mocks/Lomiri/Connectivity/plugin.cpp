@@ -35,6 +35,6 @@ static QObject * networkingStatusSingletonProvider(QQmlEngine *engine, QJSEngine
 
 void BackendPlugin::registerTypes(const char *uri)
 {
-    Q_ASSERT(uri == QLatin1String("Ubuntu.Connectivity"));
+    Q_ASSERT(uri == QLatin1String("Lomiri.Connectivity"));
     qmlRegisterSingletonType<MockNetworkingStatus>(uri, 1, 0, "NetworkingStatus", networkingStatusSingletonProvider);
 }

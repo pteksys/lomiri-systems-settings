@@ -84,7 +84,7 @@ Depends:
  qml-module-qtmultimedia | qml-module-qtmultimedia-gles,
  qml-module-qtsysteminfo,
  qml-module-lomiri-components,
- qml-module-ubuntu-connectivity (>= 0.7.1),
+ qml-module-lomiri-connectivity (>= 0.7.1),
  qml-module-lomiri-settings-components,
  qml-module-lomiri-settings-menus,
  qml-module-lomiri-settings-vpn,

@@ -13,24 +13,24 @@ __email__ = 'jonas.drange@canonical.com'
 __copyright__ = '(c) 2015 Canonical Ltd.'
 __license__ = 'LGPL 3+'
 
-BUS_NAME = 'com.ubuntu.connectivity1'
-MAIN_IFACE = 'com.ubuntu.connectivity1'
+BUS_NAME = 'com.lomiri.connectivity1'
+MAIN_IFACE = 'com.lomiri.connectivity1'
 MAIN_OBJ = '/'
 SYSTEM_BUS = False
 
-PRIV_IFACE = 'com.ubuntu.connectivity1.Private'
-PRIV_OBJ = '/com/ubuntu/connectivity1/Private'
+PRIV_IFACE = 'com.lomiri.connectivity1.Private'
+PRIV_OBJ = '/com/lomiri/connectivity1/Private'
 
-MODEM_IFACE = 'com.ubuntu.connectivity1.Modem'
-SIM_IFACE = 'com.ubuntu.connectivity1.Sim'
+MODEM_IFACE = 'com.lomiri.connectivity1.Modem'
+SIM_IFACE = 'com.lomiri.connectivity1.Sim'
 
-NETS_IFACE = 'com.ubuntu.connectivity1.NetworkingStatus'
-NETS_OBJ = '/com/ubuntu/connectivity1/NetworkingStatus'
+NETS_IFACE = 'com.lomiri.connectivity1.NetworkingStatus'
+NETS_OBJ = '/com/lomiri/connectivity1/NetworkingStatus'
 
-VPN_OBJ = '/com/ubuntu/connectivity1/vpn'
-VPN_CONN_IFACE = 'com.ubuntu.connectivity1.vpn.VpnConnection'
-VPN_CONN_OPENVPN_IFACE = 'com.ubuntu.connectivity1.vpn.VpnConnection.OpenVpn'
-VPN_CONN_PPTP_IFACE = 'com.ubuntu.connectivity1.vpn.VpnConnection.Pptp'
+VPN_OBJ = '/com/lomiri/connectivity1/vpn'
+VPN_CONN_IFACE = 'com.lomiri.connectivity1.vpn.VpnConnection'
+VPN_CONN_OPENVPN_IFACE = 'com.lomiri.connectivity1.vpn.VpnConnection.OpenVpn'
+VPN_CONN_PPTP_IFACE = 'com.lomiri.connectivity1.vpn.VpnConnection.Pptp'
 
 NOT_IMPLEMENTED = '''raise dbus.exceptions.DBusException(
     "org.ofono.Error.NotImplemented")'''
@@ -66,7 +66,7 @@ def set_wifi_enabled(self, value):
 @dbus.service.method(dbusmock.MOCK_IFACE,
                      in_signature='s', out_signature='s')
 def AddSim(self, iccid):
-    path = "/com/ubuntu/connectivity1/sim/{}".format(iccid)
+    path = "/com/lomiri/connectivity1/sim/{}".format(iccid)
     self.AddObject(
         path,
         SIM_IFACE,
@@ -90,7 +90,7 @@ def AddSim(self, iccid):
 @dbus.service.method(dbusmock.MOCK_IFACE,
                      in_signature='sis', out_signature='s')
 def AddModem(self, serial, index, sim):
-    path = "/com/ubuntu/connectivity1/modem/{}".format(serial)
+    path = "/com/lomiri/connectivity1/modem/{}".format(serial)
     self.AddObject(
         path,
         MODEM_IFACE,

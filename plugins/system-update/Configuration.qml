@@ -20,7 +20,7 @@ import QtQuick 2.4
 import SystemSettings 1.0
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
-import Ubuntu.Connectivity 1.0
+import Lomiri.Connectivity 1.0
 import Lomiri.SystemSettings.Update 1.0
 
 
