@@ -44,7 +44,7 @@ ItemPage {
     GSettings {
         id: keyboardSettings
 
-        schema.id: "com.canonical.keyboard.maliit"
+        schema.id: "com.lomiri.keyboard.maliit"
     }
 
     GSettings {

@@ -106,7 +106,7 @@ ItemPage {
     GSettings {
         id: settings
 
-        schema.id: "com.canonical.keyboard.maliit"
+        schema.id: "com.lomiri.keyboard.maliit"
     }
 
     GSettings {

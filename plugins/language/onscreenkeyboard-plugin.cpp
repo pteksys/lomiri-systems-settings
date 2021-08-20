@@ -22,29 +22,22 @@
 #include <QStandardPaths>
 #include <QtDebug>
 #include "onscreenkeyboard-plugin.h"
+#include "qstringliteral.h"
 
-#define UBUNTU_KEYBOARD_SCHEMA_ID "com.canonical.keyboard.maliit"
+#define LOMIRI_KEYBOARD_SCHEMA_ID "com.lomiri.keyboard.maliit"
 
 #define KEY_ENABLED_LAYOUTS "enabled-languages"
 #define KEY_CURRENT_LAYOUT  "active-language"
 #define KEY_PLUGIN_PATHS "plugin-paths"
 
-#define LAYOUTS_DIR "maliit/plugins/com/ubuntu/lib"
-
 OnScreenKeyboardPlugin::OnScreenKeyboardPlugin(QObject *parent) :
     QObject(parent),
-    m_maliitSettings(g_settings_new(UBUNTU_KEYBOARD_SCHEMA_ID))
+    m_maliitSettings(g_settings_new(LOMIRI_KEYBOARD_SCHEMA_ID))
 {
     GVariantIter *iter;
     const gchar *path;
 
-    QString layoutPath = QStandardPaths::locate(
-        QStandardPaths::GenericDataLocation, LAYOUTS_DIR,
-        QStandardPaths::LocateDirectory
-    );
-    if (!layoutPath.isEmpty()) {
-        m_layoutPaths.append(layoutPath);
-    }
+    m_layoutPaths.append(QStringLiteral(LOMIRI_KEYBOARD_PLUGIN_PATH));
 
     g_settings_get(m_maliitSettings, KEY_PLUGIN_PATHS, "as", &iter);
     for (int i(0); g_variant_iter_next(iter, "&s", &path); i++) {

@@ -14,12 +14,16 @@ set(QML_SOURCES
     ThemeValues.qml
 )
 
-
 add_library(LomiriLanguagePlugin MODULE
  keyboard-layout.cpp language-plugin.cpp plugin.cpp subset-model.cpp onscreenkeyboard-plugin.cpp hardwarekeyboard-plugin.cpp
  keyboard-layout.h language-plugin.h plugin.h subset-model.h onscreenkeyboard-plugin.h hardwarekeyboard-plugin.h
  ${QML_SOURCES})
 target_link_libraries(LomiriLanguagePlugin Qt5::Qml Qt5::Quick Qt5::DBus lss-accountsservice lss-sessionservice ${GD3_LDFLAGS} ${GLIB_LDFLAGS} ${GIO_LDFLAGS} ${ACCOUNTSSERVICE_LDFLAGS} ${ICU_LDFLAGS})
+
+# Would love to get this from lomiri-keyboard directly, but that's QMake .pri,
+# so let's just hardcode here.
+target_compile_definitions(LomiriLanguagePlugin PRIVATE
+    -DLOMIRI_KEYBOARD_PLUGIN_PATH=\"${CMAKE_INSTALL_PREFIX}/lib/lomiri-keyboard/plugins\")
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/LanguagePlugin)
 install(TARGETS LomiriLanguagePlugin DESTINATION ${PLUG_DIR})
