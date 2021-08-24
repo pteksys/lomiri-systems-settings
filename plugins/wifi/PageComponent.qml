@@ -33,9 +33,9 @@ ItemPage {
 
     UnityMenuModel {
         id: menuModel
-        busName: "com.canonical.indicator.network"
-        actions: { "indicator": "/com/canonical/indicator/network" }
-        menuObjectPath: "/com/canonical/indicator/network/phone_wifi_settings"
+        busName: "com.lomiri.indicator.network"
+        actions: { "indicator": "/com/lomiri/indicator/network" }
+        menuObjectPath: "/com/lomiri/indicator/network/phone_wifi_settings"
         Component.onCompleted: {
             menuStack.head = menuModel;
         }
@@ -51,8 +51,8 @@ ItemPage {
     QDBusActionGroup {
         id: actionGroup
         busType: 1
-        busName: "com.canonical.indicator.network"
-        objectPath: "/com/canonical/indicator/network"
+        busName: "com.lomiri.indicator.network"
+        objectPath: "/com/lomiri/indicator/network"
         property variant actionObject: action("wifi.enable")
         Component.onCompleted: {
             start()

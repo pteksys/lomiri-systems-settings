@@ -14,11 +14,11 @@ __email__ = 'jonas.drange@canonical.com'
 __copyright__ = '(c) 2015 Canonical Ltd.'
 __license__ = 'LGPL 3+'
 
-BUS_NAME = 'com.canonical.indicator.network'
+BUS_NAME = 'com.lomiri.indicator.network'
 MAIN_IFACE = 'org.gtk.Actions'
-MAIN_OBJ = '/com/canonical/indicator/network'
+MAIN_OBJ = '/com/lomiri/indicator/network'
 MENU_IFACE = 'org.gtk.Menus'
-PHONE_WIFI_OBJ = '/com/canonical/indicator/network/phone_wifi_settings'
+PHONE_WIFI_OBJ = '/com/lomiri/indicator/network/phone_wifi_settings'
 SYSTEM_BUS = False
 
 NOT_IMPLEMENTED = '''raise dbus.exceptions.DBusException(
