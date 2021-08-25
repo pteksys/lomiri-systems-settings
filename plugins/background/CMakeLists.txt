@@ -10,7 +10,7 @@ add_library(LomiriBackgroundPanel MODULE
 plugin.cpp background.cpp plugin.h background.h
 ${QML_SOURCES}) # So they show up in Qt designer.
 
-target_link_libraries(LomiriBackgroundPanel Qt5::Qml Qt5::Quick Qt5::DBus lss-accountsservice)
+target_link_libraries(LomiriBackgroundPanel Qt5::Qml Qt5::Quick Qt5::DBus LomiriSystemSettingsPrivate)
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/Background)
 install(TARGETS LomiriBackgroundPanel DESTINATION ${PLUG_DIR})

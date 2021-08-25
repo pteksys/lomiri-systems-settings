@@ -5,7 +5,7 @@ set(QML_SOURCES
 
 add_library(LomiriSoundPanel MODULE plugin.h sound.h plugin.cpp sound.cpp
 ${QML_SOURCES})
-target_link_libraries(LomiriSoundPanel lss-accountsservice Qt5::Qml Qt5::Quick Qt5::DBus)
+target_link_libraries(LomiriSoundPanel LomiriSystemSettingsPrivate Qt5::Qml Qt5::Quick Qt5::DBus)
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/Sound)
 install(TARGETS LomiriSoundPanel DESTINATION ${PLUG_DIR})

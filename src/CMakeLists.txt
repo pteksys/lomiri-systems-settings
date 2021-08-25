@@ -13,12 +13,10 @@ add_subdirectory(SystemSettings)
 
 set(USS_SOURCES
     debug.cpp
-    i18n.cpp
     item-model.cpp
     main.cpp
     plugin-manager.cpp
     plugin.cpp
-    systemimage.cpp
     utils.cpp
 )
 
@@ -37,17 +35,7 @@ set(QML_SOURCES
 QT5_ADD_RESOURCES(system-settings-resources ui.qrc)
 
 add_executable(lomiri-system-settings ${USS_SOURCES} ${QML_SOURCES} ${system-settings-resources})
-target_link_libraries(lomiri-system-settings Qt5::Core Qt5::Gui Qt5::Quick Qt5::Qml Qt5::DBus Qt5::Widgets LomiriSystemSettings ${GLIB_LDFLAGS})
+target_link_libraries(lomiri-system-settings Qt5::Core Qt5::Gui Qt5::Quick Qt5::Qml Qt5::DBus Qt5::Widgets LomiriSystemSettings LomiriSystemSettingsPrivate ${GLIB_LDFLAGS})
 install(TARGETS lomiri-system-settings RUNTIME DESTINATION bin)
-
-add_library(lss-accountsservice SHARED accountsservice.h accountsservice.cpp)
-target_link_libraries(lss-accountsservice Qt5::Core Qt5::Qml Qt5::DBus)
-set_target_properties(lss-accountsservice PROPERTIES VERSION 0.0 SOVERSION 0.0)
-install(TARGETS lss-accountsservice LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
-
-add_library(lss-systemimage SHARED systemimage.h systemimage.cpp i18n.cpp)
-target_link_libraries(lss-systemimage Qt5::Core Qt5::Qml Qt5::DBus)
-set_target_properties(lss-systemimage PROPERTIES VERSION 0.0 SOVERSION 0.0)
-install(TARGETS lss-systemimage LIBRARY DESTINATION ${PLUGIN_MODULE_DIR} NAMELINK_SKIP)
 
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/url-map.ini DESTINATION ${PLUGIN_MANIFEST_DIR})

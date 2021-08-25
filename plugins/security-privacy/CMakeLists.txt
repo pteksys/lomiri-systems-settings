@@ -54,7 +54,7 @@ include_directories(
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/SecurityPrivacy)
 target_link_libraries (LomiriSecurityPrivacyPanel
     Qt5::Qml Qt5::Quick Qt5::DBus
-    lss-accountsservice
+    LomiriSystemSettingsPrivate
     ${ACCOUNTSSERVICE_LDFLAGS}
     ${GOBJECT_LDFLAGS}
     ${TRUST_STORE_LDFLAGS}

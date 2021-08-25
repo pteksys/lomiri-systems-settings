@@ -31,7 +31,7 @@ add_library(LomiriStorageAboutPanel MODULE
 )
 
 target_link_libraries(LomiriStorageAboutPanel Qt5::Qml Qt5::Quick Qt5::DBus
-${ANDR_PROP_LDFLAGS} ${GLIB_LDFLAGS} ${GIO_LDFLAGS} ${CLICK_LDFLAGS} lss-systemimage)
+${ANDR_PROP_LDFLAGS} ${GLIB_LDFLAGS} ${GIO_LDFLAGS} ${CLICK_LDFLAGS} LomiriSystemSettingsPrivate)
 
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/StorageAbout)
