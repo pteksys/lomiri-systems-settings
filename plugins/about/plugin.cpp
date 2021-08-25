@@ -29,7 +29,7 @@ static QObject *siSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
-    return new QSystemImage;
+    return new LomiriSystemSettings::QSystemImage;
 }
 
 void BackendPlugin::registerTypes(const char *uri)
@@ -39,7 +39,7 @@ void BackendPlugin::registerTypes(const char *uri)
     qRegisterMetaType<ClickModel::Roles>();
     qmlRegisterType<ClickModel>(uri, 1, 0, "ClickRoles");
     qmlRegisterType<StorageAbout>(uri, 1, 0, "LomiriStorageAboutPanel");
-    qmlRegisterSingletonType<QSystemImage>(
+    qmlRegisterSingletonType<LomiriSystemSettings::QSystemImage>(
         uri, 1, 0, "SystemImage", siSingletonProvider
     );
 }

@@ -30,6 +30,8 @@
 #include <QDBusPendingReply>
 #include <unistd.h>
 
+namespace LomiriSystemSettings {
+
 QSystemImage::QSystemImage(QObject *parent)
     : QSystemImage(QDBusConnection::systemBus(), parent)
 {
@@ -564,3 +566,5 @@ void QSystemImage::setErrorReason(const QString &errorReason)
         Q_EMIT errorReasonChanged();
     }
 }
+
+} // namespace

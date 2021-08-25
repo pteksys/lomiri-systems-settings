@@ -134,7 +134,7 @@ private:
     bool setPasswordModeWithPolicykit(SecurityType type, QString password);
     QString setPassword(QString oldValue, QString value);
 
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
     ActUserManager *m_manager;
     ActUser *m_user;
     QString m_username;

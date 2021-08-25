@@ -33,6 +33,8 @@ namespace Image
 class ManagerImpl : public Manager
 {
     Q_OBJECT
+
+    using QSystemImage = LomiriSystemSettings::QSystemImage;
 public:
     explicit ManagerImpl(UpdateModel *model, QObject *parent = nullptr);
     explicit ManagerImpl(QSystemImage *si,
