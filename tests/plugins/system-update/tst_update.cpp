@@ -169,9 +169,13 @@ private slots:
     }
     void testDeepEquals_data()
     {
-        QTest::addColumn<Update*>("a");
-        QTest::addColumn<Update*>("b");
+        QTest::addColumn<QSharedPointer<Update>>("a");
+        QTest::addColumn<QSharedPointer<Update>>("b");
         QTest::addColumn<bool>("equals");
+
+        auto doDeleteLater = [](QObject * obj) {
+            obj->deleteLater();
+        };
 
         QDateTime created_a(QDate(2016, 2, 29));
         QDateTime updated_a(QDate(2016, 2, 28));
@@ -179,7 +183,7 @@ private slots:
         QDateTime created_b(QDate(2016, 2, 21));
         QDateTime updated_b(QDate(2016, 2, 22));
 
-        Update* a = new Update;
+        QSharedPointer<Update> a = QSharedPointer<Update>(new Update, doDeleteLater);
         a->setKind(Update::Kind::KindClick);
         a->setIdentifier("id_a");
         a->setLocalVersion("localVersion_a");
@@ -202,7 +206,7 @@ private slots:
         a->setAutomatic(false);
         a->setError("error_a");
 
-        Update* b = new Update;
+        QSharedPointer<Update> b = QSharedPointer<Update>(new Update, doDeleteLater);
         b->setKind(Update::Kind::KindImage);
         b->setIdentifier("id_b");
         b->setLocalVersion("localVersion_b");
@@ -230,15 +234,12 @@ private slots:
     }
     void testDeepEquals()
     {
-        QFETCH(Update*, a);
-        QFETCH(Update*, b);
+        QFETCH(QSharedPointer<Update>, a);
+        QFETCH(QSharedPointer<Update>, b);
         QFETCH(bool, equals);
 
-        QCOMPARE(a->deepEquals(b), equals);
-        QCOMPARE(b->deepEquals(a), equals);
-
-        a->deleteLater();
-        b->deleteLater();
+        QCOMPARE(a->deepEquals(b.get()), equals);
+        QCOMPARE(b->deepEquals(a.get()), equals);
     }
     void testShallowEquality_data()
     {
