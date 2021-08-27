@@ -42,10 +42,10 @@ public:
 LauncherItem::LauncherItem(const QVariantMap &staticData, QObject *parent):
     ItemBase(staticData, parent)
 {
-    // Unconditionally show if USS_SHOW_ALL_UI is set.
+    // Unconditionally show if LSS_SHOW_ALL_UI is set.
     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-    if (env.contains(QLatin1String("USS_SHOW_ALL_UI"))) {
-        QString showAllS = env.value("USS_SHOW_ALL_UI", QString());
+    if (env.contains(QLatin1String("LSS_SHOW_ALL_UI"))) {
+        QString showAllS = env.value("LSS_SHOW_ALL_UI", QString());
 
         if(!showAllS.isEmpty()) {
             setVisibility(true);

@@ -35,8 +35,8 @@ NotificationsItem::NotificationsItem(const QVariantMap &staticData,
                                      QObject *parent):
     ItemBase(staticData, parent)
 {
-    if (qEnvironmentVariableIsSet("USS_SHOW_ALL_UI") &&
-            !qEnvironmentVariableIsEmpty("USS_SHOW_ALL_UI")) {
+    if (qEnvironmentVariableIsSet("LSS_SHOW_ALL_UI") &&
+            !qEnvironmentVariableIsEmpty("LSS_SHOW_ALL_UI")) {
         setVisibility(true);
         return;
     }

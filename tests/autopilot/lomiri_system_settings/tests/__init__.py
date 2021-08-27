@@ -612,7 +612,7 @@ class BluetoothBaseTestCase(LomiriSystemSettingsTestCase):
 class PhoneOfonoBaseTestCase(LomiriSystemSettingsOfonoTestCase):
     def setUp(self):
         """ Go to Phone page """
-        self.useFixture(EnvironmentVariable("USS_SHOW_ALL_UI", "1"))
+        self.useFixture(EnvironmentVariable("LSS_SHOW_ALL_UI", "1"))
         super(PhoneOfonoBaseTestCase, self).setUp()
         self.phone_page = self.main_view.go_to_phone_page()
 

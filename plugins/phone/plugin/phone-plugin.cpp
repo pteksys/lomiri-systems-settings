@@ -43,8 +43,8 @@ PhoneItem::PhoneItem(const QVariantMap &staticData, QObject *parent):
     ItemBase(staticData, parent)
 {
     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-    if (env.contains(QLatin1String("USS_SHOW_ALL_UI"))) {
-        QString showAllS = env.value("USS_SHOW_ALL_UI", QString());
+    if (env.contains(QLatin1String("LSS_SHOW_ALL_UI"))) {
+        QString showAllS = env.value("LSS_SHOW_ALL_UI", QString());
 
         if(!showAllS.isEmpty()) {
             setVisibility(true);
