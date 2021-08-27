@@ -103,18 +103,6 @@ ItemPage {
     }
 
     GSettings {
-        id: unitySettings
-        schema.id: "com.canonical.Unity.Lenses"
-        onChanged: {
-            if (key == "remoteContentSearch")
-                if (value == 'all')
-                    dashSearchId.value = i18n.tr("Phone and Internet")
-                else
-                    dashSearchId.value = i18n.tr("Phone only")
-        }
-    }
-
-    GSettings {
         id: powerSettings
         schema.id: root.usePowerd ? "com.ubuntu.touch.system" : "org.gnome.desktop.session"
     }
