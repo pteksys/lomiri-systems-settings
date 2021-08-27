@@ -82,7 +82,6 @@ set(PLUGIN_QML_DIR "${CMAKE_INSTALL_PREFIX}/${PLUGIN_QML_DIR_BASE}")
 # E.g. /usr/lib/lomiri-system-settings/private
 set(PLUGIN_PRIVATE_MODULE_DIR "${CMAKE_INSTALL_PREFIX}/${LIBDIR}/${PLUGIN_PRIVATE_MODULE_DIR_BASE}")
 set(SETTINGS_SHARE_DIR "${CMAKE_INSTALL_PREFIX}/${PLUGIN_MANIFEST_DIR_BASE}")
-set(PUSH_HELPER_DIR "lib/ubuntu-push-client/legacy-helpers")
 
 SET(CMAKE_INSTALL_RPATH "${PLUGIN_MODULE_DIR}")
 
@@ -115,7 +114,6 @@ install(FILES lomiri-system-settings.url-dispatcher DESTINATION share/url-dispat
 install(FILES screenshot.png DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings.svg DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings-app-splash.svg DESTINATION ${SETTINGS_SHARE_DIR})
-install(PROGRAMS push-helper/software_updates_helper.py DESTINATION ${PUSH_HELPER_DIR} RENAME lomiri-system-settings)
 
 if(cmake_build_type_lower MATCHES coverage)
   ENABLE_COVERAGE_REPORT(TARGETS system-settings FILTER /usr/include ${CMAKE_SOURCE_DIR}/tests/* ${CMAKE_BINARY_DIR}/*)

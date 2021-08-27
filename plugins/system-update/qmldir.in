@@ -1,2 +1,0 @@
-module Lomiri.SystemSettings.Update
-plugin LomiriUpdatePanel

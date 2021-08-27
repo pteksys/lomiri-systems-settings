@@ -62,11 +62,6 @@ target_link_libraries(tst-systemimage
     ${QTDBUSTEST_LIBRARIES}
 )
 
-configure_file (test_code.py.in test_code.py)
-configure_file (test_push_helper.py.in test_push_helper.py)
-add_test(NAME python3 COMMAND "${CMAKE_CURRENT_BINARY_DIR}/test_code.py")
-add_test(NAME test_push_helper COMMAND "${CMAKE_CURRENT_BINARY_DIR}/test_push_helper.py")
-
 add_subdirectory(utils)
 
 # QML tests that require graphical capabilities.

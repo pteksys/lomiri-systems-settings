@@ -3,8 +3,6 @@ include(QmlTest)
 
 # TODO(Ratchanan): separate the plugin to an independent package
 # add_subdirectory(security-privacy)
-# TODO(Ratchanan): separate the plugin to an independent package
-# add_subdirectory(system-update)
 add_subdirectory(bluetooth)
 add_subdirectory(wifi)
 add_subdirectory(notifications)
@@ -34,28 +32,6 @@ set(SYSTEMUPDATE_IMPORT_PATHS
     ${CMAKE_BINARY_DIR}/tests/mocks/
     ${CMAKE_SOURCE_DIR}/tests/plugins/system-update
 )
-
-# TODO(Ratchanan): separate the system-update plugin to an independent package
-
-# add_qml_test(system-update systemupdate_update
-#     IMPORT_PATHS ${SYSTEMUPDATE_IMPORT_PATHS}
-# )
-
-# add_qml_test(system-update systemupdate_global
-#     IMPORT_PATHS ${SYSTEMUPDATE_IMPORT_PATHS}
-# )
-
-# add_qml_test(system-update systemupdate_pagecomponent
-#     IMPORT_PATHS ${SYSTEMUPDATE_IMPORT_PATHS}
-# )
-
-# add_qml_test(system-update systemupdate_entrycomponent
-#     IMPORT_PATHS ${SYSTEMUPDATE_IMPORT_PATHS}
-# )
-
-# add_qml_test(system-update systemupdate_download_handler
-#     IMPORT_PATHS ${SYSTEMUPDATE_IMPORT_PATHS}
-# )
 
 add_qml_test(main MainWindow
     IMPORT_PATHS
