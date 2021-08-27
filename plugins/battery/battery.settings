@@ -16,6 +16,6 @@
     ],
     "has-dynamic-keywords": false,
     "has-dynamic-visibility": true,
-    "visible-if-file-exists": "/etc/dbus-1/system.d/com.canonical.powerd.conf",
+    "visible-if-file-exists": "/etc/dbus-1/system.d/com.lomiri.Repowerd.conf",
     "page-component": "PageComponent.qml"
 }
