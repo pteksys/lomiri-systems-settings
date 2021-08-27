@@ -52,7 +52,7 @@ Item {
         }
 
         function get_gsettings_plugin() {
-            return findInvisibleChild(instance, "unity8Settings");
+            return findInvisibleChild(instance, "lomiriSettings");
         }
 
         function test_no_large_screen_label_necessary() {

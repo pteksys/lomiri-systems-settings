@@ -56,7 +56,7 @@ ItemPage {
 
     GSettings {
         id: unitySettings
-        schema.id: "com.canonical.Unity.Launcher"
+        schema.id: "com.lomiri.Shell.Launcher"
     }
 
     Flickable {

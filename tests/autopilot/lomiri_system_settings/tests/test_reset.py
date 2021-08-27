@@ -32,7 +32,7 @@ class ResetTestCase(ResetBaseTestCase):
             Equals(_('Reset device')))
 
     def test_reset_launcher(self):
-        gsettings = Gio.Settings.new('com.canonical.Unity.Launcher')
+        gsettings = Gio.Settings.new('com.lomiri.Shell.Launcher')
 
         favorites = gsettings.get_value('favorites')
         gsettings.set_value(

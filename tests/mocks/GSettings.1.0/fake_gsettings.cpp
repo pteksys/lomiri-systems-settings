@@ -161,7 +161,7 @@ void GSettingsQml::setAutoBrightness(const QVariant &val)
 
 QVariant GSettingsQml::launcherWidth() const
 {
-    if (m_valid && m_schema->id() == "com.canonical.Unity8") {
+    if (m_valid && m_schema->id() == "com.lomiri.Shell") {
         return GSettingsControllerQml::instance()->launcherWidth();
     } else {
         return QVariant();
@@ -170,7 +170,7 @@ QVariant GSettingsQml::launcherWidth() const
 
 QVariant GSettingsQml::autohideLauncher() const
 {
-    if (m_valid && m_schema->id() == "com.canonical.Unity8") {
+    if (m_valid && m_schema->id() == "com.lomiri.Shell") {
         return GSettingsControllerQml::instance()->autohideLauncher();
     } else {
         return QVariant();
@@ -180,14 +180,14 @@ QVariant GSettingsQml::autohideLauncher() const
 
 void GSettingsQml::setLauncherWidth(const QVariant &val)
 {
-    if (m_valid && m_schema->id() == "com.canonical.Unity8") {
+    if (m_valid && m_schema->id() == "com.lomiri.Shell") {
         GSettingsControllerQml::instance()->setLauncherWidth(val.toUInt());
     }
 }
 
 void GSettingsQml::setAutohideLauncher(const QVariant &val)
 {
-    if (m_valid && m_schema->id() == "com.canonical.Unity8") {
+    if (m_valid && m_schema->id() == "com.lomiri.Shell") {
         GSettingsControllerQml::instance()->setAutohideLauncher(val.toBool());
     }
 }
