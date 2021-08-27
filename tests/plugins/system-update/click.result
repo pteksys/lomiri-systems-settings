@@ -1,7 +1,7 @@
 [
     {
         "framework": "ubuntu-sdk-13.10",
-        "name": "com.ubuntu.dropping-letters",
+        "name": "com.ubports.dropping-letters",
         "title": "Dropping Letters game",
         "version": "0.1.2.2",
         "hooks": {
@@ -10,7 +10,7 @@
     },
     {
         "framework": "ubuntu-sdk-13.10",
-        "name": "com.ubuntu.stock-ticker-mobile",
+        "name": "com.ubports.stock-ticker-mobile",
         "title": "A stock trading app with charts, news, and management",
         "version": "0.3.7ubuntu1",
         "hooks": {
@@ -19,7 +19,7 @@
     },
     {
         "framework": "ubuntu-sdk-13.10",
-        "name": "com.ubuntu.sudoku",
+        "name": "com.ubports.sudoku",
         "title": "Sudoku game for Ubuntu devices",
         "version": "0.4.2ubuntu2",
         "hooks": {
@@ -28,7 +28,7 @@
     },
     {
         "framework": "ubuntu-sdk-13.10",
-        "name": "com.ubuntu.developer.xda-app",
+        "name": "com.ubports.developer.xda-app",
         "title": "XDA Developers App",
         "version": "0.4.2ubuntu2"
     }

@@ -74,7 +74,7 @@ class Manager(object):
                     'status_code': 200,
                     'content_type': 'application/json',
                     'content': [{
-                        "name": "com.ubuntu.dropping-letters",
+                        "name": "com.ubports.dropping-letters",
                         "version": "0.1.2.3",
                         "icon_url": (
                             "https://raw.githubusercontent.com/ninja-ide/"
@@ -88,7 +88,7 @@ class Manager(object):
                         "changelog": "New Dropping Letters.",
                         "title": "Dropping Letters game"
                     }, {
-                        "name": "com.ubuntu.stock-ticker-mobile",
+                        "name": "com.ubports.stock-ticker-mobile",
                         "version": "0.3.7ubuntu2",
                         "icon_url": (
                             "https://upload.wikimedia.org/wikipedia/"

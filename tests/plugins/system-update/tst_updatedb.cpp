@@ -181,7 +181,7 @@ private slots:
     {
         QSharedPointer<Update> installed = QSharedPointer<Update>(new Update);
         installed->setRevision(100);
-        installed->setIdentifier("com.ubuntu.myapp");
+        installed->setIdentifier("com.example.myapp");
         installed->setInstalled(true);
         m_instance->add(installed);
 
@@ -196,7 +196,7 @@ private slots:
         // Ensures that updatedAt comes back invalid if not updated.
         auto update = QSharedPointer<Update>(new Update);
         update->setRevision(100);
-        update->setIdentifier("com.ubuntu.myapp");
+        update->setIdentifier("com.example.myapp");
         m_instance->add(update);
 
         auto update1 = m_instance->get(update->identifier(),
