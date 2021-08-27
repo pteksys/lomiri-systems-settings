@@ -32,9 +32,9 @@ Reset::Reset(QObject *parent)
 bool Reset::factoryReset()
 {
     QDBusInterface iface (
-                "com.canonical.SystemImage",
+                "com.ubports.SystemImage",
                 "/Service",
-                "com.canonical.SystemImage",
+                "com.ubports.SystemImage",
                 QDBusConnection::systemBus(),
                 this);
 

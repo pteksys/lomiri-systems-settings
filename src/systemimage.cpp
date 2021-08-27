@@ -37,10 +37,10 @@ QSystemImage::QSystemImage(QObject *parent)
 
 QSystemImage::QSystemImage(const QDBusConnection &dbus, QObject *parent)
     : QObject(parent)
-    , m_watcher("com.canonical.SystemImage", dbus,
+    , m_watcher("com.ubports.SystemImage", dbus,
                 QDBusServiceWatcher::WatchForOwnerChange)
-    , m_iface("com.canonical.SystemImage", "/Service",
-              "com.canonical.SystemImage", dbus)
+    , m_iface("com.ubports.SystemImage", "/Service",
+              "com.ubports.SystemImage", dbus)
 {
     qDBusRegisterMetaType<QMap<QString, QString> >();
     connect(&m_watcher, SIGNAL(serviceOwnerChanged(QString, QString, QString)),
@@ -57,7 +57,7 @@ void QSystemImage::slotNameOwnerChanged(const QString &name,
     Q_UNUSED (oldOwner);
     Q_UNUSED (newOwner);
 
-    if (name != "com.canonical.SystemImage")
+    if (name != "com.ubports.SystemImage")
         return;
 
     if (m_iface.isValid())

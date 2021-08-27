@@ -12,8 +12,8 @@ __email__ = 'jonas.drange@canonical.com'
 __copyright__ = '(c) 2015 Canonical Ltd.'
 __license__ = 'LGPL 3+'
 
-BUS_NAME = 'com.canonical.SystemImage'
-MAIN_IFACE = 'com.canonical.SystemImage'
+BUS_NAME = 'com.ubports.SystemImage'
+MAIN_IFACE = 'com.ubports.SystemImage'
 MAIN_OBJ = '/Service'
 SYSTEM_BUS = True
 

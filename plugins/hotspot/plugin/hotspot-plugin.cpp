@@ -60,9 +60,9 @@ HotspotItem::HotspotItem(const QVariantMap &staticData, QObject *parent):
     bool supportedDevice(false);
 
     // TODO: Remove check for mako (lp:1434591).
-    QDBusInterface m_SystemServiceIface("com.canonical.SystemImage",
+    QDBusInterface m_SystemServiceIface("com.ubports.SystemImage",
                                         "/Service",
-                                        "com.canonical.SystemImage",
+                                        "com.ubports.SystemImage",
                                         QDBusConnection::systemBus());
     QDBusPendingReply<QMap<QString, QString> > reply = m_SystemServiceIface.call("Information");
     reply.waitForFinished();
