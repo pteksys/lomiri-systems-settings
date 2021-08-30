@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-14 14:06+0000\n"
+"POT-Creation-Date: 2021-08-30 13:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1697,8 +1697,8 @@ msgid "Some calls"
 msgstr ""
 
 #: ../plugins/phone/CallForwarding.qml:386
-#: ../plugins/security-privacy/PageComponent.qml:180
-#: ../plugins/security-privacy/PageComponent.qml:248
+#: ../plugins/security-privacy/PageComponent.qml:168
+#: ../plugins/security-privacy/PageComponent.qml:236
 msgid "Off"
 msgstr ""
 
@@ -1791,7 +1791,7 @@ msgstr ""
 #: ../plugins/printing/printer-sub-pages/Status.qml:72
 #: ../plugins/security-privacy/AppAccess.qml:81
 #: ../plugins/security-privacy/Location.qml:34
-#: ../plugins/security-privacy/PageComponent.qml:240
+#: ../plugins/security-privacy/PageComponent.qml:228
 msgid "Location"
 msgstr ""
 
@@ -2005,7 +2005,7 @@ msgid "Reset all system settings"
 msgstr ""
 
 #: ../plugins/security-privacy/AppAccess.qml:29
-#: ../plugins/security-privacy/PageComponent.qml:259
+#: ../plugins/security-privacy/PageComponent.qml:247
 msgid "App permissions"
 msgstr ""
 
@@ -2224,58 +2224,50 @@ msgstr ""
 msgid "Security & Privacy"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:111
-msgid "Phone and Internet"
-msgstr ""
-
-#: ../plugins/security-privacy/PageComponent.qml:113
-msgid "Phone only"
-msgstr ""
-
-#: ../plugins/security-privacy/PageComponent.qml:137
+#: ../plugins/security-privacy/PageComponent.qml:125
 #: ../plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:143
+#: ../plugins/security-privacy/PageComponent.qml:131
 msgid "Fingerprint ID"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:163
+#: ../plugins/security-privacy/PageComponent.qml:151
 #: ../plugins/security-privacy/PhoneLocking.qml:32
 msgid "Locking and unlocking"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:173
+#: ../plugins/security-privacy/PageComponent.qml:161
 #: ../plugins/security-privacy/SimPin.qml:37
 #: ../plugins/security-privacy/SimPin.qml:398
 msgid "SIM PIN"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:176
-#: ../plugins/security-privacy/PageComponent.qml:248
+#: ../plugins/security-privacy/PageComponent.qml:164
+#: ../plugins/security-privacy/PageComponent.qml:236
 msgid "On"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:187
+#: ../plugins/security-privacy/PageComponent.qml:175
 msgid "Encryption"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:197
+#: ../plugins/security-privacy/PageComponent.qml:185
 msgid ""
 "Encryption protects against access to phone data when the phone is connected "
 "to a PC or other device."
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:202
+#: ../plugins/security-privacy/PageComponent.qml:190
 msgid "Privacy"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:206
+#: ../plugins/security-privacy/PageComponent.qml:194
 msgid "Stats on welcome screen"
 msgstr ""
 
-#: ../plugins/security-privacy/PageComponent.qml:216
+#: ../plugins/security-privacy/PageComponent.qml:204
 msgid "Messages on welcome screen"
 msgstr ""
 
