@@ -48,9 +48,9 @@ public:
 BrightnessItem::BrightnessItem(const QVariantMap &staticData, QObject *parent):
     ItemBase(staticData, parent)
 {
-    QDBusInterface m_powerdIface ("com.canonical.powerd",
-                                  "/com/canonical/powerd",
-                                  "com.canonical.powerd",
+    QDBusInterface m_powerdIface ("com.lomiri.Repowerd",
+                                  "/com/lomiri/Repowerd",
+                                  "com.lomiri.Repowerd",
                                   QDBusConnection::systemBus());
 
     // Hide the plugin if powerd isn't running; it's currently redundant

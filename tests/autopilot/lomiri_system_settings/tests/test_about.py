@@ -137,8 +137,8 @@ class AboutSystemImageTestCase(AboutSystemImageBaseTestCase):
 
     def _get_system_image_iface(self):
         bus = self.get_dbus(system_bus=True)
-        service = bus.get_object('com.canonical.SystemImage', '/Service')
-        iface = dbus.Interface(service, 'com.canonical.SystemImage')
+        service = bus.get_object('com.ubports.SystemImage', '/Service')
+        iface = dbus.Interface(service, 'com.ubports.SystemImage')
         return iface.Info()
 
     def _get_last_updated_date(self):

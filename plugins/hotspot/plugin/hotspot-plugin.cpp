@@ -48,8 +48,8 @@ HotspotItem::HotspotItem(const QVariantMap &staticData, QObject *parent):
     qDBusRegisterMetaType<VersionDetail>();
 
     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-    if (env.contains(QLatin1String("USS_SHOW_ALL_UI"))) {
-        QString showAllS = env.value("USS_SHOW_ALL_UI", QString());
+    if (env.contains(QLatin1String("LSS_SHOW_ALL_UI"))) {
+        QString showAllS = env.value("LSS_SHOW_ALL_UI", QString());
 
         if(!showAllS.isEmpty()) {
             setVisibility(true);
@@ -60,9 +60,9 @@ HotspotItem::HotspotItem(const QVariantMap &staticData, QObject *parent):
     bool supportedDevice(false);
 
     // TODO: Remove check for mako (lp:1434591).
-    QDBusInterface m_SystemServiceIface("com.canonical.SystemImage",
+    QDBusInterface m_SystemServiceIface("com.ubports.SystemImage",
                                         "/Service",
-                                        "com.canonical.SystemImage",
+                                        "com.ubports.SystemImage",
                                         QDBusConnection::systemBus());
     QDBusPendingReply<QMap<QString, QString> > reply = m_SystemServiceIface.call("Information");
     reply.waitForFinished();
@@ -76,12 +76,12 @@ HotspotItem::HotspotItem(const QVariantMap &staticData, QObject *parent):
     }
 
     QDBusInterface m_NetStatusPropertiesIface(
-            "com.ubuntu.connectivity1",
-            "/com/ubuntu/connectivity1/NetworkingStatus",
+            "com.lomiri.connectivity1",
+            "/com/lomiri/connectivity1/NetworkingStatus",
             "org.freedesktop.DBus.Properties",
             QDBusConnection::sessionBus());
     QDBusPendingReply<QVariant> modemReply = m_NetStatusPropertiesIface.call(
-        "Get", "com.ubuntu.connectivity1.NetworkingStatus", "ModemAvailable");
+        "Get", "com.lomiri.connectivity1.NetworkingStatus", "ModemAvailable");
     modemReply.waitForFinished();
     if (modemReply.isValid()) {
         supportedDevice = modemReply.argumentAt<0>().toBool();

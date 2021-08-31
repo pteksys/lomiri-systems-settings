@@ -106,12 +106,12 @@ ItemPage {
     GSettings {
         id: settings
 
-        schema.id: "com.canonical.keyboard.maliit"
+        schema.id: "com.lomiri.keyboard.maliit"
     }
 
     GSettings {
-        id: unitySettings
-        schema.id: "com.canonical.Unity8"
+        id: lomiriSettings
+        schema.id: "com.lomiri.Shell"
     }
 
     Flickable {
@@ -148,13 +148,13 @@ ItemPage {
 
             ListItem.Standard {
                 text: i18n.tr("Enable on-screen keyboard")
-                visible: unitySettings.oskSwitchVisible || showAllUI
+                visible: lomiriSettings.oskSwitchVisible || showAllUI
 
                 control: Switch {
-                    property bool serverChecked: unitySettings.alwaysShowOsk
+                    property bool serverChecked: lomiriSettings.alwaysShowOsk
                     onServerCheckedChanged: checked = serverChecked
                     Component.onCompleted: checked = serverChecked
-                    onTriggered: unitySettings.alwaysShowOsk = checked
+                    onTriggered: lomiriSettings.alwaysShowOsk = checked
                 }
             }
 

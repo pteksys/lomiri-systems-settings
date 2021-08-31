@@ -35,7 +35,7 @@ ItemPage {
     GSettings {
         id: settings
 
-        schema.id: "com.canonical.keyboard.maliit"
+        schema.id: "com.lomiri.keyboard.maliit"
         
         onChanged: {
             var curIndex = themeModel.findIndex(function(data){return data.value === value})

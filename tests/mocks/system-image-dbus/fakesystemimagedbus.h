@@ -28,8 +28,8 @@
 #include <libqtdbusmock/DBusMock.h>
 #include <libqtdbustest/DBusTestRunner.h>
 
-#define SI_SERVICE "com.canonical.SystemImage"
-#define SI_IFACE "com.canonical.SystemImage"
+#define SI_SERVICE "com.ubports.SystemImage"
+#define SI_IFACE "com.ubports.SystemImage"
 #define SI_MAIN_OBJECT "/Service"
 
 // #define FREEDESKTOP_PROPERTIES_IFACE "org.freedesktop.DBus.Properties"

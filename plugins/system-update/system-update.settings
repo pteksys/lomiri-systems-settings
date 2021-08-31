@@ -18,6 +18,6 @@
     "has-dynamic-keywords": false,
     "has-dynamic-visibility": false,
     "page-component": "PageComponent.qml",
-    "visible-if-file-exists": "/usr/share/dbus-1/system-services/com.canonical.SystemImage.service"
+    "visible-if-file-exists": "/usr/share/dbus-1/system-services/com.ubports.SystemImage.service"
 }
 

@@ -57,9 +57,9 @@ const QDBusArgument &operator>>(const QDBusArgument &argument,
 Brightness::Brightness(QObject *parent) :
     QObject(parent),
     m_systemBusConnection (QDBusConnection::systemBus()),
-    m_powerdIface ("com.canonical.powerd",
-                   "/com/canonical/powerd",
-                   "com.canonical.powerd",
+    m_powerdIface ("com.lomiri.Repowerd",
+                   "/com/lomiri/Repowerd",
+                   "com.lomiri.Repowerd",
                    m_systemBusConnection),
     m_powerdRunning(false),
     m_autoBrightnessAvailable(false)

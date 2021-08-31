@@ -34,7 +34,7 @@ import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
 import Lomiri.Components.Themes.Ambiance 0.1
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 import "callForwardingUtils.js" as Utils
 
 ItemPage {

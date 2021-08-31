@@ -363,8 +363,8 @@ ItemPage {
             QDBusActionGroup {
                 id: networkActionGroup
                 busType: 1
-                busName: "com.canonical.indicator.network"
-                objectPath: "/com/canonical/indicator/network"
+                busName: "com.lomiri.indicator.network"
+                objectPath: "/com/lomiri/indicator/network"
                 property variant enabled: action("wifi.enable")
                 Component.onCompleted: start()
             }

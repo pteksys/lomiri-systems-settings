@@ -20,8 +20,8 @@
 #ifndef USS_DBUS_SHARED_H
 #define USS_DBUS_SHARED_H
 
-#define DBUS_AGENT_PATH "/com/canonical/SettingsBluetoothAgent"
-#define DBUS_ADAPTER_AGENT_PATH "/com/canonical/SettingsBluetoothAgent/adapteragent"
+#define DBUS_AGENT_PATH "/com/lomiri/SettingsBluetoothAgent"
+#define DBUS_ADAPTER_AGENT_PATH "/com/lomiri/SettingsBluetoothAgent/adapteragent"
 #define DBUS_AGENT_CAPABILITY "KeyboardDisplay"
 
 #define BLUEZ_SERVICE "org.bluez"

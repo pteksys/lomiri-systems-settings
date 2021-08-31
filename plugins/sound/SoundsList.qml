@@ -2,7 +2,7 @@ import GSettings 1.0
 import QtQuick 2.4
 import QtMultimedia 5.6
 import SystemSettings 1.0
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.SystemSettings.Sound 1.0

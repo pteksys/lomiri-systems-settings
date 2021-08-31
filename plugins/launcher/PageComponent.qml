@@ -76,8 +76,8 @@ ItemPage {
                 Switch {
                     id: alwaysShowLauncherSwitch
                     objectName: "alwaysShowLauncherSwitch"
-                    checked: !unity8Settings.autohideLauncher
-                    onTriggered: unity8Settings.autohideLauncher = !checked
+                    checked: !lomiriSettings.autohideLauncher
+                    onTriggered: lomiriSettings.autohideLauncher = !checked
                 }
             }
 
@@ -89,10 +89,10 @@ ItemPage {
                 function formatValue(v) { return v.toFixed(2) }
                 minimumValue: 6
                 maximumValue: 12
-                value: unity8Settings.launcherWidth
+                value: lomiriSettings.launcherWidth
                 live: true
 
-                property real serverValue: unity8Settings.launcherWidth
+                property real serverValue: lomiriSettings.launcherWidth
                 LSC.ServerPropertySynchroniser {
                     userTarget: iconWidth
                     userProperty: "value"
@@ -100,15 +100,15 @@ ItemPage {
                     serverProperty: "serverValue"
                     maximumWaitBufferInterval: 16
 
-                    onSyncTriggered: unity8Settings.launcherWidth = value
+                    onSyncTriggered: lomiriSettings.launcherWidth = value
                 }
             }
         }
     }
 
     GSettings {
-        id: unity8Settings
-        objectName: "unity8Settings"
-        schema.id: "com.canonical.Unity8"
+        id: lomiriSettings
+        objectName: "lomiriSettings"
+        schema.id: "com.lomiri.Shell"
     }
 }

@@ -63,7 +63,7 @@ NETREG_IFACE = 'org.ofono.NetworkRegistration'
 NETOP_IFACE = 'org.ofono.NetworkOperator'
 CALL_FWD_IFACE = 'org.ofono.CallForwarding'
 CALL_SETTINGS_IFACE = 'org.ofono.CallSettings'
-SYSTEM_IFACE = 'com.canonical.SystemImage'
+SYSTEM_IFACE = 'com.ubports.SystemImage'
 SYSTEM_SERVICE_OBJ = '/Service'
 LM_SERVICE = 'org.freedesktop.login1'
 LM_PATH = '/org/freedesktop/login1'
@@ -72,9 +72,9 @@ NM_SERVICE = 'org.freedesktop.NetworkManager'
 NM_PATH = '/org/freedesktop/NetworkManager'
 NM_IFACE = 'org.freedesktop.NetworkManager'
 NM_AC_CON_IFACE = 'org.freedesktop.NetworkManager.Connection.Active'
-CON_SERVICE = 'com.ubuntu.connectivity1'
-CON_PATH = '/com/ubuntu/connectivity1/Private'
-CON_IFACE = 'com.ubuntu.connectivity1.Private'
+CON_SERVICE = 'com.lomiri.connectivity1'
+CON_PATH = '/com/lomiri/connectivity1/Private'
+CON_IFACE = 'com.lomiri.connectivity1.Private'
 UPOWER_VERSION = str(UPowerGlib.MAJOR_VERSION)
 UPOWER_VERSION += '.' + str(UPowerGlib.MINOR_VERSION)
 
@@ -612,7 +612,7 @@ class BluetoothBaseTestCase(LomiriSystemSettingsTestCase):
 class PhoneOfonoBaseTestCase(LomiriSystemSettingsOfonoTestCase):
     def setUp(self):
         """ Go to Phone page """
-        self.useFixture(EnvironmentVariable("USS_SHOW_ALL_UI", "1"))
+        self.useFixture(EnvironmentVariable("LSS_SHOW_ALL_UI", "1"))
         super(PhoneOfonoBaseTestCase, self).setUp()
         self.phone_page = self.main_view.go_to_phone_page()
 

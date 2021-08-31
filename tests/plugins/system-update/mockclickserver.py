@@ -76,7 +76,7 @@ class Manager(object):
                     'content': {
                         "success": True,
                         "data": [{
-                            "id": "com.ubuntu.dropping-letters",
+                            "id": "com.ubports.dropping-letters",
                             "version": "0.1.2.3",
                             "icon": (
                                 "https://raw.githubusercontent.com/"
@@ -92,7 +92,7 @@ class Manager(object):
                             "changelog": "New Dropping Letters.",
                             "name": "Dropping Letters game"
                         }, {
-                            "id": "com.ubuntu.stock-ticker-mobile",
+                            "id": "com.ubports.stock-ticker-mobile",
                             "version": "0.4.0ubuntu1",
                             "icon": (
                                 "https://upload.wikimedia.org/wikipedia/"
@@ -108,7 +108,7 @@ class Manager(object):
                             "changelog": "Foo",
                             "name": "A stock trading app with charts, news, and management"  # noqa
                         }, {
-                            "id": "com.ubuntu.sudoku",
+                            "id": "com.ubports.sudoku",
                             "version": "0.4.2ubuntu3",
                             "icon": (
                                 "https://upload.wikimedia.org/wikipedia/"
@@ -124,7 +124,7 @@ class Manager(object):
                             "changelog": "Foo",
                             "name": "Sudoku game for Ubuntu devices"
                         }, {
-                            "id": "com.ubuntu.developer.xda-app",
+                            "id": "com.ubports.developer.xda-app",
                             "version": "0.4.2ubuntu2",
                             "download": "http://%s/download:%d" % (
                                 server_address,

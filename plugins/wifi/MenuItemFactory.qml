@@ -28,16 +28,14 @@ Item {
     property var model: null
 
     property var _map:  {
-        "unity.widgets.systemsettings.tablet.switch"        : switchMenu,
+        "lomiri.widgets.systemsettings.tablet.switch"        : switchMenu,
 
         "com.canonical.indicator.div"       : divMenu,
         "com.canonical.indicator.section"   : sectionMenu,
         "com.canonical.indicator.switch"    : switchMenu,
 
-        "com.canonical.unity.switch"    : switchMenu,
-
-        "unity.widgets.systemsettings.tablet.wifisection" : wifiSection,
-        "unity.widgets.systemsettings.tablet.accesspoint" : accessPoint,
+        "lomiri.widgets.systemsettings.tablet.wifisection" : wifiSection,
+        "lomiri.widgets.systemsettings.tablet.accesspoint" : accessPoint,
     }
 
     function getExtendedProperty(object, propertyName, defaultValue) {

@@ -47,11 +47,11 @@ class SystemImage:
         ses_bus = dbus.SessionBus(mainloop=gloop)
         self.loop = GLib.MainLoop()
         self.sysimg = dbus.Interface(
-            sys_bus.get_object("com.canonical.SystemImage", "/Service"),
-            dbus_interface="com.canonical.SystemImage")
+            sys_bus.get_object("com.ubports.SystemImage", "/Service"),
+            dbus_interface="com.ubports.SystemImage")
         self.postal = dbus.Interface(
-            ses_bus.get_object("com.ubuntu.Postal", "/com/ubuntu/Postal/_"),
-            dbus_interface="com.ubuntu.Postal")
+            ses_bus.get_object("com.lomiri.Postal", "/com/lomiri/Postal/_"),
+            dbus_interface="com.lomiri.Postal")
         self.notify = False
 
     def quit(self):

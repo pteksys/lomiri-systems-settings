@@ -93,12 +93,12 @@ void PluginManagerPrivate::reload()
         searchPaths.append(dir.entryInfoList());
     }
 
-    /* Use an environment variable USS_SHOW_ALL_UI to show unfinished / beta /
+    /* Use an environment variable LSS_SHOW_ALL_UI to show unfinished / beta /
      * deferred components or panels */
     bool showAll = false;
     QProcessEnvironment environment = QProcessEnvironment::systemEnvironment();
-    if (environment.contains(QLatin1String("USS_SHOW_ALL_UI"))) {
-        QString showAllS = environment.value("USS_SHOW_ALL_UI", QString());
+    if (environment.contains(QLatin1String("LSS_SHOW_ALL_UI"))) {
+        QString showAllS = environment.value("LSS_SHOW_ALL_UI", QString());
         showAll = !showAllS.isEmpty();
     }
 
