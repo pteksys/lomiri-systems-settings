@@ -126,7 +126,7 @@ Q_SIGNALS:
     void touchpadDisableWithMouseChanged();
 
 private:
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
 };
 
 #endif //MOUSE_H

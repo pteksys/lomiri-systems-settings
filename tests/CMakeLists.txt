@@ -57,7 +57,7 @@ add_executable(tst-systemimage
 add_test(tst-systemimage tst-systemimage)
 target_link_libraries(tst-systemimage
     Qt5::Core Qt5::DBus Qt5::Test
-    lss-systemimage
+    LomiriSystemSettingsPrivate
     ${QTDBUSMOCK_LIBRARIES}
     ${QTDBUSTEST_LIBRARIES}
 )

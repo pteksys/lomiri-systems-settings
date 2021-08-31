@@ -32,6 +32,8 @@
 #include <QDebug>
 #include <QtDBus>
 
+namespace LomiriSystemSettings {
+
 class QSystemImage : public QObject
 {
     Q_OBJECT
@@ -212,5 +214,7 @@ private:
     QString m_switchChannel;
     int m_switchBuild;
 };
+
+} // namespace
 
 #endif // QSYSTEMIMAGE_H

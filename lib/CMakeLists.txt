@@ -1,1 +1,2 @@
+add_subdirectory(LomiriSystemSettingsPrivate)
 add_subdirectory(LomiriSystemSettings)

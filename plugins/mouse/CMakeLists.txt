@@ -27,7 +27,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/Mouse)
 target_link_libraries (LomiriMousePanel
     Qt5::Qml Qt5::Quick Qt5::DBus
-    lss-accountsservice
+    LomiriSystemSettingsPrivate
     ${ACCOUNTSSERVICE_LDFLAGS}
     ${GOBJECT_LDFLAGS}
     ${GLIB_LDFLAGS}

@@ -1,3 +1,6 @@
-usr/include
+usr/include/LomiriSystemSettings/item-base.h
+usr/include/LomiriSystemSettings/ItemBase
+usr/include/LomiriSystemSettings/plugin-interface.h
+usr/include/LomiriSystemSettings/PluginInterface
 usr/lib/*/libLomiriSystemSettings.so
 usr/lib/*/pkgconfig/LomiriSystemSettings.pc

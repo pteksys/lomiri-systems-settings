@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-14 14:06+0000\n"
+"POT-Creation-Date: 2021-08-30 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+msgid "Can't cancel current request (can't contact service)"
+msgstr ""
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+msgid "Can't pause current request (can't contact service)"
+msgstr ""
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
+msgid "Unavailable"
+msgstr ""
 
 #: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
 msgid "Developer Mode"
@@ -3064,19 +3078,6 @@ msgstr ""
 
 #: ../src/qml/MainWindow.qml:251
 msgid "System"
-msgstr ""
-
-#: ../src/systemimage.cpp:231
-msgid "Can't cancel current request (can't contact service)"
-msgstr ""
-
-#: ../src/systemimage.cpp:244
-msgid "Can't pause current request (can't contact service)"
-msgstr ""
-
-#: ../src/systemimage.cpp:368 ../src/systemimage.cpp:374
-#: ../src/systemimage.cpp:380
-msgid "Unavailable"
 msgstr ""
 
 #: lomiri-system-settings.desktop.in.in.h:2

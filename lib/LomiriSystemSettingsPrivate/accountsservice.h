@@ -25,6 +25,8 @@
 #include <QStringList>
 #include <QtDBus/QDBusInterface>
 
+namespace LomiriSystemSettings {
+
 class AccountsService : public QObject
 {
     Q_OBJECT
@@ -60,5 +62,7 @@ private:
     void setUpInterface();
 
 };
+
+} // namespace
 
 #endif // ACCOUNTSSERVICE_H

@@ -13,7 +13,7 @@ add_library(LomiriResetPanel MODULE
   ${QML_SOURCES}
 )
 
-target_link_libraries(LomiriResetPanel Qt5::Qml Qt5::Quick Qt5::DBus lss-accountsservice)
+target_link_libraries(LomiriResetPanel Qt5::Qml Qt5::Quick Qt5::DBus LomiriSystemSettingsPrivate)
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/Reset)
 install(TARGETS LomiriResetPanel DESTINATION ${PLUG_DIR})

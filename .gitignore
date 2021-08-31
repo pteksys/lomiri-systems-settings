@@ -16,6 +16,8 @@ system-settings.pro.user
 /debian/files
 /debian/liblomirisystemsettings-dev/
 /debian/liblomirisystemsettings1/
+/debian/liblomirisystemsettingsprivate0/
+/debian/liblomirisystemsettingsprivate-dev/
 /debian/tmp/
 /debian/lomiri-system-settings/
 /debian/lomiri-system-settings-autopilot/

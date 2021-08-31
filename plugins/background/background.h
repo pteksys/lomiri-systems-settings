@@ -70,7 +70,7 @@ Q_SIGNALS:
     void systemArtChanged();
 
 private:
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
     QStringList m_systemArt;
     QStringList m_customBackgrounds;
     void updateCustomBackgrounds();
