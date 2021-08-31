@@ -34,7 +34,7 @@ static QObject *siSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
-    return new QSystemImage;
+    return new LomiriSystemSettings::QSystemImage;
 }
 
 static QObject *umSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
@@ -50,7 +50,7 @@ void BackendPlugin::registerTypes(const char *uri)
     qmlRegisterUncreatableType<Update>(
         uri, 1, 0, "Update", "Only provided for enums."
     );
-    qmlRegisterSingletonType<QSystemImage>(
+    qmlRegisterSingletonType<LomiriSystemSettings::QSystemImage>(
         uri, 1, 0, "SystemImage", siSingletonProvider
     );
     qmlRegisterSingletonType<UpdateManager>(

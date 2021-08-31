@@ -5,6 +5,7 @@ file(RELATIVE_PATH DESKTOP_FILE_IN_IN_H ${CMAKE_CURRENT_SOURCE_DIR}
      ${CMAKE_CURRENT_SOURCE_DIR}/${DESKTOP_FILE_IN_IN}.h)
 
 file(GLOB CPPFILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
+                   "${CMAKE_SOURCE_DIR}/lib/*/*.cpp"
                    "${CMAKE_SOURCE_DIR}/plugins/*/*.cpp"
                    "${CMAKE_SOURCE_DIR}/src/*.cpp"
                    "${CMAKE_SOURCE_DIR}/wizard/*.cpp")

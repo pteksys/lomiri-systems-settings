@@ -88,7 +88,7 @@ Q_SIGNALS:
     void customRingtonePathChanged();
 
 private:
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
     QDBusInterface m_usensordIface;
 
     QString getIncomingCallSound();

@@ -70,7 +70,7 @@ private:
     GnomeXkbInfo *m_xkbInfo;
     QList<KeyboardLayout *> m_keyboardLayouts;
     SubsetModel m_keyboardLayoutsModel;
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
     GSettings *m_sourcesSettings;
 };
 

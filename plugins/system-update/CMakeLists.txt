@@ -50,7 +50,7 @@ target_link_libraries(UpdatePlugin
     Qt5::Sql
 
     apt-pkg
-    lss-systemimage
+    LomiriSystemSettingsPrivate
 )
 
 add_library(LomiriUpdatePanel MODULE

@@ -48,7 +48,7 @@ private Q_SLOTS:
         m_methodSpy = new QSignalSpy(
             m_mock, SIGNAL(MethodCalled(const QString &, const QVariantList &))
         );
-        m_systemImage = new QSystemImage(*m_dbus);
+        m_systemImage = new LomiriSystemSettings::QSystemImage(*m_dbus);
 
         /* The following connections help us test DBus signals that are not
         mockable. See https://github.com/martinpitt/python-dbusmock/issues/23
@@ -272,7 +272,7 @@ private:
     QSignalSpy *m_methodSpy;
     FakeSystemImageDbus *m_siMock = nullptr;
     QDBusInterface *m_mock = nullptr;
-    QSystemImage *m_systemImage = nullptr;
+    LomiriSystemSettings::QSystemImage *m_systemImage = nullptr;
     QDBusConnection *m_dbus = nullptr;
 };
 

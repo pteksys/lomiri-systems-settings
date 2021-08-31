@@ -30,6 +30,8 @@
 #define AS_PATH "/org/freedesktop/Accounts"
 #define AS_IFACE "org.freedesktop.Accounts"
 
+namespace LomiriSystemSettings {
+
 AccountsService::AccountsService(QObject *parent)
     : QObject(parent),
       m_systemBusConnection(QDBusConnection::systemBus()),
@@ -157,3 +159,5 @@ bool AccountsService::customSetUserProperty(const QString &method,
     }
     return msg.type() == QDBusMessage::ReplyMessage;
 }
+
+} // namespace

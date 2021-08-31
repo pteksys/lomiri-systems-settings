@@ -55,7 +55,7 @@ Q_SIGNALS:
     void simNamesChanged();
 
 private:
-    AccountsService m_accountsService;
+    LomiriSystemSettings::AccountsService m_accountsService;
 
     QString getDefaultSimForCalls();
     void setDefaultSimForCalls(QString sim);
