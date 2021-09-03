@@ -119,8 +119,6 @@ msgstr "最終更新"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "繰り返さない"
@@ -273,7 +271,6 @@ msgstr "イメージを削除"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -490,7 +487,7 @@ msgid "Disconnected"
 msgstr "未接続"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "不明"
 
@@ -731,7 +728,6 @@ msgstr "%1に接続中にエラーが発生しました。"
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2332,276 +2328,6 @@ msgstr "カスタム着信音"
 msgid "Choose from"
 msgstr "選択："
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "バージョン %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "チャンネル設定"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "安定な"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "リリース検討版"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "開発"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "チャンネル情報取得中"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "アップデートチャンネルを選択:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "チャンネル切り替え中"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "自動ダウンロード"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "将来のアップデートを自動的にダウンロードする："
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Wi-Fi接続時"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "何らかのデータ通信接続時"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "通信料が発生する可能性があります。"
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "インストールに失敗しました"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-#, fuzzy
-msgid "There is a firmware update available!"
-msgstr "利用可能なアップデートが %1 件あります"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-#, fuzzy
-msgid "Firmware is up to date!"
-msgstr "ソフトウェアは最新です"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-#, fuzzy
-msgid "The device will restart automatically after installing is done."
-msgstr "システムアップデートをインストールするために端末を再起動してください。"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-#, fuzzy
-msgid "Install and restart now"
-msgstr "インストールして再起動"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-#, fuzzy
-msgid "Checking for firmware update"
-msgstr "アップデートの確認中…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "アップデートの確認中…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "停止"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "利用可能なアップデートが %1 件あります"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "すべて更新…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "すべて更新"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "システムをアップデート"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr "システムアップデートをインストールするために端末を再起動してください。"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-"システムアップデートをインストールする前に電話を電源に接続してください。"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "再起動してインストール"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "更新"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "アップデートを確認するにはインターネットに接続してください。"
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "ソフトウェアは最新です"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "サーバーの応答がありません。後ほどお試しください。"
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "利用可能なアップデートがあります"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "最新のアップデート"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "設定のアップデート"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr ""
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "再試行"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "更新"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "ダウンロード"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "続行"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "一時停止"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "インストール…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "インストール"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "開く"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "インストール中"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "一時停止中"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "ダウンロードを待機しています"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "ダウンロード中"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 / %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "ダウンロードが完了しました"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "インストール済み"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "アップデート中 %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "アップデートが失敗しました"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Wi-Fi接続時"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "常に"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "チャンネル"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "タイムゾーン"
@@ -3182,7 +2908,6 @@ msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3378,7 +3103,6 @@ msgstr "画面"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3597,7 +3321,6 @@ msgid "touch"
 msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr ""
@@ -3614,7 +3337,6 @@ msgstr "通知"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3872,32 +3594,6 @@ msgstr ""
 msgid "volume"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "システム"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "アップデート"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-#, fuzzy
-msgid "application"
-msgstr "位置情報"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr ""
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4013,195 +3709,3 @@ msgstr ""
 msgid "Tap to open the system updater."
 msgstr ""
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr ""
-#~ "アプリのアップデートを受信するにはUbuntu Oneにサインインしてください。"
-
-#~ msgid "Sign In…"
-#~ msgstr "サインイン…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "診断"
-
-#~ msgid "Sent"
-#~ msgstr "送信しました"
-
-#~ msgid "Not sent"
-#~ msgstr "送信しない"
-
-#~ msgid "Privacy policy"
-#~ msgstr "プライバシーポリシー"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "Canonicalに報告:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "アプリのクラッシュとエラー"
-
-#~ msgid "Previous error reports"
-#~ msgstr "以前のエラーレポート"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr "失敗した際にアプリが何を行っていたかの情報が含まれます。"
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "カメラへのアクセスを求めているアプリ"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "正確に位置を特定するにはGPSとWi-Fiが必要です。"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 分"
-
-#~ msgid "About this phone"
-#~ msgstr "端末情報"
-
-#~ msgid "Reset phone"
-#~ msgstr "電話のリセット"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "削除して全てリセット…"
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "%1件のアップデートをインストール..."
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "%1件のアップデートをインストール"
-
-#~ msgid "Pause All"
-#~ msgstr "すべて停止"
-
-#~ msgid "Version: "
-#~ msgstr "バージョン: "
-
-#~ msgid "Installing update…"
-#~ msgstr "アップデートをインストール中..."
-
-#~ msgid "Stop playing"
-#~ msgstr "停止"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "サイレントモードになっています。"
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "%1日前"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "応答できない時、もしくは通話中、圏外の時に着信した場合に別の番号へ転送しま"
-#~ "す。"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "キー（8文字以上必要です）"
-
-#~ msgid "Show key"
-#~ msgstr "キーを表示する"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "PINが違います。あと%1回試せます。"
-
-#~ msgid "Phone locking"
-#~ msgstr "画面のロック"
-
-#~ msgid "Lock phone"
-#~ msgstr "画面のロック"
-
-#~ msgid "Dash search"
-#~ msgstr "Dash検索"
-
-#~ msgid "Location access"
-#~ msgstr "位置情報へのアクセス"
-
-#~ msgid "Other app access"
-#~ msgstr "他アプリのアクセス"
-
-#~ msgid "Location detection"
-#~ msgstr "位置情報の検知"
-
-#~ msgid "Return results from:"
-#~ msgstr "次の結果を表示します："
-
-#~ msgid "Mic"
-#~ msgstr "マイク"
-
-#~ msgid "Phone number:"
-#~ msgstr "電話番号:"
-
-#~ msgid "Not Now"
-#~ msgstr "後で"
-
-#~ msgid " bytes"
-#~ msgstr " バイト"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "Wi-Fiがオフなのでデザリングを無効化しています"
-
-#~ msgid "Swipe"
-#~ msgstr "スワイプ"
-
-#~ msgid "No security"
-#~ msgstr "セキュリティなし"
-
-#~ msgid "Available networks…"
-#~ msgstr "利用可能なネットワーク…"
-
-#~ msgid "No available networks."
-#~ msgstr "利用可能なネットワークはありません。"
-
-#~ msgid "Skip"
-#~ msgstr "スキップ"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "利用規約"
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "パスフレーズが間違っています。"
-
-#~ msgid "Please try again."
-#~ msgstr "もう一度やり直してください。"
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "パスコードが間違っています。"
-
-#~ msgid "Nice work!"
-#~ msgstr "素晴らしい!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "電話が使えるようになりました。"
-
-#~ msgid "Finish"
-#~ msgstr "完了"
-
-#~ msgid "Hi!"
-#~ msgstr "やあ!"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "Ubuntu phoneにようこそ。"
-
-#~ msgid "Let’s get started."
-#~ msgstr "始めよう。"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

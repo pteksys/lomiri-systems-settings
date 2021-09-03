@@ -119,8 +119,6 @@ msgstr "Posljedna nadopuna"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nikada"
@@ -274,7 +272,6 @@ msgstr "Ukloni sliku"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -501,7 +498,7 @@ msgid "Disconnected"
 msgstr "Odspojen"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Nepoznato"
 
@@ -749,7 +746,6 @@ msgstr ""
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2342,290 +2338,6 @@ msgstr "Melodija"
 msgid "Choose from"
 msgstr "Odaberite operatera:"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, fuzzy, qt-format
-msgid "Version %1"
-msgstr "Inačica: "
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Stable"
-msgstr "Tablet"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Automatsko preuzimanje"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr ""
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-#, fuzzy
-msgid "There is a firmware update available!"
-msgstr "Svi dostupni rasporedi:"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-#, fuzzy
-msgid "Firmware is up to date!"
-msgstr "Softver je ažuran"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-#, fuzzy
-msgid "The device will restart automatically after installing is done."
-msgstr "Telefon se mora ponovno pokrenuti za instalaciju nadogradnje sustava."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-#, fuzzy
-msgid "Install and restart now"
-msgstr "Instaliraj i ponovno pokreni"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-#, fuzzy
-msgid "Checking for firmware update"
-msgstr "Provjera za nadopunama..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Provjera za nadopunama..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr ""
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, fuzzy, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "Svi dostupni rasporedi:"
-msgstr[1] "Svi dostupni rasporedi:"
-msgstr[2] "Svi dostupni rasporedi:"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-#, fuzzy
-msgid "Update all…"
-msgstr "Nadogradi"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-#, fuzzy
-msgid "Update all"
-msgstr "Nadogradi"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Nadogradi sustav"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-#, fuzzy
-msgid "The device needs to restart to install the system update."
-msgstr "Telefon se mora ponovno pokrenuti za instalaciju nadogradnje sustava."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-#, fuzzy
-msgid "Connect the device to power before installing the system update."
-msgstr "Telefon se mora ponovno pokrenuti za instalaciju nadogradnje sustava."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Nadogradnje"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Softver je ažuran"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-#, fuzzy
-msgid "Updates Available"
-msgstr "Svi dostupni rasporedi:"
-
-#: ../plugins/system-update/PageComponent.qml:311
-#, fuzzy
-msgid "Recent updates"
-msgstr "Potraži nadopune"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-#, fuzzy
-msgid "Update settings"
-msgstr "Postavke sustava"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr ""
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Pokušaj ponovo"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Nadogradi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Preuzmi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Nastavi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pauza"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Instaliraj"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Instalacija"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-#, fuzzy
-msgid "Paused"
-msgstr "Pauza"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-#, fuzzy
-msgid "Waiting to download"
-msgstr "Automatsko preuzimanje"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Preuzimanje"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-#, fuzzy
-msgid "Downloaded"
-msgstr "Preuzmi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Instalirano"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, fuzzy, qt-format
-msgid "Updated %1"
-msgstr "Nadogradi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-#, fuzzy
-msgid "Update failed"
-msgstr "Nadogradi"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Na bežičnoj mreži"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Uvijek"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-#, fuzzy
-msgid "Channels"
-msgstr "Promijeni"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Vremenska zona"
@@ -3211,7 +2923,6 @@ msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3407,7 +3118,6 @@ msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3625,7 +3335,6 @@ msgid "touch"
 msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr ""
@@ -3642,7 +3351,6 @@ msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3901,32 +3609,6 @@ msgstr ""
 msgid "volume"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-#, fuzzy
-msgid "application"
-msgstr "Lokacija"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr ""
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4041,78 +3723,3 @@ msgstr ""
 msgid "Tap to open the system updater."
 msgstr ""
 
-#~ msgid "Diagnostics"
-#~ msgstr "Dijagnostika"
-
-#~ msgid "Sent"
-#~ msgstr "Poslano"
-
-#~ msgid "Not sent"
-#~ msgstr "Nije poslano"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 minuta"
-#~ msgstr[1] "%1 minute"
-#~ msgstr[2] "%1 minuta"
-
-#~ msgid "About this phone"
-#~ msgstr "O telefonu"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "Obriši i ponovno postavi sve..."
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "Instalacija %1 nadogradnje..."
-#~ msgstr[1] "Instalacija %1 nadogradnje..."
-#~ msgstr[2] "Instalacija %1 nadogradnji..."
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "Instalacija %1 nadogradnje"
-#~ msgstr[1] "Instalacija %1 nadogradnje"
-#~ msgstr[2] "Instalacija %1 nadogradnji"
-
-#~ msgid "Pause All"
-#~ msgstr "Pauziraj sve"
-
-#~ msgid "Version: "
-#~ msgstr "Inačica: "
-
-#~ msgid "Stop playing"
-#~ msgstr "Zaustavi reprodukciju"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "Telefon je u tihom načinu"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "Preusmjeri poziv na drugi broj ako se ne javljate, vaš telefon je zauzet, "
-#~ "ugašen ili nije dostupan."
-
-#~ msgid "Show key"
-#~ msgstr "Prikaži ključ"
-
-#~ msgid "Mic"
-#~ msgstr "Mikrofon"
-
-#~ msgid "Not Now"
-#~ msgstr "Ne sada"
-
-#~ msgid " bytes"
-#~ msgstr " bajtova"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"

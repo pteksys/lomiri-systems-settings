@@ -110,8 +110,6 @@ msgstr "Dernière mise à jour"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Jamais"
@@ -241,7 +239,6 @@ msgstr "Titre inconnu"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
@@ -508,7 +505,7 @@ msgid "Disconnected"
 msgstr "Déconnecté"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Inconnu"
 
@@ -752,7 +749,6 @@ msgstr "Une erreur inconnue est survenue en se connectant à %1."
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/cellular/Components/SimEditor.qml:214
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "OK"
@@ -2542,279 +2538,6 @@ msgstr "Sonnerie personnalisée"
 msgid "Choose from"
 msgstr "Choisir à partir de"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "Version %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "Paramètres du canal"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Développement"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Candidate"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Stable"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "Recherche de canaux"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "Canal à partir duquel obtenir des mises à jour :"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "Changement de canal"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Téléchargement automatique"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Télécharger les futures mises à jour automatiquement :"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Lorsque connecté en Wi-Fi"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "Avec n'importe quelle connexion de données"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Des frais de connexion de données peuvent s'appliquer."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Échec de l'installation"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "Mise à jour du micrologiciel"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "Il y a une mise à jour de micrologiciel disponible!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "Le micrologiciel est à jour !"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr ""
-"L'appareil redémarrera automatiquement une fois que l'installation terminera."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "Installer et redémarrer maintenant"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-"Téléchargement et mise à jour du micrologiciel en cours, cela peut prendre "
-"quelques minutes..."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "Vérification de l'existence de mises à jour du micrologiciel"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Vérification des mises à jour…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "Arrêter"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 mise à jour disponible"
-msgstr[1] "%1 mises à jour disponibles"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "Tout mettre à jour…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "Tout mettre à jour"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Mettre à jour le système"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr ""
-"L'appareil nécessite un redémarrage pour installer la mise à jour du système."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-"Branchez l'appareil sur le secteur avant d'installer la mise à jour du "
-"système."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "Redémarrer et installer"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 settings.js:306
-msgid "Updates"
-msgstr "Mises à jour"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "Connectez-vous à Internet pour vérifier les mises à jour."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Le logiciel est à jour"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "Le serveur de mise à jour ne répond pas. Réessayez plus tard."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "Mises à jour disponibles"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "Mises à jour récentes"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "Paramètres de mise à jour"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "Réinstaller toutes les applications"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"Utiliser cela pour obtenir toutes les dernières applications, ce qui est "
-"nécessaire généralement après une mise à niveau majeure du système, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Réessayer"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Mise à jour"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Télécharger"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Reprendre"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pause"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Installation…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Installer"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "Ouvrir"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Installation en cours"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "En pause"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "En attente du téléchargement"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Téléchargement"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 sur %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "Téléchargé"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Installé"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "Mis à jour le %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "La mise à jour a échoué"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Sur Wi-Fi"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Tout le temps"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "Canaux"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Fuseau horaire"
@@ -3226,7 +2949,6 @@ msgstr "vérification orthographique"
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: settings.js:26 settings.js:206 settings.js:230 settings.js:318
 msgid "automatic"
 msgstr "automatique"
@@ -3506,7 +3228,6 @@ msgid "sample"
 msgstr "exemple"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #: settings.js:150 settings.js:310 settings.js:352
 msgid "software"
@@ -3519,7 +3240,6 @@ msgstr "notifications"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: settings.js:154 settings.js:304 settings.js:314
 msgid "apps"
 msgstr "applications"
@@ -3585,7 +3305,6 @@ msgid "touch"
 msgstr "toucher"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: settings.js:182 settings.js:324
 msgid "click"
 msgstr "click"
@@ -3781,31 +3500,6 @@ msgstr "rotation"
 #: settings.js:298
 msgid "orientation"
 msgstr "orientation"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: settings.js:308
-msgid "system"
-msgstr "système"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: settings.js:312
-msgid "update"
-msgstr "mise à jour"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: settings.js:316
-msgid "application"
-msgstr "application"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: settings.js:320
-msgid "download"
-msgstr "téléchargement"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: settings.js:322
-msgid "upgrade"
-msgstr "mise à niveau"
 
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: settings.js:326

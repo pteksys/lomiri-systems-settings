@@ -123,8 +123,6 @@ msgstr "Ùrtima atualizatzione"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Mai"
@@ -277,7 +275,6 @@ msgstr "Boga s'imàgine"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -506,7 +503,7 @@ msgid "Disconnected"
 msgstr "Disconnètidu"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Disconnotu"
 
@@ -747,7 +744,6 @@ msgstr "B'est istada una faddina disconnota connetende·si a %1."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2345,282 +2341,6 @@ msgstr "Tonu de mutida personalizadu"
 msgid "Choose from"
 msgstr "Sèbera intre"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "Versione %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "Cunfiguratzione de su canale"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Istàbile"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Versione candidada"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Modalidade de isvilupu"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "Recuperende is canales"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "Canale pro otènnere atualizatziones:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "Cambiende su canale"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Iscarrigamentu automàticu"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Iscàrriga atualizatziones imbenientes in automàticu:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Cando so impreende WiFi"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "Cun cale si siat connessione de datos"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Bi diant pòdere èssere ispesas de datos."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Faddina in s'installatzione"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "Atualizatzione firmware"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "%1 atualizatzione de firmware a disponimentu!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "Su firmware est atualizadu."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr ""
-"Su dispositivu s'at a torrare a aviare in automàticu a pustis de "
-"s'installatzione."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "Installa e torra a aviare immoe"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-"Iscarrighende e installende atualizatziones de firmware. Bi podet bòlere "
-"carchi minutu..."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "Controllende atualizatziones de firmware"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Controllende atualizatziones…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "Firma"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 atualizatzione a disponimentu"
-msgstr[1] "%1 atualizatziones a disponimentu"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "Atualiza totu…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "Atualiza totu"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Atualiza su sistema"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr ""
-"Su dispositivu depet èssere torradu a aviare pro installare s'atualizatzione "
-"de su sistema."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-"Connete su dispositivu a su carrigadore in antis de installare "
-"s'atualizatzione de su sistema."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "Torra a aviare e installa"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Atualizatziones"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "Connete·ti a internet pro chircare atualizatziones."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Programmas atualizados"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr ""
-"Su server de atualizatziones non rispondet. Torra·bi a proare a pustis."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "Atualizatziones a disponimentu"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "Atualizatziones reghentes"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "Cunfiguratzione de atualizatziones"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "Torra a installare totu is aplicatziones"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"Imprea custu pro atualizare totu is aplicatziones a pustis de "
-"un'atualizatzione importante de sistema, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Torra·bi a proare"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Atualiza"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Iscàrriga"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Sighi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pàusa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Installa…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Installa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "Aberi"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Installende"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "In pàusa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "Isetende s'iscarrigamentu"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Iscarrighende"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 de %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "Iscarrigadu"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Installadu"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "Atualizadu su %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "Faddina in s'atualizatzione"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Cando impreo WiFi"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Semper"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "Canales"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Fusu oràriu"
@@ -3195,7 +2915,6 @@ msgstr "isvilupu"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3391,7 +3110,6 @@ msgstr "ischermu"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3607,7 +3325,6 @@ msgid "touch"
 msgstr "toca"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "clic"
@@ -3624,7 +3341,6 @@ msgstr "notìficas"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3881,31 +3597,6 @@ msgstr "messàgiu"
 msgid "volume"
 msgstr "volùmene"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "sistema"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "atualiza"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "aplicatzione"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "iscàrriga"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "atualiza"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4023,35 +3714,3 @@ msgstr "B'est un'atualizatzione de sistema disponìbile."
 msgid "Tap to open the system updater."
 msgstr "Toca pro abrire s'atualizadore de sistema."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr ""
-#~ "Identìfica·ti in Ubuntu One pro retzire atualizatziones de aplicatziones."
-
-#~ msgid "Sign In…"
-#~ msgstr "Identìfica·ti…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "Diagnòsticos"
-
-#~ msgid "Sent"
-#~ msgstr "Imbiadu"
-
-#~ msgid "Not sent"
-#~ msgstr "Non nd'imbies"
-
-#~ msgid "Privacy policy"
-#~ msgstr "Normativa de riservadesa"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "Signala a Canonical:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "Blocus de aplicatzione e faddinas"
-
-#~ msgid "Previous error reports"
-#~ msgstr "Signalatziones de faddinas pretzedentes"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr ""
-#~ "Includet informatziones subra ite fiat faghende s'aplicatzione cando "
-#~ "b'est istada sa faddina."

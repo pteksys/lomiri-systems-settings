@@ -121,8 +121,6 @@ msgstr "上次更新"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "永不"
@@ -275,7 +273,6 @@ msgstr "移除圖像"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -492,7 +489,7 @@ msgid "Disconnected"
 msgstr "已斷線"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "未知"
 
@@ -733,7 +730,6 @@ msgstr "連線到 %1 時出現未知錯誤。"
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2282,270 +2278,6 @@ msgstr "自訂鈴聲"
 msgid "Choose from"
 msgstr "選擇來自"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "版本 %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "通道設定"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "穩定"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "RC"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "開發"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "獲取通道"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "獲取更新通道來自:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "切換通道"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "自動下載"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "自動下載將來的更新："
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "當有 Wi-Fi 時"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "當有任何數據連接時"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "可能連線時需要數據費用。"
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "安裝失敗"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "固件更新"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "有可用的固件更新！"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "固件已經是最新了！"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr "安裝完成後，裝置將自動重新啟動。"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "立即安裝並重新啟動"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr "正在下載和刷入固件更新，這可能需要幾分鐘…"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "正在檢查固件是否有更新"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "正在檢查是否有更新…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "停止"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 有可用的更新"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "全部更新…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "全部更新"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "更新系統"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr "裝置需要重新啟動才能安裝系統更新。"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr "進行系統更新前，請先將裝置接上電源。"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "重新啟動並安裝"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "更新"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "請連接到網際網路以檢查更新。"
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "軟體已處於最新狀態"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "更新伺服器並沒有回應，請稍後再試。"
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "有可用的更新"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "最近更新"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "更新設定"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "重新安裝所有應用程式"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr "使用它來獲取所有最新的應用程式，通常是在重大系統升級後所需要的， "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "重試"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "更新"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "下載"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "恢復"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "暫停"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "安裝…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "安裝"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "開啟"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "安裝中"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "已暫停"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "正在等待下載"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "下載中"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 / %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "已下載"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "已安裝"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "已更新 %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "更新失敗"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "有 Wi-Fi 的時後"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "總是"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "通道"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "時區"
@@ -3115,7 +2847,6 @@ msgstr "開發人員"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3311,7 +3042,6 @@ msgstr "螢幕"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3527,7 +3257,6 @@ msgid "touch"
 msgstr "觸控"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "點擊"
@@ -3544,7 +3273,6 @@ msgstr "通知"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3801,31 +3529,6 @@ msgstr "訊息"
 msgid "volume"
 msgstr "音量"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "系統"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "更新"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "應用程式"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "下載"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "升級"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -3939,266 +3642,3 @@ msgstr "有更新的系統映像。"
 msgid "Tap to open the system updater."
 msgstr "按一下來打開系統更新程式。"
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr "登入Ubuntu One 以接收應用程式更新。"
-
-#~ msgid "Sign In…"
-#~ msgstr "登入…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "診斷"
-
-#~ msgid "Sent"
-#~ msgstr "已送出"
-
-#~ msgid "Not sent"
-#~ msgstr "不傳送"
-
-#~ msgid "Privacy policy"
-#~ msgstr "隱私政策"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "回報給 Canonical："
-
-#~ msgid "App crashes and errors"
-#~ msgstr "應用程式崩潰或錯誤"
-
-#~ msgid "Previous error reports"
-#~ msgstr "之前的錯誤報告"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr "包含程式出錯時正在處理的相關資訊。"
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "要求使用攝影機的程式："
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "要準確偵測位置需要 GPS 和/或 Wi-Fi。"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 分鐘"
-
-#~ msgid "About this phone"
-#~ msgstr "關於此手機"
-
-#~ msgid "Reset phone"
-#~ msgstr "重設手機"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "抹除並重置全部設定…"
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "很抱歉，系統更新失敗。"
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "安裝 %1 項更新…"
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "安裝 %1 項更新"
-
-#~ msgid "Pause All"
-#~ msgstr "全部暫停"
-
-#~ msgid "Version: "
-#~ msgstr "版本： "
-
-#~ msgid "Installing update…"
-#~ msgstr "正在安裝更新…"
-
-#~ msgid "Stop playing"
-#~ msgstr "停止播放"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "手機處於無聲模式。"
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "%1 天前"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr "當無法接聽、忙線、關機或接收不到信號時，將手機轉接給另一個號碼。"
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "正在搜尋電信商…"
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "自訂網際網路存取點名稱…"
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "和網際網路相同的存取點名稱"
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "自訂 MMS 存取點名稱…"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "自訂 %1 存取點名稱"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "按鍵 (須最少 8 個字元)"
-
-#~ msgid "Show key"
-#~ msgstr "顯示金鑰"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "PIN 碼錯誤。尚餘 %1 次重試機會。"
-
-#~ msgid "Phone locking"
-#~ msgstr "手機鎖定"
-
-#~ msgid "Lock phone"
-#~ msgstr "鎖住手機"
-
-#~ msgid "Dash search"
-#~ msgstr "Dash 搜尋"
-
-#~ msgid "Location access"
-#~ msgstr "位置存取"
-
-#~ msgid "Other app access"
-#~ msgstr "其他程式存取"
-
-#~ msgid "Location detection"
-#~ msgstr "位置偵測"
-
-#~ msgid "Return results from:"
-#~ msgstr "傳回此處的結果："
-
-#~ msgid "Mic"
-#~ msgstr "麥克風"
-
-#~ msgid "Phone number:"
-#~ msgstr "電話號碼："
-
-#~ msgid "Not Now"
-#~ msgstr "現在還不要"
-
-#~ msgid " bytes"
-#~ msgstr " bytes"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "因 Wi-Fi 關閉，熱點已同時停用。"
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "請選擇您想要如何解鎖您的手機。"
-
-#~ msgid "Swipe"
-#~ msgstr "滑開"
-
-#~ msgid "No security"
-#~ msgstr "不安全"
-
-#~ msgid "4 numbers"
-#~ msgstr "4 位數字"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "數字及字母"
-
-#~ msgid "Available networks…"
-#~ msgstr "可用網路…"
-
-#~ msgid "No available networks."
-#~ msgstr "無可用網路。"
-
-#~ msgid "Skip"
-#~ msgstr "略過"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "條款與細則"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "選擇您的通關碼"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "密語須為 4 字元"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "沒有它，您便無法撥打電話、或傳簡訊等。"
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "抱歉，密語不對。"
-
-#~ msgid "Please try again."
-#~ msgstr "請重試。"
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "抱歉，通關碼不對。"
-
-#~ msgid "All done"
-#~ msgstr "全部完成"
-
-#~ msgid "Nice work!"
-#~ msgstr "漂亮！"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "您的手機已準備就緒。"
-
-#~ msgid "Finish"
-#~ msgstr "完成"
-
-#~ msgid "Hi!"
-#~ msgstr "嗨！"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "歡迎使用您的 Ubuntu 手機！"
-
-#~ msgid "Let’s get started."
-#~ msgstr "讓我們開始吧。"
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr "Ubuntu 包含 HERE 提供的定位服務，啟用程式可判斷您的所在位置。"
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr "允許程式使用您的行動網路與 Wi-Fi 來判斷您的位置。"
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr "接受 HERE <a href='terms.qml'>使用條款與細則</a>來啟用相關服務。"
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr "此服務可隨時在<b>系統設定</b>選單停用。"
-
-#~ msgid "Improving your experience"
-#~ msgstr "改善您的使用體驗"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "您的手機已設置為會自動向 Canonical 及其合作夥伴 (作業系統的製作者) 回報錯"
-#~ "誤問題。"
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr "這可隨時在<b>系統設定</b>的<b>安全與隱私</b>中停用"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

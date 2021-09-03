@@ -119,8 +119,6 @@ msgstr ""
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Pas jamai"
@@ -274,7 +272,6 @@ msgstr "Suprimir l'imatge"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -497,7 +494,7 @@ msgid "Disconnected"
 msgstr "Desconnectat"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Desconegut"
 
@@ -743,7 +740,6 @@ msgstr ""
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2321,284 +2317,6 @@ msgstr "Sonariá"
 msgid "Choose from"
 msgstr ""
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, fuzzy, qt-format
-msgid "Version %1"
-msgstr "Version : "
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Stable"
-msgstr "Tauleta"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Development"
-msgstr "desvolopaire"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr ""
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "L'installacion a fracassat"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-#, fuzzy
-msgid "There is a firmware update available!"
-msgstr "Mesas a jorn disponiblas"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-#, fuzzy
-msgid "Checking for firmware update"
-msgstr "Verificacion de las mesas a jorn..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Verificacion de las mesas a jorn..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr ""
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, fuzzy, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "Mesas a jorn disponiblas"
-msgstr[1] "Mesas a jorn disponiblas"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-#, fuzzy
-msgid "Update all…"
-msgstr "Mesas a jorn disponiblas"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-#, fuzzy
-msgid "Update all"
-msgstr "Metre a jorn"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr ""
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr ""
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Mesas a jorn"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-#, fuzzy
-msgid "Updates Available"
-msgstr "Mesas a jorn disponiblas"
-
-#: ../plugins/system-update/PageComponent.qml:311
-#, fuzzy
-msgid "Recent updates"
-msgstr "Verificar se i a de mesas a jorn"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-#, fuzzy
-msgid "Update settings"
-msgstr "Paramètres del sistèma"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr ""
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Tornar ensajar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Metre a jorn"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Telecargar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Contunhar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pausa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Installar…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Installar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Installacion en cors"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-#, fuzzy
-msgid "Paused"
-msgstr "Pausa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Telecargament en cors"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 sus %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-#, fuzzy
-msgid "Downloaded"
-msgstr "Telecargar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Installat"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, fuzzy, qt-format
-msgid "Updated %1"
-msgstr "Metre a jorn"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-#, fuzzy
-msgid "Update failed"
-msgstr "Mesas a jorn disponiblas"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr ""
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Totjorn"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-#, fuzzy
-msgid "Channels"
-msgstr "Modificar"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Fus orari"
@@ -3186,7 +2904,6 @@ msgstr "desvolopaire"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3382,7 +3099,6 @@ msgstr "ecran"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3601,7 +3317,6 @@ msgid "touch"
 msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "clicar"
@@ -3618,7 +3333,6 @@ msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3879,32 +3593,6 @@ msgstr "messatge"
 msgid "volume"
 msgstr "volum"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "sistèma"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "metre a jorn"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-#, fuzzy
-msgid "application"
-msgstr "Emplaçament"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "telecargar"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "metre a jorn"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4021,75 +3709,3 @@ msgstr ""
 msgid "Tap to open the system updater."
 msgstr ""
 
-#~ msgid "Diagnostics"
-#~ msgstr "Diagnostics"
-
-#~ msgid "Sent"
-#~ msgstr "Mandat"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 minuta"
-#~ msgstr[1] "%1 minutas"
-
-#~ msgid "Pause All"
-#~ msgstr "Tot metre en pausa"
-
-#~ msgid "Version: "
-#~ msgstr "Version : "
-
-#~ msgid "Stop playing"
-#~ msgstr "Arrestar la lectura"
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "fa %1 jorn"
-#~ msgstr[1] "fan %1 jorns"
-
-#~ msgid "Show key"
-#~ msgstr "Visualizar la clau"
-
-#~ msgid "Location detection"
-#~ msgstr "Deteccion de la posicion"
-
-#~ msgid "Phone number:"
-#~ msgstr "Numèro de telefòn :"
-
-#~ msgid "Not Now"
-#~ msgstr "Pas ara"
-
-#~ msgid " bytes"
-#~ msgstr " octets"
-
-#~ msgid " KiB"
-#~ msgstr " Kio"
-
-#~ msgid " MiB"
-#~ msgstr " Mio"
-
-#~ msgid " GiB"
-#~ msgstr " Gio"
-
-#~ msgid "Skip"
-#~ msgstr "Passar"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "Condicions generalas d'utilizacion"
-
-#~ msgid "Please try again."
-#~ msgstr "Tornatz ensajar."
-
-#~ msgid "Finish"
-#~ msgstr "Acabar"
-
-#~ msgid "Hi!"
-#~ msgstr "Adiu !"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

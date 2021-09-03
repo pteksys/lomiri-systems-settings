@@ -123,8 +123,6 @@ msgstr "Zuletzt Aktualisiert"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nie"
@@ -277,7 +275,6 @@ msgstr "Bild entfernen"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -505,7 +502,7 @@ msgid "Disconnected"
 msgstr "Getrennt"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Unbekannt"
 
@@ -747,7 +744,6 @@ msgstr "Beim Verbinden mit %1 trat ein unerwarteter Fehler auf."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2336,276 +2332,6 @@ msgstr "Eigener Klingelton"
 msgid "Choose from"
 msgstr "Wählen Sie"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "Version %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "Kanal Einstellungen"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Stabil"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Release-Kandidat"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Entwicklung"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "Kanäle werden abgefragt"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "Kanal für Aktualisierungen:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "Kanal wechseln"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Automatisch herunterladen"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Aktualisierungen automatisch herunterladen:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Bei WLAN-Verbindung"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "Bei jeder Datenverbindung"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Bei Datenverbindungen können Gebühren anfallen."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Installation fehlgeschlagen"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "Firmware-Upgrade"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "Eine Firmware-Aktualisierung ist verfügbar!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "Die Software ist aktuell!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr "Das Gerät startet nach der Installation automatisch neu."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "Jetzt installieren & neustarten"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-"Download und Ausführen der Firmware-Updates, das könnte ein paar Minuten "
-"dauern..."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "Firmware-Aktualisierungen werden gesucht"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Aktualisierungen werden gesucht …"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "Stopp"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 Aktualisierung verfügbar"
-msgstr[1] "%1 Aktualisierungen verfügbar"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "Alle aktualisieren…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "Alle aktualisieren"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "System aktualisieren"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr ""
-"Ein Neustart ist notwendig, um die Systemaktualisierung zu installieren."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr "Bitte vor der Systemaktualisierung das Gerät am Strom anschließen."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "Neustarten & Installieren"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Aktualisierungen"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "Bitte mit dem Internet verbinden, um nach Aktualisierungen zu suchen."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Die Software ist aktuell"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "Der Update Server antwortet nicht. Bitte später noch einmal probieren."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "Aktualisierungen verfügbar"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "Kürzliche Updates"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "Aktualisierungseinstellungen"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "Alle Apps neu installieren"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"Hiermit lassen sich alle Apps aktualisieren, typischerweise nach einer "
-"größeren Systemaktualisierung, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Wiederholen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Aktualisieren"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Herunterladen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Fortsetzen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pause"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Installieren…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Installieren"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "Öffnen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Wird installiert"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "Pausiert"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "Warten aufs Herunterladen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Lädt herunter"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 von %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "Heruntergeladen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Installiert"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "Aktualisiert am %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "Aktualisierungen fehlgeschlagen"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Bei WLAN"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Immer"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "Kanäle"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Zeitzone"
@@ -3178,7 +2904,6 @@ msgstr "Entwickler"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3374,7 +3099,6 @@ msgstr "Bildschirm"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3590,7 +3314,6 @@ msgid "touch"
 msgstr "touch"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "Klick"
@@ -3607,7 +3330,6 @@ msgstr "Benachrichtigungen"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3864,31 +3586,6 @@ msgstr "Nachricht"
 msgid "volume"
 msgstr "Lautstärke"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "System"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "Aktualisierung"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "Anwendung"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "Herunterladen"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "aktualisieren"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4003,288 +3700,3 @@ msgstr "Es gibt eine Systemaktualisierung."
 msgid "Tap to open the system updater."
 msgstr "Antippen, um die Systemaktualisierung zu starten."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr ""
-#~ "Bei Ubuntu One anmelden, um Aktualisierungen für Anwendungen zu erhalten."
-
-#~ msgid "Sign In…"
-#~ msgstr "Anmelden…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "Fehlerdiagnose"
-
-#~ msgid "Sent"
-#~ msgstr "Gesendet"
-
-#~ msgid "Not sent"
-#~ msgstr "Nicht senden"
-
-#~ msgid "Privacy policy"
-#~ msgstr "Datenschutz"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "An Canonical melden:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "App-Abstürze und Fehler"
-
-#~ msgid "Previous error reports"
-#~ msgstr "Vorhergehende Fehlerberichte"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr "Enthält Informationen über den Zustand der App zur Fehlerzeit."
-
-#~ msgid "In-App Purchases"
-#~ msgstr "In-App Einkäufe"
-
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "Apps, die Zugriff auf In-Appkäufe angefordert haben"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "Eine präzise Positionsbestimmung erfordert GPS und/oder WLAN."
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 Minute"
-#~ msgstr[1] "%1 Minuten"
-
-#~ msgid "About this phone"
-#~ msgstr "Info zu diesem Gerät"
-
-#~ msgid "Reset phone"
-#~ msgstr "Telefon zurücksetzen"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "Alles löschen und zurücksetzen"
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "Die Systemaktualisierung ist fehlgeschlagen."
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "%1 Aktualisierung installieren …"
-#~ msgstr[1] "%1 Aktualisierungen installieren …"
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "%1 Aktualisierung installieren"
-#~ msgstr[1] "%1 Aktualisierungen installieren"
-
-#~ msgid "Pause All"
-#~ msgstr "Alle anhalten"
-
-#~ msgid "Version: "
-#~ msgstr "Version: "
-
-#~ msgid "Installing update…"
-#~ msgstr "Aktualisierung wird installiert …"
-
-#~ msgid "Stop playing"
-#~ msgstr "Wiedergabe anhalten"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "Das Telefon ist im Stumm-Modus."
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "Vor %1 Tag"
-#~ msgstr[1] "Vor %1 Tagen"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "Leitet Anrufe zu einer anderen Nummer, wenn Sie nicht an Ihr Telefon "
-#~ "gehen, es besetzt ist, ausgeschaltet ist oder keinen Empfang hat."
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "Netzsuche …"
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "Benutzerdefinierter Internetzugangspunkt …"
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "Derselbe Zugangspunkt wie für das Internet"
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "Benutzerdefinierter MMS-Zugangspunkt …"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "Benutzerdefinierter %1-Zugangspunkt"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "Schlüssel (mindestens 8 Zeichen)"
-
-#~ msgid "Show key"
-#~ msgstr "Schlüssel anzeigen"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "Falsche PIN. Noch %1 Versuche."
-
-#~ msgid "Phone locking"
-#~ msgstr "Telefon wird gesperrt"
-
-#~ msgid "Lock phone"
-#~ msgstr "Telefon sperren"
-
-#~ msgid "Dash search"
-#~ msgstr "Dash-Suche"
-
-#~ msgid "Location access"
-#~ msgstr "Standortzugriff"
-
-#~ msgid "Other app access"
-#~ msgstr "Andere Zugriffe der Anwendung"
-
-#~ msgid "Location detection"
-#~ msgstr "Standortbestimmung"
-
-#~ msgid "Return results from:"
-#~ msgstr "Zeige Ergebnisse von:"
-
-#~ msgid "Mic"
-#~ msgstr "Mikrofon"
-
-#~ msgid "Phone number:"
-#~ msgstr "Telefonnummer:"
-
-#~ msgid "Not Now"
-#~ msgstr "Nicht jetzt"
-
-#~ msgid " bytes"
-#~ msgstr " Bytes"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "Hotspot nicht verfügbar, WLAN ist ausgeschaltet."
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "Bitte wählen Sie aus, wie Sie Ihr Telefon entsperren wollen."
-
-#~ msgid "Swipe"
-#~ msgstr "Wischen"
-
-#~ msgid "No security"
-#~ msgstr "Keine Sicherheitssperre"
-
-#~ msgid "4 numbers"
-#~ msgstr "4 Ziffern"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "Ziffern und Buchstaben"
-
-#~ msgid "Available networks…"
-#~ msgstr "Verfügbare Netzwerke …"
-
-#~ msgid "No available networks."
-#~ msgstr "Keine verfügbaren Netzwerke."
-
-#~ msgid "Skip"
-#~ msgstr "Überspringen"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "Nutzungsbedingungen"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "Wähle Sie Ihre PIN"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "Passphrase muss aus 4 Buchstaben bestehen"
-
-#~ msgid "Add a SIM card and restart your device"
-#~ msgstr "SIM-Karte einlegen und Gerät neustarten"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "Ohne SIM funktionieren Anrufe und Nachrichten nicht."
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "Falsche Passphrase."
-
-#~ msgid "Please try again."
-#~ msgstr "Bitte versuchen Sie es erneut."
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "Entschuldigung, falsche PIN."
-
-#~ msgid "All done"
-#~ msgstr "Alles erledigt."
-
-#~ msgid "Nice work!"
-#~ msgstr "Gute Arbeit!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "Ihr Telefon ist nun einsatzbereit."
-
-#~ msgid "Finish"
-#~ msgstr "Beenden"
-
-#~ msgid "Hi!"
-#~ msgstr "Hallo"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "Willkommen zum Ubuntu-Telefon."
-
-#~ msgid "Let’s get started."
-#~ msgstr "Fangen wir an!"
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr ""
-#~ "Ubuntu verwendet von HERE bereitgestellte Standortdienste, die "
-#~ "Anwendungen ermöglichen Ihren Standort genau zu bestimmen."
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr ""
-#~ "Erlaube Anwendungen, Ihre Mobilfunk- und Funknetzwerke zu verwenden, um "
-#~ "Ihren Standort zu bestimmen."
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr ""
-#~ "Akzeptiere die HERE <a href='terms.qml'>Nutzungsbedingungen</a>, um diese "
-#~ "Dienste zu aktivieren."
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr ""
-#~ "Dieser Dienst kann jederzeit in den <b>Systemeinstellungen</b> "
-#~ "deaktiviert werden."
-
-#~ msgid "Improving your experience"
-#~ msgstr "Verbessert Ihre Erfahrung mit diesem Produkt"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "Ihr Telefon ist so eingestellt, dass es automatisch Fehlerberichte an "
-#~ "Canonical und seine Partner, die Hersteller des Betriebssystems, sendet."
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr ""
-#~ "Dies kann in den <b>Systemeinstellungen</b> unter <b>Sicherheit &amp; "
-#~ "Datenschutz</b> deaktiviert werden."
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

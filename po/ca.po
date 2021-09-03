@@ -124,8 +124,6 @@ msgstr "Darrera actualització"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Mai"
@@ -278,7 +276,6 @@ msgstr "Suprmeix la imatge"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -507,7 +504,7 @@ msgid "Disconnected"
 msgstr "Desconnectat"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Desconegut"
 
@@ -748,7 +745,6 @@ msgstr "S'ha produït un error desconegut quan s'estava connectant a %1."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2341,278 +2337,6 @@ msgstr "To de trucada personalitzat"
 msgid "Choose from"
 msgstr "Trieu entre"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "Versió %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "Paràmetres dels canals"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Estable"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Versió candidata"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Desenvolupament"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "S'estan obtenint els canals"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "Canal del qual obtenir les actualitzacions:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "S'està canviant el canal"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Baixada automàtica"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Descarrega les actualitzacions futures automàticament:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Quan s'utilitzi una connexió a la xarxa sense fil"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "En qualsevol connexió de dades"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Poden haver-hi despeses de dades."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Ha fallat la instal·lació"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "Actualitzar «firmware»"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "Hi ha una actualització de «firmware» disponible!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "El «firmware» està actualitzat!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr "El dispositiu es reiniciarà automàticament després de la instal·lació."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "Instal·la i reinicia ara"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-"S'estan baixant i instal·lant actualitzacions de microprogramari, això pot "
-"trigar uns quants minuts..."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "S'està comprovant l'actualització del firmware"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "S'estan comprovant les actualitzacions…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "Atura"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 actualització disponible"
-msgstr[1] "%1 actualitzacions disponibles"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "Actualitza-ho tot…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "Actualitza-ho tot"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Actualitza el sistema"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr ""
-"Cal reiniciar el dispositiu per instal·lar l'actualització del sistema."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-"Connecteu el dispositiu al carregador abans d'instal·lar l'actualització del "
-"sistema."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "Reinicia i instal·la-la"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Actualitzacions"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "Connecteu-vos a Internet per comprovar si hi ha actualitzacions."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "El programari està actualitzat"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "El servidor d'actualitzacions no respon. Torneu a provar més tard."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "Actualitzacions disponibles"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "Actualitzacions recents"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "Paràmetres de les actualitzacions"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "Reinstal·la totes les apps"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"Utilitzeu això per obtenir les últimes aplicacions, normalment necessàries "
-"després d'una actualització important del sistema, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Torna-ho a provar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Actualitza"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Baixa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Continua"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Pausa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Instal·la…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Instal·la"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "Obre"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "S'està instal·lant"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "En pausa"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "S'està esperant per descarregar"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "S'està baixant"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 de %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "Descarregat"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Instal·lat"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "Actualitzat el %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "Ha fallat l'actualització"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "En connexió a la xarxa sense fil"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Sempre"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "Canals"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Fus horari"
@@ -3187,7 +2911,6 @@ msgstr "desenvolupament"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3383,7 +3106,6 @@ msgstr "pantalla"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3599,7 +3321,6 @@ msgid "touch"
 msgstr "toqueu"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "click"
@@ -3616,7 +3337,6 @@ msgstr "notificacions"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3873,31 +3593,6 @@ msgstr "missatge"
 msgid "volume"
 msgstr "volum"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "sistema"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "actualitza"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "aplicació"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "baixades"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "actualitza"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4014,292 +3709,3 @@ msgstr "Hi ha una actualització de la imatge del sistema."
 msgid "Tap to open the system updater."
 msgstr "Feu un toc per obrir l'actualitzador del sistema."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr "Entra a l'Ubuntu One per rebre actualitzacions d'aplicacions."
-
-#~ msgid "Sign In…"
-#~ msgstr "Entra…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "Diagnosis"
-
-#~ msgid "Sent"
-#~ msgstr "Enviat"
-
-#~ msgid "Not sent"
-#~ msgstr "No n'enviïs"
-
-#~ msgid "Privacy policy"
-#~ msgstr "Política de privadesa"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "Envia informes a Canonical:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "Fallades d'aplicacions i errors"
-
-#~ msgid "Previous error reports"
-#~ msgstr "Informes d'error anteriors"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr ""
-#~ "Inclou informació sobre el què estava fent una aplicació quan fa fallar."
-
-#~ msgid "In-App Purchases"
-#~ msgstr "Compres a l'aplicació"
-
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "Aplicacions que han sol·licitat accés a compres a l'aplicació"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr ""
-#~ "Cal el GPS i/o la connexió a la xarxa sense fil per detectar la ubicació "
-#~ "amb precisió."
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 minut"
-#~ msgstr[1] "%1 minuts"
-
-#~ msgid "About this phone"
-#~ msgstr "Quant a aquest telèfon"
-
-#~ msgid "Reset phone"
-#~ msgstr "Reinicialitza el telèfon"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "Suprimeix i reinicialitza-ho tot…"
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "Ha fallat l'actualització del sistema."
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "Instal·la %1 actualització…"
-#~ msgstr[1] "Instal·la %1 actualitzacions…"
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "Instal·la %1 actualització"
-#~ msgstr[1] "Instal·la %1 actualitzacions"
-
-#~ msgid "Pause All"
-#~ msgstr "Posa-ho tot en pausa"
-
-#~ msgid "Version: "
-#~ msgstr "Versió: "
-
-#~ msgid "Installing update…"
-#~ msgstr "S'està instal·lant l'actualització…"
-
-#~ msgid "Stop playing"
-#~ msgstr "Atura la reproducció"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "El telèfon està en mode silenci"
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "Fa %1 dia"
-#~ msgstr[1] "Fa %1 dies"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "Reenvia les trucades de telèfon a un altre número sempre que no "
-#~ "contesteu, o el vostre telèfon estigui comunicant, o fora de cobertura."
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "S'estan cercant operadors..."
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "APN per a Internet personalitzat…"
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "El mateix APN que per a Internet"
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "APN per a MMS personalitzat…"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "APN personalitzat per a %1"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "Clau (cal que tingui 8 o més caràcters)"
-
-#~ msgid "Show key"
-#~ msgstr "Mostra la clau"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "Codi PIN incorrecte. Manquen %1 intents."
-
-#~ msgid "Phone locking"
-#~ msgstr "Bloqueig del telèfon"
-
-#~ msgid "Lock phone"
-#~ msgstr "Bloqueja el telèfon"
-
-#~ msgid "Dash search"
-#~ msgstr "Cerca al tauler"
-
-#~ msgid "Location access"
-#~ msgstr "Accés a la ubicació"
-
-#~ msgid "Other app access"
-#~ msgstr "Accés d'altres aplicacions"
-
-#~ msgid "Location detection"
-#~ msgstr "Detecció de la ubicació"
-
-#~ msgid "Return results from:"
-#~ msgstr "Torna resultats de:"
-
-#~ msgid "Mic"
-#~ msgstr "Micròfon"
-
-#~ msgid "Phone number:"
-#~ msgstr "Número de telèfon:"
-
-#~ msgid "Not Now"
-#~ msgstr "Ara no"
-
-#~ msgid " bytes"
-#~ msgstr " bytes"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr ""
-#~ "S'ha inhabilitat el punt d'accés Wi-Fi perquè la xarxa sense fil està "
-#~ "inactiva."
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "Seleccioneu com voleu desblocar el telèfon."
-
-#~ msgid "Swipe"
-#~ msgstr "Lliscament amb el dit"
-
-#~ msgid "No security"
-#~ msgstr "Sense seguretat"
-
-#~ msgid "4 numbers"
-#~ msgstr "Quatre números"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "Números i lletres"
-
-#~ msgid "Available networks…"
-#~ msgstr "Xarxes disponibles..."
-
-#~ msgid "No available networks."
-#~ msgstr "No hi ha xarxes disponibles"
-
-#~ msgid "Skip"
-#~ msgstr "Omet"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "Condicions generals"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "Trieu el codi d'accés"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "La contrasenya ha de tenir 4 caràcters com a mínim"
-
-#~ msgid "Add a SIM card and restart your device"
-#~ msgstr "Afegiu una targeta SIM i reinicieu el dispositiu"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "Sense ella, no podreu fer trucades o enviar missatges de text."
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "La contrasenya és incorrecta"
-
-#~ msgid "Please try again."
-#~ msgstr "Torneu-ho a intentar."
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "El codi d'accés no és correcte"
-
-#~ msgid "All done"
-#~ msgstr "Tot fet"
-
-#~ msgid "Nice work!"
-#~ msgstr "Bona feina!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "Ja podeu utilitzar el vostre telèfon."
-
-#~ msgid "Finish"
-#~ msgstr "Finalitza"
-
-#~ msgid "Hi!"
-#~ msgstr "Hola!"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "Us donem la benvinguda al vostre telèfon Ubuntu."
-
-#~ msgid "Let’s get started."
-#~ msgstr "Comencem."
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr ""
-#~ "L'Ubuntu inclou serveis d'ubicació proporcionats per HERE, els quals "
-#~ "permeten determinar la vostra ubicació."
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr ""
-#~ "Permet que les aplicacions utilitzin la xarxa mòbil i la Wi-fi per "
-#~ "determinar la meva posició."
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr ""
-#~ "Accepta les <a href='terms.qml'>condicions generals</a> de HERE per "
-#~ "habilitar aquests serveis."
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr ""
-#~ "Aquest servei es pot inhabilitar en qualsevol moment des del menú de "
-#~ "<b>Configuració del sistema</b>."
-
-#~ msgid "Improving your experience"
-#~ msgstr "Millora de l'experiència"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "Aquest telèfon està configurat per enviar errors de manera automàtica a "
-#~ "Canonical i associats, els creadors del sistema operatiu."
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr ""
-#~ "Podeu inhabilitar-ho a <b>Configuració del sistema</b>, a la secció "
-#~ "<b>Seguretat i privadesa</b>"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

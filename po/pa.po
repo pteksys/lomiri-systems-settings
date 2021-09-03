@@ -122,8 +122,6 @@ msgstr "ਆਖਰੀ ਅੱਪਡੇਟ ਹੋਇਆ"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "ਕਦੇ ਨਹੀਂ"
@@ -278,7 +276,6 @@ msgstr "ਤਸਵੀਰ ਹਟਾਓ"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -508,7 +505,7 @@ msgid "Disconnected"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
@@ -759,7 +756,6 @@ msgstr ""
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2409,291 +2405,6 @@ msgstr "ਰਿੰਗਟੋਨ"
 msgid "Choose from"
 msgstr "ਵਾਹਕ ਚੁਣੋ:"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, fuzzy, qt-format
-msgid "Version %1"
-msgstr "ਵਰਜਨ: "
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Stable"
-msgstr "ਟੈਬਲੇਟ"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Development"
-msgstr "ਡਿਵੈਲਪਰ ਮੋਡ"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "ਸਵੈ ਡਾਊਨਲੋਡ"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "ਭਵਿੱਖ ਦੀਆਂ ਅੱਪਡੇਟਾਂ ਆਪਣੇ ਆਪ ਡਾਊਨਲੋਡ ਕਰੋ:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "ਜਦੋਂ ਵਾਈ-ਫ਼ਾਈ ਹੋਵੇ"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "ਜਾਂ ਕਿਸੇ ਡਾਟਾ ਕੁਨੈਕਸ਼ਨ ਤੇ"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "ਡਾਟਾ ਦਰਾਂ ਲਾਗੂ ਹੋ ਸਕਦੀਆਂ ਹਨ।"
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋਈ"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-#, fuzzy
-msgid "There is a firmware update available!"
-msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-#, fuzzy
-msgid "Firmware is up to date!"
-msgstr "ਸਾਫ਼ਟਵੇਅਰ ਬਿਲਕੁੱਲ ਨਵਾਂ ਹੈ"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-#, fuzzy
-msgid "The device will restart automatically after installing is done."
-msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫ਼ੋਨ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-#, fuzzy
-msgid "Install and restart now"
-msgstr "ਇੰਸਟਾਲ ਅਤੇ ਮੁੜ-ਚਾਲੂ"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-#, fuzzy
-msgid "Checking for firmware update"
-msgstr "ਅੱਪਡੇਟਾਂ ਦੀ ਪੜਤਾਲ ਕਰ ਰਿਹਾ..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "ਅੱਪਡੇਟਾਂ ਦੀ ਪੜਤਾਲ ਕਰ ਰਿਹਾ..."
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr ""
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, fuzzy, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-msgstr[1] "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-#, fuzzy
-msgid "Update all…"
-msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-#, fuzzy
-msgid "Update all"
-msgstr "ਅੱਪਡੇਟ"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਕਰੋ"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-#, fuzzy
-msgid "The device needs to restart to install the system update."
-msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫ਼ੋਨ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-#, fuzzy
-msgid "Connect the device to power before installing the system update."
-msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਫ਼ੋਨ ਨੂੰ ਪਾਵਰ ਨਾਲ ਕੁਨੇਕਟ ਕਰੋ।"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "ਅੱਪਡੇਟਾਂ"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-#, fuzzy
-msgid "Connect to the Internet to check for updates."
-msgstr "ਅੱਪਡੇਟਾਂ ਦੀ ਪੜਤਾਲ ਲਈ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕੁਨੇਕਟ ਕਰੋ"
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "ਸਾਫ਼ਟਵੇਅਰ ਬਿਲਕੁੱਲ ਨਵਾਂ ਹੈ"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-#, fuzzy
-msgid "Updates Available"
-msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/system-update/PageComponent.qml:311
-#, fuzzy
-msgid "Recent updates"
-msgstr "ਅੱਪਡੇਟ ਲਈ ਪੜਤਾਲ ਕਰੋ"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-#, fuzzy
-msgid "Update settings"
-msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr ""
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "ਮੁੜ-ਕੋਸ਼ਿਸ਼"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "ਅੱਪਡੇਟ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "ਡਾਊਨਲੋਡ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "ਮੁੜ-ਸ਼ੁਰੂ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "ਵਿਰਾਮ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "ਇੰਸਟਾਲ..."
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "ਇੰਸਟਾਲ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "ਇੰਸਟਾਲ ਕਰ ਰਿਹਾ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-#, fuzzy
-msgid "Paused"
-msgstr "ਵਿਰਾਮ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-#, fuzzy
-msgid "Waiting to download"
-msgstr "ਸਵੈ ਡਾਊਨਲੋਡ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "ਡਾਊਨਲੋਡ ਕਰ ਰਿਹਾ"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%2 ਵਿੱਚੋਂ %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-#, fuzzy
-msgid "Downloaded"
-msgstr "ਡਾਊਨਲੋਡ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "ਇੰਸਟਾਲ ਹੋਇਆ"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, fuzzy, qt-format
-msgid "Updated %1"
-msgstr "ਅੱਪਡੇਟ"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-#, fuzzy
-msgid "Update failed"
-msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "ਵਾਈ-ਫ਼ਾਈ ਤੇ"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "ਸਦਾ"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-#, fuzzy
-msgid "Channels"
-msgstr "ਬਦਲੋ"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "ਸਮਾਂ ਖੇਤਰ"
@@ -3287,7 +2998,6 @@ msgstr "ਡਿਵੈਲਪਰ"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3483,7 +3193,6 @@ msgstr "ਸਕਰੀਨ"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3703,7 +3412,6 @@ msgid "touch"
 msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "ਕਲਿੱਕ"
@@ -3720,7 +3428,6 @@ msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3982,32 +3689,6 @@ msgstr "ਸੁਨੇਹਾ"
 msgid "volume"
 msgstr "ਅਵਾਜ਼"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "ਸਿਸਟਮ"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "ਅੱਪਡੇਟ ਕਰੋ"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-#, fuzzy
-msgid "application"
-msgstr "ਵੱਡੇ ਅੱਖਰ"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "ਡਾਊਨਲੋਡ"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "ਅੱਪਗਰੇਡ"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4124,278 +3805,3 @@ msgstr "ਇਹ ਇੱਕ ਅੱਪਡੇਟ ਕੀਤੀ ਸਿਸਟਮ ਈਮ�
 msgid "Tap to open the system updater."
 msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟਰ ਖੋਲ੍ਹਣ ਲਈ ਛੂਹੋ"
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr "ਐਪਾਂ ਲਈ ਅੱਪਡੇਟਾਂ ਲੈਣ ਲਈ ਉਬੰਤੂ ਵਨ ਤੇ ਸਾਈਨ ਇਨ ਕਰੋ।"
-
-#~ msgid "Sign In…"
-#~ msgstr "ਸਾਈਨ ਇਨ..."
-
-#~ msgid "Diagnostics"
-#~ msgstr "ਜਾਂਚ-ਪੜਤਾਲ"
-
-#~ msgid "Sent"
-#~ msgstr "ਭੇਜਿਆ"
-
-#~ msgid "Not sent"
-#~ msgstr "ਨਹੀਂ ਭੇਜਿਆ"
-
-#~ msgid "Privacy policy"
-#~ msgstr "ਪਰਦੇਦਾਰੀ ਨੀਤੀ"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "ਕੈਨੋਨੀਕਲ ਨੂੰ ਸੂਚਨਾ ਦਿਓ:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "ਐਪ ਕਰੈਸ਼ ਅਤੇ ਖਾਮੀਆਂ"
-
-#~ msgid "Previous error reports"
-#~ msgstr "ਪਿਛਲੀਆਂ ਖਾਮੀ ਸੂਚਨਾਵਾਂ"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr "ਐਪ ਕੀ ਕਰ ਰਹੀ ਸੀ ਜਦੋਂ ਇਹ ਫ਼ੇਲ੍ਹ ਹੋਈ ਬਾਰੇ ਇੰਫ਼ੋ ਸ਼ਾਮਲ"
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "ਐਪ ਜਿਹਨਾਂ ਨੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਲਈ ਪਹੁੰਚ ਦੀ ਬੇਨਤੀ ਕੀਤੀ"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "ਸਹੀ ਸਥਿਤੀ ਖੋਜਣ ਲਈ GPS ਅਤੇ/ਜਾਂ ਵਾਈ-ਫ਼ਾਈ ਦੀ ਲੋੜ।"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 ਮਿੰਟ"
-#~ msgstr[1] "%1 ਮਿੰਟਾਂ"
-
-#~ msgid "About this phone"
-#~ msgstr "ਇਸ ਫ਼ੋਨ ਬਾਰੇ"
-
-#~ msgid "Reset phone"
-#~ msgstr "ਫੋਨ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "ਹਰੇਕ ਚੀਜ਼ ਸਾਫ਼ ਕਰੋ ਤੇ ਮੁੜ-ਸੈੱਟ ਕਰੋ..."
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "ਮੁਆਫ਼ੀ, ਸਿਸਟਮ ਅੱਪਡੇਟ ਫ਼ੇਲ੍ਹ ਹੋਈ।"
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "%1 ਅੱਪਡੇਟ ਇੰਸਟਾਲ..."
-#~ msgstr[1] "%1 ਅੱਪਡੇਟਾਂ ਇੰਸਟਾਲ..."
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "%1 ਅੱਪਡੇਟ ਇੰਸਟਾਲ"
-#~ msgstr[1] "%1 ਅੱਪਡੇਟਾਂ ਇੰਸਟਾਲ"
-
-#~ msgid "Pause All"
-#~ msgstr "ਸਾਰਿਆਂ ਤੇ ਵਿਰਾਮ ਲਗਾਓ"
-
-#~ msgid "Version: "
-#~ msgstr "ਵਰਜਨ: "
-
-#~ msgid "Installing update…"
-#~ msgstr "ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰ ਰਿਹਾ..."
-
-#~ msgid "Stop playing"
-#~ msgstr "ਚੱਲਣਾ ਰੋਕੋ"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "ਫ਼ੋਨ ਚੁੱਪ ਮੋਡ ਵਿੱਚ ਹੈ।"
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "%1 ਦਿਨ ਪਹਿਲਾਂ"
-#~ msgstr[1] "%1 ਦਿਨਾਂ ਪਹਿਲਾਂ"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "ਫ਼ੋਨ ਕਾਲਾਂ ਨੂੰ ਦੂਜੇ ਨੰਬਰ ਤੇ ਭੇਜਦਾ ਜਦੋਂ ਤੁਸੀਂ ਜਵਾਬ ਨਹੀਂ ਦਿੰਦੇ, ਜਾਂ ਤੁਸੀਂ ਰੁਝੇ ਹੋ, ਬੰਦ ਜਾਂ ਪਹੁੰਚ ਤੋਂ "
-#~ "ਬਾਹਰ ਹੋਵੋ।"
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "ਵਾਹਕ ਖੋਜ ਰਿਹਾ..."
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "ਪਸੰਦੀਦਾ ਇੰਟਰਨੈੱਟ APN..."
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "ਓਹੀ APN ਜੋ ਇੰਟਰਨੈੱਟ ਲਈ"
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "ਪਸੰਦੀਦਾ MMS APN…"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "ਪਸੰਦੀਦਾ %1 APN"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "ਕੁੰਜੀ (8 ਅੱਖਰ ਜਾਂ ਜਿਆਦਾ ਹੋਣ)"
-
-#~ msgid "Show key"
-#~ msgstr "ਕੁੰਜੀ ਵਿਖਾਓ"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "ਗਲਤ ਪਿਨ। %1 ਕੋਸ਼ਿਸਾਂ ਬਾਕੀ।"
-
-#~ msgid "Phone locking"
-#~ msgstr "ਫ਼ੋਨ ਲਾਕਿੰਗ"
-
-#~ msgid "Lock phone"
-#~ msgstr "ਫ਼ੋਨ ਲਾਕ ਕਰੋ"
-
-#~ msgid "Dash search"
-#~ msgstr "ਡੈਸ ਖੋਜ"
-
-#~ msgid "Location access"
-#~ msgstr "ਸਥਿਤੀ ਪਹੁੰਚ"
-
-#~ msgid "Other app access"
-#~ msgstr "ਹੋਰ ਐਪ ਪਹੁੰਚ"
-
-#~ msgid "Location detection"
-#~ msgstr "ਟਿਕਾਣਾ ਖੋਜ"
-
-#~ msgid "Return results from:"
-#~ msgstr "ਤੋਂ ਵਾਪਸ ਮਿਲੇ ਨਤੀਜੇ:"
-
-#~ msgid "Mic"
-#~ msgstr "ਮਾਈਕ"
-
-#~ msgid "Phone number:"
-#~ msgstr "ਫੋਨ ਨੰਬਰ:"
-
-#~ msgid "Not Now"
-#~ msgstr "ਹੁਣੇ ਨਹੀਂ"
-
-#~ msgid " bytes"
-#~ msgstr " ਬਾਈਟਾਂ"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "ਹਾਟਸਪਾਟ ਅਯੋਗ ਕਿਉਂਕਿ ਵਾਈ-ਫ਼ਾਈ ਬੰਦ ਹੈ।"
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਕਿਸ ਤਰ੍ਹਾਂ ਅਣ-ਲਾਕ ਕਰਨਾ ਪਸੰਦ ਕਰੋਗੇ।"
-
-#~ msgid "Swipe"
-#~ msgstr "ਖਿੱਚੋ"
-
-#~ msgid "No security"
-#~ msgstr "ਸੁਰੱਖਿਆ ਨਹੀਂ"
-
-#~ msgid "4 numbers"
-#~ msgstr "4 ਨੰਬਰਾਂ"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "ਨੰਬਰਾਂ ਅਤੇ ਅੱਖਰਾਂ"
-
-#~ msgid "Available networks…"
-#~ msgstr "ਮੌਜੂਦ ਨੈੱਟਵਰਕ..."
-
-#~ msgid "No available networks."
-#~ msgstr "ਕੋਈ ਨੈੱਟਵਰਕ ਮੌਜੂਦ ਨਹੀਂ।"
-
-#~ msgid "Skip"
-#~ msgstr "ਛੱਡੋ"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "ਆਪਣਾ ਪਾਸਕੋਡ ਚੁਣੋ"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "ਵਾਕ 4 ਅੱਖਰ ਜਿੰਨ੍ਹਾ ਵੱਡਾ ਹੋਣਾ ਚਾਹੀਦਾ"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "ਇਸ ਤੋਂ ਬਿਨਾਂ, ਤੁਸੀਂ ਨਾ ਹੀ ਕਾਲਾਂ ਕਰ ਜਾਂ ਸੁਨੇਹੇ ਨਹੀਂ ਭੇਜ ਸਕੋਗੇ।"
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "ਮੁਆਫ਼ੀ, ਗਲਤ ਵਾਕ।"
-
-#~ msgid "Please try again."
-#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ।"
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "ਮੁਆਫ਼ੀ, ਗਲਤ ਪਾਸਕੋਡ।"
-
-#~ msgid "All done"
-#~ msgstr "ਸੱਭ ਮੁਕੰਮਲ"
-
-#~ msgid "Nice work!"
-#~ msgstr "ਚੰਗਾ ਕੰਮ!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "ਤੁਹਾਡਾ ਫ਼ੋਨ ਹੁਣ ਵਰਤੋਂ ਲਈ ਤਿਆਰ ਹੈ।"
-
-#~ msgid "Finish"
-#~ msgstr "ਖ਼ਤਮ"
-
-#~ msgid "Hi!"
-#~ msgstr "ਹੈਲੋ!"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "ਉਬੰਤੂ ਫ਼ੋਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਜੀ ਆਇਆ ਨੂੰ।"
-
-#~ msgid "Let’s get started."
-#~ msgstr "ਚਲੋ ਸ਼ੁਰੂ ਕਰੀਏ।"
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr ""
-#~ "ਉਬੰਤੂ ਵਿੱਚ ਸ਼ਾਮਲ ਸਥਿਤੀ ਸੇਵਾਵਾਂ HERE ਵੱਲੋਂ ਮੁੱਹਈਆ ਕਰਵਾਈਆਂ ਹਨ, ਤੁਹਾਡੀ ਸਥਿਤੀ ਜਾਨਣ ਲਈ ਐਪਾਂ "
-#~ "ਨੂੰ ਚਾਲੂ ਕਰ ਰਿਹਾ।"
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr ""
-#~ "ਤੁਹਾਡੀ ਸਥਿਤੀ ਦਾ ਪਤਾ ਲਗਾਉਣ ਲਈ ਐਪਾਂ ਨੂੰ ਤੁਹਾਡੇ ਮੋਬਾਈਲ ਜਾਂ ਵਾਈ-ਫ਼ਾਈ ਨੈੱਟਵਰਕਾਂ ਨੂੰ ਵਰਤਣ ਦੀ "
-#~ "ਪ੍ਰਵਾਨਗੀ ਦਿਓ।"
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr ""
-#~ "ਇਹਨਾਂ ਸੇਵਾਵਾਂ ਨੂੰ ਚਾਲੂ ਕਰਨ ਲਈ HERE <a href='terms.qml'>ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ</a> ਮਨਜ਼ੂਰ ਕਰੋ।"
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr "ਇਹ ਸੇਵਾ ਕਿਸੇ ਵੀ ਸਮੇਂ  <b>ਸਿਸਟਮ ਸੈਟਿੰਗ</b> ਮੀਨੂੰ ਤੋਂ ਬੰਦ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"
-
-#~ msgid "Improving your experience"
-#~ msgstr "ਤੁਹਾਡਾ ਅਨੁਭਵ ਵਧਾ ਰਿਹਾ"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "ਫ਼ੋਨ ਨੂੰ ਕੈਨੋਨੀਕਲ ਅਤੇ ਉਸਦੇ ਸਾਥੀਆਂ, ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੇ ਨਿਰਮਾਤਾਵਾਂ ਨੂੰ ਆਪਣੇ ਆਪ ਖਾਮੀ ਸੂਚਨਾਵਾਂ "
-#~ "ਭੇਜਣ ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ ਹੈ।"
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr ""
-#~ "ਇਸ ਨੂੰ  <b>ਸਿਸਟਮ ਸੈਟਿੰਗ</b> ਅਧੀਨ <b>ਸੁਰੱਖਿਆ &amp; ਪਰਦੇਦਾਰੀ</b>ਵਿੱਚ ਬੰਦ ਕੀਤਾ ਜਾ ਸਕਦਾ"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

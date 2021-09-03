@@ -27,9 +27,6 @@ add_subdirectory(reset)
 # Additional deps: trust-store
 # add_subdirectory(security-privacy)
 add_subdirectory(sound)
-# TODO(Ratchanan): separate the plugin to an independent package
-# Additional deps: lomiri-download-manager
-# add_subdirectory(system-update)
 add_subdirectory(time-date)
 add_subdirectory(vpn)
 add_subdirectory(wifi)

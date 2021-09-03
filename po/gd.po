@@ -127,8 +127,6 @@ msgstr "Ùrachadh mu dheireadh"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Cha robh gin"
@@ -283,7 +281,6 @@ msgstr "Thoir an dealbh air falbh"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -528,7 +525,7 @@ msgid "Disconnected"
 msgstr "Air a dhì-cheangal"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Neo-aithnichte"
 
@@ -781,7 +778,6 @@ msgstr ""
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2461,297 +2457,6 @@ msgstr "Fuaim seirme"
 msgid "Choose from"
 msgstr "Tagh giùlanair:"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, fuzzy, qt-format
-msgid "Version %1"
-msgstr "Tionndadh: "
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Stable"
-msgstr "Tablaid"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-#, fuzzy
-msgid "Development"
-msgstr "Modh an luchd-leasachaidh"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr ""
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr ""
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Luchdadh a-nuas fèin-obrachail"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Luchdaich a-nuas ùrachaidhean gu fèin-obrachail o seo a-mach:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Air WiFi"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "Air ceangal dàta sam bith"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Dh'fhaoidte gun èirich cosgaisean dàta."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Dh'fhàillig an stàladh"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-#, fuzzy
-msgid "There is a firmware update available!"
-msgstr "Tha ùrachaidhean ri fhaighinn"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-#, fuzzy
-msgid "Firmware is up to date!"
-msgstr "Tha am bathar-bog cho ùr 's a ghabhas"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-#, fuzzy
-msgid "The device will restart automatically after installing is done."
-msgstr ""
-"Feumaidh am fòn tòiseachadh as ùr gus ùrachadh an t-siostaim a chur an sàs."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-#, fuzzy
-msgid "Install and restart now"
-msgstr "Stàlaich ⁊ ath-thòisich"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-#, fuzzy
-msgid "Checking for firmware update"
-msgstr "A' lorg ùrachaidhean…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "A' lorg ùrachaidhean…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr ""
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, fuzzy, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "Tha ùrachaidhean ri fhaighinn"
-msgstr[1] "Tha ùrachaidhean ri fhaighinn"
-msgstr[2] "Tha ùrachaidhean ri fhaighinn"
-msgstr[3] "Tha ùrachaidhean ri fhaighinn"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-#, fuzzy
-msgid "Update all…"
-msgstr "Tha ùrachaidhean ri fhaighinn"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-#, fuzzy
-msgid "Update all"
-msgstr "Ùraich"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Ùraich an siostam"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-#, fuzzy
-msgid "The device needs to restart to install the system update."
-msgstr ""
-"Feumaidh am fòn tòiseachadh as ùr gus ùrachadh an t-siostaim a chur an sàs."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-#, fuzzy
-msgid "Connect the device to power before installing the system update."
-msgstr ""
-"Ceangail am fòn ris a' chumhachd mus tòisich thu air ùrachadh an t-siostaim "
-"a stàladh."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Ùrachaidhean"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-#, fuzzy
-msgid "Connect to the Internet to check for updates."
-msgstr "Ceangail ris an eadar-lìon gus sùil a thoirt airson ùrachaidhean"
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Tha am bathar-bog cho ùr 's a ghabhas"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr ""
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-#, fuzzy
-msgid "Updates Available"
-msgstr "Tha ùrachaidhean ri fhaighinn"
-
-#: ../plugins/system-update/PageComponent.qml:311
-#, fuzzy
-msgid "Recent updates"
-msgstr "Thoir sùil airson ùrachaidhean"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-#, fuzzy
-msgid "Update settings"
-msgstr "Roghainnean an t-siostaim"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr ""
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Feuch ris a-rithist"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Ùraich"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Luchdaich a-nuas"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Lean air"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Cuir 'na stad"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Stàlaich…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Stàlaich"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr ""
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "'Ga stàladh"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-#, fuzzy
-msgid "Paused"
-msgstr "Cuir 'na stad"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-#, fuzzy
-msgid "Waiting to download"
-msgstr "Luchdadh a-nuas fèin-obrachail"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "'Ga luchdadh a-nuas"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 à %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-#, fuzzy
-msgid "Downloaded"
-msgstr "Luchdaich a-nuas"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Air a stàladh"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, fuzzy, qt-format
-msgid "Updated %1"
-msgstr "Ùraich"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-#, fuzzy
-msgid "Update failed"
-msgstr "Tha ùrachaidhean ri fhaighinn"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Air WiFi"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "An-còmhnaidh"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-#, fuzzy
-msgid "Channels"
-msgstr "Atharraich"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Roinn-tìde"
@@ -3350,7 +3055,6 @@ msgstr "developer;leasaichear;luchd-leasachaidh;neach-leasachaidh"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3546,7 +3250,6 @@ msgstr "screen;sgrìn"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3766,7 +3469,6 @@ msgid "touch"
 msgstr ""
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "briogadh"
@@ -3783,7 +3485,6 @@ msgstr "brathan"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -4045,32 +3746,6 @@ msgstr "message;teachdaireachdan"
 msgid "volume"
 msgstr "volume;fuaim;àirde fuaime;àirde na fuaime"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "system;siostam"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "update;ùrachadh"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-#, fuzzy
-msgid "application"
-msgstr "capitalization;cèis;litrichean;mòra;beaga"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "luchdadh a-nuas"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "ùrachadh"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -4191,295 +3866,3 @@ msgstr "Seo ìomhaigh ùr an t-siostaim."
 msgid "Tap to open the system updater."
 msgstr "Thoir gnogag gus ùraichear an t-siostaim fhosgladh."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr ""
-#~ "Clàraich a-steach air Ubuntu One gus ùrachaidhean airson aplacaidean "
-#~ "fhaighinn."
-
-#~ msgid "Sign In…"
-#~ msgstr "Clàraich a-steach…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "Diagnosachd"
-
-#~ msgid "Sent"
-#~ msgstr "Air a chur"
-
-#~ msgid "Not sent"
-#~ msgstr "Gun chur fhathast"
-
-#~ msgid "Privacy policy"
-#~ msgstr "Poileasaidh na prìobhaideachd"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "Dèan aithris do Chanonical:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "Tuisleachadh 's mearachdan aplacaid"
-
-#~ msgid "Previous error reports"
-#~ msgstr "Aithrisean air mearachdan roimhe"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr ""
-#~ "Gabhaidh seo a-steach fiosrachadh mu na bha aplacaid ris mus do "
-#~ "dh'fhàillig i."
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "Aplacaidean a dh'iarr inntrigeadh dhan chamara agad"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "Feumar GPS no WiFi mus fhaighear greim air d' ionad gu pongail."
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 mhionaid"
-#~ msgstr[1] "%1 mhionaid"
-#~ msgstr[2] "%1 mionaidean"
-#~ msgstr[3] "%1 mionaid"
-
-#~ msgid "About this phone"
-#~ msgstr "Mun fhòn seo"
-
-#~ msgid "Reset phone"
-#~ msgstr "Ath-shuidhich am fòn"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "Sguab às ⁊ ath-shuidhich a h-uile rud..."
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "Duilich ach dh'fhàillig le ùrachadh an t-siostaim."
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "Stàlaich %1 ùrachadh…"
-#~ msgstr[1] "Stàlaich %1 ùrachadh…"
-#~ msgstr[2] "Stàlaich %1 ùrachaidhean…"
-#~ msgstr[3] "Stàlaich %1 ùrachadh…"
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "Stàlaich %1 ùrachadh"
-#~ msgstr[1] "Stàlaich %1 ùrachadh"
-#~ msgstr[2] "Stàlaich %1 ùrachaidhean"
-#~ msgstr[3] "Stàlaich %1 ùrachadh"
-
-#~ msgid "Pause All"
-#~ msgstr "Cuir gach aon 'na stad"
-
-#~ msgid "Version: "
-#~ msgstr "Tionndadh: "
-
-#~ msgid "Installing update…"
-#~ msgstr "A' stàladh an ùrachaidh…"
-
-#~ msgid "Stop playing"
-#~ msgstr "Sguir dhen chluich"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "Tha am fòn sa mhodh sàmhach."
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "%1 latha air ais"
-#~ msgstr[1] "%1 latha air ais"
-#~ msgstr[2] "%1 làithean air ais"
-#~ msgstr[3] "%1 latha air ais"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "Sìnidh seo gairmean fòn air adhart gu àireamh eile mur am freagair thu, "
-#~ "ma bhios a fòn agad trang no dheth no gun siongail."
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "A' lorg airson giùlanairean…"
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "Puing-inntrigidh eadar-lìn ghnàthaichte:…"
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "Tè an eadar-lìn"
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "Puing-inntrigidh MMS ghnàthaichte:"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "Puing-inntrigidh %1 ghnàthaichte"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "Iuchair (feumaidh seo a bhith co-dhiù 8 caractaran a dh'fhaid)"
-
-#~ msgid "Show key"
-#~ msgstr "Seall an iuchair"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "PIN cearr. %1 oidhirp(ean) air fhàgail."
-
-#~ msgid "Phone locking"
-#~ msgstr "Glasadh an fhòn"
-
-#~ msgid "Lock phone"
-#~ msgstr "Glais am fòn"
-
-#~ msgid "Dash search"
-#~ msgstr "Lorg leis an deas-bhòrd"
-
-#~ msgid "Location access"
-#~ msgstr "Cothrom air d' ionad"
-
-#~ msgid "Other app access"
-#~ msgstr "Inntrigeadh le aplacaidean eile"
-
-#~ msgid "Location detection"
-#~ msgstr "Mothachadh dha d' ionad"
-
-#~ msgid "Return results from:"
-#~ msgstr "Seall toraidhean o:"
-
-#~ msgid "Mic"
-#~ msgstr "Micreofon"
-
-#~ msgid "Phone number:"
-#~ msgstr "Àireamh fòn:"
-
-#~ msgid "Not Now"
-#~ msgstr "Chan ann an-dràsta"
-
-#~ msgid " bytes"
-#~ msgstr " bytes"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "Tha an Hotspot à comas a chionn 's gu bheil a' WiFi dheth."
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "Tagh an dòigh sa tha thu airson a' ghlas a thoirt far an fhòn agad."
-
-#~ msgid "Swipe"
-#~ msgstr "Grad-shlaighd"
-
-#~ msgid "No security"
-#~ msgstr "Gun tèarainteachd"
-
-#~ msgid "4 numbers"
-#~ msgstr "4 àireamhan"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "Àireamhan 's litrichean"
-
-#~ msgid "Available networks…"
-#~ msgstr "Lìonraidhean ri làimh…"
-
-#~ msgid "No available networks."
-#~ msgstr "Chan eil lìonra ri làimh."
-
-#~ msgid "Skip"
-#~ msgstr "Leum thairis air"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "Teirmichean ⁊ cumhaichean"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "Tagh an còd-faire agad"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "Feumaidh an abairt-fhaire a bhith 4 caractaran a dh'fhaid"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "Chan urrainn dhut gairm no teachdaireachd a chur às a h-aonais."
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "Duilich ach tha an abairt-fhaire cearr."
-
-#~ msgid "Please try again."
-#~ msgstr "Feuch ris a-rithist."
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "Duilich ach tha an còd-faire cearr."
-
-#~ msgid "All done"
-#~ msgstr "Coileanta"
-
-#~ msgid "Nice work!"
-#~ msgstr "Shin thu!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "Gabhaidh am fòn agad cleachdadh a-nis."
-
-#~ msgid "Finish"
-#~ msgstr "Crìochnaich"
-
-#~ msgid "Hi!"
-#~ msgstr "Shin thu!"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "Fàilte dhan fhòn Ubuntu agad."
-
-#~ msgid "Let’s get started."
-#~ msgstr "Tòisicheamaid."
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr ""
-#~ "Gabhaidh Ubuntu a-seach seirbheisean ionaid 'gan solar le HERE a leigeas "
-#~ "le aplacaidean faighinn a-mach far a bheil thu."
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr ""
-#~ "Ceadaich da dh'aplacaidean gun cleachd iad na lìonraidhean inneil-làimhe "
-#~ "'s WiFi agad gus faighinn a-mach far a bheil thu."
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr ""
-#~ "Aontaich ris na <a href='terms.qml'>teirmichean 's cumhaichean</a> aig "
-#~ "HERE gus na seirbheisean seo a chur an comas."
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr ""
-#~ "'S urrainn dhut an t-seirbheise seo a chur à comas on clàr-taice "
-#~ "<b>Roghainnean an t-siostaim</b>."
-
-#~ msgid "Improving your experience"
-#~ msgstr "A' cur piseach air a' ghnàth-eòlas agad"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "Chaidh am fòn agad a shuidheachadh gus innse mu mhearachdan gu fèin-"
-#~ "obrachail do Chanonical  's a chom-pàirtichean a rinn an siostam-"
-#~ "obrachaidh seo."
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr ""
-#~ "Gabhaidh seo cur à comas ann an <b>Roghainnean an t-siostaim</b> fo "
-#~ "<b>Thèarainteachd ⁊  prìobhaideachd</b>"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

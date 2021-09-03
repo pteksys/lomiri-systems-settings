@@ -120,8 +120,6 @@ msgstr "Sist oppdatert"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Aldri"
@@ -274,7 +272,6 @@ msgstr "Fjern bilde"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -500,7 +497,7 @@ msgid "Disconnected"
 msgstr "Frakoblet"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Ukjent"
 
@@ -741,7 +738,6 @@ msgstr "Ukjent feil ved tilkobling til %1."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2322,275 +2318,6 @@ msgstr "Selvvalgt ringetone"
 msgid "Choose from"
 msgstr "Velg blant"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "Versjon %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "Kanalinnstillinger"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Driftsversjon"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Utgivelseskandidat"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Utviklerversjon"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "Henter kanaler"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "Kanal oppgraderinger skal hentes fra:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "Bytter kanal"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "Last ned automatisk"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "Last ned fremtidige oppdateringer automatisk:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "Når enheten er koblet til et trådløst nettverk"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "Med hvilken som helst type datatilkobling"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "Dette kan medføre økte kostnader for databruk."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "Installasjon mislyktes"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "Fastvareoppgradering"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "Fastvareoppgradering tilgjengelig!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "Fastvaren er oppdatert!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr ""
-"Enheten vil starte på nytt automatisk etter at installasjonen er fullført."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "Installer og start på nytt nå"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr ""
-"Laster ned og innbrenner fastvareoppgraderinger, dette kan ta noen minutter…"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "Ser etter fastvareoppdatering"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "Ser etter oppdateringer…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "Stopp"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "%1 oppdatering tilgjengelig"
-msgstr[1] "%1 oppdateringer tilgjengelige"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "Oppdatér alle…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "Oppdatér alle"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "Oppdater systemet"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr "Enheten må startes på nytt for å fullføre systemoppdateringen."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr "Koble enheten til en strømkilde før du installerer systemoppdateringen."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "Start på nytt og installer"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "Oppdateringer"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "Koble til Internett for å se etter oppdateringer."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "Programvaren er oppdatert"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "Oppdateringstjeneren svarer ikke. Prøv igjen senere."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "Oppdateringer er tilgjengelige"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "Nylige oppdateringer"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "Oppdateringsinnstillinger"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "Reinstaller alle programmer"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"Bruk dette for å hente alle de nyeste programmene, vanligvis nødvendig etter "
-"en fullstendig systemoppgradering, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "Prøv igjen"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "Oppdater"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "Last ned"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "Fortsett"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "Sett på pause"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "Installer…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "Installer"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "Åpne"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "Installerer"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "Pauset"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "Venter på nedlasting"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "Laster ned"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 av %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "Nedlastet"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "Installert"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "Oppdatert %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "Oppdateringen feilet"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "Når enheten er koblet til trådløst nettverk"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "Alltid"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "Kanaler"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Tidssone"
@@ -3165,7 +2892,6 @@ msgstr "utvikler"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3361,7 +3087,6 @@ msgstr "skjerm"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3577,7 +3302,6 @@ msgid "touch"
 msgstr "berøring"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "klikk"
@@ -3594,7 +3318,6 @@ msgstr "varslinger"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3851,31 +3574,6 @@ msgstr "melding"
 msgid "volume"
 msgstr "volum"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "system"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "oppdater"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "program"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "last ned"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "oppgrader"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -3991,287 +3689,3 @@ msgstr "Det har kommet et oppdatert systembilde."
 msgid "Tap to open the system updater."
 msgstr "Trykk for å åpne systemoppdateringsverktøyet."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr "Logg på Ubuntu One for å motta programoppdateringer."
-
-#~ msgid "Sign In…"
-#~ msgstr "Logg på …"
-
-#~ msgid "Diagnostics"
-#~ msgstr "Diagnostikk"
-
-#~ msgid "Sent"
-#~ msgstr "Sendt"
-
-#~ msgid "Not sent"
-#~ msgstr "Ikke sendt"
-
-#~ msgid "Privacy policy"
-#~ msgstr "Personvernregler"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "Rapporter følgende til Canonical:"
-
-#~ msgid "App crashes and errors"
-#~ msgstr "Programkræsj og feil"
-
-#~ msgid "Previous error reports"
-#~ msgstr "Tidligere feilrapporter"
-
-#~ msgid "Includes info about what an app was doing when it failed."
-#~ msgstr "Inneholder informasjon om hva et program gjorde da det kræsjet."
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "Programmer som har bedt om tilgang til kameraet"
-
-#~ msgid "GPS"
-#~ msgstr "GPS"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr ""
-#~ "Du må bruke GPS og/eller trådløst nettverk for at posisjonen din skal bli "
-#~ "nogen lunde nøyaktig"
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "%1 minutt"
-#~ msgstr[1] "%1 minutter"
-
-#~ msgid "About this phone"
-#~ msgstr "Om denne telefonen"
-
-#~ msgid "Reset phone"
-#~ msgstr "Nullstill telefonen"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "Slett og tilbakestill alt …"
-
-#~ msgid "Sorry, the system update failed."
-#~ msgstr "Systemoppdatering mislyktes."
-
-#~ msgid "Install %1 update…"
-#~ msgid_plural "Install %1 updates…"
-#~ msgstr[0] "Installer %1 oppdatering …"
-#~ msgstr[1] "Installer %1 oppdateringer …"
-
-#~ msgid "Install %1 update"
-#~ msgid_plural "Install %1 updates"
-#~ msgstr[0] "Installer %1 oppdatering …"
-#~ msgstr[1] "Installer %1 oppdateringer …"
-
-#~ msgid "Pause All"
-#~ msgstr "Stopp alle midlertidig"
-
-#~ msgid "Version: "
-#~ msgstr "Versjon: "
-
-#~ msgid "Installing update…"
-#~ msgstr "Installerer oppdatering …"
-
-#~ msgid "Stop playing"
-#~ msgstr "Stopp avspilling"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "Telefonen er i stillemodus."
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "%1 dag siden"
-#~ msgstr[1] "%1 dager siden"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "Viderekobler telefonsamtaler til et annet nummer når du ikke svarer, når "
-#~ "du er i en annen samtale, når telefonen er av eller når telefonen ikke "
-#~ "har dekning."
-
-#~ msgid "Searching for carriers…"
-#~ msgstr "Søker etter tilbydere …"
-
-#~ msgid "Custom Internet APN…"
-#~ msgstr "Selvvalgt internett-tilknytningspunkt (APN):"
-
-#~ msgid "Same APN as for Internet"
-#~ msgstr "Samme internett-tilknytningspunkt (APN) som for Internett."
-
-#~ msgid "Custom MMS APN…"
-#~ msgstr "Selvvalgt internett-tilknytningspunkt (APN) for MMS …"
-
-#~ msgid "Custom %1 APN"
-#~ msgstr "Selvvalgt internett-tilknytningspunkt (APN) for %1"
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "Nøkkel (må bestå av minst 8 tegn)"
-
-#~ msgid "Show key"
-#~ msgstr "Vis nøkkel"
-
-#~ msgid "Incorrect PIN. %1 attempts remaining."
-#~ msgstr "Feil PIN. %1 forsøk gjenstår."
-
-#~ msgid "Phone locking"
-#~ msgstr "Telefonlås"
-
-#~ msgid "Lock phone"
-#~ msgstr "Lås telefon"
-
-#~ msgid "Dash search"
-#~ msgstr "Søk på dashbordet"
-
-#~ msgid "Location access"
-#~ msgstr "Posisjonstilgang"
-
-#~ msgid "Other app access"
-#~ msgstr "Annen programtilgang"
-
-#~ msgid "Location detection"
-#~ msgstr "Finn plassering"
-
-#~ msgid "Return results from:"
-#~ msgstr "Vis resultater fra:"
-
-#~ msgid "Mic"
-#~ msgstr "Mikrofon"
-
-#~ msgid "Phone number:"
-#~ msgstr "Telefonnummer:"
-
-#~ msgid "Not Now"
-#~ msgstr "Ikke nå"
-
-#~ msgid " bytes"
-#~ msgstr " byte"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr ""
-#~ "Deling av internettforbindelse er deaktivert fordi trådløst nettverk er "
-#~ "slått av."
-
-#~ msgid "Please select how you’d like to unlock your phone."
-#~ msgstr "Velg hvordan du vil låse opp telefonen."
-
-#~ msgid "Swipe"
-#~ msgstr "Skyv"
-
-#~ msgid "No security"
-#~ msgstr "Ingen sperre"
-
-#~ msgid "4 numbers"
-#~ msgstr "4 tall"
-
-#~ msgid "Numbers and letters"
-#~ msgstr "Tall og bokstaver"
-
-#~ msgid "Available networks…"
-#~ msgstr "Tilgjengelige nettverk …"
-
-#~ msgid "No available networks."
-#~ msgstr "Ingen tilgjengelige nettverk."
-
-#~ msgid "Skip"
-#~ msgstr "Hopp over"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "Brukervilkår"
-
-#~ msgid "Choose your passcode"
-#~ msgstr "Velg kode"
-
-#~ msgid "Passphrase must be 4 characters long"
-#~ msgstr "Passordfrasen må bestå av minst 4 tegn"
-
-#~ msgid "Without it, you won’t be able to make calls or use text messaging."
-#~ msgstr "Du kan ikke ringe eller sende meldinger uten et SIM-kort."
-
-#~ msgid "Sorry, incorrect passphrase."
-#~ msgstr "Feil passordfrase."
-
-#~ msgid "Please try again."
-#~ msgstr "Prøv igjen."
-
-#~ msgid "Sorry, incorrect passcode."
-#~ msgstr "Feil kode."
-
-#~ msgid "All done"
-#~ msgstr "Alt i orden"
-
-#~ msgid "Nice work!"
-#~ msgstr "Godt jobba!"
-
-#~ msgid "Your phone is now ready to use."
-#~ msgstr "Telefonen er klar til bruk."
-
-#~ msgid "Finish"
-#~ msgstr "Fullfør"
-
-#~ msgid "Hi!"
-#~ msgstr "Hei!"
-
-#~ msgid "Welcome to your Ubuntu phone."
-#~ msgstr "Velkommen til Ubuntu-telefonen."
-
-#~ msgid "Let’s get started."
-#~ msgstr "La oss komme i gang."
-
-#~ msgid ""
-#~ "Ubuntu includes location services provided by HERE, enabling apps to "
-#~ "pinpoint your location."
-#~ msgstr ""
-#~ "Ubuntu bruker tjenester levert av HERE for å gjøre programmer i stand til "
-#~ "å se hvor du befinner deg."
-
-#~ msgid ""
-#~ "Allow apps to use your mobile and Wi-Fi networks to determine your "
-#~ "location."
-#~ msgstr ""
-#~ "Tillat programmer å bruke telefonens mobile og trådløse nettverk for å se "
-#~ "hvor du befinner deg."
-
-#~ msgid ""
-#~ "Accept the HERE <a href='terms.qml'>terms and conditions</a> to enable "
-#~ "these services."
-#~ msgstr ""
-#~ "Godkjenn <a href='terms.qml'>brukervilkårene for HERE</a> for å aktivere "
-#~ "disse tjenestene."
-
-#~ msgid ""
-#~ "This service can be disabled at any time from the <b>System Settings</b> "
-#~ "menu."
-#~ msgstr ""
-#~ "Denne tjenesten kan når som helst slås av i menyen "
-#~ "<b>Systeminnstillinger</b>."
-
-#~ msgid "Improving your experience"
-#~ msgstr "Forbedrer opplevelse"
-
-#~ msgid ""
-#~ "Your phone is set up to automatically report errors to Canonical and its "
-#~ "partners, the makers of the operating system."
-#~ msgstr ""
-#~ "Telefonen sender feilrapporter til Canonical (produsenten av Ubuntu) "
-#~ "automatisk."
-
-#~ msgid ""
-#~ "This can be disabled in <b>System Settings</b> under <b>Security &amp; "
-#~ "Privacy</b>"
-#~ msgstr ""
-#~ "Du kan slå av dette i <b>Systeminnstillinger</b> under <b>Sikkerhet og "
-#~ "personvern</b>"
-
-#~ msgid "〈  %1"
-#~ msgstr "〈  %1"
-
-#~ msgid "%1  〉"
-#~ msgstr "%1  〉"

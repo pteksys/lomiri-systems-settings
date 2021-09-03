@@ -122,8 +122,6 @@ msgstr "עדכון אחרון"
 #: ../plugins/battery/SleepValues.qml:113
 #: ../plugins/security-privacy/PhoneLocking.qml:95
 #: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/system-update/Configuration.qml:54
-#: ../plugins/system-update/UpdateSettings.qml:58
 #: ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "לעולם לא"
@@ -276,7 +274,6 @@ msgstr "הסרת תמונה"
 #: ../plugins/security-privacy/LockSecurity.qml:365
 #: ../plugins/security-privacy/SimPin.qml:179
 #: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/system-update/ImageUpdatePrompt.qml:48
 #: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 #: ../plugins/background/Components/AddRemove.qml:42
@@ -507,7 +504,7 @@ msgid "Disconnected"
 msgstr "מנותק"
 
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/system-update/UpdateSettings.qml:64 ../plugins/wifi/Common.qml:96
+#: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "לא ידוע"
 
@@ -748,7 +745,6 @@ msgstr "קרתה שגיאה לא ידועה בעת ההתחברות ל %1."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/phone/CallForwarding.qml:305
-#: ../plugins/system-update/InstallationFailed.qml:28
 #: ../plugins/vpn/PageComponent.qml:123
 #: ../plugins/cellular/Components/SimEditor.qml:214
 msgid "OK"
@@ -2318,273 +2314,6 @@ msgstr "צלצול מותאם אישית"
 msgid "Choose from"
 msgstr "נא לבחור בספק"
 
-#: ../plugins/system-update/ChangelogExpander.qml:42
-#, qt-format
-msgid "Version %1"
-msgstr "גרסה %1"
-
-#: ../plugins/system-update/ChannelSettings.qml:32
-msgid "Channel settings"
-msgstr "הגדרות ערוצים"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Stable"
-msgstr "Stable"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Release candidate"
-msgstr "Release candidate"
-
-#: ../plugins/system-update/ChannelSettings.qml:57
-#: ../plugins/system-update/UpdateSettings.qml:74
-msgid "Development"
-msgstr "Development"
-
-#: ../plugins/system-update/ChannelSettings.qml:99
-msgid "Fetching channels"
-msgstr "מייבא ערוצים"
-
-#: ../plugins/system-update/ChannelSettings.qml:108
-msgid "Channel to get updates from:"
-msgstr "הערוץ ממנו ימשכו העדכונים:"
-
-#: ../plugins/system-update/ChannelSettings.qml:124
-msgid "Switching channel"
-msgstr "מחליף ערוץ"
-
-#: ../plugins/system-update/Configuration.qml:30
-#: ../plugins/system-update/UpdateSettings.qml:55
-msgid "Auto download"
-msgstr "הורדה אוטומטית"
-
-#: ../plugins/system-update/Configuration.qml:36
-msgid "Download future updates automatically:"
-msgstr "הורדת עדכונים עתידיים אוטומטית:"
-
-#: ../plugins/system-update/Configuration.qml:55
-msgid "When on WiFi"
-msgstr "בעת חיבור לרשת אלחוטית"
-
-#: ../plugins/system-update/Configuration.qml:57
-msgid "On any data connection"
-msgstr "דרך כל חיבור נתונים שהוא"
-
-#: ../plugins/system-update/Configuration.qml:58
-msgid "Data charges may apply."
-msgstr "יתכן חיוב בגין צריכת נתונים."
-
-#: ../plugins/system-update/DownloadHandler.qml:174
-#: ../plugins/system-update/InstallationFailed.qml:25
-msgid "Installation failed"
-msgstr "התקנה נכשלה"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:36
-#: ../plugins/system-update/FirmwareUpdate.qml:157
-msgid "Firmware Update"
-msgstr "עדכון קושחה"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:133
-msgid "There is a firmware update available!"
-msgstr "יש עדכון קושחה זמין!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:134
-msgid "Firmware is up to date!"
-msgstr "קושחה מעודכנת!"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:169
-msgid "The device will restart automatically after installing is done."
-msgstr "המכשיר יופעל מחדש אוטומטית לאחר סיום ההתקנה."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:185
-msgid "Install and restart now"
-msgstr "התקן והפעל מחדש כעת"
-
-#: ../plugins/system-update/FirmwareUpdate.qml:228
-msgid ""
-"Downloading and Flashing firmware updates, this could take a few minutes..."
-msgstr "הורדה והתקנה של עדכוני קושחה, יכולה לקחת כמה דקות ..."
-
-#: ../plugins/system-update/FirmwareUpdate.qml:235
-msgid "Checking for firmware update"
-msgstr "מחפש עדכון קושחה"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:84
-msgid "Checking for updates…"
-msgstr "מתבצעת בדיקה אחר עדכונים…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:89
-msgid "Stop"
-msgstr "עצירה"
-
-#. TRANSLATORS: %1 is number of software updates available.
-#: ../plugins/system-update/GlobalUpdateControls.qml:116
-#, qt-format
-msgid "%1 update available"
-msgid_plural "%1 updates available"
-msgstr[0] "יש עדכון %1 זמין"
-msgstr[1] "ישנם %1 עדכונים זמינים"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:126
-msgid "Update all…"
-msgstr "עדכן הכל…"
-
-#: ../plugins/system-update/GlobalUpdateControls.qml:128
-msgid "Update all"
-msgstr "עדכן הכל"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:30
-msgid "Update System"
-msgstr "עדכון המערכת"
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:32
-msgid "The device needs to restart to install the system update."
-msgstr "על הטלפון להפעיל עצמו מחדש כדי להתקין את עדכון המערכת."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:33
-msgid "Connect the device to power before installing the system update."
-msgstr "על הטלפון להפעיל עצמו מחדש כדי להתקין את עדכון המערכת."
-
-#: ../plugins/system-update/ImageUpdatePrompt.qml:38
-msgid "Restart & Install"
-msgstr "אתחול & והתקנה"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../plugins/system-update/PageComponent.qml:37 ../build/po/settings.js:348
-msgid "Updates"
-msgstr "עדכונים"
-
-#: ../plugins/system-update/PageComponent.qml:163
-#: ../plugins/system-update/ReinstallAllApps.qml:150
-msgid "Connect to the Internet to check for updates."
-msgstr "התחברו לאינטרנט על מנת לבדוק עדכונים."
-
-#: ../plugins/system-update/PageComponent.qml:165
-#: ../plugins/system-update/ReinstallAllApps.qml:152
-msgid "Software is up to date"
-msgstr "התכנה עדכנית"
-
-#: ../plugins/system-update/PageComponent.qml:168
-#: ../plugins/system-update/ReinstallAllApps.qml:155
-msgid "The update server is not responding. Try again later."
-msgstr "שרת העדכונים לא מגיב. אנא נסו שנית מאוחר יותר."
-
-#: ../plugins/system-update/PageComponent.qml:177
-#: ../plugins/system-update/ReinstallAllApps.qml:164
-msgid "Updates Available"
-msgstr "ישנם עדכונים זמינים"
-
-#: ../plugins/system-update/PageComponent.qml:311
-msgid "Recent updates"
-msgstr "עדכונים אחרונים"
-
-#: ../plugins/system-update/PageComponent.qml:374
-#: ../plugins/system-update/UpdateSettings.qml:32
-msgid "Update settings"
-msgstr "הגדרת עדכונים"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:36
-#: ../plugins/system-update/ReinstallAllApps.qml:95
-#: ../plugins/system-update/UpdateSettings.qml:88
-msgid "Reinstall all apps"
-msgstr "התקן מחדש את כל האפליקציות"
-
-#: ../plugins/system-update/ReinstallAllApps.qml:85
-msgid ""
-"Use this to get all of the latest apps, typically needed after a major "
-"system upgrade, "
-msgstr ""
-"השתמש באפשרות זו כדי להשיג את כל האפליקציות האחרונות, הדרושות בדרך כלל לאחר "
-"שדרוג מערכת גדול, "
-
-#: ../plugins/system-update/UpdateDelegate.qml:119
-msgid "Retry"
-msgstr "ניסיון מחדש"
-
-#: ../plugins/system-update/UpdateDelegate.qml:124
-msgid "Update"
-msgstr "עדכון"
-
-#: ../plugins/system-update/UpdateDelegate.qml:126
-msgid "Download"
-msgstr "הורדה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:132
-msgid "Resume"
-msgstr "להמשיך"
-
-#: ../plugins/system-update/UpdateDelegate.qml:139
-msgid "Pause"
-msgstr "השהייה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:143
-msgid "Install…"
-msgstr "התקנה…"
-
-#: ../plugins/system-update/UpdateDelegate.qml:145
-msgid "Install"
-msgstr "להתקין"
-
-#: ../plugins/system-update/UpdateDelegate.qml:149
-msgid "Open"
-msgstr "פתיחה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:228
-msgid "Installing"
-msgstr "מתבצעת התקנה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:232
-msgid "Paused"
-msgstr "מושהה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:235
-msgid "Waiting to download"
-msgstr "ממתין להורדה"
-
-#: ../plugins/system-update/UpdateDelegate.qml:238
-msgid "Downloading"
-msgstr "מוריד"
-
-#. TRANSLATORS: %1 is the human readable amount
-#. of bytes downloaded, and %2 is the total to be
-#. downloaded.
-#: ../plugins/system-update/UpdateDelegate.qml:274
-#, qt-format
-msgid "%1 of %2"
-msgstr "%1 מתוך %2"
-
-#: ../plugins/system-update/UpdateDelegate.qml:278
-msgid "Downloaded"
-msgstr "הורד"
-
-#: ../plugins/system-update/UpdateDelegate.qml:281
-msgid "Installed"
-msgstr "מותקנת"
-
-#. TRANSLATORS: %1 is the date at which this
-#. update was applied.
-#: ../plugins/system-update/UpdateDelegate.qml:286
-#, qt-format
-msgid "Updated %1"
-msgstr "עודכן %1"
-
-#: ../plugins/system-update/UpdateDelegate.qml:310
-msgid "Update failed"
-msgstr "עדכון נכשל"
-
-#: ../plugins/system-update/UpdateSettings.qml:60
-msgid "On WiFi"
-msgstr "בעת חיבור לרשת אלחוטית"
-
-#: ../plugins/system-update/UpdateSettings.qml:62
-msgid "Always"
-msgstr "תמיד"
-
-#: ../plugins/system-update/UpdateSettings.qml:70
-msgid "Channels"
-msgstr "ערוצים"
-
 #: ../plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "אזור זמן"
@@ -3155,7 +2884,6 @@ msgstr "מפתח"
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:26 ../build/po/settings.js:216
 #: ../build/po/settings.js:352
 msgid "software"
@@ -3351,7 +3079,6 @@ msgstr "מסך"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
 #: ../build/po/settings.js:108 ../build/po/settings.js:176
 #: ../build/po/settings.js:360 ../build/po/settings.js:378
@@ -3567,7 +3294,6 @@ msgid "touch"
 msgstr "מגע"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
 msgid "click"
 msgstr "קליק"
@@ -3584,7 +3310,6 @@ msgstr "התראות"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
@@ -3841,31 +3566,6 @@ msgstr "הודעה"
 msgid "volume"
 msgstr "עוצמה"
 
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:350
-msgid "system"
-msgstr "מערכת"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:354
-msgid "update"
-msgstr "עדכון"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:358
-msgid "application"
-msgstr "יישום"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:362
-msgid "download"
-msgstr "הורד"
-
-#. TRANSLATORS: This is a keyword or name for the system-update plugin which is used while searching
-#: ../build/po/settings.js:364
-msgid "upgrade"
-msgstr "שדרוג"
-
 #. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
 #: ../build/po/settings.js:368
 msgid "Updates available"
@@ -3979,137 +3679,3 @@ msgstr "קיימת גרסת מערכת עדכנית יותר."
 msgid "Tap to open the system updater."
 msgstr "הקש כדי לפתוח את מעדכן המערכת."
 
-#~ msgid "Sign in to Ubuntu One to receive updates for apps."
-#~ msgstr "התחברו ל Ubuntu One על מנת לקבל עדכונים לאפליקציות."
-
-#~ msgid "Sign In…"
-#~ msgstr "כניסה…"
-
-#~ msgid "Diagnostics"
-#~ msgstr "אבחון"
-
-#~ msgid "Sent"
-#~ msgstr "נשלחו"
-
-#~ msgid "Not sent"
-#~ msgstr "לא נשלחו"
-
-#~ msgid "Privacy policy"
-#~ msgstr "מדיניות פרטיות"
-
-#~ msgid "Report to Canonical:"
-#~ msgstr "דיווח ל־Canonical:"
-
-#~ msgid "Previous error reports"
-#~ msgstr "דיווחי שגיאות קודמים"
-
-#, fuzzy
-#~ msgid "Apps that have requested access for in-app purchases"
-#~ msgstr "יישומים שביקשו לגשת למצלמה שלך"
-
-#~ msgid "GPS"
-#~ msgstr "איכון"
-
-#~ msgid "Accurate location detection requires GPS and/or Wi-Fi."
-#~ msgstr "זיהוי מיקום מדויק דורש GPS ו/או רשת אלחוטית."
-
-#~ msgid "%1 minute"
-#~ msgid_plural "%1 minutes"
-#~ msgstr[0] "דקה %1"
-#~ msgstr[1] "%1 דקות"
-
-#~ msgid "About this phone"
-#~ msgstr "פרטים על הטלפון הזה"
-
-#~ msgid "Reset phone"
-#~ msgstr "איפוס הטלפון"
-
-#~ msgid "Erase & Reset Everything…"
-#~ msgstr "מחיקה ואיפוס של הכול…"
-
-#~ msgid "Pause All"
-#~ msgstr "להפסיק הכול"
-
-#~ msgid "Version: "
-#~ msgstr "גרסה: "
-
-#~ msgid "Installing update…"
-#~ msgstr "העדכון מותקן…"
-
-#~ msgid "Stop playing"
-#~ msgstr "להפסיק לנגן"
-
-#~ msgid "The phone is in Silent Mode."
-#~ msgstr "הטלפון במצב שקט."
-
-#~ msgid "%1 day ago"
-#~ msgid_plural "%1 days ago"
-#~ msgstr[0] "לפני יום %1"
-#~ msgstr[1] "לפני %1 ימים"
-
-#~ msgid ""
-#~ "Redirects phone calls to another number whenever you don't answer, or "
-#~ "your phone is busy, turned off, or out of range."
-#~ msgstr ""
-#~ "הפניית שיחות למספר אחר כשהשיחה אינה נענית או שהטלפון שלך תפוס, כבוי או "
-#~ "באזור ללא קליטה."
-
-#~ msgid "Key (must be 8 characters or longer)"
-#~ msgstr "קוד (חייב להיות מורכב מ־8 תווים או יותר)"
-
-#~ msgid "Show key"
-#~ msgstr "הצגת קוד"
-
-#~ msgid "Phone locking"
-#~ msgstr "נעילת הטלפון"
-
-#~ msgid "Dash search"
-#~ msgstr "חיפוש בלוח"
-
-#~ msgid "Location access"
-#~ msgstr "גישה למיקום"
-
-#~ msgid "Other app access"
-#~ msgstr "גישה מיישומים אחרים"
-
-#~ msgid "Location detection"
-#~ msgstr "איתור מיקום"
-
-#~ msgid "Return results from:"
-#~ msgstr "החזרת תוצאות מ־:"
-
-#~ msgid "Mic"
-#~ msgstr "מיקרופון"
-
-#~ msgid "Not Now"
-#~ msgstr "לא כעת"
-
-#~ msgid " bytes"
-#~ msgstr " בתים"
-
-#~ msgid " KiB"
-#~ msgstr " KiB"
-
-#~ msgid " MiB"
-#~ msgstr " MiB"
-
-#~ msgid " GiB"
-#~ msgstr " GiB"
-
-#~ msgid "Hotspot disabled because Wi-Fi is off."
-#~ msgstr "נקודת הגישה מנוטרלת כיוון שה־WiFi מנוטרל."
-
-#~ msgid "Swipe"
-#~ msgstr "החלקה"
-
-#~ msgid "Skip"
-#~ msgstr "דילוג"
-
-#~ msgid "Terms & Conditions"
-#~ msgstr "תנאי שימוש"
-
-#~ msgid "All done"
-#~ msgstr "הכול בוצע"
-
-#~ msgid "Finish"
-#~ msgstr "סיום"
