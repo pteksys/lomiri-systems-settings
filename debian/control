@@ -69,9 +69,10 @@ Depends:
  gir1.2-glib-2.0,
  gsettings-desktop-schemas,
  gsettings-ubuntu-schemas (>= 0.0.7),
- indicator-bluetooth (>> 0.0.6+13.10.20131010),
- indicator-datetime,
- indicator-power (>= 12.10.6+15.04.20150130),
+# TODO: migrate to Ayatana indicators
+# indicator-bluetooth (>> 0.0.6+13.10.20131010),
+# indicator-datetime,
+# indicator-power (>= 12.10.6+15.04.20150130),
  liblomirisystemsettings1 (= ${binary:Version}),
  lomiri-indicator-network,
  lomiri-keyboard-data,
