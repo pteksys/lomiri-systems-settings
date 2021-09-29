@@ -132,6 +132,16 @@ void Sound::setIncomingMessageSound(QString sound)
                                       QVariant::fromValue(sound));
 
     Q_EMIT(incomingMessageSoundChanged());
+
+    if (sound.startsWith(customMessageSoundPath())) {
+        QDir dir(customMessageSoundPath());
+        QFileInfoList files(dir.entryInfoList(QDir::Files));
+        Q_FOREACH(QFileInfo f, files) {
+            if (f.absoluteFilePath() != sound)
+                QFile(f.absoluteFilePath()).remove();
+        }
+    }
+
 }
 
 bool Sound::getIncomingCallVibrate()
@@ -240,6 +250,11 @@ void Sound::setDialpadSoundsEnabled(bool enabled)
 QString Sound::customRingtonePath()
 {
     return QString(QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/Music");
+}
+
+QString Sound::customMessageSoundPath()
+{
+    return customRingtonePath() + "/Message";
 }
 
 QStringList soundsListFromDir(const QString &dirString)

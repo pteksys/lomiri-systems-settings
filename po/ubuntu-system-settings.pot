@@ -2472,8 +2472,12 @@ msgstr ""
 msgid "Other vibrations"
 msgstr ""
 
-#: ../plugins/sound/SoundsList.qml:128
+#: ../plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
+msgstr ""
+
+#: ../plugins/sound/SoundsList.qml:132
+msgid "Custom message sound"
 msgstr ""
 
 #: ../plugins/sound/SoundsList.qml:208
