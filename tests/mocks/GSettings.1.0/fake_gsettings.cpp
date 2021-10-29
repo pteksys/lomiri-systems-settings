@@ -144,7 +144,7 @@ GSettingsSchemaQml * GSettingsQml::schema() const {
 
 QVariant GSettingsQml::autoBrightness() const
 {
-    if (m_valid && m_schema->id() == "com.ubuntu.touch.system") {
+    if (m_valid && m_schema->id() == "com.lomiri.touch.system") {
         return GSettingsControllerQml::instance()->autoBrightness();
     } else {
         return QVariant();
@@ -153,7 +153,7 @@ QVariant GSettingsQml::autoBrightness() const
 
 void GSettingsQml::setAutoBrightness(const QVariant &val)
 {
-    if (m_valid && m_schema->id() == "com.ubuntu.touch.system") {
+    if (m_valid && m_schema->id() == "com.lomiri.touch.system") {
         GSettingsControllerQml::instance()->setAutoBrightness(val.toBool());
     }
 }

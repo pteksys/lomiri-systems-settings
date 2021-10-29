@@ -37,7 +37,7 @@ ItemPage {
 
     GSettings {
         id: gsettings
-        schema.id: "com.ubuntu.touch.system"
+        schema.id: "com.lomiri.touch.system"
     }
 
     AethercastDisplays {

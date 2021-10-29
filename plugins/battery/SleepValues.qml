@@ -43,7 +43,7 @@ ItemPage {
 
     GSettings {
         id: powerSettings
-        schema.id: root.usePowerd ? "com.ubuntu.touch.system" : "org.gnome.desktop.session"
+        schema.id: root.usePowerd ? "com.lomiri.touch.system" : "org.gnome.desktop.session"
         onChanged: {
             if (key == "activityTimeout" || key == "idleDelay") {
                 var curIndex = root.idleValues.indexOf(value)

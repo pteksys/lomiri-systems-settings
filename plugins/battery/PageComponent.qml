@@ -52,7 +52,7 @@ ItemPage {
 
     GSettings {
         id: powerSettings
-        schema.id: batteryBackend.powerdRunning ? "com.ubuntu.touch.system" : "org.gnome.desktop.session"
+        schema.id: batteryBackend.powerdRunning ? "com.lomiri.touch.system" : "org.gnome.desktop.session"
     }
 
     LomiriSecurityPrivacyPanel {
