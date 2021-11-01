@@ -61,4 +61,4 @@ keys = [('silent-mode', 'SilentMode', get_bool),
         ('incoming-message-sound', 'IncomingMessageSound', get_string)]
 
 for (g, a, f) in keys:
-    set_as_setting('com.ubuntu.touch.AccountsService.Sound', a, f(g))
+    set_as_setting('com.lomiri.touch.AccountsService.Sound', a, f(g))
