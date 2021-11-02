@@ -44,7 +44,7 @@ QString _(const char *text)
 #define ENABLED_PROP "LicenseAccepted"
 #define PATH_PROP    "LicenseBasePath"
 #define AS_INTERFACE "com.ubuntu.AccountsService.SecurityPrivacy"
-#define AS_TOUCH_INTERFACE "com.ubuntu.touch.AccountsService.SecurityPrivacy"
+#define AS_TOUCH_INTERFACE "com.lomiri.touch.AccountsService.SecurityPrivacy"
 
 void managerLoaded(GObject    *object,
                    GParamSpec *pspec,
