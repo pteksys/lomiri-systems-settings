@@ -49,7 +49,7 @@ ItemPage {
 
     GSettings {
         id: soundSettings
-        schema.id: "com.ubuntu.touch.sound"
+        schema.id: "com.lomiri.touch.sound"
     }
 
     Connections {

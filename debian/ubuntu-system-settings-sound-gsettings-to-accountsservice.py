@@ -37,7 +37,7 @@ object_path = manager_proxy.FindUserById(
 )
 user_proxy = system_bus.get_object('org.freedesktop.Accounts', object_path)
 
-gsettings = Gio.Settings(schema="com.ubuntu.touch.sound")
+gsettings = Gio.Settings(schema="com.lomiri.touch.sound")
 
 
 def get_string(key):
