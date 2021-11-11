@@ -22,7 +22,7 @@
 #include <QDebug>
 #include <QDBusReply>
 
-#define AS_INTERFACE "com.ubuntu.touch.AccountsService.Phone"
+#define AS_INTERFACE "com.lomiri.touch.AccountsService.Phone"
 
 Cellular::Cellular(QObject *parent) :
     QObject(parent)
