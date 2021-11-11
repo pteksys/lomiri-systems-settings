@@ -99,7 +99,7 @@ ItemPage {
 
     GSettings {
         id: phoneSettings
-        schema.id: "com.ubuntu.phone"
+        schema.id: "com.lomiri.phone"
     }
 
     GSettings {
