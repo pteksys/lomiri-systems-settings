@@ -28,12 +28,12 @@ UnityMenuModelStack::~UnityMenuModelStack()
 {
 }
 
-UnityMenuModel *UnityMenuModelStack::head() const
+AyatanaMenuModel *UnityMenuModelStack::head() const
 {
     return !m_menuModels.isEmpty() ? m_menuModels.first() : nullptr;
 }
 
-void UnityMenuModelStack::setHead(UnityMenuModel *model)
+void UnityMenuModelStack::setHead(AyatanaMenuModel *model)
 {
     if (head() != model) {
         m_menuModels.clear();
@@ -42,23 +42,23 @@ void UnityMenuModelStack::setHead(UnityMenuModel *model)
     }
 }
 
-UnityMenuModel *UnityMenuModelStack::tail() const
+AyatanaMenuModel *UnityMenuModelStack::tail() const
 {
     return !m_menuModels.isEmpty() ? m_menuModels.last() : nullptr;
 }
 
-void UnityMenuModelStack::push(UnityMenuModel *model)
+void UnityMenuModelStack::push(AyatanaMenuModel *model)
 {
     m_menuModels << model;
     Q_EMIT tailChanged(model);
 }
 
-UnityMenuModel *UnityMenuModelStack::pop()
+AyatanaMenuModel *UnityMenuModelStack::pop()
 {
     if (m_menuModels.isEmpty()) {
         return nullptr;
     }
-    UnityMenuModel *model = m_menuModels.takeLast();
+    AyatanaMenuModel *model = m_menuModels.takeLast();
 
     Q_EMIT tailChanged(tail());
     if (m_menuModels.isEmpty()) {

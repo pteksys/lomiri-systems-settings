@@ -128,7 +128,7 @@ Item {
             property var menuModel: menuFactory.model
             property int menuIndex: -1
             property var extendedData: menu && menu.ext || undefined
-            property var strengthAction: QMenuModel.UnityMenuAction {
+            property var strengthAction: QMenuModel.AyatanaMenuAction {
                 model: menuModel ? menuModel : null
                 name: getExtendedProperty(extendedData, "xCanonicalWifiApStrengthAction", "")
             }
