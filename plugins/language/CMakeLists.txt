@@ -24,7 +24,8 @@ target_link_libraries(LomiriLanguagePlugin Qt5::Qml Qt5::Quick Qt5::DBus LomiriS
 # Would love to get this from lomiri-keyboard directly, but that's QMake .pri,
 # so let's just hardcode here.
 target_compile_definitions(LomiriLanguagePlugin PRIVATE
-    -DLOMIRI_KEYBOARD_PLUGIN_PATH=\"${CMAKE_INSTALL_PREFIX}/lib/lomiri-keyboard/plugins\")
+    -DLOMIRI_KEYBOARD_PLUGIN_PATH=\"${CMAKE_INSTALL_PREFIX}/lib/lomiri-keyboard/plugins\"
+    GETTEXT_PACKAGE="${GETTEXT_PACKAGE}")
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/LanguagePlugin)
 install(TARGETS LomiriLanguagePlugin DESTINATION ${PLUG_DIR})
