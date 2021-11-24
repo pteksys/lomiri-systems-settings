@@ -18,7 +18,7 @@
 
 #include "mouse.h"
 
-#define AS_INTERFACE "com.ubuntu.AccountsService.Input"
+#define AS_INTERFACE "com.lomiri.AccountsService.Input"
 
 Mouse::Mouse(QObject* parent)
   : QObject(parent)
