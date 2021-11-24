@@ -102,7 +102,7 @@ Column {
 
     GSettings {
         id: phoneSettings
-        schema.id: "com.ubuntu.phone"
+        schema.id: "com.lomiri.phone"
         Component.onCompleted: {
             // set default names
             var simNames = phoneSettings.simNames;
