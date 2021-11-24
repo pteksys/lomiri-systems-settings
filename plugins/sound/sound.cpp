@@ -28,7 +28,7 @@
 #include <QDBusVariant>
 #include <unistd.h>
 
-#define AS_INTERFACE "com.ubuntu.touch.AccountsService.Sound"
+#define AS_INTERFACE "com.lomiri.touch.AccountsService.Sound"
 #define US_INTERFACE "com.canonical.usensord"
 #define US_PATH "/com/canonical/usensord/haptic"
 

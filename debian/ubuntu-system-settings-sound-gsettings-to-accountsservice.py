@@ -37,7 +37,7 @@ object_path = manager_proxy.FindUserById(
 )
 user_proxy = system_bus.get_object('org.freedesktop.Accounts', object_path)
 
-gsettings = Gio.Settings(schema="com.ubuntu.touch.sound")
+gsettings = Gio.Settings(schema="com.lomiri.touch.sound")
 
 
 def get_string(key):
@@ -61,4 +61,4 @@ keys = [('silent-mode', 'SilentMode', get_bool),
         ('incoming-message-sound', 'IncomingMessageSound', get_string)]
 
 for (g, a, f) in keys:
-    set_as_setting('com.ubuntu.touch.AccountsService.Sound', a, f(g))
+    set_as_setting('com.lomiri.touch.AccountsService.Sound', a, f(g))

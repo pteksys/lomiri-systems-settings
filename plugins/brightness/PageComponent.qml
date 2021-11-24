@@ -37,7 +37,7 @@ ItemPage {
 
     GSettings {
         id: gsettings
-        schema.id: "com.ubuntu.touch.system"
+        schema.id: "com.lomiri.touch.system"
     }
 
     AethercastDisplays {
@@ -108,7 +108,7 @@ ItemPage {
 
                     onSyncTriggered: indicatorPower.brightness.updateState(value / 100.0)
                 }
-                
+
                 /* Disables interaction with the slider when auto-brightness is enabled.
                 The property "enabled" cannot be used because it also disables the live update */
                 MouseArea {

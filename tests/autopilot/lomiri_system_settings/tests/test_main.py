@@ -20,7 +20,7 @@ class MainTestCase(LomiriSystemSettingsTestCase):
         super(MainTestCase, self).setUp()
 
     def test_enable_rotation_lock(self):
-        gsettings = Gio.Settings.new('com.ubuntu.touch.system')
+        gsettings = Gio.Settings.new('com.lomiri.touch.system')
         current = gsettings.get_value('rotation-lock').get_boolean()
 
         self.addCleanup(
@@ -34,7 +34,7 @@ class MainTestCase(LomiriSystemSettingsTestCase):
             Eventually(Equals(True)))
 
     def test_disable_rotation_lock(self):
-        gsettings = Gio.Settings.new('com.ubuntu.touch.system')
+        gsettings = Gio.Settings.new('com.lomiri.touch.system')
         current = gsettings.get_value('rotation-lock').get_boolean()
 
         self.addCleanup(

@@ -39,7 +39,7 @@ SettingsListItems.Icon {
 
         GSettings {
             id: systemSettings
-            schema.id: "com.ubuntu.touch.system"
+            schema.id: "com.lomiri.touch.system"
         }
     }
 }

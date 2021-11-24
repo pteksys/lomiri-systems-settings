@@ -26,7 +26,7 @@ class SecurityTestCase(SecurityBaseTestCase):
         prps = self.security_page.get_properties()
         self.use_powerd = prps['usePowerd']
         if self.use_powerd:
-            gsettings = Gio.Settings.new('com.ubuntu.touch.system')
+            gsettings = Gio.Settings.new('com.lomiri.touch.system')
             prev = gsettings.get_uint('activity-timeout')
             self.addCleanup(
                 self.set_prev_activity_timeout, gsettings, prev)
@@ -52,7 +52,7 @@ class SecurityTestCase(SecurityBaseTestCase):
 
     def _get_activity_timeout(self):
         if self.use_powerd:
-            gsettings = Gio.Settings.new('com.ubuntu.touch.system')
+            gsettings = Gio.Settings.new('com.lomiri.touch.system')
             prev = gsettings.get_uint('activity-timeout')
             return prev
         else:
@@ -62,7 +62,7 @@ class SecurityTestCase(SecurityBaseTestCase):
 
     def _get_dim_timeout(self):
         if self.use_powerd:
-            gsettings = Gio.Settings.new('com.ubuntu.touch.system')
+            gsettings = Gio.Settings.new('com.lomiri.touch.system')
             prev = gsettings.get_uint('dim-timeout')
             return prev
         else:
