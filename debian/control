@@ -103,7 +103,7 @@ Suggests:
 Recommends:
  repowerd,
  ubuntu-system-settings-online-accounts,
- ubuntu-touch-sounds,
+ lomiri-sounds,
 Conflicts:
  ubuntu-system-settings-example,
 Breaks:
