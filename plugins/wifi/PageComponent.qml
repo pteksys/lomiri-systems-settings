@@ -31,7 +31,7 @@ ItemPage {
     property bool wifiEnabled: actionGroup.actionObject.valid ?
                                actionGroup.actionObject.state : false
 
-    UnityMenuModel {
+    AyatanaMenuModel {
         id: menuModel
         busName: "com.lomiri.indicator.network"
         actions: { "indicator": "/com/lomiri/indicator/network" }

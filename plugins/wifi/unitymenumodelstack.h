@@ -23,9 +23,9 @@
 #include <QObject>
 #include <QList>
 
-class UnityMenuModel;
+class AyatanaMenuModel;
 
-// A LIFO queue for storing the current submenu of a UnityMenuModel.
+// A LIFO queue for storing the current submenu of an AyatanaMenuModel.
 // The root menu model is set as the head, and each subsiquent submenu that is
 // opened can be pushed onto the queue.
 // The tail is set to the last item on the queue
@@ -33,26 +33,26 @@ class UnityMenuModel;
 class UnityMenuModelStack: public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(UnityMenuModel *head READ head WRITE setHead NOTIFY headChanged)
-    Q_PROPERTY(UnityMenuModel *tail READ tail NOTIFY tailChanged)
+    Q_PROPERTY(AyatanaMenuModel *head READ head WRITE setHead NOTIFY headChanged)
+    Q_PROPERTY(AyatanaMenuModel *tail READ tail NOTIFY tailChanged)
 public:
     explicit UnityMenuModelStack(QObject *parent = 0);
     ~UnityMenuModelStack();
 
-    UnityMenuModel *head() const;
-    void setHead(UnityMenuModel *model);
+    AyatanaMenuModel *head() const;
+    void setHead(AyatanaMenuModel *model);
 
-    UnityMenuModel *tail() const;
+    AyatanaMenuModel *tail() const;
 
-    Q_INVOKABLE void push(UnityMenuModel *model);
-    Q_INVOKABLE UnityMenuModel *pop();
+    Q_INVOKABLE void push(AyatanaMenuModel *model);
+    Q_INVOKABLE AyatanaMenuModel *pop();
 
 Q_SIGNALS:
-    void headChanged(UnityMenuModel *head);
-    void tailChanged(UnityMenuModel *tail);
+    void headChanged(AyatanaMenuModel *head);
+    void tailChanged(AyatanaMenuModel *tail);
 
 private:
-    QList<UnityMenuModel*> m_menuModels;
+    QList<AyatanaMenuModel*> m_menuModels;
 };
 
 #endif // UNITYMENUMODELSTACK_H
