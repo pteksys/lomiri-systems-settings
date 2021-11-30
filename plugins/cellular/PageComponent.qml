@@ -23,7 +23,7 @@ import SystemSettings 1.0
 import Lomiri.SystemSettings.Cellular 1.0
 import Lomiri.Components 1.3
 import MeeGo.QOfono 0.2
-import QMenuModel 0.1
+import QMenuModel 1.0
 import "Components" as LocalComponents
 import "sims.js" as Sims
 
