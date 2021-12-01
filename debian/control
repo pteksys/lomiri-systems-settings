@@ -93,6 +93,7 @@ Depends:
  qml-module-lomiri-settings-vpn,
  suru-icon-theme (>= 14.04+15.04.20150813~),
  ubports-wallpapers,
+ upower,
  ${misc:Depends},
  ${shlibs:Depends},
 Suggests:
