@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 13:24+0000\n"
+"POT-Creation-Date: 2021-11-29 16:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,47 +147,67 @@ msgstr ""
 msgid "Scanning"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:106
+#: ../plugins/about/Storage.qml:123
+msgid "System Reserved"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:124
 msgid "Used by system"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:107
+#: ../plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:108
+#: ../plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:109
+#: ../plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:110
+#: ../plugins/about/Storage.qml:128
+msgid "Documents"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:129
+msgid "Downloads"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:130
+msgid "Anbox"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:131
+msgid "Libertine"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:111
+#: ../plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:159
+#: ../plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:171
+#: ../plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:197
+#: ../plugins/about/Storage.qml:229
 msgid "By name"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:197
+#: ../plugins/about/Storage.qml:229
 msgid "By size"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:242 ../plugins/battery/PageComponent.qml:109
+#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
 #: ../plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr ""
@@ -2473,11 +2493,15 @@ msgstr ""
 msgid "Other vibrations"
 msgstr ""
 
-#: ../plugins/sound/SoundsList.qml:128
+#: ../plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
 msgstr ""
 
-#: ../plugins/sound/SoundsList.qml:208
+#: ../plugins/sound/SoundsList.qml:132
+msgid "Custom message sound"
+msgstr ""
+
+#: ../plugins/sound/SoundsList.qml:212
 msgid "Choose from"
 msgstr ""
 

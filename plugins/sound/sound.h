@@ -71,6 +71,9 @@ public:
     Q_PROPERTY (QString customRingtonePath
                 READ customRingtonePath
                 NOTIFY customRingtonePathChanged)
+    Q_PROPERTY (QString customMessageSoundPath
+                READ customMessageSoundPath
+                NOTIFY customMessageSoundPathChanged)
 
 public Q_SLOTS:
     void slotChanged(QString, QString);
@@ -86,6 +89,7 @@ Q_SIGNALS:
     void otherVibrateChanged();
     void dialpadSoundsEnabledChanged();
     void customRingtonePathChanged();
+    void customMessageSoundPathChanged();
 
 private:
     LomiriSystemSettings::AccountsService m_accountsService;
@@ -108,6 +112,7 @@ private:
     bool getDialpadSoundsEnabled();
     void setDialpadSoundsEnabled(bool enabled);
     QString customRingtonePath();
+    QString customMessageSoundPath();
 
 };
 

@@ -29,9 +29,13 @@ ItemPage {
 
     function refreshSoundFileNames() {
         var customDir = mountPoint + "/custom/usr/share/" + soundsDir;
-        if (soundType === 0)
+        if (soundType === 0) {
             return backendInfo.listSounds([soundsDir, customDir, backendInfo.customRingtonePath])
-        return backendInfo.listSounds([soundsDir, customDir])
+        } else if (soundType === 1) {
+            return backendInfo.listSounds([soundsDir, customDir, backendInfo.customMessageSoundPath])
+        } else {
+            return backendInfo.listSounds([soundsDir, customDir])
+        }
     }
 
     LomiriSoundPanel {
@@ -125,8 +129,7 @@ ItemPage {
 
             ListItem.Standard {
                 id: customRingtone
-                text: i18n.tr("Custom Ringtone")
-                visible: soundType === 0
+                text: (soundType === 1) ? i18n.tr("Custom message sound") : i18n.tr("Custom Ringtone")
                 progression: true
                 onClicked: pageStack.addPageToNextColumn(soundsPage, picker)
             }
@@ -188,12 +191,13 @@ ItemPage {
         onStateChanged: {
             if (activeTransfer.state === ContentTransfer.Charged) {
                 if (activeTransfer.items.length > 0) {
+                    var customSoundPath = (soundType === 0) ? backendInfo.customRingtonePath : backendInfo.customMessageSoundPath
                     var item = activeTransfer.items[0];
                     var toneUri;
-                    if (item.move(backendInfo.customRingtonePath)) {
+                    if (item.move(customSoundPath)) {
                         toneUri = item.url;
                     } else {
-                        toneUri = backendInfo.customRingtonePath + "/" + item.url.toString().split("/").splice(-1,1);
+                        toneUri = customSoundPath + "/" + item.url.toString().split("/").splice(-1,1);
                     }
                     ringtoneCallback(toneUri);
                 }

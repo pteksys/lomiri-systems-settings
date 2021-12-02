@@ -82,45 +82,77 @@ ItemPage {
             property real freediskSpace: {
                 return backendInfo.getFreeSpace("/home")
             }
+            property real userdata: backendInfo.getTotalSpace("/userdata")
 
-            property real usedBySystem: diskSpace -
+            property real usedBySystem: userdata -
                                         freediskSpace -
                                         backendInfo.homeSize -
                                         backendInfo.totalClickSize
-            property real otherSize: diskSpace -
+            // Files in the home direcoty but not in any of the other categories
+            property real otherSize: userdata -
                                      freediskSpace -
                                      usedBySystem -
-                                     backendInfo.totalClickSize -
+                                     clickAndAppDataSize -
                                      backendInfo.moviesSize -
+                                     backendInfo.audioSize -
                                      backendInfo.picturesSize -
-                                     backendInfo.audioSize
+                                     backendInfo.documentsSize -
+                                     backendInfo.downloadsSize -
+                                     backendInfo.anboxSize -
+                                     backendInfo.libertineSize
+            property real clickAndAppDataSize: backendInfo.totalClickSize +
+                                               backendInfo.appCacheSize +
+                                               backendInfo.appConfigSize +
+                                               backendInfo.appDataSize -
+                                               backendInfo.libertineSize
+            property real reserved: diskSpace - userdata
             //TODO: Let's consider use unified colors in a ¿file?
             property variant spaceColors: [
-                LomiriColors.orange,
-                "#a52a00", //System Maroon
-                "#006a97", //System Blue
-                "#198400", //Dark System Green
-                "#f5d412", //System Yellow
-                LomiriColors.lightAubergine]
+                "#b05738",
+                "#f67936",
+                "#f8ae46",
+                "#edb55f",
+                "#d1c35f",
+                "#9dd93f",
+                "#82ce5f",
+                "#76a8b6",
+                "#8891c1",
+                "#a77eaa",
+                "#cb556c"]
             property variant spaceLabels: [
+                i18n.tr("System Reserved"),
                 i18n.tr("Used by system"),
                 i18n.tr("Videos"),
                 i18n.tr("Audio"),
                 i18n.tr("Pictures"),
+                i18n.tr("Documents"),
+                i18n.tr("Downloads"),
+                i18n.tr("Anbox"),
+                i18n.tr("Libertine"),
                 i18n.tr("Other files"),
                 i18n.tr("Used by apps")]
             property variant spaceValues: [
-                usedBySystem, // Used by system
+                reserved, // used by the partition layout
+                usedBySystem, // Used by Ubuntu
                 backendInfo.moviesSize,
                 backendInfo.audioSize,
                 backendInfo.picturesSize,
+                backendInfo.documentsSize,
+                backendInfo.downloadsSize,
+                backendInfo.anboxSize,
+                backendInfo.libertineSize,
                 otherSize, //Other Files
-                backendInfo.totalClickSize]
+                clickAndAppDataSize]
             property variant spaceObjectNames: [
+                "systemReservedItem",
                 "usedBySystemItem",
                 "moviesItem",
                 "audioItem",
                 "picturesItem",
+                "documentsItem",
+                "downloadsItem",
+                "anboxItem",
+                "libertineItem",
                 "otherFilesItem",
                 "usedByAppsItem"]
 
@@ -142,110 +174,110 @@ ItemPage {
             }
 
             Flickable {
-        id: scrollWidget
-        anchors.fill: parent
-        contentHeight: columnId.height
+            id: scrollWidget
+            anchors.fill: parent
+            contentHeight: columnId.height
 
-        Component.onCompleted: storagePage.flickable = scrollWidget
+            Component.onCompleted: storagePage.flickable = scrollWidget
 
-        Column {
-            id: columnId
-            anchors.left: parent.left
-            anchors.right: parent.right
-
-            SettingsListItems.SingleValue {
-                id: diskItem
-                objectName: "diskItem"
-                text: i18n.tr("Total storage")
-                value: Utilities.formatSize(diskSpace)
-                showDivider: false
-            }
-
-            StorageBar {
-                ready: backendInfo.ready
-            }
-
-            StorageItem {
-                objectName: "storageItem"
-                colorName: theme.palette.normal.foreground
-                label: i18n.tr("Free space")
-                value: freediskSpace
-                ready: backendInfo.ready
-            }
-
-            Repeater {
-                model: spaceColors
-
-                StorageItem {
-                    objectName: spaceObjectNames[index]
-                    colorName: modelData
-                    label: spaceLabels[index]
-                    value: spaceValues[index]
-                    ready: backendInfo.ready
-                }
-            }
-
-            ListItem {
-                objectName: "installedAppsItemSelector"
-                height: layout.height + (divider.visible ? divider.height : 0)
-                divider.visible: false
-                SlotsLayout {
-                    id: layout
-                    mainSlot: OptionSelector {
-                        id: valueSelect
-                        width: parent.width - 2 * (layout.padding.leading + layout.padding.trailing)
-                        model: [i18n.tr("By name"), i18n.tr("By size")]
-                        onSelectedIndexChanged:
-                            settingsId.storageSortByName = (selectedIndex == 0)
-                                                           // 0 → by name, 1 → by size
-                    }
-                }
-            }
-
-            Binding {
-                target: valueSelect
-                property: 'selectedIndex'
-                value: (backendInfo.sortRole === ClickRoles.DisplayNameRole) ?
-                        0 :
-                        1
-            }
-
-            ListView {
-                objectName: "installedAppsListView"
+            Column {
+                id: columnId
                 anchors.left: parent.left
                 anchors.right: parent.right
-                height: childrenRect.height
-                /* Deactivate the listview flicking, we want to scroll on the
-                 * column */
-                interactive: false
-                model: backendInfo.clickList
-                delegate: ListItem {
-                    objectName: "appItem" + displayName
-                    height: appItemLayout.height + (divider.visible ? divider.height : 0)
 
-                    ListItemLayout {
-                        id: appItemLayout
-                        title.text: displayName
-                        height: units.gu(6)
+                SettingsListItems.SingleValue {
+                    id: diskItem
+                    objectName: "diskItem"
+                    text: i18n.tr("Total storage")
+                    value: Utilities.formatSize(diskSpace)
+                    showDivider: false
+                }
 
-                        IconWithFallback {
-                            SlotsLayout.position: SlotsLayout.First
-                            height: units.gu(4)
-                            source: iconPath
-                            fallbackSource: "image://theme/clear"
+                StorageBar {
+                    ready: backendInfo.ready
+                }
+
+                Repeater {
+                    model: spaceColors
+
+                    StorageItem {
+                        objectName: spaceObjectNames[index]
+                        colorName: modelData
+                        label: spaceLabels[index]
+                        value: spaceValues[index]
+                        ready: backendInfo.ready
+                    }
+                }
+
+                StorageItem {
+                    objectName: "storageItem"
+                    colorName: theme.palette.normal.foreground
+                    label: i18n.tr("Free space")
+                    value: freediskSpace
+                    ready: backendInfo.ready
+                }
+
+                ListItem {
+                    objectName: "installedAppsItemSelector"
+                    height: layout.height + (divider.visible ? divider.height : 0)
+                    divider.visible: false
+                    SlotsLayout {
+                        id: layout
+                        mainSlot: OptionSelector {
+                            id: valueSelect
+                            width: parent.width - 2 * (layout.padding.leading + layout.padding.trailing)
+                            model: [i18n.tr("By name"), i18n.tr("By size")]
+                            onSelectedIndexChanged:
+                                settingsId.storageSortByName = (selectedIndex == 0)
+                                                               // 0 → by name, 1 → by size
                         }
-                        Label {
-                            SlotsLayout.position: SlotsLayout.Last
-                            horizontalAlignment: Text.AlignRight
-                            text: installedSize ?
-                                    Utilities.formatSize(installedSize) :
-                                    i18n.tr("N/A")
+                    }
+                }
+
+                Binding {
+                    target: valueSelect
+                    property: 'selectedIndex'
+                    value: (backendInfo.sortRole === ClickRoles.DisplayNameRole) ?
+                            0 :
+                            1
+                }
+
+                ListView {
+                    objectName: "installedAppsListView"
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    height: childrenRect.height
+                    /* Deactivate the listview flicking, we want to scroll on the
+                     * column */
+                    interactive: false
+                    model: backendInfo.clickList
+                    delegate: ListItem {
+                        objectName: "appItem" + displayName
+                        height: appItemLayout.height + (divider.visible ? divider.height : 0)
+
+                        ListItemLayout {
+                            id: appItemLayout
+                            title.text: displayName
+                            height: units.gu(6)
+
+                            IconWithFallback {
+                                SlotsLayout.position: SlotsLayout.First
+                                height: units.gu(4)
+                                source: iconPath
+                                fallbackSource: "image://theme/clear"
+                            }
+                            Label {
+                                SlotsLayout.position: SlotsLayout.Last
+                                horizontalAlignment: Text.AlignRight
+                                text: installedSize ?
+                                        Utilities.formatSize(installedSize) :
+                                        i18n.tr("N/A")
+                            }
                         }
                     }
                 }
             }
         }
-    }
         }
     }
 }
