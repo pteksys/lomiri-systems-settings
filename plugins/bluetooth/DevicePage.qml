@@ -18,7 +18,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QMenuModel 0.1
+import QMenuModel 1.0
 import QtQuick 2.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems

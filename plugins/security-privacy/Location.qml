@@ -19,7 +19,7 @@
  */
 
 import GSettings 1.0
-import QMenuModel 0.1
+import QMenuModel 1.0
 import Qt.labs.folderlistmodel 2.1
 import QtQuick 2.4
 import SystemSettings 1.0

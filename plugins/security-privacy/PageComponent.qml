@@ -20,7 +20,7 @@
 
 import Biometryd 0.0
 import GSettings 1.0
-import QMenuModel 0.1
+import QMenuModel 1.0
 import QtQuick 2.4
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components 1.3
