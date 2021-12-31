@@ -1,12 +1,12 @@
 Source: lomiri-system-settings
 Section: gnome
 Priority: optional
-Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Maintainer: UBports developers <devs@ubports.com>
 Build-Depends:
  cmake,
  cmake-extras,
  dbus-test-runner,
- debhelper (>= 9),
+ debhelper-compat (= 12),
  dh-migrations,
  dh-python,
  dpkg-dev <!nocheck>,
@@ -53,8 +53,9 @@ Build-Depends:
  qtdeclarative5-dev-tools,
  xvfb <!nocheck>,
 Standards-Version: 3.9.6
-Homepage: https://github.com/ubports/system-settings
-Vcs-Git: https://github.com/ubports/system-settings
+Homepage: https://gitlab.com/ubports/core/lomiri-system-settings
+Vcs-Git: https://gitlab.com/ubports/core/lomiri-system-settings.git
+Vcs-Browser: https://gitlab.com/ubports/core/lomiri-system-settings
 X-Python3-Version: >= 3.2
 X-Ubuntu-Use-Langpack: yes
 
