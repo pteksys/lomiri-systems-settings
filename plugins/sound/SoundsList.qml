@@ -248,4 +248,9 @@ ItemPage {
         activeTransfer: soundsPage.activeTransfer
     }
 
+    Component.onDestruction: {
+        if (soundEffect.playbackState === Audio.PlayingState) {
+            soundEffect.stop()
+        }
+    }
 }
