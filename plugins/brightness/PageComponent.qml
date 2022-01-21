@@ -58,8 +58,8 @@ ItemPage {
     QDBusActionGroup {
         id: indicatorPower
         busType: 1
-        busName: "com.canonical.indicator.power"
-        objectPath: "/com/canonical/indicator/power"
+        busName: "org.ayatana.indicator.power"
+        objectPath: "/org/ayatana/indicator/power"
         property variant brightness: action("brightness")
         Component.onCompleted: start()
     }

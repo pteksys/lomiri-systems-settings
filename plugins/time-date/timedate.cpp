@@ -37,7 +37,7 @@ TimeDate::TimeDate(QObject *parent) :
                          "/org/freedesktop/timedate1",
                          "org.freedesktop.timedate1",
                           m_systemBusConnection),
-    m_indicatorSettings(g_settings_new("com.canonical.indicator.datetime")),
+    m_indicatorSettings(g_settings_new("org.ayatana.indicator.datetime")),
     m_timeZoneModel()
 {
     connect (&m_serviceWatcher,

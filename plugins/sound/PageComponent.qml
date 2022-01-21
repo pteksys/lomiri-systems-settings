@@ -103,8 +103,8 @@ ItemPage {
                 QDBusActionGroup {
                     id: soundActionGroup
                     busType: DBus.SessionBus
-                    busName: "com.canonical.indicator.sound"
-                    objectPath: "/com/canonical/indicator/sound"
+                    busName: "org.ayatana.indicator.sound"
+                    objectPath: "/org/ayatana/indicator/sound"
 
                     property variant volume: action("volume")
                     property variant silentMode: action("silent-mode")
