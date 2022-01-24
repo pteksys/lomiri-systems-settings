@@ -62,8 +62,8 @@ ItemPage {
     QDBusActionGroup {
         id: indicatorPower
         busType: 1
-        busName: "com.canonical.indicator.power"
-        objectPath: "/com/canonical/indicator/power"
+        busName: "org.ayatana.indicator.power"
+        objectPath: "/org/ayatana/indicator/power"
         property variant brightness: action("brightness").state
         property variant batteryLevel: action("battery-level").state
         property variant deviceState: action("device-state").state
@@ -396,8 +396,8 @@ ItemPage {
             QDBusActionGroup {
                 id: bluetoothActionGroup
                 busType: DBus.SessionBus
-                busName: "com.canonical.indicator.bluetooth"
-                objectPath: "/com/canonical/indicator/bluetooth"
+                busName: "org.ayatana.indicator.bluetooth"
+                objectPath: "/org/ayatana/indicator/bluetooth"
 
                 property bool visible: action("bluetooth-supported")
                 property variant enabled: action("bluetooth-enabled")

@@ -223,8 +223,8 @@ ItemPage {
             QDBusActionGroup {
                 id: bluetoothActionGroup
                 busType: DBus.SessionBus
-                busName: "com.canonical.indicator.bluetooth"
-                objectPath: "/com/canonical/indicator/bluetooth"
+                busName: "org.ayatana.indicator.bluetooth"
+                objectPath: "/org/ayatana/indicator/bluetooth"
 
                 property variant enabled: action("bluetooth-enabled")
 
