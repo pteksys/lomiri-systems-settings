@@ -70,7 +70,7 @@ ItemPage {
 
     Audio {
         id: soundEffect
-        audioRole: MediaPlayer.alert
+        audioRole: MediaPlayer.NotificationRole
     }
 
     function setRingtone(path) {
@@ -102,7 +102,7 @@ ItemPage {
         id: scrollWidget
         anchors.fill: parent
         contentWidth: parent.width
-        contentHeight: selectorColumn.height + stopItem.height
+        contentHeight: selectorColumn.childrenRect.height + stopItem.height
         boundsBehavior: (contentHeight > height) ?
                             Flickable.DragAndOvershootBounds :
                             Flickable.StopAtBounds
@@ -140,6 +140,8 @@ ItemPage {
     ListItem.SingleControl {
         id: stopItem
         anchors.bottom: parent.bottom
+        enabled: soundEffect.playbackState == Audio.PlayingState
+        visible: enabled
         control: AbstractButton {
             id: stopButton
             anchors.verticalCenter: parent.verticalCenter
@@ -147,8 +149,7 @@ ItemPage {
             focus: false
             width: height
             height: units.gu(4)
-            enabled: soundEffect.playbackState == Audio.PlayingState
-            visible: enabled
+            visible: stopItem.enabled
 
             onClicked: soundEffect.stop()
 
@@ -173,7 +174,7 @@ ItemPage {
         Rectangle {
             anchors.fill: parent
             z: parent.z - 1
-            visible: stopButton.visible
+            visible: stopItem.visible
             color: Theme.palette.normal.background
         }
     }
@@ -215,6 +216,8 @@ ItemPage {
         ContentPeerPicker {
             id: peerPicker
             visible: parent.visible
+            anchors.top: header.bottom
+            anchors.topMargin: units.gu(1)
             handler: ContentHandler.Source
             contentType: ContentType.Music
             showTitle: false
@@ -245,4 +248,9 @@ ItemPage {
         activeTransfer: soundsPage.activeTransfer
     }
 
+    Component.onDestruction: {
+        if (soundEffect.playbackState === Audio.PlayingState) {
+            soundEffect.stop()
+        }
+    }
 }
