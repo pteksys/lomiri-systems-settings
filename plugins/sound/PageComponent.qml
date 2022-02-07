@@ -154,7 +154,7 @@ ItemPage {
                             title: i18n.tr("Ringtone"),
                             showStopButton: true,
                             soundType: 0,
-                            soundsDir: "sounds/ubuntu/ringtones/"
+                            soundsDir: "sounds/lomiri/ringtones/"
                         }
                     )
                 }
@@ -213,7 +213,7 @@ ItemPage {
                         Qt.resolvedUrl("SoundsList.qml"), {
                             title: i18n.tr("Message received"),
                             soundType: 1,
-                            soundsDir:  "sounds/ubuntu/notifications/"
+                            soundsDir:  "sounds/lomiri/notifications/"
                         }
                     )
                 }
