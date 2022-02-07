@@ -1,8 +1,6 @@
 # add_qml_test macro
 include(QmlTest)
 
-# TODO(Ratchanan): separate the plugin to an independent package
-# add_subdirectory(security-privacy)
 add_subdirectory(bluetooth)
 add_subdirectory(wifi)
 add_subdirectory(notifications)

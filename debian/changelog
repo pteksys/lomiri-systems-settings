@@ -1,5 +1,9 @@
 lomiri-system-settings (1.0) UNRELEASED; urgency=medium
 
+  [ Guido Berhoerster ]
+  * Update VCS and homepage URLs
+  * Update to dh version 12
+  * Switch to source format 3.0
 
  -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Tue, 30 Mar 2021 01:41:47 +0700
 
