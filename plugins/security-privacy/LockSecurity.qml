@@ -555,7 +555,7 @@ ItemPage {
 
                 id: changeControl
                 visible: securityPrivacy.securityType ===
-                         UbuntuSecurityPrivacyPanel.Passcode &&
+                         UbuntuSecurityPrivacyPanel.Passcode ||
                          securityPrivacy.securityType ===
                          UbuntuSecurityPrivacyPanel.Passphrase
 
