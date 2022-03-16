@@ -183,7 +183,7 @@ private:
 
     QMap<QString, QString> m_mounts;
 
-    QScopedPointer<QDBusInterface> m_propertyService;
+    QScopedPointer<QDBusInterface> m_usbModed;
 
     GCancellable *m_cancellable;
 };

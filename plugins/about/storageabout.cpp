@@ -47,8 +47,9 @@
 #include <QDBusReply>
 
 namespace {
-    const QString PROPERTY_SERVICE_PATH = "/com/canonical/PropertyService";
-    const QString PROPERTY_SERVICE_OBJ = "com.canonical.PropertyService";
+    const QString USB_MODED_NAME = QStringLiteral("com.meego.usb_moded");
+    const QString USB_MODED_PATH = QStringLiteral("/com/meego/usb_moded");
+    const QString USB_MODED_INTERFACE = USB_MODED_NAME;
 }
 
 struct MeasureData {
@@ -152,9 +153,9 @@ StorageAbout::StorageAbout(QObject *parent) :
     m_appCacheSize(0),
     m_appConfigSize(0),
     m_appDataSize(0),
-    m_propertyService(new QDBusInterface(PROPERTY_SERVICE_OBJ,
-        PROPERTY_SERVICE_PATH,
-        PROPERTY_SERVICE_OBJ,
+    m_usbModed(new QDBusInterface(USB_MODED_NAME,
+        USB_MODED_PATH,
+        USB_MODED_INTERFACE,
         QDBusConnection::systemBus())),
     m_cancellable(nullptr)
 {
@@ -225,28 +226,64 @@ QString StorageAbout::ubuntuBuildID()
 
 bool StorageAbout::getDeveloperModeCapable() const
 {
-    QDBusReply<bool> reply = m_propertyService->call("GetProperty", "adb");
+    QDBusReply<QString> reply = m_usbModed->call("get_modes");
 
-    if (reply.isValid())
-        return true;
+    if (!reply.isValid())
+        return false;
+
+    const QString modes = reply.value();
+    for (const auto & mode : modes.split(',', QString::SkipEmptyParts)) {
+        if (mode.endsWith("_adb"))
+            return true;
+    }
+
     return false;
 }
 
 bool StorageAbout::getDeveloperMode()
 {
-    QDBusReply<bool> reply = m_propertyService->call("GetProperty", "adb");
+    QDBusReply<QString> reply = m_usbModed->call("get_config");
 
     if (reply.isValid()) {
-        return reply.value();
+        return reply.value().endsWith("_adb");
     } else {
-        qWarning("devMode: no reply from dbus property service");
+        qWarning("devMode: no reply from usb moded");
         return false;
     }
 }
 
-void StorageAbout::setDeveloperMode(bool mode)
+void StorageAbout::setDeveloperMode(bool enabled)
 {
-    m_propertyService->call("SetProperty", "adb", mode);
+    QDBusReply<QString> reply = m_usbModed->call("mode_request"); // Currently applied mode.
+
+    if (!reply.isValid()) {
+        qWarning("devMode: no reply from usb moded, unable to change developer mode");
+        return;
+    }
+
+    QString current_mode = reply.value();
+    if (current_mode == "developer_mode" || current_mode == "charging_only") {
+        // Special case for usb-moded's built-in modes.
+        current_mode = "mtp";
+    }
+    // Possible modes are: mtp mtp_adb rndis rndis_adb
+
+    QString target_mode;
+    if (enabled && !current_mode.endsWith("_adb"))
+        target_mode = current_mode + "_adb";
+    else if (!enabled && current_mode.endsWith("_adb"))
+        target_mode = current_mode.chopped(4);
+
+    if (target_mode.isNull()) {
+        // The current mode match requested value. Do nothing.
+        return;
+    }
+
+    // usb-moded has differnt calls to set "configured mode" & "current mode".
+    // We have to called both of them to get the mode persisted and to actually change
+    // the mode.
+    m_usbModed->call("set_config", target_mode);
+    m_usbModed->call("set_mode", target_mode);
 }
 
 QString StorageAbout::licenseInfo(const QString &subdir) const
