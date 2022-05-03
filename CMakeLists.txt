@@ -110,7 +110,7 @@ add_custom_target(${DESKTOP_FILE} ALL
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}
         DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 
-install(FILES lomiri-system-settings.url-dispatcher DESTINATION share/url-dispatcher/urls)
+install(FILES lomiri-system-settings.url-dispatcher DESTINATION share/lomiri-url-dispatcher/urls)
 install(FILES screenshot.png DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings.svg DESTINATION ${SETTINGS_SHARE_DIR})
 install(FILES system-settings-app-splash.svg DESTINATION ${SETTINGS_SHARE_DIR})

@@ -4,4 +4,4 @@ usr/share/applications
 usr/share/glib-2.0
 usr/share/locale
 usr/share/lomiri-system-settings
-usr/share/url-dispatcher
+usr/share/lomiri-url-dispatcher
