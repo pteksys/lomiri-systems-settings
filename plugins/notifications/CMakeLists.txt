@@ -4,6 +4,7 @@ SET (CMAKE_AUTOMOC ON)
 
 set(QML_SOURCES
     PageComponent.qml
+    CellBroadcast.qml
     ClickAppNotifications.qml
     ClickAppsSoundsNotify.qml
     ClickAppsVibrationsNotify.qml
