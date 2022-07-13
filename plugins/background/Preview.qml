@@ -77,6 +77,7 @@ ItemPage {
             bottom: divider.top
         }
         source: uri
+        autoTransform: true
         sourceSize.height: height
         sourceSize.width: 0
         fillMode: Image.PreserveAspectCrop
