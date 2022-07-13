@@ -20,7 +20,7 @@
 
 import GSettings 1.0
 import QMenuModel 0.1
-import QtQuick 2.4
+import QtQuick 2.12
 import QtSystemInfo 5.0
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems

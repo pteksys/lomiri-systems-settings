@@ -26,7 +26,7 @@
  *       “Contact {carrier name} for more information.”.
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import QtContacts 5.0
 import MeeGo.QOfono 0.2
 import SystemSettings 1.0

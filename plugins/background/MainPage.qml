@@ -18,7 +18,7 @@
  *
 */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import GSettings 1.0
 import SystemSettings 1.0
 import Ubuntu.Content 1.3
