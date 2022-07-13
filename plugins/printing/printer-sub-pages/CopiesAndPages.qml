@@ -16,7 +16,7 @@
  * Authored by Jonas G. Drange <jonas.drange@canonical.com>
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItems

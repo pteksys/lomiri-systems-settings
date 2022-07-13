@@ -18,7 +18,7 @@
  *
 */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import SystemSettings 1.0
 import Lomiri.Components 1.3
 import "../utilities.js" as Utilities

@@ -17,7 +17,7 @@
  *      Nick Dedekind <nick.dedekind@canonical.com>
   */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import QMenuModel 1.0 as QMenuModel
 import Lomiri.Settings.Menus 0.1 as Menus
 import Lomiri.Settings.Components 0.1 as LSC

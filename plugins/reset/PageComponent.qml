@@ -21,7 +21,7 @@
 //TODO: Go through all different ListItems and replace the deprecated ones
 
 import GSettings 1.0
-import QtQuick 2.4
+import QtQuick 2.12
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components.ListItems 1.3 as ListItem
