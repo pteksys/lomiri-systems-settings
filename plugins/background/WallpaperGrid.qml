@@ -153,6 +153,7 @@ Column {
                         id: itemImage
                         objectName: "itemImg"
                         source: modelData
+                        autoTransform: true
                         width: parent.width
                         height: parent.height
                         sourceSize.width: 512
