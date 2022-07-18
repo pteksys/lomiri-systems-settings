@@ -371,7 +371,7 @@ void DeviceModel::setProperties(const QMap<QString,QVariant> &properties)
 
 void DeviceModel::updateProperty(const QString &key, const QVariant &value)
 {
-    if (key == "Name") {
+    if (key == "Alias") {
         m_adapterName = value.toString();
         Q_EMIT(adapterNameChanged());
     } else if (key == "Address") {
