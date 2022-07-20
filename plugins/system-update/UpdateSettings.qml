@@ -18,7 +18,7 @@
  * Authors: Marius Gripsgard <marius@ubports.com>
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import SystemSettings 1.0
 import Ubuntu.Components 1.3
 import SystemSettings.ListItems 1.0 as SettingsListItems

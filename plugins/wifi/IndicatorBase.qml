@@ -17,7 +17,7 @@
  *      Nick Dedekind <nick.dedekind@canonical.com>
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import QMenuModel 0.1 as QMenuModel
 import SystemSettings 1.0
 import Ubuntu.Components 1.3

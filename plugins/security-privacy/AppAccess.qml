@@ -17,7 +17,7 @@
  * Alberto Mardegan <alberto.mardegan@canonical.com>
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Ubuntu.Components 1.3

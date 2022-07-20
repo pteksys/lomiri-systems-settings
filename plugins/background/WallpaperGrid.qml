@@ -18,7 +18,7 @@
  *
 */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import "Components"
@@ -153,6 +153,7 @@ Column {
                         id: itemImage
                         objectName: "itemImg"
                         source: modelData
+                        autoTransform: true
                         width: parent.width
                         height: parent.height
                         sourceSize.width: 512

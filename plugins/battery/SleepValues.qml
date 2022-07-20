@@ -22,7 +22,7 @@
 // IF YOU RENAME IT YOU MUST UPDATE THE REFERENCE THERE.
 
 import GSettings 1.0
-import QtQuick 2.7
+import QtQuick 2.12
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import SystemSettings 1.0

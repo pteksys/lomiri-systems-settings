@@ -21,7 +21,7 @@
  *
  */
 
-import QtQuick 2.4
+import QtQuick 2.12
 import Qt.labs.folderlistmodel 1.0
 import SystemSettings 1.0
 import Ubuntu.Components 1.3

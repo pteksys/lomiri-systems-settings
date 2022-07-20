@@ -20,7 +20,7 @@
 
 import GSettings 1.0
 import MeeGo.QOfono 0.2
-import QtQuick 2.4
+import QtQuick 2.12
 import QtQuick.Layouts 1.1
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
