@@ -166,7 +166,11 @@ HardwareKeyboardPlugin::updateKeyboardLayouts()
     }
     g_free(source_id);
     g_list_free(sources);
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     qSort(m_keyboardLayouts.begin(), m_keyboardLayouts.end(), compareLayouts);
+#else
+    std::sort(m_keyboardLayouts.begin(), m_keyboardLayouts.end(), compareLayouts);
+#endif
 }
 
 void

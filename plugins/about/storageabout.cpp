@@ -232,7 +232,11 @@ bool StorageAbout::getDeveloperModeCapable() const
         return false;
 
     const QString modes = reply.value();
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     for (const auto & mode : modes.split(',', QString::SkipEmptyParts)) {
+#else
+    for (const auto & mode : modes.split(',', Qt::SkipEmptyParts)) {
+#endif
         if (mode.endsWith("_adb"))
             return true;
     }

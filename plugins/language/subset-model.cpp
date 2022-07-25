@@ -257,7 +257,11 @@ SubsetModel::setChecked(int  element,
         change->start = time;
         change->finish = time + timeout;
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         m_change.insert(qUpperBound(m_change.begin(), m_change.end(), change, changeLessThan), change);
+#else
+        m_change.insert(std::upper_bound(m_change.begin(), m_change.end(), change, changeLessThan), change);
+#endif
 
         QTimer::singleShot(timeout, this, SLOT(timerExpired()));
     }

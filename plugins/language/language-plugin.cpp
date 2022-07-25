@@ -22,6 +22,7 @@
 #include "language-plugin.h"
 #include "keyboard-layout.h"
 
+#include <algorithm>
 #include <act/act.h>
 #include <unicode/locid.h>
 #include <unicode/unistr.h>
@@ -176,7 +177,11 @@ LanguagePlugin::updateLanguageNamesAndCodes()
         tmpLocales.append(tmpLoc.name() + QStringLiteral(".UTF-8"));
     }
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     QSet<QString> localeNames = tmpLocales.toSet();
+#else
+    QSet<QString> localeNames = QSet<QString>(tmpLocales.begin(), tmpLocales.end());
+#endif
     QList<LanguageLocale> languageLocales;
 
     Q_FOREACH(const QString &loc, localeNames) {
@@ -197,8 +202,11 @@ LanguagePlugin::updateLanguageNamesAndCodes()
 
         languageLocales += languageLocale;
     }
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     qSort(languageLocales);
+#else
+    std::sort(languageLocales.begin(), languageLocales.end());
+#endif
 
     for (int i(0); i < languageLocales.length(); i++) {
         const LanguageLocale &languageLocale(languageLocales[i]);

@@ -299,7 +299,11 @@ QStringList Sound::listSounds(const QStringList &dirs)
     for (int i = 0; i < dirs.size(); ++i)
         sounds.append(soundsListFromDir(dirs[i]));
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     qSort(sounds.begin(), sounds.end(), sortSoundsList);
+#else
+    std::sort(sounds.begin(), sounds.end(), sortSoundsList);
+#endif
 
     return sounds;
 }

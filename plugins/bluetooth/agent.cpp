@@ -209,7 +209,11 @@ void Agent::providePinCode(uint tag, bool confirmed, QString pinCode)
         QDBusMessage message = m_delayedReplies[tag];
 
         if (confirmed)
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
             m_connection.send(message.createReply(qVariantFromValue(pinCode)));
+#else
+            m_connection.send(message.createReply(QVariant::fromValue(pinCode)));
+#endif
         else
             cancel(message, __func__);
 

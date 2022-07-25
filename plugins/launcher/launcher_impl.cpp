@@ -20,6 +20,9 @@
 
 #include <QApplication>
 #include <QGuiApplication>
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+#include <QScreen>
+#endif
 
 LauncherPanelPluginImpl::LauncherPanelPluginImpl(QObject *parent)
     : LauncherPanelPlugin(parent)
@@ -38,7 +41,11 @@ LauncherPanelPluginImpl::~LauncherPanelPluginImpl()
 
 QRect LauncherPanelPluginImpl::screenGeometry(const int &screen) const
 {
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     return m_desktopWidget->screenGeometry(screen);
+#else
+    return QGuiApplication::screens().at(screen)->geometry(); ;
+#endif
 }
 
 int LauncherPanelPluginImpl::getCurrentScreenNumber() const
@@ -48,5 +55,9 @@ int LauncherPanelPluginImpl::getCurrentScreenNumber() const
 
 int LauncherPanelPluginImpl::screens() const
 {
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     return m_desktopWidget->screenCount();
+#else
+     return QGuiApplication::screens().count();
+#endif
 }

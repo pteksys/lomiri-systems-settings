@@ -265,8 +265,13 @@ void QSystemImage::initializeProperties() {
                                                Qt::ISODate));
 
         QMap<QString, QVariant> details;
+
         QStringList keyvalue = result["version_detail"].split(
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
             ",", QString::SkipEmptyParts
+#else
+            ",", Qt::SkipEmptyParts
+#endif
         );
         for (int i = 0; i < keyvalue.size(); ++i) {
             QStringList pair = keyvalue.at(i).split("=");

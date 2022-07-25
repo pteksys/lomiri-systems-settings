@@ -70,7 +70,11 @@ int main(int argc, char **argv)
     Utilities utils;
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()),
                      Qt::QueuedConnection);
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     qmlRegisterType<QAbstractItemModel>();
+#else
+    qmlRegisterAnonymousType<QAbstractItemModel>("SystemSettings", 1);
+#endif
     qmlRegisterType<LomiriSystemSettings::PluginManager>("SystemSettings", 1, 0, "PluginManager");
     view.engine()->rootContext()->setContextProperty("Utilities", &utils);
     view.setResizeMode(QQuickView::SizeRootObjectToView);

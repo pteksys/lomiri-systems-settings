@@ -136,7 +136,11 @@ ClickModel::Click ClickModel::buildClick(QVariantMap manifest)
     // This key is the base directory where the click package is installed to.
     // We'll look for files relative to this.
     if (manifest.contains("_directory")) {
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         directory = manifest.value("_directory", "/undefined").toString();
+#else
+        directory.setPath(manifest.value("_directory", "/undefined").toString());
+#endif
         // Set the icon from the click package. Might be a path or a reference to a themed icon.
         QString iconFile(manifest.value("icon", "undefined").toString());
 
