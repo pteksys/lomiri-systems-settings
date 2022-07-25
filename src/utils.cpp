@@ -41,7 +41,11 @@ void parsePluginOptions(const QStringList &arguments, QString &defaultPlugin,
             /* Find out which plugin is required. If the first component of the
              * path is "system", just skip it. */
             QStringList pathComponents =
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
                 urlArgument.path().split('/', QString::SkipEmptyParts);
+#else
+                urlArgument.path().split('/', Qt::SkipEmptyParts);
+#endif
             int pluginIndex = 0;
             if (pathComponents.value(pluginIndex, "") == "system")
                 pluginIndex++;
@@ -118,7 +122,11 @@ QString Utilities::getDestinationUrl(const QString &source)
 
     QUrl sourceUrl(source);
     QStringList pathComponents =
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         sourceUrl.path().split('/', QString::SkipEmptyParts);
+#else
+        sourceUrl.path().split('/', Qt::SkipEmptyParts);
+#endif
 
     int pluginIndex = 0;
     if (pathComponents.value(pluginIndex, "") == "system")

@@ -200,8 +200,11 @@ OnScreenKeyboardPlugin::updateKeyboardLayouts()
                 delete layout;
         }
     }
-
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     qSort(m_keyboardLayouts.begin(), m_keyboardLayouts.end(), compareLayouts);
+#else
+    std::sort(m_keyboardLayouts.begin(), m_keyboardLayouts.end(), compareLayouts);
+#endif
 }
 
 void enabledLayoutsChanged(GSettings *settings,
