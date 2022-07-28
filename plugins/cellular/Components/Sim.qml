@@ -45,7 +45,8 @@ Item {
         var strings = {
             'gsm': i18n.tr("2G only (saves battery)"),
             'umts': i18n.tr("2G/3G"),
-            'lte': i18n.tr("2G/3G/4G")
+            'lte': i18n.tr("2G/3G/4G"),
+            'nr_5g': i18n.tr("2G/3G/4G/5G"),
         };
         strings['umts_enable'] = strings['umts'];
         return strings[tech] || "";
