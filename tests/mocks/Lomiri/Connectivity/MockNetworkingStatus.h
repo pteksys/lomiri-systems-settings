@@ -36,14 +36,14 @@ class Q_DECL_EXPORT MockNetworkingStatus : public QObject
     Q_PROPERTY(QVector<Limitations> limitations READ limitations NOTIFY limitationsChanged)
     Q_PROPERTY(Status status READ status NOTIFY statusChanged)
     Q_PROPERTY(bool online READ online NOTIFY onlineChanged)
-    Q_PROPERTY(bool limitedBandwith READ limitedBandwith WRITE setLimitedBandwidth NOTIFY limitedBandwithChanged)
+    Q_PROPERTY(bool limitedBandwidth READ limitedBandwidth WRITE setLimitedBandwidth NOTIFY limitedBandwidthChanged)
 
 public:
     explicit MockNetworkingStatus(QObject *parent = 0);
     virtual ~MockNetworkingStatus();
 
     enum Limitations {
-        Bandwith
+        Bandwidth
     };
 
     enum Status {
@@ -55,7 +55,7 @@ public:
     QVector<Limitations> limitations() const;
     Status status() const;
     bool online() const;
-    bool limitedBandwith() const;
+    bool limitedBandwidth() const;
 
     void setLimitedBandwidth(bool limited); // mock only
     Q_INVOKABLE void setStatus(Status status); // mock only
@@ -64,7 +64,7 @@ Q_SIGNALS:
     void limitationsChanged();
     void statusChanged(Status value);
     void onlineChanged(bool value);
-    void limitedBandwithChanged(bool value);
+    void limitedBandwidthChanged(bool value);
 
 private:
     QVector<MockNetworkingStatus::Limitations> m_limitations;

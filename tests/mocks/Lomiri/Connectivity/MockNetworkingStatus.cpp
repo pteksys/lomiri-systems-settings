@@ -68,16 +68,16 @@ MockNetworkingStatus::online() const
 }
 
 bool
-MockNetworkingStatus::limitedBandwith() const
+MockNetworkingStatus::limitedBandwidth() const
 {
-    return limitations().contains(Limitations::Bandwith);
+    return limitations().contains(Limitations::Bandwidth);
 }
 
 void MockNetworkingStatus::setLimitedBandwidth(bool limited)
 {
     if (limited) {
-        m_limitations << Limitations::Bandwith;
-    } else if (limitedBandwith()) {
-        m_limitations.remove(m_limitations.indexOf(Limitations::Bandwith));
+        m_limitations << Limitations::Bandwidth;
+    } else if (limitedBandwidth()) {
+        m_limitations.remove(m_limitations.indexOf(Limitations::Bandwidth));
     }
 }
