@@ -41,7 +41,7 @@ ItemPage {
     property var popup
     function done () {
         popup.opacity = 0;
-        pageStack.pop();
+        apl.removePages(apl.primaryPage);
         popup.destroy(1000);
     }
 
