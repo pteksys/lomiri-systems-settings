@@ -15,6 +15,7 @@ Build-Depends:
  intltool,
  libaccountsservice-dev,
  libandroid-properties-dev [amd64 arm64 armhf i386],
+ libdeviceinfo-dev,
  libapt-pkg-dev,
  libclick-0.4-dev,
  libevdev-dev,

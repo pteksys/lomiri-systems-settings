@@ -1,4 +1,7 @@
-include_directories(${ANDR_PROP_INCLUDE_DIRS})
+include_directories(
+    ${ANDR_PROP_INCLUDE_DIRS}
+    ${DEVICEINFO_INCLUDE_DIRS}
+)
 add_subdirectory(plugin)
 
 set(QML_SOURCES
@@ -28,7 +31,10 @@ add_library(LomiriBrightnessPanel MODULE
                 plugin.cpp
                 brightness.cpp
                 ${QML_SOURCES})
-target_link_libraries(LomiriBrightnessPanel Qt5::Quick Qt5::Qml Qt5::DBus LomiriSystemSettings ${ANDR_PROP_LDFLAGS})
+target_link_libraries(
+    LomiriBrightnessPanel Qt5::Quick Qt5::Qml Qt5::DBus
+    LomiriSystemSettings ${ANDR_PROP_LDFLAGS} ${DEVICEINFO_LDFLAGS}
+)
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/Brightness)
 install(TARGETS LomiriBrightnessPanel DESTINATION ${PLUG_DIR})

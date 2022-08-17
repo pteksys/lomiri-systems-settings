@@ -30,6 +30,8 @@ endif()
 
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -fno-permissive -pedantic -Wall -Wextra")
+set(CMAKE_CXX_STANDARD 14)
+
 find_package(Qt5Concurrent REQUIRED)
 find_package(Qt5DBus REQUIRED)
 find_package(Qt5Gui REQUIRED)
@@ -51,6 +53,7 @@ pkg_search_module(ACCOUNTSSERVICE REQUIRED accountsservice)
 pkg_search_module(GEONAMES REQUIRED geonames)
 pkg_search_module(ICU REQUIRED icu-i18n)
 pkg_search_module(ANDR_PROP libandroid-properties)
+pkg_check_modules(DEVICEINFO REQUIRED deviceinfo)
 pkg_search_module(CLICK REQUIRED click-0.4)
 pkg_check_modules(QTGSETTINGS REQUIRED gsettings-qt)
 

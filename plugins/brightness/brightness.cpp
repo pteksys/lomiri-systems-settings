@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 Canonical Ltd
+ * Copyright 2021-2022 UBports foundation.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3 as
@@ -62,7 +63,8 @@ Brightness::Brightness(QObject *parent) :
                    "com.lomiri.Repowerd",
                    m_systemBusConnection),
     m_powerdRunning(false),
-    m_autoBrightnessAvailable(false)
+    m_autoBrightnessAvailable(false),
+    m_info(std::make_unique<DeviceInfo>())
 {
     qRegisterMetaType<BrightnessParams>();
     m_powerdRunning = m_powerdIface.isValid();
@@ -94,6 +96,10 @@ bool Brightness::getPowerdRunning() const {
 
 bool Brightness::getWidiSupported() const 
 {
+    if (m_info->contains("supportsWirelessDisplay"))
+        return true;
+
+    // FIXME: drop the following for jammy (22.04) or later, deprecated since focal (20.04)
     char widi[PROP_VALUE_MAX];
     property_get("ubuntu.widi.supported", widi, "0");
     return (strcmp(widi, "0") > 0);

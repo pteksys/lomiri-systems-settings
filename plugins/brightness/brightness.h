@@ -21,6 +21,8 @@
 #ifndef BRIGHTNESS_H
 #define BRIGHTNESS_H
 
+#include <deviceinfo.h>
+
 #include <QDBusInterface>
 #include <QObject>
 
@@ -47,6 +49,7 @@ private:
     QDBusConnection m_systemBusConnection;
     QString m_objectPath;
     QDBusInterface m_powerdIface;
+    std::unique_ptr<DeviceInfo> m_info;
     bool m_powerdRunning;
     bool m_autoBrightnessAvailable;
 };
