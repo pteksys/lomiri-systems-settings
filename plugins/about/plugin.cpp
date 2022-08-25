@@ -23,6 +23,7 @@
 #include <QtQml/QQmlContext>
 #include "click.h"
 #include "storageabout.h"
+#include "systeminfo.h"
 #include "systemimage.h"
 
 static QObject *siSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
@@ -30,6 +31,13 @@ static QObject *siSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
     return new LomiriSystemSettings::QSystemImage;
+}
+
+static QObject *sinfoSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+    return new SystemInfo;
 }
 
 void BackendPlugin::registerTypes(const char *uri)
@@ -41,6 +49,9 @@ void BackendPlugin::registerTypes(const char *uri)
     qmlRegisterType<StorageAbout>(uri, 1, 0, "LomiriStorageAboutPanel");
     qmlRegisterSingletonType<LomiriSystemSettings::QSystemImage>(
         uri, 1, 0, "SystemImage", siSingletonProvider
+    );
+    qmlRegisterSingletonType<SystemInfo>(
+        uri, 1, 0, "SystemInfo", sinfoSingletonProvider
     );
 }
 

@@ -62,6 +62,18 @@ ItemPage {
             }
 
             SingleValueStacked {
+                objectName: "kernelVersionArch"
+                text: i18n.tr("Kernel")
+                value: "%1 (%2)".arg(SystemInfo.kernelVersion).arg(SystemInfo.cpuArch)
+            }
+
+            SingleValueStacked {
+                objectName: "buildAbi"
+                text: i18n.tr("Build ABI")
+                value: SystemInfo.buildAbi
+            }
+
+            SingleValueStacked {
                 objectName: "ubportsVersionBuildNumberItem"
                 text: i18n.tr("UBports Image part")
                 value: SystemImage.currentUbportsBuildNumber
