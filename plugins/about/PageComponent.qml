@@ -153,7 +153,6 @@ ItemPage {
             SettingsItemTitle {
                 id: softwareItem
                 objectName: "softwareItem"
-                visible: SystemImage.currentBuildNumber
                 text: i18n.tr("Software:")
             }
 

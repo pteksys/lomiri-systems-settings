@@ -58,7 +58,8 @@ ItemPage {
             SingleValueStacked {
                 objectName: "versionBuildNumberItem"
                 text: i18n.tr("OS build number")
-                value: versionPage.version ? versionPage.version : "Non system image"
+                value: versionPage.version
+                visible: versionPage.version
             }
 
             SingleValueStacked {
