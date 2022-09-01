@@ -7,7 +7,7 @@ Build-Depends:
  cmake-extras,
  dbus-test-runner,
  debhelper-compat (= 12),
- dh-migrations,
+ dh-migrations:all,
  dh-python,
  dpkg-dev <!nocheck>,
  gdb:any,
