@@ -23,6 +23,7 @@ set(QML_SOURCES
 add_library(LomiriStorageAboutPanel MODULE
     plugin.cpp
     storageabout.cpp
+    systeminfo.cpp
     click.cpp
     plugin.h
     storageabout.h

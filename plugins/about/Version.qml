@@ -58,7 +58,20 @@ ItemPage {
             SingleValueStacked {
                 objectName: "versionBuildNumberItem"
                 text: i18n.tr("OS build number")
-                value: versionPage.version ? versionPage.version : "Non system image"
+                value: versionPage.version
+                visible: versionPage.version
+            }
+
+            SingleValueStacked {
+                objectName: "kernelVersionArch"
+                text: i18n.tr("Kernel")
+                value: "%1 (%2)".arg(SystemInfo.kernelVersion).arg(SystemInfo.cpuArch)
+            }
+
+            SingleValueStacked {
+                objectName: "buildAbi"
+                text: i18n.tr("Build ABI")
+                value: SystemInfo.buildAbi
             }
 
             SingleValueStacked {

@@ -372,19 +372,19 @@ int QSystemImage::currentBuildNumber() const
 QString QSystemImage::currentUbportsBuildNumber() const
 {
     QString val = m_detailedVersion.value("ubports").toString();
-    return val.isEmpty() ? LomiriSystemSettings::_("Unavailable") : val;
+    return val.isEmpty() ? "" : val;
 }
 
 QString QSystemImage::currentDeviceBuildNumber() const
 {
     QString val = m_detailedVersion.value("device").toString();
-    return val.isEmpty() ? LomiriSystemSettings::_("Unavailable") : val;
+    return val.isEmpty() ? "" : val;
 }
 
 QString QSystemImage::currentCustomBuildNumber() const
 {
     QString val = m_detailedVersion.value("custom").toString();
-    return val.isEmpty() ? LomiriSystemSettings::_("Unavailable") : val;
+    return val.isEmpty() ? "" : val;
 }
 
 int QSystemImage::targetBuildNumber() const
