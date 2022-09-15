@@ -242,7 +242,7 @@ ItemPage {
                         serverTarget: btSwitch
                         serverProperty: "serverChecked"
 
-                        onSyncTriggered: bluetoothActionGroup.enabled.activate()
+                        onSyncTriggered: function(arg) { bluetoothActionGroup.enabled.activate(arg) }
                     }
                 }
             }

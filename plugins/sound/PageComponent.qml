@@ -86,7 +86,7 @@ ItemPage {
                         serverTarget: silentModeSwitch
                         serverProperty: "serverChecked"
 
-                        onSyncTriggered: soundActionGroup.silentMode.activate()
+                        onSyncTriggered: function(arg) { soundActionGroup.silentMode.activate(arg) }
                     }
                 }
             }
