@@ -49,6 +49,7 @@ void Battery::buildDeviceString() {
     UpClient *client;
     GPtrArray *devices;
     UpDeviceKind kind;
+    UpDeviceTechnology tech_type;
 
     client = up_client_new();
 
@@ -67,7 +68,8 @@ void Battery::buildDeviceString() {
         UpDevice *device;
         device = (UpDevice *)g_ptr_array_index(devices, i);
         g_object_get(device, "kind", &kind, nullptr);
-        if (kind == UP_DEVICE_KIND_BATTERY) {
+        g_object_get(device, "tech_type", &tech_type, nullptr);
+        if (kind == UP_DEVICE_KIND_BATTERY && (tech_type == UP_DEVICE_TECHNOLOGY_LITHIUM_ION || tech_type == UP_DEVICE_TECHNOLOGY_LITHIUM_POLYMER)) {
             m_deviceString = QString(up_device_get_object_path(device));
         }
     }
