@@ -22,10 +22,10 @@
 
 #include "click_applications_model.h"
 
-#define GSETTINGS_APPS_SCHEMA_ID "com.ubuntu.notifications.settings.applications"
+#define GSETTINGS_APPS_SCHEMA_ID "com.lomiri.notifications.settings.applications"
 #define GSETTINGS_APPLICATIONS_KEY "applications"
-#define GSETTINGS_NOTIFICATIONS_SCHEMA_ID "com.ubuntu.notifications.settings"
-#define GSETTINGS_BASE_PATH "/com/ubuntu/NotificationSettings/"
+#define GSETTINGS_NOTIFICATIONS_SCHEMA_ID "com.lomiri.notifications.settings"
+#define GSETTINGS_BASE_PATH "/com/lomiri/NotificationSettings/"
 #define GSETTINGS_ENABLE_NOTIFICATIONS_KEY "enable-notifications"
 #define GSETTINGS_SOUNDS_NOTIFY_KEY "use-sounds-notifications"
 #define GSETTINGS_VIBRATIONS_NOTIFY_KEY "use-vibrations-notifications"
