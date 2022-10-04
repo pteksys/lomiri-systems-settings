@@ -263,6 +263,7 @@ Component {
                     id: confirmButton
                     objectName: "confirmButton"
                     width: (parent.width / 2) - units.gu(1)
+                    color: theme.palette.normal.positive
                     text: hotspotSetupDialog.stored ? i18n.tr("Change") :
                         i18n.tr("Start")
                     enabled: settingsValid()
