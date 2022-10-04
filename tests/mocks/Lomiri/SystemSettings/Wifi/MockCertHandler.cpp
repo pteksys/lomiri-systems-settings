@@ -20,6 +20,7 @@
 
 MockAbstractListModel::MockAbstractListModel(QObject *parent)
 {
+    Q_UNUSED(parent);
 }
 
 QHash<int, QByteArray> MockAbstractListModel::roleNames() const
@@ -42,6 +43,8 @@ QHash<int, QByteArray> MockAbstractListModel::roleNames() const
 
 int MockAbstractListModel::rowCount(const QModelIndex &parent) const
 {
+    Q_UNUSED(parent);
+
     return m_files.size();
 }
 
@@ -74,30 +77,42 @@ QVariant MockAbstractListModel::data(const QModelIndex &index, int role) const
         return m_files[index.row()].keyLength;
     case pacFileName:
         return m_files[index.row()].pacFileName;
+    default:
+        return ret;
     }
 }
 
 QByteArray MockFileHandler::getCertContent(QString filename)
 {
+    Q_UNUSED(filename);
+
     return QByteArray();
 }
 
 QString MockFileHandler::moveCertFile(QString filename)
 {
+    Q_UNUSED(filename);
+
     return QString();
 }
 
 QString MockFileHandler::moveKeyFile(QString filename)
 {
+    Q_UNUSED(filename);
+
     return QString();
 }
 
 QString MockFileHandler::movePacFile(QString filename)
 {
+    Q_UNUSED(filename);
+
     return QString();
 }
 
 bool MockFileHandler::removeFile(QString filename)
 {
+    Q_UNUSED(filename);
+
     return false;
 }

@@ -40,5 +40,3 @@ bool TestPlugin2::reset()
     qDebug() << "reset function in plugin";
     return true;
 }
-
-#include "test-plugin2.moc"
