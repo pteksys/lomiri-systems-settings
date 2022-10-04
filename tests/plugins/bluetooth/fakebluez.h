@@ -37,6 +37,10 @@
 
 #define FREEDESKTOP_PROPERTIES_IFACE "org.freedesktop.DBus.Properties"
 
+// The device class of some arbitrary Android phone.
+//#define MOCK_PHONE_CLASS 5898764
+#define MOCK_PHONE_CLASS 0x5A020C
+
 using namespace QtDBusTest;
 using namespace QtDBusMock;
 

@@ -80,7 +80,8 @@ FakeBluez::pairDevice(const QString &address)
 {
     QDBusReply<void> reply = m_bluezMock->call("PairDevice",
                                                   m_currentAdapter,
-                                                  address);
+                                                  address,
+                                                  MOCK_PHONE_CLASS);
 
     if (!reply.isValid()) {
         qWarning() << "Failed to pair mock device:" << reply.error().message();
