@@ -61,7 +61,7 @@ void Battery::buildDeviceString() {
         return;
 #endif
 
-    devices = up_client_get_devices(client);
+    devices = up_client_get_devices2(client);
 
     for (uint i=0; i < devices->len; i++) {
         UpDevice *device;

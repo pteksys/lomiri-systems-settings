@@ -56,7 +56,7 @@ void deviceChanged(UpClient *client,
     } else
 #endif
     {
-        GPtrArray *devices = up_client_get_devices (client);
+        GPtrArray *devices = up_client_get_devices2 (client);
         item->setVisibility (devices->len > 0);
         g_ptr_array_unref (devices);
     }
