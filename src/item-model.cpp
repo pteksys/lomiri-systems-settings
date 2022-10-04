@@ -206,6 +206,9 @@ bool ItemModelSortProxy::filterAcceptsRow(
                 ret = true;
                 goto out;
             }
+
+        break;
+
     default:
         ret = false;
     }

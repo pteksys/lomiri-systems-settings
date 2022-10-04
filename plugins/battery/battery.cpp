@@ -61,7 +61,7 @@ void Battery::buildDeviceString() {
         return;
 #endif
 
-    devices = up_client_get_devices(client);
+    devices = up_client_get_devices2(client);
 
     for (uint i=0; i < devices->len; i++) {
         UpDevice *device;
@@ -89,11 +89,7 @@ int Battery::lastFullCharge() const
 void Battery::getLastFullCharge()
 {
     GPtrArray *values = nullptr;
-    gint32 offset = 0;
-    GTimeVal timeval;
-
-    g_get_current_time(&timeval);
-    offset = timeval.tv_sec;
+    gint32 offset = g_get_real_time() / 1000000;
     up_device_set_object_path_sync(m_device, m_deviceString.toStdString().c_str(), nullptr, nullptr);
     values = up_device_get_history_sync(m_device, "charge", 864000, 1000, nullptr, nullptr);
 
@@ -132,14 +128,10 @@ QVariantList Battery::getHistory(const QString &deviceString, const int timespan
         return QVariantList();
 
     GPtrArray *values = nullptr;
-    gint32 offset = 0;
-    GTimeVal timeval;
+    gint32 offset = g_get_real_time() / 1000000;
     QVariantList listValues;
     QVariantMap listItem;
     gdouble currentValue = 0;
-
-    g_get_current_time(&timeval);
-    offset = timeval.tv_sec;
     up_device_set_object_path_sync(m_device, deviceString.toStdString().c_str(), nullptr, nullptr);
     values = up_device_get_history_sync(m_device, "charge", timespan, resolution, nullptr, nullptr);
 
