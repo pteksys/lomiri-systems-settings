@@ -22,7 +22,7 @@
 class GesturesPlugin: public QObject, public LomiriSystemSettings::PluginInterface2
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "com.ubuntu.SystemSettings.PluginInterface/2.0")
+    Q_PLUGIN_METADATA(IID "com.lomiri.SystemSettings.PluginInterface/2.0")
     Q_INTERFACES(LomiriSystemSettings::PluginInterface2)
 
 public:

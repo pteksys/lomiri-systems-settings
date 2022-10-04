@@ -20,7 +20,7 @@
 
 #include "general_notification_settings.h"
 
-#define GSETTINGS_APPS_SCHEMA_ID "com.ubuntu.notifications.settings.applications"
+#define GSETTINGS_APPS_SCHEMA_ID "com.lomiri.notifications.settings.applications"
 #define GSETTINGS_VIBRATE_SILENT_MODE_KEY "vibrate-silent-mode"
 
 GeneralNotificationSettings::GeneralNotificationSettings(QObject* parent)
