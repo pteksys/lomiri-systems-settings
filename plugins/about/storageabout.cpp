@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 Canonical Ltd
+ * Copyright (C) 2013 Canonical Ltd.
  *
  * isInternal() is Copyright (C) 2012 Digia Plc and/or its subsidiary(-ies).
  *
