@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Copyright (C) 2013 Canonical
+# Copyright (C) 2013 Canonical Ltd.
 #
 # Authors:
 #  Iain Lane <iain.lane@canonical.com>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 UBports foundation
+ * Copyright (C) 2020 UBports Foundation
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3 as

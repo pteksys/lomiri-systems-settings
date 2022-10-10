@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
-# Copyright (C) 2016 Canonical
+# Copyright (C) 2016 Canonical Ltd.
 #
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software

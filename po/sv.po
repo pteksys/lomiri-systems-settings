@@ -1,5 +1,5 @@
 # Swedish translation for lomiri-system-settings (Touch interface)
-# Copyright © 2013-2014 Rosetta Contributors and Canonical Ltd 2013-2014
+# Copyright © 2013-2014 Rosetta Contributors and Canonical Ltd. 2013-2014
 # This file is distributed under the same license as the lomiri-system-settings package.
 # Josef Andersson <josef.andersson@fripost.org>, 2014.
 # clone <josef.andersson@fripost.org>, 2015.
