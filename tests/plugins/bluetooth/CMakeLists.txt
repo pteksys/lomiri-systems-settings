@@ -46,6 +46,9 @@ add_executable(tst-bluetooth-device
     fakebluez.cpp
     ${PLUGIN_SOURCES}
 )
+if(MODERN_PYTHON_DBUSMOCK)
+    add_definitions(-DMODERN_PYTHON_DBUSMOCK)
+endif()
 
 target_link_libraries(tst-bluetooth-device
     ${QTDBUSMOCK_LIBRARIES}

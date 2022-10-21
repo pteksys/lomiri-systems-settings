@@ -16,6 +16,8 @@ set(LIBDIR ${CMAKE_INSTALL_LIBDIR})
 enable_testing()
 
 option(ENABLE_TESTS "Build tests" ON)
+# TODO: drop this with migration to jammy and beyond!
+option(MODERN_PYTHON_DBUSMOCK "Adapt tst-bluetooth-device to work with python-dbusmock 0.26+" OFF)
 
 if(cmake_build_type_lower MATCHES coverage)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage" )

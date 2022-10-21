@@ -71,8 +71,12 @@ void DeviceTest::init()
     m_bluezMock = new FakeBluez();
     m_bluezMock->addAdapter("new0", "bluetoothTest");
     m_bluezMock->addDevice("My Phone", "00:00:de:ad:be:ef");
+#if MODERN_PYTHON_DBUSMOCK
+    m_bluezMock->setProperty("/org/bluez/new0/dev_00_00_DE_AD_BE_EF", "org.bluez.Device1", "Class", QVariant(MOCK_PHONE_CLASS));
+#else
     // Only this will set the 'Class' and 'Icon' properties for the device ...
     m_bluezMock->pairDevice("00:00:de:ad:be:ef");
+#endif
     m_dbus = new QDBusConnection(m_bluezMock->dbus());
 
     QList<QString> devices = m_bluezMock->devices();
@@ -112,6 +116,12 @@ void DeviceTest::testGetType()
 
 void DeviceTest::testIsPaired()
 {
+#if MODERN_PYTHON_DBUSMOCK
+    m_bluezMock->pairDevice("00:00:de:ad:be:ef");
+
+    processEvents();
+#endif
+
     QCOMPARE(m_device->isPaired(), true);
 
     m_bluezMock->setProperty("/org/bluez/new0/dev_00_00_DE_AD_BE_EF", "org.bluez.Device1", "Paired", QVariant(false));
