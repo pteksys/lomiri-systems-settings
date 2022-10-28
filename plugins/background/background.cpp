@@ -271,7 +271,7 @@ void Background::rmFile(const QString &file)
 QString Background::defaultBackgroundFile() const
 {
     /* TODO: For now hardcoded path, later we'll use GSettings */
-    return qgetenv("SNAP") + SYSTEM_BACKGROUND_DIR "/warty-final-ubuntu.png";
+    return qgetenv("SNAP") + SYSTEM_BACKGROUND_DIR "/lomiri-default-background.jpg";
 }
 
 Background::~Background() {
