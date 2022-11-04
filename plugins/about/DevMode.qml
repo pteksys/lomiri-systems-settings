@@ -96,6 +96,7 @@ ItemPage {
             }
 
             ListItem {
+                visible: securityPrivacy.securityType == LomiriSecurityPrivacyPanel.Swipe
                 height: lockSecurityLabel.height + units.gu(2)
                 Label {
                     id: lockSecurityLabel
@@ -109,6 +110,7 @@ ItemPage {
             }
 
             SettingsListItems.SingleValueProgression {
+                visible: securityPrivacy.securityType == LomiriSecurityPrivacyPanel.Swipe
                 objectName: "lockSecurityItem"
                 text: i18n.tr("Lock security")
                 onClicked: pageStack.addPageToNextColumn(
