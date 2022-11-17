@@ -82,8 +82,8 @@ class StorageAbout : public QObject
                READ getHomeSize
                NOTIFY sizeReady)
 
-    Q_PROPERTY(quint64 anboxSize
-               READ getAnboxSize
+    Q_PROPERTY(quint64 waydroidSize
+               READ getWaydroidSize
                NOTIFY sizeReady)
 
     Q_PROPERTY(quint64 libertineSize
@@ -140,7 +140,7 @@ public:
     quint64 getDocumentsSize();
     quint64 getDownloadsSize();
     quint64 getHomeSize();
-    quint64 getAnboxSize();
+    quint64 getWaydroidSize();
     quint64 getLibertineSize();
     quint64 getAppCacheSize();
     quint64 getAppConfigSize();
@@ -175,7 +175,7 @@ private:
     quint64 m_downloadsSize;
     quint64 m_otherSize;
     quint64 m_homeSize;
-    quint64 m_anboxSize;
+    quint64 m_waydroidSize;
     quint64 m_libertineSize;
     quint64 m_appCacheSize;
     quint64 m_appConfigSize;

@@ -148,7 +148,7 @@ StorageAbout::StorageAbout(QObject *parent) :
     m_downloadsSize(0),
     m_otherSize(0),
     m_homeSize(0),
-    m_anboxSize(0),
+    m_waydroidSize(0),
     m_libertineSize(0),
     m_appCacheSize(0),
     m_appConfigSize(0),
@@ -367,9 +367,9 @@ quint64 StorageAbout::getHomeSize()
     return m_homeSize;
 }
 
-quint64 StorageAbout::getAnboxSize()
+quint64 StorageAbout::getWaydroidSize()
 {
-    return m_anboxSize;
+    return m_waydroidSize;
 }
 
 quint64 StorageAbout::getLibertineSize()
@@ -437,12 +437,15 @@ void StorageAbout::populateSizes()
                 new MeasureData(running_ptr, this, &m_homeSize,
                                 m_cancellable));
 
+    // FIXME: also include ~/.local/share/waydroid usage, required root access to measure due to perms!
+    //        it should also be combined into one "Waydroid" entry
     measure_file(
-                "/home/phablet/anbox-data",
+                "/var/lib/waydroid",
                 measure_finished,
-                new MeasureData(running_ptr, this, &m_anboxSize,
+                new MeasureData(running_ptr, this, &m_waydroidSize,
                                 m_cancellable));
 
+    // FIXME: start using g_get_home_dir() instead of hardcoding "/home/phablet"!
     measure_file(
                 "/home/phablet/.cache/libertine-container",
                 measure_finished,

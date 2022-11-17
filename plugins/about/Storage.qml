@@ -98,7 +98,7 @@ ItemPage {
                                      backendInfo.picturesSize -
                                      backendInfo.documentsSize -
                                      backendInfo.downloadsSize -
-                                     backendInfo.anboxSize -
+                                     backendInfo.waydroidSize -
                                      backendInfo.libertineSize
             property real clickAndAppDataSize: backendInfo.totalClickSize +
                                                backendInfo.appCacheSize +
@@ -127,7 +127,7 @@ ItemPage {
                 i18n.tr("Pictures"),
                 i18n.tr("Documents"),
                 i18n.tr("Downloads"),
-                i18n.tr("Anbox"),
+                i18n.tr("Waydroid"),
                 i18n.tr("Libertine"),
                 i18n.tr("Other files"),
                 i18n.tr("Used by apps")]
@@ -139,7 +139,7 @@ ItemPage {
                 backendInfo.picturesSize,
                 backendInfo.documentsSize,
                 backendInfo.downloadsSize,
-                backendInfo.anboxSize,
+                backendInfo.waydroidSize,
                 backendInfo.libertineSize,
                 otherSize, //Other Files
                 clickAndAppDataSize]
@@ -151,7 +151,7 @@ ItemPage {
                 "picturesItem",
                 "documentsItem",
                 "downloadsItem",
-                "anboxItem",
+                "waydroidItem",
                 "libertineItem",
                 "otherFilesItem",
                 "usedByAppsItem"]
