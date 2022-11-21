@@ -86,11 +86,11 @@ def load(mock, parameters):
             [
                 {
                     'action': 'indicator.wifi.enable',
-                    'x-canonical-type': 'com.canonical.indicator.switch',
+                    'x-ayatana-type': 'org.ayatana.indicator.switch',
                     'label': 'Wi-Fi'
                 },
                 {
-                    'x-canonical-type': 'com.canonical.indicator.section',
+                    'x-ayatana-type': 'org.ayatana.indicator.section',
                     'label': 'Available Wi-Fi networks'
                 },
                 {
@@ -104,46 +104,46 @@ def load(mock, parameters):
             dbus.UInt32(0), dbus.UInt32(1),
             [
                 {
-                    'x-canonical-wifi-ap-is-secure': True,
-                    'x-canonical-wifi-ap-is-enterprise': False,
+                    'x-ayatana-wifi-ap-is-secure': True,
+                    'x-ayatana-wifi-ap-is-enterprise': False,
                     'label': 'Secure',
-                    'x-canonical-type':
+                    'x-ayatana-type':
                         'unity.widgets.systemsettings.tablet.accesspoint',
-                    'x-canonical-wifi-ap-strength-action':
+                    'x-ayatana-wifi-ap-strength-action':
                         'indicator.accesspoint.0::strength',
                     'action': 'indicator.accesspoint.0',
-                    'x-canonical-wifi-ap-is-adhoc': False
+                    'x-ayatana-wifi-ap-is-adhoc': False
                 },
                 {
-                    'x-canonical-wifi-ap-is-secure': False,
-                    'x-canonical-wifi-ap-is-enterprise': False,
+                    'x-ayatana-wifi-ap-is-secure': False,
+                    'x-ayatana-wifi-ap-is-enterprise': False,
                     'label': 'Insecure',
-                    'x-canonical-type':
+                    'x-ayatana-type':
                         'unity.widgets.systemsettings.tablet.accesspoint',
-                    'x-canonical-wifi-ap-strength-action':
+                    'x-ayatana-wifi-ap-strength-action':
                         'indicator.accesspoint.1::strength',
                     'action': 'indicator.accesspoint.1',
-                    'x-canonical-wifi-ap-is-adhoc': False
+                    'x-ayatana-wifi-ap-is-adhoc': False
                 },
                 {
-                    'x-canonical-wifi-ap-is-secure': True,
-                    'x-canonical-wifi-ap-is-enterprise': True,
+                    'x-ayatana-wifi-ap-is-secure': True,
+                    'x-ayatana-wifi-ap-is-enterprise': True,
                     'label': 'Enterprise',
-                    'x-canonical-type':
+                    'x-ayatana-type':
                         'unity.widgets.systemsettings.tablet.accesspoint',
-                    'x-canonical-wifi-ap-strength-action':
+                    'x-ayatana-wifi-ap-strength-action':
                         'indicator.accesspoint.2::strength',
                     'action': 'indicator.accesspoint.2',
-                    'x-canonical-wifi-ap-is-adhoc': False
+                    'x-ayatana-wifi-ap-is-adhoc': False
                 },
                 {
-                    'x-canonical-wifi-ap-is-secure': False,
-                    'x-canonical-wifi-ap-is-enterprise': False,
+                    'x-ayatana-wifi-ap-is-secure': False,
+                    'x-ayatana-wifi-ap-is-enterprise': False,
                     'label': 'Unknown',
-                    'x-canonical-type':
+                    'x-ayatana-type':
                         'unknown-type',
                     'action': 'indicator.accesspoint.3',
-                    'x-canonical-wifi-ap-is-adhoc': False
+                    'x-ayatana-wifi-ap-is-adhoc': False
                 }
             ]
         )

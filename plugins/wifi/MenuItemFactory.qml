@@ -30,9 +30,9 @@ Item {
     property var _map:  {
         "lomiri.widgets.systemsettings.tablet.switch"        : switchMenu,
 
-        "com.canonical.indicator.div"       : divMenu,
-        "com.canonical.indicator.section"   : sectionMenu,
-        "com.canonical.indicator.switch"    : switchMenu,
+        "org.ayatana.indicator.div"       : divMenu,
+        "org.ayatana.indicator.section"   : sectionMenu,
+        "org.ayatana.indicator.switch"    : switchMenu,
 
         "lomiri.widgets.systemsettings.tablet.wifisection" : wifiSection,
         "lomiri.widgets.systemsettings.tablet.accesspoint" : accessPoint,
@@ -115,7 +115,7 @@ Item {
 
             function loadAttributes() {
                 if (!menuModel || menuIndex == undefined) return;
-                menuModel.loadExtendedAttributes(menuIndex, {'x-canonical-busy-action': 'bool'})
+                menuModel.loadExtendedAttributes(menuIndex, {'x-ayatana-busy-action': 'bool'})
             }
         }
     }
@@ -169,9 +169,9 @@ Item {
 
             function loadAttributes() {
                 if (!model || menuIndex == undefined) return;
-                model.loadExtendedAttributes(menuIndex, {'x-canonical-wifi-ap-is-adhoc': 'bool',
-                                                         'x-canonical-wifi-ap-is-secure': 'bool',
-                                                         'x-canonical-wifi-ap-strength-action': 'string'});
+                model.loadExtendedAttributes(menuIndex, {'x-ayatana-wifi-ap-is-adhoc': 'bool',
+                                                         'x-ayatana-wifi-ap-is-secure': 'bool',
+                                                         'x-ayatana-wifi-ap-strength-action': 'string'});
             }
         }
     }

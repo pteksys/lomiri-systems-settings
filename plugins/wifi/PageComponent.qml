@@ -97,7 +97,7 @@ ItemPage {
                         sourceComponent: menuFactory.load(model)
 
                         onLoaded: {
-                            if (model.type === "com.canonical.indicator.root") {
+                            if (model.type === "org.ayatana.indicator.root") {
                                 menuStack.push(mainMenu.model.submenu(index));
                             }
 
