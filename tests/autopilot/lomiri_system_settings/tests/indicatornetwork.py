@@ -86,11 +86,11 @@ def load(mock, parameters):
             [
                 {
                     'action': 'indicator.wifi.enable',
-                    'x-ayatana-type': 'com.canonical.indicator.switch',
+                    'x-ayatana-type': 'org.ayatana.indicator.switch',
                     'label': 'Wi-Fi'
                 },
                 {
-                    'x-ayatana-type': 'com.canonical.indicator.section',
+                    'x-ayatana-type': 'org.ayatana.indicator.section',
                     'label': 'Available Wi-Fi networks'
                 },
                 {

@@ -30,9 +30,9 @@ Item {
     property var _map:  {
         "lomiri.widgets.systemsettings.tablet.switch"        : switchMenu,
 
-        "com.canonical.indicator.div"       : divMenu,
-        "com.canonical.indicator.section"   : sectionMenu,
-        "com.canonical.indicator.switch"    : switchMenu,
+        "org.ayatana.indicator.div"       : divMenu,
+        "org.ayatana.indicator.section"   : sectionMenu,
+        "org.ayatana.indicator.switch"    : switchMenu,
 
         "lomiri.widgets.systemsettings.tablet.wifisection" : wifiSection,
         "lomiri.widgets.systemsettings.tablet.accesspoint" : accessPoint,

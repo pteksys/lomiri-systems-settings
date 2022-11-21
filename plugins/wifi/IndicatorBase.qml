@@ -35,7 +35,7 @@ ItemPage {
     property string actionsObjectPath
     property var menuObjectPaths: undefined
     readonly property string device: "phone_wifi_settings"
-    property string rootMenuType: "com.canonical.indicator.root"
+    property string rootMenuType: "org.ayatana.indicator.root"
     property bool active: false
 
     property string deviceMenuObjectPath: menuObjectPaths.hasOwnProperty(device) ? menuObjectPaths[device] : ""
