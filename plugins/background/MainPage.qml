@@ -23,6 +23,7 @@ import GSettings 1.0
 import SystemSettings 1.0
 import Lomiri.Content 1.3
 import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
 import Lomiri.Components.Popups 1.3
 import Lomiri.SystemSettings.Background 1.0
 import "utilities.js" as Utilities
@@ -31,7 +32,7 @@ ItemPage {
     id: mainPage
     objectName: "backgroundPage"
     flickable: sources
-    title: i18n.tr("Background")
+    title: i18n.tr("Appearance")
 
     signal save (string uri)
 
@@ -58,6 +59,11 @@ ItemPage {
         id: backgroundPanel
     }
 
+    GSettings {
+        id: shellSettings
+        schema.id: "com.lomiri.Shell"
+    }
+
     Flickable {
         id: sources
 
@@ -72,6 +78,19 @@ ItemPage {
             anchors {
                 left: parent.left
                 right: parent.right
+            }
+
+            Column {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                ListItem.Standard {
+                    text: i18n.tr("Enable blur effects")
+                    control: Switch {
+                        checked: shellSettings.enableBlur
+                        onCheckedChanged: shellSettings.enableBlur = checked
+                    }
+                    showDivider: false
+                }
             }
 
             WallpaperGrid {

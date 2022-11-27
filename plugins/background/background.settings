@@ -1,7 +1,7 @@
 {
     "icon": "preferences-desktop-wallpaper-symbolic",
     "translations": "lomiri-system-settings",
-    "name": "Background",
+    "name": "Appearance",
     "category": "personal",
     "priority": 0,
     "keywords": [
