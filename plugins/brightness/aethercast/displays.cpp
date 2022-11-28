@@ -41,19 +41,12 @@ Displays::Displays(const QDBusConnection &dbus, QObject *parent):
     QObject::connect(m_aethercastProperties.data(), SIGNAL(PropertiesChanged(const QString&, const QVariantMap&, const QStringList&)),
                      this, SLOT(slotPropertiesChanged(const QString&, const QVariantMap&, const QStringList&)));
 
-
-    watchCall(m_aethercastProperties->GetAll(AETHERCAST_MANAGER_IFACE), [=](QDBusPendingCallWatcher *watcher) {
-        QDBusPendingReply<QVariantMap> reply = *watcher;
-
-        if (reply.isError()) {
-            qWarning() << "Failed to retrieve properties for manager";
-            watcher->deleteLater();
+    getAll();
+    connect(m_dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, [=](QString service) {
+        if (service != AETHERCAST_SERVICE)
             return;
-        }
 
-        auto properties = reply.argumentAt<0>();
-        setProperties(properties);
-        watcher->deleteLater();
+        getAll();
     });
 
     m_connectedDevices.filterOnStates(Device::State::Association |
@@ -67,6 +60,23 @@ Displays::Displays(const QDBusConnection &dbus, QObject *parent):
     m_disconnectedDevices.setSourceModel(&m_devices);
     connect(&m_connectedDevices, SIGNAL(rowsInserted(const QModelIndex, int, int)), this, SIGNAL(connectedDevicesChanged()));
     connect(&m_disconnectedDevices, SIGNAL(rowsInserted(const QModelIndex, int, int)), this, SIGNAL(disconnectedDevicesChanged()));
+}
+
+void Displays::getAll()
+{
+    watchCall(m_aethercastProperties->GetAll(AETHERCAST_MANAGER_IFACE), [=](QDBusPendingCallWatcher *watcher) {
+            QDBusPendingReply<QVariantMap> reply = *watcher;
+
+        if (reply.isError()) {
+            qWarning() << "Failed to retrieve properties for manager";
+            watcher->deleteLater();
+            return;
+        }
+
+        auto properties = reply.argumentAt<0>();
+        setProperties(properties);
+        watcher->deleteLater();
+    });
 }
 
 void Displays::slotPropertiesChanged(const QString &interface, const QVariantMap &changedProperties,

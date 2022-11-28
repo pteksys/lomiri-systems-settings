@@ -36,40 +36,47 @@ DeviceModel::DeviceModel(QDBusConnection &dbus, QObject *parent):
     m_dbus(dbus),
     m_aethercastManager(AETHERCAST_SERVICE, "/org/aethercast", m_dbus)
 {
-    if (m_aethercastManager.isValid()) {
+    connect(&m_aethercastManager, SIGNAL(InterfacesAdded(const QDBusObjectPath&, InterfaceList)),
+            this, SLOT(slotInterfacesAdded(const QDBusObjectPath&, InterfaceList)));
 
-        connect(&m_aethercastManager, SIGNAL(InterfacesAdded(const QDBusObjectPath&, InterfaceList)),
-                this, SLOT(slotInterfacesAdded(const QDBusObjectPath&, InterfaceList)));
+    connect(&m_aethercastManager, SIGNAL(InterfacesRemoved(const QDBusObjectPath&, const QStringList&)),
+            this, SLOT(slotInterfacesRemoved(const QDBusObjectPath&, const QStringList&)));
 
-        connect(&m_aethercastManager, SIGNAL(InterfacesRemoved(const QDBusObjectPath&, const QStringList&)),
-                this, SLOT(slotInterfacesRemoved(const QDBusObjectPath&, const QStringList&)));
-
-        watchCall(m_aethercastManager.GetManagedObjects(), [=](QDBusPendingCallWatcher *watcher) {
-            QDBusPendingReply<ManagedObjectList> reply = *watcher;
-
-            if (reply.isError()) {
-                qWarning() << "Failed to retrieve list of managed objects from Aethercast service: "
-                           << reply.error().message();
-                watcher->deleteLater();
-                return;
-            }
-
-            auto objectList = reply.argumentAt<0>();
-
-            for (QDBusObjectPath path : objectList.keys()) {
-                InterfaceList ifaces = objectList.value(path);
-                addDevice(path.path(), ifaces.value(AETHERCAST_DEVICE_IFACE));
-                break;
-            }
-
-            watcher->deleteLater();
-        });
-    }
+    getManagedObjects();
+    connect(m_dbus.interface(), &QDBusConnectionInterface::serviceRegistered, this, [=](QString service) {
+        if (service != AETHERCAST_SERVICE)
+            return;
+        getManagedObjects();
+    });
 }
 
 DeviceModel::~DeviceModel()
 {
     qWarning() << "Releasing device model ..";
+}
+
+void DeviceModel::getManagedObjects()
+{
+    watchCall(m_aethercastManager.GetManagedObjects(), [=](QDBusPendingCallWatcher *watcher) {
+        QDBusPendingReply<ManagedObjectList> reply = *watcher;
+
+        if (reply.isError()) {
+            qWarning() << "Failed to retrieve list of managed objects from Aethercast service: "
+                       << reply.error().message();
+            watcher->deleteLater();
+            return;
+        }
+
+        auto objectList = reply.argumentAt<0>();
+
+        for (QDBusObjectPath path : objectList.keys()) {
+            InterfaceList ifaces = objectList.value(path);
+            addDevice(path.path(), ifaces.value(AETHERCAST_DEVICE_IFACE));
+            break;
+        }
+
+        watcher->deleteLater();
+    });
 }
 
 void DeviceModel::slotInterfacesAdded(const QDBusObjectPath &objectPath, InterfaceList ifacesAndProps)

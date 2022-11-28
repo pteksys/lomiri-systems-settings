@@ -42,13 +42,6 @@ ItemPage {
 
     AethercastDisplays {
         id: aethercastDisplays
-        onEnabledChanged: {
-            /* This is a hack to ensure the aethercast enabled switch stays
-             * in sync with the enabled property
-             */
-            enabledCheck.serverChecked = enabled;
-            enabledCheck.checked = enabledCheck.serverChecked;
-        }
     }
 
     LomiriBrightnessPanel {
@@ -144,15 +137,14 @@ ItemPage {
             }
 
             ListItem.Standard {
+                id: externalDisplayItem
                 text: i18n.tr("External display")
                 visible: brightnessPanel.widiSupported
                 enabled: brightnessPanel.widiSupported
                 onClicked: enabledCheck.trigger()
                 control: Switch {
                     id: enabledCheck
-                    property bool serverChecked: aethercastDisplays.enabled
-                    onServerCheckedChanged: checked = serverChecked
-                    Component.onCompleted: checked = serverChecked
+                    Component.onCompleted: checked = aethercastDisplays.enabled
                     onTriggered: {
                         aethercastDisplays.enabled = checked;
                     }
@@ -162,12 +154,12 @@ ItemPage {
             ListItem.SingleValue {
                 objectName: "displayCasting"
                 visible: brightnessPanel.widiSupported
-                enabled: aethercastDisplays.enabled
+                enabled: externalDisplayItem.control.checked
                 text: i18n.tr("Wireless display")
                 value: aethercastDisplays.state === "connected" ? i18n.tr("Connected") : i18n.tr("Not connected")
                 progression: true
                 onClicked: pageStack.addPageToNextColumn(
-                    root, Qt.resolvedUrl("WifiDisplays.qml"))
+                    root, Qt.resolvedUrl("WifiDisplays.qml"), {displays: aethercastDisplays})
             }
         }
     }
