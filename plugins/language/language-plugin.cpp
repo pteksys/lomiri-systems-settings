@@ -17,6 +17,8 @@
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include <QFontDatabase>
+#include <QProcess>
 #include <QStandardPaths>
 #include <QtDebug>
 #include "language-plugin.h"
@@ -154,6 +156,64 @@ LanguagePlugin::spellCheckingModelChanged()
     // TODO: update spell checking model
 }
 
+static QFontDatabase::WritingSystem localeScript(const QLocale &locale) {
+    /* Unfortunately Qt has two different enums for language scripts:
+     * QLocale::Script and QFontDatabase::WritingSystem, and their values do
+     * not match.
+     * This function converts the QLocale one into the QFontDatabase one.
+     */
+    switch (locale.script()) {
+    case QLocale::LatinScript: return QFontDatabase::Latin;
+    case QLocale::GreekScript: return QFontDatabase::Greek;
+    case QLocale::CyrillicScript: return QFontDatabase::Cyrillic;
+    case QLocale::ArmenianScript: return QFontDatabase::Armenian;
+    case QLocale::HebrewScript: return QFontDatabase::Hebrew;
+    case QLocale::ArabicScript: return QFontDatabase::Arabic;
+    case QLocale::SyriacScript: return QFontDatabase::Syriac;
+    case QLocale::ThaanaScript: return QFontDatabase::Thaana;
+    case QLocale::DevanagariScript: return QFontDatabase::Devanagari;
+    case QLocale::BengaliScript: return QFontDatabase::Bengali;
+    case QLocale::GurmukhiScript: return QFontDatabase::Gurmukhi;
+    case QLocale::GujaratiScript: return QFontDatabase::Gujarati;
+    case QLocale::OriyaScript: return QFontDatabase::Oriya;
+    case QLocale::TamilScript: return QFontDatabase::Tamil;
+    case QLocale::TeluguScript: return QFontDatabase::Telugu;
+    case QLocale::KannadaScript: return QFontDatabase::Kannada;
+    case QLocale::MalayalamScript: return QFontDatabase::Malayalam;
+    case QLocale::SinhalaScript: return QFontDatabase::Sinhala;
+    case QLocale::ThaiScript: return QFontDatabase::Thai;
+    case QLocale::LaoScript: return QFontDatabase::Lao;
+    case QLocale::TibetanScript: return QFontDatabase::Tibetan;
+    case QLocale::MyanmarScript: return QFontDatabase::Myanmar;
+    case QLocale::GeorgianScript: return QFontDatabase::Georgian;
+    case QLocale::KhmerScript: return QFontDatabase::Khmer;
+    case QLocale::SimplifiedChineseScript: return QFontDatabase::SimplifiedChinese;
+    case QLocale::TraditionalChineseScript: return QFontDatabase::TraditionalChinese;
+    case QLocale::JapaneseScript: return QFontDatabase::Japanese;
+    case QLocale::KoreanScript: return QFontDatabase::Korean;
+    case QLocale::OghamScript: return QFontDatabase::Ogham;
+    case QLocale::RunicScript: return QFontDatabase::Runic;
+    case QLocale::NkoScript: return QFontDatabase::Nko;
+    default:
+        qWarning() << "Unsupported QLocale script" <<
+            QLocale::scriptToString(locale.script());
+        return QFontDatabase::Any;
+    }
+}
+
+static QSet<QString> parseLocaleOutput(const QByteArray &localeOutput)
+{
+    const QStringList lines = QString::fromUtf8(localeOutput).split('\n');
+    QSet<QString> localeNames;
+    for (QString line: lines) {
+        if (line.isEmpty()) continue;
+        /* "locale -a" returns lines like "bg_BG.utf8", but AccountsService
+         * wants "bg_BG.UTF-8" */
+        localeNames.insert(line.replace("utf8", "UTF-8"));
+    }
+    return localeNames;
+}
+
 void
 LanguagePlugin::updateLanguageNamesAndCodes()
 {
@@ -161,19 +221,58 @@ LanguagePlugin::updateLanguageNamesAndCodes()
     m_languageCodes.clear();
     m_indicesByLocale.clear();
 
-    const QByteArray langpackRoot = qgetenv("SNAP") + "/usr/share/locale-langpack";
-    QDir langpackDir(langpackRoot);
+    /* Run "locale -a" to get the list of supported locales; we run it in the
+     * background, while we compute a list of supported languages (having
+     * translations, and for which we have an available font). Then we'll
+     * intersect the results.
+     */
+    QProcess localeProcess;
+    localeProcess.start("locale", { "-a" });
 
-    if (!langpackDir.exists()) {
-        qWarning() << "Cannot find any language packs, bailing out";
-        return;
-    }
+    const QByteArray localeRoot = qgetenv("SNAP") + "/usr/share/locale";
+    QDir localeDir(localeRoot);
 
-    const QStringList langpackNames = langpackDir.entryList(QDir::Dirs | QDir::NoDotAndDotDot | QDir::Readable);
+    const QStringList locales = localeDir.entryList(QDir::Dirs | QDir::NoDotAndDotDot | QDir::Readable);
 
-    QStringList tmpLocales;
-    Q_FOREACH(const QString &langpack, langpackNames) {
-        QLocale tmpLoc(langpack == "pt" ? "pt_PT" : langpack); // "pt" work around for https://bugreports.qt.io/browse/QTBUG-47891
+    /* Get the list of writing systems supported by our fonts. Unfortunately we
+     * have to exclude all unsupported locales, because text written in their
+     * script would be unprintable. */
+    const QFontDatabase fontDb;
+    const QList<QFontDatabase::WritingSystem> supportedWritingSystems =
+        fontDb.writingSystems();
+
+    QStringList tmpLocales {
+        "en_US", // That's the native language of our UI texts
+        "en_CA", // This doesn't have any translation, but we still want it
+    };
+    Q_FOREACH(const QString &localeName, locales) {
+        QFileInfo systemSettingsTranslations(
+            localeDir,
+            localeName + "/LC_MESSAGES/" GETTEXT_PACKAGE ".mo");
+        if (!systemSettingsTranslations.exists()) {
+            /* If the locale doesn't even have a translation for the System
+             * Settings, it's not worth considering.
+             */
+            continue;
+        }
+        if (systemSettingsTranslations.size() < 10000) {
+            /* The check on the size is to exclude those languages whose
+             * translation is mostly incomplete: while it's true that the size
+             * depends on the encoding and other factors, most of the
+             * translation files are at least 20KB in size (with the most
+             * complete exceeding 40 or 50 KB); so excluding those languages
+             * for which the translation file weighs less than 10K seems
+             * appropriate.
+             */
+            qDebug() << "Skipping locale" << localeName << "as not fully translated";
+            continue;
+        }
+
+        QLocale tmpLoc(localeName == "pt" ? "pt_PT" : localeName); // "pt" work around for https://bugreports.qt.io/browse/QTBUG-47891
+        if (!supportedWritingSystems.contains(localeScript(tmpLoc))) {
+            qDebug() << "Skipping locale" << localeName << "as we lack a font for it";
+            continue;
+        }
         tmpLocales.append(tmpLoc.name() + QStringLiteral(".UTF-8"));
     }
 
@@ -183,6 +282,15 @@ LanguagePlugin::updateLanguageNamesAndCodes()
     QSet<QString> localeNames = QSet<QString>(tmpLocales.begin(), tmpLocales.end());
 #endif
     QList<LanguageLocale> languageLocales;
+
+    /* Collect the result from "locale -a" and intersect */
+    if (!localeProcess.waitForFinished(10000)) {
+        qWarning() << "Running `locale -a` took more than 10 seconds!";
+        return;
+    }
+    const QSet<QString> availableLocales =
+        parseLocaleOutput(localeProcess.readAllStandardOutput());
+    localeNames = localeNames.intersect(availableLocales);
 
     Q_FOREACH(const QString &loc, localeNames) {
         LanguageLocale languageLocale(loc);
