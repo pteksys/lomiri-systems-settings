@@ -100,6 +100,8 @@ private Q_SLOTS:
     void callFinishedSlot(QDBusPendingCallWatcher *call);
 
 private:
+    void getAll();
+
     QDBusConnection m_dbus;
     DeviceModel m_devices;
     DeviceFilter m_connectedDevices;

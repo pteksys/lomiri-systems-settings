@@ -76,6 +76,7 @@ private:
     void updateProperty(const QString &key, const QVariant &value);
 
     QList<QSharedPointer<Device> > m_devices;
+    void getManagedObjects();
     void updateDevices();
     void addDevice(QSharedPointer<Device> &device);
     void addDevice(const QString &objectPath, const QVariantMap &properties);

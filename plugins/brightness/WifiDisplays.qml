@@ -28,10 +28,12 @@ ItemPage {
     flickable: pageFlickable
 
     Component.onCompleted: {
-        if (!displays.scanning)
-            displays.scan();
+        delayedScan.start();
+        connectedRepeater.model = displays.connectedDevices
+        disconnectedRepeater.model = displays.disconnectedDevices
     }
 
+    property var displays : null
     property string selectedDisplayName
 
     function showError(error, displayName) {
@@ -43,16 +45,22 @@ ItemPage {
         WifiDisplaysAlert {}
     }
 
+    Timer {
+        id: delayedScan
+        interval: 2000
+        onTriggered: displays.scan();
+    }
+
     // Aethercast only caches results of devices discovered during scan
     // for a limited time, so we'll automatically rescan 60s after scanning
     // finishes
     Timer {
         id: scanTimer
-        interval: 60000
+        interval: 30000
         repeat: true
         running: !displays.scanning
         onTriggered: {
-            if (!displays.scanning && displays.state !== AethercastDevice.Connected) {
+            if (displays.state === AethercastDevice.Disconnected || displays.state === AethercastDevice.Failure) {
                 displays.scan();
             }
         }
@@ -69,8 +77,8 @@ ItemPage {
                             Flickable.DragAndOvershootBounds :
                             Flickable.StopAtBounds
 
-        AethercastDisplays {
-            id: displays
+        Connections {
+            target: displays
 
             onConnectError: {
                 console.error("onConnectError: " + error);
@@ -79,11 +87,15 @@ ItemPage {
 
             // Log some info to help debug
             onConnectedDevicesChanged: {
+                connectedRepeater.model = displays.connectedDevices
+                disconnectedRepeater.model = displays.disconnectedDevices
                 console.warn("ConnectedDevices: " + displays.connectedDevices.count);
             }
 
             // Log some info to help debug
             onDisconnectedDevicesChanged: {
+                connectedRepeater.model = displays.connectedDevices
+                disconnectedRepeater.model = displays.disconnectedDevices
                 console.warn("DisconnectedDevices: " + displays.disconnectedDevices.count);
             }
         }
@@ -115,7 +127,7 @@ ItemPage {
             }
 
             Repeater {
-                model: displays.connectedDevices ? displays.connectedDevices : null
+                id: connectedRepeater
                 delegate: ListItem.Subtitled {
                     id: displayDelegate
                     anchors {
@@ -159,7 +171,7 @@ ItemPage {
             }
 
             Repeater {
-                model: displays.disconnectedDevices ? displays.disconnectedDevices : null
+                id: disconnectedRepeater
                 delegate: ListItem.Subtitled {
                     id: displayDelegate
                     anchors {
