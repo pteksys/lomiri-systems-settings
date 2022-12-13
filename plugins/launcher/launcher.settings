@@ -1,5 +1,5 @@
 {
-    "name": "Launcher",
+    "name": "Desktop & Launcher",
     "icon": "preferences-desktop-launcher-symbolic",
     "plugin": "launcher-plugin",
     "translations": "lomiri-system-settings",

@@ -28,7 +28,7 @@ import Lomiri.SystemSettings.Launcher 1.0
 ItemPage {
     id: root
     objectName: "launcherPage"
-    title: i18n.tr("Launcher")
+    title: i18n.tr("Desktop & Launcher")
     flickable: flick
 
     /* The introductory label “On large displays:” should be present if the
@@ -65,6 +65,20 @@ ItemPage {
                 text: i18n.tr("On large screens:")
                 objectName: "largeScreenLabel"
                 visible: largeScreenAvailable
+            }
+
+            SettingsListItems.Standard {
+                id: enableWorkspaces
+                objectName: "enableWorkspaces"
+                text: i18n.tr("Enable workspaces")
+                layout.subtitle.text: i18n.tr("Supoprt for multiple virtual workspaces")
+
+                Switch {
+                    id: enableWorkspacesSwitch
+                    objectName: "enableWorkspacesSwitch"
+                    checked: lomiriSettings.enableWorkspace
+                    onTriggered: lomiriSettings.enableWorkspace = checked
+                }
             }
 
             SettingsListItems.Standard {
