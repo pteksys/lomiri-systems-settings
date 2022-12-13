@@ -32,7 +32,7 @@ ItemPage {
     id: mainPage
     objectName: "backgroundPage"
     flickable: sources
-    title: i18n.tr("Appearance")
+    title: i18n.tr("Background & Appearance")
 
     signal save (string uri)
 
