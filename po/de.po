@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 11:12-0600\n"
-"PO-Revision-Date: 2021-03-09 20:27+0000\n"
-"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
-"Language-Team: German <https://translate.ubports.com/projects/ubports/"
-"system-settings/de/>\n"
+"PO-Revision-Date: 2022-12-17 13:53+0000\n"
+"Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in.in.h:1 ../src/qml/MainWindow.qml:170
@@ -185,7 +185,7 @@ msgstr "Freier Speicher"
 
 #: ../plugins/about/Storage.qml:191
 msgid "By name"
-msgstr "Nach  Name"
+msgstr "Nach Name"
 
 #: ../plugins/about/Storage.qml:191
 msgid "By size"
@@ -1791,7 +1791,7 @@ msgstr "Allgemeine Einstellungen"
 
 #: ../plugins/printing/Printer.qml:44
 msgid "Policies"
-msgstr "Policies"
+msgstr "Richtlinien"
 
 #: ../plugins/printing/Printer.qml:47
 msgid "Copies and pages"
@@ -3301,17 +3301,17 @@ msgstr "Maus"
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
 #: ../build/po/settings.js:204
 msgid "touchpad"
-msgstr "touchpad"
+msgstr "Touchpad"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
 #: ../build/po/settings.js:206
 msgid "tap"
-msgstr "tap"
+msgstr "tippen"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
 #: ../build/po/settings.js:208
 msgid "touch"
-msgstr "touch"
+msgstr "berühren"
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
 #: ../build/po/settings.js:210 ../build/po/settings.js:366
@@ -3625,7 +3625,7 @@ msgstr "IP"
 #. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
 #: ../build/po/settings.js:396
 msgid "routing"
-msgstr "routing"
+msgstr "Routing"
 
 #. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
 #: ../build/po/settings.js:404
@@ -3699,4 +3699,3 @@ msgstr "Es gibt eine Systemaktualisierung."
 #: ../push-helper/software_updates_helper.py:160
 msgid "Tap to open the system updater."
 msgstr "Antippen, um die Systemaktualisierung zu starten."
-
