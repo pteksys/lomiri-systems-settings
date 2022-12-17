@@ -104,7 +104,7 @@ Item {
             property int menuIndex: -1
             property var extendedData: menu && menu.ext || undefined
             text: menu && menu.label ? menu.label : ""
-            busy: getExtendedProperty(extendedData, "xCanonicalBusyAction", false)
+            busy: getExtendedProperty(extendedData, "xAyatanaBusyAction", false)
 
             onMenuModelChanged: {
                 loadAttributes();
@@ -130,13 +130,13 @@ Item {
             property var extendedData: menu && menu.ext || undefined
             property var strengthAction: QMenuModel.AyatanaMenuAction {
                 model: menuModel ? menuModel : null
-                name: getExtendedProperty(extendedData, "xCanonicalWifiApStrengthAction", "")
+                name: getExtendedProperty(extendedData, "xAyatanaWifiApStrengthAction", "")
             }
             property bool serverChecked: menu && menu.isToggled || false
 
             text: menu && menu.label ? menu.label : ""
-            secure: getExtendedProperty(extendedData, "xCanonicalWifiApIsSecure", false)
-            adHoc: getExtendedProperty(extendedData, "xCanonicalWifiApIsAdhoc", false)
+            secure: getExtendedProperty(extendedData, "xAyatanaWifiApIsSecure", false)
+            adHoc: getExtendedProperty(extendedData, "xAyatanaWifiApIsAdhoc", false)
             checked: serverChecked
             signalStrength: {
                 if (strengthAction.valid) {
