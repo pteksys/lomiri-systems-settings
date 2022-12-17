@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 11:12-0600\n"
-"PO-Revision-Date: 2021-03-05 06:27+0000\n"
+"PO-Revision-Date: 2022-12-18 15:48+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/ubports/"
-"system-settings/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in.in.h:1 ../src/qml/MainWindow.qml:170
@@ -444,7 +444,7 @@ msgstr ""
 
 #: ../plugins/bluetooth/AuthorizationRequestDialog.qml:26
 msgid "Bluetooth Pairing Authorization Request"
-msgstr "Sol·licitud d'autorització  d'aparellament del Bluetooth"
+msgstr "Sol·licitud d'autorització d'aparellament del Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
 #: ../plugins/bluetooth/AuthorizationRequestDialog.qml:34
@@ -3708,4 +3708,3 @@ msgstr "Hi ha una actualització de la imatge del sistema."
 #: ../push-helper/software_updates_helper.py:160
 msgid "Tap to open the system updater."
 msgstr "Feu un toc per obrir l'actualitzador del sistema."
-
