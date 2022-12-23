@@ -242,8 +242,8 @@ LanguagePlugin::updateLanguageNamesAndCodes()
         fontDb.writingSystems();
 
     QStringList tmpLocales {
-        "en_US", // That's the native language of our UI texts
-        "en_CA", // This doesn't have any translation, but we still want it
+        "en_US.UTF-8", // That's the native language of our UI texts
+        "en_CA.UTF-8", // This doesn't have any translation, but we still want it
     };
     Q_FOREACH(const QString &localeName, locales) {
         QFileInfo systemSettingsTranslations(
