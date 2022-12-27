@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-18 11:12-0600\n"
-"PO-Revision-Date: 2022-12-17 13:53+0000\n"
+"PO-Revision-Date: 2022-12-28 23:48+0000\n"
 "Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/uk/>\n"
@@ -1083,15 +1083,15 @@ msgstr ""
 
 #: ../plugins/hotspot/Common.qml:58 ../plugins/wifi/Common.qml:60
 msgid "DHCP client failed to start"
-msgstr "Не вдалося запустити клієнтську програму DHCP"
+msgstr "Не вдалося запустити клієнт DHCP"
 
 #: ../plugins/hotspot/Common.qml:60 ../plugins/wifi/Common.qml:62
 msgid "DHCP client error"
-msgstr "помилка клієнтської програми DHCP"
+msgstr "помилка клієнту DHCP"
 
 #: ../plugins/hotspot/Common.qml:62 ../plugins/wifi/Common.qml:64
 msgid "DHCP client failed"
-msgstr "критична помилка клієнтської програми DHCP"
+msgstr "критична помилка клієнту DHCP"
 
 #: ../plugins/hotspot/Common.qml:64 ../plugins/wifi/Common.qml:66
 msgid "Shared connection service failed to start"
@@ -1103,7 +1103,7 @@ msgstr "Критична помилка служби спільного вико
 
 #: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
-msgstr "Можливо, не вистачає потрібної для роботи пристрою мікропрограми"
+msgstr "Може бути відсутня необхідна прошивка для пристрою"
 
 #: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
 msgid "The device was removed"
@@ -1119,7 +1119,7 @@ msgstr "Активне з’єднання з пристроєм зникло"
 
 #: ../plugins/hotspot/Common.qml:76 ../plugins/wifi/Common.qml:78
 msgid "Device disconnected by user or client"
-msgstr "Пристрій роз’єднано з боку користувача або клієнтської програми"
+msgstr "Пристрій роз’єднано з боку користувача або клієнта"
 
 #: ../plugins/hotspot/Common.qml:78 ../plugins/wifi/Common.qml:80
 msgid "The device's existing connection was assumed"
@@ -1586,13 +1586,12 @@ msgid "Apps that notify with vibrations:"
 msgstr ""
 
 #: ../plugins/notifications/PageComponent.qml:75
-#, fuzzy
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr ""
-"Виберіть програми, які зможуть сповіщати вас про події за допомогою панелей-"
-"вигульків, звуків, вібрації та Центру сповіщень."
+"Застосунки можуть сповіщати вас за допомогою звуків, вібрації, бульбашок "
+"сповіщень та Списку сповіщень."
 
 #: ../plugins/notifications/PageComponent.qml:91
 msgid "Apps that notify with sound"
@@ -1947,18 +1946,16 @@ msgid "App permissions"
 msgstr "права доступу"
 
 #: ../plugins/security-privacy/AppAccess.qml:69
-#, fuzzy
 msgid "Apps that you have granted access to:"
-msgstr "Програми, яким ви на запит надали доступ до:"
+msgstr "Застосунки, яким ви на запит надали доступ до:"
 
 #: ../plugins/security-privacy/AppAccess.qml:76
 msgid "Apps that have requested access to your camera"
-msgstr "Програми, які надіслали запит щодо користування камерою"
+msgstr "Застосунки, які надіслали запит щодо користування камерою"
 
 #: ../plugins/security-privacy/AppAccess.qml:82
-#, fuzzy
 msgid "Apps that have requested access to your location"
-msgstr "Програми, які надіслали доступ щодо користування мікрофоном"
+msgstr "Застосунки, які надіслали доступ щодо користування мікрофоном"
 
 #: ../plugins/security-privacy/AppAccess.qml:87
 #, fuzzy
@@ -1966,9 +1963,8 @@ msgid "Microphone"
 msgstr "телефон"
 
 #: ../plugins/security-privacy/AppAccess.qml:88
-#, fuzzy
 msgid "Apps that have requested access to your microphone"
-msgstr "Програми, які надіслали доступ щодо користування мікрофоном"
+msgstr "Застосунки, які надіслали доступ щодо користування мікрофоном"
 
 #: ../plugins/security-privacy/AppAccess.qml:102
 #, qt-format
@@ -1980,9 +1976,8 @@ msgid "0"
 msgstr "0"
 
 #: ../plugins/security-privacy/AppAccess.qml:118
-#, fuzzy
 msgid "Apps may also request access to online accounts."
-msgstr "Програми, які надіслали доступ щодо користування мікрофоном"
+msgstr "Застосунки, які надіслали доступ щодо користування мікрофоном"
 
 #: ../plugins/security-privacy/AppAccess.qml:123
 msgid "Online Accounts…"
@@ -1993,9 +1988,8 @@ msgid "Nokia HERE"
 msgstr ""
 
 #: ../plugins/security-privacy/Location.qml:96
-#, fuzzy
 msgid "Let the device detect your location:"
-msgstr "Програми, які надіслали доступ щодо користування мікрофоном"
+msgstr "Дозвольте пристрою визначити ваше місцезнаходження:"
 
 #: ../plugins/security-privacy/Location.qml:175
 msgid "Using GPS only (less accurate)"
@@ -2284,9 +2278,7 @@ msgstr ""
 
 #: ../plugins/security-privacy/PhoneLocking.qml:168
 msgid "Other apps and functions will prompt you to unlock."
-msgstr ""
-"Для роботи інших програм та можливостей система проситиме вас розблокувати "
-"телефон."
+msgstr "Інші застосунки та функції будуть запитувати вас про розблокування."
 
 #: ../plugins/security-privacy/SimPin.qml:48
 msgid "Change SIM PIN"
@@ -3482,7 +3474,7 @@ msgstr "сповіщення"
 #: ../build/po/settings.js:220 ../build/po/settings.js:248
 #: ../build/po/settings.js:356
 msgid "apps"
-msgstr "програми"
+msgstr "застосунки"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: ../build/po/settings.js:222
