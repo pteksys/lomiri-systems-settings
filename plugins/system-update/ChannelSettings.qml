@@ -76,9 +76,9 @@ ItemPage {
     }
 
     function setSelectedChannel() {
-      var selNum = 0;
+      var selNum = -1;
       var channel = SystemImage.getSwitchChannel();
-      for (var i = 0; i <= channelSelectorModel.count; i++) {
+      for (var i = 0; i < channelSelectorModel.count; i++) {
         if (channelSelectorModel.get(i).channel === channel){
             selNum = i;
             break;
