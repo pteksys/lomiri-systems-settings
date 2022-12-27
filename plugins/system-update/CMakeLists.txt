@@ -12,6 +12,7 @@ set(QML_SOURCES
     ChannelSettings.qml
     ReinstallAllApps.qml
     FirmwareUpdate.qml
+    ChUtils.js
 )
 
 include_directories(
