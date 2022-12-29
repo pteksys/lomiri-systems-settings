@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-05 20:03+0000\n"
+"POT-Creation-Date: 2022-07-07 17:14+0000\n"
 "PO-Revision-Date: 2021-03-14 01:00+0000\n"
 "Last-Translator: Ryan Argente <rargente@lonerider.one>\n"
 "Language-Team: French (Canada) <https://translate.ubports.com/projects/"
@@ -18,6 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.11.3\n"
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+msgid "Can't cancel current request (can't contact service)"
+msgstr ""
+"Impossible d'annuler la demande actuelle (impossible de contacter le service)"
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+msgid "Can't pause current request (can't contact service)"
+msgstr ""
+"Impossible de suspendre la demande actuelle (impossible de contacter le "
+"service)"
+
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
+#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
+msgid "Unavailable"
+msgstr "Indisponible"
 
 #: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
 msgid "Developer Mode"
@@ -31,15 +48,13 @@ msgstr ""
 "En mode développeur, n'importe qui peut lire, modifier ou supprimer tout le "
 "contenu de cet appareil en le connectant à un autre."
 
-#: ../plugins/about/DevMode.qml:109
+#: ../plugins/about/DevMode.qml:107
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr ""
 "Vous devez avoir défini un code ou un mot de passe pour utiliser le Mode "
 "Développeur."
 
-#: ../plugins/about/DevMode.qml:115
-#: ../plugins/security-privacy/LockSecurity.qml:36
-#: ../plugins/security-privacy/PhoneLocking.qml:66
+#: ../plugins/about/DevMode.qml:113
 msgid "Lock security"
 msgstr "Sécurité du verrouillage"
 
@@ -48,7 +63,7 @@ msgid "Sorry, this license could not be displayed."
 msgstr "Désolé, cette licence n'a pas pu être affichée."
 
 #. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: ../plugins/about/PageComponent.qml:33 settings.js:328
+#: ../plugins/about/PageComponent.qml:33 settings.js:2
 msgid "About"
 msgstr "À propos"
 
@@ -62,9 +77,6 @@ msgstr "Numéro de série"
 #: ../plugins/bluetooth/DevicePage.qml:73
 #: ../plugins/bluetooth/DevicePage.qml:82
 #: ../plugins/bluetooth/DevicePage.qml:110
-#: ../plugins/cellular/PageApnEditor.qml:371
-#: ../plugins/cellular/PageCarrierAndApn.qml:47
-#: ../plugins/cellular/PageCarriersAndApns.qml:59
 #: ../plugins/printing/printer-sub-pages/Status.qml:50
 #: ../plugins/wifi/OtherNetwork.qml:318 ../plugins/wifi/OtherNetwork.qml:457
 #: ../plugins/wifi/OtherNetwork.qml:574 ../plugins/wifi/certhandler.cpp:105
@@ -105,12 +117,9 @@ msgid "Last updated"
 msgstr "Dernière mise à jour"
 
 #: ../plugins/about/PageComponent.qml:183
-#: ../plugins/battery/PageComponent.qml:320
-#: ../plugins/battery/PageComponent.qml:338
-#: ../plugins/battery/SleepValues.qml:113
-#: ../plugins/security-privacy/PhoneLocking.qml:95
-#: ../plugins/security-privacy/PhoneLocking.qml:113
-#: ../plugins/wifi/NetworkDetails.qml:67
+#: ../plugins/battery/PageComponent.qml:328
+#: ../plugins/battery/PageComponent.qml:346
+#: ../plugins/battery/SleepValues.qml:108 ../plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Jamais"
 
@@ -118,19 +127,19 @@ msgstr "Jamais"
 msgid "Check for updates"
 msgstr "Vérifier l'existence de mises à jour"
 
-#: ../plugins/about/PageComponent.qml:216
+#: ../plugins/about/PageComponent.qml:222
 msgid "Legal:"
 msgstr "Licence :"
 
-#: ../plugins/about/PageComponent.qml:221 ../plugins/about/Software.qml:11
+#: ../plugins/about/PageComponent.qml:227 ../plugins/about/Software.qml:11
 msgid "Software licenses"
 msgstr "Licences des logiciels"
 
-#: ../plugins/about/PageComponent.qml:228
+#: ../plugins/about/PageComponent.qml:234
 msgid "Regulatory info"
 msgstr "Informations réglementaires"
 
-#: ../plugins/about/PageComponent.qml:235
+#: ../plugins/about/PageComponent.qml:241
 msgid "Developer mode"
 msgstr "Mode développeur"
 
@@ -138,47 +147,71 @@ msgstr "Mode développeur"
 msgid "Scanning"
 msgstr "Analyse"
 
-#: ../plugins/about/Storage.qml:106
-msgid "Used by Ubuntu"
-msgstr "Utilisé par Ubuntu"
+#: ../plugins/about/Storage.qml:123
+#, fuzzy
+#| msgid "System Settings"
+msgid "System Reserved"
+msgstr "Paramètres du système"
 
-#: ../plugins/about/Storage.qml:107
+#: ../plugins/about/Storage.qml:124
+#, fuzzy
+#| msgid "Used by apps"
+msgid "Used by system"
+msgstr "Utilisé par les applications"
+
+#: ../plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr "Vidéos"
 
-#: ../plugins/about/Storage.qml:108
+#: ../plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr "Audio"
 
-#: ../plugins/about/Storage.qml:109
+#: ../plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr "Photos"
 
-#: ../plugins/about/Storage.qml:110
+#: ../plugins/about/Storage.qml:128
+msgid "Documents"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:129
+msgid "Downloads"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:130
+msgid "Anbox"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:131
+msgid "Libertine"
+msgstr ""
+
+#: ../plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr "Autres fichiers"
 
-#: ../plugins/about/Storage.qml:111
+#: ../plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr "Utilisé par les applications"
 
-#: ../plugins/about/Storage.qml:159
+#: ../plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr "Espace total"
 
-#: ../plugins/about/Storage.qml:171
+#: ../plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr "Espace disponible"
 
-#: ../plugins/about/Storage.qml:197
+#: ../plugins/about/Storage.qml:229
 msgid "By name"
 msgstr "Par nom"
 
-#: ../plugins/about/Storage.qml:197
+#: ../plugins/about/Storage.qml:229
 msgid "By size"
 msgstr "Par taille"
 
-#: ../plugins/about/Storage.qml:242 ../plugins/battery/PageComponent.qml:109
+#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
 #: ../plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr "S/O"
@@ -211,35 +244,26 @@ msgstr "Description de la version du périphérique"
 msgid "Customization Image part"
 msgstr "Partie de l'image de personnalisation"
 
-#: ../plugins/about/click.cpp:168
+#: ../plugins/about/click.cpp:134
 msgid "Unknown title"
 msgstr "Titre inconnu"
 
 #: ../plugins/background/Components/AddRemove.qml:42
-#: ../plugins/background/Preview.qml:107
+#: ../plugins/background/Preview.qml:109
 #: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: ../plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: ../plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: ../plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: ../plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: ../plugins/cellular/Components/SimEditor.qml:203
-#: ../plugins/cellular/PageChooseApn.qml:178
-#: ../plugins/cellular/PageChooseApn.qml:209
-#: ../plugins/cellular/PageChooseApn.qml:240
-#: ../plugins/cellular/PageChooseApn.qml:274
 #: ../plugins/hotspot/HotspotSetup.qml:255
 #: ../plugins/hotspot/PageComponent.qml:166
 #: ../plugins/language/DisplayLanguage.qml:46
 #: ../plugins/language/RebootNecessary.qml:48
-#: ../plugins/phone/CallForwarding.qml:240
 #: ../plugins/printing/AddPrinter.qml:41
 #: ../plugins/reset/EraseEverything.qml:55
 #: ../plugins/reset/ResetAllSettings.qml:39
 #: ../plugins/reset/ResetLauncherHome.qml:56
-#: ../plugins/security-privacy/LockSecurity.qml:365
-#: ../plugins/security-privacy/SimPin.qml:179
-#: ../plugins/security-privacy/SimPin.qml:318
-#: ../plugins/time-date/TimePicker.qml:172 ../plugins/wifi/CertDialog.qml:65
+#: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
 msgstr "Annuler"
@@ -264,35 +288,40 @@ msgid "Remove images…"
 msgstr "Supprimer les images…"
 
 #. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: ../plugins/background/MainPage.qml:35 settings.js:2
+#: ../plugins/background/MainPage.qml:34 settings.js:38
 msgid "Background"
 msgstr "Arrière-plan"
 
-#: ../plugins/background/MainPage.qml:86
-msgid "Ubuntu Art"
-msgstr "Illustrations issue d'Ubuntu"
+#: ../plugins/background/MainPage.qml:85
+#, fuzzy
+#| msgid "System"
+msgid "System Art"
+msgstr "Système"
 
-#: ../plugins/background/MainPage.qml:99
+#: ../plugins/background/MainPage.qml:98
 msgid "Custom"
 msgstr "Personnalisé"
+
+#: ../plugins/background/MainPage.qml:157
+#, fuzzy
+#| msgid "Choose a connection"
+msgid "Choose application"
+msgstr "Choisissez une connexion"
 
 #: ../plugins/background/Preview.qml:69
 msgid "Preview"
 msgstr "Afficher un aperçu"
 
-#: ../plugins/background/Preview.qml:107
+#: ../plugins/background/Preview.qml:109
 msgid "Remove image"
 msgstr "Supprimer l'image"
 
-#: ../plugins/background/Preview.qml:113
-#: ../plugins/phone/CallForwarding.qml:253
-#: ../plugins/security-privacy/LockSecurity.qml:391
-#: ../plugins/time-date/TimePicker.qml:181
+#: ../plugins/background/Preview.qml:115 ../plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Valider"
 
 #. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:35 settings.js:94
+#: ../plugins/battery/PageComponent.qml:35 settings.js:54
 msgid "Battery"
 msgstr "Batterie"
 
@@ -361,19 +390,16 @@ msgstr "Façons de réduire l'utilisation de la batterie :"
 msgid "Display brightness"
 msgstr "Luminosité d'affichage"
 
-#: ../plugins/battery/PageComponent.qml:315
-#: ../plugins/security-privacy/PhoneLocking.qml:89
+#: ../plugins/battery/PageComponent.qml:323
 msgid "Lock when idle"
 msgstr "Verrouiller en cas d'inactivité"
 
-#: ../plugins/battery/PageComponent.qml:315
-#: ../plugins/security-privacy/PhoneLocking.qml:90
+#: ../plugins/battery/PageComponent.qml:323
 msgid "Sleep when idle"
 msgstr "Mettre en veille en cas d'inactivité"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:323
-#: ../plugins/security-privacy/PhoneLocking.qml:98
+#: ../plugins/battery/PageComponent.qml:331
 #, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -381,14 +407,12 @@ msgstr[0] "Après %1 seconde"
 msgstr[1] "Après %1 secondes"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:327
 #: ../plugins/battery/PageComponent.qml:335
-#: ../plugins/battery/SleepValues.qml:90 ../plugins/battery/SleepValues.qml:94
-#: ../plugins/battery/SleepValues.qml:98 ../plugins/battery/SleepValues.qml:102
-#: ../plugins/battery/SleepValues.qml:106
-#: ../plugins/battery/SleepValues.qml:110
-#: ../plugins/security-privacy/PhoneLocking.qml:102
-#: ../plugins/security-privacy/PhoneLocking.qml:110
+#: ../plugins/battery/PageComponent.qml:343
+#: ../plugins/battery/SleepValues.qml:85 ../plugins/battery/SleepValues.qml:89
+#: ../plugins/battery/SleepValues.qml:93 ../plugins/battery/SleepValues.qml:97
+#: ../plugins/battery/SleepValues.qml:101
+#: ../plugins/battery/SleepValues.qml:105
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -396,46 +420,46 @@ msgstr[0] "Après %1 minute"
 msgstr[1] "Après %1 minutes"
 
 #. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:366
-#: ../plugins/wifi/PageComponent.qml:28 settings.js:274
+#: ../plugins/battery/PageComponent.qml:374
+#: ../plugins/wifi/PageComponent.qml:28 settings.js:314
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: ../plugins/battery/PageComponent.qml:366
+#: ../plugins/battery/PageComponent.qml:374
 msgid "Wi-Fi used for hotspot"
 msgstr "Wi-Fi utilisé pour le point d'accès"
 
 #. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:402
+#: ../plugins/battery/PageComponent.qml:410
 #: ../plugins/bluetooth/PageComponent.qml:33
-#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:62
+#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:70
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../plugins/battery/SleepValues.qml:74
+#: ../plugins/battery/SleepValues.qml:68
 msgid "Lock the device when it's not in use:"
 msgstr "Verrouiller l'appareil lorsqu'il n'est pas utilisé :"
 
-#: ../plugins/battery/SleepValues.qml:75
+#: ../plugins/battery/SleepValues.qml:69
 msgid "Put the device to sleep when it is not in use:"
 msgstr "Mettre l'appareil en veille lorsqu'il n'est pas utilisé :"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/SleepValues.qml:86
+#: ../plugins/battery/SleepValues.qml:81
 #, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
 msgstr[0] "Après %1 seconde"
 msgstr[1] "Après %1 secondes"
 
-#: ../plugins/battery/SleepValues.qml:130
+#: ../plugins/battery/SleepValues.qml:125
 msgid "Device won’t sleep during calls or video playback."
 msgstr ""
 "L'appareil ne se mettra pas en veille lors d'un appel ou de la lecture d'une "
 "vidéo."
 
-#: ../plugins/battery/SleepValues.qml:130
+#: ../plugins/battery/SleepValues.qml:125
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -484,7 +508,7 @@ msgstr "Confirmer le code PIN"
 
 #: ../plugins/bluetooth/DevicePage.qml:37
 #: ../plugins/bluetooth/PageComponent.qml:290
-#: ../plugins/brightness/PageComponent.qml:159
+#: ../plugins/brightness/PageComponent.qml:167
 #: ../plugins/brightness/WifiDisplays.qml:128
 #: ../plugins/brightness/WifiDisplays.qml:172
 #: ../plugins/wifi/AccessPoint.qml:51 ../plugins/wifi/StandardMenuItem.qml:31
@@ -513,10 +537,8 @@ msgstr "Inconnu"
 msgid "Computer"
 msgstr "Ordinateur"
 
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
 #: ../plugins/bluetooth/DevicePage.qml:48
-#: ../plugins/bluetooth/DevicePage.qml:49 ../plugins/phone/PageComponent.qml:32
-#: settings.js:44
+#: ../plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
 msgstr "Téléphone"
 
@@ -565,7 +587,6 @@ msgid "Printer"
 msgstr "Imprimante"
 
 #: ../plugins/bluetooth/DevicePage.qml:61
-#: ../plugins/security-privacy/AppAccess.qml:75
 msgid "Camera"
 msgstr "Caméra"
 
@@ -594,7 +615,6 @@ msgid "Poor"
 msgstr "Médiocre"
 
 #: ../plugins/bluetooth/DevicePage.qml:106
-#: ../plugins/cellular/PageApnEditor.qml:157
 #: ../plugins/printing/printer-sub-pages/Status.qml:61
 #: ../plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
@@ -623,8 +643,6 @@ msgid "Connect"
 msgstr "Se connecter"
 
 #: ../plugins/bluetooth/DevicePage.qml:150
-#: ../plugins/cellular/PageChooseApn.qml:201
-#: ../plugins/cellular/PageChooseApn.qml:266
 msgid "Disconnect"
 msgstr "Déconnecter"
 
@@ -682,7 +700,7 @@ msgid "Pair"
 msgstr "Apparier"
 
 #. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: ../plugins/brightness/PageComponent.qml:35 settings.js:198
+#: ../plugins/brightness/PageComponent.qml:35 settings.js:94
 msgid "Brightness"
 msgstr "Luminosité"
 
@@ -690,23 +708,29 @@ msgstr "Luminosité"
 msgid "Brightness & Display"
 msgstr "Luminosité et affichage"
 
-#: ../plugins/brightness/PageComponent.qml:116
+#: ../plugins/brightness/PageComponent.qml:122
 msgid "Adjust automatically"
 msgstr "Ajuster automatiquement"
 
-#: ../plugins/brightness/PageComponent.qml:131
+#: ../plugins/brightness/PageComponent.qml:137
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Augmente et diminue la luminosité pour s'adapter à l'environnement."
 
-#: ../plugins/brightness/PageComponent.qml:140
+#: ../plugins/brightness/PageComponent.qml:142
+#, fuzzy
+#| msgid "display"
+msgid "Display"
+msgstr "affichage"
+
+#: ../plugins/brightness/PageComponent.qml:147
 msgid "External display"
 msgstr "Affichage externe"
 
-#: ../plugins/brightness/PageComponent.qml:158
+#: ../plugins/brightness/PageComponent.qml:166
 msgid "Wireless display"
 msgstr "Affichage sans fil"
 
-#: ../plugins/brightness/PageComponent.qml:159
+#: ../plugins/brightness/PageComponent.qml:167
 #: ../plugins/brightness/WifiDisplays.qml:128
 #: ../plugins/brightness/WifiDisplays.qml:172
 msgid "Not connected"
@@ -747,326 +771,26 @@ msgid "There was an unknown error connecting to %1."
 msgstr "Une erreur inconnue est survenue en se connectant à %1."
 
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
-#: ../plugins/cellular/Components/SimEditor.qml:214
-#: ../plugins/phone/CallForwarding.qml:305
 #: ../plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "OK"
 
-#: ../plugins/cellular/Components/DataMultiSim.qml:36
-msgid "Cellular data"
-msgstr "Données cellulaires"
+#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
+#: ../plugins/gestures/PageComponent.qml:25 settings.js:126
+#, fuzzy
+#| msgid "Pictures"
+msgid "Gestures"
+msgstr "Photos"
 
-#: ../plugins/cellular/Components/DataMultiSim.qml:73
-#: ../plugins/cellular/Components/NoSim.qml:36
-msgid "No SIM detected"
-msgstr "Aucune carte SIM détectée"
+#: ../plugins/gestures/PageComponent.qml:44
+#, fuzzy
+#| msgid "Tap to click"
+msgid "Tap to wake"
+msgstr "Toucher pour cliquer"
 
-#: ../plugins/cellular/Components/DataMultiSim.qml:81
-#: ../plugins/cellular/Components/NoSim.qml:45
-msgid "Insert a SIM, then restart the device."
-msgstr "Insérez une carte SIM, puis redémarrez l'appareil."
-
-#: ../plugins/cellular/Components/DataMultiSim.qml:147
-#: ../plugins/cellular/Components/SingleSim.qml:92
-msgid "Data roaming"
-msgstr "Itinérance des données"
-
-#: ../plugins/cellular/Components/DefaultSim.qml:33
-msgid "Ask me each time"
-msgstr "Me demander à chaque fois"
-
-#: ../plugins/cellular/Components/DefaultSim.qml:40
-msgid "For outgoing calls, use:"
-msgstr "Pour les appels sortants, utiliser :"
-
-#: ../plugins/cellular/Components/DefaultSim.qml:57
-msgid ""
-"You can change the SIM for individual calls, or for contacts in the address "
-"book."
+#: ../plugins/gestures/PageComponent.qml:59
+msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
-"Vous pouvez changer de carte SIM pour les appels individuels ou pour les "
-"contacts dans le carnet d’adresse."
-
-#: ../plugins/cellular/Components/DefaultSim.qml:62
-msgid "For messages, use:"
-msgstr "Pour les messages, utiliser :"
-
-#. TRANSLATORS: This is the text that will be used on the "return" key for the virtual keyboard,
-#. this word must be less than 5 characters
-#: ../plugins/cellular/Components/LabelTextField.qml:51
-msgid "Next"
-msgstr "Suivant"
-
-#: ../plugins/cellular/Components/MultiSim.qml:55
-#: ../plugins/cellular/Components/SingleSim.qml:105
-msgid "Data usage statistics"
-msgstr "Données sur les statistiques d'utilisation"
-
-#: ../plugins/cellular/Components/MultiSim.qml:60
-msgid "Carriers"
-msgstr "Opérateurs"
-
-#: ../plugins/cellular/Components/MultiSim.qml:83
-#: ../plugins/cellular/Components/RadioSingleSim.qml:31
-msgid "Connection type:"
-msgstr "Type de connexion :"
-
-#: ../plugins/cellular/Components/Sim.qml:46
-msgid "2G only (saves battery)"
-msgstr "2G seulement (économise la batterie)"
-
-#: ../plugins/cellular/Components/Sim.qml:47
-msgid "2G/3G"
-msgstr "2G/3G"
-
-#: ../plugins/cellular/Components/Sim.qml:48
-msgid "2G/3G/4G"
-msgstr "2G/3G/4G"
-
-#: ../plugins/cellular/Components/SimEditor.qml:88
-msgid "Edit SIM Name"
-msgstr "Modifier le nom de la carte SIM"
-
-#: ../plugins/cellular/Components/SingleSim.qml:69
-msgid "Cellular data:"
-msgstr "Données cellulaires :"
-
-#: ../plugins/cellular/Components/SingleSim.qml:110
-#: ../plugins/cellular/PageCarrierAndApn.qml:27
-msgid "Carrier & APN"
-msgstr "Operateur et nom du point d’accès"
-
-#: ../plugins/cellular/PageApnEditor.qml:71
-msgid "Edit"
-msgstr "Modifier"
-
-#: ../plugins/cellular/PageApnEditor.qml:71
-msgid "New APN"
-msgstr "Nouveau nom de point d'accès"
-
-#: ../plugins/cellular/PageApnEditor.qml:132
-msgid "Used for:"
-msgstr "Utilisé pour :"
-
-#: ../plugins/cellular/PageApnEditor.qml:136
-#: ../plugins/cellular/PageChooseApn.qml:107
-msgid "Internet and MMS"
-msgstr "Internet et MMS"
-
-#: ../plugins/cellular/PageApnEditor.qml:137
-#: ../plugins/cellular/PageChooseApn.qml:109
-msgid "Internet"
-msgstr "Internet"
-
-#: ../plugins/cellular/PageApnEditor.qml:138
-#: ../plugins/cellular/PageChooseApn.qml:113
-msgid "MMS"
-msgstr "MMS"
-
-#: ../plugins/cellular/PageApnEditor.qml:139
-#: ../plugins/cellular/PageChooseApn.qml:111
-msgid "LTE"
-msgstr "LTE"
-
-#: ../plugins/cellular/PageApnEditor.qml:166
-msgid "Enter a name describing the APN"
-msgstr "Saisissez un nom décrivant le point d’accès"
-
-#. TRANSLATORS: This string is a description of a text
-#. field and should thus be concise.
-#: ../plugins/cellular/PageApnEditor.qml:182
-#: ../plugins/cellular/PageCarrierAndApn.qml:59
-#: ../plugins/cellular/PageCarriersAndApns.qml:71
-#: ../plugins/cellular/PageChooseApn.qml:41
-msgid "APN"
-msgstr "Nom du point d’accès"
-
-#: ../plugins/cellular/PageApnEditor.qml:192
-msgid "Enter the name of the access point"
-msgstr "Saisissez le nom du point d'accès"
-
-#: ../plugins/cellular/PageApnEditor.qml:206
-msgid "MMSC"
-msgstr "MMSC"
-
-#: ../plugins/cellular/PageApnEditor.qml:216
-msgid "Enter message center"
-msgstr "Renseignez le centre de messages"
-
-#: ../plugins/cellular/PageApnEditor.qml:234
-msgid "Proxy"
-msgstr "Proxy"
-
-#: ../plugins/cellular/PageApnEditor.qml:244
-msgid "Enter message proxy"
-msgstr "Renseignez le proxy de messages"
-
-#: ../plugins/cellular/PageApnEditor.qml:289
-msgid "Proxy port"
-msgstr "Port du proxy"
-
-#: ../plugins/cellular/PageApnEditor.qml:300
-msgid "Enter message proxy port"
-msgstr "Renseignez le port du proxy de messages"
-
-#: ../plugins/cellular/PageApnEditor.qml:318
-msgid "User name"
-msgstr "Nom d'utilisateur"
-
-#: ../plugins/cellular/PageApnEditor.qml:328
-msgid "Enter username"
-msgstr "Saisissez le nom d'utilisateur"
-
-#: ../plugins/cellular/PageApnEditor.qml:341
-#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
-msgid "Password"
-msgstr "Mot de passe"
-
-#: ../plugins/cellular/PageApnEditor.qml:353
-msgid "Enter password"
-msgstr "Saisissez le mot de passe"
-
-#: ../plugins/cellular/PageApnEditor.qml:367
-#: ../plugins/wifi/OtherNetwork.qml:338
-msgid "Authentication"
-msgstr "Authentification"
-
-#: ../plugins/cellular/PageApnEditor.qml:372
-msgid "PAP or CHAP"
-msgstr "PAP ou CHAP"
-
-#: ../plugins/cellular/PageApnEditor.qml:373
-msgid "PAP only"
-msgstr "PAP uniquement"
-
-#: ../plugins/cellular/PageApnEditor.qml:374
-msgid "CHAP only"
-msgstr "CHAP uniquement"
-
-#: ../plugins/cellular/PageApnEditor.qml:385
-msgid "Protocol"
-msgstr "Protocole"
-
-#: ../plugins/cellular/PageApnEditor.qml:389
-msgid "IPv4"
-msgstr "IPv4"
-
-#: ../plugins/cellular/PageApnEditor.qml:390
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../plugins/cellular/PageApnEditor.qml:391
-msgid "IPv4v6"
-msgstr "IPv4v6"
-
-#: ../plugins/cellular/PageCarrierAndApn.qml:45
-#: ../plugins/cellular/PageCarrierAndApn.qml:54
-#: ../plugins/cellular/PageCarriersAndApns.qml:56
-#: ../plugins/cellular/PageChooseCarrier.qml:32
-#: ../plugins/cellular/PageChooseCarrier.qml:129
-msgid "Carrier"
-msgstr "Opérateur"
-
-#: ../plugins/cellular/PageCarriersAndApns.qml:27
-msgid "Carriers & APNs"
-msgstr "Opérateurs et noms des points d'accès"
-
-#: ../plugins/cellular/PageChooseApn.qml:85
-msgid "MMS APN"
-msgstr "APN pour les MMS :"
-
-#: ../plugins/cellular/PageChooseApn.qml:91
-msgid "Internet APN"
-msgstr "APN à Internet"
-
-#: ../plugins/cellular/PageChooseApn.qml:97
-msgid "LTE APN"
-msgstr "APN pour le LTE"
-
-#: ../plugins/cellular/PageChooseApn.qml:156
-msgid "Reset All APN Settings…"
-msgstr "Réinitialiser tous les paramètres des APN…"
-
-#: ../plugins/cellular/PageChooseApn.qml:165
-msgid "Reset APN Settings"
-msgstr "Réinitialiser les paramètres des APNs"
-
-#: ../plugins/cellular/PageChooseApn.qml:166
-msgid "Are you sure that you want to Reset APN Settings?"
-msgstr "Voulez-vous vraiment réinitialiser les paramètres des APNs?"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: ../plugins/cellular/PageChooseApn.qml:169 settings.js:210
-msgid "Reset"
-msgstr "Réinitialiser"
-
-#. TRANSLATORS: %1 is the MMS APN that the user has chosen to be
-#. “preferred”.
-#. TRANSLATORS: %1 is the Internet APN that the user has chosen to
-#. be “preferred”.
-#: ../plugins/cellular/PageChooseApn.qml:192
-#: ../plugins/cellular/PageChooseApn.qml:223
-#, qt-format
-msgid "Prefer %1"
-msgstr "Préférer %1"
-
-#. TRANSLATORS: %1 is the MMS APN that the user has chosen to be
-#. “preferred”, i.e. used to retrieve MMS messages. %2 is the Internet
-#. APN that will be “de-preferred” as a result of this action.
-#: ../plugins/cellular/PageChooseApn.qml:196
-#, qt-format
-msgid "You have chosen %1 as your preferred MMS APN. "
-msgstr "Vous avez choisi %1 en tant que APN préféré pour les MMS. "
-
-#. TRANSLATORS: %1 is the Internet APN that the user has chosen to
-#. be “preferred”, i.e. used to connect to the Internet. %2 is the MMS
-#. APN that will be “de-preferred” as a result of this action.
-#: ../plugins/cellular/PageChooseApn.qml:227
-#, qt-format
-msgid "You have chosen %1 as your preferred Internet APN. "
-msgstr "Vous avez choisi %1 en tant que APN pour Internet. "
-
-#: ../plugins/cellular/PageChooseApn.qml:232
-#: ../plugins/cellular/PageChooseApn.qml:265
-msgid "Disable"
-msgstr "Désactiver"
-
-#: ../plugins/cellular/PageChooseApn.qml:254
-#, qt-format
-msgid "Disconnect %1"
-msgstr "Déconnecter %1"
-
-#: ../plugins/cellular/PageChooseApn.qml:255
-#, qt-format
-msgid "Disable %1"
-msgstr "Désactiver %1"
-
-#: ../plugins/cellular/PageChooseApn.qml:260
-#, qt-format
-msgid "This disconnects %1."
-msgstr "Ceci déconnecte %1."
-
-#: ../plugins/cellular/PageChooseApn.qml:261
-#, qt-format
-msgid "This disables %1."
-msgstr "Ceci désactive %1."
-
-#: ../plugins/cellular/PageChooseApn.qml:303
-#: ../plugins/printing/PageComponent.qml:136
-msgid "Delete"
-msgstr "Supprimer"
-
-#: ../plugins/cellular/PageChooseCarrier.qml:153
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
-msgid "Automatically"
-msgstr "Automatiquement"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: ../plugins/cellular/PageComponent.qml:32 settings.js:364
-msgid "Cellular"
-msgstr "Cellulaire"
 
 #: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1141,7 +865,8 @@ msgstr "Le service de connexion partagée a échoué"
 
 #: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
-msgstr "Un micrologiciel nécessaire est peut-être manquant pour le périphérique"
+msgstr ""
+"Un micrologiciel nécessaire est peut-être manquant pour le périphérique"
 
 #: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
 msgid "The device was removed"
@@ -1221,8 +946,6 @@ msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Le démarrage du point d'accès allumera le Wi-Fi."
 
 #: ../plugins/hotspot/HotspotSetup.qml:266
-#: ../plugins/security-privacy/LockSecurity.qml:389
-#: ../plugins/security-privacy/SimPin.qml:187
 msgid "Change"
 msgstr "Modifier"
 
@@ -1232,7 +955,7 @@ msgstr "Démarrer"
 
 #. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
 #: ../plugins/hotspot/PageComponent.qml:33
-#: ../plugins/hotspot/PageComponent.qml:85 settings.js:86
+#: ../plugins/hotspot/PageComponent.qml:85 settings.js:130
 msgid "Hotspot"
 msgstr "Point d'accès"
 
@@ -1277,7 +1000,12 @@ msgstr "Allumer le Wi-Fi"
 msgid "Display language"
 msgstr "Afficher la langue"
 
-#: ../plugins/language/DisplayLanguage.qml:127
+#: ../plugins/language/DisplayLanguage.qml:55
+#: ../plugins/printing/AddPrinterDetails.qml:44
+msgid "Back"
+msgstr "Précédent"
+
+#: ../plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
 msgstr "Confirmer"
 
@@ -1295,7 +1023,7 @@ msgid "Current layouts:"
 msgstr "Agencements actuels :"
 
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: ../plugins/language/PageComponent.qml:37 settings.js:18
+#: ../plugins/language/PageComponent.qml:37 settings.js:138
 msgid "Language & Text"
 msgstr "Langue et texte"
 
@@ -1434,8 +1162,7 @@ msgid "All languages available:"
 msgstr "Toutes les langues disponibles :"
 
 #. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: ../plugins/launcher/PageComponent.qml:31
-#: ../plugins/security-privacy/PhoneLocking.qml:138 settings.js:186
+#: ../plugins/launcher/PageComponent.qml:31 settings.js:164
 msgid "Launcher"
 msgstr "Lanceur"
 
@@ -1449,7 +1176,8 @@ msgstr "Toujours afficher le lanceur"
 
 #: ../plugins/launcher/PageComponent.qml:74
 msgid "Videos and full-screen games may hide it temporarily."
-msgstr "Les vidéos et les jeux en plein écran peuvent le cacher temporairement."
+msgstr ""
+"Les vidéos et les jeux en plein écran peuvent le cacher temporairement."
 
 #: ../plugins/launcher/PageComponent.qml:85
 msgid "Icon size:"
@@ -1519,7 +1247,7 @@ msgstr ""
 "batterie est chargée."
 
 #. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: ../plugins/mouse/PageComponent.qml:29 settings.js:172
+#: ../plugins/mouse/PageComponent.qml:29 settings.js:170
 msgid "Mouse & Touchpad"
 msgstr "Souris et pavé tactile"
 
@@ -1543,9 +1271,15 @@ msgstr "Pas assez rapide"
 msgid "Double-clicked"
 msgstr "Double-cliqué"
 
+#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
+#: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
+#: settings.js:184
+msgid "NFC"
+msgstr ""
+
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: ../plugins/notifications/ClickAppNotifications.qml:62
-#: ../plugins/notifications/PageComponent.qml:29 settings.js:148
+#: ../plugins/notifications/PageComponent.qml:29 settings.js:194
 msgid "Notifications"
 msgstr "Notifications"
 
@@ -1574,7 +1308,7 @@ msgstr "Liste des notifications"
 
 #. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
 #: ../plugins/notifications/ClickAppsSoundsNotify.qml:30
-#: ../plugins/sound/PageComponent.qml:39 settings.js:256
+#: ../plugins/sound/PageComponent.qml:39 settings.js:268
 msgid "Sound"
 msgstr "Son"
 
@@ -1590,11 +1324,11 @@ msgstr "Vibration"
 msgid "When in Silent mode:"
 msgstr "Lorsque le mode silencieux est activé :"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:68
+#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
 msgid "Vibrate as normal"
 msgstr "Vibrer comme d'habitude"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
+#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:70
 msgid "Don't vibrate"
 msgstr "Ne pas vibrer"
 
@@ -1630,129 +1364,6 @@ msgstr "Aucune notification"
 msgid "Bubbles"
 msgstr "Bulles"
 
-#. TRANSLATORS: This string will be truncated on smaller displays.
-#: ../plugins/phone/CallForwardItem.qml:157
-#: ../plugins/phone/CallForwardItem.qml:202
-msgid "Forward to"
-msgstr "Transférer vers"
-
-#: ../plugins/phone/CallForwardItem.qml:171
-msgid "Enter a number"
-msgstr "Saisir un numéro"
-
-#: ../plugins/phone/CallForwardItem.qml:218
-msgid "Call forwarding can’t be changed right now."
-msgstr "La redirection d'appels ne peut pas être changée maintenant."
-
-#: ../plugins/phone/CallForwarding.qml:45 ../plugins/phone/MultiSim.qml:54
-#: ../plugins/phone/NoSims.qml:28 ../plugins/phone/SingleSim.qml:42
-msgid "Call forwarding"
-msgstr "Transfert d'appel"
-
-#: ../plugins/phone/CallForwarding.qml:131
-msgid "Forward every incoming call"
-msgstr "Transférer tous les appels entrants"
-
-#: ../plugins/phone/CallForwarding.qml:146
-msgid "Redirects all phone calls to another number."
-msgstr "Transférer tous les appels téléphoniques vers un autre numéro."
-
-#: ../plugins/phone/CallForwarding.qml:158
-msgid "Call forwarding status can’t be checked "
-msgstr "Le statut de la redirection d'appels ne peut pas être vérifié "
-
-#: ../plugins/phone/CallForwarding.qml:166
-msgid "Forward incoming calls when:"
-msgstr "Transférer les appels entrants lorsque :"
-
-#: ../plugins/phone/CallForwarding.qml:175
-msgid "I’m on another call"
-msgstr "J'ai un autre appel en cours"
-
-#: ../plugins/phone/CallForwarding.qml:186
-msgid "I don’t answer"
-msgstr "Je ne réponds pas"
-
-#: ../plugins/phone/CallForwarding.qml:197
-msgid "My phone is unreachable"
-msgstr "Mon téléphone est injoignable"
-
-#: ../plugins/phone/CallForwarding.qml:227
-msgid "Contacts…"
-msgstr "Contacts…"
-
-#: ../plugins/phone/CallForwarding.qml:274
-msgid "Please select a phone number"
-msgstr "Veuillez sélectionner un numéro de téléphone"
-
-#: ../plugins/phone/CallForwarding.qml:283
-msgid "Numbers"
-msgstr "Numéros"
-
-#: ../plugins/phone/CallForwarding.qml:302
-msgid "Could not forward to this contact"
-msgstr "Impossible de transférer vers ce contact"
-
-#: ../plugins/phone/CallForwarding.qml:303
-msgid "Contact not associated with any phone number."
-msgstr "Ce contact n'est associé à aucun numéro de téléphone."
-
-#: ../plugins/phone/CallForwarding.qml:382
-msgid "All calls"
-msgstr "Tous les appels"
-
-#: ../plugins/phone/CallForwarding.qml:384
-msgid "Some calls"
-msgstr "Certains appels"
-
-#: ../plugins/phone/CallForwarding.qml:386
-#: ../plugins/security-privacy/PageComponent.qml:180
-#: ../plugins/security-privacy/PageComponent.qml:248
-msgid "Off"
-msgstr "Désactivé"
-
-#: ../plugins/phone/CallWaiting.qml:31 ../plugins/phone/CallWaiting.qml:86
-#: ../plugins/phone/MultiSim.qml:42 ../plugins/phone/NoSims.qml:34
-#: ../plugins/phone/SingleSim.qml:34
-msgid "Call waiting"
-msgstr "Appel en attente"
-
-#: ../plugins/phone/CallWaiting.qml:101
-msgid ""
-"Lets you answer or start a new call while on another call, and switch "
-"between them"
-msgstr ""
-"Vous permet de répondre ou de commencer un nouvel appel alors que vous êtes "
-"en ligne et vous permet de basculer entre ces appels"
-
-#: ../plugins/phone/MultiSim.qml:67 ../plugins/phone/NoSims.qml:42
-msgid "Services"
-msgstr "Services"
-
-#: ../plugins/phone/PageComponent.qml:102
-#: ../plugins/sound/PageComponent.qml:194
-msgid "Dialpad tones"
-msgstr "Sons du clavier téléphonique"
-
-#: ../plugins/phone/ServiceInfo.qml:109
-#, qt-format
-msgid "Last called %1"
-msgstr "Dernier appel %1"
-
-#: ../plugins/phone/ServiceInfo.qml:119
-msgid "Call"
-msgstr "Appel"
-
-#. TRANSLATORS: %1 is the name of the (network) carrier
-#: ../plugins/phone/Services.qml:36 ../plugins/phone/SingleSim.qml:55
-#, qt-format
-msgid "%1 Services"
-msgstr "Services %1"
-
-#: ../plugins/phone/SingleSim.qml:29
-msgid "SIM"
-msgstr "SIM"
-
 #: ../plugins/printing/AddPrinter.qml:34
 #: ../plugins/printing/AddPrinterDetails.qml:54
 #: ../plugins/printing/PageComponent.qml:38
@@ -1774,10 +1385,6 @@ msgstr "Aucun périphérique trouvé."
 #: ../plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
 msgstr "Décrivez l'imprimante"
-
-#: ../plugins/printing/AddPrinterDetails.qml:44
-msgid "Back"
-msgstr "Précédent"
 
 #: ../plugins/printing/AddPrinterDetails.qml:137
 msgid "Connection"
@@ -1804,9 +1411,6 @@ msgstr "Facultatif"
 
 #: ../plugins/printing/AddPrinterDetails.qml:209
 #: ../plugins/printing/printer-sub-pages/Status.qml:72
-#: ../plugins/security-privacy/AppAccess.qml:81
-#: ../plugins/security-privacy/Location.qml:34
-#: ../plugins/security-privacy/PageComponent.qml:240
 msgid "Location"
 msgstr "Lieu"
 
@@ -1835,7 +1439,7 @@ msgid "PPD file"
 msgstr "Fichier PPD"
 
 #. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: ../plugins/printing/PageComponent.qml:32 settings.js:392
+#: ../plugins/printing/PageComponent.qml:32 settings.js:230
 msgid "Printing"
 msgstr "Impression"
 
@@ -1854,6 +1458,10 @@ msgstr "Imprimantes configurées"
 #: ../plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
 msgstr "Imprimantes trouvées"
+
+#: ../plugins/printing/PageComponent.qml:136
+msgid "Delete"
+msgstr "Supprimer"
 
 #: ../plugins/printing/PageComponent.qml:149
 #: ../plugins/printing/printer-sub-pages/Policies.qml:50
@@ -1976,7 +1584,7 @@ msgid "Print test page"
 msgstr "Imprimer la page de test"
 
 #: ../plugins/reset/EraseEverything.qml:41
-#: ../plugins/reset/PageComponent.qml:154
+#: ../plugins/reset/PageComponent.qml:116
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
 "deleted from this device."
@@ -1992,22 +1600,21 @@ msgstr "Effacer et tout réinitialiser"
 msgid "Reset device"
 msgstr "Réinitialiser l'appareil"
 
-#: ../plugins/reset/PageComponent.qml:78 ../plugins/reset/PageComponent.qml:96
+#: ../plugins/reset/PageComponent.qml:76
 #: ../plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
 msgstr "Réinitialiser le lanceur"
 
-#: ../plugins/reset/PageComponent.qml:88
+#: ../plugins/reset/PageComponent.qml:84
 #: ../plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
 msgstr "Le contenu initial du lanceur sera restauré."
 
-#: ../plugins/reset/PageComponent.qml:111
-#: ../plugins/reset/PageComponent.qml:130
+#: ../plugins/reset/PageComponent.qml:92
 msgid "Reset all system settings…"
 msgstr "Réinitialiser tous les paramètres du système…"
 
-#: ../plugins/reset/PageComponent.qml:122
+#: ../plugins/reset/PageComponent.qml:101
 #: ../plugins/reset/ResetAllSettings.qml:29
 msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
@@ -2016,464 +1623,13 @@ msgstr ""
 "Le contenu et la présentation du lanceur et les filtres de la page d'accueil "
 "seront réinitialisés à leurs valeurs d'origine."
 
-#: ../plugins/reset/PageComponent.qml:144
-#: ../plugins/reset/PageComponent.qml:163
+#: ../plugins/reset/PageComponent.qml:108
 msgid "Erase & Reset All"
 msgstr "Effacer et tout réinitialiser"
 
 #: ../plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
 msgstr "Réinitialiser tous les paramètres du système"
-
-#: ../plugins/security-privacy/AppAccess.qml:29
-#: ../plugins/security-privacy/PageComponent.qml:259
-msgid "App permissions"
-msgstr "Permissions des applications"
-
-#: ../plugins/security-privacy/AppAccess.qml:69
-msgid "Apps that you have granted access to:"
-msgstr "Applications pour lesquelles vous avez autorisé certains accès :"
-
-#: ../plugins/security-privacy/AppAccess.qml:76
-msgid "Apps that have requested access to your camera"
-msgstr "Applications qui disposent des accès à votre appareil photo"
-
-#: ../plugins/security-privacy/AppAccess.qml:82
-msgid "Apps that have requested access to your location"
-msgstr "Applications qui ont demandé l'accès à votre position"
-
-#: ../plugins/security-privacy/AppAccess.qml:87
-msgid "Microphone"
-msgstr "Micro"
-
-#: ../plugins/security-privacy/AppAccess.qml:88
-msgid "Apps that have requested access to your microphone"
-msgstr "Applications qui ont demandé l'accès à votre microphone"
-
-#: ../plugins/security-privacy/AppAccess.qml:102
-#, qt-format
-msgid "%1/%2"
-msgstr "%1/%2"
-
-#: ../plugins/security-privacy/AppAccess.qml:103
-msgid "0"
-msgstr "0"
-
-#: ../plugins/security-privacy/AppAccess.qml:118
-msgid "Apps may also request access to online accounts."
-msgstr ""
-"Les applications peuvent également demander des accès aux comptes en ligne."
-
-#: ../plugins/security-privacy/AppAccess.qml:123
-msgid "Online Accounts…"
-msgstr "Comptes en ligne…"
-
-#: ../plugins/security-privacy/Location.qml:96
-msgid "Let the device detect your location:"
-msgstr "Autoriser l'appareil à détecter votre position :"
-
-#: ../plugins/security-privacy/Location.qml:175
-msgid "Using GPS only (less accurate)"
-msgstr "Utilisation du GPS uniquement (moins précis)"
-
-#: ../plugins/security-privacy/Location.qml:176
-msgid "Using GPS"
-msgstr "Utilisation du GPS"
-
-#: ../plugins/security-privacy/Location.qml:188
-#, qt-format
-msgid ""
-"Using GPS, anonymized Wi-Fi and cellular network info.<br>By selecting this "
-"option you accept the <a href='%1'>Nokia HERE terms and conditions</a>."
-msgstr ""
-"Utilisation des informations du GPS, du Wi-Fi anonymisé et du réseau "
-"cellulaire. <br>En sélectionnant cette option, vous acceptez les <a "
-"href='%1'>conditions d'utilisation de Nokia HERE</a>."
-
-#: ../plugins/security-privacy/Location.qml:189
-#, qt-format
-msgid ""
-"Using GPS and anonymized Wi-Fi info.<br>By selecting this option you accept "
-"the <a href='%1'>Nokia HERE terms and conditions</a>."
-msgstr ""
-"Utilisation du GPS et des données Wi-Fi rendues anonymes. <br>En "
-"sélectionnant cette option, vous acceptez les <a href='%1'>conditions "
-"d'utilisation de Nokia HERE</a>."
-
-#: ../plugins/security-privacy/Location.qml:195
-msgid "Not at all"
-msgstr "Pas du tout"
-
-#: ../plugins/security-privacy/Location.qml:212
-msgid ""
-"Uses GPS to detect your rough location. When off, GPS turns off to save "
-"battery."
-msgstr ""
-"Utilise le GPS afin de calculer votre position approximative. Si désactivé, "
-"le GPS est désactivé afin d'économiser la batterie."
-
-#: ../plugins/security-privacy/Location.qml:214
-msgid ""
-"Uses WiFi and GPS to detect your rough location. Turning off location "
-"detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi afin de détecter grossièrement votre position. Éteindre la "
-"détection de la position économise la batterie."
-
-#: ../plugins/security-privacy/Location.qml:216
-msgid ""
-"Uses WiFi (currently off) and GPS to detect your rough location. Turning off "
-"location detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi (actuellement désactivé) et le GPS afin de détecter votre "
-"position approximative. Désactiver la détection de la position économise la "
-"batterie."
-
-#: ../plugins/security-privacy/Location.qml:218
-msgid ""
-"Uses WiFi, cell tower locations, and GPS to detect your rough location. "
-"Turning off location detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi, la position des antennes-relais de téléphonie mobile et le "
-"GPS afin de détecter votre position approximative. Désactiver la détection "
-"de la position économise la batterie."
-
-#: ../plugins/security-privacy/Location.qml:220
-msgid ""
-"Uses WiFi, cell tower locations (no current cellular connection), and GPS to "
-"detect your rough location. Turning off location detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi, la position des antennes-relais de téléphonie mobile ("
-"aucune connexion mobile actuellement) et le GPS afin de détecter votre "
-"position approximative. Désactiver la détection de la position économise la "
-"batterie."
-
-#: ../plugins/security-privacy/Location.qml:222
-msgid ""
-"Uses WiFi (currently off), cell tower locations, and GPS to detect your "
-"rough location. Turning off location detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi (actuellement désactivé), la position des antennes-relais "
-"de téléphonie mobile et le GPS afin de détecter votre position "
-"approximative. Désactiver la détection de la position économise la batterie."
-
-#: ../plugins/security-privacy/Location.qml:224
-msgid ""
-"Uses WiFi (currently off), cell tower locations (no current cellular "
-"connection), and GPS to detect your rough location. Turning off location "
-"detection saves battery."
-msgstr ""
-"Utilise le Wi-Fi (actuellement désactivé), la position des antennes-relais "
-"de téléphonie mobile (aucune connexion mobile actuellement) et le GPS afin "
-"de détecter votre position approximative. Désactiver la détection de la "
-"position économise la batterie."
-
-#: ../plugins/security-privacy/Location.qml:231
-msgid "Let apps access this location:"
-msgstr "Laisser les applications suivantes accéder à cette position :"
-
-#: ../plugins/security-privacy/Location.qml:254
-msgid "None requested"
-msgstr "Aucune demandée"
-
-#: ../plugins/security-privacy/LockSecurity.qml:137
-#: ../plugins/security-privacy/LockSecurity.qml:563
-msgid "Change passcode…"
-msgstr "Modifier le code…"
-
-#: ../plugins/security-privacy/LockSecurity.qml:139
-#: ../plugins/security-privacy/LockSecurity.qml:564
-msgid "Change passphrase…"
-msgstr "Modifier le mot de passe…"
-
-#: ../plugins/security-privacy/LockSecurity.qml:146
-msgid "Switch to swipe"
-msgstr "Passer en verrouillage par glissement"
-
-#: ../plugins/security-privacy/LockSecurity.qml:148
-msgid "Switch to passcode"
-msgstr "Basculer sur le code"
-
-#: ../plugins/security-privacy/LockSecurity.qml:150
-msgid "Switch to passphrase"
-msgstr "Verrouiller par mot de passe"
-
-#: ../plugins/security-privacy/LockSecurity.qml:159
-msgid "Existing passcode"
-msgstr "Code existant"
-
-#: ../plugins/security-privacy/LockSecurity.qml:161
-msgid "Existing passphrase"
-msgstr "Mot de passe actuel"
-
-#: ../plugins/security-privacy/LockSecurity.qml:231
-msgid "Choose passcode"
-msgstr "Choisir un code"
-
-#: ../plugins/security-privacy/LockSecurity.qml:233
-msgid "Choose passphrase"
-msgstr "Choisissez votre mot de passe"
-
-#: ../plugins/security-privacy/LockSecurity.qml:291
-msgid "Confirm passcode"
-msgstr "Confirmer le code"
-
-#: ../plugins/security-privacy/LockSecurity.qml:293
-msgid "Confirm passphrase"
-msgstr "Confirmez votre mot de passe"
-
-#: ../plugins/security-privacy/LockSecurity.qml:348
-msgid "Those passcodes don't match. Try again."
-msgstr "Ces codes ne correspondent pas. Réessayez."
-
-#: ../plugins/security-privacy/LockSecurity.qml:351
-msgid "Those passphrases don't match. Try again."
-msgstr "Ces phrases secrètes ne correspondent pas. Veuillez réessayer."
-
-#: ../plugins/security-privacy/LockSecurity.qml:386
-msgid "Unset"
-msgstr "Déconfigurer"
-
-#: ../plugins/security-privacy/LockSecurity.qml:463
-msgid "Unlock the device using:"
-msgstr "Déverrouiller l'appareil en utilisant :"
-
-#: ../plugins/security-privacy/LockSecurity.qml:467
-msgid "Swipe (no security)"
-msgstr "Un glissement (aucune sécurité)"
-
-#: ../plugins/security-privacy/LockSecurity.qml:468
-msgid "4-digit passcode"
-msgstr "Un code à 4 chiffres"
-
-#: ../plugins/security-privacy/LockSecurity.qml:469
-#: ../plugins/security-privacy/PhoneLocking.qml:62
-msgid "Passphrase"
-msgstr "Un mot de passe"
-
-#: ../plugins/security-privacy/LockSecurity.qml:470
-#: ../plugins/security-privacy/PhoneLocking.qml:63
-msgid "Fingerprint"
-msgstr "Une empreinte digitale"
-
-#: ../plugins/security-privacy/LockSecurity.qml:471
-msgid "Swipe (no security)… "
-msgstr "Un glissement (pas de sécurité)… "
-
-#: ../plugins/security-privacy/LockSecurity.qml:472
-msgid "4-digit passcode…"
-msgstr "Un code à 4 chiffres…"
-
-#: ../plugins/security-privacy/LockSecurity.qml:473
-msgid "Passphrase…"
-msgstr "Un mot de passe…"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: ../plugins/security-privacy/PageComponent.qml:39 settings.js:232
-msgid "Security & Privacy"
-msgstr "Sécurité et vie privée"
-
-#: ../plugins/security-privacy/PageComponent.qml:111
-msgid "Phone and Internet"
-msgstr "Téléphone et Internet"
-
-#: ../plugins/security-privacy/PageComponent.qml:113
-msgid "Phone only"
-msgstr "Téléphone uniquement"
-
-#: ../plugins/security-privacy/PageComponent.qml:137
-#: ../plugins/wifi/OtherNetwork.qml:307
-msgid "Security"
-msgstr "Sécurité"
-
-#: ../plugins/security-privacy/PageComponent.qml:143
-msgid "Fingerprint ID"
-msgstr "Identifiant de l'empreinte digitale"
-
-#: ../plugins/security-privacy/PageComponent.qml:163
-#: ../plugins/security-privacy/PhoneLocking.qml:32
-msgid "Locking and unlocking"
-msgstr "Verrouillage et déverrouillage"
-
-#: ../plugins/security-privacy/PageComponent.qml:173
-#: ../plugins/security-privacy/SimPin.qml:37
-#: ../plugins/security-privacy/SimPin.qml:398
-msgid "SIM PIN"
-msgstr "Code PIN de la carte SIM"
-
-#: ../plugins/security-privacy/PageComponent.qml:176
-#: ../plugins/security-privacy/PageComponent.qml:248
-msgid "On"
-msgstr "Activé"
-
-#: ../plugins/security-privacy/PageComponent.qml:187
-msgid "Encryption"
-msgstr "Chiffrement"
-
-#: ../plugins/security-privacy/PageComponent.qml:197
-msgid ""
-"Encryption protects against access to phone data when the phone is connected "
-"to a PC or other device."
-msgstr ""
-"Le chiffrement protège l'accès aux données quand le téléphone est connecté à "
-"un ordinateur ou un autre périphérique."
-
-#: ../plugins/security-privacy/PageComponent.qml:202
-msgid "Privacy"
-msgstr "Vie privée"
-
-#: ../plugins/security-privacy/PageComponent.qml:206
-msgid "Stats on welcome screen"
-msgstr "Statistiques sur l'écran d'accueil"
-
-#: ../plugins/security-privacy/PageComponent.qml:216
-msgid "Messages on welcome screen"
-msgstr "Messages sur l'écran d'accueil"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:60
-msgctxt "Unlock with swipe"
-msgid "None"
-msgstr "Aucune"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:61
-msgid "Passcode"
-msgstr "Code"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:126
-msgid "Sleep locks immediately"
-msgstr "La mise en veille verrouille immédiatement"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:132
-msgid "When locked, allow:"
-msgstr "Une fois verrouillé, permettre :"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:152
-msgid "Notifications and quick settings"
-msgstr "Notifications et réglages rapides"
-
-#: ../plugins/security-privacy/PhoneLocking.qml:167
-msgid "Turn on lock security to restrict access when the device is locked."
-msgstr ""
-"Activer la sécurité de verrouillage pour restreindre l'accès lorsque "
-"l'appareil est verrouillé."
-
-#: ../plugins/security-privacy/PhoneLocking.qml:168
-msgid "Other apps and functions will prompt you to unlock."
-msgstr "Les autres applications et fonctions vous inviteront à déverrouiller."
-
-#: ../plugins/security-privacy/SimPin.qml:48
-msgid "Change SIM PIN"
-msgstr "Modifier le code PIN du SIM"
-
-#: ../plugins/security-privacy/SimPin.qml:53
-#: ../plugins/security-privacy/SimPin.qml:219
-#, qt-format
-msgid "Incorrect PIN. %1 attempt remaining."
-msgid_plural "Incorrect PIN. %1 attempts remaining."
-msgstr[0] "Code PIN incorrect. %1 essai restant."
-msgstr[1] "Code PIN incorrect. %1 essais restant."
-
-#: ../plugins/security-privacy/SimPin.qml:58
-#: ../plugins/security-privacy/SimPin.qml:120
-#: ../plugins/security-privacy/SimPin.qml:224
-#: ../plugins/security-privacy/SimPin.qml:297
-msgid "No more attempts allowed"
-msgstr "Plus aucun essai n'est permis"
-
-#: ../plugins/security-privacy/SimPin.qml:93
-msgid "Current PIN:"
-msgstr "Code PIN actuel :"
-
-#: ../plugins/security-privacy/SimPin.qml:115
-#: ../plugins/security-privacy/SimPin.qml:292
-#, qt-format
-msgid "%1 attempt allowed."
-msgid_plural "%1 attempts allowed."
-msgstr[0] "%1 essai permis."
-msgstr[1] "%1 essais permis."
-
-#: ../plugins/security-privacy/SimPin.qml:135
-msgid "Choose new PIN:"
-msgstr "Choisissez un nouveau code PIN :"
-
-#: ../plugins/security-privacy/SimPin.qml:146
-msgid "Confirm new PIN:"
-msgstr "Confirmez le nouveau code PIN :"
-
-#: ../plugins/security-privacy/SimPin.qml:168
-msgid "PINs don't match. Try again."
-msgstr "Les codes PIN ne correspondent pas. Réessayez."
-
-#: ../plugins/security-privacy/SimPin.qml:213
-msgid "Enter SIM PIN"
-msgstr "Saisissez le code PIN de la carte SIM"
-
-#: ../plugins/security-privacy/SimPin.qml:214
-msgid "Enter Previous SIM PIN"
-msgstr "Saisissez le code PIN précédent de la carte SIM"
-
-#: ../plugins/security-privacy/SimPin.qml:334
-msgid "Lock"
-msgstr "Verrouiller"
-
-#: ../plugins/security-privacy/SimPin.qml:334
-msgid "Unlock"
-msgstr "Déverrouiller"
-
-#: ../plugins/security-privacy/SimPin.qml:413
-msgid "Unlocked"
-msgstr "Déverrouillé"
-
-#: ../plugins/security-privacy/SimPin.qml:416
-msgid "Change PIN…"
-msgstr "Changement de code PIN…"
-
-#: ../plugins/security-privacy/SimPin.qml:427
-msgid "Locked"
-msgstr "Verrouillé"
-
-#: ../plugins/security-privacy/SimPin.qml:431
-msgid "Unlock…"
-msgstr "Déverrouiller…"
-
-#: ../plugins/security-privacy/SimPin.qml:445
-msgid ""
-"When a SIM PIN is set, it must be entered to access cellular services after "
-"restarting the device or swapping the SIM."
-msgstr ""
-"Lorsqu'un code PIN de carte SIM est défini, il doit être saisi pour accéder "
-"aux services du portable après le redémarrage de l'appareil ou après "
-"l'échange de la carte SIM."
-
-#: ../plugins/security-privacy/SimPin.qml:449
-msgid "Entering an incorrect PIN repeatedly may lock the SIM permanently."
-msgstr ""
-"La saisie d'un code PIN erroné à plusieurs reprises peut verrouiller la "
-"carte SIM de façon permanente."
-
-#: ../plugins/security-privacy/here-terms.qml:24
-msgid "Nokia HERE"
-msgstr "Nokia HERE"
-
-#: ../plugins/security-privacy/securityprivacy.cpp:369
-msgid "Incorrect passcode. Try again."
-msgstr "Code incorrect. Réessayez."
-
-#: ../plugins/security-privacy/securityprivacy.cpp:371
-msgid "Incorrect passphrase. Try again."
-msgstr "Mot de passe incorrect. Réessayez."
-
-#: ../plugins/security-privacy/securityprivacy.cpp:374
-msgid "Could not set security mode"
-msgstr "Impossible de définir le mode de sécurité"
-
-#: ../plugins/security-privacy/securityprivacy.cpp:399
-msgid "Could not set security display hint"
-msgstr "Impossible de définir l'affichage de l'indice de sécurité"
-
-#: ../plugins/security-privacy/securityprivacy.cpp:413
-msgid "Authentication token manipulation error"
-msgstr "Erreur de manipulation du jeton d'authentification"
 
 #: ../plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
@@ -2505,6 +1661,10 @@ msgstr "Vibrer en sonnant"
 msgid "Vibrate in Silent Mode"
 msgstr "Vibrer en mode silencieux"
 
+#: ../plugins/sound/PageComponent.qml:194
+msgid "Dialpad tones"
+msgstr "Sons du clavier téléphonique"
+
 #: ../plugins/sound/PageComponent.qml:203
 msgid "Messages:"
 msgstr "Messages :"
@@ -2530,11 +1690,17 @@ msgstr "Son de verrouillage"
 msgid "Other vibrations"
 msgstr "Autres vibrations"
 
-#: ../plugins/sound/SoundsList.qml:128
+#: ../plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
 msgstr "Sonnerie personnalisée"
 
-#: ../plugins/sound/SoundsList.qml:208
+#: ../plugins/sound/SoundsList.qml:132
+#, fuzzy
+#| msgid "Vibrate with message sound"
+msgid "Custom message sound"
+msgstr "Vibrer avec une alerte sonore"
+
+#: ../plugins/sound/SoundsList.qml:213
 msgid "Choose from"
 msgstr "Choisir à partir de"
 
@@ -2545,6 +1711,11 @@ msgstr "Fuseau horaire"
 #: ../plugins/time-date/ChooseTimeZone.qml:50
 msgid "Set the time zone:"
 msgstr "Régler le fuseau horaire :"
+
+#: ../plugins/time-date/ChooseTimeZone.qml:51
+#: ../plugins/time-date/PageComponent.qml:85
+msgid "Automatically"
+msgstr "Automatiquement"
 
 #: ../plugins/time-date/ChooseTimeZone.qml:51
 #: ../plugins/time-date/PageComponent.qml:85
@@ -2560,7 +1731,7 @@ msgid "No matching place"
 msgstr "Aucun lieu ne correspond"
 
 #. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: ../plugins/time-date/PageComponent.qml:31 settings.js:222
+#: ../plugins/time-date/PageComponent.qml:31 settings.js:286
 msgid "Time and Date"
 msgstr "Heure et date"
 
@@ -2572,44 +1743,20 @@ msgstr "Fuseau horaire :"
 msgid "Set the time and date:"
 msgstr "Définir la date et l'heure :"
 
-#: ../plugins/time-date/TimePicker.qml:25
+#: ../plugins/time-date/TimePicker.qml:26
 msgid "Set time & date"
 msgstr "Définir la date et l'heure"
 
-#: ../plugins/time-date/TimePicker.qml:67
+#: ../plugins/time-date/TimePicker.qml:47
 msgid "Time"
 msgstr "Heure"
 
-#: ../plugins/time-date/TimePicker.qml:80
-msgid "Hour"
-msgstr "Heure"
-
-#: ../plugins/time-date/TimePicker.qml:94
-msgid "Minute"
-msgstr "Minute"
-
-#: ../plugins/time-date/TimePicker.qml:108
-msgid "Second"
-msgstr "Seconde"
-
-#: ../plugins/time-date/TimePicker.qml:117
+#: ../plugins/time-date/TimePicker.qml:56
 msgid "Date"
 msgstr "Date"
 
-#: ../plugins/time-date/TimePicker.qml:129
-msgid "Day"
-msgstr "Jour"
-
-#: ../plugins/time-date/TimePicker.qml:143
-msgid "Month"
-msgstr "Mois"
-
-#: ../plugins/time-date/TimePicker.qml:161
-msgid "Year"
-msgstr "Année"
-
 #. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: ../plugins/vpn/PageComponent.qml:31 settings.js:110
+#: ../plugins/vpn/PageComponent.qml:31 settings.js:296
 msgid "VPN"
 msgstr "VPN"
 
@@ -2665,12 +1812,16 @@ msgstr "Détails du réseau"
 msgid "Last connected"
 msgstr "Dernière connexion"
 
+#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
+msgid "Password"
+msgstr "Mot de passe"
+
 #: ../plugins/wifi/NetworkDetails.qml:99
 #: ../plugins/wifi/NetworkDetailsBrief.qml:55
 msgid "Forget this network"
 msgstr "Oublier ce réseau"
 
-#: ../plugins/wifi/NetworkDetailsBrief.qml:72
+#: ../plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
 msgstr "Adresse IP"
 
@@ -2689,6 +1840,10 @@ msgstr "Nom du réseau"
 #: ../plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
 msgstr "SSID"
+
+#: ../plugins/wifi/OtherNetwork.qml:307
+msgid "Security"
+msgstr "Sécurité"
 
 #: ../plugins/wifi/OtherNetwork.qml:319
 msgid "WPA & WPA2 Personal"
@@ -2713,6 +1868,10 @@ msgstr "LEAP"
 #: ../plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
 msgstr "Ce réseau n'est pas sûr."
+
+#: ../plugins/wifi/OtherNetwork.qml:338
+msgid "Authentication"
+msgstr "Authentification"
 
 #: ../plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
@@ -2878,814 +2037,6 @@ msgstr "Personnel"
 msgid "System"
 msgstr "Système"
 
-#: ../src/systemimage.cpp:231
-msgid "Can't cancel current request (can't contact service)"
-msgstr ""
-"Impossible d'annuler la demande actuelle (impossible de contacter le service)"
-
-#: ../src/systemimage.cpp:244
-msgid "Can't pause current request (can't contact service)"
-msgstr ""
-"Impossible de suspendre la demande actuelle (impossible de contacter le "
-"service)"
-
-#: ../src/systemimage.cpp:368 ../src/systemimage.cpp:374
-#: ../src/systemimage.cpp:380
-msgid "Unavailable"
-msgstr "Indisponible"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:4 settings.js:190
-msgid "appearance"
-msgstr "apparence"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:6
-msgid "background"
-msgstr "arrière-plan"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:8
-msgid "wallpaper"
-msgstr "fond d'écran"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:10
-msgid "art"
-msgstr "art"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:12
-msgid "photo"
-msgstr "photo"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:14
-msgid "picture"
-msgstr "image"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:16
-msgid "image"
-msgstr "image"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:20
-msgid "language"
-msgstr "langue"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:22 settings.js:270
-msgid "keyboard"
-msgstr "clavier"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:24
-msgid "spellcheck"
-msgstr "vérification orthographique"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:26 settings.js:206 settings.js:230 settings.js:318
-msgid "automatic"
-msgstr "automatique"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:28
-msgid "correct"
-msgstr "corriger"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:30
-msgid "suggestions"
-msgstr "suggestions"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:32
-msgid "capitalization"
-msgstr "majuscules"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:34
-msgid "punctuation"
-msgstr "ponctuation"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:36
-msgid "layout"
-msgstr "agencement"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:38 settings.js:202
-msgid "display"
-msgstr "affichage"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:40
-msgid "words"
-msgstr "mots"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:42
-msgid "vibration"
-msgstr "vibration"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:46 settings.js:336
-msgid "phone"
-msgstr "téléphone"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:48
-msgid "services"
-msgstr "services"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:50
-msgid "forwarding"
-msgstr "renvoi"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:52
-msgid "waiting"
-msgstr "attente"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:54
-msgid "call"
-msgstr "appel"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:56 settings.js:266
-msgid "dialpad"
-msgstr "clavier"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:58
-msgid "shortcuts"
-msgstr "raccourcis"
-
-#. TRANSLATORS: This is a keyword or name for the phone plugin which is used while searching
-#: settings.js:60
-msgid "numbers"
-msgstr "numéros"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:64
-msgid "bluetooth"
-msgstr "bluetooth"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:66
-msgid "headset"
-msgstr "écouteurs"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:68
-msgid "pair"
-msgstr "paire"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:70 settings.js:332
-msgid "device"
-msgstr "périphérique"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:72
-msgid "discover"
-msgstr "découverte"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:74
-msgid "car"
-msgstr "voiture"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:76
-msgid "handsfree"
-msgstr "kit mains-libres"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:78 settings.js:278
-msgid "wireless"
-msgstr "sans fil"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:80 settings.js:114 settings.js:284
-msgid "connect"
-msgstr "connecter"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:82 settings.js:116 settings.js:286
-msgid "disconnect"
-msgstr "déconnecter"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:84
-msgid "stereo"
-msgstr "stéréo"
-
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:88 settings.js:112 settings.js:138 settings.js:276
-#: settings.js:368
-msgid "network"
-msgstr "réseau"
-
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:90
-msgid "hotspot"
-msgstr "point d'accès"
-
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:92
-msgid "tethering"
-msgstr "connexion"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:96
-msgid "battery"
-msgstr "batterie"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:98
-msgid "power"
-msgstr "alimentation"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:100
-msgid "charge"
-msgstr "charge"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:102
-msgid "idle"
-msgstr "inactif"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:104 settings.js:238 settings.js:300
-msgid "lock"
-msgstr "verrouiller"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:106
-msgid "disable"
-msgstr "désactiver"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:108
-msgid "enable"
-msgstr "activer"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:118
-msgid "vpn"
-msgstr "vpn"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:120
-msgid "openvpn"
-msgstr "openvpn"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:122 settings.js:290
-msgid "ip"
-msgstr "ip"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:124 settings.js:292 settings.js:344
-msgid "address"
-msgstr "adresse"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:126
-msgid "routing"
-msgstr "routage"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:128
-msgid "Flight Mode"
-msgstr "Mode avion"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:130
-msgid "flight"
-msgstr "vol"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:132
-msgid "plane"
-msgstr "avion"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:134
-msgid "offline"
-msgstr "hors ligne"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:136
-msgid "airplane"
-msgstr "avion"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:140
-msgid "Example"
-msgstr "Exemple"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:142
-msgid "example"
-msgstr "exemple"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:144
-msgid "test"
-msgstr "test"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:146
-msgid "sample"
-msgstr "exemple"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:150 settings.js:310 settings.js:352
-msgid "software"
-msgstr "logiciel"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:152
-msgid "notifications"
-msgstr "notifications"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:154 settings.js:304 settings.js:314
-msgid "apps"
-msgstr "applications"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:156
-msgid "authorize"
-msgstr "autoriser"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:158
-msgid "alerts"
-msgstr "alertes"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:160
-msgid "permissions"
-msgstr "permissions"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:162
-msgid "badges"
-msgstr "badges"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:164
-msgid "facebook"
-msgstr "facebook"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:166
-msgid "twitter"
-msgstr "twitter"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:168
-msgid "flickr"
-msgstr "flickr"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:170
-msgid "gmail"
-msgstr "gmail"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:174
-msgid "mouse"
-msgstr "souris"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:176
-msgid "touchpad"
-msgstr "pavé tactile"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:178
-msgid "tap"
-msgstr "toucher"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:180
-msgid "touch"
-msgstr "toucher"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:182 settings.js:324
-msgid "click"
-msgstr "click"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:184
-msgid "input"
-msgstr "entrée"
-
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:188
-msgid "launcher"
-msgstr "lanceur"
-
-#. TRANSLATORS: This is a keyword or name for the accessibility plugin which is used while searching
-#: settings.js:192
-msgid "Accessibility"
-msgstr "Accessibilité"
-
-#. TRANSLATORS: This is a keyword or name for the accessibility plugin which is used while searching
-#: settings.js:194
-msgid "accessibility"
-msgstr "accessibilité"
-
-#. TRANSLATORS: This is a keyword or name for the accessibility plugin which is used while searching
-#: settings.js:196
-msgid "a11y"
-msgstr "a11y"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:200
-msgid "brightness"
-msgstr "luminosité"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:204 settings.js:302
-msgid "screen"
-msgstr "écran"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:208
-msgid "adjust"
-msgstr "ajuster"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:212
-msgid "reset"
-msgstr "réinitialiser"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:214
-msgid "erase"
-msgstr "effacer"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:216
-msgid "factory"
-msgstr "usine"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:218
-msgid "clear"
-msgstr "effacer"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:220
-msgid "restore"
-msgstr "restaurer"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:224
-msgid "time"
-msgstr "heure"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:226
-msgid "date"
-msgstr "date"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:228
-msgid "timezone"
-msgstr "fuseau horaire"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:234
-msgid "security"
-msgstr "sécurité"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:236
-msgid "privacy"
-msgstr "confidentialité"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:240 settings.js:390
-msgid "sim"
-msgstr "sim"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:242
-msgid "pin"
-msgstr "pin"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:244
-msgid "code"
-msgstr "code"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:246
-msgid "password"
-msgstr "mot de passe"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:248
-msgid "passphrase"
-msgstr "mot de passe"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:250
-msgid "swipe"
-msgstr "glissement"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:252
-msgid "allow"
-msgstr "autoriser"
-
-#. TRANSLATORS: This is a keyword or name for the security-privacy plugin which is used while searching
-#: settings.js:254
-msgid "access"
-msgstr "accès"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:258
-msgid "sound"
-msgstr "son"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:260
-msgid "silent"
-msgstr "silencieux"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:262
-msgid "ringtone"
-msgstr "sonnerie"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:264
-msgid "vibrate"
-msgstr "vibrer"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:268
-msgid "message"
-msgstr "message"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:272
-msgid "volume"
-msgstr "volume"
-
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:280
-msgid "wifi"
-msgstr "wifi"
-
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:282
-msgid "WiFi"
-msgstr "WiFi"
-
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:288
-msgid "hidden"
-msgstr "caché"
-
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:294
-msgid "Rotation Lock"
-msgstr "Verrouillage de la rotation"
-
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:296
-msgid "rotation"
-msgstr "rotation"
-
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:298
-msgid "orientation"
-msgstr "orientation"
-
-#. TRANSLATORS: This is a keyword or name for the update-notification plugin which is used while searching
-#: settings.js:326
-msgid "Updates available"
-msgstr "Mises à jour disponibles"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:330
-msgid "about"
-msgstr "à propos"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:334
-msgid "info"
-msgstr "informations"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:338
-msgid "number"
-msgstr "numéro"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:340
-msgid "imei"
-msgstr "imei"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:342
-msgid "serial"
-msgstr "série"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:346
-msgid "mac"
-msgstr "mac"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:348
-msgid "licenses"
-msgstr "licences"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:350
-msgid "developer"
-msgstr "développeur"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:354
-msgid "storage"
-msgstr "stockage"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:356
-msgid "disk"
-msgstr "disque"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:358
-msgid "space"
-msgstr "espace"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:360
-msgid "version"
-msgstr "version"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:362
-msgid "revision"
-msgstr "révision"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:366
-msgid "cellular"
-msgstr "cellulaire"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:370
-msgid "mobile"
-msgstr "mobile"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:372
-msgid "gsm"
-msgstr "gsm"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:374
-msgid "data"
-msgstr "données"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:376
-msgid "carrier"
-msgstr "opérateur"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:378
-msgid "4g"
-msgstr "4g"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:380
-msgid "3g"
-msgstr "3g"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:382
-msgid "2g"
-msgstr "2g"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:384
-msgid "lte"
-msgstr "lte"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:386
-msgid "apn"
-msgstr "apn"
-
-#. TRANSLATORS: This is a keyword or name for the cellular plugin which is used while searching
-#: settings.js:388
-msgid "roam"
-msgstr "parcourir"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:394
-msgid "printer"
-msgstr "imprimante"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:396
-msgid "printers"
-msgstr "imprimantes"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:398
-msgid "printing"
-msgstr "impression"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:400
-msgid "pdf"
-msgstr "pdf"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:402
-msgid "ppd"
-msgstr "ppd"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:404
-msgid "collate"
-msgstr "compiler"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:406
-msgid "copies"
-msgstr "exemplaires"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:408
-msgid "colormodel"
-msgstr "modèle de couleurs"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:410
-msgid "greyscale"
-msgstr "échelle de gris"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:412
-msgid "color"
-msgstr "couleur"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:414
-msgid "laser"
-msgstr "laser"
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:416
-msgid "ink"
-msgstr "encre"
-
 #: lomiri-system-settings.desktop.in.in.h:2
 msgid "System;"
 msgstr "Système;"
@@ -3693,3 +2044,1408 @@ msgstr "Système;"
 #: lomiri-system-settings.desktop.in.in.h:3
 msgid "Preferences;Settings;"
 msgstr "Préférences;Réglages;"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:4
+msgid "about"
+msgstr "à propos"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:6 settings.js:78
+msgid "device"
+msgstr "périphérique"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:8
+msgid "info"
+msgstr "informations"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:10
+msgid "phone"
+msgstr "téléphone"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:12
+msgid "number"
+msgstr "numéro"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:14
+msgid "imei"
+msgstr "imei"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:16
+msgid "serial"
+msgstr "série"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:18 settings.js:310 settings.js:332
+msgid "address"
+msgstr "adresse"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:20
+msgid "mac"
+msgstr "mac"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:22
+msgid "licenses"
+msgstr "licences"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:24
+msgid "developer"
+msgstr "développeur"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:26 settings.js:196
+msgid "software"
+msgstr "logiciel"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:28
+msgid "storage"
+msgstr "stockage"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:30
+msgid "disk"
+msgstr "disque"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:32
+msgid "space"
+msgstr "espace"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:34
+msgid "version"
+msgstr "version"
+
+#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
+#: settings.js:36
+msgid "revision"
+msgstr "révision"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
+#: settings.js:40 settings.js:168
+msgid "appearance"
+msgstr "apparence"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:42
+msgid "background"
+msgstr "arrière-plan"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:44
+msgid "wallpaper"
+msgstr "fond d'écran"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:46
+msgid "art"
+msgstr "art"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:48
+msgid "photo"
+msgstr "photo"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:50
+msgid "picture"
+msgstr "image"
+
+#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
+#: settings.js:52
+msgid "image"
+msgstr "image"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:56
+msgid "battery"
+msgstr "batterie"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:58
+msgid "power"
+msgstr "alimentation"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:60
+msgid "charge"
+msgstr "charge"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:62
+msgid "idle"
+msgstr "inactif"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:64 settings.js:224
+msgid "lock"
+msgstr "verrouiller"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:66
+msgid "disable"
+msgstr "désactiver"
+
+#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
+#: settings.js:68
+msgid "enable"
+msgstr "activer"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:72
+msgid "bluetooth"
+msgstr "bluetooth"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:74
+msgid "headset"
+msgstr "écouteurs"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:76
+msgid "pair"
+msgstr "paire"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:80
+msgid "discover"
+msgstr "découverte"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:82
+msgid "car"
+msgstr "voiture"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:84
+msgid "handsfree"
+msgstr "kit mains-libres"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:86 settings.js:318
+msgid "wireless"
+msgstr "sans fil"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:88 settings.js:300 settings.js:324
+msgid "connect"
+msgstr "connecter"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:90 settings.js:302 settings.js:326
+msgid "disconnect"
+msgstr "déconnecter"
+
+#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
+#: settings.js:92
+msgid "stereo"
+msgstr "stéréo"
+
+#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
+#: settings.js:96
+msgid "brightness"
+msgstr "luminosité"
+
+#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:98 settings.js:158
+msgid "display"
+msgstr "affichage"
+
+#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:100 settings.js:226
+msgid "screen"
+msgstr "écran"
+
+#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
+#: settings.js:102 settings.js:146 settings.js:294
+msgid "automatic"
+msgstr "automatique"
+
+#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
+#: settings.js:104
+msgid "adjust"
+msgstr "ajuster"
+
+#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
+#: settings.js:106
+msgid "Example"
+msgstr "Exemple"
+
+#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
+#: settings.js:108
+msgid "example"
+msgstr "exemple"
+
+#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
+#: settings.js:110
+msgid "test"
+msgstr "test"
+
+#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
+#: settings.js:112
+msgid "sample"
+msgstr "exemple"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#: settings.js:114
+msgid "Flight Mode"
+msgstr "Mode avion"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#: settings.js:116
+msgid "flight"
+msgstr "vol"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#: settings.js:118
+msgid "plane"
+msgstr "avion"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#: settings.js:120
+msgid "offline"
+msgstr "hors ligne"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#: settings.js:122
+msgid "airplane"
+msgstr "avion"
+
+#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:124 settings.js:132 settings.js:298 settings.js:316
+msgid "network"
+msgstr "réseau"
+
+#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
+#: settings.js:128
+#, fuzzy
+#| msgid "Pictures"
+msgid "gestures"
+msgstr "Photos"
+
+#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
+#: settings.js:134
+msgid "hotspot"
+msgstr "point d'accès"
+
+#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
+#: settings.js:136
+msgid "tethering"
+msgstr "connexion"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:140
+msgid "language"
+msgstr "langue"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:142 settings.js:282
+msgid "keyboard"
+msgstr "clavier"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:144
+msgid "spellcheck"
+msgstr "vérification orthographique"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:148
+msgid "correct"
+msgstr "corriger"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:150
+msgid "suggestions"
+msgstr "suggestions"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:152
+msgid "capitalization"
+msgstr "majuscules"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:154
+msgid "punctuation"
+msgstr "ponctuation"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:156
+msgid "layout"
+msgstr "agencement"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:160
+msgid "words"
+msgstr "mots"
+
+#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
+#: settings.js:162
+msgid "vibration"
+msgstr "vibration"
+
+#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
+#: settings.js:166
+msgid "launcher"
+msgstr "lanceur"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:172
+msgid "mouse"
+msgstr "souris"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:174
+msgid "touchpad"
+msgstr "pavé tactile"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:176
+msgid "tap"
+msgstr "toucher"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:178
+msgid "touch"
+msgstr "toucher"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:180
+msgid "click"
+msgstr "click"
+
+#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
+#: settings.js:182
+msgid "input"
+msgstr "entrée"
+
+#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
+#: settings.js:186
+msgid "nfc"
+msgstr ""
+
+#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
+#: settings.js:188
+msgid "near"
+msgstr ""
+
+#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
+#: settings.js:190
+msgid "field"
+msgstr ""
+
+#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
+#: settings.js:192
+#, fuzzy
+#| msgid "Authentication"
+msgid "communication"
+msgstr "Authentification"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:198
+msgid "notifications"
+msgstr "notifications"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:200 settings.js:228
+msgid "apps"
+msgstr "applications"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:202
+msgid "authorize"
+msgstr "autoriser"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:204
+msgid "alerts"
+msgstr "alertes"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:206
+msgid "permissions"
+msgstr "permissions"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:208
+msgid "badges"
+msgstr "badges"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:210
+msgid "facebook"
+msgstr "facebook"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:212
+msgid "twitter"
+msgstr "twitter"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:214
+msgid "flickr"
+msgstr "flickr"
+
+#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
+#: settings.js:216
+msgid "gmail"
+msgstr "gmail"
+
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:218
+msgid "Rotation Lock"
+msgstr "Verrouillage de la rotation"
+
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:220
+msgid "rotation"
+msgstr "rotation"
+
+#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
+#: settings.js:222
+msgid "orientation"
+msgstr "orientation"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:232
+msgid "printer"
+msgstr "imprimante"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:234
+msgid "printers"
+msgstr "imprimantes"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:236
+msgid "printing"
+msgstr "impression"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:238
+msgid "pdf"
+msgstr "pdf"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:240
+msgid "ppd"
+msgstr "ppd"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:242
+msgid "collate"
+msgstr "compiler"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:244
+msgid "copies"
+msgstr "exemplaires"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:246
+msgid "colormodel"
+msgstr "modèle de couleurs"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:248
+msgid "greyscale"
+msgstr "échelle de gris"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:250
+msgid "color"
+msgstr "couleur"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:252
+msgid "laser"
+msgstr "laser"
+
+#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
+#: settings.js:254
+msgid "ink"
+msgstr "encre"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:256
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:258
+msgid "reset"
+msgstr "réinitialiser"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:260
+msgid "erase"
+msgstr "effacer"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:262
+msgid "factory"
+msgstr "usine"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:264
+msgid "clear"
+msgstr "effacer"
+
+#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
+#: settings.js:266
+msgid "restore"
+msgstr "restaurer"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:270
+msgid "sound"
+msgstr "son"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:272
+msgid "silent"
+msgstr "silencieux"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:274
+msgid "ringtone"
+msgstr "sonnerie"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:276
+msgid "vibrate"
+msgstr "vibrer"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:278
+msgid "dialpad"
+msgstr "clavier"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:280
+msgid "message"
+msgstr "message"
+
+#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
+#: settings.js:284
+msgid "volume"
+msgstr "volume"
+
+#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
+#: settings.js:288
+msgid "time"
+msgstr "heure"
+
+#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
+#: settings.js:290
+msgid "date"
+msgstr "date"
+
+#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
+#: settings.js:292
+msgid "timezone"
+msgstr "fuseau horaire"
+
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#: settings.js:304
+msgid "vpn"
+msgstr "vpn"
+
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#: settings.js:306
+msgid "openvpn"
+msgstr "openvpn"
+
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:308 settings.js:330
+msgid "ip"
+msgstr "ip"
+
+#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
+#: settings.js:312
+msgid "routing"
+msgstr "routage"
+
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:320
+msgid "wifi"
+msgstr "wifi"
+
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:322
+msgid "WiFi"
+msgstr "WiFi"
+
+#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
+#: settings.js:328
+msgid "hidden"
+msgstr "caché"
+
+#~ msgid "Used by Ubuntu"
+#~ msgstr "Utilisé par Ubuntu"
+
+#~ msgid "Ubuntu Art"
+#~ msgstr "Illustrations issue d'Ubuntu"
+
+#~ msgid "Cellular data"
+#~ msgstr "Données cellulaires"
+
+#~ msgid "No SIM detected"
+#~ msgstr "Aucune carte SIM détectée"
+
+#~ msgid "Insert a SIM, then restart the device."
+#~ msgstr "Insérez une carte SIM, puis redémarrez l'appareil."
+
+#~ msgid "Data roaming"
+#~ msgstr "Itinérance des données"
+
+#~ msgid "Ask me each time"
+#~ msgstr "Me demander à chaque fois"
+
+#~ msgid "For outgoing calls, use:"
+#~ msgstr "Pour les appels sortants, utiliser :"
+
+#~ msgid ""
+#~ "You can change the SIM for individual calls, or for contacts in the "
+#~ "address book."
+#~ msgstr ""
+#~ "Vous pouvez changer de carte SIM pour les appels individuels ou pour les "
+#~ "contacts dans le carnet d’adresse."
+
+#~ msgid "For messages, use:"
+#~ msgstr "Pour les messages, utiliser :"
+
+#~ msgid "Next"
+#~ msgstr "Suivant"
+
+#~ msgid "Data usage statistics"
+#~ msgstr "Données sur les statistiques d'utilisation"
+
+#~ msgid "Carriers"
+#~ msgstr "Opérateurs"
+
+#~ msgid "Connection type:"
+#~ msgstr "Type de connexion :"
+
+#~ msgid "2G only (saves battery)"
+#~ msgstr "2G seulement (économise la batterie)"
+
+#~ msgid "2G/3G"
+#~ msgstr "2G/3G"
+
+#~ msgid "2G/3G/4G"
+#~ msgstr "2G/3G/4G"
+
+#~ msgid "Edit SIM Name"
+#~ msgstr "Modifier le nom de la carte SIM"
+
+#~ msgid "Cellular data:"
+#~ msgstr "Données cellulaires :"
+
+#~ msgid "Carrier & APN"
+#~ msgstr "Operateur et nom du point d’accès"
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "New APN"
+#~ msgstr "Nouveau nom de point d'accès"
+
+#~ msgid "Used for:"
+#~ msgstr "Utilisé pour :"
+
+#~ msgid "Internet and MMS"
+#~ msgstr "Internet et MMS"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "MMS"
+#~ msgstr "MMS"
+
+#~ msgid "LTE"
+#~ msgstr "LTE"
+
+#~ msgid "Enter a name describing the APN"
+#~ msgstr "Saisissez un nom décrivant le point d’accès"
+
+#~ msgid "APN"
+#~ msgstr "Nom du point d’accès"
+
+#~ msgid "Enter the name of the access point"
+#~ msgstr "Saisissez le nom du point d'accès"
+
+#~ msgid "MMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Enter message center"
+#~ msgstr "Renseignez le centre de messages"
+
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+#~ msgid "Enter message proxy"
+#~ msgstr "Renseignez le proxy de messages"
+
+#~ msgid "Proxy port"
+#~ msgstr "Port du proxy"
+
+#~ msgid "Enter message proxy port"
+#~ msgstr "Renseignez le port du proxy de messages"
+
+#~ msgid "User name"
+#~ msgstr "Nom d'utilisateur"
+
+#~ msgid "Enter username"
+#~ msgstr "Saisissez le nom d'utilisateur"
+
+#~ msgid "Enter password"
+#~ msgstr "Saisissez le mot de passe"
+
+#~ msgid "PAP or CHAP"
+#~ msgstr "PAP ou CHAP"
+
+#~ msgid "PAP only"
+#~ msgstr "PAP uniquement"
+
+#~ msgid "CHAP only"
+#~ msgstr "CHAP uniquement"
+
+#~ msgid "Protocol"
+#~ msgstr "Protocole"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv4v6"
+#~ msgstr "IPv4v6"
+
+#~ msgid "Carrier"
+#~ msgstr "Opérateur"
+
+#~ msgid "Carriers & APNs"
+#~ msgstr "Opérateurs et noms des points d'accès"
+
+#~ msgid "MMS APN"
+#~ msgstr "APN pour les MMS :"
+
+#~ msgid "Internet APN"
+#~ msgstr "APN à Internet"
+
+#~ msgid "LTE APN"
+#~ msgstr "APN pour le LTE"
+
+#~ msgid "Reset All APN Settings…"
+#~ msgstr "Réinitialiser tous les paramètres des APN…"
+
+#~ msgid "Reset APN Settings"
+#~ msgstr "Réinitialiser les paramètres des APNs"
+
+#~ msgid "Are you sure that you want to Reset APN Settings?"
+#~ msgstr "Voulez-vous vraiment réinitialiser les paramètres des APNs?"
+
+#, qt-format
+#~ msgid "Prefer %1"
+#~ msgstr "Préférer %1"
+
+#, qt-format
+#~ msgid "You have chosen %1 as your preferred MMS APN. "
+#~ msgstr "Vous avez choisi %1 en tant que APN préféré pour les MMS. "
+
+#, qt-format
+#~ msgid "You have chosen %1 as your preferred Internet APN. "
+#~ msgstr "Vous avez choisi %1 en tant que APN pour Internet. "
+
+#~ msgid "Disable"
+#~ msgstr "Désactiver"
+
+#, qt-format
+#~ msgid "Disconnect %1"
+#~ msgstr "Déconnecter %1"
+
+#, qt-format
+#~ msgid "Disable %1"
+#~ msgstr "Désactiver %1"
+
+#, qt-format
+#~ msgid "This disconnects %1."
+#~ msgstr "Ceci déconnecte %1."
+
+#, qt-format
+#~ msgid "This disables %1."
+#~ msgstr "Ceci désactive %1."
+
+#~ msgid "Cellular"
+#~ msgstr "Cellulaire"
+
+#~ msgid "Forward to"
+#~ msgstr "Transférer vers"
+
+#~ msgid "Enter a number"
+#~ msgstr "Saisir un numéro"
+
+#~ msgid "Call forwarding can’t be changed right now."
+#~ msgstr "La redirection d'appels ne peut pas être changée maintenant."
+
+#~ msgid "Call forwarding"
+#~ msgstr "Transfert d'appel"
+
+#~ msgid "Forward every incoming call"
+#~ msgstr "Transférer tous les appels entrants"
+
+#~ msgid "Redirects all phone calls to another number."
+#~ msgstr "Transférer tous les appels téléphoniques vers un autre numéro."
+
+#~ msgid "Call forwarding status can’t be checked "
+#~ msgstr "Le statut de la redirection d'appels ne peut pas être vérifié "
+
+#~ msgid "Forward incoming calls when:"
+#~ msgstr "Transférer les appels entrants lorsque :"
+
+#~ msgid "I’m on another call"
+#~ msgstr "J'ai un autre appel en cours"
+
+#~ msgid "I don’t answer"
+#~ msgstr "Je ne réponds pas"
+
+#~ msgid "My phone is unreachable"
+#~ msgstr "Mon téléphone est injoignable"
+
+#~ msgid "Contacts…"
+#~ msgstr "Contacts…"
+
+#~ msgid "Please select a phone number"
+#~ msgstr "Veuillez sélectionner un numéro de téléphone"
+
+#~ msgid "Numbers"
+#~ msgstr "Numéros"
+
+#~ msgid "Could not forward to this contact"
+#~ msgstr "Impossible de transférer vers ce contact"
+
+#~ msgid "Contact not associated with any phone number."
+#~ msgstr "Ce contact n'est associé à aucun numéro de téléphone."
+
+#~ msgid "All calls"
+#~ msgstr "Tous les appels"
+
+#~ msgid "Some calls"
+#~ msgstr "Certains appels"
+
+#~ msgid "Off"
+#~ msgstr "Désactivé"
+
+#~ msgid "Call waiting"
+#~ msgstr "Appel en attente"
+
+#~ msgid ""
+#~ "Lets you answer or start a new call while on another call, and switch "
+#~ "between them"
+#~ msgstr ""
+#~ "Vous permet de répondre ou de commencer un nouvel appel alors que vous "
+#~ "êtes en ligne et vous permet de basculer entre ces appels"
+
+#~ msgid "Services"
+#~ msgstr "Services"
+
+#, qt-format
+#~ msgid "Last called %1"
+#~ msgstr "Dernier appel %1"
+
+#~ msgid "Call"
+#~ msgstr "Appel"
+
+#, qt-format
+#~ msgid "%1 Services"
+#~ msgstr "Services %1"
+
+#~ msgid "SIM"
+#~ msgstr "SIM"
+
+#~ msgid "App permissions"
+#~ msgstr "Permissions des applications"
+
+#~ msgid "Apps that you have granted access to:"
+#~ msgstr "Applications pour lesquelles vous avez autorisé certains accès :"
+
+#~ msgid "Apps that have requested access to your camera"
+#~ msgstr "Applications qui disposent des accès à votre appareil photo"
+
+#~ msgid "Apps that have requested access to your location"
+#~ msgstr "Applications qui ont demandé l'accès à votre position"
+
+#~ msgid "Microphone"
+#~ msgstr "Micro"
+
+#~ msgid "Apps that have requested access to your microphone"
+#~ msgstr "Applications qui ont demandé l'accès à votre microphone"
+
+#, qt-format
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "Apps may also request access to online accounts."
+#~ msgstr ""
+#~ "Les applications peuvent également demander des accès aux comptes en "
+#~ "ligne."
+
+#~ msgid "Online Accounts…"
+#~ msgstr "Comptes en ligne…"
+
+#~ msgid "Let the device detect your location:"
+#~ msgstr "Autoriser l'appareil à détecter votre position :"
+
+#~ msgid "Using GPS only (less accurate)"
+#~ msgstr "Utilisation du GPS uniquement (moins précis)"
+
+#~ msgid "Using GPS"
+#~ msgstr "Utilisation du GPS"
+
+#, qt-format
+#~ msgid ""
+#~ "Using GPS, anonymized Wi-Fi and cellular network info.<br>By selecting "
+#~ "this option you accept the <a href='%1'>Nokia HERE terms and conditions</"
+#~ "a>."
+#~ msgstr ""
+#~ "Utilisation des informations du GPS, du Wi-Fi anonymisé et du réseau "
+#~ "cellulaire. <br>En sélectionnant cette option, vous acceptez les <a "
+#~ "href='%1'>conditions d'utilisation de Nokia HERE</a>."
+
+#, qt-format
+#~ msgid ""
+#~ "Using GPS and anonymized Wi-Fi info.<br>By selecting this option you "
+#~ "accept the <a href='%1'>Nokia HERE terms and conditions</a>."
+#~ msgstr ""
+#~ "Utilisation du GPS et des données Wi-Fi rendues anonymes. <br>En "
+#~ "sélectionnant cette option, vous acceptez les <a href='%1'>conditions "
+#~ "d'utilisation de Nokia HERE</a>."
+
+#~ msgid "Not at all"
+#~ msgstr "Pas du tout"
+
+#~ msgid ""
+#~ "Uses GPS to detect your rough location. When off, GPS turns off to save "
+#~ "battery."
+#~ msgstr ""
+#~ "Utilise le GPS afin de calculer votre position approximative. Si "
+#~ "désactivé, le GPS est désactivé afin d'économiser la batterie."
+
+#~ msgid ""
+#~ "Uses WiFi and GPS to detect your rough location. Turning off location "
+#~ "detection saves battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi afin de détecter grossièrement votre position. Éteindre "
+#~ "la détection de la position économise la batterie."
+
+#~ msgid ""
+#~ "Uses WiFi (currently off) and GPS to detect your rough location. Turning "
+#~ "off location detection saves battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi (actuellement désactivé) et le GPS afin de détecter "
+#~ "votre position approximative. Désactiver la détection de la position "
+#~ "économise la batterie."
+
+#~ msgid ""
+#~ "Uses WiFi, cell tower locations, and GPS to detect your rough location. "
+#~ "Turning off location detection saves battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi, la position des antennes-relais de téléphonie mobile et "
+#~ "le GPS afin de détecter votre position approximative. Désactiver la "
+#~ "détection de la position économise la batterie."
+
+#~ msgid ""
+#~ "Uses WiFi, cell tower locations (no current cellular connection), and GPS "
+#~ "to detect your rough location. Turning off location detection saves "
+#~ "battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi, la position des antennes-relais de téléphonie mobile "
+#~ "(aucune connexion mobile actuellement) et le GPS afin de détecter votre "
+#~ "position approximative. Désactiver la détection de la position économise "
+#~ "la batterie."
+
+#~ msgid ""
+#~ "Uses WiFi (currently off), cell tower locations, and GPS to detect your "
+#~ "rough location. Turning off location detection saves battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi (actuellement désactivé), la position des antennes-"
+#~ "relais de téléphonie mobile et le GPS afin de détecter votre position "
+#~ "approximative. Désactiver la détection de la position économise la "
+#~ "batterie."
+
+#~ msgid ""
+#~ "Uses WiFi (currently off), cell tower locations (no current cellular "
+#~ "connection), and GPS to detect your rough location. Turning off location "
+#~ "detection saves battery."
+#~ msgstr ""
+#~ "Utilise le Wi-Fi (actuellement désactivé), la position des antennes-"
+#~ "relais de téléphonie mobile (aucune connexion mobile actuellement) et le "
+#~ "GPS afin de détecter votre position approximative. Désactiver la "
+#~ "détection de la position économise la batterie."
+
+#~ msgid "Let apps access this location:"
+#~ msgstr "Laisser les applications suivantes accéder à cette position :"
+
+#~ msgid "None requested"
+#~ msgstr "Aucune demandée"
+
+#~ msgid "Change passcode…"
+#~ msgstr "Modifier le code…"
+
+#~ msgid "Change passphrase…"
+#~ msgstr "Modifier le mot de passe…"
+
+#~ msgid "Switch to swipe"
+#~ msgstr "Passer en verrouillage par glissement"
+
+#~ msgid "Switch to passcode"
+#~ msgstr "Basculer sur le code"
+
+#~ msgid "Switch to passphrase"
+#~ msgstr "Verrouiller par mot de passe"
+
+#~ msgid "Existing passcode"
+#~ msgstr "Code existant"
+
+#~ msgid "Existing passphrase"
+#~ msgstr "Mot de passe actuel"
+
+#~ msgid "Choose passcode"
+#~ msgstr "Choisir un code"
+
+#~ msgid "Choose passphrase"
+#~ msgstr "Choisissez votre mot de passe"
+
+#~ msgid "Confirm passcode"
+#~ msgstr "Confirmer le code"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Confirmez votre mot de passe"
+
+#~ msgid "Those passcodes don't match. Try again."
+#~ msgstr "Ces codes ne correspondent pas. Réessayez."
+
+#~ msgid "Those passphrases don't match. Try again."
+#~ msgstr "Ces phrases secrètes ne correspondent pas. Veuillez réessayer."
+
+#~ msgid "Unset"
+#~ msgstr "Déconfigurer"
+
+#~ msgid "Unlock the device using:"
+#~ msgstr "Déverrouiller l'appareil en utilisant :"
+
+#~ msgid "Swipe (no security)"
+#~ msgstr "Un glissement (aucune sécurité)"
+
+#~ msgid "4-digit passcode"
+#~ msgstr "Un code à 4 chiffres"
+
+#~ msgid "Passphrase"
+#~ msgstr "Un mot de passe"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Une empreinte digitale"
+
+#~ msgid "Swipe (no security)… "
+#~ msgstr "Un glissement (pas de sécurité)… "
+
+#~ msgid "4-digit passcode…"
+#~ msgstr "Un code à 4 chiffres…"
+
+#~ msgid "Passphrase…"
+#~ msgstr "Un mot de passe…"
+
+#~ msgid "Security & Privacy"
+#~ msgstr "Sécurité et vie privée"
+
+#~ msgid "Phone and Internet"
+#~ msgstr "Téléphone et Internet"
+
+#~ msgid "Phone only"
+#~ msgstr "Téléphone uniquement"
+
+#~ msgid "Fingerprint ID"
+#~ msgstr "Identifiant de l'empreinte digitale"
+
+#~ msgid "Locking and unlocking"
+#~ msgstr "Verrouillage et déverrouillage"
+
+#~ msgid "SIM PIN"
+#~ msgstr "Code PIN de la carte SIM"
+
+#~ msgid "On"
+#~ msgstr "Activé"
+
+#~ msgid "Encryption"
+#~ msgstr "Chiffrement"
+
+#~ msgid ""
+#~ "Encryption protects against access to phone data when the phone is "
+#~ "connected to a PC or other device."
+#~ msgstr ""
+#~ "Le chiffrement protège l'accès aux données quand le téléphone est "
+#~ "connecté à un ordinateur ou un autre périphérique."
+
+#~ msgid "Privacy"
+#~ msgstr "Vie privée"
+
+#~ msgid "Stats on welcome screen"
+#~ msgstr "Statistiques sur l'écran d'accueil"
+
+#~ msgid "Messages on welcome screen"
+#~ msgstr "Messages sur l'écran d'accueil"
+
+#~ msgctxt "Unlock with swipe"
+#~ msgid "None"
+#~ msgstr "Aucune"
+
+#~ msgid "Passcode"
+#~ msgstr "Code"
+
+#~ msgid "Sleep locks immediately"
+#~ msgstr "La mise en veille verrouille immédiatement"
+
+#~ msgid "When locked, allow:"
+#~ msgstr "Une fois verrouillé, permettre :"
+
+#~ msgid "Notifications and quick settings"
+#~ msgstr "Notifications et réglages rapides"
+
+#~ msgid "Turn on lock security to restrict access when the device is locked."
+#~ msgstr ""
+#~ "Activer la sécurité de verrouillage pour restreindre l'accès lorsque "
+#~ "l'appareil est verrouillé."
+
+#~ msgid "Other apps and functions will prompt you to unlock."
+#~ msgstr ""
+#~ "Les autres applications et fonctions vous inviteront à déverrouiller."
+
+#~ msgid "Change SIM PIN"
+#~ msgstr "Modifier le code PIN du SIM"
+
+#, qt-format
+#~ msgid "Incorrect PIN. %1 attempt remaining."
+#~ msgid_plural "Incorrect PIN. %1 attempts remaining."
+#~ msgstr[0] "Code PIN incorrect. %1 essai restant."
+#~ msgstr[1] "Code PIN incorrect. %1 essais restant."
+
+#~ msgid "No more attempts allowed"
+#~ msgstr "Plus aucun essai n'est permis"
+
+#~ msgid "Current PIN:"
+#~ msgstr "Code PIN actuel :"
+
+#, qt-format
+#~ msgid "%1 attempt allowed."
+#~ msgid_plural "%1 attempts allowed."
+#~ msgstr[0] "%1 essai permis."
+#~ msgstr[1] "%1 essais permis."
+
+#~ msgid "Choose new PIN:"
+#~ msgstr "Choisissez un nouveau code PIN :"
+
+#~ msgid "Confirm new PIN:"
+#~ msgstr "Confirmez le nouveau code PIN :"
+
+#~ msgid "PINs don't match. Try again."
+#~ msgstr "Les codes PIN ne correspondent pas. Réessayez."
+
+#~ msgid "Enter SIM PIN"
+#~ msgstr "Saisissez le code PIN de la carte SIM"
+
+#~ msgid "Enter Previous SIM PIN"
+#~ msgstr "Saisissez le code PIN précédent de la carte SIM"
+
+#~ msgid "Lock"
+#~ msgstr "Verrouiller"
+
+#~ msgid "Unlock"
+#~ msgstr "Déverrouiller"
+
+#~ msgid "Unlocked"
+#~ msgstr "Déverrouillé"
+
+#~ msgid "Change PIN…"
+#~ msgstr "Changement de code PIN…"
+
+#~ msgid "Locked"
+#~ msgstr "Verrouillé"
+
+#~ msgid "Unlock…"
+#~ msgstr "Déverrouiller…"
+
+#~ msgid ""
+#~ "When a SIM PIN is set, it must be entered to access cellular services "
+#~ "after restarting the device or swapping the SIM."
+#~ msgstr ""
+#~ "Lorsqu'un code PIN de carte SIM est défini, il doit être saisi pour "
+#~ "accéder aux services du portable après le redémarrage de l'appareil ou "
+#~ "après l'échange de la carte SIM."
+
+#~ msgid "Entering an incorrect PIN repeatedly may lock the SIM permanently."
+#~ msgstr ""
+#~ "La saisie d'un code PIN erroné à plusieurs reprises peut verrouiller la "
+#~ "carte SIM de façon permanente."
+
+#~ msgid "Nokia HERE"
+#~ msgstr "Nokia HERE"
+
+#~ msgid "Incorrect passcode. Try again."
+#~ msgstr "Code incorrect. Réessayez."
+
+#~ msgid "Incorrect passphrase. Try again."
+#~ msgstr "Mot de passe incorrect. Réessayez."
+
+#~ msgid "Could not set security mode"
+#~ msgstr "Impossible de définir le mode de sécurité"
+
+#~ msgid "Could not set security display hint"
+#~ msgstr "Impossible de définir l'affichage de l'indice de sécurité"
+
+#~ msgid "Authentication token manipulation error"
+#~ msgstr "Erreur de manipulation du jeton d'authentification"
+
+#~ msgid "Hour"
+#~ msgstr "Heure"
+
+#~ msgid "Minute"
+#~ msgstr "Minute"
+
+#~ msgid "Second"
+#~ msgstr "Seconde"
+
+#~ msgid "Day"
+#~ msgstr "Jour"
+
+#~ msgid "Month"
+#~ msgstr "Mois"
+
+#~ msgid "Year"
+#~ msgstr "Année"
+
+#~ msgid "services"
+#~ msgstr "services"
+
+#~ msgid "forwarding"
+#~ msgstr "renvoi"
+
+#~ msgid "waiting"
+#~ msgstr "attente"
+
+#~ msgid "call"
+#~ msgstr "appel"
+
+#~ msgid "shortcuts"
+#~ msgstr "raccourcis"
+
+#~ msgid "numbers"
+#~ msgstr "numéros"
+
+#~ msgid "Accessibility"
+#~ msgstr "Accessibilité"
+
+#~ msgid "accessibility"
+#~ msgstr "accessibilité"
+
+#~ msgid "a11y"
+#~ msgstr "a11y"
+
+#~ msgid "security"
+#~ msgstr "sécurité"
+
+#~ msgid "privacy"
+#~ msgstr "confidentialité"
+
+#~ msgid "sim"
+#~ msgstr "sim"
+
+#~ msgid "pin"
+#~ msgstr "pin"
+
+#~ msgid "code"
+#~ msgstr "code"
+
+#~ msgid "password"
+#~ msgstr "mot de passe"
+
+#~ msgid "passphrase"
+#~ msgstr "mot de passe"
+
+#~ msgid "swipe"
+#~ msgstr "glissement"
+
+#~ msgid "allow"
+#~ msgstr "autoriser"
+
+#~ msgid "access"
+#~ msgstr "accès"
+
+#~ msgid "Updates available"
+#~ msgstr "Mises à jour disponibles"
+
+#~ msgid "cellular"
+#~ msgstr "cellulaire"
+
+#~ msgid "mobile"
+#~ msgstr "mobile"
+
+#~ msgid "gsm"
+#~ msgstr "gsm"
+
+#~ msgid "data"
+#~ msgstr "données"
+
+#~ msgid "carrier"
+#~ msgstr "opérateur"
+
+#~ msgid "4g"
+#~ msgstr "4g"
+
+#~ msgid "3g"
+#~ msgstr "3g"
+
+#~ msgid "2g"
+#~ msgstr "2g"
+
+#~ msgid "lte"
+#~ msgstr "lte"
+
+#~ msgid "apn"
+#~ msgstr "apn"
+
+#~ msgid "roam"
+#~ msgstr "parcourir"
