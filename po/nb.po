@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2021-03-15 11:27+0000\n"
-"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
-"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
-"ubports/system-settings/nb/>\n"
+"PO-Revision-Date: 2023-01-03 08:45+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -170,19 +170,19 @@ msgstr "Bilder"
 
 #: ../plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenter"
 
 #: ../plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Nedlastinger"
 
 #: ../plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: ../plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: ../plugins/about/Storage.qml:132
 msgid "Other files"
@@ -782,7 +782,7 @@ msgstr "Trykk for å klikke"
 
 #: ../plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Dobbelttrykk hvor som helst for å vekke enheten."
 
 #: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1111,7 +1111,7 @@ msgstr "Erstatter dobbelt mellomrom med punktum."
 
 #: ../plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Tasteforstørring"
 
 #: ../plugins/language/PageComponent.qml:302
 #: ../plugins/sound/PageComponent.qml:251
@@ -1262,7 +1262,7 @@ msgstr "Dobbelklikket"
 #: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
 #: settings.js:184
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: ../plugins/notifications/ClickAppNotifications.qml:62
@@ -2434,18 +2434,21 @@ msgstr "inndata"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:186
+#, fuzzy
 msgid "nfc"
-msgstr ""
+msgstr "NFC"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:188
+#, fuzzy
 msgid "near"
-msgstr ""
+msgstr "nærfelt"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:190
+#, fuzzy
 msgid "field"
-msgstr ""
+msgstr "nærfelt"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:192
