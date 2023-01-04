@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-01-04 18:20+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Tajik <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/tg/>\n"
 "Language: tg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -252,8 +254,9 @@ msgstr ""
 #: ../plugins/reset/ResetLauncherHome.qml:56
 #: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
+#, fuzzy
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: ../plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
@@ -1410,8 +1413,9 @@ msgid "Discovered printers"
 msgstr ""
 
 #: ../plugins/printing/PageComponent.qml:136
+#, fuzzy
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: ../plugins/printing/PageComponent.qml:149
 #: ../plugins/printing/printer-sub-pages/Policies.qml:50
