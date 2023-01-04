@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-04 08:07+0000\n"
+"PO-Revision-Date: 2023-01-04 18:20+0000\n"
 "Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ur/>\n"
@@ -598,7 +598,7 @@ msgstr ""
 #: ../plugins/printing/printer-sub-pages/Status.qml:61
 #: ../plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: ../plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
@@ -967,7 +967,7 @@ msgstr ""
 #: ../plugins/language/DisplayLanguage.qml:55
 #: ../plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
-msgstr ""
+msgstr "واپس"
 
 #: ../plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
@@ -1522,7 +1522,7 @@ msgstr ""
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:78
 msgid "Address"
-msgstr ""
+msgstr "پتہ"
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:84
 msgid "Model"
