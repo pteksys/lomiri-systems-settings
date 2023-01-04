@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
 "PO-Revision-Date: 2023-01-04 18:20+0000\n"
-"Last-Translator: Muhammad <muhammad23012009@hotmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ur/>\n"
 "Language: ur\n"
@@ -1413,8 +1413,9 @@ msgid "Discovered printers"
 msgstr ""
 
 #: ../plugins/printing/PageComponent.qml:136
+#, fuzzy
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: ../plugins/printing/PageComponent.qml:149
 #: ../plugins/printing/printer-sub-pages/Policies.qml:50
