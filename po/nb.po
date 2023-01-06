@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-04 08:07+0000\n"
+"PO-Revision-Date: 2023-01-07 17:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/nb_NO/>\n"
@@ -145,16 +145,14 @@ msgid "Scanning"
 msgstr "Skanner"
 
 #: ../plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Systeminnstillinger"
+msgstr "Systemreservert"
 
 #: ../plugins/about/Storage.qml:124
 #, fuzzy
 #| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Brukt av programmer"
+msgstr "Brukt av systemet"
 
 #: ../plugins/about/Storage.qml:125
 msgid "Videos"
@@ -709,10 +707,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Tilpasser lysstyrke etter omgivelsene."
 
 #: ../plugins/brightness/PageComponent.qml:142
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "skjerm"
+msgstr "Skjerm"
 
 #: ../plugins/brightness/PageComponent.qml:147
 msgid "External display"
@@ -769,16 +765,12 @@ msgstr "OK"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: ../plugins/gestures/PageComponent.qml:25 settings.js:126
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Bilder"
+msgstr "Håndvendinger"
 
 #: ../plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Trykk for å klikke"
+msgstr "Trykk for å vekke"
 
 #: ../plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
@@ -2454,10 +2446,8 @@ msgstr "nærfelt"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:192
-#, fuzzy
-#| msgid "Authentication"
 msgid "communication"
-msgstr "Autentisering"
+msgstr "kommunikasjon"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: settings.js:198
