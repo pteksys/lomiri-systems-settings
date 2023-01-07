@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2018-11-25 00:02+0000\n"
-"Last-Translator: Louies <louies0623@gmail.com>\n"
-"Language-Team: Esperanto <https://translate.ubports.com/projects/ubports/"
-"system-settings/eo/>\n"
+"PO-Revision-Date: 2023-01-08 22:50+0000\n"
+"Last-Translator: Alexander Richards <electrodeyt@gmail.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -526,7 +526,7 @@ msgstr "Malkonektita"
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
 #: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
-msgstr "Nekonata"
+msgstr "Nekonato"
 
 #: ../plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
@@ -1973,7 +1973,7 @@ msgstr "Identeco"
 
 #: ../plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
-msgstr "Salutnomo"
+msgstr "Uzantnomo"
 
 #: ../plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
