@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-11 15:55+0000\n"
+"PO-Revision-Date: 2023-01-12 16:47+0000\n"
 "Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/uk/>\n"
@@ -407,12 +407,12 @@ msgstr "Присипляння у режимі бездіяльності"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: ../plugins/battery/PageComponent.qml:331
-#, fuzzy, qt-format
+#, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
-msgstr[0] "за %1 хвилину"
-msgstr[1] "за %1 хвилини"
-msgstr[2] "за %1 хвилин"
+msgstr[0] "Через %1 секунду"
+msgstr[1] "Через %1 секунди"
+msgstr[2] "Через %1 секунд"
 
 #. TRANSLATORS: %1 is the number of minutes
 #: ../plugins/battery/PageComponent.qml:335
@@ -2090,7 +2090,7 @@ msgstr "Попередні мережі"
 
 #: ../plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
-msgstr "Спорожнити"
+msgstr "Чисто"
 
 #: ../plugins/wifi/certhandler.cpp:258
 #, fuzzy
