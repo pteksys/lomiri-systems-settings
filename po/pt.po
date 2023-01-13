@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2021-03-05 06:27+0000\n"
+"PO-Revision-Date: 2023-01-17 13:48+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
-"Language-Team: Portuguese <https://translate.ubports.com/projects/ubports/"
-"system-settings/pt/>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-24 05:41+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -148,16 +148,12 @@ msgid "Scanning"
 msgstr "A analisar"
 
 #: ../plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Definições"
+msgstr "Sistema Reservado"
 
 #: ../plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Usado pelas apps"
+msgstr "Usado pelo sistema"
 
 #: ../plugins/about/Storage.qml:125
 msgid "Videos"
@@ -173,19 +169,19 @@ msgstr "Imagens"
 
 #: ../plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #: ../plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Transferências"
 
 #: ../plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: ../plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: ../plugins/about/Storage.qml:132
 msgid "Other files"
@@ -293,20 +289,16 @@ msgid "Background"
 msgstr "Fundo do ecrã"
 
 #: ../plugins/background/MainPage.qml:85
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Sistema"
+msgstr "Arte do Sistema"
 
 #: ../plugins/background/MainPage.qml:98
 msgid "Custom"
 msgstr "Personalizar"
 
 #: ../plugins/background/MainPage.qml:157
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Escolha uma coneção"
+msgstr "Escolha a aplicação"
 
 #: ../plugins/background/Preview.qml:69
 msgid "Preview"
@@ -712,10 +704,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Altera o brilho do ecrã para se ajustar ao ambiente."
 
 #: ../plugins/brightness/PageComponent.qml:142
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "mostrar"
+msgstr "Ecrã"
 
 #: ../plugins/brightness/PageComponent.qml:147
 msgid "External display"
@@ -768,24 +758,20 @@ msgstr "Ocorreu um erro desconhecido ao ligar para %1."
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Ok"
+msgstr "OK"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: ../plugins/gestures/PageComponent.qml:25 settings.js:126
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Imagens"
+msgstr "Gestos"
 
 #: ../plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Toque para clicar"
+msgstr "Toque para acordar"
 
 #: ../plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Toque duas vezes em qualquer lugar do ecrã para acordar o dispositivo."
 
 #: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1115,7 +1101,7 @@ msgstr ""
 
 #: ../plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Tecla Ampliadora"
 
 #: ../plugins/language/PageComponent.qml:302
 #: ../plugins/sound/PageComponent.qml:251
@@ -1266,7 +1252,7 @@ msgstr "Duplo-clique"
 #: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
 #: settings.js:184
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: ../plugins/notifications/ClickAppNotifications.qml:62
@@ -1685,10 +1671,8 @@ msgid "Custom Ringtone"
 msgstr "Toque personalizado"
 
 #: ../plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Vibrar com som de mensagem"
+msgstr "Som de mensagem personalizada"
 
 #: ../plugins/sound/SoundsList.qml:213
 msgid "Choose from"
@@ -2334,10 +2318,8 @@ msgstr "rede"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: settings.js:128
-#, fuzzy
-#| msgid "Pictures"
 msgid "gestures"
-msgstr "Imagens"
+msgstr "gestos"
 
 #. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
 #: settings.js:134
@@ -2438,24 +2420,22 @@ msgstr "entrada"
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:186
 msgid "nfc"
-msgstr ""
+msgstr "nfc"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:188
 msgid "near"
-msgstr ""
+msgstr "perto"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:190
 msgid "field"
-msgstr ""
+msgstr "campo"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:192
-#, fuzzy
-#| msgid "Authentication"
 msgid "communication"
-msgstr "Autenticação"
+msgstr "comunicação"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: settings.js:198
