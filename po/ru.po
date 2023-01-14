@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2021-03-26 09:58+0000\n"
-"Last-Translator: vokaliz <vokaliz@protonmail.com>\n"
-"Language-Team: Russian <https://translate.ubports.com/projects/ubports/"
-"system-settings/ru/>\n"
+"PO-Revision-Date: 2023-01-17 13:48+0000\n"
+"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -147,16 +147,12 @@ msgid "Scanning"
 msgstr "Сканирование"
 
 #: ../plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Настройки системы"
+msgstr "Зарезервировано системой"
 
 #: ../plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Приложения"
+msgstr "Используется системой"
 
 #: ../plugins/about/Storage.qml:125
 msgid "Videos"
@@ -172,19 +168,19 @@ msgstr "Изображения"
 
 #: ../plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Документы"
 
 #: ../plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Загрузки"
 
 #: ../plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: ../plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: ../plugins/about/Storage.qml:132
 msgid "Other files"
@@ -293,20 +289,16 @@ msgid "Background"
 msgstr "Фон"
 
 #: ../plugins/background/MainPage.qml:85
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Система"
+msgstr "Системное оформление"
 
 #: ../plugins/background/MainPage.qml:98
 msgid "Custom"
 msgstr "Пользовательские"
 
 #: ../plugins/background/MainPage.qml:157
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Выберите подключение"
+msgstr "Выберите приложение"
 
 #: ../plugins/background/Preview.qml:69
 msgid "Preview"
@@ -535,7 +527,7 @@ msgstr "Отключено"
 #: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
 #: ../plugins/wifi/Common.qml:96
 msgid "Unknown"
-msgstr "Неизвестный"
+msgstr "Неизвестно"
 
 #: ../plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
@@ -720,10 +712,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Автонастройка яркости экрана в зависимости от освещённости."
 
 #: ../plugins/brightness/PageComponent.qml:142
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "отображение"
+msgstr "Экран"
 
 #: ../plugins/brightness/PageComponent.qml:147
 msgid "External display"
@@ -776,24 +766,20 @@ msgstr "Произошла непонятная ошибка при подклю
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Да"
+msgstr "OK"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: ../plugins/gestures/PageComponent.qml:25 settings.js:126
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Изображения"
+msgstr "Жесты"
 
 #: ../plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Нажатие работает как щелчок"
+msgstr "Нажмите для пробуждения"
 
 #: ../plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Для пробуждения устройста дважды коснитесь экрана."
 
 #: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1046,7 +1032,7 @@ msgstr "Внешняя клавиатура"
 
 #: ../plugins/language/PageComponent.qml:184
 msgid "Ambiance"
-msgstr "Ambiance"
+msgstr "Атмосфера"
 
 #: ../plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
@@ -1058,27 +1044,27 @@ msgstr "Suru Black"
 
 #: ../plugins/language/PageComponent.qml:187
 msgid "Just White"
-msgstr "Just White"
+msgstr "Только белый"
 
 #: ../plugins/language/PageComponent.qml:188
 msgid "Just Black"
-msgstr "Just Black"
+msgstr "Только чёрный"
 
 #: ../plugins/language/PageComponent.qml:189
 msgid "Just Grey"
-msgstr "Just Grey"
+msgstr "Только серый"
 
 #: ../plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr "Bordered White"
+msgstr "Белый с контуром"
 
 #: ../plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr "Bordered Black"
+msgstr "Чёрный с контуром"
 
 #: ../plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr "Bordered Grey"
+msgstr "Серый с контуром"
 
 #: ../plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
@@ -1118,11 +1104,11 @@ msgstr "Пунктуация (автоматически)"
 
 #: ../plugins/language/PageComponent.qml:284
 msgid "Inserts a period when you tap Space twice."
-msgstr "Добавляет точку точку при двойном нажатии пробела."
+msgstr "Добавляет точку при двойном нажатии пробела."
 
 #: ../plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Лупа для кнопок"
 
 #: ../plugins/language/PageComponent.qml:302
 #: ../plugins/sound/PageComponent.qml:251
@@ -1277,7 +1263,7 @@ msgstr "Двойной щелчок"
 #: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
 #: settings.js:184
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: ../plugins/notifications/ClickAppNotifications.qml:62
@@ -1697,10 +1683,8 @@ msgid "Custom Ringtone"
 msgstr "Собственная мелодия вызова"
 
 #: ../plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Вибрировать при получении сообщения"
+msgstr "Пользовательский звук сообщения"
 
 #: ../plugins/sound/SoundsList.qml:213
 msgid "Choose from"
@@ -2348,10 +2332,8 @@ msgstr "сеть"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: settings.js:128
-#, fuzzy
-#| msgid "Pictures"
 msgid "gestures"
-msgstr "Изображения"
+msgstr "жесты"
 
 #. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
 #: settings.js:134
@@ -2361,7 +2343,7 @@ msgstr "точка доступа"
 #. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
 #: settings.js:136
 msgid "tethering"
-msgstr "tethering"
+msgstr "раздача"
 
 #. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
 #: settings.js:140
@@ -2452,24 +2434,22 @@ msgstr "ввод"
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:186
 msgid "nfc"
-msgstr ""
+msgstr "nfc"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:188
 msgid "near"
-msgstr ""
+msgstr "рядом"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:190
 msgid "field"
-msgstr ""
+msgstr "поле"
 
 #. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
 #: settings.js:192
-#, fuzzy
-#| msgid "Authentication"
 msgid "communication"
-msgstr "Авторизация"
+msgstr "связь"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: settings.js:198
@@ -2515,7 +2495,7 @@ msgstr "twitter"
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: settings.js:214
 msgid "flickr"
-msgstr "flickr"
+msgstr "фликр"
 
 #. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
 #: settings.js:216
@@ -2560,12 +2540,12 @@ msgstr "pdf"
 #. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
 #: settings.js:240
 msgid "ppd"
-msgstr "ppd"
+msgstr "ппд"
 
 #. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
 #: settings.js:242
 msgid "collate"
-msgstr "collate"
+msgstr "сравнить"
 
 #. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
 #: settings.js:244
@@ -2650,7 +2630,7 @@ msgstr "вибрация"
 #. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
 #: settings.js:278
 msgid "dialpad"
-msgstr "dialpad"
+msgstr "клавиатура"
 
 #. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
 #: settings.js:280
