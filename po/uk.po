@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-12 16:47+0000\n"
+"PO-Revision-Date: 2023-01-17 13:48+0000\n"
 "Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/uk/>\n"
@@ -797,7 +797,7 @@ msgstr ""
 #: ../plugins/brightness/WifiDisplaysAlert.qml:38
 #: ../plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Добре"
+msgstr "ОК"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: ../plugins/gestures/PageComponent.qml:25 settings.js:126
@@ -1081,7 +1081,7 @@ msgstr "клавіатура"
 
 #: ../plugins/language/PageComponent.qml:184
 msgid "Ambiance"
-msgstr ""
+msgstr "Ambiance"
 
 #: ../plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
@@ -1596,11 +1596,11 @@ msgstr ""
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
-msgstr ""
+msgstr "Бездіяльність"
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
-msgstr ""
+msgstr "Перервано"
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:34
 msgid "Active"
@@ -1608,7 +1608,7 @@ msgstr "Активно"
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
-msgstr ""
+msgstr "Зупинено"
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
@@ -1618,9 +1618,8 @@ msgid "%1 — %2"
 msgstr ""
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:43
-#, fuzzy
 msgid "No messages"
-msgstr "повідомлення"
+msgstr "Немає повідомлень"
 
 #: ../plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
@@ -2054,9 +2053,8 @@ msgid "Version 1"
 msgstr "Версія: "
 
 #: ../plugins/wifi/OtherNetwork.qml:715
-#, fuzzy
 msgid "Automatic"
-msgstr "автоматично"
+msgstr "Автоматично"
 
 #: ../plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
