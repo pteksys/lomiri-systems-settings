@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-07 17:50+0000\n"
+"PO-Revision-Date: 2023-01-19 22:48+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/nb_NO/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -288,20 +288,16 @@ msgid "Background"
 msgstr "Bakgrunn"
 
 #: ../plugins/background/MainPage.qml:85
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "System"
+msgstr "Systemkunst"
 
 #: ../plugins/background/MainPage.qml:98
 msgid "Custom"
 msgstr "Tilpasset"
 
 #: ../plugins/background/MainPage.qml:157
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Velg tilkobling"
+msgstr "Velg program"
 
 #: ../plugins/background/Preview.qml:69
 msgid "Preview"
@@ -1675,10 +1671,8 @@ msgid "Custom Ringtone"
 msgstr "Selvvalgt ringetone"
 
 #: ../plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Vibrer ved meldingslyd"
+msgstr "Egendefinert meldingslyd"
 
 #: ../plugins/sound/SoundsList.qml:213
 msgid "Choose from"
@@ -2325,10 +2319,8 @@ msgstr "nettverk"
 
 #. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
 #: settings.js:128
-#, fuzzy
-#| msgid "Pictures"
 msgid "gestures"
-msgstr "Bilder"
+msgstr "håndvendinger"
 
 #. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
 #: settings.js:134
