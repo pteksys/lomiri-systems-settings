@@ -61,6 +61,12 @@ Column {
             visible: false // AdaptiveContainer must ignore the Repeater
             model: pluginManager.itemModel(category)
 
+            onCountChanged: {
+                // when doing search, the doLayout is called too early.
+                // force re-rendering of items
+                container.doLayout()
+            }
+
             delegate: Loader {
                 id: loader
                 property string layout: ""
