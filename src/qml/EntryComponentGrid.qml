@@ -30,36 +30,36 @@ Item {
 
     signal clicked
 
+    width: units.gu(12)
     implicitHeight: button.implicitHeight
 
     AbstractButton {
         id: button
         anchors.left: parent.left
         anchors.right: parent.right
-        implicitHeight: col.implicitHeight
+        implicitHeight: childrenRect.height
         onClicked: root.clicked()
 
-        Column {
-            id: col
-            anchors.left: parent.left
-            anchors.right: parent.right
-            spacing: units.gu(1)
+        Icon {
+            id: icon
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: height
+            height: units.gu(4)
+            source: root.iconSource
+        }
 
-            Icon {
-                id: icon
-                anchors.horizontalCenter: parent.horizontalCenter
-                width: height
-                height: units.gu(4)
-                source: root.iconSource
+        Label {
+            id: label
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: icon.bottom
+                topMargin: units.gu(1)
             }
-
-            Label {
-                anchors { left: parent.left; right: parent.right }
-                text: root.text
-                horizontalAlignment: Text.AlignHCenter
-                fontSize: "small"
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-            }
+            text: root.text
+            horizontalAlignment: Text.AlignHCenter
+            fontSize: "small"
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
     }
 
