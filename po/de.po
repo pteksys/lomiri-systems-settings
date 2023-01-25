@@ -175,8 +175,8 @@ msgid "Downloads"
 msgstr "Downloads"
 
 #: ../plugins/about/Storage.qml:130
-msgid "Anbox"
-msgstr "Anbox"
+msgid "Waydroid"
+msgstr "Waydroid"
 
 #: ../plugins/about/Storage.qml:131
 msgid "Libertine"

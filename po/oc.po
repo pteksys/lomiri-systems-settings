@@ -173,7 +173,7 @@ msgid "Downloads"
 msgstr ""
 
 #: ../plugins/about/Storage.qml:130
-msgid "Anbox"
+msgid "Waydroid"
 msgstr ""
 
 #: ../plugins/about/Storage.qml:131
