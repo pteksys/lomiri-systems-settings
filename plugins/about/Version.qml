@@ -56,6 +56,13 @@ ItemPage {
             }
 
             SingleValueStacked {
+                objectName: "ubportsUpdateChannelItem"
+                text: i18n.tr("OS update channel")
+                value: SystemImage.channelName
+                visible: SystemImage.channelName
+            }
+
+            SingleValueStacked {
                 objectName: "versionBuildNumberItem"
                 text: i18n.tr("OS build number")
                 value: versionPage.version
