@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-19 22:48+0000\n"
+"PO-Revision-Date: 2023-01-31 13:36+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -261,7 +261,7 @@ msgstr "Неизвестное название"
 #: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
 #: ../plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
-msgstr "Отменить"
+msgstr "Отмена"
 
 #: ../plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
