@@ -104,7 +104,7 @@ Suggests:
  urfkill,
 Recommends:
  repowerd,
- ubuntu-system-settings-online-accounts,
+ lomiri-system-settings-online-accounts,
  lomiri-sounds,
 Conflicts:
  ubuntu-system-settings-example,
