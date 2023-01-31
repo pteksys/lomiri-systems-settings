@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lomiri-system-settings C CXX)
+project(lomiri-system-settings VERSION 0.1 LANGUAGES C CXX)
 
 if(${PROJECT_BINARY_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
    message(FATAL_ERROR "In-tree build attempt detected, aborting. Set your build dir outside your source dir, delete CMakeCache.txt from source root and try again.")
@@ -8,7 +8,6 @@ endif()
 
 string(TOLOWER "${CMAKE_BUILD_TYPE}" cmake_build_type_lower) # Build types should always be lowercase but sometimes they are not.
 
-set(PROJECT_VERSION 0.1)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include(EnableCoverageReport)
 include(FindPkgConfig)
