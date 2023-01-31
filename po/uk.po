@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-07 17:14+0000\n"
-"PO-Revision-Date: 2023-01-31 13:36+0000\n"
+"PO-Revision-Date: 2023-02-01 21:49+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/uk/>\n"
@@ -34,22 +34,20 @@ msgstr "Не вдалося призупити поточний запит (не
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
 #: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
-#, fuzzy
 msgid "Unavailable"
-msgstr "Доступні оновлення"
+msgstr "Недоступно"
 
 #: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
 msgid "Developer Mode"
 msgstr "Режим розробника"
 
 #: ../plugins/about/DevMode.qml:83
-#, fuzzy
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
 msgstr ""
-"У режимі розробника будь-хто може отримувати доступу, змінювати або вилучати "
-"будь-які дані з цього телефону, з’єднавшись із ним з іншого пристрою."
+"У режимі розробника будь-хто може отримати доступ, змінити або видалити будь-"
+"що на цьому пристрої, під'єднавши його до іншого пристрою."
 
 #: ../plugins/about/DevMode.qml:107
 msgid "You need a passcode or passphrase set to use Developer Mode."
@@ -148,7 +146,7 @@ msgstr "Режим розробника"
 
 #: ../plugins/about/Storage.qml:43
 msgid "Scanning"
-msgstr ""
+msgstr "Сканування"
 
 #: ../plugins/about/Storage.qml:123
 msgid "System Reserved"
@@ -172,7 +170,7 @@ msgstr "Зображення"
 
 #: ../plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Документи"
 
 #: ../plugins/about/Storage.qml:129
 msgid "Downloads"
