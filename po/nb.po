@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 13:27+0000\n"
-"PO-Revision-Date: 2023-01-19 22:48+0000\n"
+"PO-Revision-Date: 2023-02-03 04:34+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/nb_NO/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -213,8 +213,9 @@ msgid "OS Build Details"
 msgstr "OS-oppbygningsdetaljer"
 
 #: plugins/about/Version.qml:60
+#, fuzzy
 msgid "OS update channel"
-msgstr ""
+msgstr "OS-oppdateringskanal"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -222,11 +223,11 @@ msgstr "OS-byggnummer"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kjerne"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Bygg-ABI"
 
 #: plugins/about/Version.qml:86
 msgid "UBports Image part"
@@ -295,7 +296,7 @@ msgstr "Bakgrunn"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Skru på tilsløringseffekt"
 
 #: plugins/background/MainPage.qml:104
 msgid "System Art"
@@ -1134,19 +1135,20 @@ msgstr "Alle tilgjengelige språk:"
 #, fuzzy
 #| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Tilbakestill programoppstarter"
+msgstr "Skrivebord og programoppstarter"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
 msgstr "På store skjermer:"
 
 #: plugins/launcher/PageComponent.qml:73
+#, fuzzy
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Skru på arbeidsområder"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Supoprt for multiple virtual workspaces"
-msgstr ""
+msgstr "Støtte for mange virtuelle arbeidsområder"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1254,59 +1256,58 @@ msgstr "NFC"
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:73
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Nødvarsel"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Enheten er nå tilgjengelig"
+msgstr "Telefoni-kringkasting er ikke tilgjengelig"
 
 #: plugins/notifications/CellBroadcast.qml:155
+#, fuzzy
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Telefonikringkasting påskrudd"
 
 #: plugins/notifications/CellBroadcast.qml:155
+#, fuzzy
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Telefonikringkasting avpåskrudd"
 
 #: plugins/notifications/CellBroadcast.qml:165
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "varsler"
+msgstr "Varsler:"
 
 #: plugins/notifications/CellBroadcast.qml:171
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Motta nødvarsler"
 
 #: plugins/notifications/CellBroadcast.qml:184
 msgid "Extreme threats"
-msgstr ""
+msgstr "Ekstreme farer"
 
 #: plugins/notifications/CellBroadcast.qml:185
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Ekstreme farer for liv og eiendom"
 
 #: plugins/notifications/CellBroadcast.qml:198
 msgid "Severe threats"
-msgstr ""
+msgstr "Alvorlige farer"
 
 #: plugins/notifications/CellBroadcast.qml:199
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Alvorlige farer for liv og eiendom"
 
 #: plugins/notifications/CellBroadcast.qml:212
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "Savnet-varsler"
 
 #: plugins/notifications/CellBroadcast.qml:213
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Bortføringsvarsels-oppdateringer"
 
 #: plugins/notifications/CellBroadcast.qml:226
+#, fuzzy
 msgid "Public safety messages"
-msgstr ""
+msgstr "Meldinger om samfunnstrygghet"
 
 #: plugins/notifications/CellBroadcast.qml:227
 msgid "Recommend actions to save life and property"
@@ -1314,13 +1315,13 @@ msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:240
 msgid "Tests"
-msgstr ""
+msgstr "Tester"
 
 #: plugins/notifications/CellBroadcast.qml:241
 #, fuzzy
 #| msgid "alerts"
 msgid "Tests alerts"
-msgstr "varsler"
+msgstr "Tester varsler"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:29
