@@ -1,5 +1,6 @@
-project(lomiri-system-settings C CXX)
-cmake_minimum_required(VERSION 2.8.10)
+cmake_minimum_required(VERSION 3.5)
+
+project(lomiri-system-settings VERSION 0.1 LANGUAGES C CXX)
 
 if(${PROJECT_BINARY_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
    message(FATAL_ERROR "In-tree build attempt detected, aborting. Set your build dir outside your source dir, delete CMakeCache.txt from source root and try again.")
@@ -7,7 +8,6 @@ endif()
 
 string(TOLOWER "${CMAKE_BUILD_TYPE}" cmake_build_type_lower) # Build types should always be lowercase but sometimes they are not.
 
-set(PROJECT_VERSION 0.1)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include(EnableCoverageReport)
 include(FindPkgConfig)
@@ -27,7 +27,6 @@ if(cmake_build_type_lower MATCHES coverage)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g" )
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g" )
 endif()
-
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -fno-permissive -pedantic -Wall -Wextra")
 find_package(Qt5Concurrent REQUIRED)
@@ -53,11 +52,6 @@ pkg_search_module(ICU REQUIRED icu-i18n)
 pkg_search_module(ANDR_PROP libandroid-properties)
 pkg_search_module(CLICK REQUIRED click-0.4)
 pkg_check_modules(QTGSETTINGS REQUIRED gsettings-qt)
-
-find_program(XGETTEXT_BIN xgettext)
-find_program(MSGFMT_BIN msgfmt)
-find_program(INTLTOOL_MERGE intltool-merge)
-find_program(INTLTOOL_EXTRACT intltool-extract)
 
 set(DATA_DIR share)
 set(MODULE_DIR lomiri-system-settings)
@@ -87,6 +81,7 @@ SET(CMAKE_INSTALL_RPATH "${PLUGIN_MODULE_DIR}")
 
 set(DESKTOP_FILE lomiri-system-settings.desktop)
 set(GETTEXT_PACKAGE lomiri-system-settings)
+set(DESKTOP_FILE ${PROJECT_NAME}.desktop)
 
 add_subdirectory(po)
 add_subdirectory(schema)
@@ -101,11 +96,15 @@ if(ENABLE_TESTS)
   add_subdirectory(tests)
 endif()
 
-configure_file(${DESKTOP_FILE}.in.in ${DESKTOP_FILE}.in @ONLY)
+include(FindGettext)
+configure_file(${DESKTOP_FILE}.in.in ${DESKTOP_FILE}.in)
 add_custom_target(${DESKTOP_FILE} ALL
-                  COMMENT "Merging translations into ${DESKTOP_FILE}"
-                  COMMAND ${INTLTOOL_MERGE} -d -u ${CMAKE_SOURCE_DIR}/po
-                          ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}.in ${DESKTOP_FILE})
+    COMMENT "Merging translations into ${DESKTOP_FILE}..."
+    COMMAND ${GETTEXT_MSGFMT_EXECUTABLE}
+            --desktop --template=${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}.in
+            -o ${DESKTOP_FILE}
+            -d ${CMAKE_SOURCE_DIR}/po
+)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE}
         DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)

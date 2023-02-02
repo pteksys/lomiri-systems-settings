@@ -28,10 +28,6 @@ override_dh_auto_configure:
 	# So until Debian bug 719148 is fixed, do it ourselves.
 	dh_auto_configure -- -DCMAKE_INSTALL_LOCALSTATEDIR="/var" $(CONFIGURE_FLAGS)
 
-override_dh_auto_build:
-	dh_auto_build --parallel
-	$(MAKE) -j$(nproc) -C obj-$(DEB_HOST_GNU_TYPE) pot
-
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -rf $(BUILDHOME)
