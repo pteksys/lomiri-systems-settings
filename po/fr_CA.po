@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 17:14+0000\n"
+"POT-Creation-Date: 2023-01-31 13:27+0000\n"
 "PO-Revision-Date: 2021-03-14 01:00+0000\n"
 "Last-Translator: Ryan Argente <rargente@lonerider.one>\n"
 "Language-Team: French (Canada) <https://translate.ubports.com/projects/"
@@ -19,28 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.11.3\n"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+msgid "System Settings"
+msgstr "Paramètres du système"
+
+#: lomiri-system-settings.desktop.in:5
+msgid "Preferences;Settings;"
+msgstr "Préférences;Réglages;"
+
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
 msgstr ""
 "Impossible d'annuler la demande actuelle (impossible de contacter le service)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
 msgid "Can't pause current request (can't contact service)"
 msgstr ""
 "Impossible de suspendre la demande actuelle (impossible de contacter le "
 "service)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
-msgid "Unavailable"
-msgstr "Indisponible"
-
-#: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
+#: plugins/about/DevMode.qml:34 plugins/about/DevMode.qml:90
 msgid "Developer Mode"
 msgstr "Mode développeur"
 
-#: ../plugins/about/DevMode.qml:83
+#: plugins/about/DevMode.qml:83
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
@@ -48,285 +50,292 @@ msgstr ""
 "En mode développeur, n'importe qui peut lire, modifier ou supprimer tout le "
 "contenu de cet appareil en le connectant à un autre."
 
-#: ../plugins/about/DevMode.qml:107
+#: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr ""
 "Vous devez avoir défini un code ou un mot de passe pour utiliser le Mode "
 "Développeur."
 
-#: ../plugins/about/DevMode.qml:113
+#: plugins/about/DevMode.qml:115
 msgid "Lock security"
 msgstr "Sécurité du verrouillage"
 
-#: ../plugins/about/License.qml:29
+#: plugins/about/License.qml:29
 msgid "Sorry, this license could not be displayed."
 msgstr "Désolé, cette licence n'a pas pu être affichée."
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: ../plugins/about/PageComponent.qml:33 settings.js:2
+#: plugins/about/PageComponent.qml:33
 msgid "About"
 msgstr "À propos"
 
-#: ../plugins/about/PageComponent.qml:97
+#: plugins/about/PageComponent.qml:97
 msgid "Serial"
 msgstr "Numéro de série"
 
-#: ../plugins/about/PageComponent.qml:107
-#: ../plugins/about/PageComponent.qml:108
-#: ../plugins/about/PageComponent.qml:119
-#: ../plugins/bluetooth/DevicePage.qml:73
-#: ../plugins/bluetooth/DevicePage.qml:82
-#: ../plugins/bluetooth/DevicePage.qml:110
-#: ../plugins/printing/printer-sub-pages/Status.qml:50
-#: ../plugins/wifi/OtherNetwork.qml:318 ../plugins/wifi/OtherNetwork.qml:457
-#: ../plugins/wifi/OtherNetwork.qml:574 ../plugins/wifi/certhandler.cpp:105
-#: ../plugins/wifi/certhandler.cpp:140 ../plugins/wifi/certhandler.cpp:192
-#: ../plugins/wifi/certhandler.cpp:224 ../plugins/wifi/certhandler.cpp:289
-#: ../plugins/wifi/certhandler.cpp:318
+#: plugins/about/PageComponent.qml:107 plugins/about/PageComponent.qml:108
+#: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
+#: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
+#: plugins/printing/printer-sub-pages/Status.qml:50
+#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
+#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
+#: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
+#: plugins/wifi/certhandler.cpp:318
 msgid "None"
 msgstr "Aucun"
 
-#: ../plugins/about/PageComponent.qml:128
+#: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
 msgstr "Adresse Wi-Fi"
 
-#: ../plugins/about/PageComponent.qml:136
+#: plugins/about/PageComponent.qml:136
 msgid "Bluetooth address"
 msgstr "Adresse Bluetooth"
 
-#: ../plugins/about/PageComponent.qml:147 ../plugins/about/Storage.qml:31
+#: plugins/about/PageComponent.qml:147 plugins/about/Storage.qml:31
 msgid "Storage"
 msgstr "Stockage"
 
 #. TRANSLATORS: that's the free disk space, indicated in the most appropriate storage unit
-#: ../plugins/about/PageComponent.qml:149
+#: plugins/about/PageComponent.qml:149
 #, qt-format
 msgid "%1 free"
 msgstr "%1 libre"
 
-#: ../plugins/about/PageComponent.qml:157
+#: plugins/about/PageComponent.qml:156
 msgid "Software:"
 msgstr "Logiciel :"
 
-#: ../plugins/about/PageComponent.qml:169
+#: plugins/about/PageComponent.qml:168
 msgid "OS"
 msgstr "Système d'exploitation"
 
-#: ../plugins/about/PageComponent.qml:181
+#: plugins/about/PageComponent.qml:180
 msgid "Last updated"
 msgstr "Dernière mise à jour"
 
-#: ../plugins/about/PageComponent.qml:183
-#: ../plugins/battery/PageComponent.qml:328
-#: ../plugins/battery/PageComponent.qml:346
-#: ../plugins/battery/SleepValues.qml:108 ../plugins/wifi/NetworkDetails.qml:67
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Jamais"
 
-#: ../plugins/about/PageComponent.qml:191
+#: plugins/about/PageComponent.qml:190
 msgid "Check for updates"
 msgstr "Vérifier l'existence de mises à jour"
 
-#: ../plugins/about/PageComponent.qml:222
+#: plugins/about/PageComponent.qml:221
 msgid "Legal:"
 msgstr "Licence :"
 
-#: ../plugins/about/PageComponent.qml:227 ../plugins/about/Software.qml:11
+#: plugins/about/PageComponent.qml:226 plugins/about/Software.qml:11
 msgid "Software licenses"
 msgstr "Licences des logiciels"
 
-#: ../plugins/about/PageComponent.qml:234
+#: plugins/about/PageComponent.qml:233
 msgid "Regulatory info"
 msgstr "Informations réglementaires"
 
-#: ../plugins/about/PageComponent.qml:241
+#: plugins/about/PageComponent.qml:240
 msgid "Developer mode"
 msgstr "Mode développeur"
 
-#: ../plugins/about/Storage.qml:43
+#: plugins/about/Storage.qml:43
 msgid "Scanning"
 msgstr "Analyse"
 
-#: ../plugins/about/Storage.qml:123
+#: plugins/about/Storage.qml:123
 #, fuzzy
 #| msgid "System Settings"
 msgid "System Reserved"
 msgstr "Paramètres du système"
 
-#: ../plugins/about/Storage.qml:124
+#: plugins/about/Storage.qml:124
 #, fuzzy
 #| msgid "Used by apps"
 msgid "Used by system"
 msgstr "Utilisé par les applications"
 
-#: ../plugins/about/Storage.qml:125
+#: plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr "Vidéos"
 
-#: ../plugins/about/Storage.qml:126
+#: plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr "Audio"
 
-#: ../plugins/about/Storage.qml:127
+#: plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr "Photos"
 
-#: ../plugins/about/Storage.qml:128
+#: plugins/about/Storage.qml:128
 msgid "Documents"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:129
+#: plugins/about/Storage.qml:129
 msgid "Downloads"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:130
+#: plugins/about/Storage.qml:130
 msgid "Anbox"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:131
+#: plugins/about/Storage.qml:131
 msgid "Libertine"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:132
+#: plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr "Autres fichiers"
 
-#: ../plugins/about/Storage.qml:133
+#: plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr "Utilisé par les applications"
 
-#: ../plugins/about/Storage.qml:191
+#: plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr "Espace total"
 
-#: ../plugins/about/Storage.qml:215
+#: plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr "Espace disponible"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By name"
 msgstr "Par nom"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By size"
 msgstr "Par taille"
 
-#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
-#: ../plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
+#: plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr "S/O"
 
-#: ../plugins/about/Version.qml:33
+#: plugins/about/Version.qml:33
 msgid "OS Build Details"
 msgstr "Détails de la version du système d'exploitation"
 
-#: ../plugins/about/Version.qml:60
+#: plugins/about/Version.qml:60
+msgid "OS update channel"
+msgstr ""
+
+#: plugins/about/Version.qml:67
 msgid "OS build number"
 msgstr "Numéro de la version du système d'exploitation"
 
-#: ../plugins/about/Version.qml:66
+#: plugins/about/Version.qml:74
+msgid "Kernel"
+msgstr ""
+
+#: plugins/about/Version.qml:80
+msgid "Build ABI"
+msgstr ""
+
+#: plugins/about/Version.qml:86
 msgid "UBports Image part"
 msgstr "Partie de l'image d'UBports"
 
-#: ../plugins/about/Version.qml:74
+#: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
 msgstr "Description de la version d'Ubuntu"
 
-#: ../plugins/about/Version.qml:80
+#: plugins/about/Version.qml:100
 msgid "Device Image part"
 msgstr "Partie de l'image du périphérique"
 
-#: ../plugins/about/Version.qml:87
+#: plugins/about/Version.qml:107
 msgid "Device build description"
 msgstr "Description de la version du périphérique"
 
-#: ../plugins/about/Version.qml:94
+#: plugins/about/Version.qml:114
 msgid "Customization Image part"
 msgstr "Partie de l'image de personnalisation"
 
-#: ../plugins/about/click.cpp:134
+#: plugins/about/click.cpp:134
 msgid "Unknown title"
 msgstr "Titre inconnu"
 
-#: ../plugins/background/Components/AddRemove.qml:42
-#: ../plugins/background/Preview.qml:109
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:49
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:51
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:46
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:54
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: ../plugins/hotspot/HotspotSetup.qml:255
-#: ../plugins/hotspot/PageComponent.qml:166
-#: ../plugins/language/DisplayLanguage.qml:46
-#: ../plugins/language/RebootNecessary.qml:48
-#: ../plugins/printing/AddPrinter.qml:41
-#: ../plugins/reset/EraseEverything.qml:55
-#: ../plugins/reset/ResetAllSettings.qml:39
-#: ../plugins/reset/ResetLauncherHome.qml:56
-#: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
-#: ../plugins/wifi/OtherNetwork.qml:889
+#: plugins/background/Components/AddRemove.qml:42
+#: plugins/background/Preview.qml:110
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:51
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:46
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:54
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:55
+#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/language/DisplayLanguage.qml:46
+#: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
+#: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
+#: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
 msgstr "Aucune image sélectionnée"
 
-#: ../plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:65
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "Supprimer %1 image"
 msgstr[1] "Supprimer %1 images"
 
-#: ../plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:79
 msgid "Add an image…"
 msgstr "Ajouter une image…"
 
-#: ../plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:89
 msgid "Remove images…"
 msgstr "Supprimer les images…"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: ../plugins/background/MainPage.qml:34 settings.js:38
-msgid "Background"
+#: plugins/background/MainPage.qml:35
+#, fuzzy
+#| msgid "Background"
+msgid "Background & Appearance"
 msgstr "Arrière-plan"
 
-#: ../plugins/background/MainPage.qml:85
+#: plugins/background/MainPage.qml:87
+msgid "Enable blur effects"
+msgstr ""
+
+#: plugins/background/MainPage.qml:104
 #, fuzzy
 #| msgid "System"
 msgid "System Art"
 msgstr "Système"
 
-#: ../plugins/background/MainPage.qml:98
+#: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Personnalisé"
 
-#: ../plugins/background/MainPage.qml:157
+#: plugins/background/MainPage.qml:176
 #, fuzzy
 #| msgid "Choose a connection"
 msgid "Choose application"
 msgstr "Choisissez une connexion"
 
-#: ../plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:69
 msgid "Preview"
 msgstr "Afficher un aperçu"
 
-#: ../plugins/background/Preview.qml:109
+#: plugins/background/Preview.qml:110
 msgid "Remove image"
 msgstr "Supprimer l'image"
 
-#: ../plugins/background/Preview.qml:115 ../plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Valider"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:35 settings.js:54
+#: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Batterie"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:44
+#: plugins/battery/PageComponent.qml:44
 #, qt-format
 msgid "%1 second ago"
 msgid_plural "%1 seconds ago"
@@ -334,7 +343,7 @@ msgstr[0] "Il y a %1 seconde"
 msgstr[1] "Il y a %1 secondes"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:47
+#: plugins/battery/PageComponent.qml:47
 #, qt-format
 msgid "%1 minute ago"
 msgid_plural "%1 minutes ago"
@@ -342,64 +351,62 @@ msgstr[0] "Il y a %1 minute"
 msgstr[1] "Il y a %1 minutes"
 
 #. TRANSLATORS: %1 is the number of hours
-#: ../plugins/battery/PageComponent.qml:50
+#: plugins/battery/PageComponent.qml:50
 #, qt-format
 msgid "%1 hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "Il y a %1 heure"
 msgstr[1] "Il y a %1 heures"
 
-#: ../plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:104
 msgid "Charge level"
 msgstr "Niveau de charge"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: ../plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:112
 #, qt-format
 msgid "%1%"
 msgstr "%1 %"
 
-#: ../plugins/battery/PageComponent.qml:191
-#: ../plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
 msgstr "Hier"
 
-#: ../plugins/battery/PageComponent.qml:199
-#: ../plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
 msgid "Today"
 msgstr "Aujourd'hui"
 
-#: ../plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:271
 msgid "Charging now"
 msgstr "En charge"
 
-#: ../plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:273
 msgid "Last full charge"
 msgstr "Dernier chargement complet"
 
-#: ../plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:275
 msgid "Fully charged"
 msgstr "Complètement chargée"
 
-#: ../plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:294
 msgid "Ways to reduce battery use:"
 msgstr "Façons de réduire l'utilisation de la batterie :"
 
-#: ../plugins/battery/PageComponent.qml:298
-#: ../plugins/brightness/PageComponent.qml:84
+#: plugins/battery/PageComponent.qml:298
+#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "Luminosité d'affichage"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Lock when idle"
 msgstr "Verrouiller en cas d'inactivité"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Sleep when idle"
 msgstr "Mettre en veille en cas d'inactivité"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:331
 #, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -407,59 +414,47 @@ msgstr[0] "Après %1 seconde"
 msgstr[1] "Après %1 secondes"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:335
-#: ../plugins/battery/PageComponent.qml:343
-#: ../plugins/battery/SleepValues.qml:85 ../plugins/battery/SleepValues.qml:89
-#: ../plugins/battery/SleepValues.qml:93 ../plugins/battery/SleepValues.qml:97
-#: ../plugins/battery/SleepValues.qml:101
-#: ../plugins/battery/SleepValues.qml:105
+#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
+#: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
+#: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
 msgstr[0] "Après %1 minute"
 msgstr[1] "Après %1 minutes"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:374
-#: ../plugins/wifi/PageComponent.qml:28 settings.js:314
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: ../plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:374
 msgid "Wi-Fi used for hotspot"
 msgstr "Wi-Fi utilisé pour le point d'accès"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:410
-#: ../plugins/bluetooth/PageComponent.qml:33
-#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:70
+#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../plugins/battery/SleepValues.qml:68
+#: plugins/battery/SleepValues.qml:68
 msgid "Lock the device when it's not in use:"
 msgstr "Verrouiller l'appareil lorsqu'il n'est pas utilisé :"
 
-#: ../plugins/battery/SleepValues.qml:69
+#: plugins/battery/SleepValues.qml:69
 msgid "Put the device to sleep when it is not in use:"
 msgstr "Mettre l'appareil en veille lorsqu'il n'est pas utilisé :"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/SleepValues.qml:81
+#: plugins/battery/SleepValues.qml:81
 #, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
 msgstr[0] "Après %1 seconde"
 msgstr[1] "Après %1 secondes"
 
-#: ../plugins/battery/SleepValues.qml:125
-msgid "Device won’t sleep during calls or video playback."
-msgstr ""
-"L'appareil ne se mettra pas en veille lors d'un appel ou de la lecture d'une "
-"vidéo."
-
-#: ../plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:125
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -467,499 +462,499 @@ msgstr ""
 "Des délais courts sont plus sûrs. L'appareil ne se verrouillera pas lors des "
 "appels ou de la lecture d'une vidéo."
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:26
+#: plugins/battery/SleepValues.qml:125
+msgid "Device won’t sleep during calls or video playback."
+msgstr ""
+"L'appareil ne se mettra pas en veille lors d'un appel ou de la lecture d'une "
+"vidéo."
+
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:26
 msgid "Bluetooth Pairing Authorization Request"
 msgstr "Demande d'autorisation d'appairage via Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:34
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
 msgstr ""
 "L'appareil %1 veut s’appairer avec cet appareil. Voulez-vous autoriser ceci?"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:39
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 msgid "Allow"
 msgstr "Permettre"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:46
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
 msgstr "Refuser"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:28
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:26
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:26
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:28
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:28
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:26
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:26
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:28
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:28
 msgid "Bluetooth Pairing Request"
 msgstr "Demande d'appairage Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:37
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
 msgstr ""
 "Veuillez confirmer que le code PIN affiché sur  '%1' correspond à celui-ci"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:57
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
 msgstr "Confirmer le code PIN"
 
-#: ../plugins/bluetooth/DevicePage.qml:37
-#: ../plugins/bluetooth/PageComponent.qml:290
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
-#: ../plugins/wifi/AccessPoint.qml:51 ../plugins/wifi/StandardMenuItem.qml:31
+#: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
+#: plugins/wifi/StandardMenuItem.qml:31
 msgid "Connected"
 msgstr "Connecté"
 
-#: ../plugins/bluetooth/DevicePage.qml:38
-#: ../plugins/bluetooth/PageComponent.qml:290
+#: plugins/bluetooth/DevicePage.qml:38 plugins/bluetooth/PageComponent.qml:290
 msgid "Connecting…"
 msgstr "Connexion…"
 
-#: ../plugins/bluetooth/DevicePage.qml:39
+#: plugins/bluetooth/DevicePage.qml:39
 msgid "Disconnecting…"
 msgstr "Déconnexion…"
 
-#: ../plugins/bluetooth/DevicePage.qml:40
+#: plugins/bluetooth/DevicePage.qml:40
 msgid "Disconnected"
 msgstr "Déconnecté"
 
-#: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
+#: plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../plugins/bluetooth/DevicePage.qml:47
+#: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
 msgstr "Ordinateur"
 
-#: ../plugins/bluetooth/DevicePage.qml:48
-#: ../plugins/bluetooth/DevicePage.qml:49
+#: plugins/bluetooth/DevicePage.qml:48 plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
 msgstr "Téléphone"
 
-#: ../plugins/bluetooth/DevicePage.qml:50
+#: plugins/bluetooth/DevicePage.qml:50
 msgid "Modem"
 msgstr "Modem"
 
-#: ../plugins/bluetooth/DevicePage.qml:51 ../src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
 msgid "Network"
 msgstr "Réseau"
 
-#: ../plugins/bluetooth/DevicePage.qml:52
+#: plugins/bluetooth/DevicePage.qml:52
 msgid "Headset"
 msgstr "Casque"
 
-#: ../plugins/bluetooth/DevicePage.qml:53
+#: plugins/bluetooth/DevicePage.qml:53
 msgid "Headphones"
 msgstr "Écouteurs"
 
-#: ../plugins/bluetooth/DevicePage.qml:54
+#: plugins/bluetooth/DevicePage.qml:54
 msgid "Video"
 msgstr "Vidéo"
 
-#: ../plugins/bluetooth/DevicePage.qml:55
+#: plugins/bluetooth/DevicePage.qml:55
 msgid "Other Audio"
 msgstr "Autre audio"
 
-#: ../plugins/bluetooth/DevicePage.qml:56
+#: plugins/bluetooth/DevicePage.qml:56
 msgid "Joypad"
 msgstr "Manette de jeu"
 
-#: ../plugins/bluetooth/DevicePage.qml:57
+#: plugins/bluetooth/DevicePage.qml:57
 msgid "Keyboard"
 msgstr "Clavier"
 
-#: ../plugins/bluetooth/DevicePage.qml:58
+#: plugins/bluetooth/DevicePage.qml:58
 msgid "Tablet"
 msgstr "Tablette"
 
-#: ../plugins/bluetooth/DevicePage.qml:59 ../plugins/mouse/Connected.qml:48
+#: plugins/bluetooth/DevicePage.qml:59 plugins/mouse/Connected.qml:48
 msgid "Mouse"
 msgstr "Souris"
 
-#: ../plugins/bluetooth/DevicePage.qml:60
+#: plugins/bluetooth/DevicePage.qml:60
 msgid "Printer"
 msgstr "Imprimante"
 
-#: ../plugins/bluetooth/DevicePage.qml:61
+#: plugins/bluetooth/DevicePage.qml:61
 msgid "Camera"
 msgstr "Caméra"
 
-#: ../plugins/bluetooth/DevicePage.qml:62
+#: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
 msgstr "Montre"
 
-#: ../plugins/bluetooth/DevicePage.qml:63
+#: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
 msgstr "Autre"
 
-#: ../plugins/bluetooth/DevicePage.qml:69
+#: plugins/bluetooth/DevicePage.qml:69
 msgid "Excellent"
 msgstr "Excellent"
 
-#: ../plugins/bluetooth/DevicePage.qml:70
+#: plugins/bluetooth/DevicePage.qml:70
 msgid "Good"
 msgstr "Bon"
 
-#: ../plugins/bluetooth/DevicePage.qml:71
+#: plugins/bluetooth/DevicePage.qml:71
 msgid "Fair"
 msgstr "Correct"
 
-#: ../plugins/bluetooth/DevicePage.qml:72
+#: plugins/bluetooth/DevicePage.qml:72
 msgid "Poor"
 msgstr "Médiocre"
 
-#: ../plugins/bluetooth/DevicePage.qml:106
-#: ../plugins/printing/printer-sub-pages/Status.qml:61
-#: ../plugins/wifi/NetworkDetails.qml:59
+#: plugins/bluetooth/DevicePage.qml:106
+#: plugins/printing/printer-sub-pages/Status.qml:61
+#: plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
 msgstr "Nom"
 
-#: ../plugins/bluetooth/DevicePage.qml:113
+#: plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
 msgstr "Catégorie"
 
-#: ../plugins/bluetooth/DevicePage.qml:124
-#: ../plugins/printing/printer-sub-pages/Status.qml:26
+#: plugins/bluetooth/DevicePage.qml:124
+#: plugins/printing/printer-sub-pages/Status.qml:26
 msgid "Status"
 msgstr "État"
 
-#: ../plugins/bluetooth/DevicePage.qml:128
+#: plugins/bluetooth/DevicePage.qml:128
 msgid "Signal Strength"
 msgstr "Force du signal"
 
-#: ../plugins/bluetooth/DevicePage.qml:133
-#: ../plugins/bluetooth/PageComponent.qml:358
+#: plugins/bluetooth/DevicePage.qml:133 plugins/bluetooth/PageComponent.qml:358
 msgid "Connect automatically when detected:"
 msgstr "Connecter automatiquement si détecté :"
 
-#: ../plugins/bluetooth/DevicePage.qml:150 ../plugins/wifi/OtherNetwork.qml:905
-msgid "Connect"
-msgstr "Se connecter"
-
-#: ../plugins/bluetooth/DevicePage.qml:150
+#: plugins/bluetooth/DevicePage.qml:150
 msgid "Disconnect"
 msgstr "Déconnecter"
 
-#: ../plugins/bluetooth/DevicePage.qml:172
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+msgid "Connect"
+msgstr "Se connecter"
+
+#: plugins/bluetooth/DevicePage.qml:172
 msgid "Forget this device"
 msgstr "Oublier cet appareil"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:35
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:34
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:35
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr ""
 "Veuillez saisir le code PIN suivant sur %1 et appuyer sur «Entrée» sur le "
 "clavier :"
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
 msgstr "Découvrable"
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Not discoverable"
 msgstr "Non découvrable"
 
-#: ../plugins/bluetooth/PageComponent.qml:260
-#: ../plugins/bluetooth/PageComponent.qml:319
+#: plugins/bluetooth/PageComponent.qml:260
+#: plugins/bluetooth/PageComponent.qml:319
 msgid "Searching…"
 msgstr "Recherche…"
 
-#: ../plugins/bluetooth/PageComponent.qml:269
+#: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
 msgstr "Appareils connectés :"
 
-#: ../plugins/bluetooth/PageComponent.qml:309
-msgid "Connect a device:"
-msgstr "Connecter un appareil :"
-
-#: ../plugins/bluetooth/PageComponent.qml:309
+#: plugins/bluetooth/PageComponent.qml:309
 msgid "Connect another device:"
 msgstr "Connecter un autre appareil :"
 
-#: ../plugins/bluetooth/PageComponent.qml:352
+#: plugins/bluetooth/PageComponent.qml:309
+msgid "Connect a device:"
+msgstr "Connecter un appareil :"
+
+#: plugins/bluetooth/PageComponent.qml:352
 msgid "None detected"
 msgstr "Aucun détecté"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:36
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:36
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:36
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
 msgstr "Code PIN pour '%1'"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:62
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:63
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:62
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:63
 msgid "Pair"
 msgstr "Apparier"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: ../plugins/brightness/PageComponent.qml:35 settings.js:94
-msgid "Brightness"
-msgstr "Luminosité"
-
-#: ../plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:67
 msgid "Brightness & Display"
 msgstr "Luminosité et affichage"
 
-#: ../plugins/brightness/PageComponent.qml:122
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:65
+msgid "Brightness"
+msgstr "Luminosité"
+
+#: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Ajuster automatiquement"
 
-#: ../plugins/brightness/PageComponent.qml:137
+#: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Augmente et diminue la luminosité pour s'adapter à l'environnement."
 
-#: ../plugins/brightness/PageComponent.qml:142
+#: plugins/brightness/PageComponent.qml:135
 #, fuzzy
 #| msgid "display"
 msgid "Display"
 msgstr "affichage"
 
-#: ../plugins/brightness/PageComponent.qml:147
+#: plugins/brightness/PageComponent.qml:141
 msgid "External display"
 msgstr "Affichage externe"
 
-#: ../plugins/brightness/PageComponent.qml:166
+#: plugins/brightness/PageComponent.qml:158
 msgid "Wireless display"
 msgstr "Affichage sans fil"
 
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
 msgstr "Non connecté"
 
-#: ../plugins/brightness/WifiDisplays.qml:27
+#: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
 msgstr "Affichage sans fil"
 
-#: ../plugins/brightness/WifiDisplays.qml:100
+#: plugins/brightness/WifiDisplays.qml:112
 msgid "No displays detected"
 msgstr "Aucun écran détecté"
 
-#: ../plugins/brightness/WifiDisplays.qml:113
+#: plugins/brightness/WifiDisplays.qml:125
 msgid "Connected display:"
 msgstr "Affichage connecté :"
 
-#: ../plugins/brightness/WifiDisplays.qml:128
+#: plugins/brightness/WifiDisplays.qml:140
 msgid "Connecting"
 msgstr "Connexion"
 
-#: ../plugins/brightness/WifiDisplays.qml:146
-msgid "Choose a display:"
-msgstr "Choisissez un écran :"
-
-#: ../plugins/brightness/WifiDisplays.qml:146
+#: plugins/brightness/WifiDisplays.qml:158
 msgid "Use another display:"
 msgstr "Utiliser un autre écran :"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:32
+#: plugins/brightness/WifiDisplays.qml:158
+msgid "Choose a display:"
+msgstr "Choisissez un écran :"
+
+#: plugins/brightness/WifiDisplaysAlert.qml:32
 #, qt-format
 msgid "This device failed to connect to %1."
 msgstr "Cet appareil n'a pas pu se connecter à %1."
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:34
+#: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
 msgstr "Une erreur inconnue est survenue en se connectant à %1."
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:38
-#: ../plugins/vpn/PageComponent.qml:123
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "OK"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: ../plugins/gestures/PageComponent.qml:25 settings.js:126
+#: plugins/gestures/PageComponent.qml:25
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Photos"
 
-#: ../plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:44
 #, fuzzy
 #| msgid "Tap to click"
 msgid "Tap to wake"
 msgstr "Toucher pour cliquer"
 
-#: ../plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
+#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
 msgstr "Erreur inconnue"
 
-#: ../plugins/hotspot/Common.qml:36 ../plugins/wifi/Common.qml:38
+#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
 msgid "No reason given"
 msgstr "Motif indéterminé"
 
-#: ../plugins/hotspot/Common.qml:38 ../plugins/wifi/Common.qml:40
+#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
 msgid "Device is now managed"
 msgstr "Le périphérique est maintenant géré"
 
-#: ../plugins/hotspot/Common.qml:40 ../plugins/wifi/Common.qml:42
+#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
 msgid "Device is now unmanaged"
 msgstr "Le périphérique n'est plus géré"
 
-#: ../plugins/hotspot/Common.qml:42 ../plugins/wifi/Common.qml:44
+#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
 msgid "The device could not be readied for configuration"
 msgstr "Le périphérique n'a pu être préparé pour la configuration"
 
-#: ../plugins/hotspot/Common.qml:44 ../plugins/wifi/Common.qml:46
+#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
 msgid ""
 "IP configuration could not be reserved (no available address, timeout, etc.)"
 msgstr ""
 "La configuration IP ne peut être réservée (pas d'adresse disponible, temps "
 "d'attente dépassé, etc.)"
 
-#: ../plugins/hotspot/Common.qml:46 ../plugins/wifi/Common.qml:48
+#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
 msgid "The IP configuration is no longer valid"
 msgstr "La configuration IP n'est plus valide"
 
-#: ../plugins/hotspot/Common.qml:48 ../plugins/wifi/Common.qml:50
+#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
 msgid "Your authentication details were incorrect"
 msgstr "Vos détails d'authentification étaient incorrects"
 
-#: ../plugins/hotspot/Common.qml:50 ../plugins/wifi/Common.qml:52
+#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
 msgid "802.1X supplicant disconnected"
 msgstr "Le demandeur 802.1X est déconnecté"
 
-#: ../plugins/hotspot/Common.qml:52 ../plugins/wifi/Common.qml:54
+#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
 msgid "802.1X supplicant configuration failed"
 msgstr "La configuration du demandeur 802.1X a échoué"
 
-#: ../plugins/hotspot/Common.qml:54 ../plugins/wifi/Common.qml:56
+#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
 msgid "802.1X supplicant failed"
 msgstr "Le demandeur 802.1X a échoué"
 
-#: ../plugins/hotspot/Common.qml:56 ../plugins/wifi/Common.qml:58
+#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
 msgid "802.1X supplicant took too long to authenticate"
 msgstr "Le délai d'authentification du demandeur 802.1X a expiré"
 
-#: ../plugins/hotspot/Common.qml:58 ../plugins/wifi/Common.qml:60
+#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
 msgid "DHCP client failed to start"
 msgstr "Le client DHCP n'a pu être démarré"
 
-#: ../plugins/hotspot/Common.qml:60 ../plugins/wifi/Common.qml:62
+#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
 msgid "DHCP client error"
 msgstr "Erreur du client DHCP"
 
-#: ../plugins/hotspot/Common.qml:62 ../plugins/wifi/Common.qml:64
+#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
 msgid "DHCP client failed"
 msgstr "Le client DHCP a échoué"
 
-#: ../plugins/hotspot/Common.qml:64 ../plugins/wifi/Common.qml:66
+#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
 msgid "Shared connection service failed to start"
 msgstr "Le service de connexion partagée n'a pas réussi à démarrer"
 
-#: ../plugins/hotspot/Common.qml:66 ../plugins/wifi/Common.qml:68
+#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
 msgid "Shared connection service failed"
 msgstr "Le service de connexion partagée a échoué"
 
-#: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
+#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
 msgstr ""
 "Un micrologiciel nécessaire est peut-être manquant pour le périphérique"
 
-#: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
+#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
 msgid "The device was removed"
 msgstr "Le périphérique a été retiré"
 
-#: ../plugins/hotspot/Common.qml:72 ../plugins/wifi/Common.qml:74
+#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
 msgid "NetworkManager went to sleep"
 msgstr "NetworkManager a été suspendu"
 
-#: ../plugins/hotspot/Common.qml:74 ../plugins/wifi/Common.qml:76
+#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
 msgid "The device's active connection disappeared"
 msgstr "La connexion active du périphérique a disparu"
 
-#: ../plugins/hotspot/Common.qml:76 ../plugins/wifi/Common.qml:78
+#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
 msgid "Device disconnected by user or client"
 msgstr "Périphérique déconnecté par l'utilisateur ou le client"
 
-#: ../plugins/hotspot/Common.qml:78 ../plugins/wifi/Common.qml:80
+#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
 msgid "The device's existing connection was assumed"
 msgstr "L'existence d'une connexion avec le périphérique a été supposée"
 
-#: ../plugins/hotspot/Common.qml:80 ../plugins/wifi/Common.qml:82
+#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
 msgid "The supplicant is now available"
 msgstr "Le demandeur est maintenant disponible"
 
-#: ../plugins/hotspot/Common.qml:82 ../plugins/wifi/Common.qml:84
+#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
 msgid "The modem could not be found"
 msgstr "Le modem n'a pu être trouvé"
 
-#: ../plugins/hotspot/Common.qml:84 ../plugins/wifi/Common.qml:86
+#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
 msgid "The Bluetooth connection failed or timed out"
 msgstr "La connexion Bluetooth a échoué ou son délai a expiré"
 
-#: ../plugins/hotspot/Common.qml:86 ../plugins/wifi/Common.qml:88
+#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
 msgid "A dependency of the connection failed"
 msgstr "Une dépendance de la connexion a échoué"
 
-#: ../plugins/hotspot/Common.qml:88 ../plugins/wifi/Common.qml:90
+#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
 msgid "ModemManager is unavailable"
 msgstr "ModemManager est indisponible"
 
-#: ../plugins/hotspot/Common.qml:90 ../plugins/wifi/Common.qml:92
+#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
 msgid "The Wi-Fi network could not be found"
 msgstr "Le réseau Wi-Fi est introuvable"
 
-#: ../plugins/hotspot/Common.qml:92 ../plugins/wifi/Common.qml:94
+#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
 msgid "A secondary connection of the base connection failed"
 msgstr "Une connexion secondaire de la connexion de base a échoué"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr "Changer les paramètres du point d'accès"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 msgid "Set Up Hotspot"
 msgstr "Paramétrer le point d'accès"
 
-#: ../plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:167
 msgid "Hotspot name"
 msgstr "Nom du point d'accès"
 
-#: ../plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:168
 msgid "Choose a name"
 msgstr "Choisissez un nom"
 
-#: ../plugins/hotspot/HotspotSetup.qml:185
+#: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
 msgstr "Demander un mot de passe (recommandé) :"
 
-#: ../plugins/hotspot/HotspotSetup.qml:216
-#: ../plugins/wifi/NetworkDetails.qml:87 ../plugins/wifi/OtherNetwork.qml:821
+#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Afficher le mot de passe"
 
-#: ../plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Le démarrage du point d'accès allumera le Wi-Fi."
 
-#: ../plugins/hotspot/HotspotSetup.qml:266
+#: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
 msgstr "Modifier"
 
-#: ../plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
 msgstr "Démarrer"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: ../plugins/hotspot/PageComponent.qml:33
-#: ../plugins/hotspot/PageComponent.qml:85 settings.js:130
+#: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
 msgstr "Point d'accès"
 
-#: ../plugins/hotspot/PageComponent.qml:114
+#: plugins/hotspot/PageComponent.qml:114
 msgid ""
 "When hotspot is on, other devices can use your cellular data connection over "
 "Wi-Fi. Normal data charges apply."
@@ -968,7 +963,7 @@ msgstr ""
 "votre connexion de données cellulaire grâce au Wi-Fi. Les frais de données "
 "normaux s'appliquent."
 
-#: ../plugins/hotspot/PageComponent.qml:115
+#: plugins/hotspot/PageComponent.qml:115
 msgid ""
 "Other devices can use your cellular data connection over the Wi-Fi network. "
 "Normal data charges apply."
@@ -976,258 +971,264 @@ msgstr ""
 "Les autres appareils peuvent utiliser votre connexion de données cellulaire "
 "grâce au Wi-Fi. Les frais de données normaux s'appliquent."
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 msgid "Change Password/Setup…"
 msgstr "Modifier le mot de passe ou la configuration…"
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 msgid "Set Up Hotspot…"
 msgstr "Paramétrer le point d'accès…"
 
-#: ../plugins/hotspot/PageComponent.qml:155
+#: plugins/hotspot/PageComponent.qml:155
 msgid "Wi-Fi is off"
 msgstr "Le Wi-Fi est éteint"
 
-#: ../plugins/hotspot/PageComponent.qml:156
+#: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
 msgstr "Afin de créer un point d'accès, vous devez allumer le Wi-Fi."
 
-#: ../plugins/hotspot/PageComponent.qml:160
+#: plugins/hotspot/PageComponent.qml:160
 msgid "Turn on Wi-Fi"
 msgstr "Allumer le Wi-Fi"
 
-#: ../plugins/language/DisplayLanguage.qml:51
+#: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
 msgstr "Afficher la langue"
 
-#: ../plugins/language/DisplayLanguage.qml:55
-#: ../plugins/printing/AddPrinterDetails.qml:44
+#: plugins/language/DisplayLanguage.qml:55
+#: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
 msgstr "Précédent"
 
-#: ../plugins/language/DisplayLanguage.qml:66
+#: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
 msgstr "Confirmer"
 
-#: ../plugins/language/KeyboardLayouts.qml:29
-#: ../plugins/language/PageComponent.qml:163
+#: plugins/language/KeyboardLayouts.qml:29
+#: plugins/language/PageComponent.qml:163
 msgid "Keyboard layouts"
 msgstr "Agencements du clavier"
 
-#: ../plugins/language/KeyboardLayouts.qml:49
-msgid "All layouts available:"
-msgstr "Tous les agencements disponibles :"
-
-#: ../plugins/language/KeyboardLayouts.qml:49
+#: plugins/language/KeyboardLayouts.qml:49
 msgid "Current layouts:"
 msgstr "Agencements actuels :"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: ../plugins/language/PageComponent.qml:37 settings.js:138
+#: plugins/language/KeyboardLayouts.qml:49
+msgid "All layouts available:"
+msgstr "Tous les agencements disponibles :"
+
+#: plugins/language/PageComponent.qml:37
 msgid "Language & Text"
 msgstr "Langue et texte"
 
-#: ../plugins/language/PageComponent.qml:134
+#: plugins/language/PageComponent.qml:134
 msgid "Display language…"
 msgstr "Afficher la langue…"
 
-#: ../plugins/language/PageComponent.qml:150
+#: plugins/language/PageComponent.qml:150
 msgid "Enable on-screen keyboard"
 msgstr "Activer le clavier virtuel"
 
-#: ../plugins/language/PageComponent.qml:162
+#: plugins/language/PageComponent.qml:162
 msgid "On-screen keyboard"
 msgstr "Clavier virtuel"
 
-#: ../plugins/language/PageComponent.qml:173
+#: plugins/language/PageComponent.qml:173
 msgid "External keyboard"
 msgstr "Clavier externe"
 
-#: ../plugins/language/PageComponent.qml:184
+#: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
 msgstr "Ambiance"
 
-#: ../plugins/language/PageComponent.qml:185
+#: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
 msgstr "Suru Dark"
 
-#: ../plugins/language/PageComponent.qml:186
+#: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
 msgstr "Suru Black"
 
-#: ../plugins/language/PageComponent.qml:187
+#: plugins/language/PageComponent.qml:187
 msgid "Just White"
 msgstr "Juste Blanc"
 
-#: ../plugins/language/PageComponent.qml:188
+#: plugins/language/PageComponent.qml:188
 msgid "Just Black"
 msgstr "Juste Noir"
 
-#: ../plugins/language/PageComponent.qml:189
+#: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
 msgstr "Juste Gris"
 
-#: ../plugins/language/PageComponent.qml:190
+#: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
 msgstr "Bordure en blanc"
 
-#: ../plugins/language/PageComponent.qml:191
+#: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
 msgstr "Bordure en noir"
 
-#: ../plugins/language/PageComponent.qml:192
+#: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
 msgstr "Bordure en gris"
 
-#: ../plugins/language/PageComponent.qml:195
+#: plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
 msgstr "Thème de clavier virtuel"
 
-#: ../plugins/language/PageComponent.qml:196
+#: plugins/language/PageComponent.qml:196
 msgid "Keyboard theme"
 msgstr "Thème de clavier"
 
-#: ../plugins/language/PageComponent.qml:209
-#: ../plugins/language/PageComponent.qml:218
-#: ../plugins/language/SpellChecking.qml:29
-#: ../plugins/language/SpellChecking.qml:45
+#: plugins/language/PageComponent.qml:209
+#: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
+#: plugins/language/SpellChecking.qml:45
 msgid "Spell checking"
 msgstr "Vérification orthographique"
 
-#: ../plugins/language/PageComponent.qml:229
+#: plugins/language/PageComponent.qml:229
 msgid "Auto correction"
 msgstr "Correction automatique"
 
-#: ../plugins/language/PageComponent.qml:240
+#: plugins/language/PageComponent.qml:240
 msgid "Word suggestions"
 msgstr "Suggestion de mots"
 
-#: ../plugins/language/PageComponent.qml:254
+#: plugins/language/PageComponent.qml:254
 msgid "Auto capitalization"
 msgstr "Majuscules automatiques"
 
-#: ../plugins/language/PageComponent.qml:265
+#: plugins/language/PageComponent.qml:265
 msgid "Turns on Shift to capitalize the first letter of each sentence."
 msgstr ""
 "Active la touche Maj pour mettre en majuscule la première lettre de chaque "
 "phrase."
 
-#: ../plugins/language/PageComponent.qml:272
+#: plugins/language/PageComponent.qml:272
 msgid "Auto punctuation"
 msgstr "Ponctuation automatique"
 
-#: ../plugins/language/PageComponent.qml:284
+#: plugins/language/PageComponent.qml:284
 msgid "Inserts a period when you tap Space twice."
 msgstr "Ajoute un point lorsque vous appuyez deux fois sur Espace."
 
-#: ../plugins/language/PageComponent.qml:291
+#: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
 msgstr "Agrandir les touches"
 
-#: ../plugins/language/PageComponent.qml:302
-#: ../plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
 msgstr "Son du clavier"
 
-#: ../plugins/language/PageComponent.qml:313
+#: plugins/language/PageComponent.qml:313
 msgid "Keyboard vibration"
 msgstr "Vibration du clavier"
 
-#: ../plugins/language/PageComponent.qml:324
+#: plugins/language/PageComponent.qml:324
 msgid "Keyboard opacity"
 msgstr "Opacité du clavier"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:33
+#: plugins/language/PageHardwareKeyboard.qml:33
 msgid "Hardware keyboard"
 msgstr "Clavier physique"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:63
+#: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
 msgstr "Agencements et autres sources"
 
-#: ../plugins/language/RebootNecessary.qml:34
+#: plugins/language/RebootNecessary.qml:34
 msgid "The device needs to restart for changes to take effect."
 msgstr "L'appareil doit redémarrer pour que les changements prennent effet."
 
-#: ../plugins/language/RebootNecessary.qml:38
+#: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
 msgstr "Redémarrer maintenant"
 
-#: ../plugins/language/SpellChecking.qml:64
+#: plugins/language/SpellChecking.qml:64
 msgid "Current spelling languages:"
 msgstr "Langues d'orthographe actuelles :"
 
-#: ../plugins/language/SpellChecking.qml:65
+#: plugins/language/SpellChecking.qml:65
 msgid "All languages available:"
 msgstr "Toutes les langues disponibles :"
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: ../plugins/launcher/PageComponent.qml:31 settings.js:164
-msgid "Launcher"
-msgstr "Lanceur"
+#: plugins/launcher/PageComponent.qml:31
+#, fuzzy
+#| msgid "Reset Launcher"
+msgid "Desktop & Launcher"
+msgstr "Réinitialiser le lanceur"
 
-#: ../plugins/launcher/PageComponent.qml:65
+#: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
 msgstr "Sur de grands écrans :"
 
-#: ../plugins/launcher/PageComponent.qml:73
+#: plugins/launcher/PageComponent.qml:73
+msgid "Enable workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:74
+msgid "Supoprt for multiple virtual workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
 msgstr "Toujours afficher le lanceur"
 
-#: ../plugins/launcher/PageComponent.qml:74
+#: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
 msgstr ""
 "Les vidéos et les jeux en plein écran peuvent le cacher temporairement."
 
-#: ../plugins/launcher/PageComponent.qml:85
+#: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
 msgstr "Taille des icônes :"
 
-#: ../plugins/mouse/Connected.qml:62 ../plugins/mouse/Connected.qml:228
+#: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
 msgstr "Vitesse du curseur :"
 
-#: ../plugins/mouse/Connected.qml:98
+#: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
 msgstr "Vitesse de la roulette de défilement :"
 
-#: ../plugins/mouse/Connected.qml:134 ../plugins/mouse/Connected.qml:301
+#: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
 msgstr "Vitesse du double-clic :"
 
-#: ../plugins/mouse/Connected.qml:168 ../plugins/mouse/Connected.qml:335
+#: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
 msgstr "Tester le double-clic :"
 
-#: ../plugins/mouse/Connected.qml:214
+#: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
 msgstr "Pavé tactile"
 
-#: ../plugins/mouse/Connected.qml:264
+#: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
 msgstr "Vitesse de défilement avec les doigts :"
 
-#: ../plugins/mouse/Connected.qml:389
+#: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
 msgstr "Toucher pour cliquer"
 
-#: ../plugins/mouse/Connected.qml:403
+#: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
 msgstr "Faire défiler avec deux doigts"
 
-#: ../plugins/mouse/Connected.qml:410
+#: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
 msgstr "Ignorer le pavé tactile quand :"
 
-#: ../plugins/mouse/Connected.qml:432
+#: plugins/mouse/Connected.qml:432
 msgid "Typing"
 msgstr "Une saisie est effectuée"
 
-#: ../plugins/mouse/Connected.qml:446
+#: plugins/mouse/Connected.qml:446
 msgid "A mouse is connected"
 msgstr "Une souris est connectée"
 
-#: ../plugins/mouse/None.qml:34
+#: plugins/mouse/None.qml:34
 msgid ""
 "Connect a mouse or touchpad via USB, or use a Bluetooth device. If a "
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
@@ -1237,7 +1238,7 @@ msgstr ""
 "appareil Bluetooth. Si un appareil Bluetooth n'est pas détecté, assurez-vous "
 "qu'il est allumé et que sa batterie est chargée."
 
-#: ../plugins/mouse/None.qml:36
+#: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
@@ -1246,97 +1247,169 @@ msgstr ""
 "affichage. Assurez-vous qu'il est à proximité de l'appareil et que sa "
 "batterie est chargée."
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: ../plugins/mouse/PageComponent.qml:29 settings.js:170
+#: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
 msgstr "Souris et pavé tactile"
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:42
+#: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
 msgstr "Bouton principal :"
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:72
+#: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
 msgstr "Gauche"
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:89
+#: plugins/mouse/PrimaryButtonSelector.qml:89
 msgid "Right"
 msgstr "Droit"
 
-#: ../plugins/mouse/TapArea.qml:38
+#: plugins/mouse/TapArea.qml:38
 msgid "Not fast enough"
 msgstr "Pas assez rapide"
 
-#: ../plugins/mouse/TapArea.qml:77
+#: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
 msgstr "Double-cliqué"
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
-#: settings.js:184
+#: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: ../plugins/notifications/ClickAppNotifications.qml:62
-#: ../plugins/notifications/PageComponent.qml:29 settings.js:194
+#: plugins/notifications/CellBroadcast.qml:30
+#: plugins/notifications/CellBroadcast.qml:47
+#: plugins/notifications/PageComponent.qml:73
+msgid "Emergency Broadcast"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:125
+#, fuzzy
+#| msgid "The supplicant is now available"
+msgid "Cell Broadcast is not available"
+msgstr "Le demandeur est maintenant disponible"
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Enabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Disabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:165
+#, fuzzy
+#| msgid "alerts"
+msgid "Alerts:"
+msgstr "alertes"
+
+#: plugins/notifications/CellBroadcast.qml:171
+msgid "Receive emergency notifications"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:184
+msgid "Extreme threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:185
+msgid "Extreme threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:198
+msgid "Severe threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:199
+msgid "Severe threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:212
+msgid "AMBER Alerts"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:213
+msgid "Child abduction emergency bulletins"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:226
+msgid "Public safety messages"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:227
+msgid "Recommend actions to save life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:240
+msgid "Tests"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:241
+#, fuzzy
+#| msgid "alerts"
+msgid "Tests alerts"
+msgstr "alertes"
+
+#: plugins/notifications/ClickAppNotifications.qml:62
+#: plugins/notifications/PageComponent.qml:29
 msgid "Notifications"
 msgstr "Notifications"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:81
+#: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
 msgstr "Autoriser cette application à m'alerter en utilisant :"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:91
-#: ../plugins/notifications/PageComponent.qml:177
+#: plugins/notifications/ClickAppNotifications.qml:91
+#: plugins/notifications/PageComponent.qml:208
 msgid "Sounds"
 msgstr "Sons"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:114
-#: ../plugins/notifications/PageComponent.qml:180
+#: plugins/notifications/ClickAppNotifications.qml:114
+#: plugins/notifications/PageComponent.qml:211
 msgid "Vibrations"
 msgstr "Vibrations"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:137
+#: plugins/notifications/ClickAppNotifications.qml:137
 msgid "Notification Bubbles"
 msgstr "Des bulles de notifications"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:160
-#: ../plugins/notifications/PageComponent.qml:186
+#: plugins/notifications/ClickAppNotifications.qml:160
+#: plugins/notifications/PageComponent.qml:217
 msgid "Notification List"
 msgstr "Liste des notifications"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:30
-#: ../plugins/sound/PageComponent.qml:39 settings.js:268
+#: plugins/notifications/ClickAppsSoundsNotify.qml:30
+#: plugins/sound/PageComponent.qml:39
 msgid "Sound"
 msgstr "Son"
 
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:44
+#: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
 msgstr "Applications qui signalent les notifications par un son :"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:30
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 msgid "Vibration"
 msgstr "Vibration"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:50
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:50
 msgid "When in Silent mode:"
 msgstr "Lorsque le mode silencieux est activé :"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:69
 msgid "Vibrate as normal"
 msgstr "Vibrer comme d'habitude"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:70
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:70
 msgid "Don't vibrate"
 msgstr "Ne pas vibrer"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:85
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
 msgstr "Applications qui signalent les notifications en vibrant :"
 
-#: ../plugins/notifications/PageComponent.qml:75
+#: plugins/notifications/PageComponent.qml:84
+#: plugins/notifications/PageComponent.qml:174
+msgid "Applications:"
+msgstr "Applications :"
+
+#: plugins/notifications/PageComponent.qml:106
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
@@ -1344,247 +1417,240 @@ msgstr ""
 "Les applications sélectionnées peuvent vous prévenir grâce à des sons, des "
 "vibrations, des bulles de notification et grâce à la liste des notifications."
 
-#: ../plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
 msgstr "Applications utilisant une notification sonore"
 
-#: ../plugins/notifications/PageComponent.qml:117
+#: plugins/notifications/PageComponent.qml:148
 msgid "Apps that notify with vibration"
 msgstr "Applications signalant une notification par une vibration"
 
-#: ../plugins/notifications/PageComponent.qml:143
-msgid "Applications:"
-msgstr "Applications :"
-
-#: ../plugins/notifications/PageComponent.qml:172
+#: plugins/notifications/PageComponent.qml:203
 msgid "No notifications"
 msgstr "Aucune notification"
 
-#: ../plugins/notifications/PageComponent.qml:183
+#: plugins/notifications/PageComponent.qml:214
 msgid "Bubbles"
 msgstr "Bulles"
 
-#: ../plugins/printing/AddPrinter.qml:34
-#: ../plugins/printing/AddPrinterDetails.qml:54
-#: ../plugins/printing/PageComponent.qml:38
+#: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
+#: plugins/printing/PageComponent.qml:38
 msgid "Add printer"
 msgstr "Ajouter une imprimante"
 
-#: ../plugins/printing/AddPrinter.qml:65
+#: plugins/printing/AddPrinter.qml:65
 msgid "Enter URI"
 msgstr "Saisissez l'URI"
 
-#: ../plugins/printing/AddPrinter.qml:78
+#: plugins/printing/AddPrinter.qml:78
 msgid "Devices"
 msgstr "Périphériques"
 
-#: ../plugins/printing/AddPrinter.qml:133
+#: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
 msgstr "Aucun périphérique trouvé."
 
-#: ../plugins/printing/AddPrinterDetails.qml:37
+#: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
 msgstr "Décrivez l'imprimante"
 
-#: ../plugins/printing/AddPrinterDetails.qml:137
+#: plugins/printing/AddPrinterDetails.qml:137
 msgid "Connection"
 msgstr "Connexion"
 
-#: ../plugins/printing/AddPrinterDetails.qml:139
+#: plugins/printing/AddPrinterDetails.qml:139
 msgid "Choose a connection"
 msgstr "Choisissez une connexion"
 
-#: ../plugins/printing/AddPrinterDetails.qml:165
+#: plugins/printing/AddPrinterDetails.qml:165
 msgid "Printer name"
 msgstr "Nom de l'imprimante"
 
-#: ../plugins/printing/AddPrinterDetails.qml:202
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:32
-#: ../plugins/printing/printer-sub-pages/Status.qml:66
+#: plugins/printing/AddPrinterDetails.qml:202
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:66
 msgid "Description"
 msgstr "Description"
 
-#: ../plugins/printing/AddPrinterDetails.qml:204
-#: ../plugins/printing/AddPrinterDetails.qml:211
+#: plugins/printing/AddPrinterDetails.qml:204
+#: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
 msgstr "Facultatif"
 
-#: ../plugins/printing/AddPrinterDetails.qml:209
-#: ../plugins/printing/printer-sub-pages/Status.qml:72
+#: plugins/printing/AddPrinterDetails.qml:209
+#: plugins/printing/printer-sub-pages/Status.qml:72
 msgid "Location"
 msgstr "Lieu"
 
-#: ../plugins/printing/AddPrinterDetails.qml:219
+#: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
 msgstr "Pilote"
 
-#: ../plugins/printing/AddPrinterDetails.qml:225
+#: plugins/printing/AddPrinterDetails.qml:225
 msgid "Choose driver"
 msgstr "Choisir un pilote"
 
-#: ../plugins/printing/AddPrinterDetails.qml:227
+#: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
 msgstr "Sélectionner une imprimante dans la base de données"
 
-#: ../plugins/printing/AddPrinterDetails.qml:228
+#: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
 msgstr "Fournir un fichier PPD"
 
-#: ../plugins/printing/AddPrinterDetails.qml:235
+#: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
 msgstr "Filtrer les pilotes"
 
-#: ../plugins/printing/AddPrinterDetails.qml:304
+#: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
 msgstr "Fichier PPD"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: ../plugins/printing/PageComponent.qml:32 settings.js:230
+#: plugins/printing/PageComponent.qml:32
 msgid "Printing"
 msgstr "Impression"
 
-#: ../plugins/printing/PageComponent.qml:45
+#: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
 msgstr "Gestionnaire des tâches d'impression"
 
-#: ../plugins/printing/PageComponent.qml:106
+#: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
 msgstr "Imprimante par défaut"
 
-#: ../plugins/printing/PageComponent.qml:107
+#: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
 msgstr "Imprimantes configurées"
 
-#: ../plugins/printing/PageComponent.qml:115
+#: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
 msgstr "Imprimantes trouvées"
 
-#: ../plugins/printing/PageComponent.qml:136
+#: plugins/printing/PageComponent.qml:136
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../plugins/printing/PageComponent.qml:149
-#: ../plugins/printing/printer-sub-pages/Policies.qml:50
+#: plugins/printing/PageComponent.qml:149
+#: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
 msgstr "Définir par défaut"
 
-#: ../plugins/printing/PageComponent.qml:190
+#: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
 msgstr "Il n'y a pas encore d'imprimante configurée."
 
-#: ../plugins/printing/Printer.qml:42
+#: plugins/printing/Printer.qml:42
 msgid "Printer status"
 msgstr "Statut de l'imprimante"
 
-#: ../plugins/printing/Printer.qml:43
+#: plugins/printing/Printer.qml:43
 msgid "General settings"
 msgstr "Paramètres généraux"
 
-#: ../plugins/printing/Printer.qml:44
+#: plugins/printing/Printer.qml:44
 msgid "Policies"
 msgstr "Règles"
 
-#: ../plugins/printing/Printer.qml:47
+#: plugins/printing/Printer.qml:47
 msgid "Copies and pages"
 msgstr "Copies et pages"
 
-#: ../plugins/printing/PrinterConnection.qml:67
+#: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
 msgstr "Hôte"
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
 msgstr "Examplaires"
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
 msgstr "Taille du papier"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:43
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
 msgstr "Recto-verso"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:59
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
 msgid "Color model"
 msgstr "Modèle de couleurs"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:75
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
 msgstr "Qualité"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:27
+#: plugins/printing/printer-sub-pages/Policies.qml:27
 msgid "Enabled"
 msgstr "Activé"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:46
+#: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
 msgstr "Par défaut"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:47
+#: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
 msgstr "Ceci est l'imprimante par défaut."
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:60
+#: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
 msgstr "Acceptation des tâches"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:69
+#: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
 msgstr "Partagé"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:30
+#: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
 msgstr "Inactif"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
 msgstr "Interrompu"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:34
+#: plugins/printing/printer-sub-pages/Status.qml:34
 msgid "Active"
 msgstr "Actif"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:36
+#: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
 msgstr "Arrêté"
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
-#: ../plugins/printing/printer-sub-pages/Status.qml:40
+#: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
 msgstr "%1 — %2"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:43
+#: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
 msgstr "Aucun message"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:48
+#: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
 msgstr "Tâches"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:53
+#: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
 msgstr "Gérer les tâches d'impression"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:78
+#: plugins/printing/printer-sub-pages/Status.qml:78
 msgid "Address"
 msgstr "Adresse"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:84
+#: plugins/printing/printer-sub-pages/Status.qml:84
 msgid "Model"
 msgstr "Modèle"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:85
+#: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
 msgstr "Imprimante locale brute"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:88
+#: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
 msgstr "Imprimer la page de test"
 
-#: ../plugins/reset/EraseEverything.qml:41
-#: ../plugins/reset/PageComponent.qml:116
+#: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
 "deleted from this device."
@@ -1592,30 +1658,27 @@ msgstr ""
 "Tous les documents, les sauvegardes de jeux, les paramètres et les autres "
 "éléments vont être supprimés définitivement de cet appareil."
 
-#: ../plugins/reset/EraseEverything.qml:44
+#: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "Effacer et tout réinitialiser"
 
-#: ../plugins/reset/PageComponent.qml:35
+#: plugins/reset/PageComponent.qml:35
 msgid "Reset device"
 msgstr "Réinitialiser l'appareil"
 
-#: ../plugins/reset/PageComponent.qml:76
-#: ../plugins/reset/ResetLauncherHome.qml:44
+#: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
 msgstr "Réinitialiser le lanceur"
 
-#: ../plugins/reset/PageComponent.qml:84
-#: ../plugins/reset/ResetLauncherHome.qml:40
+#: plugins/reset/PageComponent.qml:84 plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
 msgstr "Le contenu initial du lanceur sera restauré."
 
-#: ../plugins/reset/PageComponent.qml:92
+#: plugins/reset/PageComponent.qml:92
 msgid "Reset all system settings…"
 msgstr "Réinitialiser tous les paramètres du système…"
 
-#: ../plugins/reset/PageComponent.qml:101
-#: ../plugins/reset/ResetAllSettings.qml:29
+#: plugins/reset/PageComponent.qml:101 plugins/reset/ResetAllSettings.qml:29
 msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
 "will be returned to their original settings."
@@ -1623,144 +1686,139 @@ msgstr ""
 "Le contenu et la présentation du lanceur et les filtres de la page d'accueil "
 "seront réinitialisés à leurs valeurs d'origine."
 
-#: ../plugins/reset/PageComponent.qml:108
+#: plugins/reset/PageComponent.qml:108
 msgid "Erase & Reset All"
 msgstr "Effacer et tout réinitialiser"
 
-#: ../plugins/reset/ResetAllSettings.qml:31
+#: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
 msgstr "Réinitialiser tous les paramètres du système"
 
-#: ../plugins/sound/PageComponent.qml:76
+#: plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
 msgstr "Mode silencieux"
 
-#: ../plugins/sound/PageComponent.qml:100
+#: plugins/sound/PageComponent.qml:100
 msgid "Ringer:"
 msgstr "Sonnerie :"
 
-#: ../plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
 msgstr "Un volume sonore élevé peut endommager votre audition."
 
-#: ../plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
 msgstr "Appels téléphoniques :"
 
-#: ../plugins/sound/PageComponent.qml:149
-#: ../plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
 msgid "Ringtone"
 msgstr "Sonnerie"
 
-#: ../plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:171
 msgid "Vibrate on ring"
 msgstr "Vibrer en sonnant"
 
-#: ../plugins/sound/PageComponent.qml:183
-#: ../plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
 msgid "Vibrate in Silent Mode"
 msgstr "Vibrer en mode silencieux"
 
-#: ../plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:194
 msgid "Dialpad tones"
 msgstr "Sons du clavier téléphonique"
 
-#: ../plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
 msgstr "Messages :"
 
-#: ../plugins/sound/PageComponent.qml:209
-#: ../plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
 msgid "Message received"
 msgstr "Message reçu"
 
-#: ../plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:230
 msgid "Vibrate with message sound"
 msgstr "Vibrer avec une alerte sonore"
 
-#: ../plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:247
 msgid "Other sounds:"
 msgstr "Autres sons :"
 
-#: ../plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:268
 msgid "Lock sound"
 msgstr "Son de verrouillage"
 
-#: ../plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:278
 msgid "Other vibrations"
 msgstr "Autres vibrations"
 
-#: ../plugins/sound/SoundsList.qml:132
-msgid "Custom Ringtone"
-msgstr "Sonnerie personnalisée"
-
-#: ../plugins/sound/SoundsList.qml:132
+#: plugins/sound/SoundsList.qml:132
 #, fuzzy
 #| msgid "Vibrate with message sound"
 msgid "Custom message sound"
 msgstr "Vibrer avec une alerte sonore"
 
-#: ../plugins/sound/SoundsList.qml:213
+#: plugins/sound/SoundsList.qml:132
+msgid "Custom Ringtone"
+msgstr "Sonnerie personnalisée"
+
+#: plugins/sound/SoundsList.qml:213
 msgid "Choose from"
 msgstr "Choisir à partir de"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:30
+#: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Fuseau horaire"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:50
+#: plugins/time-date/ChooseTimeZone.qml:50
 msgid "Set the time zone:"
 msgstr "Régler le fuseau horaire :"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Automatically"
 msgstr "Automatiquement"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Manually"
 msgstr "Manuellement"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:130
 msgid "Enter your current location."
 msgstr "Entrez votre position actuelle."
 
-#: ../plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "No matching place"
 msgstr "Aucun lieu ne correspond"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: ../plugins/time-date/PageComponent.qml:31 settings.js:286
+#: plugins/time-date/PageComponent.qml:31
 msgid "Time and Date"
 msgstr "Heure et date"
 
-#: ../plugins/time-date/PageComponent.qml:64
+#: plugins/time-date/PageComponent.qml:64
 msgid "Time zone:"
 msgstr "Fuseau horaire :"
 
-#: ../plugins/time-date/PageComponent.qml:79
+#: plugins/time-date/PageComponent.qml:79
 msgid "Set the time and date:"
 msgstr "Définir la date et l'heure :"
 
-#: ../plugins/time-date/TimePicker.qml:26
+#: plugins/time-date/TimePicker.qml:26
 msgid "Set time & date"
 msgstr "Définir la date et l'heure"
 
-#: ../plugins/time-date/TimePicker.qml:47
+#: plugins/time-date/TimePicker.qml:47
 msgid "Time"
 msgstr "Heure"
 
-#: ../plugins/time-date/TimePicker.qml:56
+#: plugins/time-date/TimePicker.qml:56
 msgid "Date"
 msgstr "Date"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: ../plugins/vpn/PageComponent.qml:31 settings.js:296
+#: plugins/vpn/PageComponent.qml:31
 msgid "VPN"
 msgstr "VPN"
 
-#: ../plugins/vpn/PageComponent.qml:76
+#: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
@@ -1768,131 +1826,130 @@ msgstr ""
 "Pour ajouter une configuration de Réseau Privé Virtuel, téléchargez son "
 "fichier de configuration ou configurez-le manuellement."
 
-#: ../plugins/vpn/PageComponent.qml:82
+#: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
 msgstr "Ajouter une configuration manuelle…"
 
-#: ../plugins/vpn/PageComponent.qml:117
+#: plugins/vpn/PageComponent.qml:117
 msgid "VPN reconnection required."
 msgstr "Reconnexion au VPN nécessaire."
 
-#: ../plugins/vpn/PageComponent.qml:118
+#: plugins/vpn/PageComponent.qml:118
 msgid "You need to reconnect for changes to have an effect."
 msgstr "Vous devez vous reconnecter pour que les changements prennent effet."
 
-#: ../plugins/wifi/CertDialog.qml:22
+#: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
 msgstr "Ajouter un certificat?"
 
-#: ../plugins/wifi/CertDialog.qml:24
+#: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
 msgstr "Ajouter une clé?"
 
-#: ../plugins/wifi/CertDialog.qml:26
+#: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
 msgstr "Ajouter un fichier .pac?"
 
-#: ../plugins/wifi/CertDialog.qml:36
+#: plugins/wifi/CertDialog.qml:36
 msgid "Content:"
 msgstr "Contenu :"
 
-#: ../plugins/wifi/CertDialog.qml:49
+#: plugins/wifi/CertDialog.qml:49
 msgid "No data available."
 msgstr "Aucune donnée disponible."
 
-#: ../plugins/wifi/CertDialog.qml:74
+#: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "Enregistrer"
 
-#: ../plugins/wifi/NetworkDetails.qml:38
+#: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
 msgstr "Détails du réseau"
 
-#: ../plugins/wifi/NetworkDetails.qml:65
+#: plugins/wifi/NetworkDetails.qml:65
 msgid "Last connected"
 msgstr "Dernière connexion"
 
-#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
 msgid "Password"
 msgstr "Mot de passe"
 
-#: ../plugins/wifi/NetworkDetails.qml:99
-#: ../plugins/wifi/NetworkDetailsBrief.qml:55
+#: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
 msgid "Forget this network"
 msgstr "Oublier ce réseau"
 
-#: ../plugins/wifi/NetworkDetailsBrief.qml:73
+#: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
 msgstr "Adresse IP"
 
-#: ../plugins/wifi/OtherNetwork.qml:92
+#: plugins/wifi/OtherNetwork.qml:92
 msgid "Connect to Wi‑Fi"
 msgstr "Se connecter au Wi-Fi"
 
-#: ../plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:93
 msgid "Connect to Hidden Network"
 msgstr "Se connecter à un réseau caché"
 
-#: ../plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:285
 msgid "Network name"
 msgstr "Nom du réseau"
 
-#: ../plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
 msgstr "SSID"
 
-#: ../plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
 msgstr "Sécurité"
 
-#: ../plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WPA & WPA2 Personal"
 msgstr "WPA & WPA2 personnels"
 
-#: ../plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:320
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA & WPA2 Entreprise"
 
-#: ../plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
 msgstr "WEP"
 
-#: ../plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
 msgstr "WEP Dynamique (802.1x)"
 
-#: ../plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
 msgstr "LEAP"
 
-#: ../plugins/wifi/OtherNetwork.qml:332
+#: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
 msgstr "Ce réseau n'est pas sûr."
 
-#: ../plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
 msgstr "Authentification"
 
-#: ../plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
 msgstr "Authentification interne"
 
-#: ../plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
 msgstr "Certificat du CA"
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: ../plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
 msgstr "%1…"
 
-#: ../plugins/wifi/OtherNetwork.qml:458 ../plugins/wifi/OtherNetwork.qml:575
-#: ../plugins/wifi/certhandler.cpp:106 ../plugins/wifi/certhandler.cpp:141
-#: ../plugins/wifi/certhandler.cpp:193 ../plugins/wifi/certhandler.cpp:225
-#: ../plugins/wifi/certhandler.cpp:290 ../plugins/wifi/certhandler.cpp:319
+#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
+#: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
+#: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
 msgstr "Choisir…"
 
@@ -1901,7 +1958,7 @@ msgstr "Choisir…"
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: ../plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr "%1…, Exp. : %2"
@@ -1910,805 +1967,512 @@ msgstr "%1…, Exp. : %2"
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: ../plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr "%1, Exp. : %2"
 
-#: ../plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
 msgstr ""
 "L'utilisation de certificats est recommandée car elle augmente la sécurité."
 
-#: ../plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
 msgstr "Certificat du client"
 
-#: ../plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
 msgstr "Clé privée de l'utilisateur"
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: ../plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr "%1, %2, %3 bit"
 
-#: ../plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
 msgstr "Fichier .pac"
 
-#: ../plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
 msgstr "Fourniture du fichier .pac"
 
-#: ../plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:686
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: ../plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
 msgstr "Anonyme"
 
-#: ../plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
 msgstr "Authentifié"
 
-#: ../plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
 msgstr "Les deux"
 
-#: ../plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:699
 msgid "PEAP version"
 msgstr "Version de PEAP"
 
-#: ../plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:713
 msgid "Version 0"
 msgstr "Version 0"
 
-#: ../plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:714
 msgid "Version 1"
 msgstr "Version 1"
 
-#: ../plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:715
 msgid "Automatic"
 msgstr "Automatique"
 
-#: ../plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
 msgstr "Identité anonyme"
 
-#: ../plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
 msgstr "Identité"
 
-#: ../plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
 msgstr "Nom d’utilisateur"
 
-#: ../plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
 msgstr "Mot de passe de la clé privée"
 
-#: ../plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:857
 msgid "Remember password"
 msgstr "Se souvenir du mot de passe"
 
-#: ../plugins/wifi/PageComponent.qml:129
+#: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
 msgstr "Se connecter à un réseau invisible…"
 
-#: ../plugins/wifi/PageComponent.qml:139
-#: ../plugins/wifi/PreviousNetworks.qml:27
+#: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
 msgstr "Réseaux précédents"
 
-#: ../plugins/wifi/RemoveBackground.qml:28
+#: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
 msgstr "Effacer"
 
-#: ../plugins/wifi/certhandler.cpp:258
+#: plugins/wifi/certhandler.cpp:258
 msgid "Private key"
 msgstr "Clé privée"
 
-#: ../plugins/wifi/certhandler.cpp:259
+#: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
 msgstr "Clé publique"
 
-#: ../plugins/wifi/certhandler.cpp:264
+#: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
 msgstr "Opaque"
 
-#: ../src/qml/MainWindow.qml:170 lomiri-system-settings.desktop.in.in.h:1
-msgid "System Settings"
-msgstr "Paramètres du système"
-
-#: ../src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:203
 msgid "Search"
 msgstr "Rechercher"
 
-#: ../src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:246
 msgid "Personal"
 msgstr "Personnel"
 
-#: ../src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "Système"
 
-#: lomiri-system-settings.desktop.in.in.h:2
-msgid "System;"
-msgstr "Système;"
+#~ msgid "Unavailable"
+#~ msgstr "Indisponible"
 
-#: lomiri-system-settings.desktop.in.in.h:3
-msgid "Preferences;Settings;"
-msgstr "Préférences;Réglages;"
+#~ msgid "Launcher"
+#~ msgstr "Lanceur"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:4
-msgid "about"
-msgstr "à propos"
+#~ msgid "System;"
+#~ msgstr "Système;"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:6 settings.js:78
-msgid "device"
-msgstr "périphérique"
+#~ msgid "about"
+#~ msgstr "à propos"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:8
-msgid "info"
-msgstr "informations"
+#~ msgid "device"
+#~ msgstr "périphérique"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:10
-msgid "phone"
-msgstr "téléphone"
+#~ msgid "info"
+#~ msgstr "informations"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:12
-msgid "number"
-msgstr "numéro"
+#~ msgid "phone"
+#~ msgstr "téléphone"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:14
-msgid "imei"
-msgstr "imei"
+#~ msgid "number"
+#~ msgstr "numéro"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:16
-msgid "serial"
-msgstr "série"
+#~ msgid "imei"
+#~ msgstr "imei"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:18 settings.js:310 settings.js:332
-msgid "address"
-msgstr "adresse"
+#~ msgid "serial"
+#~ msgstr "série"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:20
-msgid "mac"
-msgstr "mac"
+#~ msgid "address"
+#~ msgstr "adresse"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:22
-msgid "licenses"
-msgstr "licences"
+#~ msgid "mac"
+#~ msgstr "mac"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:24
-msgid "developer"
-msgstr "développeur"
+#~ msgid "licenses"
+#~ msgstr "licences"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:26 settings.js:196
-msgid "software"
-msgstr "logiciel"
+#~ msgid "developer"
+#~ msgstr "développeur"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:28
-msgid "storage"
-msgstr "stockage"
+#~ msgid "software"
+#~ msgstr "logiciel"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:30
-msgid "disk"
-msgstr "disque"
+#~ msgid "storage"
+#~ msgstr "stockage"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:32
-msgid "space"
-msgstr "espace"
+#~ msgid "disk"
+#~ msgstr "disque"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:34
-msgid "version"
-msgstr "version"
+#~ msgid "space"
+#~ msgstr "espace"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:36
-msgid "revision"
-msgstr "révision"
+#~ msgid "version"
+#~ msgstr "version"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:40 settings.js:168
-msgid "appearance"
-msgstr "apparence"
+#~ msgid "revision"
+#~ msgstr "révision"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:42
-msgid "background"
-msgstr "arrière-plan"
+#~ msgid "appearance"
+#~ msgstr "apparence"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:44
-msgid "wallpaper"
-msgstr "fond d'écran"
+#~ msgid "background"
+#~ msgstr "arrière-plan"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:46
-msgid "art"
-msgstr "art"
+#~ msgid "wallpaper"
+#~ msgstr "fond d'écran"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:48
-msgid "photo"
-msgstr "photo"
+#~ msgid "art"
+#~ msgstr "art"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:50
-msgid "picture"
-msgstr "image"
+#~ msgid "photo"
+#~ msgstr "photo"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:52
-msgid "image"
-msgstr "image"
+#~ msgid "picture"
+#~ msgstr "image"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:56
-msgid "battery"
-msgstr "batterie"
+#~ msgid "image"
+#~ msgstr "image"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:58
-msgid "power"
-msgstr "alimentation"
+#~ msgid "battery"
+#~ msgstr "batterie"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:60
-msgid "charge"
-msgstr "charge"
+#~ msgid "power"
+#~ msgstr "alimentation"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:62
-msgid "idle"
-msgstr "inactif"
+#~ msgid "charge"
+#~ msgstr "charge"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:64 settings.js:224
-msgid "lock"
-msgstr "verrouiller"
+#~ msgid "idle"
+#~ msgstr "inactif"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:66
-msgid "disable"
-msgstr "désactiver"
+#~ msgid "lock"
+#~ msgstr "verrouiller"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:68
-msgid "enable"
-msgstr "activer"
+#~ msgid "disable"
+#~ msgstr "désactiver"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:72
-msgid "bluetooth"
-msgstr "bluetooth"
+#~ msgid "enable"
+#~ msgstr "activer"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:74
-msgid "headset"
-msgstr "écouteurs"
+#~ msgid "bluetooth"
+#~ msgstr "bluetooth"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:76
-msgid "pair"
-msgstr "paire"
+#~ msgid "headset"
+#~ msgstr "écouteurs"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:80
-msgid "discover"
-msgstr "découverte"
+#~ msgid "pair"
+#~ msgstr "paire"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:82
-msgid "car"
-msgstr "voiture"
+#~ msgid "discover"
+#~ msgstr "découverte"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:84
-msgid "handsfree"
-msgstr "kit mains-libres"
+#~ msgid "car"
+#~ msgstr "voiture"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:86 settings.js:318
-msgid "wireless"
-msgstr "sans fil"
+#~ msgid "handsfree"
+#~ msgstr "kit mains-libres"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:88 settings.js:300 settings.js:324
-msgid "connect"
-msgstr "connecter"
+#~ msgid "wireless"
+#~ msgstr "sans fil"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:90 settings.js:302 settings.js:326
-msgid "disconnect"
-msgstr "déconnecter"
+#~ msgid "connect"
+#~ msgstr "connecter"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:92
-msgid "stereo"
-msgstr "stéréo"
+#~ msgid "disconnect"
+#~ msgstr "déconnecter"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:96
-msgid "brightness"
-msgstr "luminosité"
+#~ msgid "stereo"
+#~ msgstr "stéréo"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:98 settings.js:158
-msgid "display"
-msgstr "affichage"
+#~ msgid "brightness"
+#~ msgstr "luminosité"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:100 settings.js:226
-msgid "screen"
-msgstr "écran"
+#~ msgid "display"
+#~ msgstr "affichage"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:102 settings.js:146 settings.js:294
-msgid "automatic"
-msgstr "automatique"
+#~ msgid "screen"
+#~ msgstr "écran"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:104
-msgid "adjust"
-msgstr "ajuster"
+#~ msgid "automatic"
+#~ msgstr "automatique"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:106
-msgid "Example"
-msgstr "Exemple"
+#~ msgid "adjust"
+#~ msgstr "ajuster"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:108
-msgid "example"
-msgstr "exemple"
+#~ msgid "Example"
+#~ msgstr "Exemple"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:110
-msgid "test"
-msgstr "test"
+#~ msgid "example"
+#~ msgstr "exemple"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:112
-msgid "sample"
-msgstr "exemple"
+#~ msgid "test"
+#~ msgstr "test"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:114
-msgid "Flight Mode"
-msgstr "Mode avion"
+#~ msgid "sample"
+#~ msgstr "exemple"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:116
-msgid "flight"
-msgstr "vol"
+#~ msgid "Flight Mode"
+#~ msgstr "Mode avion"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:118
-msgid "plane"
-msgstr "avion"
+#~ msgid "flight"
+#~ msgstr "vol"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:120
-msgid "offline"
-msgstr "hors ligne"
+#~ msgid "plane"
+#~ msgstr "avion"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:122
-msgid "airplane"
-msgstr "avion"
+#~ msgid "offline"
+#~ msgstr "hors ligne"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:124 settings.js:132 settings.js:298 settings.js:316
-msgid "network"
-msgstr "réseau"
+#~ msgid "airplane"
+#~ msgstr "avion"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: settings.js:128
+#~ msgid "network"
+#~ msgstr "réseau"
+
 #, fuzzy
-#| msgid "Pictures"
-msgid "gestures"
-msgstr "Photos"
+#~| msgid "Pictures"
+#~ msgid "gestures"
+#~ msgstr "Photos"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:134
-msgid "hotspot"
-msgstr "point d'accès"
+#~ msgid "hotspot"
+#~ msgstr "point d'accès"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:136
-msgid "tethering"
-msgstr "connexion"
+#~ msgid "tethering"
+#~ msgstr "connexion"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:140
-msgid "language"
-msgstr "langue"
+#~ msgid "language"
+#~ msgstr "langue"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:142 settings.js:282
-msgid "keyboard"
-msgstr "clavier"
+#~ msgid "keyboard"
+#~ msgstr "clavier"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:144
-msgid "spellcheck"
-msgstr "vérification orthographique"
+#~ msgid "spellcheck"
+#~ msgstr "vérification orthographique"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:148
-msgid "correct"
-msgstr "corriger"
+#~ msgid "correct"
+#~ msgstr "corriger"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:150
-msgid "suggestions"
-msgstr "suggestions"
+#~ msgid "suggestions"
+#~ msgstr "suggestions"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:152
-msgid "capitalization"
-msgstr "majuscules"
+#~ msgid "capitalization"
+#~ msgstr "majuscules"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:154
-msgid "punctuation"
-msgstr "ponctuation"
+#~ msgid "punctuation"
+#~ msgstr "ponctuation"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:156
-msgid "layout"
-msgstr "agencement"
+#~ msgid "layout"
+#~ msgstr "agencement"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:160
-msgid "words"
-msgstr "mots"
+#~ msgid "words"
+#~ msgstr "mots"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:162
-msgid "vibration"
-msgstr "vibration"
+#~ msgid "vibration"
+#~ msgstr "vibration"
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:166
-msgid "launcher"
-msgstr "lanceur"
+#~ msgid "launcher"
+#~ msgstr "lanceur"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:172
-msgid "mouse"
-msgstr "souris"
+#~ msgid "mouse"
+#~ msgstr "souris"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:174
-msgid "touchpad"
-msgstr "pavé tactile"
+#~ msgid "touchpad"
+#~ msgstr "pavé tactile"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:176
-msgid "tap"
-msgstr "toucher"
+#~ msgid "tap"
+#~ msgstr "toucher"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:178
-msgid "touch"
-msgstr "toucher"
+#~ msgid "touch"
+#~ msgstr "toucher"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:180
-msgid "click"
-msgstr "click"
+#~ msgid "click"
+#~ msgstr "click"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:182
-msgid "input"
-msgstr "entrée"
+#~ msgid "input"
+#~ msgstr "entrée"
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:186
-msgid "nfc"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:188
-msgid "near"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:190
-msgid "field"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:192
 #, fuzzy
-#| msgid "Authentication"
-msgid "communication"
-msgstr "Authentification"
+#~| msgid "Authentication"
+#~ msgid "communication"
+#~ msgstr "Authentification"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:198
-msgid "notifications"
-msgstr "notifications"
+#~ msgid "notifications"
+#~ msgstr "notifications"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:200 settings.js:228
-msgid "apps"
-msgstr "applications"
+#~ msgid "apps"
+#~ msgstr "applications"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:202
-msgid "authorize"
-msgstr "autoriser"
+#~ msgid "authorize"
+#~ msgstr "autoriser"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:204
-msgid "alerts"
-msgstr "alertes"
+#~ msgid "permissions"
+#~ msgstr "permissions"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:206
-msgid "permissions"
-msgstr "permissions"
+#~ msgid "badges"
+#~ msgstr "badges"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:208
-msgid "badges"
-msgstr "badges"
+#~ msgid "facebook"
+#~ msgstr "facebook"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:210
-msgid "facebook"
-msgstr "facebook"
+#~ msgid "twitter"
+#~ msgstr "twitter"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:212
-msgid "twitter"
-msgstr "twitter"
+#~ msgid "flickr"
+#~ msgstr "flickr"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:214
-msgid "flickr"
-msgstr "flickr"
+#~ msgid "gmail"
+#~ msgstr "gmail"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:216
-msgid "gmail"
-msgstr "gmail"
+#~ msgid "Rotation Lock"
+#~ msgstr "Verrouillage de la rotation"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:218
-msgid "Rotation Lock"
-msgstr "Verrouillage de la rotation"
+#~ msgid "rotation"
+#~ msgstr "rotation"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:220
-msgid "rotation"
-msgstr "rotation"
+#~ msgid "orientation"
+#~ msgstr "orientation"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:222
-msgid "orientation"
-msgstr "orientation"
+#~ msgid "printer"
+#~ msgstr "imprimante"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:232
-msgid "printer"
-msgstr "imprimante"
+#~ msgid "printers"
+#~ msgstr "imprimantes"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:234
-msgid "printers"
-msgstr "imprimantes"
+#~ msgid "printing"
+#~ msgstr "impression"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:236
-msgid "printing"
-msgstr "impression"
+#~ msgid "pdf"
+#~ msgstr "pdf"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:238
-msgid "pdf"
-msgstr "pdf"
+#~ msgid "ppd"
+#~ msgstr "ppd"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:240
-msgid "ppd"
-msgstr "ppd"
+#~ msgid "collate"
+#~ msgstr "compiler"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:242
-msgid "collate"
-msgstr "compiler"
+#~ msgid "copies"
+#~ msgstr "exemplaires"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:244
-msgid "copies"
-msgstr "exemplaires"
+#~ msgid "colormodel"
+#~ msgstr "modèle de couleurs"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:246
-msgid "colormodel"
-msgstr "modèle de couleurs"
+#~ msgid "greyscale"
+#~ msgstr "échelle de gris"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:248
-msgid "greyscale"
-msgstr "échelle de gris"
+#~ msgid "color"
+#~ msgstr "couleur"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:250
-msgid "color"
-msgstr "couleur"
+#~ msgid "laser"
+#~ msgstr "laser"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:252
-msgid "laser"
-msgstr "laser"
+#~ msgid "ink"
+#~ msgstr "encre"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:254
-msgid "ink"
-msgstr "encre"
+#~ msgid "Reset"
+#~ msgstr "Réinitialiser"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:256
-msgid "Reset"
-msgstr "Réinitialiser"
+#~ msgid "reset"
+#~ msgstr "réinitialiser"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:258
-msgid "reset"
-msgstr "réinitialiser"
+#~ msgid "erase"
+#~ msgstr "effacer"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:260
-msgid "erase"
-msgstr "effacer"
+#~ msgid "factory"
+#~ msgstr "usine"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:262
-msgid "factory"
-msgstr "usine"
+#~ msgid "clear"
+#~ msgstr "effacer"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:264
-msgid "clear"
-msgstr "effacer"
+#~ msgid "restore"
+#~ msgstr "restaurer"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:266
-msgid "restore"
-msgstr "restaurer"
+#~ msgid "sound"
+#~ msgstr "son"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:270
-msgid "sound"
-msgstr "son"
+#~ msgid "silent"
+#~ msgstr "silencieux"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:272
-msgid "silent"
-msgstr "silencieux"
+#~ msgid "ringtone"
+#~ msgstr "sonnerie"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:274
-msgid "ringtone"
-msgstr "sonnerie"
+#~ msgid "vibrate"
+#~ msgstr "vibrer"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:276
-msgid "vibrate"
-msgstr "vibrer"
+#~ msgid "dialpad"
+#~ msgstr "clavier"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:278
-msgid "dialpad"
-msgstr "clavier"
+#~ msgid "message"
+#~ msgstr "message"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:280
-msgid "message"
-msgstr "message"
+#~ msgid "volume"
+#~ msgstr "volume"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:284
-msgid "volume"
-msgstr "volume"
+#~ msgid "time"
+#~ msgstr "heure"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:288
-msgid "time"
-msgstr "heure"
+#~ msgid "date"
+#~ msgstr "date"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:290
-msgid "date"
-msgstr "date"
+#~ msgid "timezone"
+#~ msgstr "fuseau horaire"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:292
-msgid "timezone"
-msgstr "fuseau horaire"
+#~ msgid "vpn"
+#~ msgstr "vpn"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:304
-msgid "vpn"
-msgstr "vpn"
+#~ msgid "openvpn"
+#~ msgstr "openvpn"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:306
-msgid "openvpn"
-msgstr "openvpn"
+#~ msgid "ip"
+#~ msgstr "ip"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:308 settings.js:330
-msgid "ip"
-msgstr "ip"
+#~ msgid "routing"
+#~ msgstr "routage"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:312
-msgid "routing"
-msgstr "routage"
+#~ msgid "wifi"
+#~ msgstr "wifi"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:320
-msgid "wifi"
-msgstr "wifi"
+#~ msgid "WiFi"
+#~ msgstr "WiFi"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:322
-msgid "WiFi"
-msgstr "WiFi"
-
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:328
-msgid "hidden"
-msgstr "caché"
+#~ msgid "hidden"
+#~ msgstr "caché"
 
 #~ msgid "Used by Ubuntu"
 #~ msgstr "Utilisé par Ubuntu"

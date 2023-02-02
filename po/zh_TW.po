@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 17:14+0000\n"
+"POT-Creation-Date: 2023-01-31 13:27+0000\n"
 "PO-Revision-Date: 2021-02-21 01:01+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -20,25 +20,27 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:42+0000\n"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+msgid "System Settings"
+msgstr "系統設定"
+
+#: lomiri-system-settings.desktop.in:5
+msgid "Preferences;Settings;"
+msgstr "偏好設定;設定;"
+
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
 msgstr "無法取消目前的請求 (無法聯繫服務)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
 msgid "Can't pause current request (can't contact service)"
 msgstr "無法暫停目前的請求 (無法聯繫服務)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
-msgid "Unavailable"
-msgstr "不可用"
-
-#: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
+#: plugins/about/DevMode.qml:34 plugins/about/DevMode.qml:90
 msgid "Developer Mode"
 msgstr "開發人員模式"
 
-#: ../plugins/about/DevMode.qml:83
+#: plugins/about/DevMode.qml:83
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
@@ -46,898 +48,891 @@ msgstr ""
 "在「開發人員模式」下，任何人只需要將這個裝置連線到其他裝置，即可存取、變更、"
 "或刪除任何東西。"
 
-#: ../plugins/about/DevMode.qml:107
+#: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr "您需要設定 PIN 密碼或密碼才能使用「開發人員模式」。"
 
-#: ../plugins/about/DevMode.qml:113
+#: plugins/about/DevMode.qml:115
 msgid "Lock security"
 msgstr "安全鎖"
 
-#: ../plugins/about/License.qml:29
+#: plugins/about/License.qml:29
 msgid "Sorry, this license could not be displayed."
 msgstr "抱歉，無法顯示此授權條款。"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: ../plugins/about/PageComponent.qml:33 settings.js:2
+#: plugins/about/PageComponent.qml:33
 msgid "About"
 msgstr "關於"
 
-#: ../plugins/about/PageComponent.qml:97
+#: plugins/about/PageComponent.qml:97
 msgid "Serial"
 msgstr "序號"
 
-#: ../plugins/about/PageComponent.qml:107
-#: ../plugins/about/PageComponent.qml:108
-#: ../plugins/about/PageComponent.qml:119
-#: ../plugins/bluetooth/DevicePage.qml:73
-#: ../plugins/bluetooth/DevicePage.qml:82
-#: ../plugins/bluetooth/DevicePage.qml:110
-#: ../plugins/printing/printer-sub-pages/Status.qml:50
-#: ../plugins/wifi/OtherNetwork.qml:318 ../plugins/wifi/OtherNetwork.qml:457
-#: ../plugins/wifi/OtherNetwork.qml:574 ../plugins/wifi/certhandler.cpp:105
-#: ../plugins/wifi/certhandler.cpp:140 ../plugins/wifi/certhandler.cpp:192
-#: ../plugins/wifi/certhandler.cpp:224 ../plugins/wifi/certhandler.cpp:289
-#: ../plugins/wifi/certhandler.cpp:318
+#: plugins/about/PageComponent.qml:107 plugins/about/PageComponent.qml:108
+#: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
+#: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
+#: plugins/printing/printer-sub-pages/Status.qml:50
+#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
+#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
+#: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
+#: plugins/wifi/certhandler.cpp:318
 msgid "None"
 msgstr "沒有"
 
-#: ../plugins/about/PageComponent.qml:128
+#: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
 msgstr "Wi-Fi 位址"
 
-#: ../plugins/about/PageComponent.qml:136
+#: plugins/about/PageComponent.qml:136
 msgid "Bluetooth address"
 msgstr "藍牙位址"
 
-#: ../plugins/about/PageComponent.qml:147 ../plugins/about/Storage.qml:31
+#: plugins/about/PageComponent.qml:147 plugins/about/Storage.qml:31
 msgid "Storage"
 msgstr "儲存空間"
 
 #. TRANSLATORS: that's the free disk space, indicated in the most appropriate storage unit
-#: ../plugins/about/PageComponent.qml:149
+#: plugins/about/PageComponent.qml:149
 #, qt-format
 msgid "%1 free"
 msgstr "%1 可用"
 
-#: ../plugins/about/PageComponent.qml:157
+#: plugins/about/PageComponent.qml:156
 msgid "Software:"
 msgstr "軟體："
 
-#: ../plugins/about/PageComponent.qml:169
+#: plugins/about/PageComponent.qml:168
 msgid "OS"
 msgstr "作業系統"
 
-#: ../plugins/about/PageComponent.qml:181
+#: plugins/about/PageComponent.qml:180
 msgid "Last updated"
 msgstr "上次更新"
 
-#: ../plugins/about/PageComponent.qml:183
-#: ../plugins/battery/PageComponent.qml:328
-#: ../plugins/battery/PageComponent.qml:346
-#: ../plugins/battery/SleepValues.qml:108 ../plugins/wifi/NetworkDetails.qml:67
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "永不"
 
-#: ../plugins/about/PageComponent.qml:191
+#: plugins/about/PageComponent.qml:190
 msgid "Check for updates"
 msgstr "檢查是否有更新"
 
-#: ../plugins/about/PageComponent.qml:222
+#: plugins/about/PageComponent.qml:221
 msgid "Legal:"
 msgstr "法律資訊："
 
-#: ../plugins/about/PageComponent.qml:227 ../plugins/about/Software.qml:11
+#: plugins/about/PageComponent.qml:226 plugins/about/Software.qml:11
 msgid "Software licenses"
 msgstr "軟體授權條款"
 
-#: ../plugins/about/PageComponent.qml:234
+#: plugins/about/PageComponent.qml:233
 msgid "Regulatory info"
 msgstr "管制資訊"
 
-#: ../plugins/about/PageComponent.qml:241
+#: plugins/about/PageComponent.qml:240
 msgid "Developer mode"
 msgstr "開發人員模式"
 
-#: ../plugins/about/Storage.qml:43
+#: plugins/about/Storage.qml:43
 msgid "Scanning"
 msgstr "掃描中"
 
-#: ../plugins/about/Storage.qml:123
+#: plugins/about/Storage.qml:123
 #, fuzzy
 #| msgid "System Settings"
 msgid "System Reserved"
 msgstr "系統設定"
 
-#: ../plugins/about/Storage.qml:124
+#: plugins/about/Storage.qml:124
 #, fuzzy
 #| msgid "Used by apps"
 msgid "Used by system"
 msgstr "由應用程式使用"
 
-#: ../plugins/about/Storage.qml:125
+#: plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr "影片"
 
-#: ../plugins/about/Storage.qml:126
+#: plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr "音訊"
 
-#: ../plugins/about/Storage.qml:127
+#: plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr "圖片"
 
-#: ../plugins/about/Storage.qml:128
+#: plugins/about/Storage.qml:128
 msgid "Documents"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:129
+#: plugins/about/Storage.qml:129
 msgid "Downloads"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:130
+#: plugins/about/Storage.qml:130
 msgid "Anbox"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:131
+#: plugins/about/Storage.qml:131
 msgid "Libertine"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:132
+#: plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr "其他檔案"
 
-#: ../plugins/about/Storage.qml:133
+#: plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr "由應用程式使用"
 
-#: ../plugins/about/Storage.qml:191
+#: plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr "總計儲存空間"
 
-#: ../plugins/about/Storage.qml:215
+#: plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr "可用空間"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By name"
 msgstr "依名稱"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By size"
 msgstr "依大小"
 
-#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
-#: ../plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
+#: plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr "不適用"
 
-#: ../plugins/about/Version.qml:33
+#: plugins/about/Version.qml:33
 msgid "OS Build Details"
 msgstr "作業系統構建詳細內容"
 
-#: ../plugins/about/Version.qml:60
+#: plugins/about/Version.qml:60
+msgid "OS update channel"
+msgstr ""
+
+#: plugins/about/Version.qml:67
 msgid "OS build number"
 msgstr "作業系統構建編號"
 
-#: ../plugins/about/Version.qml:66
+#: plugins/about/Version.qml:74
+msgid "Kernel"
+msgstr ""
+
+#: plugins/about/Version.qml:80
+msgid "Build ABI"
+msgstr ""
+
+#: plugins/about/Version.qml:86
 msgid "UBports Image part"
 msgstr "UBports 映像構件"
 
-#: ../plugins/about/Version.qml:74
+#: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
 msgstr "Ubuntu 構建描述"
 
-#: ../plugins/about/Version.qml:80
+#: plugins/about/Version.qml:100
 msgid "Device Image part"
 msgstr "裝置映像構件"
 
-#: ../plugins/about/Version.qml:87
+#: plugins/about/Version.qml:107
 msgid "Device build description"
 msgstr "裝置構建描述"
 
-#: ../plugins/about/Version.qml:94
+#: plugins/about/Version.qml:114
 msgid "Customization Image part"
 msgstr "自訂映像構件"
 
-#: ../plugins/about/click.cpp:134
+#: plugins/about/click.cpp:134
 msgid "Unknown title"
 msgstr "未知標題"
 
-#: ../plugins/background/Components/AddRemove.qml:42
-#: ../plugins/background/Preview.qml:109
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:49
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:51
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:46
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:54
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: ../plugins/hotspot/HotspotSetup.qml:255
-#: ../plugins/hotspot/PageComponent.qml:166
-#: ../plugins/language/DisplayLanguage.qml:46
-#: ../plugins/language/RebootNecessary.qml:48
-#: ../plugins/printing/AddPrinter.qml:41
-#: ../plugins/reset/EraseEverything.qml:55
-#: ../plugins/reset/ResetAllSettings.qml:39
-#: ../plugins/reset/ResetLauncherHome.qml:56
-#: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
-#: ../plugins/wifi/OtherNetwork.qml:889
+#: plugins/background/Components/AddRemove.qml:42
+#: plugins/background/Preview.qml:110
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:51
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:46
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:54
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:55
+#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/language/DisplayLanguage.qml:46
+#: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
+#: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
+#: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
 msgstr "取消"
 
-#: ../plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
 msgstr "未選取圖像"
 
-#: ../plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:65
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "移除 %1 個圖像"
 
-#: ../plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:79
 msgid "Add an image…"
 msgstr "加入圖像…"
 
-#: ../plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:89
 msgid "Remove images…"
 msgstr "移除圖像…"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: ../plugins/background/MainPage.qml:34 settings.js:38
-msgid "Background"
+#: plugins/background/MainPage.qml:35
+#, fuzzy
+#| msgid "Background"
+msgid "Background & Appearance"
 msgstr "背景"
 
-#: ../plugins/background/MainPage.qml:85
+#: plugins/background/MainPage.qml:87
+msgid "Enable blur effects"
+msgstr ""
+
+#: plugins/background/MainPage.qml:104
 #, fuzzy
 #| msgid "System"
 msgid "System Art"
 msgstr "系統"
 
-#: ../plugins/background/MainPage.qml:98
+#: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "自訂"
 
-#: ../plugins/background/MainPage.qml:157
+#: plugins/background/MainPage.qml:176
 #, fuzzy
 #| msgid "Choose a connection"
 msgid "Choose application"
 msgstr "選擇一個來連接"
 
-#: ../plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:69
 msgid "Preview"
 msgstr "預覽"
 
-#: ../plugins/background/Preview.qml:109
+#: plugins/background/Preview.qml:110
 msgid "Remove image"
 msgstr "移除圖像"
 
-#: ../plugins/background/Preview.qml:115 ../plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "設置"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:35 settings.js:54
+#: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "電池"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:44
+#: plugins/battery/PageComponent.qml:44
 #, qt-format
 msgid "%1 second ago"
 msgid_plural "%1 seconds ago"
 msgstr[0] "%1 秒之前"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:47
+#: plugins/battery/PageComponent.qml:47
 #, qt-format
 msgid "%1 minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "%1 分鐘之前"
 
 #. TRANSLATORS: %1 is the number of hours
-#: ../plugins/battery/PageComponent.qml:50
+#: plugins/battery/PageComponent.qml:50
 #, qt-format
 msgid "%1 hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "%1 小時之前"
 
-#: ../plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:104
 msgid "Charge level"
 msgstr "充電量"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: ../plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:112
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: ../plugins/battery/PageComponent.qml:191
-#: ../plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
 msgstr "昨天"
 
-#: ../plugins/battery/PageComponent.qml:199
-#: ../plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
 msgid "Today"
 msgstr "今天"
 
-#: ../plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:271
 msgid "Charging now"
 msgstr "正在充電"
 
-#: ../plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:273
 msgid "Last full charge"
 msgstr "上次完全充電"
 
-#: ../plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:275
 msgid "Fully charged"
 msgstr "完全充電"
 
-#: ../plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:294
 msgid "Ways to reduce battery use:"
 msgstr "減少電池使用量的方法："
 
-#: ../plugins/battery/PageComponent.qml:298
-#: ../plugins/brightness/PageComponent.qml:84
+#: plugins/battery/PageComponent.qml:298
+#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "顯示亮度"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Lock when idle"
 msgstr "閒置時鎖定"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Sleep when idle"
 msgstr "閒置時睡眠"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:331
 #, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
 msgstr[0] "%1 分鐘之後"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:335
-#: ../plugins/battery/PageComponent.qml:343
-#: ../plugins/battery/SleepValues.qml:85 ../plugins/battery/SleepValues.qml:89
-#: ../plugins/battery/SleepValues.qml:93 ../plugins/battery/SleepValues.qml:97
-#: ../plugins/battery/SleepValues.qml:101
-#: ../plugins/battery/SleepValues.qml:105
+#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
+#: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
+#: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
 msgstr[0] "%1 分鐘之後"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:374
-#: ../plugins/wifi/PageComponent.qml:28 settings.js:314
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: ../plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:374
 msgid "Wi-Fi used for hotspot"
 msgstr "Wi-Fi 熱點"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:410
-#: ../plugins/bluetooth/PageComponent.qml:33
-#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:70
+#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "藍牙"
 
-#: ../plugins/battery/SleepValues.qml:68
+#: plugins/battery/SleepValues.qml:68
 msgid "Lock the device when it's not in use:"
 msgstr "當裝置不使用時過了這段時間後鎖定："
 
-#: ../plugins/battery/SleepValues.qml:69
+#: plugins/battery/SleepValues.qml:69
 msgid "Put the device to sleep when it is not in use:"
 msgstr "當裝置不使用時過了這段時間後睡眠："
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/SleepValues.qml:81
+#: plugins/battery/SleepValues.qml:81
 #, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
 msgstr[0] "在 %1 秒鐘之後"
 
-#: ../plugins/battery/SleepValues.qml:125
-msgid "Device won’t sleep during calls or video playback."
-msgstr "裝置在通話時或播放影片時不會睡眠。"
-
-#: ../plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:125
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr "時間越短越安全。裝置在通話時或播放影片時不會鎖定。"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:26
+#: plugins/battery/SleepValues.qml:125
+msgid "Device won’t sleep during calls or video playback."
+msgstr "裝置在通話時或播放影片時不會睡眠。"
+
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:26
 msgid "Bluetooth Pairing Authorization Request"
 msgstr "藍牙配對授權請求"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:34
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
 msgstr "裝置 %1 想要與這個裝置配對， 您是否允許？"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:39
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 msgid "Allow"
 msgstr "同意"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:46
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
 msgstr "拒絕"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:28
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:26
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:26
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:28
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:28
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:26
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:26
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:28
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:28
 msgid "Bluetooth Pairing Request"
 msgstr "藍牙配對請求"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:37
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
 msgstr "請確定顯示在「%1」的 PIN 碼和這個相同"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:57
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
 msgstr "確認 PIN 碼"
 
-#: ../plugins/bluetooth/DevicePage.qml:37
-#: ../plugins/bluetooth/PageComponent.qml:290
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
-#: ../plugins/wifi/AccessPoint.qml:51 ../plugins/wifi/StandardMenuItem.qml:31
+#: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
+#: plugins/wifi/StandardMenuItem.qml:31
 msgid "Connected"
 msgstr "已連線"
 
-#: ../plugins/bluetooth/DevicePage.qml:38
-#: ../plugins/bluetooth/PageComponent.qml:290
+#: plugins/bluetooth/DevicePage.qml:38 plugins/bluetooth/PageComponent.qml:290
 msgid "Connecting…"
 msgstr "連線中…"
 
-#: ../plugins/bluetooth/DevicePage.qml:39
+#: plugins/bluetooth/DevicePage.qml:39
 msgid "Disconnecting…"
 msgstr "中斷連線中…"
 
-#: ../plugins/bluetooth/DevicePage.qml:40
+#: plugins/bluetooth/DevicePage.qml:40
 msgid "Disconnected"
 msgstr "已斷線"
 
-#: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
+#: plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "未知"
 
-#: ../plugins/bluetooth/DevicePage.qml:47
+#: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
 msgstr "電腦"
 
-#: ../plugins/bluetooth/DevicePage.qml:48
-#: ../plugins/bluetooth/DevicePage.qml:49
+#: plugins/bluetooth/DevicePage.qml:48 plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
 msgstr "電話"
 
-#: ../plugins/bluetooth/DevicePage.qml:50
+#: plugins/bluetooth/DevicePage.qml:50
 msgid "Modem"
 msgstr "數據機"
 
-#: ../plugins/bluetooth/DevicePage.qml:51 ../src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
 msgid "Network"
 msgstr "網路"
 
-#: ../plugins/bluetooth/DevicePage.qml:52
+#: plugins/bluetooth/DevicePage.qml:52
 msgid "Headset"
 msgstr "聽筒"
 
-#: ../plugins/bluetooth/DevicePage.qml:53
+#: plugins/bluetooth/DevicePage.qml:53
 msgid "Headphones"
 msgstr "耳機"
 
-#: ../plugins/bluetooth/DevicePage.qml:54
+#: plugins/bluetooth/DevicePage.qml:54
 msgid "Video"
 msgstr "影片"
 
-#: ../plugins/bluetooth/DevicePage.qml:55
+#: plugins/bluetooth/DevicePage.qml:55
 msgid "Other Audio"
 msgstr "其他音訊"
 
-#: ../plugins/bluetooth/DevicePage.qml:56
+#: plugins/bluetooth/DevicePage.qml:56
 msgid "Joypad"
 msgstr "遊戲手把"
 
-#: ../plugins/bluetooth/DevicePage.qml:57
+#: plugins/bluetooth/DevicePage.qml:57
 msgid "Keyboard"
 msgstr "鍵盤"
 
-#: ../plugins/bluetooth/DevicePage.qml:58
+#: plugins/bluetooth/DevicePage.qml:58
 msgid "Tablet"
 msgstr "平板電腦"
 
-#: ../plugins/bluetooth/DevicePage.qml:59 ../plugins/mouse/Connected.qml:48
+#: plugins/bluetooth/DevicePage.qml:59 plugins/mouse/Connected.qml:48
 msgid "Mouse"
 msgstr "滑鼠"
 
-#: ../plugins/bluetooth/DevicePage.qml:60
+#: plugins/bluetooth/DevicePage.qml:60
 msgid "Printer"
 msgstr "印表機"
 
-#: ../plugins/bluetooth/DevicePage.qml:61
+#: plugins/bluetooth/DevicePage.qml:61
 msgid "Camera"
 msgstr "相機"
 
-#: ../plugins/bluetooth/DevicePage.qml:62
+#: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
 msgstr "手表"
 
-#: ../plugins/bluetooth/DevicePage.qml:63
+#: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
 msgstr "其他"
 
-#: ../plugins/bluetooth/DevicePage.qml:69
+#: plugins/bluetooth/DevicePage.qml:69
 msgid "Excellent"
 msgstr "非常好"
 
-#: ../plugins/bluetooth/DevicePage.qml:70
+#: plugins/bluetooth/DevicePage.qml:70
 msgid "Good"
 msgstr "好"
 
-#: ../plugins/bluetooth/DevicePage.qml:71
+#: plugins/bluetooth/DevicePage.qml:71
 msgid "Fair"
 msgstr "普通"
 
-#: ../plugins/bluetooth/DevicePage.qml:72
+#: plugins/bluetooth/DevicePage.qml:72
 msgid "Poor"
 msgstr "差"
 
-#: ../plugins/bluetooth/DevicePage.qml:106
-#: ../plugins/printing/printer-sub-pages/Status.qml:61
-#: ../plugins/wifi/NetworkDetails.qml:59
+#: plugins/bluetooth/DevicePage.qml:106
+#: plugins/printing/printer-sub-pages/Status.qml:61
+#: plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
 msgstr "名稱"
 
-#: ../plugins/bluetooth/DevicePage.qml:113
+#: plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
 msgstr "類型"
 
-#: ../plugins/bluetooth/DevicePage.qml:124
-#: ../plugins/printing/printer-sub-pages/Status.qml:26
+#: plugins/bluetooth/DevicePage.qml:124
+#: plugins/printing/printer-sub-pages/Status.qml:26
 msgid "Status"
 msgstr "狀態"
 
-#: ../plugins/bluetooth/DevicePage.qml:128
+#: plugins/bluetooth/DevicePage.qml:128
 msgid "Signal Strength"
 msgstr "信號強度"
 
-#: ../plugins/bluetooth/DevicePage.qml:133
-#: ../plugins/bluetooth/PageComponent.qml:358
+#: plugins/bluetooth/DevicePage.qml:133 plugins/bluetooth/PageComponent.qml:358
 msgid "Connect automatically when detected:"
 msgstr "偵測到就自動連接："
 
-#: ../plugins/bluetooth/DevicePage.qml:150 ../plugins/wifi/OtherNetwork.qml:905
-msgid "Connect"
-msgstr "連接"
-
-#: ../plugins/bluetooth/DevicePage.qml:150
+#: plugins/bluetooth/DevicePage.qml:150
 msgid "Disconnect"
 msgstr "斷線"
 
-#: ../plugins/bluetooth/DevicePage.qml:172
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+msgid "Connect"
+msgstr "連接"
+
+#: plugins/bluetooth/DevicePage.qml:172
 msgid "Forget this device"
 msgstr "忘記此裝置"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:35
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:34
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:35
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr "請在 %1 上輸入以下 PIN 碼，然後按鍵盤上的「Enter」鍵："
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
 msgstr "可被偵測到"
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Not discoverable"
 msgstr "不被偵測到"
 
-#: ../plugins/bluetooth/PageComponent.qml:260
-#: ../plugins/bluetooth/PageComponent.qml:319
+#: plugins/bluetooth/PageComponent.qml:260
+#: plugins/bluetooth/PageComponent.qml:319
 msgid "Searching…"
 msgstr "搜尋中…"
 
-#: ../plugins/bluetooth/PageComponent.qml:269
+#: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
 msgstr "已連接的裝置："
 
-#: ../plugins/bluetooth/PageComponent.qml:309
-msgid "Connect a device:"
-msgstr "連接裝置："
-
-#: ../plugins/bluetooth/PageComponent.qml:309
+#: plugins/bluetooth/PageComponent.qml:309
 msgid "Connect another device:"
 msgstr "連接另一個裝置："
 
-#: ../plugins/bluetooth/PageComponent.qml:352
+#: plugins/bluetooth/PageComponent.qml:309
+msgid "Connect a device:"
+msgstr "連接裝置："
+
+#: plugins/bluetooth/PageComponent.qml:352
 msgid "None detected"
 msgstr "沒有偵測到"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:36
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:36
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:36
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
 msgstr "「%1」的 PIN 碼"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:62
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:63
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:62
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:63
 msgid "Pair"
 msgstr "配對"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: ../plugins/brightness/PageComponent.qml:35 settings.js:94
-msgid "Brightness"
-msgstr "亮度"
-
-#: ../plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:67
 msgid "Brightness & Display"
 msgstr "亮度和顯示"
 
-#: ../plugins/brightness/PageComponent.qml:122
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:65
+msgid "Brightness"
+msgstr "亮度"
+
+#: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "自動調整"
 
-#: ../plugins/brightness/PageComponent.qml:137
+#: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "使顯示器變亮和變暗，以適應周圍的環境。"
 
-#: ../plugins/brightness/PageComponent.qml:142
+#: plugins/brightness/PageComponent.qml:135
 #, fuzzy
 #| msgid "display"
 msgid "Display"
 msgstr "顯示"
 
-#: ../plugins/brightness/PageComponent.qml:147
+#: plugins/brightness/PageComponent.qml:141
 msgid "External display"
 msgstr "外部顯示"
 
-#: ../plugins/brightness/PageComponent.qml:166
+#: plugins/brightness/PageComponent.qml:158
 msgid "Wireless display"
 msgstr "無線顯示"
 
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
 msgstr "未連接"
 
-#: ../plugins/brightness/WifiDisplays.qml:27
+#: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
 msgstr "無線顯示"
 
-#: ../plugins/brightness/WifiDisplays.qml:100
+#: plugins/brightness/WifiDisplays.qml:112
 msgid "No displays detected"
 msgstr "沒有偵測到顯示器"
 
-#: ../plugins/brightness/WifiDisplays.qml:113
+#: plugins/brightness/WifiDisplays.qml:125
 msgid "Connected display:"
 msgstr "已連接的顯示器:"
 
-#: ../plugins/brightness/WifiDisplays.qml:128
+#: plugins/brightness/WifiDisplays.qml:140
 msgid "Connecting"
 msgstr "連線中"
 
-#: ../plugins/brightness/WifiDisplays.qml:146
-msgid "Choose a display:"
-msgstr "選擇顯示器："
-
-#: ../plugins/brightness/WifiDisplays.qml:146
+#: plugins/brightness/WifiDisplays.qml:158
 msgid "Use another display:"
 msgstr "使用另一個顯示器："
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:32
+#: plugins/brightness/WifiDisplays.qml:158
+msgid "Choose a display:"
+msgstr "選擇顯示器："
+
+#: plugins/brightness/WifiDisplaysAlert.qml:32
 #, qt-format
 msgid "This device failed to connect to %1."
 msgstr "此裝置無法連接到 %1。"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:34
+#: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
 msgstr "連線到 %1 時出現未知錯誤。"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:38
-#: ../plugins/vpn/PageComponent.qml:123
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "確定"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: ../plugins/gestures/PageComponent.qml:25 settings.js:126
+#: plugins/gestures/PageComponent.qml:25
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "圖片"
 
-#: ../plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:44
 #, fuzzy
 #| msgid "Tap to click"
 msgid "Tap to wake"
 msgstr "按下去點擊"
 
-#: ../plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
+#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
 msgstr "不明的錯誤"
 
-#: ../plugins/hotspot/Common.qml:36 ../plugins/wifi/Common.qml:38
+#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
 msgid "No reason given"
 msgstr "沒有說明原因"
 
-#: ../plugins/hotspot/Common.qml:38 ../plugins/wifi/Common.qml:40
+#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
 msgid "Device is now managed"
 msgstr "裝置現在已受到管理"
 
-#: ../plugins/hotspot/Common.qml:40 ../plugins/wifi/Common.qml:42
+#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
 msgid "Device is now unmanaged"
 msgstr "裝置未受到管理"
 
-#: ../plugins/hotspot/Common.qml:42 ../plugins/wifi/Common.qml:44
+#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
 msgid "The device could not be readied for configuration"
 msgstr "無法準備裝置進行配置"
 
-#: ../plugins/hotspot/Common.qml:44 ../plugins/wifi/Common.qml:46
+#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
 msgid ""
 "IP configuration could not be reserved (no available address, timeout, etc.)"
 msgstr "無法保留 IP 配置 (無可用位址、逾時…等)"
 
-#: ../plugins/hotspot/Common.qml:46 ../plugins/wifi/Common.qml:48
+#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
 msgid "The IP configuration is no longer valid"
 msgstr "IP 配置已失效"
 
-#: ../plugins/hotspot/Common.qml:48 ../plugins/wifi/Common.qml:50
+#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
 msgid "Your authentication details were incorrect"
 msgstr "您的身份驗證資訊不正確"
 
-#: ../plugins/hotspot/Common.qml:50 ../plugins/wifi/Common.qml:52
+#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
 msgid "802.1X supplicant disconnected"
 msgstr "802.1X 用戶端已斷線"
 
-#: ../plugins/hotspot/Common.qml:52 ../plugins/wifi/Common.qml:54
+#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
 msgid "802.1X supplicant configuration failed"
 msgstr "802.1X 用戶端設定失敗"
 
-#: ../plugins/hotspot/Common.qml:54 ../plugins/wifi/Common.qml:56
+#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
 msgid "802.1X supplicant failed"
 msgstr "802.1X 用戶端失敗"
 
-#: ../plugins/hotspot/Common.qml:56 ../plugins/wifi/Common.qml:58
+#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
 msgid "802.1X supplicant took too long to authenticate"
 msgstr "802.1X 用戶端核對身分所需時間太長"
 
-#: ../plugins/hotspot/Common.qml:58 ../plugins/wifi/Common.qml:60
+#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
 msgid "DHCP client failed to start"
 msgstr "DHCP 客戶端啟動失敗"
 
-#: ../plugins/hotspot/Common.qml:60 ../plugins/wifi/Common.qml:62
+#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
 msgid "DHCP client error"
 msgstr "DHCP 客戶端錯誤"
 
-#: ../plugins/hotspot/Common.qml:62 ../plugins/wifi/Common.qml:64
+#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
 msgid "DHCP client failed"
 msgstr "DHCP 客戶端失敗"
 
-#: ../plugins/hotspot/Common.qml:64 ../plugins/wifi/Common.qml:66
+#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
 msgid "Shared connection service failed to start"
 msgstr "無法啟動「連接共用服務」"
 
-#: ../plugins/hotspot/Common.qml:66 ../plugins/wifi/Common.qml:68
+#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
 msgid "Shared connection service failed"
 msgstr "「連接共用服務」失敗"
 
-#: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
+#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
 msgstr "可能缺少裝置所需的韌體"
 
-#: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
+#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
 msgid "The device was removed"
 msgstr "裝置已移除"
 
-#: ../plugins/hotspot/Common.qml:72 ../plugins/wifi/Common.qml:74
+#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
 msgid "NetworkManager went to sleep"
 msgstr "網路管理器已進入睡眠狀態"
 
-#: ../plugins/hotspot/Common.qml:74 ../plugins/wifi/Common.qml:76
+#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
 msgid "The device's active connection disappeared"
 msgstr "該裝置作用中的連接已消失"
 
-#: ../plugins/hotspot/Common.qml:76 ../plugins/wifi/Common.qml:78
+#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
 msgid "Device disconnected by user or client"
 msgstr "裝置連線由使用者或客戶端中斷"
 
-#: ../plugins/hotspot/Common.qml:78 ../plugins/wifi/Common.qml:80
+#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
 msgid "The device's existing connection was assumed"
 msgstr "裝置的現有連接被假定為"
 
-#: ../plugins/hotspot/Common.qml:80 ../plugins/wifi/Common.qml:82
+#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
 msgid "The supplicant is now available"
 msgstr "用戶端現可使用"
 
-#: ../plugins/hotspot/Common.qml:82 ../plugins/wifi/Common.qml:84
+#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
 msgid "The modem could not be found"
 msgstr "找不到數據機"
 
-#: ../plugins/hotspot/Common.qml:84 ../plugins/wifi/Common.qml:86
+#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
 msgid "The Bluetooth connection failed or timed out"
 msgstr "藍牙連接失敗或逾時"
 
-#: ../plugins/hotspot/Common.qml:86 ../plugins/wifi/Common.qml:88
+#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
 msgid "A dependency of the connection failed"
 msgstr "連接的依賴關係執行失敗"
 
-#: ../plugins/hotspot/Common.qml:88 ../plugins/wifi/Common.qml:90
+#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
 msgid "ModemManager is unavailable"
 msgstr "數據機管理器不可用"
 
-#: ../plugins/hotspot/Common.qml:90 ../plugins/wifi/Common.qml:92
+#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
 msgid "The Wi-Fi network could not be found"
 msgstr "找不到 Wi-Fi 無線網路"
 
-#: ../plugins/hotspot/Common.qml:92 ../plugins/wifi/Common.qml:94
+#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
 msgid "A secondary connection of the base connection failed"
 msgstr "基礎連接的輔助連接失敗"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr "更改熱點設置"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 msgid "Set Up Hotspot"
 msgstr "設立熱點"
 
-#: ../plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:167
 msgid "Hotspot name"
 msgstr "熱點名稱"
 
-#: ../plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:168
 msgid "Choose a name"
 msgstr "選擇一個名稱"
 
-#: ../plugins/hotspot/HotspotSetup.qml:185
+#: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
 msgstr "需要密碼（推薦）："
 
-#: ../plugins/hotspot/HotspotSetup.qml:216
-#: ../plugins/wifi/NetworkDetails.qml:87 ../plugins/wifi/OtherNetwork.qml:821
+#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "顯示密碼"
 
-#: ../plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "熱點啟動時將Wi-Fi打開。"
 
-#: ../plugins/hotspot/HotspotSetup.qml:266
+#: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
 msgstr "更改"
 
-#: ../plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
 msgstr "開始"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: ../plugins/hotspot/PageComponent.qml:33
-#: ../plugins/hotspot/PageComponent.qml:85 settings.js:130
+#: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
 msgstr "熱點"
 
-#: ../plugins/hotspot/PageComponent.qml:114
+#: plugins/hotspot/PageComponent.qml:114
 msgid ""
 "When hotspot is on, other devices can use your cellular data connection over "
 "Wi-Fi. Normal data charges apply."
@@ -945,261 +940,267 @@ msgstr ""
 "開啟熱點之後，其他裝置可以經 Wi-Fi 使用您的數據來連接。這樣做可能需要收取數據"
 "費用。"
 
-#: ../plugins/hotspot/PageComponent.qml:115
+#: plugins/hotspot/PageComponent.qml:115
 msgid ""
 "Other devices can use your cellular data connection over the Wi-Fi network. "
 "Normal data charges apply."
 msgstr "其他裝置可以經 Wi-Fi 使用您的數據來連接。這樣做可能需要收取數據費用。"
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 msgid "Change Password/Setup…"
 msgstr "更改密碼設置…"
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 msgid "Set Up Hotspot…"
 msgstr "設立熱點…"
 
-#: ../plugins/hotspot/PageComponent.qml:155
+#: plugins/hotspot/PageComponent.qml:155
 msgid "Wi-Fi is off"
 msgstr "Wi-Fi 已關閉"
 
-#: ../plugins/hotspot/PageComponent.qml:156
+#: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
 msgstr "要建立熱點，您需要打開 Wi-Fi。"
 
-#: ../plugins/hotspot/PageComponent.qml:160
+#: plugins/hotspot/PageComponent.qml:160
 msgid "Turn on Wi-Fi"
 msgstr "打開 Wifi"
 
-#: ../plugins/language/DisplayLanguage.qml:51
+#: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
 msgstr "顯示語言"
 
-#: ../plugins/language/DisplayLanguage.qml:55
-#: ../plugins/printing/AddPrinterDetails.qml:44
+#: plugins/language/DisplayLanguage.qml:55
+#: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
 msgstr "返回"
 
-#: ../plugins/language/DisplayLanguage.qml:66
+#: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
 msgstr "確認"
 
-#: ../plugins/language/KeyboardLayouts.qml:29
-#: ../plugins/language/PageComponent.qml:163
+#: plugins/language/KeyboardLayouts.qml:29
+#: plugins/language/PageComponent.qml:163
 msgid "Keyboard layouts"
 msgstr "鍵盤配置"
 
-#: ../plugins/language/KeyboardLayouts.qml:49
-msgid "All layouts available:"
-msgstr "所有可用配置："
-
-#: ../plugins/language/KeyboardLayouts.qml:49
+#: plugins/language/KeyboardLayouts.qml:49
 msgid "Current layouts:"
 msgstr "目前配置："
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: ../plugins/language/PageComponent.qml:37 settings.js:138
+#: plugins/language/KeyboardLayouts.qml:49
+msgid "All layouts available:"
+msgstr "所有可用配置："
+
+#: plugins/language/PageComponent.qml:37
 msgid "Language & Text"
 msgstr "語言與文字"
 
-#: ../plugins/language/PageComponent.qml:134
+#: plugins/language/PageComponent.qml:134
 msgid "Display language…"
 msgstr "顯示語言…"
 
-#: ../plugins/language/PageComponent.qml:150
+#: plugins/language/PageComponent.qml:150
 msgid "Enable on-screen keyboard"
 msgstr "使用螢幕鍵盤"
 
-#: ../plugins/language/PageComponent.qml:162
+#: plugins/language/PageComponent.qml:162
 msgid "On-screen keyboard"
 msgstr "螢幕鍵盤"
 
-#: ../plugins/language/PageComponent.qml:173
+#: plugins/language/PageComponent.qml:173
 msgid "External keyboard"
 msgstr "外部鍵盤"
 
-#: ../plugins/language/PageComponent.qml:184
+#: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
 msgstr "環境"
 
-#: ../plugins/language/PageComponent.qml:185
+#: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
 msgstr "Suru 黑暗"
 
-#: ../plugins/language/PageComponent.qml:186
+#: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
 msgstr "Suru 黑"
 
-#: ../plugins/language/PageComponent.qml:187
+#: plugins/language/PageComponent.qml:187
 msgid "Just White"
 msgstr "純白"
 
-#: ../plugins/language/PageComponent.qml:188
+#: plugins/language/PageComponent.qml:188
 msgid "Just Black"
 msgstr "純黑"
 
-#: ../plugins/language/PageComponent.qml:189
+#: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
 msgstr "純灰"
 
-#: ../plugins/language/PageComponent.qml:190
+#: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
 msgstr "白色邊框"
 
-#: ../plugins/language/PageComponent.qml:191
+#: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
 msgstr "黑色邊框"
 
-#: ../plugins/language/PageComponent.qml:192
+#: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
 msgstr "灰色邊框"
 
-#: ../plugins/language/PageComponent.qml:195
+#: plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
 msgstr "螢幕鍵盤主題"
 
-#: ../plugins/language/PageComponent.qml:196
+#: plugins/language/PageComponent.qml:196
 msgid "Keyboard theme"
 msgstr "鍵盤主題"
 
-#: ../plugins/language/PageComponent.qml:209
-#: ../plugins/language/PageComponent.qml:218
-#: ../plugins/language/SpellChecking.qml:29
-#: ../plugins/language/SpellChecking.qml:45
+#: plugins/language/PageComponent.qml:209
+#: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
+#: plugins/language/SpellChecking.qml:45
 msgid "Spell checking"
 msgstr "拼寫檢查"
 
-#: ../plugins/language/PageComponent.qml:229
+#: plugins/language/PageComponent.qml:229
 msgid "Auto correction"
 msgstr "自動修正"
 
-#: ../plugins/language/PageComponent.qml:240
+#: plugins/language/PageComponent.qml:240
 msgid "Word suggestions"
 msgstr "詞彙建議"
 
-#: ../plugins/language/PageComponent.qml:254
+#: plugins/language/PageComponent.qml:254
 msgid "Auto capitalization"
 msgstr "自動大寫"
 
-#: ../plugins/language/PageComponent.qml:265
+#: plugins/language/PageComponent.qml:265
 msgid "Turns on Shift to capitalize the first letter of each sentence."
 msgstr "在每個句子的起首開啟 Shift 鍵使字首字母大寫。"
 
-#: ../plugins/language/PageComponent.qml:272
+#: plugins/language/PageComponent.qml:272
 msgid "Auto punctuation"
 msgstr "自動標點符號"
 
-#: ../plugins/language/PageComponent.qml:284
+#: plugins/language/PageComponent.qml:284
 msgid "Inserts a period when you tap Space twice."
 msgstr "當輕觸空格鍵兩次，會插入句點。"
 
-#: ../plugins/language/PageComponent.qml:291
+#: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:302
-#: ../plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
 msgstr "鍵盤聲"
 
-#: ../plugins/language/PageComponent.qml:313
+#: plugins/language/PageComponent.qml:313
 msgid "Keyboard vibration"
 msgstr "鍵盤振動"
 
-#: ../plugins/language/PageComponent.qml:324
+#: plugins/language/PageComponent.qml:324
 msgid "Keyboard opacity"
 msgstr "鍵盤不透明度"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:33
+#: plugins/language/PageHardwareKeyboard.qml:33
 msgid "Hardware keyboard"
 msgstr "鍵盤設備"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:63
+#: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
 msgstr "配置和其他來源"
 
-#: ../plugins/language/RebootNecessary.qml:34
+#: plugins/language/RebootNecessary.qml:34
 msgid "The device needs to restart for changes to take effect."
 msgstr "裝置需要重新啟動才能使更改生效。"
 
-#: ../plugins/language/RebootNecessary.qml:38
+#: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
 msgstr "立刻重新啟動"
 
-#: ../plugins/language/SpellChecking.qml:64
+#: plugins/language/SpellChecking.qml:64
 msgid "Current spelling languages:"
 msgstr "目前拼寫中的語言："
 
-#: ../plugins/language/SpellChecking.qml:65
+#: plugins/language/SpellChecking.qml:65
 msgid "All languages available:"
 msgstr "所有可用的語言："
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: ../plugins/launcher/PageComponent.qml:31 settings.js:164
-msgid "Launcher"
-msgstr "啟動欄"
+#: plugins/launcher/PageComponent.qml:31
+#, fuzzy
+#| msgid "Reset Launcher"
+msgid "Desktop & Launcher"
+msgstr "重設啟動欄"
 
-#: ../plugins/launcher/PageComponent.qml:65
+#: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
 msgstr "在大螢幕上："
 
-#: ../plugins/launcher/PageComponent.qml:73
+#: plugins/launcher/PageComponent.qml:73
+msgid "Enable workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:74
+msgid "Supoprt for multiple virtual workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
 msgstr "總是顯示啟動欄"
 
-#: ../plugins/launcher/PageComponent.qml:74
+#: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
 msgstr "全螢幕遊戲和影片可能會暫時隱藏它。"
 
-#: ../plugins/launcher/PageComponent.qml:85
+#: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
 msgstr "圖示大小:"
 
-#: ../plugins/mouse/Connected.qml:62 ../plugins/mouse/Connected.qml:228
+#: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
 msgstr "滑鼠游標速度："
 
-#: ../plugins/mouse/Connected.qml:98
+#: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
 msgstr "滾輪滑動速度："
 
-#: ../plugins/mouse/Connected.qml:134 ../plugins/mouse/Connected.qml:301
+#: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
 msgstr "雙重點擊速度："
 
-#: ../plugins/mouse/Connected.qml:168 ../plugins/mouse/Connected.qml:335
+#: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
 msgstr "測試雙重點擊："
 
-#: ../plugins/mouse/Connected.qml:214
+#: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
 msgstr "觸控板"
 
-#: ../plugins/mouse/Connected.qml:264
+#: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
 msgstr "手指滑動速度："
 
-#: ../plugins/mouse/Connected.qml:389
+#: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
 msgstr "按下去點擊"
 
-#: ../plugins/mouse/Connected.qml:403
+#: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
 msgstr "用兩根手指滑動"
 
-#: ../plugins/mouse/Connected.qml:410
+#: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
 msgstr "在以下情況下禁用觸控板："
 
-#: ../plugins/mouse/Connected.qml:432
+#: plugins/mouse/Connected.qml:432
 msgid "Typing"
 msgstr "輸入"
 
-#: ../plugins/mouse/Connected.qml:446
+#: plugins/mouse/Connected.qml:446
 msgid "A mouse is connected"
 msgstr "滑鼠已連接"
 
-#: ../plugins/mouse/None.qml:34
+#: plugins/mouse/None.qml:34
 msgid ""
 "Connect a mouse or touchpad via USB, or use a Bluetooth device. If a "
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
@@ -1208,652 +1209,708 @@ msgstr ""
 "透過USB連接到滑鼠與觸控板，或者使用藍牙裝置。如果無法偵測到藍牙裝置，請檢查是"
 "否已打開電源開關且電池也已充電。"
 
-#: ../plugins/mouse/None.qml:36
+#: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
 "您需要在這個顯示器上使用藍牙滑鼠與觸控板，並確保它接近裝置，且電池也已充電。"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: ../plugins/mouse/PageComponent.qml:29 settings.js:170
+#: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
 msgstr "滑鼠與觸控板"
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:42
+#: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
 msgstr "主要按鍵："
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:72
+#: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
 msgstr "左鍵"
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:89
+#: plugins/mouse/PrimaryButtonSelector.qml:89
 msgid "Right"
 msgstr "右鍵"
 
-#: ../plugins/mouse/TapArea.qml:38
+#: plugins/mouse/TapArea.qml:38
 msgid "Not fast enough"
 msgstr "速度不夠快"
 
-#: ../plugins/mouse/TapArea.qml:77
+#: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
 msgstr "雙重點擊"
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
-#: settings.js:184
+#: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: ../plugins/notifications/ClickAppNotifications.qml:62
-#: ../plugins/notifications/PageComponent.qml:29 settings.js:194
+#: plugins/notifications/CellBroadcast.qml:30
+#: plugins/notifications/CellBroadcast.qml:47
+#: plugins/notifications/PageComponent.qml:73
+msgid "Emergency Broadcast"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:125
+#, fuzzy
+#| msgid "The supplicant is now available"
+msgid "Cell Broadcast is not available"
+msgstr "用戶端現可使用"
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Enabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Disabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:165
+#, fuzzy
+#| msgid "alerts"
+msgid "Alerts:"
+msgstr "警報"
+
+#: plugins/notifications/CellBroadcast.qml:171
+msgid "Receive emergency notifications"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:184
+msgid "Extreme threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:185
+msgid "Extreme threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:198
+msgid "Severe threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:199
+msgid "Severe threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:212
+msgid "AMBER Alerts"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:213
+msgid "Child abduction emergency bulletins"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:226
+msgid "Public safety messages"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:227
+msgid "Recommend actions to save life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:240
+msgid "Tests"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:241
+#, fuzzy
+#| msgid "alerts"
+msgid "Tests alerts"
+msgstr "警報"
+
+#: plugins/notifications/ClickAppNotifications.qml:62
+#: plugins/notifications/PageComponent.qml:29
 msgid "Notifications"
 msgstr "通知"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:81
+#: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
 msgstr "讓應用程式來提醒我的使用方式："
 
-#: ../plugins/notifications/ClickAppNotifications.qml:91
-#: ../plugins/notifications/PageComponent.qml:177
+#: plugins/notifications/ClickAppNotifications.qml:91
+#: plugins/notifications/PageComponent.qml:208
 msgid "Sounds"
 msgstr "聲音"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:114
-#: ../plugins/notifications/PageComponent.qml:180
+#: plugins/notifications/ClickAppNotifications.qml:114
+#: plugins/notifications/PageComponent.qml:211
 msgid "Vibrations"
 msgstr "振動"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:137
+#: plugins/notifications/ClickAppNotifications.qml:137
 msgid "Notification Bubbles"
 msgstr "通知框"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:160
-#: ../plugins/notifications/PageComponent.qml:186
+#: plugins/notifications/ClickAppNotifications.qml:160
+#: plugins/notifications/PageComponent.qml:217
 msgid "Notification List"
 msgstr "通知列表"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:30
-#: ../plugins/sound/PageComponent.qml:39 settings.js:268
+#: plugins/notifications/ClickAppsSoundsNotify.qml:30
+#: plugins/sound/PageComponent.qml:39
 msgid "Sound"
 msgstr "聲音"
 
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:44
+#: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
 msgstr "透過聲音來通知的應用程式:"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:30
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 msgid "Vibration"
 msgstr "振動"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:50
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:50
 msgid "When in Silent mode:"
 msgstr "在靜音模式時："
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:69
 msgid "Vibrate as normal"
 msgstr "一般振動"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:70
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:70
 msgid "Don't vibrate"
 msgstr "不要振動"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:85
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
 msgstr "透過振動來通知的應用程式："
 
-#: ../plugins/notifications/PageComponent.qml:75
+#: plugins/notifications/PageComponent.qml:84
+#: plugins/notifications/PageComponent.qml:174
+msgid "Applications:"
+msgstr "應用程式："
+
+#: plugins/notifications/PageComponent.qml:106
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr "所選的應用程式可以使用聲音、振動、通知框和通知列表來提醒您。"
 
-#: ../plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
 msgstr "透過聲音來通知的應用程式"
 
-#: ../plugins/notifications/PageComponent.qml:117
+#: plugins/notifications/PageComponent.qml:148
 msgid "Apps that notify with vibration"
 msgstr "透過振動來通知的應用程式"
 
-#: ../plugins/notifications/PageComponent.qml:143
-msgid "Applications:"
-msgstr "應用程式："
-
-#: ../plugins/notifications/PageComponent.qml:172
+#: plugins/notifications/PageComponent.qml:203
 msgid "No notifications"
 msgstr "沒有通知"
 
-#: ../plugins/notifications/PageComponent.qml:183
+#: plugins/notifications/PageComponent.qml:214
 msgid "Bubbles"
 msgstr "通知框"
 
-#: ../plugins/printing/AddPrinter.qml:34
-#: ../plugins/printing/AddPrinterDetails.qml:54
-#: ../plugins/printing/PageComponent.qml:38
+#: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
+#: plugins/printing/PageComponent.qml:38
 msgid "Add printer"
 msgstr "新增印表機"
 
-#: ../plugins/printing/AddPrinter.qml:65
+#: plugins/printing/AddPrinter.qml:65
 msgid "Enter URI"
 msgstr "輸入 URI"
 
-#: ../plugins/printing/AddPrinter.qml:78
+#: plugins/printing/AddPrinter.qml:78
 msgid "Devices"
 msgstr "裝置"
 
-#: ../plugins/printing/AddPrinter.qml:133
+#: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
 msgstr "找不到裝置。"
 
-#: ../plugins/printing/AddPrinterDetails.qml:37
+#: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
 msgstr "印表機說明"
 
-#: ../plugins/printing/AddPrinterDetails.qml:137
+#: plugins/printing/AddPrinterDetails.qml:137
 msgid "Connection"
 msgstr "連接"
 
-#: ../plugins/printing/AddPrinterDetails.qml:139
+#: plugins/printing/AddPrinterDetails.qml:139
 msgid "Choose a connection"
 msgstr "選擇一個來連接"
 
-#: ../plugins/printing/AddPrinterDetails.qml:165
+#: plugins/printing/AddPrinterDetails.qml:165
 msgid "Printer name"
 msgstr "印表機名稱"
 
-#: ../plugins/printing/AddPrinterDetails.qml:202
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:32
-#: ../plugins/printing/printer-sub-pages/Status.qml:66
+#: plugins/printing/AddPrinterDetails.qml:202
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:66
 msgid "Description"
 msgstr "說明"
 
-#: ../plugins/printing/AddPrinterDetails.qml:204
-#: ../plugins/printing/AddPrinterDetails.qml:211
+#: plugins/printing/AddPrinterDetails.qml:204
+#: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
 msgstr "可選"
 
-#: ../plugins/printing/AddPrinterDetails.qml:209
-#: ../plugins/printing/printer-sub-pages/Status.qml:72
+#: plugins/printing/AddPrinterDetails.qml:209
+#: plugins/printing/printer-sub-pages/Status.qml:72
 msgid "Location"
 msgstr "位置"
 
-#: ../plugins/printing/AddPrinterDetails.qml:219
+#: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
 msgstr "驅動程式"
 
-#: ../plugins/printing/AddPrinterDetails.qml:225
+#: plugins/printing/AddPrinterDetails.qml:225
 msgid "Choose driver"
 msgstr "選擇驅動程式"
 
-#: ../plugins/printing/AddPrinterDetails.qml:227
+#: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
 msgstr "從數據庫中選擇印表機"
 
-#: ../plugins/printing/AddPrinterDetails.qml:228
+#: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
 msgstr "提供 PPD 文件"
 
-#: ../plugins/printing/AddPrinterDetails.qml:235
+#: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
 msgstr "過濾驅動程式"
 
-#: ../plugins/printing/AddPrinterDetails.qml:304
+#: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
 msgstr "PPD 文件"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: ../plugins/printing/PageComponent.qml:32 settings.js:230
+#: plugins/printing/PageComponent.qml:32
 msgid "Printing"
 msgstr "列印"
 
-#: ../plugins/printing/PageComponent.qml:45
+#: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
 msgstr "管理印表機作業"
 
-#: ../plugins/printing/PageComponent.qml:106
+#: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
 msgstr "預設印表機"
 
-#: ../plugins/printing/PageComponent.qml:107
+#: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
 msgstr "已配置的印表機"
 
-#: ../plugins/printing/PageComponent.qml:115
+#: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
 msgstr "已發現的印表機"
 
-#: ../plugins/printing/PageComponent.qml:136
+#: plugins/printing/PageComponent.qml:136
 msgid "Delete"
 msgstr "刪除"
 
-#: ../plugins/printing/PageComponent.qml:149
-#: ../plugins/printing/printer-sub-pages/Policies.qml:50
+#: plugins/printing/PageComponent.qml:149
+#: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
 msgstr "設置為預設"
 
-#: ../plugins/printing/PageComponent.qml:190
+#: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
 msgstr "尚未配置印表機。"
 
-#: ../plugins/printing/Printer.qml:42
+#: plugins/printing/Printer.qml:42
 msgid "Printer status"
 msgstr "印表機狀態"
 
-#: ../plugins/printing/Printer.qml:43
+#: plugins/printing/Printer.qml:43
 msgid "General settings"
 msgstr "一般設定"
 
-#: ../plugins/printing/Printer.qml:44
+#: plugins/printing/Printer.qml:44
 msgid "Policies"
 msgstr "聲明"
 
-#: ../plugins/printing/Printer.qml:47
+#: plugins/printing/Printer.qml:47
 msgid "Copies and pages"
 msgstr "副本和頁面"
 
-#: ../plugins/printing/PrinterConnection.qml:67
+#: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
 msgstr "主機"
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
 msgstr "副本"
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
 msgstr "紙張尺寸"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:43
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
 msgstr "雙面"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:59
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
 msgid "Color model"
 msgstr "色彩模式"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:75
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
 msgstr "品質"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:27
+#: plugins/printing/printer-sub-pages/Policies.qml:27
 msgid "Enabled"
 msgstr "啟用"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:46
+#: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
 msgstr "預設"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:47
+#: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
 msgstr "這是預設印表機。"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:60
+#: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
 msgstr "接收作業"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:69
+#: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
 msgstr "共用"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:30
+#: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
 msgstr "閒置"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
 msgstr "已中止"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:34
+#: plugins/printing/printer-sub-pages/Status.qml:34
 msgid "Active"
 msgstr "活躍"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:36
+#: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
 msgstr "已停止"
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
-#: ../plugins/printing/printer-sub-pages/Status.qml:40
+#: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
 msgstr "%1 — %2"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:43
+#: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
 msgstr "沒有訊息"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:48
+#: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
 msgstr "作業"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:53
+#: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
 msgstr "管理列印作業"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:78
+#: plugins/printing/printer-sub-pages/Status.qml:78
 msgid "Address"
 msgstr "通訊位址"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:84
+#: plugins/printing/printer-sub-pages/Status.qml:84
 msgid "Model"
 msgstr "型號"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:85
+#: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
 msgstr "本地原始印表機"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:88
+#: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
 msgstr "列印測試頁面"
 
-#: ../plugins/reset/EraseEverything.qml:41
-#: ../plugins/reset/PageComponent.qml:116
+#: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
 "deleted from this device."
 msgstr "所有的文件、儲存的遊戲，設定以及其他項目皆會從裝置中永遠刪除。"
 
-#: ../plugins/reset/EraseEverything.qml:44
+#: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "抹除並重置全部設定"
 
-#: ../plugins/reset/PageComponent.qml:35
+#: plugins/reset/PageComponent.qml:35
 msgid "Reset device"
 msgstr "重置裝置"
 
-#: ../plugins/reset/PageComponent.qml:76
-#: ../plugins/reset/ResetLauncherHome.qml:44
+#: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
 msgstr "重設啟動欄"
 
-#: ../plugins/reset/PageComponent.qml:84
-#: ../plugins/reset/ResetLauncherHome.qml:40
+#: plugins/reset/PageComponent.qml:84 plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
 msgstr "啟動欄會回復到最初的樣子。"
 
-#: ../plugins/reset/PageComponent.qml:92
+#: plugins/reset/PageComponent.qml:92
 msgid "Reset all system settings…"
 msgstr "重設所有系統設定…"
 
-#: ../plugins/reset/PageComponent.qml:101
-#: ../plugins/reset/ResetAllSettings.qml:29
+#: plugins/reset/PageComponent.qml:101 plugins/reset/ResetAllSettings.qml:29
 msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
 "will be returned to their original settings."
 msgstr "啟動欄的內容與版面配置、首頁畫面中的過濾器等，皆會還原至原始設定。"
 
-#: ../plugins/reset/PageComponent.qml:108
+#: plugins/reset/PageComponent.qml:108
 msgid "Erase & Reset All"
 msgstr "抹除並重置全部"
 
-#: ../plugins/reset/ResetAllSettings.qml:31
+#: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
 msgstr "重設所有系統設定"
 
-#: ../plugins/sound/PageComponent.qml:76
+#: plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
 msgstr "靜音模式"
 
-#: ../plugins/sound/PageComponent.qml:100
+#: plugins/sound/PageComponent.qml:100
 msgid "Ringer:"
 msgstr "鈴聲："
 
-#: ../plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
 msgstr "音量過大可能會損害您的聽力。"
 
-#: ../plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
 msgstr "電話："
 
-#: ../plugins/sound/PageComponent.qml:149
-#: ../plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
 msgid "Ringtone"
 msgstr "鈴聲"
 
-#: ../plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:171
 msgid "Vibrate on ring"
 msgstr "鈴響時發出振動"
 
-#: ../plugins/sound/PageComponent.qml:183
-#: ../plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
 msgid "Vibrate in Silent Mode"
 msgstr "在無聲模式下振動"
 
-#: ../plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:194
 msgid "Dialpad tones"
 msgstr "撥號聲"
 
-#: ../plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
 msgstr "訊息："
 
-#: ../plugins/sound/PageComponent.qml:209
-#: ../plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
 msgid "Message received"
 msgstr "收到訊息時"
 
-#: ../plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:230
 msgid "Vibrate with message sound"
 msgstr "訊息使用聲音並振動來通知"
 
-#: ../plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:247
 msgid "Other sounds:"
 msgstr "其他聲音："
 
-#: ../plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:268
 msgid "Lock sound"
 msgstr "鎖定聲"
 
-#: ../plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:278
 msgid "Other vibrations"
 msgstr "其它振動"
 
-#: ../plugins/sound/SoundsList.qml:132
-msgid "Custom Ringtone"
-msgstr "自訂鈴聲"
-
-#: ../plugins/sound/SoundsList.qml:132
+#: plugins/sound/SoundsList.qml:132
 #, fuzzy
 #| msgid "Vibrate with message sound"
 msgid "Custom message sound"
 msgstr "訊息使用聲音並振動來通知"
 
-#: ../plugins/sound/SoundsList.qml:213
+#: plugins/sound/SoundsList.qml:132
+msgid "Custom Ringtone"
+msgstr "自訂鈴聲"
+
+#: plugins/sound/SoundsList.qml:213
 msgid "Choose from"
 msgstr "選擇來自"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:30
+#: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "時區"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:50
+#: plugins/time-date/ChooseTimeZone.qml:50
 msgid "Set the time zone:"
 msgstr "設置時區："
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Automatically"
 msgstr "自動"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Manually"
 msgstr "手動"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:130
 msgid "Enter your current location."
 msgstr "輸入您目前的位置。"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "No matching place"
 msgstr "沒有符合的地方"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: ../plugins/time-date/PageComponent.qml:31 settings.js:286
+#: plugins/time-date/PageComponent.qml:31
 msgid "Time and Date"
 msgstr "日期與時間"
 
-#: ../plugins/time-date/PageComponent.qml:64
+#: plugins/time-date/PageComponent.qml:64
 msgid "Time zone:"
 msgstr "時區："
 
-#: ../plugins/time-date/PageComponent.qml:79
+#: plugins/time-date/PageComponent.qml:79
 msgid "Set the time and date:"
 msgstr "設定日期與時間："
 
-#: ../plugins/time-date/TimePicker.qml:26
+#: plugins/time-date/TimePicker.qml:26
 msgid "Set time & date"
 msgstr "設定日期與時間"
 
-#: ../plugins/time-date/TimePicker.qml:47
+#: plugins/time-date/TimePicker.qml:47
 msgid "Time"
 msgstr "時間"
 
-#: ../plugins/time-date/TimePicker.qml:56
+#: plugins/time-date/TimePicker.qml:56
 msgid "Date"
 msgstr "日期"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: ../plugins/vpn/PageComponent.qml:31 settings.js:296
+#: plugins/vpn/PageComponent.qml:31
 msgid "VPN"
 msgstr "VPN"
 
-#: ../plugins/vpn/PageComponent.qml:76
+#: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr "要加入VPN配置，請下載其配置文件或手動配置。"
 
-#: ../plugins/vpn/PageComponent.qml:82
+#: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
 msgstr "加入手動配置…"
 
-#: ../plugins/vpn/PageComponent.qml:117
+#: plugins/vpn/PageComponent.qml:117
 msgid "VPN reconnection required."
 msgstr "VPN 需要重新連接。"
 
-#: ../plugins/vpn/PageComponent.qml:118
+#: plugins/vpn/PageComponent.qml:118
 msgid "You need to reconnect for changes to have an effect."
 msgstr "您需要重新連接以使更改生效。"
 
-#: ../plugins/wifi/CertDialog.qml:22
+#: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
 msgstr "加入憑證？"
 
-#: ../plugins/wifi/CertDialog.qml:24
+#: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
 msgstr "加入金鑰？"
 
-#: ../plugins/wifi/CertDialog.qml:26
+#: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
 msgstr "加入 Pac文件？"
 
-#: ../plugins/wifi/CertDialog.qml:36
+#: plugins/wifi/CertDialog.qml:36
 msgid "Content:"
 msgstr "內容："
 
-#: ../plugins/wifi/CertDialog.qml:49
+#: plugins/wifi/CertDialog.qml:49
 msgid "No data available."
 msgstr "沒有可用的數據。"
 
-#: ../plugins/wifi/CertDialog.qml:74
+#: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "儲存"
 
-#: ../plugins/wifi/NetworkDetails.qml:38
+#: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
 msgstr "網路詳細內容"
 
-#: ../plugins/wifi/NetworkDetails.qml:65
+#: plugins/wifi/NetworkDetails.qml:65
 msgid "Last connected"
 msgstr "上次連線"
 
-#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
 msgid "Password"
 msgstr "密碼"
 
-#: ../plugins/wifi/NetworkDetails.qml:99
-#: ../plugins/wifi/NetworkDetailsBrief.qml:55
+#: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
 msgid "Forget this network"
 msgstr "忘掉這著網路"
 
-#: ../plugins/wifi/NetworkDetailsBrief.qml:73
+#: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
 msgstr "IP 位址"
 
-#: ../plugins/wifi/OtherNetwork.qml:92
+#: plugins/wifi/OtherNetwork.qml:92
 msgid "Connect to Wi‑Fi"
 msgstr "連接至 Wi-Fi"
 
-#: ../plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:93
 msgid "Connect to Hidden Network"
 msgstr "連接到隱藏網路"
 
-#: ../plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:285
 msgid "Network name"
 msgstr "網路名稱"
 
-#: ../plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
 msgstr "無線基地台"
 
-#: ../plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
 msgstr "安全"
 
-#: ../plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WPA & WPA2 Personal"
 msgstr "個人 WPA 與 WPA2"
 
-#: ../plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:320
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA 與 WPA2 企業"
 
-#: ../plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
 msgstr "WEP"
 
-#: ../plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
 msgstr "動態無線加密協議（802.1x）"
 
-#: ../plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
 msgstr "LEAP"
 
-#: ../plugins/wifi/OtherNetwork.qml:332
+#: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
 msgstr "這個網絡並不安全。"
 
-#: ../plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
 msgstr "認證"
 
-#: ../plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
 msgstr "內部認證"
 
-#: ../plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
 msgstr "CA 憑證"
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: ../plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
 msgstr "%1…"
 
-#: ../plugins/wifi/OtherNetwork.qml:458 ../plugins/wifi/OtherNetwork.qml:575
-#: ../plugins/wifi/certhandler.cpp:106 ../plugins/wifi/certhandler.cpp:141
-#: ../plugins/wifi/certhandler.cpp:193 ../plugins/wifi/certhandler.cpp:225
-#: ../plugins/wifi/certhandler.cpp:290 ../plugins/wifi/certhandler.cpp:319
+#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
+#: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
+#: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
 msgstr "選擇…"
 
@@ -1862,7 +1919,7 @@ msgstr "選擇…"
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: ../plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr "%1...,%2 到期"
@@ -1871,804 +1928,511 @@ msgstr "%1...,%2 到期"
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: ../plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr "%1...,%2 到期"
 
-#: ../plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
 msgstr "建議使用憑證可提高安全性。"
 
-#: ../plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
 msgstr "客戶端憑證"
 
-#: ../plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
 msgstr "使用者私密金鑰"
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: ../plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr "%1, %2, %3 位元"
 
-#: ../plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
 msgstr "Pac 文件"
 
-#: ../plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
 msgstr "Pac 資源調配中"
 
-#: ../plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:686
 msgid "Disabled"
 msgstr "已停用"
 
-#: ../plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
 msgstr "匿名"
 
-#: ../plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
 msgstr "已認證"
 
-#: ../plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
 msgstr "兩者皆是"
 
-#: ../plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:699
 msgid "PEAP version"
 msgstr "PEAP 版本"
 
-#: ../plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:713
 msgid "Version 0"
 msgstr "版本 0"
 
-#: ../plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:714
 msgid "Version 1"
 msgstr "版本 1"
 
-#: ../plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:715
 msgid "Automatic"
 msgstr "自動"
 
-#: ../plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
 msgstr "匿名身份"
 
-#: ../plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
 msgstr "身分"
 
-#: ../plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
 msgstr "使用者名稱"
 
-#: ../plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
 msgstr "私密金鑰密碼"
 
-#: ../plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:857
 msgid "Remember password"
 msgstr "記住密碼"
 
-#: ../plugins/wifi/PageComponent.qml:129
+#: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
 msgstr "連接到隱藏網路…"
 
-#: ../plugins/wifi/PageComponent.qml:139
-#: ../plugins/wifi/PreviousNetworks.qml:27
+#: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
 msgstr "之前的網路"
 
-#: ../plugins/wifi/RemoveBackground.qml:28
+#: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
 msgstr "清除"
 
-#: ../plugins/wifi/certhandler.cpp:258
+#: plugins/wifi/certhandler.cpp:258
 msgid "Private key"
 msgstr "私密金鑰"
 
-#: ../plugins/wifi/certhandler.cpp:259
+#: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
 msgstr "公用金鑰"
 
-#: ../plugins/wifi/certhandler.cpp:264
+#: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
 msgstr "不透明"
 
-#: ../src/qml/MainWindow.qml:170 lomiri-system-settings.desktop.in.in.h:1
-msgid "System Settings"
-msgstr "系統設定"
-
-#: ../src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:203
 msgid "Search"
 msgstr "搜尋"
 
-#: ../src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:246
 msgid "Personal"
 msgstr "個人"
 
-#: ../src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "系統"
 
-#: lomiri-system-settings.desktop.in.in.h:2
-msgid "System;"
-msgstr "系統;"
+#~ msgid "Unavailable"
+#~ msgstr "不可用"
 
-#: lomiri-system-settings.desktop.in.in.h:3
-msgid "Preferences;Settings;"
-msgstr "偏好設定;設定;"
+#~ msgid "Launcher"
+#~ msgstr "啟動欄"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:4
-msgid "about"
-msgstr "關於"
+#~ msgid "System;"
+#~ msgstr "系統;"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:6 settings.js:78
-msgid "device"
-msgstr "裝置"
+#~ msgid "about"
+#~ msgstr "關於"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:8
-msgid "info"
-msgstr "資訊"
+#~ msgid "device"
+#~ msgstr "裝置"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:10
-msgid "phone"
-msgstr "電話"
+#~ msgid "info"
+#~ msgstr "資訊"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:12
-msgid "number"
-msgstr "號碼"
+#~ msgid "phone"
+#~ msgstr "電話"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:14
-msgid "imei"
-msgstr "IMEI"
+#~ msgid "number"
+#~ msgstr "號碼"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:16
-msgid "serial"
-msgstr "序號"
+#~ msgid "imei"
+#~ msgstr "IMEI"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:18 settings.js:310 settings.js:332
-msgid "address"
-msgstr "位址"
+#~ msgid "serial"
+#~ msgstr "序號"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:20
-msgid "mac"
-msgstr "Mac"
+#~ msgid "address"
+#~ msgstr "位址"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:22
-msgid "licenses"
-msgstr "授權"
+#~ msgid "mac"
+#~ msgstr "Mac"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:24
-msgid "developer"
-msgstr "開發人員"
+#~ msgid "licenses"
+#~ msgstr "授權"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:26 settings.js:196
-msgid "software"
-msgstr "軟體"
+#~ msgid "developer"
+#~ msgstr "開發人員"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:28
-msgid "storage"
-msgstr "儲存空間"
+#~ msgid "software"
+#~ msgstr "軟體"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:30
-msgid "disk"
-msgstr "磁碟"
+#~ msgid "storage"
+#~ msgstr "儲存空間"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:32
-msgid "space"
-msgstr "空間"
+#~ msgid "disk"
+#~ msgstr "磁碟"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:34
-msgid "version"
-msgstr "版本"
+#~ msgid "space"
+#~ msgstr "空間"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:36
-msgid "revision"
-msgstr "修訂"
+#~ msgid "version"
+#~ msgstr "版本"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:40 settings.js:168
-msgid "appearance"
-msgstr "外觀"
+#~ msgid "revision"
+#~ msgstr "修訂"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:42
-msgid "background"
-msgstr "背景"
+#~ msgid "appearance"
+#~ msgstr "外觀"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:44
-msgid "wallpaper"
-msgstr "桌布"
+#~ msgid "background"
+#~ msgstr "背景"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:46
-msgid "art"
-msgstr "藝術"
+#~ msgid "wallpaper"
+#~ msgstr "桌布"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:48
-msgid "photo"
-msgstr "相片"
+#~ msgid "art"
+#~ msgstr "藝術"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:50
-msgid "picture"
-msgstr "圖片"
+#~ msgid "photo"
+#~ msgstr "相片"
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:52
-msgid "image"
-msgstr "影像"
+#~ msgid "picture"
+#~ msgstr "圖片"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:56
-msgid "battery"
-msgstr "電池"
+#~ msgid "image"
+#~ msgstr "影像"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:58
-msgid "power"
-msgstr "電源"
+#~ msgid "battery"
+#~ msgstr "電池"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:60
-msgid "charge"
-msgstr "電量"
+#~ msgid "power"
+#~ msgstr "電源"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:62
-msgid "idle"
-msgstr "閒置"
+#~ msgid "charge"
+#~ msgstr "電量"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:64 settings.js:224
-msgid "lock"
-msgstr "鎖定"
+#~ msgid "idle"
+#~ msgstr "閒置"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:66
-msgid "disable"
-msgstr "停用"
+#~ msgid "lock"
+#~ msgstr "鎖定"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:68
-msgid "enable"
-msgstr "啟用"
+#~ msgid "disable"
+#~ msgstr "停用"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:72
-msgid "bluetooth"
-msgstr "藍牙"
+#~ msgid "enable"
+#~ msgstr "啟用"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:74
-msgid "headset"
-msgstr "聽筒"
+#~ msgid "bluetooth"
+#~ msgstr "藍牙"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:76
-msgid "pair"
-msgstr "配對"
+#~ msgid "headset"
+#~ msgstr "聽筒"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:80
-msgid "discover"
-msgstr "發現"
+#~ msgid "pair"
+#~ msgstr "配對"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:82
-msgid "car"
-msgstr "車子"
+#~ msgid "discover"
+#~ msgstr "發現"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:84
-msgid "handsfree"
-msgstr "免持"
+#~ msgid "car"
+#~ msgstr "車子"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:86 settings.js:318
-msgid "wireless"
-msgstr "無線網路"
+#~ msgid "handsfree"
+#~ msgstr "免持"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:88 settings.js:300 settings.js:324
-msgid "connect"
-msgstr "連接"
+#~ msgid "wireless"
+#~ msgstr "無線網路"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:90 settings.js:302 settings.js:326
-msgid "disconnect"
-msgstr "斷線"
+#~ msgid "connect"
+#~ msgstr "連接"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:92
-msgid "stereo"
-msgstr "立體"
+#~ msgid "disconnect"
+#~ msgstr "斷線"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:96
-msgid "brightness"
-msgstr "亮度"
+#~ msgid "stereo"
+#~ msgstr "立體"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:98 settings.js:158
-msgid "display"
-msgstr "顯示"
+#~ msgid "brightness"
+#~ msgstr "亮度"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:100 settings.js:226
-msgid "screen"
-msgstr "螢幕"
+#~ msgid "display"
+#~ msgstr "顯示"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:102 settings.js:146 settings.js:294
-msgid "automatic"
-msgstr "自動"
+#~ msgid "screen"
+#~ msgstr "螢幕"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:104
-msgid "adjust"
-msgstr "調整"
+#~ msgid "automatic"
+#~ msgstr "自動"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:106
-msgid "Example"
-msgstr "範例"
+#~ msgid "adjust"
+#~ msgstr "調整"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:108
-msgid "example"
-msgstr "範例"
+#~ msgid "Example"
+#~ msgstr "範例"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:110
-msgid "test"
-msgstr "測試"
+#~ msgid "example"
+#~ msgstr "範例"
 
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:112
-msgid "sample"
-msgstr "樣本"
+#~ msgid "test"
+#~ msgstr "測試"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:114
-msgid "Flight Mode"
-msgstr "飛航模式"
+#~ msgid "sample"
+#~ msgstr "樣本"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:116
-msgid "flight"
-msgstr "飛航"
+#~ msgid "Flight Mode"
+#~ msgstr "飛航模式"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:118
-msgid "plane"
-msgstr "飛機"
+#~ msgid "flight"
+#~ msgstr "飛航"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:120
-msgid "offline"
-msgstr "離線"
+#~ msgid "plane"
+#~ msgstr "飛機"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:122
-msgid "airplane"
-msgstr "飛機"
+#~ msgid "offline"
+#~ msgstr "離線"
 
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:124 settings.js:132 settings.js:298 settings.js:316
-msgid "network"
-msgstr "網路"
+#~ msgid "airplane"
+#~ msgstr "飛機"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: settings.js:128
+#~ msgid "network"
+#~ msgstr "網路"
+
 #, fuzzy
-#| msgid "Pictures"
-msgid "gestures"
-msgstr "圖片"
+#~| msgid "Pictures"
+#~ msgid "gestures"
+#~ msgstr "圖片"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:134
-msgid "hotspot"
-msgstr "熱點"
+#~ msgid "hotspot"
+#~ msgstr "熱點"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:136
-msgid "tethering"
-msgstr "共用網路"
+#~ msgid "tethering"
+#~ msgstr "共用網路"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:140
-msgid "language"
-msgstr "語言"
+#~ msgid "language"
+#~ msgstr "語言"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:142 settings.js:282
-msgid "keyboard"
-msgstr "鍵盤"
+#~ msgid "keyboard"
+#~ msgstr "鍵盤"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:144
-msgid "spellcheck"
-msgstr "拼寫檢查"
+#~ msgid "spellcheck"
+#~ msgstr "拼寫檢查"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:148
-msgid "correct"
-msgstr "正確"
+#~ msgid "correct"
+#~ msgstr "正確"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:150
-msgid "suggestions"
-msgstr "建議"
+#~ msgid "suggestions"
+#~ msgstr "建議"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:152
-msgid "capitalization"
-msgstr "大寫"
+#~ msgid "capitalization"
+#~ msgstr "大寫"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:154
-msgid "punctuation"
-msgstr "標點符號"
+#~ msgid "punctuation"
+#~ msgstr "標點符號"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:156
-msgid "layout"
-msgstr "配置"
+#~ msgid "layout"
+#~ msgstr "配置"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:160
-msgid "words"
-msgstr "詞彙"
+#~ msgid "words"
+#~ msgstr "詞彙"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:162
-msgid "vibration"
-msgstr "振動"
+#~ msgid "vibration"
+#~ msgstr "振動"
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:166
-msgid "launcher"
-msgstr "啟動欄"
+#~ msgid "launcher"
+#~ msgstr "啟動欄"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:172
-msgid "mouse"
-msgstr "滑鼠"
+#~ msgid "mouse"
+#~ msgstr "滑鼠"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:174
-msgid "touchpad"
-msgstr "觸控板"
+#~ msgid "touchpad"
+#~ msgstr "觸控板"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:176
-msgid "tap"
-msgstr "輕按"
+#~ msgid "tap"
+#~ msgstr "輕按"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:178
-msgid "touch"
-msgstr "觸控"
+#~ msgid "touch"
+#~ msgstr "觸控"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:180
-msgid "click"
-msgstr "點擊"
+#~ msgid "click"
+#~ msgstr "點擊"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:182
-msgid "input"
-msgstr "輸入"
+#~ msgid "input"
+#~ msgstr "輸入"
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:186
-msgid "nfc"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:188
-msgid "near"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:190
-msgid "field"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:192
 #, fuzzy
-#| msgid "Authentication"
-msgid "communication"
-msgstr "認證"
+#~| msgid "Authentication"
+#~ msgid "communication"
+#~ msgstr "認證"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:198
-msgid "notifications"
-msgstr "通知"
+#~ msgid "notifications"
+#~ msgstr "通知"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:200 settings.js:228
-msgid "apps"
-msgstr "應用程式"
+#~ msgid "apps"
+#~ msgstr "應用程式"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:202
-msgid "authorize"
-msgstr "授權"
+#~ msgid "authorize"
+#~ msgstr "授權"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:204
-msgid "alerts"
-msgstr "警報"
+#~ msgid "permissions"
+#~ msgstr "權限"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:206
-msgid "permissions"
-msgstr "權限"
+#~ msgid "badges"
+#~ msgstr "徽章"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:208
-msgid "badges"
-msgstr "徽章"
+#~ msgid "facebook"
+#~ msgstr "Facebook"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:210
-msgid "facebook"
-msgstr "Facebook"
+#~ msgid "twitter"
+#~ msgstr "Twitter"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:212
-msgid "twitter"
-msgstr "Twitter"
+#~ msgid "flickr"
+#~ msgstr "Flickr"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:214
-msgid "flickr"
-msgstr "Flickr"
+#~ msgid "gmail"
+#~ msgstr "Gmail"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:216
-msgid "gmail"
-msgstr "Gmail"
+#~ msgid "Rotation Lock"
+#~ msgstr "旋轉鎖定"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:218
-msgid "Rotation Lock"
-msgstr "旋轉鎖定"
+#~ msgid "rotation"
+#~ msgstr "旋轉"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:220
-msgid "rotation"
-msgstr "旋轉"
+#~ msgid "orientation"
+#~ msgstr "方向"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:222
-msgid "orientation"
-msgstr "方向"
+#~ msgid "printer"
+#~ msgstr "印表機"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:232
-msgid "printer"
-msgstr "印表機"
+#~ msgid "printers"
+#~ msgstr "印表機"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:234
-msgid "printers"
-msgstr "印表機"
+#~ msgid "printing"
+#~ msgstr "列印"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:236
-msgid "printing"
-msgstr "列印"
+#~ msgid "pdf"
+#~ msgstr "PDF"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:238
-msgid "pdf"
-msgstr "PDF"
+#~ msgid "ppd"
+#~ msgstr "PPD"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:240
-msgid "ppd"
-msgstr "PPD"
+#~ msgid "collate"
+#~ msgstr "整理"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:242
-msgid "collate"
-msgstr "整理"
+#~ msgid "copies"
+#~ msgstr "副本"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:244
-msgid "copies"
-msgstr "副本"
+#~ msgid "colormodel"
+#~ msgstr "色彩模式"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:246
-msgid "colormodel"
-msgstr "色彩模式"
+#~ msgid "greyscale"
+#~ msgstr "灰階"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:248
-msgid "greyscale"
-msgstr "灰階"
+#~ msgid "color"
+#~ msgstr "色彩"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:250
-msgid "color"
-msgstr "色彩"
+#~ msgid "laser"
+#~ msgstr "雷射"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:252
-msgid "laser"
-msgstr "雷射"
+#~ msgid "ink"
+#~ msgstr "油墨"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:254
-msgid "ink"
-msgstr "油墨"
+#~ msgid "Reset"
+#~ msgstr "重設"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:256
-msgid "Reset"
-msgstr "重設"
+#~ msgid "reset"
+#~ msgstr "重設"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:258
-msgid "reset"
-msgstr "重設"
+#~ msgid "erase"
+#~ msgstr "重置"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:260
-msgid "erase"
-msgstr "重置"
+#~ msgid "factory"
+#~ msgstr "原廠"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:262
-msgid "factory"
-msgstr "原廠"
+#~ msgid "clear"
+#~ msgstr "清除"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:264
-msgid "clear"
-msgstr "清除"
+#~ msgid "restore"
+#~ msgstr "恢復"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:266
-msgid "restore"
-msgstr "恢復"
+#~ msgid "sound"
+#~ msgstr "聲音"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:270
-msgid "sound"
-msgstr "聲音"
+#~ msgid "silent"
+#~ msgstr "靜音"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:272
-msgid "silent"
-msgstr "靜音"
+#~ msgid "ringtone"
+#~ msgstr "鈴聲"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:274
-msgid "ringtone"
-msgstr "鈴聲"
+#~ msgid "vibrate"
+#~ msgstr "振動"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:276
-msgid "vibrate"
-msgstr "振動"
+#~ msgid "dialpad"
+#~ msgstr "撥號"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:278
-msgid "dialpad"
-msgstr "撥號"
+#~ msgid "message"
+#~ msgstr "訊息"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:280
-msgid "message"
-msgstr "訊息"
+#~ msgid "volume"
+#~ msgstr "音量"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:284
-msgid "volume"
-msgstr "音量"
+#~ msgid "time"
+#~ msgstr "時間"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:288
-msgid "time"
-msgstr "時間"
+#~ msgid "date"
+#~ msgstr "日期"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:290
-msgid "date"
-msgstr "日期"
+#~ msgid "timezone"
+#~ msgstr "時區"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:292
-msgid "timezone"
-msgstr "時區"
+#~ msgid "vpn"
+#~ msgstr "VPN"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:304
-msgid "vpn"
-msgstr "VPN"
+#~ msgid "openvpn"
+#~ msgstr "openvpn"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:306
-msgid "openvpn"
-msgstr "openvpn"
+#~ msgid "ip"
+#~ msgstr "IP"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:308 settings.js:330
-msgid "ip"
-msgstr "IP"
+#~ msgid "routing"
+#~ msgstr "路由器"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:312
-msgid "routing"
-msgstr "路由器"
+#~ msgid "wifi"
+#~ msgstr "wifi"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:320
-msgid "wifi"
-msgstr "wifi"
+#~ msgid "WiFi"
+#~ msgstr "WiFi"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:322
-msgid "WiFi"
-msgstr "WiFi"
-
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:328
-msgid "hidden"
-msgstr "隱藏"
+#~ msgid "hidden"
+#~ msgstr "隱藏"
 
 #~ msgid "Used by Ubuntu"
 #~ msgstr "由 Ubuntu 使用"

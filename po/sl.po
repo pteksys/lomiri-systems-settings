@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 17:14+0000\n"
+"POT-Creation-Date: 2023-01-31 13:27+0000\n"
 "PO-Revision-Date: 2020-02-17 19:40+0000\n"
 "Last-Translator: Riccardo Riccio <rickyriccio@tiscali.it>\n"
 "Language-Team: Slovenian <https://translate.ubports.com/projects/ubports/"
@@ -21,29 +21,30 @@ msgstr ""
 "X-Generator: Weblate 3.8\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+msgid "System Settings"
+msgstr "Sistemske nastavitve"
+
+#: lomiri-system-settings.desktop.in:5
+msgid "Preferences;Settings;"
+msgstr "Možnosti;Nastavitve;"
+
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
 msgstr ""
 "Ni mogoče preklicati trenutne zahteve (ni mogoče navezati stik s storitvijo)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
 msgid "Can't pause current request (can't contact service)"
 msgstr ""
 "Ni mogoče narediti premor trenutne zahteve (ni mogoče stopiti v stik s "
 "storitvijo)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
-#, fuzzy
-msgid "Unavailable"
-msgstr "Na voljo so posodobitve"
-
-#: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
+#: plugins/about/DevMode.qml:34 plugins/about/DevMode.qml:90
 msgid "Developer Mode"
 msgstr "Način za razvijalce"
 
-#: ../plugins/about/DevMode.qml:83
+#: plugins/about/DevMode.qml:83
 #, fuzzy
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
@@ -52,230 +53,233 @@ msgstr ""
 "V Načinu za razvijalce lahko vsak dostopa, spreminja ali briše vse na tem "
 "telefonu s povezovanjem z drugo napravo."
 
-#: ../plugins/about/DevMode.qml:107
+#: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr "Za uporabo Načina za razvijalce potrebujete geslo ali šifrirno reklo."
 
-#: ../plugins/about/DevMode.qml:113
+#: plugins/about/DevMode.qml:115
 msgid "Lock security"
 msgstr "Varnost zaklepa"
 
-#: ../plugins/about/License.qml:29
+#: plugins/about/License.qml:29
 msgid "Sorry, this license could not be displayed."
 msgstr "Tega dovoljenja ni mogoče prikazati."
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: ../plugins/about/PageComponent.qml:33 settings.js:2
+#: plugins/about/PageComponent.qml:33
 msgid "About"
 msgstr "O programu"
 
-#: ../plugins/about/PageComponent.qml:97
+#: plugins/about/PageComponent.qml:97
 msgid "Serial"
 msgstr "Zaporedna številka"
 
-#: ../plugins/about/PageComponent.qml:107
-#: ../plugins/about/PageComponent.qml:108
-#: ../plugins/about/PageComponent.qml:119
-#: ../plugins/bluetooth/DevicePage.qml:73
-#: ../plugins/bluetooth/DevicePage.qml:82
-#: ../plugins/bluetooth/DevicePage.qml:110
-#: ../plugins/printing/printer-sub-pages/Status.qml:50
-#: ../plugins/wifi/OtherNetwork.qml:318 ../plugins/wifi/OtherNetwork.qml:457
-#: ../plugins/wifi/OtherNetwork.qml:574 ../plugins/wifi/certhandler.cpp:105
-#: ../plugins/wifi/certhandler.cpp:140 ../plugins/wifi/certhandler.cpp:192
-#: ../plugins/wifi/certhandler.cpp:224 ../plugins/wifi/certhandler.cpp:289
-#: ../plugins/wifi/certhandler.cpp:318
+#: plugins/about/PageComponent.qml:107 plugins/about/PageComponent.qml:108
+#: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
+#: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
+#: plugins/printing/printer-sub-pages/Status.qml:50
+#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
+#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
+#: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
+#: plugins/wifi/certhandler.cpp:318
 msgid "None"
 msgstr "Brez"
 
-#: ../plugins/about/PageComponent.qml:128
+#: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
 msgstr "Naslov Wi-Fi-ja"
 
-#: ../plugins/about/PageComponent.qml:136
+#: plugins/about/PageComponent.qml:136
 msgid "Bluetooth address"
 msgstr "Naslov Bluetootha"
 
-#: ../plugins/about/PageComponent.qml:147 ../plugins/about/Storage.qml:31
+#: plugins/about/PageComponent.qml:147 plugins/about/Storage.qml:31
 msgid "Storage"
 msgstr "Shramba"
 
 #. TRANSLATORS: that's the free disk space, indicated in the most appropriate storage unit
-#: ../plugins/about/PageComponent.qml:149
+#: plugins/about/PageComponent.qml:149
 #, qt-format
 msgid "%1 free"
 msgstr "%1 prosto"
 
-#: ../plugins/about/PageComponent.qml:157
+#: plugins/about/PageComponent.qml:156
 msgid "Software:"
 msgstr "Programska oprema:"
 
-#: ../plugins/about/PageComponent.qml:169
+#: plugins/about/PageComponent.qml:168
 msgid "OS"
 msgstr "OS"
 
-#: ../plugins/about/PageComponent.qml:181
+#: plugins/about/PageComponent.qml:180
 msgid "Last updated"
 msgstr "Nazadnje posodobljeno"
 
-#: ../plugins/about/PageComponent.qml:183
-#: ../plugins/battery/PageComponent.qml:328
-#: ../plugins/battery/PageComponent.qml:346
-#: ../plugins/battery/SleepValues.qml:108 ../plugins/wifi/NetworkDetails.qml:67
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nikoli"
 
-#: ../plugins/about/PageComponent.qml:191
+#: plugins/about/PageComponent.qml:190
 msgid "Check for updates"
 msgstr "Preveri za posodobitve"
 
-#: ../plugins/about/PageComponent.qml:222
+#: plugins/about/PageComponent.qml:221
 msgid "Legal:"
 msgstr "Pravno:"
 
-#: ../plugins/about/PageComponent.qml:227 ../plugins/about/Software.qml:11
+#: plugins/about/PageComponent.qml:226 plugins/about/Software.qml:11
 msgid "Software licenses"
 msgstr "Programska dovoljenja"
 
-#: ../plugins/about/PageComponent.qml:234
+#: plugins/about/PageComponent.qml:233
 msgid "Regulatory info"
 msgstr "Regulatorni podatki"
 
-#: ../plugins/about/PageComponent.qml:241
+#: plugins/about/PageComponent.qml:240
 msgid "Developer mode"
 msgstr "Način za razvijalce"
 
-#: ../plugins/about/Storage.qml:43
+#: plugins/about/Storage.qml:43
 msgid "Scanning"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:123
+#: plugins/about/Storage.qml:123
 #, fuzzy
 #| msgid "System Settings"
 msgid "System Reserved"
 msgstr "Sistemske nastavitve"
 
-#: ../plugins/about/Storage.qml:124
+#: plugins/about/Storage.qml:124
 #, fuzzy
 #| msgid "Used by apps"
 msgid "Used by system"
 msgstr "Uporabljajo programi"
 
-#: ../plugins/about/Storage.qml:125
+#: plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr "Video"
 
-#: ../plugins/about/Storage.qml:126
+#: plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr "Zvok"
 
-#: ../plugins/about/Storage.qml:127
+#: plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr "Slike"
 
-#: ../plugins/about/Storage.qml:128
+#: plugins/about/Storage.qml:128
 msgid "Documents"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:129
+#: plugins/about/Storage.qml:129
 msgid "Downloads"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:130
+#: plugins/about/Storage.qml:130
 msgid "Anbox"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:131
+#: plugins/about/Storage.qml:131
 msgid "Libertine"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:132
+#: plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr "Druge datoteke"
 
-#: ../plugins/about/Storage.qml:133
+#: plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr "Uporabljajo programi"
 
-#: ../plugins/about/Storage.qml:191
+#: plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr "Celotna shramba"
 
-#: ../plugins/about/Storage.qml:215
+#: plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr "Nezaseden prostor"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By name"
 msgstr "Po imenu"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By size"
 msgstr "Po velikosti"
 
-#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
-#: ../plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
+#: plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr "Ni na voljo"
 
-#: ../plugins/about/Version.qml:33
+#: plugins/about/Version.qml:33
 msgid "OS Build Details"
 msgstr "Podrobnosti izgradnje OS-a"
 
-#: ../plugins/about/Version.qml:60
+#: plugins/about/Version.qml:60
+msgid "OS update channel"
+msgstr ""
+
+#: plugins/about/Version.qml:67
 msgid "OS build number"
 msgstr "Številka izgradnje OS-a"
 
-#: ../plugins/about/Version.qml:66
+#: plugins/about/Version.qml:74
+msgid "Kernel"
+msgstr ""
+
+#: plugins/about/Version.qml:80
+msgid "Build ABI"
+msgstr ""
+
+#: plugins/about/Version.qml:86
 #, fuzzy
 msgid "UBports Image part"
 msgstr "Del odtisa Ubuntu"
 
-#: ../plugins/about/Version.qml:74
+#: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
 msgstr "Opis izgradnje Ubuntuja"
 
-#: ../plugins/about/Version.qml:80
+#: plugins/about/Version.qml:100
 msgid "Device Image part"
 msgstr "Del odtisa naprave"
 
-#: ../plugins/about/Version.qml:87
+#: plugins/about/Version.qml:107
 msgid "Device build description"
 msgstr "Opis izgradnje naprave"
 
-#: ../plugins/about/Version.qml:94
+#: plugins/about/Version.qml:114
 msgid "Customization Image part"
 msgstr "Del odtisa prilagoditve"
 
-#: ../plugins/about/click.cpp:134
+#: plugins/about/click.cpp:134
 msgid "Unknown title"
 msgstr "Neznan naslov"
 
-#: ../plugins/background/Components/AddRemove.qml:42
-#: ../plugins/background/Preview.qml:109
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:49
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:51
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:46
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:54
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: ../plugins/hotspot/HotspotSetup.qml:255
-#: ../plugins/hotspot/PageComponent.qml:166
-#: ../plugins/language/DisplayLanguage.qml:46
-#: ../plugins/language/RebootNecessary.qml:48
-#: ../plugins/printing/AddPrinter.qml:41
-#: ../plugins/reset/EraseEverything.qml:55
-#: ../plugins/reset/ResetAllSettings.qml:39
-#: ../plugins/reset/ResetLauncherHome.qml:56
-#: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
-#: ../plugins/wifi/OtherNetwork.qml:889
+#: plugins/background/Components/AddRemove.qml:42
+#: plugins/background/Preview.qml:110
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:51
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:46
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:54
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:55
+#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/language/DisplayLanguage.qml:46
+#: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
+#: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
+#: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: ../plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
 msgstr "Ni izbranih slik"
 
-#: ../plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:65
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
@@ -284,53 +288,57 @@ msgstr[1] "Odstrani %1 sliko"
 msgstr[2] "Odstrani %1 sliki"
 msgstr[3] "Odstrani %1 slike"
 
-#: ../plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:79
 msgid "Add an image…"
 msgstr "Dodaj sliko ..."
 
-#: ../plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:89
 msgid "Remove images…"
 msgstr "Odstrani slike ..."
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: ../plugins/background/MainPage.qml:34 settings.js:38
-msgid "Background"
+#: plugins/background/MainPage.qml:35
+#, fuzzy
+#| msgid "Background"
+msgid "Background & Appearance"
 msgstr "Ozadje"
 
-#: ../plugins/background/MainPage.qml:85
+#: plugins/background/MainPage.qml:87
+msgid "Enable blur effects"
+msgstr ""
+
+#: plugins/background/MainPage.qml:104
 #, fuzzy
 #| msgid "System"
 msgid "System Art"
 msgstr "Sistem"
 
-#: ../plugins/background/MainPage.qml:98
+#: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Po meri"
 
-#: ../plugins/background/MainPage.qml:157
+#: plugins/background/MainPage.qml:176
 #, fuzzy
 msgid "Choose application"
 msgstr "Izberi šifrirno reklo"
 
-#: ../plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:69
 msgid "Preview"
 msgstr "Predogled"
 
-#: ../plugins/background/Preview.qml:109
+#: plugins/background/Preview.qml:110
 msgid "Remove image"
 msgstr "Odstrani sliko"
 
-#: ../plugins/background/Preview.qml:115 ../plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Nastavi"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:35 settings.js:54
+#: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Baterija"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:44
+#: plugins/battery/PageComponent.qml:44
 #, qt-format
 msgid "%1 second ago"
 msgid_plural "%1 seconds ago"
@@ -340,7 +348,7 @@ msgstr[2] "Pred %1 sekundama"
 msgstr[3] "Pred %1 sekundami"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:47
+#: plugins/battery/PageComponent.qml:47
 #, qt-format
 msgid "%1 minute ago"
 msgid_plural "%1 minutes ago"
@@ -350,7 +358,7 @@ msgstr[2] "pred %1 minutama"
 msgstr[3] "pred %1 minutami"
 
 #. TRANSLATORS: %1 is the number of hours
-#: ../plugins/battery/PageComponent.qml:50
+#: plugins/battery/PageComponent.qml:50
 #, qt-format
 msgid "%1 hour ago"
 msgid_plural "%1 hours ago"
@@ -359,57 +367,55 @@ msgstr[1] "pred %1 uro"
 msgstr[2] "pred %1 urama"
 msgstr[3] "pred %1 urami"
 
-#: ../plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:104
 msgid "Charge level"
 msgstr "Raven napolnjenosti"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: ../plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:112
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: ../plugins/battery/PageComponent.qml:191
-#: ../plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
 msgstr "Včeraj"
 
-#: ../plugins/battery/PageComponent.qml:199
-#: ../plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
 msgid "Today"
 msgstr "Danes"
 
-#: ../plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:271
 msgid "Charging now"
 msgstr "Polnjenje"
 
-#: ../plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:273
 msgid "Last full charge"
 msgstr "Zadnja napolnitev"
 
-#: ../plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:275
 msgid "Fully charged"
 msgstr "Popolnoma napolnjeno"
 
-#: ../plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:294
 msgid "Ways to reduce battery use:"
 msgstr "Načini za zmanjšanje porabe baterije:"
 
-#: ../plugins/battery/PageComponent.qml:298
-#: ../plugins/brightness/PageComponent.qml:84
+#: plugins/battery/PageComponent.qml:298
+#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "Svetlost zaslona"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Lock when idle"
 msgstr "Zakleni med nedejavnostjo"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Sleep when idle"
 msgstr "V pripravljenost med nedejavnostjo"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:331
 #, fuzzy, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -419,12 +425,10 @@ msgstr[2] "Po %1 minutah"
 msgstr[3] "Po %1 minutah"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:335
-#: ../plugins/battery/PageComponent.qml:343
-#: ../plugins/battery/SleepValues.qml:85 ../plugins/battery/SleepValues.qml:89
-#: ../plugins/battery/SleepValues.qml:93 ../plugins/battery/SleepValues.qml:97
-#: ../plugins/battery/SleepValues.qml:101
-#: ../plugins/battery/SleepValues.qml:105
+#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
+#: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
+#: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -433,37 +437,33 @@ msgstr[1] "Po %1 minuti"
 msgstr[2] "Po %1 minutah"
 msgstr[3] "Po %1 minutah"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:374
-#: ../plugins/wifi/PageComponent.qml:28 settings.js:314
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: ../plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:374
 #, fuzzy
 msgid "Wi-Fi used for hotspot"
 msgstr "Vroča vstopna točka Wi-Fi"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:410
-#: ../plugins/bluetooth/PageComponent.qml:33
-#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:70
+#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ../plugins/battery/SleepValues.qml:68
+#: plugins/battery/SleepValues.qml:68
 #, fuzzy
 msgid "Lock the device when it's not in use:"
 msgstr "Zakleni telefon, ko ni v uporabi:"
 
-#: ../plugins/battery/SleepValues.qml:69
+#: plugins/battery/SleepValues.qml:69
 #, fuzzy
 msgid "Put the device to sleep when it is not in use:"
 msgstr "Daj telefon v pripravljenost, ko ni v uporabi:"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/SleepValues.qml:81
+#: plugins/battery/SleepValues.qml:81
 #, fuzzy, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
@@ -472,13 +472,7 @@ msgstr[1] "Po %1 minuti"
 msgstr[2] "Po %1 minutah"
 msgstr[3] "Po %1 minutah"
 
-#: ../plugins/battery/SleepValues.qml:125
-#, fuzzy
-msgid "Device won’t sleep during calls or video playback."
-msgstr ""
-"Telefon med klici ali predvajanjem videa ne bo prešel v pripravljenost."
-
-#: ../plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:125
 #, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
@@ -487,507 +481,507 @@ msgstr ""
 "Krajši časi so varnejši. Telefon se med klici ali predvajanjem videa ne bo "
 "zaklenil."
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:26
+#: plugins/battery/SleepValues.qml:125
+#, fuzzy
+msgid "Device won’t sleep during calls or video playback."
+msgstr ""
+"Telefon med klici ali predvajanjem videa ne bo prešel v pripravljenost."
+
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:26
 #, fuzzy
 msgid "Bluetooth Pairing Authorization Request"
 msgstr "Zahteva seznanjenja naprav Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:34
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
 msgstr ""
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:39
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 #, fuzzy
 msgid "Allow"
 msgstr "dovoli"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:46
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
 msgstr ""
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:28
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:26
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:26
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:28
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:28
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:26
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:26
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:28
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:28
 msgid "Bluetooth Pairing Request"
 msgstr "Zahteva seznanjenja naprav Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:37
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
 msgstr "Potrdite, da se PIN, prikazan na '%1', ujema s tem"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:57
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
 msgstr "Potrdi PIN"
 
-#: ../plugins/bluetooth/DevicePage.qml:37
-#: ../plugins/bluetooth/PageComponent.qml:290
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
-#: ../plugins/wifi/AccessPoint.qml:51 ../plugins/wifi/StandardMenuItem.qml:31
+#: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
+#: plugins/wifi/StandardMenuItem.qml:31
 msgid "Connected"
 msgstr "Povezano"
 
-#: ../plugins/bluetooth/DevicePage.qml:38
-#: ../plugins/bluetooth/PageComponent.qml:290
+#: plugins/bluetooth/DevicePage.qml:38 plugins/bluetooth/PageComponent.qml:290
 msgid "Connecting…"
 msgstr "Povezovanje ..."
 
-#: ../plugins/bluetooth/DevicePage.qml:39
+#: plugins/bluetooth/DevicePage.qml:39
 msgid "Disconnecting…"
 msgstr "Prekinjanje povezave ..."
 
-#: ../plugins/bluetooth/DevicePage.qml:40
+#: plugins/bluetooth/DevicePage.qml:40
 msgid "Disconnected"
 msgstr "Prekinjena povezava"
 
-#: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
+#: plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Neznano"
 
-#: ../plugins/bluetooth/DevicePage.qml:47
+#: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
 msgstr "Računalnik"
 
-#: ../plugins/bluetooth/DevicePage.qml:48
-#: ../plugins/bluetooth/DevicePage.qml:49
+#: plugins/bluetooth/DevicePage.qml:48 plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
 msgstr "Telefon"
 
-#: ../plugins/bluetooth/DevicePage.qml:50
+#: plugins/bluetooth/DevicePage.qml:50
 msgid "Modem"
 msgstr "Modem"
 
-#: ../plugins/bluetooth/DevicePage.qml:51 ../src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
 msgid "Network"
 msgstr "Omrežje"
 
-#: ../plugins/bluetooth/DevicePage.qml:52
+#: plugins/bluetooth/DevicePage.qml:52
 msgid "Headset"
 msgstr "Slušalke z mikrofonom"
 
-#: ../plugins/bluetooth/DevicePage.qml:53
+#: plugins/bluetooth/DevicePage.qml:53
 msgid "Headphones"
 msgstr "Slušalke"
 
-#: ../plugins/bluetooth/DevicePage.qml:54
+#: plugins/bluetooth/DevicePage.qml:54
 msgid "Video"
 msgstr "Video"
 
-#: ../plugins/bluetooth/DevicePage.qml:55
+#: plugins/bluetooth/DevicePage.qml:55
 msgid "Other Audio"
 msgstr "Drugi zvoki"
 
-#: ../plugins/bluetooth/DevicePage.qml:56
+#: plugins/bluetooth/DevicePage.qml:56
 msgid "Joypad"
 msgstr "Igralni plošček"
 
-#: ../plugins/bluetooth/DevicePage.qml:57
+#: plugins/bluetooth/DevicePage.qml:57
 msgid "Keyboard"
 msgstr "Tipkovnica"
 
-#: ../plugins/bluetooth/DevicePage.qml:58
+#: plugins/bluetooth/DevicePage.qml:58
 msgid "Tablet"
 msgstr "Tablični računalnik"
 
-#: ../plugins/bluetooth/DevicePage.qml:59 ../plugins/mouse/Connected.qml:48
+#: plugins/bluetooth/DevicePage.qml:59 plugins/mouse/Connected.qml:48
 msgid "Mouse"
 msgstr "Miška"
 
-#: ../plugins/bluetooth/DevicePage.qml:60
+#: plugins/bluetooth/DevicePage.qml:60
 msgid "Printer"
 msgstr "Tiskalnik"
 
-#: ../plugins/bluetooth/DevicePage.qml:61
+#: plugins/bluetooth/DevicePage.qml:61
 msgid "Camera"
 msgstr "Fotoaparat"
 
-#: ../plugins/bluetooth/DevicePage.qml:62
+#: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
 msgstr ""
 
-#: ../plugins/bluetooth/DevicePage.qml:63
+#: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
 msgstr "Drugo"
 
-#: ../plugins/bluetooth/DevicePage.qml:69
+#: plugins/bluetooth/DevicePage.qml:69
 msgid "Excellent"
 msgstr "Odlično"
 
-#: ../plugins/bluetooth/DevicePage.qml:70
+#: plugins/bluetooth/DevicePage.qml:70
 msgid "Good"
 msgstr "Dobro"
 
-#: ../plugins/bluetooth/DevicePage.qml:71
+#: plugins/bluetooth/DevicePage.qml:71
 msgid "Fair"
 msgstr "Zadovoljivo"
 
-#: ../plugins/bluetooth/DevicePage.qml:72
+#: plugins/bluetooth/DevicePage.qml:72
 msgid "Poor"
 msgstr "Slabo"
 
-#: ../plugins/bluetooth/DevicePage.qml:106
-#: ../plugins/printing/printer-sub-pages/Status.qml:61
-#: ../plugins/wifi/NetworkDetails.qml:59
+#: plugins/bluetooth/DevicePage.qml:106
+#: plugins/printing/printer-sub-pages/Status.qml:61
+#: plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
 msgstr "Ime"
 
-#: ../plugins/bluetooth/DevicePage.qml:113
+#: plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
 msgstr "Vrsta"
 
-#: ../plugins/bluetooth/DevicePage.qml:124
-#: ../plugins/printing/printer-sub-pages/Status.qml:26
+#: plugins/bluetooth/DevicePage.qml:124
+#: plugins/printing/printer-sub-pages/Status.qml:26
 msgid "Status"
 msgstr "Stanje"
 
-#: ../plugins/bluetooth/DevicePage.qml:128
+#: plugins/bluetooth/DevicePage.qml:128
 msgid "Signal Strength"
 msgstr "Moč signala"
 
-#: ../plugins/bluetooth/DevicePage.qml:133
-#: ../plugins/bluetooth/PageComponent.qml:358
+#: plugins/bluetooth/DevicePage.qml:133 plugins/bluetooth/PageComponent.qml:358
 msgid "Connect automatically when detected:"
 msgstr "Poveži samodejno, ko je zaznano:"
 
-#: ../plugins/bluetooth/DevicePage.qml:150 ../plugins/wifi/OtherNetwork.qml:905
-msgid "Connect"
-msgstr "Poveži"
-
-#: ../plugins/bluetooth/DevicePage.qml:150
+#: plugins/bluetooth/DevicePage.qml:150
 msgid "Disconnect"
 msgstr "Prekini povezavo"
 
-#: ../plugins/bluetooth/DevicePage.qml:172
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+msgid "Connect"
+msgstr "Poveži"
+
+#: plugins/bluetooth/DevicePage.qml:172
 msgid "Forget this device"
 msgstr "Pozabi to napravo"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:35
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:34
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:35
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr ""
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
 msgstr "Viden"
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Not discoverable"
 msgstr "Neviden"
 
-#: ../plugins/bluetooth/PageComponent.qml:260
-#: ../plugins/bluetooth/PageComponent.qml:319
+#: plugins/bluetooth/PageComponent.qml:260
+#: plugins/bluetooth/PageComponent.qml:319
 #, fuzzy
 msgid "Searching…"
 msgstr "Ponovni zagon ..."
 
-#: ../plugins/bluetooth/PageComponent.qml:269
+#: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
 msgstr "Povezane naprave:"
 
-#: ../plugins/bluetooth/PageComponent.qml:309
-msgid "Connect a device:"
-msgstr "Poveži napravo:"
-
-#: ../plugins/bluetooth/PageComponent.qml:309
+#: plugins/bluetooth/PageComponent.qml:309
 msgid "Connect another device:"
 msgstr "Poveži drugo napravo:"
 
-#: ../plugins/bluetooth/PageComponent.qml:352
+#: plugins/bluetooth/PageComponent.qml:309
+msgid "Connect a device:"
+msgstr "Poveži napravo:"
+
+#: plugins/bluetooth/PageComponent.qml:352
 msgid "None detected"
 msgstr "Ni zaznanih"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:36
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:36
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:36
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
 msgstr "PIN za '%1'"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:62
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:63
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:62
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:63
 msgid "Pair"
 msgstr "Seznani"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: ../plugins/brightness/PageComponent.qml:35 settings.js:94
-msgid "Brightness"
-msgstr "Svetlost"
-
-#: ../plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:67
 #, fuzzy
 msgid "Brightness & Display"
 msgstr "Svetlost"
 
-#: ../plugins/brightness/PageComponent.qml:122
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:65
+msgid "Brightness"
+msgstr "Svetlost"
+
+#: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Prilagodi samodejno"
 
-#: ../plugins/brightness/PageComponent.qml:137
+#: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Osvetli in zatemni zaslon glede na okolje."
 
-#: ../plugins/brightness/PageComponent.qml:142
+#: plugins/brightness/PageComponent.qml:135
 #, fuzzy
 #| msgid "display"
 msgid "Display"
 msgstr "prikaz"
 
-#: ../plugins/brightness/PageComponent.qml:147
+#: plugins/brightness/PageComponent.qml:141
 #, fuzzy
 msgid "External display"
 msgstr "prikaz"
 
-#: ../plugins/brightness/PageComponent.qml:166
+#: plugins/brightness/PageComponent.qml:158
 #, fuzzy
 msgid "Wireless display"
 msgstr "prikaz"
 
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184
 #, fuzzy
 msgid "Not connected"
 msgstr "Nazadnje povezano"
 
-#: ../plugins/brightness/WifiDisplays.qml:27
+#: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
 msgstr ""
 
-#: ../plugins/brightness/WifiDisplays.qml:100
+#: plugins/brightness/WifiDisplays.qml:112
 #, fuzzy
 msgid "No displays detected"
 msgstr "Ni zaznanih"
 
-#: ../plugins/brightness/WifiDisplays.qml:113
+#: plugins/brightness/WifiDisplays.qml:125
 #, fuzzy
 msgid "Connected display:"
 msgstr "Povezane naprave:"
 
-#: ../plugins/brightness/WifiDisplays.qml:128
+#: plugins/brightness/WifiDisplays.qml:140
 #, fuzzy
 msgid "Connecting"
 msgstr "Povezovanje ..."
 
-#: ../plugins/brightness/WifiDisplays.qml:146
-#, fuzzy
-msgid "Choose a display:"
-msgstr "Izberi šifrirno reklo"
-
-#: ../plugins/brightness/WifiDisplays.qml:146
+#: plugins/brightness/WifiDisplays.qml:158
 #, fuzzy
 msgid "Use another display:"
 msgstr "Poveži drugo napravo:"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:32
+#: plugins/brightness/WifiDisplays.qml:158
+#, fuzzy
+msgid "Choose a display:"
+msgstr "Izberi šifrirno reklo"
+
+#: plugins/brightness/WifiDisplaysAlert.qml:32
 #, fuzzy, qt-format
 msgid "This device failed to connect to %1."
 msgstr "prekini"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:34
+#: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
 msgstr ""
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:38
-#: ../plugins/vpn/PageComponent.qml:123
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "V redu"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: ../plugins/gestures/PageComponent.qml:25 settings.js:126
+#: plugins/gestures/PageComponent.qml:25
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Slike"
 
-#: ../plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:44
 msgid "Tap to wake"
 msgstr ""
 
-#: ../plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
+#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
 msgstr "Neznana napaka"
 
-#: ../plugins/hotspot/Common.qml:36 ../plugins/wifi/Common.qml:38
+#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
 msgid "No reason given"
 msgstr "Ni podanega razloga"
 
-#: ../plugins/hotspot/Common.qml:38 ../plugins/wifi/Common.qml:40
+#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
 msgid "Device is now managed"
 msgstr "Naprava je zdaj upravljana"
 
-#: ../plugins/hotspot/Common.qml:40 ../plugins/wifi/Common.qml:42
+#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
 msgid "Device is now unmanaged"
 msgstr "Naprava zdaj ni upravljana"
 
-#: ../plugins/hotspot/Common.qml:42 ../plugins/wifi/Common.qml:44
+#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
 msgid "The device could not be readied for configuration"
 msgstr "Naprave ni mogoče pripraviti za nastavitev"
 
-#: ../plugins/hotspot/Common.qml:44 ../plugins/wifi/Common.qml:46
+#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
 msgid ""
 "IP configuration could not be reserved (no available address, timeout, etc.)"
 msgstr ""
 "Nastavitve IP-ja ni mogoče zadržati (naslov ni na voljo, časovna "
 "prekoračitev, itn.)"
 
-#: ../plugins/hotspot/Common.qml:46 ../plugins/wifi/Common.qml:48
+#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
 msgid "The IP configuration is no longer valid"
 msgstr "Nastavitev IP-ja ni več veljavna"
 
-#: ../plugins/hotspot/Common.qml:48 ../plugins/wifi/Common.qml:50
+#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
 msgid "Your authentication details were incorrect"
 msgstr "Podrobnosti vaše overitve so bile nepravilne"
 
-#: ../plugins/hotspot/Common.qml:50 ../plugins/wifi/Common.qml:52
+#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
 msgid "802.1X supplicant disconnected"
 msgstr "Prosilnik 802.1X je odklopljen"
 
-#: ../plugins/hotspot/Common.qml:52 ../plugins/wifi/Common.qml:54
+#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
 msgid "802.1X supplicant configuration failed"
 msgstr "Nastavitev prosilnika 802.1X je spodletela"
 
-#: ../plugins/hotspot/Common.qml:54 ../plugins/wifi/Common.qml:56
+#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
 msgid "802.1X supplicant failed"
 msgstr "Prosilnik 802.1X je spodletel"
 
-#: ../plugins/hotspot/Common.qml:56 ../plugins/wifi/Common.qml:58
+#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
 msgid "802.1X supplicant took too long to authenticate"
 msgstr "Prosilnik 802.1X je potreboval preveč časa za overitev"
 
-#: ../plugins/hotspot/Common.qml:58 ../plugins/wifi/Common.qml:60
+#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
 msgid "DHCP client failed to start"
 msgstr "Začenjanje odjemalca DHCP je spodletelo"
 
-#: ../plugins/hotspot/Common.qml:60 ../plugins/wifi/Common.qml:62
+#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
 msgid "DHCP client error"
 msgstr "Napaka odjemalca DHCP"
 
-#: ../plugins/hotspot/Common.qml:62 ../plugins/wifi/Common.qml:64
+#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
 msgid "DHCP client failed"
 msgstr "Odjemalec DHCP je spodletel"
 
-#: ../plugins/hotspot/Common.qml:64 ../plugins/wifi/Common.qml:66
+#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
 msgid "Shared connection service failed to start"
 msgstr "Začenjanje storitve souporabe povezave je spodletelo."
 
-#: ../plugins/hotspot/Common.qml:66 ../plugins/wifi/Common.qml:68
+#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
 msgid "Shared connection service failed"
 msgstr "Storitev souporabe povezave je spodletela."
 
-#: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
+#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
 msgstr "Morda manjka zahtevana strojna programska oprema za napravo"
 
-#: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
+#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
 msgid "The device was removed"
 msgstr "Naprava je bila odstranjena"
 
-#: ../plugins/hotspot/Common.qml:72 ../plugins/wifi/Common.qml:74
+#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
 msgid "NetworkManager went to sleep"
 msgstr "NetworkManager je prešel v pripravljenost"
 
-#: ../plugins/hotspot/Common.qml:74 ../plugins/wifi/Common.qml:76
+#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
 msgid "The device's active connection disappeared"
 msgstr "Dejavna povezava naprave je izginila"
 
-#: ../plugins/hotspot/Common.qml:76 ../plugins/wifi/Common.qml:78
+#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
 msgid "Device disconnected by user or client"
 msgstr "Uporabnik ali odjemalec je odklopil napravo"
 
-#: ../plugins/hotspot/Common.qml:78 ../plugins/wifi/Common.qml:80
+#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
 msgid "The device's existing connection was assumed"
 msgstr "Predvidena je bila obstoječa povezava naprave"
 
-#: ../plugins/hotspot/Common.qml:80 ../plugins/wifi/Common.qml:82
+#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
 msgid "The supplicant is now available"
 msgstr "Prosilnik je zdaj na voljo"
 
-#: ../plugins/hotspot/Common.qml:82 ../plugins/wifi/Common.qml:84
+#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
 msgid "The modem could not be found"
 msgstr "Modema ni mogoče najti."
 
-#: ../plugins/hotspot/Common.qml:84 ../plugins/wifi/Common.qml:86
+#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
 msgid "The Bluetooth connection failed or timed out"
 msgstr "Povezava Bluetooth je spodletela ali pa je časovno potekla"
 
-#: ../plugins/hotspot/Common.qml:86 ../plugins/wifi/Common.qml:88
+#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
 msgid "A dependency of the connection failed"
 msgstr "Odvisnost povezave je spodletela"
 
-#: ../plugins/hotspot/Common.qml:88 ../plugins/wifi/Common.qml:90
+#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
 msgid "ModemManager is unavailable"
 msgstr "ModemManager ni na voljo"
 
-#: ../plugins/hotspot/Common.qml:90 ../plugins/wifi/Common.qml:92
+#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
 msgid "The Wi-Fi network could not be found"
 msgstr "Omrežja Wi-Fi ni mogoče najti"
 
-#: ../plugins/hotspot/Common.qml:92 ../plugins/wifi/Common.qml:94
+#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
 msgid "A secondary connection of the base connection failed"
 msgstr "Drugo povezovanje z osnovno povezavo je spodletelo"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Change Hotspot Setup"
 msgstr "Spremeni nastavitve vroče dostopne točke"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Set Up Hotspot"
 msgstr "Nastavi vročo vstopno točko"
 
-#: ../plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:167
 msgid "Hotspot name"
 msgstr "Ime vroče vstopne točke"
 
-#: ../plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:168
 #, fuzzy
 msgid "Choose a name"
 msgstr "Izberi šifrirno reklo"
 
-#: ../plugins/hotspot/HotspotSetup.qml:185
+#: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
 msgstr ""
 
-#: ../plugins/hotspot/HotspotSetup.qml:216
-#: ../plugins/wifi/NetworkDetails.qml:87 ../plugins/wifi/OtherNetwork.qml:821
+#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Pokaži geslo"
 
-#: ../plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: ../plugins/hotspot/HotspotSetup.qml:266
+#: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
 msgstr "Spremeni"
 
-#: ../plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
 msgstr "Začni"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: ../plugins/hotspot/PageComponent.qml:33
-#: ../plugins/hotspot/PageComponent.qml:85 settings.js:130
+#: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
 msgstr "Vroča vstopna točka"
 
-#: ../plugins/hotspot/PageComponent.qml:114
+#: plugins/hotspot/PageComponent.qml:114
 msgid ""
 "When hotspot is on, other devices can use your cellular data connection over "
 "Wi-Fi. Normal data charges apply."
@@ -996,7 +990,7 @@ msgstr ""
 "povezavo z mobilnimi podatki preko Wi-Fi-ja. Prenosi podatkov bodo morda "
 "zaračunani."
 
-#: ../plugins/hotspot/PageComponent.qml:115
+#: plugins/hotspot/PageComponent.qml:115
 msgid ""
 "Other devices can use your cellular data connection over the Wi-Fi network. "
 "Normal data charges apply."
@@ -1004,384 +998,463 @@ msgstr ""
 "Druge naprave lahko uporabljajo vašo povezavo z mobilnimi podatki preko Wi-"
 "Fi-ja. Prenosi podatkov bodo morda zaračunani."
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 #, fuzzy
 msgid "Change Password/Setup…"
 msgstr "Spremeni geslo ..."
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 #, fuzzy
 msgid "Set Up Hotspot…"
 msgstr "Nastavi vročo vstopno točko"
 
-#: ../plugins/hotspot/PageComponent.qml:155
+#: plugins/hotspot/PageComponent.qml:155
 #, fuzzy
 msgid "Wi-Fi is off"
 msgstr "Vroča vstopna točka Wi-Fi"
 
-#: ../plugins/hotspot/PageComponent.qml:156
+#: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
 msgstr ""
 
-#: ../plugins/hotspot/PageComponent.qml:160
+#: plugins/hotspot/PageComponent.qml:160
 #, fuzzy
 msgid "Turn on Wi-Fi"
 msgstr "kadar je vključen WiFi"
 
-#: ../plugins/language/DisplayLanguage.qml:51
+#: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
 msgstr "Prikazni jezik"
 
-#: ../plugins/language/DisplayLanguage.qml:55
-#: ../plugins/printing/AddPrinterDetails.qml:44
+#: plugins/language/DisplayLanguage.qml:55
+#: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
 msgstr "Nazaj"
 
-#: ../plugins/language/DisplayLanguage.qml:66
+#: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
 msgstr "Potrdi"
 
-#: ../plugins/language/KeyboardLayouts.qml:29
-#: ../plugins/language/PageComponent.qml:163
+#: plugins/language/KeyboardLayouts.qml:29
+#: plugins/language/PageComponent.qml:163
 msgid "Keyboard layouts"
 msgstr "Razporeditve tipk"
 
-#: ../plugins/language/KeyboardLayouts.qml:49
-msgid "All layouts available:"
-msgstr "Vse razpoložljive razporeditve:"
-
-#: ../plugins/language/KeyboardLayouts.qml:49
+#: plugins/language/KeyboardLayouts.qml:49
 msgid "Current layouts:"
 msgstr "Trenutne razporeditve:"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: ../plugins/language/PageComponent.qml:37 settings.js:138
+#: plugins/language/KeyboardLayouts.qml:49
+msgid "All layouts available:"
+msgstr "Vse razpoložljive razporeditve:"
+
+#: plugins/language/PageComponent.qml:37
 msgid "Language & Text"
 msgstr "Jezik in besedilo"
 
-#: ../plugins/language/PageComponent.qml:134
+#: plugins/language/PageComponent.qml:134
 msgid "Display language…"
 msgstr "Prikazni jezik ..."
 
-#: ../plugins/language/PageComponent.qml:150
+#: plugins/language/PageComponent.qml:150
 #, fuzzy
 msgid "Enable on-screen keyboard"
 msgstr "tipkovnica"
 
-#: ../plugins/language/PageComponent.qml:162
+#: plugins/language/PageComponent.qml:162
 #, fuzzy
 msgid "On-screen keyboard"
 msgstr "tipkovnica"
 
-#: ../plugins/language/PageComponent.qml:173
+#: plugins/language/PageComponent.qml:173
 #, fuzzy
 msgid "External keyboard"
 msgstr "tipkovnica"
 
-#: ../plugins/language/PageComponent.qml:184
+#: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:185
+#: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:186
+#: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:187
+#: plugins/language/PageComponent.qml:187
 msgid "Just White"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:188
+#: plugins/language/PageComponent.qml:188
 msgid "Just Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:189
+#: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:190
+#: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:191
+#: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:192
+#: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:195
+#: plugins/language/PageComponent.qml:195
 #, fuzzy
 msgid "On-screen keyboard theme"
 msgstr "tipkovnica"
 
-#: ../plugins/language/PageComponent.qml:196
+#: plugins/language/PageComponent.qml:196
 #, fuzzy
 msgid "Keyboard theme"
 msgstr "Tipkovnica"
 
-#: ../plugins/language/PageComponent.qml:209
-#: ../plugins/language/PageComponent.qml:218
-#: ../plugins/language/SpellChecking.qml:29
-#: ../plugins/language/SpellChecking.qml:45
+#: plugins/language/PageComponent.qml:209
+#: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
+#: plugins/language/SpellChecking.qml:45
 msgid "Spell checking"
 msgstr "Preverjanje črkovanja"
 
-#: ../plugins/language/PageComponent.qml:229
+#: plugins/language/PageComponent.qml:229
 msgid "Auto correction"
 msgstr "Samodejno popravljanje"
 
-#: ../plugins/language/PageComponent.qml:240
+#: plugins/language/PageComponent.qml:240
 msgid "Word suggestions"
 msgstr "Besedni predlogi"
 
-#: ../plugins/language/PageComponent.qml:254
+#: plugins/language/PageComponent.qml:254
 msgid "Auto capitalization"
 msgstr "Samodejno spreminjanje velikih začetnic"
 
-#: ../plugins/language/PageComponent.qml:265
+#: plugins/language/PageComponent.qml:265
 msgid "Turns on Shift to capitalize the first letter of each sentence."
 msgstr "Vklopi tipko Shift za spreminjanje velikih začetnic v vsaki povedi."
 
-#: ../plugins/language/PageComponent.qml:272
+#: plugins/language/PageComponent.qml:272
 msgid "Auto punctuation"
 msgstr "Samodejno postavljanje ločil"
 
-#: ../plugins/language/PageComponent.qml:284
+#: plugins/language/PageComponent.qml:284
 #, fuzzy
 msgid "Inserts a period when you tap Space twice."
 msgstr ""
 "Doda piko in manjkajoče narekovaje ali oklepaje, ko tapnete dvakrat na "
 "Presledek."
 
-#: ../plugins/language/PageComponent.qml:291
+#: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:302
-#: ../plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
 msgstr "Zvok tipkovnice"
 
-#: ../plugins/language/PageComponent.qml:313
+#: plugins/language/PageComponent.qml:313
 msgid "Keyboard vibration"
 msgstr "Vibriranje tipkovnice"
 
-#: ../plugins/language/PageComponent.qml:324
+#: plugins/language/PageComponent.qml:324
 #, fuzzy
 msgid "Keyboard opacity"
 msgstr "Razporeditve tipk"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:33
+#: plugins/language/PageHardwareKeyboard.qml:33
 #, fuzzy
 msgid "Hardware keyboard"
 msgstr "tipkovnica"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:63
+#: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
 msgstr ""
 
-#: ../plugins/language/RebootNecessary.qml:34
+#: plugins/language/RebootNecessary.qml:34
 #, fuzzy
 msgid "The device needs to restart for changes to take effect."
 msgstr "Za uveljavitev sprememb se mora telefon znova zagnati."
 
-#: ../plugins/language/RebootNecessary.qml:38
+#: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
 msgstr "Znova zaženi sedaj"
 
-#: ../plugins/language/SpellChecking.qml:64
+#: plugins/language/SpellChecking.qml:64
 msgid "Current spelling languages:"
 msgstr "Trenutni jeziki za črkovanje:"
 
-#: ../plugins/language/SpellChecking.qml:65
+#: plugins/language/SpellChecking.qml:65
 msgid "All languages available:"
 msgstr "Vsi razpoložljivi jeziki:"
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: ../plugins/launcher/PageComponent.qml:31 settings.js:164
-msgid "Launcher"
-msgstr "Zaganjalnik"
+#: plugins/launcher/PageComponent.qml:31
+#, fuzzy
+#| msgid "Reset Launcher"
+msgid "Desktop & Launcher"
+msgstr "Ponastavi zaganjalnik"
 
-#: ../plugins/launcher/PageComponent.qml:65
+#: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:73
+#: plugins/launcher/PageComponent.qml:73
+msgid "Enable workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:74
+msgid "Supoprt for multiple virtual workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:74
+#: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:85
+#: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:62 ../plugins/mouse/Connected.qml:228
+#: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:98
+#: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:134 ../plugins/mouse/Connected.qml:301
+#: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:168 ../plugins/mouse/Connected.qml:335
+#: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:214
+#: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:264
+#: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:389
+#: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:403
+#: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:410
+#: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:432
+#: plugins/mouse/Connected.qml:432
 msgid "Typing"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:446
+#: plugins/mouse/Connected.qml:446
 #, fuzzy
 msgid "A mouse is connected"
 msgstr "Prekinjena povezava"
 
-#: ../plugins/mouse/None.qml:34
+#: plugins/mouse/None.qml:34
 msgid ""
 "Connect a mouse or touchpad via USB, or use a Bluetooth device. If a "
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
 "are charged."
 msgstr ""
 
-#: ../plugins/mouse/None.qml:36
+#: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: ../plugins/mouse/PageComponent.qml:29 settings.js:170
+#: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:42
+#: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:72
+#: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:89
+#: plugins/mouse/PrimaryButtonSelector.qml:89
 #, fuzzy
 msgid "Right"
 msgstr "let"
 
-#: ../plugins/mouse/TapArea.qml:38
+#: plugins/mouse/TapArea.qml:38
 #, fuzzy
 msgid "Not fast enough"
 msgstr "Ni poslano"
 
-#: ../plugins/mouse/TapArea.qml:77
+#: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
-#: settings.js:184
+#: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: ../plugins/notifications/ClickAppNotifications.qml:62
-#: ../plugins/notifications/PageComponent.qml:29 settings.js:194
+#: plugins/notifications/CellBroadcast.qml:30
+#: plugins/notifications/CellBroadcast.qml:47
+#: plugins/notifications/PageComponent.qml:73
+msgid "Emergency Broadcast"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:125
+#, fuzzy
+#| msgid "The supplicant is now available"
+msgid "Cell Broadcast is not available"
+msgstr "Prosilnik je zdaj na voljo"
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Enabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Disabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:165
+#, fuzzy
+#| msgid "alerts"
+msgid "Alerts:"
+msgstr "alarmi"
+
+#: plugins/notifications/CellBroadcast.qml:171
+msgid "Receive emergency notifications"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:184
+msgid "Extreme threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:185
+msgid "Extreme threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:198
+msgid "Severe threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:199
+msgid "Severe threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:212
+msgid "AMBER Alerts"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:213
+msgid "Child abduction emergency bulletins"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:226
+msgid "Public safety messages"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:227
+msgid "Recommend actions to save life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:240
+msgid "Tests"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:241
+#, fuzzy
+#| msgid "alerts"
+msgid "Tests alerts"
+msgstr "alarmi"
+
+#: plugins/notifications/ClickAppNotifications.qml:62
+#: plugins/notifications/PageComponent.qml:29
 msgid "Notifications"
 msgstr "Obvestila"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:81
+#: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
 msgstr ""
 
-#: ../plugins/notifications/ClickAppNotifications.qml:91
-#: ../plugins/notifications/PageComponent.qml:177
+#: plugins/notifications/ClickAppNotifications.qml:91
+#: plugins/notifications/PageComponent.qml:208
 #, fuzzy
 msgid "Sounds"
 msgstr "Zvok"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:114
-#: ../plugins/notifications/PageComponent.qml:180
+#: plugins/notifications/ClickAppNotifications.qml:114
+#: plugins/notifications/PageComponent.qml:211
 #, fuzzy
 msgid "Vibrations"
 msgstr "vibriranje"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:137
+#: plugins/notifications/ClickAppNotifications.qml:137
 #, fuzzy
 msgid "Notification Bubbles"
 msgstr "Obvestila"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:160
-#: ../plugins/notifications/PageComponent.qml:186
+#: plugins/notifications/ClickAppNotifications.qml:160
+#: plugins/notifications/PageComponent.qml:217
 #, fuzzy
 msgid "Notification List"
 msgstr "Obvestila"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:30
-#: ../plugins/sound/PageComponent.qml:39 settings.js:268
+#: plugins/notifications/ClickAppsSoundsNotify.qml:30
+#: plugins/sound/PageComponent.qml:39
 msgid "Sound"
 msgstr "Zvok"
 
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:44
+#: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
 msgstr ""
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:30
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 #, fuzzy
 msgid "Vibration"
 msgstr "vibriranje"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:50
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:50
 #, fuzzy
 msgid "When in Silent mode:"
 msgstr "Vibriraj v Tihem načinu"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:69
 #, fuzzy
 msgid "Vibrate as normal"
 msgstr "Vibriraj med zvonenjem"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:70
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:70
 #, fuzzy
 msgid "Don't vibrate"
 msgstr "vibriranje"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:85
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:75
+#: plugins/notifications/PageComponent.qml:84
+#: plugins/notifications/PageComponent.qml:174
+#, fuzzy
+msgid "Applications:"
+msgstr "velike začetnice"
+
+#: plugins/notifications/PageComponent.qml:106
 #, fuzzy
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
@@ -1390,264 +1463,256 @@ msgstr ""
 "Izbrani programi vas lahko opozorijo s pomočjo obvestilnih mehurčkov, "
 "zvokov, vibracij ter Središča za obvestila."
 
-#: ../plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:117
+#: plugins/notifications/PageComponent.qml:148
 msgid "Apps that notify with vibration"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:143
-#, fuzzy
-msgid "Applications:"
-msgstr "velike začetnice"
-
-#: ../plugins/notifications/PageComponent.qml:172
+#: plugins/notifications/PageComponent.qml:203
 #, fuzzy
 msgid "No notifications"
 msgstr "obvestila"
 
-#: ../plugins/notifications/PageComponent.qml:183
+#: plugins/notifications/PageComponent.qml:214
 msgid "Bubbles"
 msgstr ""
 
-#: ../plugins/printing/AddPrinter.qml:34
-#: ../plugins/printing/AddPrinterDetails.qml:54
-#: ../plugins/printing/PageComponent.qml:38
+#: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
+#: plugins/printing/PageComponent.qml:38
 #, fuzzy
 msgid "Add printer"
 msgstr "Tiskalnik"
 
-#: ../plugins/printing/AddPrinter.qml:65
+#: plugins/printing/AddPrinter.qml:65
 #, fuzzy
 msgid "Enter URI"
 msgstr "Vnesite PIN kartice SIM"
 
-#: ../plugins/printing/AddPrinter.qml:78
+#: plugins/printing/AddPrinter.qml:78
 #, fuzzy
 msgid "Devices"
 msgstr "Storitve"
 
-#: ../plugins/printing/AddPrinter.qml:133
+#: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:37
+#: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:137
+#: plugins/printing/AddPrinterDetails.qml:137
 #, fuzzy
 msgid "Connection"
 msgstr "Povezovanje ..."
 
-#: ../plugins/printing/AddPrinterDetails.qml:139
+#: plugins/printing/AddPrinterDetails.qml:139
 #, fuzzy
 msgid "Choose a connection"
 msgstr "Izberi šifrirno reklo"
 
-#: ../plugins/printing/AddPrinterDetails.qml:165
+#: plugins/printing/AddPrinterDetails.qml:165
 #, fuzzy
 msgid "Printer name"
 msgstr "Tiskalnik"
 
-#: ../plugins/printing/AddPrinterDetails.qml:202
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:32
-#: ../plugins/printing/printer-sub-pages/Status.qml:66
+#: plugins/printing/AddPrinterDetails.qml:202
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:66
 msgid "Description"
 msgstr "Opis"
 
-#: ../plugins/printing/AddPrinterDetails.qml:204
-#: ../plugins/printing/AddPrinterDetails.qml:211
+#: plugins/printing/AddPrinterDetails.qml:204
+#: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:209
-#: ../plugins/printing/printer-sub-pages/Status.qml:72
+#: plugins/printing/AddPrinterDetails.qml:209
+#: plugins/printing/printer-sub-pages/Status.qml:72
 msgid "Location"
 msgstr "Položaj"
 
-#: ../plugins/printing/AddPrinterDetails.qml:219
+#: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:225
+#: plugins/printing/AddPrinterDetails.qml:225
 #, fuzzy
 msgid "Choose driver"
 msgstr "Izberite operaterja:"
 
-#: ../plugins/printing/AddPrinterDetails.qml:227
+#: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:228
+#: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:235
+#: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:304
+#: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: ../plugins/printing/PageComponent.qml:32 settings.js:230
+#: plugins/printing/PageComponent.qml:32
 msgid "Printing"
 msgstr "Tiskanje"
 
-#: ../plugins/printing/PageComponent.qml:45
+#: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:106
+#: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:107
+#: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:115
+#: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:136
+#: plugins/printing/PageComponent.qml:136
 msgid "Delete"
 msgstr "Izbriši"
 
-#: ../plugins/printing/PageComponent.qml:149
-#: ../plugins/printing/printer-sub-pages/Policies.qml:50
+#: plugins/printing/PageComponent.qml:149
+#: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:190
+#: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
 msgstr ""
 
-#: ../plugins/printing/Printer.qml:42
+#: plugins/printing/Printer.qml:42
 #, fuzzy
 msgid "Printer status"
 msgstr "Tiskalnik"
 
-#: ../plugins/printing/Printer.qml:43
+#: plugins/printing/Printer.qml:43
 #, fuzzy
 msgid "General settings"
 msgstr "Sistemske nastavitve"
 
-#: ../plugins/printing/Printer.qml:44
+#: plugins/printing/Printer.qml:44
 msgid "Policies"
 msgstr ""
 
-#: ../plugins/printing/Printer.qml:47
+#: plugins/printing/Printer.qml:47
 #, fuzzy
 msgid "Copies and pages"
 msgstr "Datum in čas"
 
-#: ../plugins/printing/PrinterConnection.qml:67
+#: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
 msgstr "Izvodi"
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:43
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:59
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
 #, fuzzy
 msgid "Color model"
 msgstr "Način za razvijalce"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:75
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
 msgstr "Kakovost"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:27
+#: plugins/printing/printer-sub-pages/Policies.qml:27
 #, fuzzy
 msgid "Enabled"
 msgstr "omogoči"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:46
+#: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:47
+#: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:60
+#: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:69
+#: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:30
+#: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:34
+#: plugins/printing/printer-sub-pages/Status.qml:34
 #, fuzzy
 msgid "Active"
 msgstr "Aktivno"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:36
+#: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
 msgstr ""
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
-#: ../plugins/printing/printer-sub-pages/Status.qml:40
+#: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:43
+#: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
 msgstr "Ni sporočil"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:48
+#: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:53
+#: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:78
+#: plugins/printing/printer-sub-pages/Status.qml:78
 #, fuzzy
 msgid "Address"
 msgstr "naslov"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:84
+#: plugins/printing/printer-sub-pages/Status.qml:84
 #, fuzzy
 msgid "Model"
 msgstr "Modem"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:85
+#: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:88
+#: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
 msgstr ""
 
-#: ../plugins/reset/EraseEverything.qml:41
-#: ../plugins/reset/PageComponent.qml:116
+#: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
 #, fuzzy
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
@@ -1656,31 +1721,28 @@ msgstr ""
 "Vsi dokumenti, shranjene igre, nastavitve in drugi predmeti bodo trajno "
 "izbrisani iz tega telefona."
 
-#: ../plugins/reset/EraseEverything.qml:44
+#: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "Izbriši in ponastavi vse"
 
-#: ../plugins/reset/PageComponent.qml:35
+#: plugins/reset/PageComponent.qml:35
 #, fuzzy
 msgid "Reset device"
 msgstr "naprava"
 
-#: ../plugins/reset/PageComponent.qml:76
-#: ../plugins/reset/ResetLauncherHome.qml:44
+#: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
 msgstr "Ponastavi zaganjalnik"
 
-#: ../plugins/reset/PageComponent.qml:84
-#: ../plugins/reset/ResetLauncherHome.qml:40
+#: plugins/reset/PageComponent.qml:84 plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
 msgstr "Zaganjalnik se bo vrnil na izvirno vsebino."
 
-#: ../plugins/reset/PageComponent.qml:92
+#: plugins/reset/PageComponent.qml:92
 msgid "Reset all system settings…"
 msgstr "Ponastavi vse sistemske nastavitve ..."
 
-#: ../plugins/reset/PageComponent.qml:101
-#: ../plugins/reset/ResetAllSettings.qml:29
+#: plugins/reset/PageComponent.qml:101 plugins/reset/ResetAllSettings.qml:29
 msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
 "will be returned to their original settings."
@@ -1688,288 +1750,282 @@ msgstr ""
 "Vsebina in razporeditev zaganjalnika in filtri v domačem zaslonu bodo "
 "povrnjeni na izvirne nastavitve."
 
-#: ../plugins/reset/PageComponent.qml:108
+#: plugins/reset/PageComponent.qml:108
 #, fuzzy
 msgid "Erase & Reset All"
 msgstr "Izbriši in ponastavi vse"
 
-#: ../plugins/reset/ResetAllSettings.qml:31
+#: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
 msgstr "Ponastavi vse sistemske nastavitve"
 
-#: ../plugins/sound/PageComponent.qml:76
+#: plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
 msgstr "Tihi način"
 
-#: ../plugins/sound/PageComponent.qml:100
+#: plugins/sound/PageComponent.qml:100
 msgid "Ringer:"
 msgstr "Zvok:"
 
-#: ../plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
 msgstr ""
 
-#: ../plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
 msgstr "Telefonski klici:"
 
-#: ../plugins/sound/PageComponent.qml:149
-#: ../plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
 msgid "Ringtone"
 msgstr "Ton zvonjenja"
 
-#: ../plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:171
 #, fuzzy
 msgid "Vibrate on ring"
 msgstr "Vibriraj med zvonenjem"
 
-#: ../plugins/sound/PageComponent.qml:183
-#: ../plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
 msgid "Vibrate in Silent Mode"
 msgstr "Vibriraj v Tihem načinu"
 
-#: ../plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:194
 #, fuzzy
 msgid "Dialpad tones"
 msgstr "Zvoki številčnice"
 
-#: ../plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
 msgstr "Sporočila:"
 
-#: ../plugins/sound/PageComponent.qml:209
-#: ../plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
 msgid "Message received"
 msgstr "Sporočilo je bilo prejeto"
 
-#: ../plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:230
 msgid "Vibrate with message sound"
 msgstr "Vibriraj z zvokom sporočila"
 
-#: ../plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:247
 msgid "Other sounds:"
 msgstr "Drugi zvoki:"
 
-#: ../plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:268
 msgid "Lock sound"
 msgstr "Zvok zaklepa"
 
-#: ../plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:278
 #, fuzzy
 msgid "Other vibrations"
 msgstr "vibriranje"
 
-#: ../plugins/sound/SoundsList.qml:132
-#, fuzzy
-msgid "Custom Ringtone"
-msgstr "Ton zvonjenja"
-
-#: ../plugins/sound/SoundsList.qml:132
+#: plugins/sound/SoundsList.qml:132
 #, fuzzy
 #| msgid "Vibrate with message sound"
 msgid "Custom message sound"
 msgstr "Vibriraj z zvokom sporočila"
 
-#: ../plugins/sound/SoundsList.qml:213
+#: plugins/sound/SoundsList.qml:132
+#, fuzzy
+msgid "Custom Ringtone"
+msgstr "Ton zvonjenja"
+
+#: plugins/sound/SoundsList.qml:213
 #, fuzzy
 msgid "Choose from"
 msgstr "Izberite operaterja:"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:30
+#: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "Časovni pas"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:50
+#: plugins/time-date/ChooseTimeZone.qml:50
 msgid "Set the time zone:"
 msgstr "Nastavi časovni pas:"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Automatically"
 msgstr "Samodejno"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Manually"
 msgstr "Ročno"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:130
 msgid "Enter your current location."
 msgstr "Vnesite Vaš trenutni kraj."
 
-#: ../plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "No matching place"
 msgstr "Kraja ni mogoče najti"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: ../plugins/time-date/PageComponent.qml:31 settings.js:286
+#: plugins/time-date/PageComponent.qml:31
 msgid "Time and Date"
 msgstr "Ura in datum"
 
-#: ../plugins/time-date/PageComponent.qml:64
+#: plugins/time-date/PageComponent.qml:64
 msgid "Time zone:"
 msgstr "Časovni pas:"
 
-#: ../plugins/time-date/PageComponent.qml:79
+#: plugins/time-date/PageComponent.qml:79
 msgid "Set the time and date:"
 msgstr "Nastavi čas in datum:"
 
-#: ../plugins/time-date/TimePicker.qml:26
+#: plugins/time-date/TimePicker.qml:26
 msgid "Set time & date"
 msgstr "Nastavi čas in datum"
 
-#: ../plugins/time-date/TimePicker.qml:47
+#: plugins/time-date/TimePicker.qml:47
 msgid "Time"
 msgstr "Čas"
 
-#: ../plugins/time-date/TimePicker.qml:56
+#: plugins/time-date/TimePicker.qml:56
 msgid "Date"
 msgstr "Datum"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: ../plugins/vpn/PageComponent.qml:31 settings.js:296
+#: plugins/vpn/PageComponent.qml:31
 #, fuzzy
 msgid "VPN"
 msgstr "APN"
 
-#: ../plugins/vpn/PageComponent.qml:76
+#: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr ""
 
-#: ../plugins/vpn/PageComponent.qml:82
+#: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
 msgstr ""
 
-#: ../plugins/vpn/PageComponent.qml:117
+#: plugins/vpn/PageComponent.qml:117
 #, fuzzy
 msgid "VPN reconnection required."
 msgstr "Storitev souporabe povezave je spodletela."
 
-#: ../plugins/vpn/PageComponent.qml:118
+#: plugins/vpn/PageComponent.qml:118
 #, fuzzy
 msgid "You need to reconnect for changes to have an effect."
 msgstr "Za uveljavitev sprememb se mora telefon znova zagnati."
 
-#: ../plugins/wifi/CertDialog.qml:22
+#: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:24
+#: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:26
+#: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:36
+#: plugins/wifi/CertDialog.qml:36
 #, fuzzy
 msgid "Content:"
 msgstr "Nadaljuj"
 
-#: ../plugins/wifi/CertDialog.qml:49
+#: plugins/wifi/CertDialog.qml:49
 #, fuzzy
 msgid "No data available."
 msgstr "Na voljo so posodobitve"
 
-#: ../plugins/wifi/CertDialog.qml:74
+#: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "Shrani"
 
-#: ../plugins/wifi/NetworkDetails.qml:38
+#: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
 msgstr "Podrobnosti omrežja"
 
-#: ../plugins/wifi/NetworkDetails.qml:65
+#: plugins/wifi/NetworkDetails.qml:65
 msgid "Last connected"
 msgstr "Nazadnje povezano"
 
-#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
 msgid "Password"
 msgstr "Geslo"
 
-#: ../plugins/wifi/NetworkDetails.qml:99
-#: ../plugins/wifi/NetworkDetailsBrief.qml:55
+#: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
 #, fuzzy
 msgid "Forget this network"
 msgstr "Pozabi omrežje"
 
-#: ../plugins/wifi/NetworkDetailsBrief.qml:73
+#: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
 msgstr "Naslov IP"
 
-#: ../plugins/wifi/OtherNetwork.qml:92
+#: plugins/wifi/OtherNetwork.qml:92
 msgid "Connect to Wi‑Fi"
 msgstr "Poveži se z Wi-Fi-jem"
 
-#: ../plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:93
 msgid "Connect to Hidden Network"
 msgstr "Poveži se s skritim omrežjem"
 
-#: ../plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:285
 msgid "Network name"
 msgstr "Ime omrežja"
 
-#: ../plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
 msgstr "Varnost"
 
-#: ../plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WPA & WPA2 Personal"
 msgstr "Osebni WPA in WPA2"
 
-#: ../plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:320
 #, fuzzy
 msgid "WPA & WPA2 Enterprise"
 msgstr "Osebni WPA in WPA2"
 
-#: ../plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
 msgstr "WEP"
 
-#: ../plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:332
+#: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:338
 #, fuzzy
 msgid "Authentication"
 msgstr "obvestila"
 
-#: ../plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
 msgstr ""
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: ../plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:458 ../plugins/wifi/OtherNetwork.qml:575
-#: ../plugins/wifi/certhandler.cpp:106 ../plugins/wifi/certhandler.cpp:141
-#: ../plugins/wifi/certhandler.cpp:193 ../plugins/wifi/certhandler.cpp:225
-#: ../plugins/wifi/certhandler.cpp:290 ../plugins/wifi/certhandler.cpp:319
+#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
+#: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
+#: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
 msgstr ""
 
@@ -1978,7 +2034,7 @@ msgstr ""
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: ../plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr ""
@@ -1987,820 +2043,486 @@ msgstr ""
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: ../plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
 msgstr ""
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: ../plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:686
 #, fuzzy
 msgid "Disabled"
 msgstr "onemogoči"
 
-#: ../plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:699
 #, fuzzy
 msgid "PEAP version"
 msgstr "različica"
 
-#: ../plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:713
 #, fuzzy
 msgid "Version 0"
 msgstr "Različica: "
 
-#: ../plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:714
 #, fuzzy
 msgid "Version 1"
 msgstr "Različica: "
 
-#: ../plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:715
 #, fuzzy
 msgid "Automatic"
 msgstr "samodejno"
 
-#: ../plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
 msgstr "Uporabniško ime"
 
-#: ../plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:857
 #, fuzzy
 msgid "Remember password"
 msgstr "geslo"
 
-#: ../plugins/wifi/PageComponent.qml:129
+#: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
 msgstr "Poveži se s skritim omrežjem ..."
 
-#: ../plugins/wifi/PageComponent.qml:139
-#: ../plugins/wifi/PreviousNetworks.qml:27
+#: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
 msgstr "Predhodna omrežja"
 
-#: ../plugins/wifi/RemoveBackground.qml:28
+#: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
 msgstr "Počisti"
 
-#: ../plugins/wifi/certhandler.cpp:258
+#: plugins/wifi/certhandler.cpp:258
 #, fuzzy
 msgid "Private key"
 msgstr "Zasebnost"
 
-#: ../plugins/wifi/certhandler.cpp:259
+#: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
 msgstr ""
 
-#: ../plugins/wifi/certhandler.cpp:264
+#: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
 msgstr ""
 
-#: ../src/qml/MainWindow.qml:170 lomiri-system-settings.desktop.in.in.h:1
-msgid "System Settings"
-msgstr "Sistemske nastavitve"
-
-#: ../src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:203
 msgid "Search"
 msgstr "Iskanje"
 
-#: ../src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:246
 msgid "Personal"
 msgstr "Osebno"
 
-#: ../src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "Sistem"
 
-#: lomiri-system-settings.desktop.in.in.h:2
-msgid "System;"
-msgstr "Sistem;"
-
-#: lomiri-system-settings.desktop.in.in.h:3
-msgid "Preferences;Settings;"
-msgstr "Možnosti;Nastavitve;"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:4
-msgid "about"
-msgstr "o programu"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:6 settings.js:78
-msgid "device"
-msgstr "naprava"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:8
-msgid "info"
-msgstr "podrobnosti"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:10
-msgid "phone"
-msgstr "telefon"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:12
-msgid "number"
-msgstr "število"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:14
-msgid "imei"
-msgstr "imei"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:16
-msgid "serial"
-msgstr "zaporedna številka"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:18 settings.js:310 settings.js:332
-msgid "address"
-msgstr "naslov"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:20
-msgid "mac"
-msgstr "mac"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:22
-msgid "licenses"
-msgstr "dovoljenja"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:24
-msgid "developer"
-msgstr "razvijalec"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:26 settings.js:196
-msgid "software"
-msgstr "programska oprema"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:28
-msgid "storage"
-msgstr "shramba"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:30
-msgid "disk"
-msgstr "disk"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:32
-msgid "space"
-msgstr "prostor"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:34
-msgid "version"
-msgstr "različica"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:36
-msgid "revision"
-msgstr "predelava"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:40 settings.js:168
-msgid "appearance"
-msgstr "izgled"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:42
-msgid "background"
-msgstr "ozadje"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:44
-msgid "wallpaper"
-msgstr "ozadje"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:46
-msgid "art"
-msgstr "umetnost"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:48
-msgid "photo"
-msgstr "fotografija"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:50
-msgid "picture"
-msgstr "slika"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:52
-msgid "image"
-msgstr "slika"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:56
-msgid "battery"
-msgstr "baterija"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:58
-msgid "power"
-msgstr "energija"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:60
-msgid "charge"
-msgstr "napajanje"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:62
-msgid "idle"
-msgstr "nedejavno"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:64 settings.js:224
-msgid "lock"
-msgstr "zakleni"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:66
-msgid "disable"
-msgstr "onemogoči"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:68
-msgid "enable"
-msgstr "omogoči"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:72
-msgid "bluetooth"
-msgstr "bluetooth"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:74
-msgid "headset"
-msgstr "slušalke z mikrofonom"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:76
-msgid "pair"
-msgstr "par"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:80
-msgid "discover"
-msgstr "odkrij"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:82
-msgid "car"
-msgstr "avto"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:84
-msgid "handsfree"
-msgstr "prostoročno"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:86 settings.js:318
-msgid "wireless"
-msgstr "brezžično"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:88 settings.js:300 settings.js:324
-msgid "connect"
-msgstr "poveži"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:90 settings.js:302 settings.js:326
-msgid "disconnect"
-msgstr "prekini"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:92
-msgid "stereo"
-msgstr "stereo"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:96
-msgid "brightness"
-msgstr "svetlost"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:98 settings.js:158
-msgid "display"
-msgstr "prikaz"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:100 settings.js:226
-msgid "screen"
-msgstr "zaslon"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:102 settings.js:146 settings.js:294
-msgid "automatic"
-msgstr "samodejno"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:104
-msgid "adjust"
-msgstr "prilagodi"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:106
-msgid "Example"
-msgstr "Primer"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:108
-msgid "example"
-msgstr "primer"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:110
-msgid "test"
-msgstr "preizkus"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:112
-msgid "sample"
-msgstr "primer"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:114
-msgid "Flight Mode"
-msgstr "Način letenja"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:116
-msgid "flight"
-msgstr "let"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:118
-msgid "plane"
-msgstr "letalo"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:120
-msgid "offline"
-msgstr "nepovezan"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:122
-msgid "airplane"
-msgstr "letalo"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:124 settings.js:132 settings.js:298 settings.js:316
-msgid "network"
-msgstr "omrežje"
-
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: settings.js:128
 #, fuzzy
-#| msgid "Pictures"
-msgid "gestures"
-msgstr "Slike"
+#~ msgid "Unavailable"
+#~ msgstr "Na voljo so posodobitve"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:134
+#~ msgid "Launcher"
+#~ msgstr "Zaganjalnik"
+
+#~ msgid "System;"
+#~ msgstr "Sistem;"
+
+#~ msgid "about"
+#~ msgstr "o programu"
+
+#~ msgid "device"
+#~ msgstr "naprava"
+
+#~ msgid "info"
+#~ msgstr "podrobnosti"
+
+#~ msgid "phone"
+#~ msgstr "telefon"
+
+#~ msgid "number"
+#~ msgstr "število"
+
+#~ msgid "imei"
+#~ msgstr "imei"
+
+#~ msgid "serial"
+#~ msgstr "zaporedna številka"
+
+#~ msgid "address"
+#~ msgstr "naslov"
+
+#~ msgid "mac"
+#~ msgstr "mac"
+
+#~ msgid "licenses"
+#~ msgstr "dovoljenja"
+
+#~ msgid "developer"
+#~ msgstr "razvijalec"
+
+#~ msgid "software"
+#~ msgstr "programska oprema"
+
+#~ msgid "storage"
+#~ msgstr "shramba"
+
+#~ msgid "disk"
+#~ msgstr "disk"
+
+#~ msgid "space"
+#~ msgstr "prostor"
+
+#~ msgid "version"
+#~ msgstr "različica"
+
+#~ msgid "revision"
+#~ msgstr "predelava"
+
+#~ msgid "appearance"
+#~ msgstr "izgled"
+
+#~ msgid "background"
+#~ msgstr "ozadje"
+
+#~ msgid "wallpaper"
+#~ msgstr "ozadje"
+
+#~ msgid "art"
+#~ msgstr "umetnost"
+
+#~ msgid "photo"
+#~ msgstr "fotografija"
+
+#~ msgid "picture"
+#~ msgstr "slika"
+
+#~ msgid "image"
+#~ msgstr "slika"
+
+#~ msgid "battery"
+#~ msgstr "baterija"
+
+#~ msgid "power"
+#~ msgstr "energija"
+
+#~ msgid "charge"
+#~ msgstr "napajanje"
+
+#~ msgid "idle"
+#~ msgstr "nedejavno"
+
+#~ msgid "lock"
+#~ msgstr "zakleni"
+
+#~ msgid "disable"
+#~ msgstr "onemogoči"
+
+#~ msgid "enable"
+#~ msgstr "omogoči"
+
+#~ msgid "bluetooth"
+#~ msgstr "bluetooth"
+
+#~ msgid "headset"
+#~ msgstr "slušalke z mikrofonom"
+
+#~ msgid "pair"
+#~ msgstr "par"
+
+#~ msgid "discover"
+#~ msgstr "odkrij"
+
+#~ msgid "car"
+#~ msgstr "avto"
+
+#~ msgid "handsfree"
+#~ msgstr "prostoročno"
+
+#~ msgid "wireless"
+#~ msgstr "brezžično"
+
+#~ msgid "connect"
+#~ msgstr "poveži"
+
+#~ msgid "disconnect"
+#~ msgstr "prekini"
+
+#~ msgid "stereo"
+#~ msgstr "stereo"
+
+#~ msgid "brightness"
+#~ msgstr "svetlost"
+
+#~ msgid "display"
+#~ msgstr "prikaz"
+
+#~ msgid "screen"
+#~ msgstr "zaslon"
+
+#~ msgid "automatic"
+#~ msgstr "samodejno"
+
+#~ msgid "adjust"
+#~ msgstr "prilagodi"
+
+#~ msgid "Example"
+#~ msgstr "Primer"
+
+#~ msgid "example"
+#~ msgstr "primer"
+
+#~ msgid "test"
+#~ msgstr "preizkus"
+
+#~ msgid "sample"
+#~ msgstr "primer"
+
+#~ msgid "Flight Mode"
+#~ msgstr "Način letenja"
+
+#~ msgid "flight"
+#~ msgstr "let"
+
+#~ msgid "plane"
+#~ msgstr "letalo"
+
+#~ msgid "offline"
+#~ msgstr "nepovezan"
+
+#~ msgid "airplane"
+#~ msgstr "letalo"
+
+#~ msgid "network"
+#~ msgstr "omrežje"
+
 #, fuzzy
-msgid "hotspot"
-msgstr "Vroča vstopna točka"
+#~| msgid "Pictures"
+#~ msgid "gestures"
+#~ msgstr "Slike"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:136
-msgid "tethering"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:140
-msgid "language"
-msgstr "jezik"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:142 settings.js:282
-msgid "keyboard"
-msgstr "tipkovnica"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:144
-msgid "spellcheck"
-msgstr "črkovanje"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:148
-msgid "correct"
-msgstr "popravi"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:150
-msgid "suggestions"
-msgstr "predlogi"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:152
-msgid "capitalization"
-msgstr "velike začetnice"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:154
-msgid "punctuation"
-msgstr "ločila"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:156
-msgid "layout"
-msgstr "postavitev"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:160
-msgid "words"
-msgstr "besede"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:162
-msgid "vibration"
-msgstr "vibriranje"
-
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:166
 #, fuzzy
-msgid "launcher"
-msgstr "Zaganjalnik"
+#~ msgid "hotspot"
+#~ msgstr "Vroča vstopna točka"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:172
+#~ msgid "language"
+#~ msgstr "jezik"
+
+#~ msgid "keyboard"
+#~ msgstr "tipkovnica"
+
+#~ msgid "spellcheck"
+#~ msgstr "črkovanje"
+
+#~ msgid "correct"
+#~ msgstr "popravi"
+
+#~ msgid "suggestions"
+#~ msgstr "predlogi"
+
+#~ msgid "capitalization"
+#~ msgstr "velike začetnice"
+
+#~ msgid "punctuation"
+#~ msgstr "ločila"
+
+#~ msgid "layout"
+#~ msgstr "postavitev"
+
+#~ msgid "words"
+#~ msgstr "besede"
+
+#~ msgid "vibration"
+#~ msgstr "vibriranje"
+
 #, fuzzy
-msgid "mouse"
-msgstr "Miška"
+#~ msgid "launcher"
+#~ msgstr "Zaganjalnik"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:174
-msgid "touchpad"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:176
 #, fuzzy
-msgid "tap"
-msgstr "apn"
+#~ msgid "mouse"
+#~ msgstr "Miška"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:178
-msgid "touch"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:180
-msgid "click"
-msgstr "click"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:182
-msgid "input"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:186
-msgid "nfc"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:188
-msgid "near"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:190
-msgid "field"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:192
 #, fuzzy
-msgid "communication"
-msgstr "obvestila"
+#~ msgid "tap"
+#~ msgstr "apn"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:198
-msgid "notifications"
-msgstr "obvestila"
+#~ msgid "click"
+#~ msgstr "click"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:200 settings.js:228
-msgid "apps"
-msgstr "programi"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:202
-msgid "authorize"
-msgstr "pooblasti"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:204
-msgid "alerts"
-msgstr "alarmi"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:206
-msgid "permissions"
-msgstr "dovoljenja"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:208
-msgid "badges"
-msgstr "značke"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:210
-msgid "facebook"
-msgstr "facebook"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:212
-msgid "twitter"
-msgstr "twitter"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:214
-msgid "flickr"
-msgstr "flickr"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:216
-msgid "gmail"
-msgstr "gmail"
-
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:218
 #, fuzzy
-msgid "Rotation Lock"
-msgstr "Zaklep usmerjenosti"
+#~ msgid "communication"
+#~ msgstr "obvestila"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:220
-msgid "rotation"
-msgstr "obračanje"
+#~ msgid "notifications"
+#~ msgstr "obvestila"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:222
-msgid "orientation"
-msgstr "usmerjenost"
+#~ msgid "apps"
+#~ msgstr "programi"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:232
+#~ msgid "authorize"
+#~ msgstr "pooblasti"
+
+#~ msgid "permissions"
+#~ msgstr "dovoljenja"
+
+#~ msgid "badges"
+#~ msgstr "značke"
+
+#~ msgid "facebook"
+#~ msgstr "facebook"
+
+#~ msgid "twitter"
+#~ msgstr "twitter"
+
+#~ msgid "flickr"
+#~ msgstr "flickr"
+
+#~ msgid "gmail"
+#~ msgstr "gmail"
+
 #, fuzzy
-msgid "printer"
-msgstr "Tiskalnik"
+#~ msgid "Rotation Lock"
+#~ msgstr "Zaklep usmerjenosti"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:234
+#~ msgid "rotation"
+#~ msgstr "obračanje"
+
+#~ msgid "orientation"
+#~ msgstr "usmerjenost"
+
 #, fuzzy
-msgid "printers"
-msgstr "Tiskalnik"
+#~ msgid "printer"
+#~ msgstr "Tiskalnik"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:236
 #, fuzzy
-msgid "printing"
-msgstr "čakanje"
+#~ msgid "printers"
+#~ msgstr "Tiskalnik"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:238
-msgid "pdf"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:240
-msgid "ppd"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:242
-msgid "collate"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:244
-msgid "copies"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:246
-msgid "colormodel"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:248
-msgid "greyscale"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:250
-msgid "color"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:252
-msgid "laser"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:254
 #, fuzzy
-msgid "ink"
-msgstr "pin"
+#~ msgid "printing"
+#~ msgstr "čakanje"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:256
-msgid "Reset"
-msgstr "Ponastavi"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:258
-msgid "reset"
-msgstr "ponastavi"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:260
-msgid "erase"
-msgstr "izbriši"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:262
-msgid "factory"
-msgstr "tovarna"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:264
-msgid "clear"
-msgstr "počisti"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:266
-msgid "restore"
-msgstr "obnovi"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:270
-msgid "sound"
-msgstr "zvok"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:272
-msgid "silent"
-msgstr "tiho"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:274
-msgid "ringtone"
-msgstr "melodija zvonjenja"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:276
-msgid "vibrate"
-msgstr "vibriranje"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:278
-msgid "dialpad"
-msgstr "številčnica"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:280
-msgid "message"
-msgstr "sporočilo"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:284
-msgid "volume"
-msgstr "glasnost"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:288
-msgid "time"
-msgstr "čas"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:290
-msgid "date"
-msgstr "datum"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:292
-msgid "timezone"
-msgstr "časovni pas"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:304
 #, fuzzy
-msgid "vpn"
-msgstr "pin"
+#~ msgid "ink"
+#~ msgstr "pin"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:306
-msgid "openvpn"
-msgstr ""
+#~ msgid "Reset"
+#~ msgstr "Ponastavi"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:308 settings.js:330
-msgid "ip"
-msgstr "ip"
+#~ msgid "reset"
+#~ msgstr "ponastavi"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:312
-msgid "routing"
-msgstr ""
+#~ msgid "erase"
+#~ msgstr "izbriši"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:320
-msgid "wifi"
-msgstr "wifi"
+#~ msgid "factory"
+#~ msgstr "tovarna"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:322
-msgid "WiFi"
-msgstr "WiFi"
+#~ msgid "clear"
+#~ msgstr "počisti"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:328
-msgid "hidden"
-msgstr "skrito"
+#~ msgid "restore"
+#~ msgstr "obnovi"
+
+#~ msgid "sound"
+#~ msgstr "zvok"
+
+#~ msgid "silent"
+#~ msgstr "tiho"
+
+#~ msgid "ringtone"
+#~ msgstr "melodija zvonjenja"
+
+#~ msgid "vibrate"
+#~ msgstr "vibriranje"
+
+#~ msgid "dialpad"
+#~ msgstr "številčnica"
+
+#~ msgid "message"
+#~ msgstr "sporočilo"
+
+#~ msgid "volume"
+#~ msgstr "glasnost"
+
+#~ msgid "time"
+#~ msgstr "čas"
+
+#~ msgid "date"
+#~ msgstr "datum"
+
+#~ msgid "timezone"
+#~ msgstr "časovni pas"
+
+#, fuzzy
+#~ msgid "vpn"
+#~ msgstr "pin"
+
+#~ msgid "ip"
+#~ msgstr "ip"
+
+#~ msgid "wifi"
+#~ msgstr "wifi"
+
+#~ msgid "WiFi"
+#~ msgstr "WiFi"
+
+#~ msgid "hidden"
+#~ msgstr "skrito"
 
 #~ msgid "Used by Ubuntu"
 #~ msgstr "Uporablja Ubuntu"

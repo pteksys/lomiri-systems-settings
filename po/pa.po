@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 17:14+0000\n"
+"POT-Creation-Date: 2023-01-31 13:27+0000\n"
 "PO-Revision-Date: 2015-03-11 04:49+0000\n"
 "Last-Translator: Gursharnjit_Singh <ubuntuser13@gmail.com>\n"
 "Language-Team: pa-l10n  Owner:Amanpreet Alam\n"
@@ -19,26 +19,27 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 "X-Generator: Launchpad (build 17628)\n"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+msgid "System Settings"
+msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
+
+#: lomiri-system-settings.desktop.in:5
+msgid "Preferences;Settings;"
+msgstr "ਮੇਰੀ ਪਸੰਦ;ਸੈਟਿੰਗ;"
+
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
 msgstr "ਮੌਜੂਦਾ ਬੇਨਤੀ ਰੱਦ ਨਹੀਂ ਕਰ ਸਕਦਾ (ਸੇਵਾ ਨੂੰ ਸੰਪਰਕ ਨਹੀਂ ਕਰ ਸਕਦਾ)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
+#: lib/LomiriSystemSettingsPrivate/systemimage.cpp:246
 msgid "Can't pause current request (can't contact service)"
 msgstr "ਮੌਜੂਦਾ ਬੇਨਤੀ ਤੇ ਵਿਰਾਮ ਨਹੀਂ ਲਗਾ ਸਕਦਾ (ਸੇਵਾ ਨੂੰ ਸੰਪਰਕ ਨਹੀਂ ਕਰ ਸਕਦਾ)"
 
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:370
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:376
-#: ../lib/LomiriSystemSettingsPrivate/systemimage.cpp:382
-#, fuzzy
-msgid "Unavailable"
-msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
-
-#: ../plugins/about/DevMode.qml:34 ../plugins/about/DevMode.qml:90
+#: plugins/about/DevMode.qml:34 plugins/about/DevMode.qml:90
 msgid "Developer Mode"
 msgstr "ਡਿਵੈਲਪਰ ਮੋਡ"
 
-#: ../plugins/about/DevMode.qml:83
+#: plugins/about/DevMode.qml:83
 #, fuzzy
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
@@ -47,284 +48,291 @@ msgstr ""
 "ਡਿਵੈਲਪਰ ਮੋਡ ਵਿੱਚ, ਕੋਈ ਵੀ ਇਸ ਨੂੰ ਦੂਜੇ ਜੰਤਰ ਨਾਲ ਜੋੜ ਕੇ ਇਸ ਫ਼ੋਨ ਤੇ ਪਹੁੰਚ, ਬਦਲਾਅ ਜਾਂ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਨੂੰ "
 "ਹਟਾ ਸਕਦਾ ਹੈ।"
 
-#: ../plugins/about/DevMode.qml:107
+#: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr "ਡਿਵੈਲਪਰ ਮੋਡ ਦੀ ਵਰਤੋਂ ਲਈ ਤੁਹਾਨੂੰ ਪਾਸਕੋਡ ਜਾਂ ਵਾਕ ਦੀ ਲੋੜ ਪਵੇਗੀ।"
 
-#: ../plugins/about/DevMode.qml:113
+#: plugins/about/DevMode.qml:115
 msgid "Lock security"
 msgstr "ਲਾਕ ਸੁਰੱਖਿਆ"
 
-#: ../plugins/about/License.qml:29
+#: plugins/about/License.qml:29
 msgid "Sorry, this license could not be displayed."
 msgstr "ਮੁਆਫ਼ੀ, ਇਹ ਲਾਇਸੰਸ ਵਿਖਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।"
 
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: ../plugins/about/PageComponent.qml:33 settings.js:2
+#: plugins/about/PageComponent.qml:33
 #, fuzzy
 msgid "About"
 msgstr "ਬਾਰੇ"
 
-#: ../plugins/about/PageComponent.qml:97
+#: plugins/about/PageComponent.qml:97
 msgid "Serial"
 msgstr "ਸੀਰੀਅਲ"
 
-#: ../plugins/about/PageComponent.qml:107
-#: ../plugins/about/PageComponent.qml:108
-#: ../plugins/about/PageComponent.qml:119
-#: ../plugins/bluetooth/DevicePage.qml:73
-#: ../plugins/bluetooth/DevicePage.qml:82
-#: ../plugins/bluetooth/DevicePage.qml:110
-#: ../plugins/printing/printer-sub-pages/Status.qml:50
-#: ../plugins/wifi/OtherNetwork.qml:318 ../plugins/wifi/OtherNetwork.qml:457
-#: ../plugins/wifi/OtherNetwork.qml:574 ../plugins/wifi/certhandler.cpp:105
-#: ../plugins/wifi/certhandler.cpp:140 ../plugins/wifi/certhandler.cpp:192
-#: ../plugins/wifi/certhandler.cpp:224 ../plugins/wifi/certhandler.cpp:289
-#: ../plugins/wifi/certhandler.cpp:318
+#: plugins/about/PageComponent.qml:107 plugins/about/PageComponent.qml:108
+#: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
+#: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
+#: plugins/printing/printer-sub-pages/Status.qml:50
+#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
+#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
+#: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
+#: plugins/wifi/certhandler.cpp:318
 msgid "None"
 msgstr "ਕੋਈ ਨਹੀਂ"
 
-#: ../plugins/about/PageComponent.qml:128
+#: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
 msgstr "ਵਾਈ-ਫ਼ਾਈ ਪਤਾ"
 
-#: ../plugins/about/PageComponent.qml:136
+#: plugins/about/PageComponent.qml:136
 msgid "Bluetooth address"
 msgstr "ਬਲਿਊਟੁੱਥ ਪਤਾ"
 
-#: ../plugins/about/PageComponent.qml:147 ../plugins/about/Storage.qml:31
+#: plugins/about/PageComponent.qml:147 plugins/about/Storage.qml:31
 msgid "Storage"
 msgstr "ਸਟੋਰੇਜ਼"
 
 #. TRANSLATORS: that's the free disk space, indicated in the most appropriate storage unit
-#: ../plugins/about/PageComponent.qml:149
+#: plugins/about/PageComponent.qml:149
 #, qt-format
 msgid "%1 free"
 msgstr "%1 ਖਾਲੀ"
 
-#: ../plugins/about/PageComponent.qml:157
+#: plugins/about/PageComponent.qml:156
 msgid "Software:"
 msgstr "ਸਾਫਟਵੇਅਰ:"
 
-#: ../plugins/about/PageComponent.qml:169
+#: plugins/about/PageComponent.qml:168
 msgid "OS"
 msgstr "OS"
 
-#: ../plugins/about/PageComponent.qml:181
+#: plugins/about/PageComponent.qml:180
 msgid "Last updated"
 msgstr "ਆਖਰੀ ਅੱਪਡੇਟ ਹੋਇਆ"
 
-#: ../plugins/about/PageComponent.qml:183
-#: ../plugins/battery/PageComponent.qml:328
-#: ../plugins/battery/PageComponent.qml:346
-#: ../plugins/battery/SleepValues.qml:108 ../plugins/wifi/NetworkDetails.qml:67
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "ਕਦੇ ਨਹੀਂ"
 
-#: ../plugins/about/PageComponent.qml:191
+#: plugins/about/PageComponent.qml:190
 msgid "Check for updates"
 msgstr "ਅੱਪਡੇਟ ਲਈ ਪੜਤਾਲ ਕਰੋ"
 
-#: ../plugins/about/PageComponent.qml:222
+#: plugins/about/PageComponent.qml:221
 msgid "Legal:"
 msgstr "ਕਾਨੂੰਨੀ:"
 
-#: ../plugins/about/PageComponent.qml:227 ../plugins/about/Software.qml:11
+#: plugins/about/PageComponent.qml:226 plugins/about/Software.qml:11
 msgid "Software licenses"
 msgstr "ਸਾਫ਼ਟਵੇਅਰ ਲਾਇਸੰਸ"
 
-#: ../plugins/about/PageComponent.qml:234
+#: plugins/about/PageComponent.qml:233
 msgid "Regulatory info"
 msgstr "ਰੈਗੂਲੇਟਰੀ ਇੰਫ਼ੋ"
 
-#: ../plugins/about/PageComponent.qml:241
+#: plugins/about/PageComponent.qml:240
 msgid "Developer mode"
 msgstr "ਡਿਵੈਲਪਰ ਮੋਡ"
 
-#: ../plugins/about/Storage.qml:43
+#: plugins/about/Storage.qml:43
 msgid "Scanning"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:123
+#: plugins/about/Storage.qml:123
 #, fuzzy
 #| msgid "System Settings"
 msgid "System Reserved"
 msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
 
-#: ../plugins/about/Storage.qml:124
+#: plugins/about/Storage.qml:124
 #, fuzzy
 #| msgid "Used by apps"
 msgid "Used by system"
 msgstr "ਐਪਾਂ ਵੱਲੋਂ ਵਰਤਿਆ"
 
-#: ../plugins/about/Storage.qml:125
+#: plugins/about/Storage.qml:125
 msgid "Videos"
 msgstr "ਵਿਡੀਓ"
 
-#: ../plugins/about/Storage.qml:126
+#: plugins/about/Storage.qml:126
 msgid "Audio"
 msgstr "ਆਡੀਓ"
 
-#: ../plugins/about/Storage.qml:127
+#: plugins/about/Storage.qml:127
 msgid "Pictures"
 msgstr "ਤਸਵੀਰਾਂ"
 
-#: ../plugins/about/Storage.qml:128
+#: plugins/about/Storage.qml:128
 msgid "Documents"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:129
+#: plugins/about/Storage.qml:129
 msgid "Downloads"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:130
+#: plugins/about/Storage.qml:130
 msgid "Anbox"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:131
+#: plugins/about/Storage.qml:131
 msgid "Libertine"
 msgstr ""
 
-#: ../plugins/about/Storage.qml:132
+#: plugins/about/Storage.qml:132
 msgid "Other files"
 msgstr "ਹੋਰ ਫ਼ਾਈਲਾਂ"
 
-#: ../plugins/about/Storage.qml:133
+#: plugins/about/Storage.qml:133
 msgid "Used by apps"
 msgstr "ਐਪਾਂ ਵੱਲੋਂ ਵਰਤਿਆ"
 
-#: ../plugins/about/Storage.qml:191
+#: plugins/about/Storage.qml:191
 msgid "Total storage"
 msgstr "ਕੁੱਲ ਸਟੋਰੇਜ਼"
 
-#: ../plugins/about/Storage.qml:215
+#: plugins/about/Storage.qml:215
 msgid "Free space"
 msgstr "ਖਾਲੀ ਥਾਂ"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By name"
 msgstr "ਨਾਂ ਦੁਆਰਾ"
 
-#: ../plugins/about/Storage.qml:229
+#: plugins/about/Storage.qml:229
 msgid "By size"
 msgstr "ਅਕਾਰ ਦੁਆਰਾ"
 
-#: ../plugins/about/Storage.qml:274 ../plugins/battery/PageComponent.qml:109
-#: ../plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
+#: plugins/battery/PageComponent.qml:285
 msgid "N/A"
 msgstr "N/A"
 
-#: ../plugins/about/Version.qml:33
+#: plugins/about/Version.qml:33
 msgid "OS Build Details"
 msgstr "OS ਬਿਲਡ ਵੇਰਵੇ"
 
-#: ../plugins/about/Version.qml:60
+#: plugins/about/Version.qml:60
+msgid "OS update channel"
+msgstr ""
+
+#: plugins/about/Version.qml:67
 msgid "OS build number"
 msgstr "OS ਬਿਲਡ ਨੰਬਰ"
 
-#: ../plugins/about/Version.qml:66
+#: plugins/about/Version.qml:74
+msgid "Kernel"
+msgstr ""
+
+#: plugins/about/Version.qml:80
+msgid "Build ABI"
+msgstr ""
+
+#: plugins/about/Version.qml:86
 #, fuzzy
 msgid "UBports Image part"
 msgstr "ਉਬੰਤੂ ਈਮੇਜ ਹਿੱਸਾ"
 
-#: ../plugins/about/Version.qml:74
+#: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
 msgstr "ਉਬੰਤੂ ਬਿਲਡ ਵੇਰਵਾ"
 
-#: ../plugins/about/Version.qml:80
+#: plugins/about/Version.qml:100
 msgid "Device Image part"
 msgstr "ਜੰਤਰ ਈਮੇਜ ਹਿੱਸਾ"
 
-#: ../plugins/about/Version.qml:87
+#: plugins/about/Version.qml:107
 msgid "Device build description"
 msgstr "ਜੰਤਰ ਬਿਲਡ ਵੇਰਵਾ"
 
-#: ../plugins/about/Version.qml:94
+#: plugins/about/Version.qml:114
 msgid "Customization Image part"
 msgstr "ਪਸੰਦੀਦਾ ਈਮੇਜ ਹਿੱਸਾ"
 
-#: ../plugins/about/click.cpp:134
+#: plugins/about/click.cpp:134
 msgid "Unknown title"
 msgstr "ਅਣਜਾਣ ਟਾਈਟਲ"
 
-#: ../plugins/background/Components/AddRemove.qml:42
-#: ../plugins/background/Preview.qml:109
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:49
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:51
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:46
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:54
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: ../plugins/hotspot/HotspotSetup.qml:255
-#: ../plugins/hotspot/PageComponent.qml:166
-#: ../plugins/language/DisplayLanguage.qml:46
-#: ../plugins/language/RebootNecessary.qml:48
-#: ../plugins/printing/AddPrinter.qml:41
-#: ../plugins/reset/EraseEverything.qml:55
-#: ../plugins/reset/ResetAllSettings.qml:39
-#: ../plugins/reset/ResetLauncherHome.qml:56
-#: ../plugins/time-date/TimePicker.qml:76 ../plugins/wifi/CertDialog.qml:65
-#: ../plugins/wifi/OtherNetwork.qml:889
+#: plugins/background/Components/AddRemove.qml:42
+#: plugins/background/Preview.qml:110
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:51
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:46
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:54
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:55
+#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/language/DisplayLanguage.qml:46
+#: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
+#: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
+#: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
 msgstr "ਰੱਦ"
 
-#: ../plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
 msgstr "ਕੋਈ ਈਮੇਜਾਂ ਨਹੀਂ ਚੁਣੀਆਂ"
 
-#: ../plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:65
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "%1 ਈਮੇਜ ਹਟਾਓ"
 msgstr[1] "%1 ਈਮੇਜਾਂ ਹਟਾਓ"
 
-#: ../plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:79
 msgid "Add an image…"
 msgstr "ਈਮੇਜ ਜੋੜੋ..."
 
-#: ../plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:89
 msgid "Remove images…"
 msgstr "ਈਮੇਜਾਂ ਹਟਾਓ..."
 
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: ../plugins/background/MainPage.qml:34 settings.js:38
-msgid "Background"
+#: plugins/background/MainPage.qml:35
+#, fuzzy
+#| msgid "Background"
+msgid "Background & Appearance"
 msgstr "ਬੈਕਗਰਾਊਂਡ"
 
-#: ../plugins/background/MainPage.qml:85
+#: plugins/background/MainPage.qml:87
+msgid "Enable blur effects"
+msgstr ""
+
+#: plugins/background/MainPage.qml:104
 #, fuzzy
 #| msgid "System"
 msgid "System Art"
 msgstr "ਸਿਸਟਮ"
 
-#: ../plugins/background/MainPage.qml:98
+#: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "ਪਸੰਦੀਦਾ"
 
-#: ../plugins/background/MainPage.qml:157
+#: plugins/background/MainPage.qml:176
 #, fuzzy
 msgid "Choose application"
 msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
 
-#: ../plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:69
 msgid "Preview"
 msgstr "ਝਲਕ"
 
-#: ../plugins/background/Preview.qml:109
+#: plugins/background/Preview.qml:110
 msgid "Remove image"
 msgstr "ਤਸਵੀਰ ਹਟਾਓ"
 
-#: ../plugins/background/Preview.qml:115 ../plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "ਸੈੱਟ"
 
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:35 settings.js:54
+#: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "ਬੈਟਰੀ"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:44
+#: plugins/battery/PageComponent.qml:44
 #, qt-format
 msgid "%1 second ago"
 msgid_plural "%1 seconds ago"
@@ -332,7 +340,7 @@ msgstr[0] "%1 ਸੈਕਿੰਡ ਪਹਿਲਾਂ"
 msgstr[1] "%1 ਸੈਕਿੰਡਾਂ ਪਹਿਲਾਂ"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:47
+#: plugins/battery/PageComponent.qml:47
 #, qt-format
 msgid "%1 minute ago"
 msgid_plural "%1 minutes ago"
@@ -340,64 +348,62 @@ msgstr[0] "%1 ਮਿੰਟ ਪਹਿਲਾਂ"
 msgstr[1] "%1 ਮਿੰਟਾਂ ਪਹਿਲਾਂ"
 
 #. TRANSLATORS: %1 is the number of hours
-#: ../plugins/battery/PageComponent.qml:50
+#: plugins/battery/PageComponent.qml:50
 #, qt-format
 msgid "%1 hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "%1 ਘੰਟਾ ਪਹਿਲਾਂ"
 msgstr[1] "%1 ਘੰਟੇ ਪਹਿਲਾਂ"
 
-#: ../plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:104
 msgid "Charge level"
 msgstr "ਚਾਰਜ ਪੱਧਰ"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: ../plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:112
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: ../plugins/battery/PageComponent.qml:191
-#: ../plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
 msgstr "ਕੱਲ੍ਹ"
 
-#: ../plugins/battery/PageComponent.qml:199
-#: ../plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
 msgid "Today"
 msgstr "ਅੱਜ"
 
-#: ../plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:271
 msgid "Charging now"
 msgstr "ਹੁਣੇ ਚਾਰਜ ਕਰੋ"
 
-#: ../plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:273
 msgid "Last full charge"
 msgstr "ਆਖਰੀ ਮੁਕੰਮਲ ਚਾਰਜ"
 
-#: ../plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:275
 msgid "Fully charged"
 msgstr "ਪੂਰਾ ਚਾਰਜ"
 
-#: ../plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:294
 msgid "Ways to reduce battery use:"
 msgstr "ਬੈਟਰੀ ਵਰਤੋਂ ਘਟਾਉਣ ਦੇ ਤਰੀਕੇ:"
 
-#: ../plugins/battery/PageComponent.qml:298
-#: ../plugins/brightness/PageComponent.qml:84
+#: plugins/battery/PageComponent.qml:298
+#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "ਡਿਸਪਲੇਅ ਚਮਕ"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Lock when idle"
 msgstr "ਵਿਹਲੇ ਹੋਣ ਤੇ ਲਾਕ"
 
-#: ../plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:323
 msgid "Sleep when idle"
 msgstr "ਵਿਹਲੇ ਹੋਣ ਤੇ ਨੀਂਦ"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:331
 #, fuzzy, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -405,567 +411,555 @@ msgstr[0] "%1 ਮਿੰਟ ਬਾਅਦ"
 msgstr[1] "%1 ਮਿੰਟਾਂ ਬਾਅਦ"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: ../plugins/battery/PageComponent.qml:335
-#: ../plugins/battery/PageComponent.qml:343
-#: ../plugins/battery/SleepValues.qml:85 ../plugins/battery/SleepValues.qml:89
-#: ../plugins/battery/SleepValues.qml:93 ../plugins/battery/SleepValues.qml:97
-#: ../plugins/battery/SleepValues.qml:101
-#: ../plugins/battery/SleepValues.qml:105
+#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
+#: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
+#: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
 msgstr[0] "%1 ਮਿੰਟ ਬਾਅਦ"
 msgstr[1] "%1 ਮਿੰਟਾਂ ਬਾਅਦ"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:374
-#: ../plugins/wifi/PageComponent.qml:28 settings.js:314
-msgid "Wi-Fi"
-msgstr "ਵਾਈ-ਫਾਈ"
-
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: ../plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:374
 #, fuzzy
 msgid "Wi-Fi used for hotspot"
 msgstr "ਵਾਈ-ਫ਼ਾਈ ਹਾਟਸਪਾਟ"
 
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: ../plugins/battery/PageComponent.qml:410
-#: ../plugins/bluetooth/PageComponent.qml:33
-#: ../plugins/bluetooth/PageComponent.qml:235 settings.js:70
+#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+msgid "Wi-Fi"
+msgstr "ਵਾਈ-ਫਾਈ"
+
+#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "ਬਲਿਊਟੁੱਥ"
 
-#: ../plugins/battery/SleepValues.qml:68
+#: plugins/battery/SleepValues.qml:68
 #, fuzzy
 msgid "Lock the device when it's not in use:"
 msgstr "ਫ਼ੋਨ ਲਾੱਕ ਕਰੋ ਜਦੋਂ ਵਰਤੋਂ ਵਿੱਚ ਨਾ ਹੋਵੇ:"
 
-#: ../plugins/battery/SleepValues.qml:69
+#: plugins/battery/SleepValues.qml:69
 #, fuzzy
 msgid "Put the device to sleep when it is not in use:"
 msgstr "ਫ਼ੋਨ ਨੂੰ ਨੀਂਦ ਦਿਓ ਜਦੋਂ ਵਰਤੋਂ ਵਿੱਚ ਨਾ ਹੋਵੇ:"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: ../plugins/battery/SleepValues.qml:81
+#: plugins/battery/SleepValues.qml:81
 #, fuzzy, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
 msgstr[0] "%1 ਮਿੰਟ ਬਾਅਦ"
 msgstr[1] "%1 ਮਿੰਟਾਂ ਬਾਅਦ"
 
-#: ../plugins/battery/SleepValues.qml:125
-#, fuzzy
-msgid "Device won’t sleep during calls or video playback."
-msgstr "ਫ਼ੋਨ ਕਾਲਾਂ ਜਾਂ ਵੀਡੀਓ ਚਲਾਉਂਦੇ ਸਮੇਂ ਨੀਂਦ ਵਿੱਚ ਨਹੀਂ ਜਾਵੇਗਾ।"
-
-#: ../plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:125
 #, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr "ਥੋੜ੍ਹੇ ਸਮੇਂ ਜਿਆਦਾ ਸੁਰੱਖਿਅਤ ਹਨ। ਫ਼ੋਨ ਕਾਲਾਂ ਜਾਂ ਵੀਡੀਓ ਚਲਾਉਂਦੇ ਸਮੇਂ ਲਾਕ ਨਹੀਂ ਹੋਵੇਗਾ।"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:26
+#: plugins/battery/SleepValues.qml:125
+#, fuzzy
+msgid "Device won’t sleep during calls or video playback."
+msgstr "ਫ਼ੋਨ ਕਾਲਾਂ ਜਾਂ ਵੀਡੀਓ ਚਲਾਉਂਦੇ ਸਮੇਂ ਨੀਂਦ ਵਿੱਚ ਨਹੀਂ ਜਾਵੇਗਾ।"
+
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:26
 #, fuzzy
 msgid "Bluetooth Pairing Authorization Request"
 msgstr "ਬਲਿਊਟੁੱਥ ਜੁੜਨ ਬੇਨਤੀ"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:34
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
 msgstr ""
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:39
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 #, fuzzy
 msgid "Allow"
 msgstr "ਪ੍ਰਵਾਨ"
 
-#: ../plugins/bluetooth/AuthorizationRequestDialog.qml:46
+#: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
 msgstr ""
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:28
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:26
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:26
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:28
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:28
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:26
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:26
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:28
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:28
 msgid "Bluetooth Pairing Request"
 msgstr "ਬਲਿਊਟੁੱਥ ਜੁੜਨ ਬੇਨਤੀ"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:37
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ '%1' ਤੇ ਵਿਖਾਈ ਪਿਨ ਦੀ ਇਸ ਨਾਲ ਮੇਲ ਹੋਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
 
-#: ../plugins/bluetooth/ConfirmPasskeyDialog.qml:57
+#: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
 msgstr "ਪਿਨ ਪੁਸ਼ਟੀ ਕਰੋ"
 
-#: ../plugins/bluetooth/DevicePage.qml:37
-#: ../plugins/bluetooth/PageComponent.qml:290
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
-#: ../plugins/wifi/AccessPoint.qml:51 ../plugins/wifi/StandardMenuItem.qml:31
+#: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
+#: plugins/wifi/StandardMenuItem.qml:31
 msgid "Connected"
 msgstr "ਕੁਨੈਕਟ ਹੋਇਆ"
 
-#: ../plugins/bluetooth/DevicePage.qml:38
-#: ../plugins/bluetooth/PageComponent.qml:290
+#: plugins/bluetooth/DevicePage.qml:38 plugins/bluetooth/PageComponent.qml:290
 msgid "Connecting…"
 msgstr "ਕੁਨੈਕਟ ਕਰ ਰਿਹਾ..."
 
-#: ../plugins/bluetooth/DevicePage.qml:39
+#: plugins/bluetooth/DevicePage.qml:39
 msgid "Disconnecting…"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਕਰ ਰਿਹਾ..."
 
-#: ../plugins/bluetooth/DevicePage.qml:40
+#: plugins/bluetooth/DevicePage.qml:40
 msgid "Disconnected"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
 
-#: ../plugins/bluetooth/DevicePage.qml:41 ../plugins/hotspot/Common.qml:94
-#: ../plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
+#: plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
-#: ../plugins/bluetooth/DevicePage.qml:47
+#: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
 msgstr "ਕੰਪਿਊਟਰ"
 
-#: ../plugins/bluetooth/DevicePage.qml:48
-#: ../plugins/bluetooth/DevicePage.qml:49
+#: plugins/bluetooth/DevicePage.qml:48 plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
 msgstr "ਫੋਨ"
 
-#: ../plugins/bluetooth/DevicePage.qml:50
+#: plugins/bluetooth/DevicePage.qml:50
 msgid "Modem"
 msgstr "ਮੋਡਮ"
 
-#: ../plugins/bluetooth/DevicePage.qml:51 ../src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
 msgid "Network"
 msgstr "ਨੈੱਟਵਰਕ"
 
-#: ../plugins/bluetooth/DevicePage.qml:52
+#: plugins/bluetooth/DevicePage.qml:52
 msgid "Headset"
 msgstr "ਹੈਡਸੈੱਟ"
 
-#: ../plugins/bluetooth/DevicePage.qml:53
+#: plugins/bluetooth/DevicePage.qml:53
 msgid "Headphones"
 msgstr "ਹੈਡਫ਼ੋਨ"
 
-#: ../plugins/bluetooth/DevicePage.qml:54
+#: plugins/bluetooth/DevicePage.qml:54
 msgid "Video"
 msgstr "ਵੀਡੀਓ"
 
-#: ../plugins/bluetooth/DevicePage.qml:55
+#: plugins/bluetooth/DevicePage.qml:55
 msgid "Other Audio"
 msgstr "ਹੋਰ ਆਡੀਓ"
 
-#: ../plugins/bluetooth/DevicePage.qml:56
+#: plugins/bluetooth/DevicePage.qml:56
 msgid "Joypad"
 msgstr "ਜਾਏਪੈਡ"
 
-#: ../plugins/bluetooth/DevicePage.qml:57
+#: plugins/bluetooth/DevicePage.qml:57
 msgid "Keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/bluetooth/DevicePage.qml:58
+#: plugins/bluetooth/DevicePage.qml:58
 msgid "Tablet"
 msgstr "ਟੈਬਲੇਟ"
 
-#: ../plugins/bluetooth/DevicePage.qml:59 ../plugins/mouse/Connected.qml:48
+#: plugins/bluetooth/DevicePage.qml:59 plugins/mouse/Connected.qml:48
 msgid "Mouse"
 msgstr "ਮਾਊਸ"
 
-#: ../plugins/bluetooth/DevicePage.qml:60
+#: plugins/bluetooth/DevicePage.qml:60
 msgid "Printer"
 msgstr "ਪ੍ਰਿੰਟਰ"
 
-#: ../plugins/bluetooth/DevicePage.qml:61
+#: plugins/bluetooth/DevicePage.qml:61
 msgid "Camera"
 msgstr "ਕੈਮਰਾ"
 
-#: ../plugins/bluetooth/DevicePage.qml:62
+#: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
 msgstr ""
 
-#: ../plugins/bluetooth/DevicePage.qml:63
+#: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
 msgstr "ਹੋਰ"
 
-#: ../plugins/bluetooth/DevicePage.qml:69
+#: plugins/bluetooth/DevicePage.qml:69
 msgid "Excellent"
 msgstr "ਬਹੁਤ ਵਧੀਆ"
 
-#: ../plugins/bluetooth/DevicePage.qml:70
+#: plugins/bluetooth/DevicePage.qml:70
 msgid "Good"
 msgstr "ਵਧੀਆ"
 
-#: ../plugins/bluetooth/DevicePage.qml:71
+#: plugins/bluetooth/DevicePage.qml:71
 msgid "Fair"
 msgstr "ਠੀਕ"
 
-#: ../plugins/bluetooth/DevicePage.qml:72
+#: plugins/bluetooth/DevicePage.qml:72
 msgid "Poor"
 msgstr "ਮਾੜਾ"
 
-#: ../plugins/bluetooth/DevicePage.qml:106
-#: ../plugins/printing/printer-sub-pages/Status.qml:61
-#: ../plugins/wifi/NetworkDetails.qml:59
+#: plugins/bluetooth/DevicePage.qml:106
+#: plugins/printing/printer-sub-pages/Status.qml:61
+#: plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: ../plugins/bluetooth/DevicePage.qml:113
+#: plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
 msgstr "ਕਿਸਮ"
 
-#: ../plugins/bluetooth/DevicePage.qml:124
-#: ../plugins/printing/printer-sub-pages/Status.qml:26
+#: plugins/bluetooth/DevicePage.qml:124
+#: plugins/printing/printer-sub-pages/Status.qml:26
 msgid "Status"
 msgstr "ਹਾਲਤ"
 
-#: ../plugins/bluetooth/DevicePage.qml:128
+#: plugins/bluetooth/DevicePage.qml:128
 msgid "Signal Strength"
 msgstr "ਸਿਗਨਲ ਮਜ਼ਬੂਤੀ"
 
-#: ../plugins/bluetooth/DevicePage.qml:133
-#: ../plugins/bluetooth/PageComponent.qml:358
+#: plugins/bluetooth/DevicePage.qml:133 plugins/bluetooth/PageComponent.qml:358
 msgid "Connect automatically when detected:"
 msgstr "ਆਪਣੇ ਆਪ ਕੁਨੇਕਟ ਕਰੋ ਜਦੋਂ ਪਤਾ ਲੱਗੇ:"
 
-#: ../plugins/bluetooth/DevicePage.qml:150 ../plugins/wifi/OtherNetwork.qml:905
-msgid "Connect"
-msgstr "ਕੁਨੈਕਟ ਕਰੋ"
-
-#: ../plugins/bluetooth/DevicePage.qml:150
+#: plugins/bluetooth/DevicePage.qml:150
 msgid "Disconnect"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ"
 
-#: ../plugins/bluetooth/DevicePage.qml:172
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+msgid "Connect"
+msgstr "ਕੁਨੈਕਟ ਕਰੋ"
+
+#: plugins/bluetooth/DevicePage.qml:172
 msgid "Forget this device"
 msgstr "ਇਸ ਜੰਤਰ ਨੂੰ ਭੁੱਲ ਜਾਓ"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
-#: ../plugins/bluetooth/DisplayPasskeyDialog.qml:35
-#: ../plugins/bluetooth/DisplayPinCodeDialog.qml:34
+#: plugins/bluetooth/DisplayPasskeyDialog.qml:35
+#: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr ""
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
 msgstr "ਖੋਜਣਯੋਗ"
 
-#: ../plugins/bluetooth/PageComponent.qml:252
+#: plugins/bluetooth/PageComponent.qml:252
 msgid "Not discoverable"
 msgstr "ਖੋਜਣਯੋਗ ਨਹੀਂ"
 
-#: ../plugins/bluetooth/PageComponent.qml:260
-#: ../plugins/bluetooth/PageComponent.qml:319
+#: plugins/bluetooth/PageComponent.qml:260
+#: plugins/bluetooth/PageComponent.qml:319
 #, fuzzy
 msgid "Searching…"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰ ਰਿਹਾ..."
 
-#: ../plugins/bluetooth/PageComponent.qml:269
+#: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
 msgstr "ਕੁਨੇਕਟ ਹੋਏ ਜੰਤਰ:"
 
-#: ../plugins/bluetooth/PageComponent.qml:309
-msgid "Connect a device:"
-msgstr "ਜੰਤਰ ਨਾਲ ਕੁਨੇਕਟ:"
-
-#: ../plugins/bluetooth/PageComponent.qml:309
+#: plugins/bluetooth/PageComponent.qml:309
 msgid "Connect another device:"
 msgstr "ਦੂਜੇ ਜੰਤਰ ਨਾਲ ਕੁਨੇਕਟ:"
 
-#: ../plugins/bluetooth/PageComponent.qml:352
+#: plugins/bluetooth/PageComponent.qml:309
+msgid "Connect a device:"
+msgstr "ਜੰਤਰ ਨਾਲ ਕੁਨੇਕਟ:"
+
+#: plugins/bluetooth/PageComponent.qml:352
 msgid "None detected"
 msgstr "ਕੋਈ ਨਹੀਂ ਮਿਲਿਆ"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:36
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:36
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:36
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
 msgstr "'%1\" ਲਈ ਪਿਨ"
 
-#: ../plugins/bluetooth/ProvidePasskeyDialog.qml:62
-#: ../plugins/bluetooth/ProvidePinCodeDialog.qml:63
+#: plugins/bluetooth/ProvidePasskeyDialog.qml:62
+#: plugins/bluetooth/ProvidePinCodeDialog.qml:63
 msgid "Pair"
 msgstr "ਜੋੜੀ"
 
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: ../plugins/brightness/PageComponent.qml:35 settings.js:94
-msgid "Brightness"
-msgstr "ਚਮਕ"
-
-#: ../plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:67
 #, fuzzy
 msgid "Brightness & Display"
 msgstr "ਚਮਕ"
 
-#: ../plugins/brightness/PageComponent.qml:122
+#: plugins/brightness/PageComponent.qml:35
+#: plugins/brightness/plugin/brightness-plugin.cpp:65
+msgid "Brightness"
+msgstr "ਚਮਕ"
+
+#: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "ਸਵੈ ਅਨੁਕੂਲ"
 
-#: ../plugins/brightness/PageComponent.qml:137
+#: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "ਮਾਹੌਲ ਅਨੁਸਾਰ ਡਿਸਪਲੇਅ ਦੀ ਚਮਕ ਵਧਾਓ ਜਾਂ ਘਟਾਓ।"
 
-#: ../plugins/brightness/PageComponent.qml:142
+#: plugins/brightness/PageComponent.qml:135
 #, fuzzy
 #| msgid "display"
 msgid "Display"
 msgstr "ਡਿਸਪਲੇਅ"
 
-#: ../plugins/brightness/PageComponent.qml:147
+#: plugins/brightness/PageComponent.qml:141
 #, fuzzy
 msgid "External display"
 msgstr "ਡਿਸਪਲੇਅ"
 
-#: ../plugins/brightness/PageComponent.qml:166
+#: plugins/brightness/PageComponent.qml:158
 #, fuzzy
 msgid "Wireless display"
 msgstr "ਡਿਸਪਲੇਅ"
 
-#: ../plugins/brightness/PageComponent.qml:167
-#: ../plugins/brightness/WifiDisplays.qml:128
-#: ../plugins/brightness/WifiDisplays.qml:172
+#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/WifiDisplays.qml:140
+#: plugins/brightness/WifiDisplays.qml:184
 #, fuzzy
 msgid "Not connected"
 msgstr "ਆਖਰੀ ਕੁਨੇਕਟ ਹੋਇਆ"
 
-#: ../plugins/brightness/WifiDisplays.qml:27
+#: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
 msgstr ""
 
-#: ../plugins/brightness/WifiDisplays.qml:100
+#: plugins/brightness/WifiDisplays.qml:112
 #, fuzzy
 msgid "No displays detected"
 msgstr "ਕੋਈ ਨਹੀਂ ਮਿਲਿਆ"
 
-#: ../plugins/brightness/WifiDisplays.qml:113
+#: plugins/brightness/WifiDisplays.qml:125
 #, fuzzy
 msgid "Connected display:"
 msgstr "ਕੁਨੇਕਟ ਹੋਏ ਜੰਤਰ:"
 
-#: ../plugins/brightness/WifiDisplays.qml:128
+#: plugins/brightness/WifiDisplays.qml:140
 #, fuzzy
 msgid "Connecting"
 msgstr "ਕੁਨੈਕਟ ਕਰ ਰਿਹਾ..."
 
-#: ../plugins/brightness/WifiDisplays.qml:146
-#, fuzzy
-msgid "Choose a display:"
-msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
-
-#: ../plugins/brightness/WifiDisplays.qml:146
+#: plugins/brightness/WifiDisplays.qml:158
 #, fuzzy
 msgid "Use another display:"
 msgstr "ਦੂਜੇ ਜੰਤਰ ਨਾਲ ਕੁਨੇਕਟ:"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:32
+#: plugins/brightness/WifiDisplays.qml:158
+#, fuzzy
+msgid "Choose a display:"
+msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
+
+#: plugins/brightness/WifiDisplaysAlert.qml:32
 #, fuzzy, qt-format
 msgid "This device failed to connect to %1."
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ"
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:34
+#: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
 msgstr ""
 
-#: ../plugins/brightness/WifiDisplaysAlert.qml:38
-#: ../plugins/vpn/PageComponent.qml:123
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr "ਠੀਕ"
 
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: ../plugins/gestures/PageComponent.qml:25 settings.js:126
+#: plugins/gestures/PageComponent.qml:25
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "ਤਸਵੀਰਾਂ"
 
-#: ../plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:44
 msgid "Tap to wake"
 msgstr ""
 
-#: ../plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: ../plugins/hotspot/Common.qml:34 ../plugins/wifi/Common.qml:36
+#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ"
 
-#: ../plugins/hotspot/Common.qml:36 ../plugins/wifi/Common.qml:38
+#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
 msgid "No reason given"
 msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ ਦਿੱਤਾ"
 
-#: ../plugins/hotspot/Common.qml:38 ../plugins/wifi/Common.qml:40
+#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
 msgid "Device is now managed"
 msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਹੈ"
 
-#: ../plugins/hotspot/Common.qml:40 ../plugins/wifi/Common.qml:42
+#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
 msgid "Device is now unmanaged"
 msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਨਹੀਂ ਹੈ"
 
-#: ../plugins/hotspot/Common.qml:42 ../plugins/wifi/Common.qml:44
+#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
 msgid "The device could not be readied for configuration"
 msgstr "ਜੰਤਰ ਨੂੰ ਸੰਰਚਨਾ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
 
-#: ../plugins/hotspot/Common.qml:44 ../plugins/wifi/Common.qml:46
+#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
 msgid ""
 "IP configuration could not be reserved (no available address, timeout, etc.)"
 msgstr ""
 "IP ਸੰਰਚਨਾ ਨੂੰ ਰਾਖਵਾਂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ (ਕੋਈ ਐਡਰੈਸ ਉਪਲੱਬਧ ਨਹੀਂ, ਸਮਾਂ ਸਮਾਪਤ ਹੋਣਾ ਆਦਿ)"
 
-#: ../plugins/hotspot/Common.qml:46 ../plugins/wifi/Common.qml:48
+#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
 msgid "The IP configuration is no longer valid"
 msgstr "IP ਸੰਰਚਨਾ ਹੁਣ ਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ"
 
-#: ../plugins/hotspot/Common.qml:48 ../plugins/wifi/Common.qml:50
+#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
 msgid "Your authentication details were incorrect"
 msgstr "ਤੁਹਾਡੇ ਪ੍ਰਮਾਣਿਕਤਾ ਵੇਰਵੇ ਗਲਤ ਸਨ"
 
-#: ../plugins/hotspot/Common.qml:50 ../plugins/wifi/Common.qml:52
+#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
 msgid "802.1X supplicant disconnected"
 msgstr "802.1X ਸਪਲੀਕੈਂਟ ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
 
-#: ../plugins/hotspot/Common.qml:52 ../plugins/wifi/Common.qml:54
+#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
 msgid "802.1X supplicant configuration failed"
 msgstr "802.1X ਸਪਲੀਕੈਂਟ ਸੰਰਚਨਾ ਫੇਲ੍ਹ ਹੋਈ"
 
-#: ../plugins/hotspot/Common.qml:54 ../plugins/wifi/Common.qml:56
+#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
 msgid "802.1X supplicant failed"
 msgstr "802.1X ਸਪਲੀਕੈਂਟ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: ../plugins/hotspot/Common.qml:56 ../plugins/wifi/Common.qml:58
+#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
 msgid "802.1X supplicant took too long to authenticate"
 msgstr "802.1X ਸਪਲੀਕੈਂਟ ਨੇ ਪ੍ਰਮਾਣਿਤ ਹੋਣ ਲਈ ਬਹੁਤ ਲੰਮਾ ਸਮਾਂ ਲਿਆ"
 
-#: ../plugins/hotspot/Common.qml:58 ../plugins/wifi/Common.qml:60
+#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
 msgid "DHCP client failed to start"
 msgstr "DHCP ਕਲਾਇਟ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫੇਲ੍ਹ"
 
-#: ../plugins/hotspot/Common.qml:60 ../plugins/wifi/Common.qml:62
+#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
 msgid "DHCP client error"
 msgstr "DHCP ਕਲਾਇਟ ਖਾਮੀ"
 
-#: ../plugins/hotspot/Common.qml:62 ../plugins/wifi/Common.qml:64
+#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
 msgid "DHCP client failed"
 msgstr "DHCP ਕਲਾਇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: ../plugins/hotspot/Common.qml:64 ../plugins/wifi/Common.qml:66
+#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
 msgid "Shared connection service failed to start"
 msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫ਼ੇਲ੍ਹ"
 
-#: ../plugins/hotspot/Common.qml:66 ../plugins/wifi/Common.qml:68
+#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
 msgid "Shared connection service failed"
 msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਫ਼ੇਲ੍ਹ ਹੋਈ"
 
-#: ../plugins/hotspot/Common.qml:68 ../plugins/wifi/Common.qml:70
+#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
 msgid "Necessary firmware for the device may be missing"
 msgstr "ਜੰਤਰ ਲਈ ਲੋੜੀਂਦਾ ਫ਼ਰਮਵੇਅਰ ਸ਼ਾਇਦ ਮੌਜੂਦ ਨਹੀਂ"
 
-#: ../plugins/hotspot/Common.qml:70 ../plugins/wifi/Common.qml:72
+#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
 msgid "The device was removed"
 msgstr "ਜੰਤਰ ਹਟਾਇਆ ਗਿਆ ਸੀ"
 
-#: ../plugins/hotspot/Common.qml:72 ../plugins/wifi/Common.qml:74
+#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
 msgid "NetworkManager went to sleep"
 msgstr "ਨੈੱਟਵਰਕਮੈਨੇਜਰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਗਿਆ"
 
-#: ../plugins/hotspot/Common.qml:74 ../plugins/wifi/Common.qml:76
+#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
 msgid "The device's active connection disappeared"
 msgstr "ਜੰਤਰ ਦਾ ਸਰਗਰਮ ਕੁਨੈਕਸ਼ਨ ਅਲੋਪ ਹੋਇਆ"
 
-#: ../plugins/hotspot/Common.qml:76 ../plugins/wifi/Common.qml:78
+#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
 msgid "Device disconnected by user or client"
 msgstr "ਜੰਤਰ ਯੂਜ਼ਰ ਜਾਂ ਕਲਾਇਟ ਵਲੋਂ ਡਿਸ-ਕੁਨੈਕਟ ਕੀਤਾ ਗਿਆ"
 
-#: ../plugins/hotspot/Common.qml:78 ../plugins/wifi/Common.qml:80
+#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
 msgid "The device's existing connection was assumed"
 msgstr "ਜੰਤਰ ਦਾ ਮੌਜੂਦਾ ਕੁਨੈਕਸ਼ਨ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਗਿਆ"
 
-#: ../plugins/hotspot/Common.qml:80 ../plugins/wifi/Common.qml:82
+#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
 msgid "The supplicant is now available"
 msgstr "ਸਪਲੀਕੈਂਟ ਹੁਣ ਉਪਲੱਬਧ ਹੈ"
 
-#: ../plugins/hotspot/Common.qml:82 ../plugins/wifi/Common.qml:84
+#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
 msgid "The modem could not be found"
 msgstr "ਮਾਡਮ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: ../plugins/hotspot/Common.qml:84 ../plugins/wifi/Common.qml:86
+#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
 msgid "The Bluetooth connection failed or timed out"
 msgstr "ਬਲਿਊਟੁੱਥ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਜਾਂ ਸਮਾਂ ਸਮਾਪਤ ਹੋਇਆ"
 
-#: ../plugins/hotspot/Common.qml:86 ../plugins/wifi/Common.qml:88
+#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
 msgid "A dependency of the connection failed"
 msgstr "ਕੁਨੈਕਸ਼ਨ ਦੀ ਨਿਰਭਰਤਾ ਫੇਲ੍ਹ ਹੋਈ"
 
-#: ../plugins/hotspot/Common.qml:88 ../plugins/wifi/Common.qml:90
+#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
 msgid "ModemManager is unavailable"
 msgstr "ਮਾਡਮਮੈਨੇਜਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: ../plugins/hotspot/Common.qml:90 ../plugins/wifi/Common.qml:92
+#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
 msgid "The Wi-Fi network could not be found"
 msgstr "ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
-#: ../plugins/hotspot/Common.qml:92 ../plugins/wifi/Common.qml:94
+#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
 msgid "A secondary connection of the base connection failed"
 msgstr "ਮੂਲ ਕੁਨੈਕਸ਼ਨ ਦਾ ਸੈਕੰਡਰੀ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Change Hotspot Setup"
 msgstr "ਹਾਟਸਪਾਟ ਸੈੱਟਅੱਪ ਬਦਲੋ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:61
+#: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Set Up Hotspot"
 msgstr "ਹਾਟਸਪਾਟ ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:167
 msgid "Hotspot name"
 msgstr "ਹਾਟਸਪਾਟ ਨਾਂ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:168
 #, fuzzy
 msgid "Choose a name"
 msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:185
+#: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
 msgstr ""
 
-#: ../plugins/hotspot/HotspotSetup.qml:216
-#: ../plugins/wifi/NetworkDetails.qml:87 ../plugins/wifi/OtherNetwork.qml:821
+#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "ਪਾਸਵਰਡ ਵਿਖਾਓ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: ../plugins/hotspot/HotspotSetup.qml:266
+#: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
 msgstr "ਬਦਲੋ"
 
-#: ../plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: ../plugins/hotspot/PageComponent.qml:33
-#: ../plugins/hotspot/PageComponent.qml:85 settings.js:130
+#: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
 msgstr "ਹਾਟਸਪਾਟ"
 
-#: ../plugins/hotspot/PageComponent.qml:114
+#: plugins/hotspot/PageComponent.qml:114
 msgid ""
 "When hotspot is on, other devices can use your cellular data connection over "
 "Wi-Fi. Normal data charges apply."
@@ -973,7 +967,7 @@ msgstr ""
 "ਜਦੋਂ ਹਾਟਸਪਾਟ ਚਾਲੂ ਹੈ, ਦੂਜੇ ਜੰਤਰ ਵਾਈ-ਫ਼ਾਈ ਉੱਤੇ ਤੁਹਾਡੇ ਸੈਲੂਲਰ ਡਾਟਾ ਕੁਨੇਕਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ। "
 "ਆਮ ਡਾਟਾ ਦਰਾਂ ਲਾਗੂ।"
 
-#: ../plugins/hotspot/PageComponent.qml:115
+#: plugins/hotspot/PageComponent.qml:115
 msgid ""
 "Other devices can use your cellular data connection over the Wi-Fi network. "
 "Normal data charges apply."
@@ -981,382 +975,461 @@ msgstr ""
 "ਦੂਜੇ ਜੰਤਰ ਵਾਈ-ਫ਼ਾਈ ਨੈੱਟਵਰਕ ਉੱਤੇ ਤੁਹਾਡੇ ਸੈਲੂਲਰ ਡਾਟਾ ਕੁਨੇਕਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ। ਆਮ ਡਾਟਾ ਦਰਾਂ "
 "ਲਾਗੂ।"
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 #, fuzzy
 msgid "Change Password/Setup…"
 msgstr "ਪਾਸਕੋਡ ਬਦਲੋ..."
 
-#: ../plugins/hotspot/PageComponent.qml:124
+#: plugins/hotspot/PageComponent.qml:124
 #, fuzzy
 msgid "Set Up Hotspot…"
 msgstr "ਹਾਟਸਪਾਟ ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/hotspot/PageComponent.qml:155
+#: plugins/hotspot/PageComponent.qml:155
 #, fuzzy
 msgid "Wi-Fi is off"
 msgstr "ਵਾਈ-ਫ਼ਾਈ ਹਾਟਸਪਾਟ"
 
-#: ../plugins/hotspot/PageComponent.qml:156
+#: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
 msgstr ""
 
-#: ../plugins/hotspot/PageComponent.qml:160
+#: plugins/hotspot/PageComponent.qml:160
 #, fuzzy
 msgid "Turn on Wi-Fi"
 msgstr "ਜਦੋਂ ਵਾਈ-ਫ਼ਾਈ ਹੋਵੇ"
 
-#: ../plugins/language/DisplayLanguage.qml:51
+#: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
 msgstr "ਭਾਸ਼ਾ ਵਿਖਾਓ"
 
-#: ../plugins/language/DisplayLanguage.qml:55
-#: ../plugins/printing/AddPrinterDetails.qml:44
+#: plugins/language/DisplayLanguage.qml:55
+#: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
 msgstr "ਪਿੱਛੇ"
 
-#: ../plugins/language/DisplayLanguage.qml:66
+#: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
 msgstr "ਪੁਸ਼ਟੀ"
 
-#: ../plugins/language/KeyboardLayouts.qml:29
-#: ../plugins/language/PageComponent.qml:163
+#: plugins/language/KeyboardLayouts.qml:29
+#: plugins/language/PageComponent.qml:163
 msgid "Keyboard layouts"
 msgstr "ਕੀਬੋਰਡ ਲੇਆਉਟ"
 
-#: ../plugins/language/KeyboardLayouts.qml:49
-msgid "All layouts available:"
-msgstr "ਸਾਰੇ ਮੌਜੂਦਾ ਲੇਆਉਟ:"
-
-#: ../plugins/language/KeyboardLayouts.qml:49
+#: plugins/language/KeyboardLayouts.qml:49
 msgid "Current layouts:"
 msgstr "ਮੌਜੂਦਾ ਲੇਆਉਟ:"
 
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: ../plugins/language/PageComponent.qml:37 settings.js:138
+#: plugins/language/KeyboardLayouts.qml:49
+msgid "All layouts available:"
+msgstr "ਸਾਰੇ ਮੌਜੂਦਾ ਲੇਆਉਟ:"
+
+#: plugins/language/PageComponent.qml:37
 msgid "Language & Text"
 msgstr "ਭਾਸ਼ਾ ਤੇ ਟੈਕਸਟ"
 
-#: ../plugins/language/PageComponent.qml:134
+#: plugins/language/PageComponent.qml:134
 msgid "Display language…"
 msgstr "ਭਾਸ਼ਾ ਵਿਖਾਓ...."
 
-#: ../plugins/language/PageComponent.qml:150
+#: plugins/language/PageComponent.qml:150
 #, fuzzy
 msgid "Enable on-screen keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageComponent.qml:162
+#: plugins/language/PageComponent.qml:162
 #, fuzzy
 msgid "On-screen keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageComponent.qml:173
+#: plugins/language/PageComponent.qml:173
 #, fuzzy
 msgid "External keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageComponent.qml:184
+#: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:185
+#: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:186
+#: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:187
+#: plugins/language/PageComponent.qml:187
 msgid "Just White"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:188
+#: plugins/language/PageComponent.qml:188
 msgid "Just Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:189
+#: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:190
+#: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:191
+#: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:192
+#: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:195
+#: plugins/language/PageComponent.qml:195
 #, fuzzy
 msgid "On-screen keyboard theme"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageComponent.qml:196
+#: plugins/language/PageComponent.qml:196
 #, fuzzy
 msgid "Keyboard theme"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageComponent.qml:209
-#: ../plugins/language/PageComponent.qml:218
-#: ../plugins/language/SpellChecking.qml:29
-#: ../plugins/language/SpellChecking.qml:45
+#: plugins/language/PageComponent.qml:209
+#: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
+#: plugins/language/SpellChecking.qml:45
 msgid "Spell checking"
 msgstr "ਸ਼ਬਦ-ਜੋੜ ਪੜਤਾਲ"
 
-#: ../plugins/language/PageComponent.qml:229
+#: plugins/language/PageComponent.qml:229
 msgid "Auto correction"
 msgstr "ਸਵੈ-ਤਾੜਨਾ"
 
-#: ../plugins/language/PageComponent.qml:240
+#: plugins/language/PageComponent.qml:240
 msgid "Word suggestions"
 msgstr "ਅੱਖਰ ਸੁਝਾਅ"
 
-#: ../plugins/language/PageComponent.qml:254
+#: plugins/language/PageComponent.qml:254
 msgid "Auto capitalization"
 msgstr "ਸਵੈ ਵੱਡੇ ਅੱਖਰ"
 
-#: ../plugins/language/PageComponent.qml:265
+#: plugins/language/PageComponent.qml:265
 msgid "Turns on Shift to capitalize the first letter of each sentence."
 msgstr "ਹਰੇਕ ਵਾਕ ਦਾ ਪਹਿਲਾਂ ਅੱਖਰ ਵੱਡਾ ਕਰਨ ਲਈ ਸਿਫ਼ਟ ਨੂੰ ਦੱਬੋ।"
 
-#: ../plugins/language/PageComponent.qml:272
+#: plugins/language/PageComponent.qml:272
 msgid "Auto punctuation"
 msgstr "ਸਵੈ ਵਿਰਾਮ-ਚਿੰਨ੍ਹ"
 
-#: ../plugins/language/PageComponent.qml:284
+#: plugins/language/PageComponent.qml:284
 #, fuzzy
 msgid "Inserts a period when you tap Space twice."
 msgstr "ਇੱਕ ਵਿਰਾਮ, ਅਤੇ ਕੋਈ ਵੀ ਭੁੱਲੇ ਹਵਾਲੇ ਜਾਂ ਬਰੈਕਟ ਸ਼ਾਮਲ ਕਰੋ, ਜਦੋਂ ਤੁਸੀਂ ਸਪੇਸ ਨੂੰ ਦੋ ਵਾਰ ਦੱਬੋ।"
 
-#: ../plugins/language/PageComponent.qml:291
+#: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
 msgstr ""
 
-#: ../plugins/language/PageComponent.qml:302
-#: ../plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
 msgstr "ਕੀਬੋਰਡ ਅਵਾਜ਼"
 
-#: ../plugins/language/PageComponent.qml:313
+#: plugins/language/PageComponent.qml:313
 msgid "Keyboard vibration"
 msgstr "ਕੀਬੋਰਡ ਕੰਬਣੀ"
 
-#: ../plugins/language/PageComponent.qml:324
+#: plugins/language/PageComponent.qml:324
 #, fuzzy
 msgid "Keyboard opacity"
 msgstr "ਕੀਬੋਰਡ ਲੇਆਉਟ"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:33
+#: plugins/language/PageHardwareKeyboard.qml:33
 #, fuzzy
 msgid "Hardware keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../plugins/language/PageHardwareKeyboard.qml:63
+#: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
 msgstr ""
 
-#: ../plugins/language/RebootNecessary.qml:34
+#: plugins/language/RebootNecessary.qml:34
 #, fuzzy
 msgid "The device needs to restart for changes to take effect."
 msgstr "ਬਦਲਾਵਾਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਫ਼ੋਨ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ।"
 
-#: ../plugins/language/RebootNecessary.qml:38
+#: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
 msgstr "ਹੁਣੇ ਮੁੜ-ਚਾਲੂ"
 
-#: ../plugins/language/SpellChecking.qml:64
+#: plugins/language/SpellChecking.qml:64
 msgid "Current spelling languages:"
 msgstr "ਮੌਜੂਦਾ ਸ਼ਬਦ-ਜੋੜ ਭਾਸ਼ਾਵਾਂ:"
 
-#: ../plugins/language/SpellChecking.qml:65
+#: plugins/language/SpellChecking.qml:65
 msgid "All languages available:"
 msgstr "ਸਾਰੀ ਭਾਸ਼ਾਵਾਂ ਮੌਜੂਦ:"
 
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: ../plugins/launcher/PageComponent.qml:31 settings.js:164
-msgid "Launcher"
-msgstr "ਲਾਂਚਰ"
+#: plugins/launcher/PageComponent.qml:31
+#, fuzzy
+#| msgid "Reset Launcher"
+msgid "Desktop & Launcher"
+msgstr "ਲਾਂਚਰ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/launcher/PageComponent.qml:65
+#: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:73
+#: plugins/launcher/PageComponent.qml:73
+msgid "Enable workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:74
+msgid "Supoprt for multiple virtual workspaces"
+msgstr ""
+
+#: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:74
+#: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
 msgstr ""
 
-#: ../plugins/launcher/PageComponent.qml:85
+#: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:62 ../plugins/mouse/Connected.qml:228
+#: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:98
+#: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:134 ../plugins/mouse/Connected.qml:301
+#: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:168 ../plugins/mouse/Connected.qml:335
+#: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:214
+#: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:264
+#: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:389
+#: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:403
+#: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:410
+#: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:432
+#: plugins/mouse/Connected.qml:432
 msgid "Typing"
 msgstr ""
 
-#: ../plugins/mouse/Connected.qml:446
+#: plugins/mouse/Connected.qml:446
 #, fuzzy
 msgid "A mouse is connected"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
 
-#: ../plugins/mouse/None.qml:34
+#: plugins/mouse/None.qml:34
 msgid ""
 "Connect a mouse or touchpad via USB, or use a Bluetooth device. If a "
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
 "are charged."
 msgstr ""
 
-#: ../plugins/mouse/None.qml:36
+#: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: ../plugins/mouse/PageComponent.qml:29 settings.js:170
+#: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:42
+#: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:72
+#: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
 msgstr ""
 
-#: ../plugins/mouse/PrimaryButtonSelector.qml:89
+#: plugins/mouse/PrimaryButtonSelector.qml:89
 #, fuzzy
 msgid "Right"
 msgstr "ਫ਼ਲਾਈਟ"
 
-#: ../plugins/mouse/TapArea.qml:38
+#: plugins/mouse/TapArea.qml:38
 #, fuzzy
 msgid "Not fast enough"
 msgstr "ਨਹੀਂ ਭੇਜਿਆ"
 
-#: ../plugins/mouse/TapArea.qml:77
+#: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: ../plugins/nfc/PageComponent.qml:29 ../plugins/nfc/PageComponent.qml:47
-#: settings.js:184
+#: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: ../plugins/notifications/ClickAppNotifications.qml:62
-#: ../plugins/notifications/PageComponent.qml:29 settings.js:194
+#: plugins/notifications/CellBroadcast.qml:30
+#: plugins/notifications/CellBroadcast.qml:47
+#: plugins/notifications/PageComponent.qml:73
+msgid "Emergency Broadcast"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:125
+#, fuzzy
+#| msgid "The supplicant is now available"
+msgid "Cell Broadcast is not available"
+msgstr "ਸਪਲੀਕੈਂਟ ਹੁਣ ਉਪਲੱਬਧ ਹੈ"
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Enabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:155
+msgid "Cell Broadcast Disabled"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:165
+#, fuzzy
+#| msgid "alerts"
+msgid "Alerts:"
+msgstr "ਚੇਤਾਵਨੀਆਂ"
+
+#: plugins/notifications/CellBroadcast.qml:171
+msgid "Receive emergency notifications"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:184
+msgid "Extreme threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:185
+msgid "Extreme threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:198
+msgid "Severe threats"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:199
+msgid "Severe threats to life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:212
+msgid "AMBER Alerts"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:213
+msgid "Child abduction emergency bulletins"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:226
+msgid "Public safety messages"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:227
+msgid "Recommend actions to save life and property"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:240
+msgid "Tests"
+msgstr ""
+
+#: plugins/notifications/CellBroadcast.qml:241
+#, fuzzy
+#| msgid "alerts"
+msgid "Tests alerts"
+msgstr "ਚੇਤਾਵਨੀਆਂ"
+
+#: plugins/notifications/ClickAppNotifications.qml:62
+#: plugins/notifications/PageComponent.qml:29
 msgid "Notifications"
 msgstr "ਸੂਚਨਾਵਾਂ"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:81
+#: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
 msgstr ""
 
-#: ../plugins/notifications/ClickAppNotifications.qml:91
-#: ../plugins/notifications/PageComponent.qml:177
+#: plugins/notifications/ClickAppNotifications.qml:91
+#: plugins/notifications/PageComponent.qml:208
 #, fuzzy
 msgid "Sounds"
 msgstr "ਅਵਾਜ਼"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:114
-#: ../plugins/notifications/PageComponent.qml:180
+#: plugins/notifications/ClickAppNotifications.qml:114
+#: plugins/notifications/PageComponent.qml:211
 #, fuzzy
 msgid "Vibrations"
 msgstr "ਕੰਬਣੀ"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:137
+#: plugins/notifications/ClickAppNotifications.qml:137
 #, fuzzy
 msgid "Notification Bubbles"
 msgstr "ਸੂਚਨਾਵਾਂ"
 
-#: ../plugins/notifications/ClickAppNotifications.qml:160
-#: ../plugins/notifications/PageComponent.qml:186
+#: plugins/notifications/ClickAppNotifications.qml:160
+#: plugins/notifications/PageComponent.qml:217
 #, fuzzy
 msgid "Notification List"
 msgstr "ਸੂਚਨਾਵਾਂ"
 
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:30
-#: ../plugins/sound/PageComponent.qml:39 settings.js:268
+#: plugins/notifications/ClickAppsSoundsNotify.qml:30
+#: plugins/sound/PageComponent.qml:39
 msgid "Sound"
 msgstr "ਅਵਾਜ਼"
 
-#: ../plugins/notifications/ClickAppsSoundsNotify.qml:44
+#: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
 msgstr ""
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:30
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 #, fuzzy
 msgid "Vibration"
 msgstr "ਕੰਬਣੀ"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:50
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:50
 #, fuzzy
 msgid "When in Silent mode:"
 msgstr "ਚੁੱਪ ਮੋਡ ਵਿੱਚ ਕੰਬਣੀ"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:69
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:69
 #, fuzzy
 msgid "Vibrate as normal"
 msgstr "ਘੰਟੀ ਵੇਲੇ ਕੰਬਣੀ"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:70
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:70
 #, fuzzy
 msgid "Don't vibrate"
 msgstr "ਕੰਬਣੀ"
 
-#: ../plugins/notifications/ClickAppsVibrationsNotify.qml:85
+#: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:75
+#: plugins/notifications/PageComponent.qml:84
+#: plugins/notifications/PageComponent.qml:174
+#, fuzzy
+msgid "Applications:"
+msgstr "ਵੱਡੇ ਅੱਖਰ"
+
+#: plugins/notifications/PageComponent.qml:106
 #, fuzzy
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
@@ -1364,267 +1437,259 @@ msgid ""
 msgstr ""
 "ਸੂਚਨਾ ਬੁਲਬੁਲੇ, ਅਵਾਜ਼, ਕੰਬਣੀ, ਅਤੇ ਸੂਚਨਾ ਕੇਂਦਰ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਚੁਣੀਂਦਾ ਐਪ ਤੁਹਾਨੂੰ ਸੁਚੇਤ ਕਰ ਸਕਦਾ।"
 
-#: ../plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:117
+#: plugins/notifications/PageComponent.qml:148
 msgid "Apps that notify with vibration"
 msgstr ""
 
-#: ../plugins/notifications/PageComponent.qml:143
-#, fuzzy
-msgid "Applications:"
-msgstr "ਵੱਡੇ ਅੱਖਰ"
-
-#: ../plugins/notifications/PageComponent.qml:172
+#: plugins/notifications/PageComponent.qml:203
 #, fuzzy
 msgid "No notifications"
 msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
 
-#: ../plugins/notifications/PageComponent.qml:183
+#: plugins/notifications/PageComponent.qml:214
 msgid "Bubbles"
 msgstr ""
 
-#: ../plugins/printing/AddPrinter.qml:34
-#: ../plugins/printing/AddPrinterDetails.qml:54
-#: ../plugins/printing/PageComponent.qml:38
+#: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
+#: plugins/printing/PageComponent.qml:38
 #, fuzzy
 msgid "Add printer"
 msgstr "ਪ੍ਰਿੰਟਰ"
 
-#: ../plugins/printing/AddPrinter.qml:65
+#: plugins/printing/AddPrinter.qml:65
 #, fuzzy
 msgid "Enter URI"
 msgstr "ਸਿਮ ਪਿਨ ਦਰਜ ਕਰੋ"
 
-#: ../plugins/printing/AddPrinter.qml:78
+#: plugins/printing/AddPrinter.qml:78
 #, fuzzy
 msgid "Devices"
 msgstr "ਸੇਵਾਵਾਂ"
 
-#: ../plugins/printing/AddPrinter.qml:133
+#: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:37
+#: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:137
+#: plugins/printing/AddPrinterDetails.qml:137
 #, fuzzy
 msgid "Connection"
 msgstr "ਕੁਨੈਕਟ ਕਰ ਰਿਹਾ..."
 
-#: ../plugins/printing/AddPrinterDetails.qml:139
+#: plugins/printing/AddPrinterDetails.qml:139
 #, fuzzy
 msgid "Choose a connection"
 msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
 
-#: ../plugins/printing/AddPrinterDetails.qml:165
+#: plugins/printing/AddPrinterDetails.qml:165
 #, fuzzy
 msgid "Printer name"
 msgstr "ਪ੍ਰਿੰਟਰ"
 
-#: ../plugins/printing/AddPrinterDetails.qml:202
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:32
-#: ../plugins/printing/printer-sub-pages/Status.qml:66
+#: plugins/printing/AddPrinterDetails.qml:202
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:66
 #, fuzzy
 msgid "Description"
 msgstr "ਇਨਕ੍ਰਿਪਸ਼ਨ"
 
-#: ../plugins/printing/AddPrinterDetails.qml:204
-#: ../plugins/printing/AddPrinterDetails.qml:211
+#: plugins/printing/AddPrinterDetails.qml:204
+#: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:209
-#: ../plugins/printing/printer-sub-pages/Status.qml:72
+#: plugins/printing/AddPrinterDetails.qml:209
+#: plugins/printing/printer-sub-pages/Status.qml:72
 msgid "Location"
 msgstr "ਟਿਕਾਣਾ"
 
-#: ../plugins/printing/AddPrinterDetails.qml:219
+#: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:225
+#: plugins/printing/AddPrinterDetails.qml:225
 #, fuzzy
 msgid "Choose driver"
 msgstr "ਵਾਹਕ ਚੁਣੋ:"
 
-#: ../plugins/printing/AddPrinterDetails.qml:227
+#: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:228
+#: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:235
+#: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
 msgstr ""
 
-#: ../plugins/printing/AddPrinterDetails.qml:304
+#: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
 msgstr ""
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: ../plugins/printing/PageComponent.qml:32 settings.js:230
+#: plugins/printing/PageComponent.qml:32
 #, fuzzy
 msgid "Printing"
 msgstr "ਪ੍ਰਿੰਟਰ"
 
-#: ../plugins/printing/PageComponent.qml:45
+#: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:106
+#: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:107
+#: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:115
+#: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:136
+#: plugins/printing/PageComponent.qml:136
 msgid "Delete"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:149
-#: ../plugins/printing/printer-sub-pages/Policies.qml:50
+#: plugins/printing/PageComponent.qml:149
+#: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
 msgstr ""
 
-#: ../plugins/printing/PageComponent.qml:190
+#: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
 msgstr ""
 
-#: ../plugins/printing/Printer.qml:42
+#: plugins/printing/Printer.qml:42
 #, fuzzy
 msgid "Printer status"
 msgstr "ਪ੍ਰਿੰਟਰ"
 
-#: ../plugins/printing/Printer.qml:43
+#: plugins/printing/Printer.qml:43
 #, fuzzy
 msgid "General settings"
 msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
 
-#: ../plugins/printing/Printer.qml:44
+#: plugins/printing/Printer.qml:44
 msgid "Policies"
 msgstr ""
 
-#: ../plugins/printing/Printer.qml:47
+#: plugins/printing/Printer.qml:47
 #, fuzzy
 msgid "Copies and pages"
 msgstr "ਸਮਾਂ ਤੇ ਮਿਤੀ"
 
-#: ../plugins/printing/PrinterConnection.qml:67
+#: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
+#: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:43
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:59
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
 #, fuzzy
 msgid "Color model"
 msgstr "ਡਿਵੈਲਪਰ ਮੋਡ"
 
-#: ../plugins/printing/printer-sub-pages/GeneralSettings.qml:75
+#: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:27
+#: plugins/printing/printer-sub-pages/Policies.qml:27
 #, fuzzy
 msgid "Enabled"
 msgstr "ਚਾਲੂ"
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:46
+#: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:47
+#: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:60
+#: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Policies.qml:69
+#: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:30
+#: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:32
+#: plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:34
+#: plugins/printing/printer-sub-pages/Status.qml:34
 #, fuzzy
 msgid "Active"
 msgstr "ਸਰਗਰਮ"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:36
+#: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
 msgstr ""
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
-#: ../plugins/printing/printer-sub-pages/Status.qml:40
+#: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:43
+#: plugins/printing/printer-sub-pages/Status.qml:43
 #, fuzzy
 msgid "No messages"
 msgstr "ਸੁਨੇਹਾ"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:48
+#: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:53
+#: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:78
+#: plugins/printing/printer-sub-pages/Status.qml:78
 #, fuzzy
 msgid "Address"
 msgstr "ਪਤਾ"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:84
+#: plugins/printing/printer-sub-pages/Status.qml:84
 #, fuzzy
 msgid "Model"
 msgstr "ਮੋਡਮ"
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:85
+#: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
 msgstr ""
 
-#: ../plugins/printing/printer-sub-pages/Status.qml:88
+#: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
 msgstr ""
 
-#: ../plugins/reset/EraseEverything.qml:41
-#: ../plugins/reset/PageComponent.qml:116
+#: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
 #, fuzzy
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
@@ -1632,319 +1697,310 @@ msgid ""
 msgstr ""
 "ਸਾਰੇ ਦਸਤਾਵੇਜ, ਸੰਭਾਲ੍ਹੀਆਂ ਗੇਮਾਂ, ਸੈਟਿੰਗਾਂ ਅਤੇ ਹੋਰ ਚੀਜ਼ਾਂ ਇਸ ਫ਼ੋਨ ਤੋਂ ਪੱਕੇ ਤੌਰ ਤੇ ਹਟਾ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ।"
 
-#: ../plugins/reset/EraseEverything.qml:44
+#: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "ਹਰੇਕ ਚੀਜ਼ ਸਾਫ਼ ਕਰੋ ਤੇ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/reset/PageComponent.qml:35
+#: plugins/reset/PageComponent.qml:35
 #, fuzzy
 msgid "Reset device"
 msgstr "ਜੰਤਰ"
 
-#: ../plugins/reset/PageComponent.qml:76
-#: ../plugins/reset/ResetLauncherHome.qml:44
+#: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
 msgstr "ਲਾਂਚਰ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/reset/PageComponent.qml:84
-#: ../plugins/reset/ResetLauncherHome.qml:40
+#: plugins/reset/PageComponent.qml:84 plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
 msgstr "ਲਾਂਚਰ ਆਪਣੀ ਅਸਲ ਸਮੱਗਰੀ ਤੇ ਵਾਪਸ ਆ ਜਾਵੇਗਾ।"
 
-#: ../plugins/reset/PageComponent.qml:92
+#: plugins/reset/PageComponent.qml:92
 msgid "Reset all system settings…"
 msgstr "ਸਭ ਸਿਸਟਮ ਸੈਟਿੰਗ ਮੁੜ-ਸੈੱਟ ਕਰੋ..."
 
-#: ../plugins/reset/PageComponent.qml:101
-#: ../plugins/reset/ResetAllSettings.qml:29
+#: plugins/reset/PageComponent.qml:101 plugins/reset/ResetAllSettings.qml:29
 msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
 "will be returned to their original settings."
 msgstr ""
 "ਮੁੱਖ ਸਕਰੀਨ ਵਿੱਚ ਸਮੱਗਰੀਆਂ, ਲਾਂਚਰ ਦਾ ਲੇਆਉਟ ਅਤੇ ਫ਼ਿਲਟਰ ਆਪਣੀਆਂ ਅਸਲ ਸੈਟਿੰਗਾਂ ਤੇ ਵਾਪਸ ਆ ਜਾਣਗੇ।"
 
-#: ../plugins/reset/PageComponent.qml:108
+#: plugins/reset/PageComponent.qml:108
 #, fuzzy
 msgid "Erase & Reset All"
 msgstr "ਹਰੇਕ ਚੀਜ਼ ਸਾਫ਼ ਕਰੋ ਤੇ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/reset/ResetAllSettings.qml:31
+#: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
 msgstr "ਸਭ ਸਿਸਟਮ ਸੈਟਿੰਗ ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/sound/PageComponent.qml:76
+#: plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
 msgstr "ਚੁੱਪ ਮੋਡ"
 
-#: ../plugins/sound/PageComponent.qml:100
+#: plugins/sound/PageComponent.qml:100
 msgid "Ringer:"
 msgstr "ਰਿੰਗਰ:"
 
-#: ../plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
 msgstr ""
 
-#: ../plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
 msgstr "ਫ਼ੋਨ ਕਾਲਾਂ:"
 
-#: ../plugins/sound/PageComponent.qml:149
-#: ../plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
 msgid "Ringtone"
 msgstr "ਰਿੰਗਟੋਨ"
 
-#: ../plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:171
 #, fuzzy
 msgid "Vibrate on ring"
 msgstr "ਘੰਟੀ ਵੇਲੇ ਕੰਬਣੀ"
 
-#: ../plugins/sound/PageComponent.qml:183
-#: ../plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
 msgid "Vibrate in Silent Mode"
 msgstr "ਚੁੱਪ ਮੋਡ ਵਿੱਚ ਕੰਬਣੀ"
 
-#: ../plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:194
 #, fuzzy
 msgid "Dialpad tones"
 msgstr "ਡਾਇਲਪੈਡ ਅਵਾਜ਼"
 
-#: ../plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
 msgstr "ਸੁਨੇਹੇ:"
 
-#: ../plugins/sound/PageComponent.qml:209
-#: ../plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
 msgid "Message received"
 msgstr "ਸੁਨੇਹਾ ਮਿਲਿਆ"
 
-#: ../plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:230
 msgid "Vibrate with message sound"
 msgstr "ਸੁਨੇਹੇ ਦੀ ਅਵਾਜ ਨਾਲ ਕੰਬਣਾ"
 
-#: ../plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:247
 msgid "Other sounds:"
 msgstr "ਹੋਰ ਅਵਾਜ਼ਾਂ:"
 
-#: ../plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:268
 msgid "Lock sound"
 msgstr "ਲਾਕ ਅਵਾਜ਼"
 
-#: ../plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:278
 #, fuzzy
 msgid "Other vibrations"
 msgstr "ਕੰਬਣੀ"
 
-#: ../plugins/sound/SoundsList.qml:132
-#, fuzzy
-msgid "Custom Ringtone"
-msgstr "ਰਿੰਗਟੋਨ"
-
-#: ../plugins/sound/SoundsList.qml:132
+#: plugins/sound/SoundsList.qml:132
 #, fuzzy
 #| msgid "Vibrate with message sound"
 msgid "Custom message sound"
 msgstr "ਸੁਨੇਹੇ ਦੀ ਅਵਾਜ ਨਾਲ ਕੰਬਣਾ"
 
-#: ../plugins/sound/SoundsList.qml:213
+#: plugins/sound/SoundsList.qml:132
+#, fuzzy
+msgid "Custom Ringtone"
+msgstr "ਰਿੰਗਟੋਨ"
+
+#: plugins/sound/SoundsList.qml:213
 #, fuzzy
 msgid "Choose from"
 msgstr "ਵਾਹਕ ਚੁਣੋ:"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:30
+#: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
 msgstr "ਸਮਾਂ ਖੇਤਰ"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:50
+#: plugins/time-date/ChooseTimeZone.qml:50
 msgid "Set the time zone:"
 msgstr "ਸਮਾਂ-ਖੇਤਰ ਦਿਉ:"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Automatically"
 msgstr "ਸਵੈ-ਚਾਲਿਤ"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:51
-#: ../plugins/time-date/PageComponent.qml:85
+#: plugins/time-date/ChooseTimeZone.qml:51
+#: plugins/time-date/PageComponent.qml:85
 msgid "Manually"
 msgstr "ਖੁਦ"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:130
 msgid "Enter your current location."
 msgstr "ਆਪਣਾ ਟਿਕਾਣਾ ਦਿਉ।"
 
-#: ../plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "No matching place"
 msgstr "ਕੋਈ ਮੇਲ ਵਾਲੀ ਥਾਂ ਨਹੀਂ"
 
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: ../plugins/time-date/PageComponent.qml:31 settings.js:286
+#: plugins/time-date/PageComponent.qml:31
 msgid "Time and Date"
 msgstr "ਸਮਾਂ ਤੇ ਮਿਤੀ"
 
-#: ../plugins/time-date/PageComponent.qml:64
+#: plugins/time-date/PageComponent.qml:64
 msgid "Time zone:"
 msgstr "ਸਮਾਂ-ਖੇਤਰ:"
 
-#: ../plugins/time-date/PageComponent.qml:79
+#: plugins/time-date/PageComponent.qml:79
 msgid "Set the time and date:"
 msgstr "ਸਮਾਂ ਅਤੇ ਮਿਤੀ ਸੈੱਟ ਕਰੋ:"
 
-#: ../plugins/time-date/TimePicker.qml:26
+#: plugins/time-date/TimePicker.qml:26
 msgid "Set time & date"
 msgstr "ਸਮਾਂ ਅਤੇ ਮਿਤੀ ਸੈੱਟ ਕਰੋ"
 
-#: ../plugins/time-date/TimePicker.qml:47
+#: plugins/time-date/TimePicker.qml:47
 msgid "Time"
 msgstr "ਸਮਾਂ"
 
-#: ../plugins/time-date/TimePicker.qml:56
+#: plugins/time-date/TimePicker.qml:56
 msgid "Date"
 msgstr "ਮਿਤੀ"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: ../plugins/vpn/PageComponent.qml:31 settings.js:296
+#: plugins/vpn/PageComponent.qml:31
 #, fuzzy
 msgid "VPN"
 msgstr "APN"
 
-#: ../plugins/vpn/PageComponent.qml:76
+#: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr ""
 
-#: ../plugins/vpn/PageComponent.qml:82
+#: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
 msgstr ""
 
-#: ../plugins/vpn/PageComponent.qml:117
+#: plugins/vpn/PageComponent.qml:117
 #, fuzzy
 msgid "VPN reconnection required."
 msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਫ਼ੇਲ੍ਹ ਹੋਈ"
 
-#: ../plugins/vpn/PageComponent.qml:118
+#: plugins/vpn/PageComponent.qml:118
 #, fuzzy
 msgid "You need to reconnect for changes to have an effect."
 msgstr "ਬਦਲਾਵਾਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਫ਼ੋਨ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ।"
 
-#: ../plugins/wifi/CertDialog.qml:22
+#: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:24
+#: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:26
+#: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
 msgstr ""
 
-#: ../plugins/wifi/CertDialog.qml:36
+#: plugins/wifi/CertDialog.qml:36
 #, fuzzy
 msgid "Content:"
 msgstr "ਜਾਰੀ"
 
-#: ../plugins/wifi/CertDialog.qml:49
+#: plugins/wifi/CertDialog.qml:49
 #, fuzzy
 msgid "No data available."
 msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
 
-#: ../plugins/wifi/CertDialog.qml:74
+#: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "ਸੰਭਾਲ੍ਹੋ"
 
-#: ../plugins/wifi/NetworkDetails.qml:38
+#: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
 msgstr "ਨੈੱਟਵਰਕ ਵੇਰਵਾ"
 
-#: ../plugins/wifi/NetworkDetails.qml:65
+#: plugins/wifi/NetworkDetails.qml:65
 msgid "Last connected"
 msgstr "ਆਖਰੀ ਕੁਨੇਕਟ ਹੋਇਆ"
 
-#: ../plugins/wifi/NetworkDetails.qml:72 ../plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
 msgid "Password"
 msgstr "ਪਾਸਵਰਡ"
 
-#: ../plugins/wifi/NetworkDetails.qml:99
-#: ../plugins/wifi/NetworkDetailsBrief.qml:55
+#: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
 #, fuzzy
 msgid "Forget this network"
 msgstr "ਨੈੱਟਵਰਕ ਵਿਸਾਰੋ"
 
-#: ../plugins/wifi/NetworkDetailsBrief.qml:73
+#: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
 msgstr "IP ਐਡਰੈੱਸ"
 
-#: ../plugins/wifi/OtherNetwork.qml:92
+#: plugins/wifi/OtherNetwork.qml:92
 msgid "Connect to Wi‑Fi"
 msgstr "ਵਾਈ-ਫ਼ਾਈ ਨਾਲ ਕੁਨੇਕਟ ਹੋਵੋ"
 
-#: ../plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:93
 msgid "Connect to Hidden Network"
 msgstr "ਲੁਕਵੇਂ ਨੈੱਟਵਰਕ ਨਾਲ ਕੁਨੇਕਟ ਕਰੋ"
 
-#: ../plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:285
 msgid "Network name"
 msgstr "ਨੈੱਟਵਰਕ ਨਾਂ"
 
-#: ../plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
 msgstr "ਸੁਰੱਖਿਆ"
 
-#: ../plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WPA & WPA2 Personal"
 msgstr "WPA ਤੇ WPA੨ ਨਿੱਜੀ"
 
-#: ../plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:320
 #, fuzzy
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA ਤੇ WPA੨ ਨਿੱਜੀ"
 
-#: ../plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
 msgstr "WEP"
 
-#: ../plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:332
+#: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:338
 #, fuzzy
 msgid "Authentication"
 msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
 
-#: ../plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
 msgstr ""
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: ../plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:458 ../plugins/wifi/OtherNetwork.qml:575
-#: ../plugins/wifi/certhandler.cpp:106 ../plugins/wifi/certhandler.cpp:141
-#: ../plugins/wifi/certhandler.cpp:193 ../plugins/wifi/certhandler.cpp:225
-#: ../plugins/wifi/certhandler.cpp:290 ../plugins/wifi/certhandler.cpp:319
+#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
+#: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
+#: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
 msgstr ""
 
@@ -1953,7 +2009,7 @@ msgstr ""
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: ../plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr ""
@@ -1962,820 +2018,486 @@ msgstr ""
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: ../plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
 msgstr ""
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: ../plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:686
 #, fuzzy
 msgid "Disabled"
 msgstr "ਬੰਦ"
 
-#: ../plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:699
 #, fuzzy
 msgid "PEAP version"
 msgstr "ਵਰਜਨ"
 
-#: ../plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:713
 #, fuzzy
 msgid "Version 0"
 msgstr "ਵਰਜਨ: "
 
-#: ../plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:714
 #, fuzzy
 msgid "Version 1"
 msgstr "ਵਰਜਨ: "
 
-#: ../plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:715
 #, fuzzy
 msgid "Automatic"
 msgstr "ਆਪਣੇ ਆਪ"
 
-#: ../plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
 msgstr "ਉਪਭੋਗੀ ਨਾਂ"
 
-#: ../plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
 msgstr ""
 
-#: ../plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:857
 #, fuzzy
 msgid "Remember password"
 msgstr "ਪਾਸਵਰਡ"
 
-#: ../plugins/wifi/PageComponent.qml:129
+#: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
 msgstr "ਲੁਕਵੇਂ ਨੈੱਟਵਰਕ ਨਾਲ ਕੁਨੇਕਟ ਕਰੋ"
 
-#: ../plugins/wifi/PageComponent.qml:139
-#: ../plugins/wifi/PreviousNetworks.qml:27
+#: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
 msgstr "ਪਿਛਲੇ ਨੈੱਟਵਰਕ"
 
-#: ../plugins/wifi/RemoveBackground.qml:28
+#: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
 msgstr "ਸਾਫ਼ ਕਰੋ"
 
-#: ../plugins/wifi/certhandler.cpp:258
+#: plugins/wifi/certhandler.cpp:258
 #, fuzzy
 msgid "Private key"
 msgstr "ਪਰਦੇਦਾਰੀ"
 
-#: ../plugins/wifi/certhandler.cpp:259
+#: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
 msgstr ""
 
-#: ../plugins/wifi/certhandler.cpp:264
+#: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
 msgstr ""
 
-#: ../src/qml/MainWindow.qml:170 lomiri-system-settings.desktop.in.in.h:1
-msgid "System Settings"
-msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
-
-#: ../src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:203
 msgid "Search"
 msgstr "ਖੋਜ"
 
-#: ../src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:246
 msgid "Personal"
 msgstr "ਨਿੱਜੀ"
 
-#: ../src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "ਸਿਸਟਮ"
 
-#: lomiri-system-settings.desktop.in.in.h:2
-msgid "System;"
-msgstr "ਸਿਸਟਮ;"
-
-#: lomiri-system-settings.desktop.in.in.h:3
-msgid "Preferences;Settings;"
-msgstr "ਮੇਰੀ ਪਸੰਦ;ਸੈਟਿੰਗ;"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:4
-msgid "about"
-msgstr "ਬਾਰੇ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:6 settings.js:78
-msgid "device"
-msgstr "ਜੰਤਰ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:8
-msgid "info"
-msgstr "ਇੰਫ਼ੋ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:10
-msgid "phone"
-msgstr "ਫ਼ੋਨ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:12
-msgid "number"
-msgstr "ਨੰਬਰ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:14
-msgid "imei"
-msgstr "imei"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:16
-msgid "serial"
-msgstr "ਸੀਰੀਅਲ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:18 settings.js:310 settings.js:332
-msgid "address"
-msgstr "ਪਤਾ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:20
-msgid "mac"
-msgstr "ਮੈਕ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:22
-msgid "licenses"
-msgstr "ਲਾਇਸੰਸ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:24
-msgid "developer"
-msgstr "ਡਿਵੈਲਪਰ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:26 settings.js:196
-msgid "software"
-msgstr "ਸਾਫ਼ਟਵੇਅਰ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:28
-msgid "storage"
-msgstr "ਸਟੋਰੇਜ਼"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:30
-msgid "disk"
-msgstr "ਡਿਸਕ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:32
-msgid "space"
-msgstr "ਸਪੇਸ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:34
-msgid "version"
-msgstr "ਵਰਜਨ"
-
-#. TRANSLATORS: This is a keyword or name for the about plugin which is used while searching
-#: settings.js:36
-msgid "revision"
-msgstr "ਰੀਵਿਜ਼ਨ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:40 settings.js:168
-msgid "appearance"
-msgstr "ਦਿੱਖ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:42
-msgid "background"
-msgstr "ਬੈਕਗਰਾਂਊਡ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:44
-msgid "wallpaper"
-msgstr "ਵਾਲਪੇਪਰ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:46
-msgid "art"
-msgstr "ਕਲਾ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:48
-msgid "photo"
-msgstr "ਫ਼ੋਟੋ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:50
-msgid "picture"
-msgstr "ਤਸਵੀਰ"
-
-#. TRANSLATORS: This is a keyword or name for the background plugin which is used while searching
-#: settings.js:52
-msgid "image"
-msgstr "ਤਸਵੀਰ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:56
-msgid "battery"
-msgstr "ਬੈਟਰੀ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:58
-msgid "power"
-msgstr "ਪਾਵਰ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:60
-msgid "charge"
-msgstr "ਚਾਰਜ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:62
-msgid "idle"
-msgstr "ਵੇਹਲਾ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:64 settings.js:224
-msgid "lock"
-msgstr "ਲਾਕ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:66
-msgid "disable"
-msgstr "ਬੰਦ"
-
-#. TRANSLATORS: This is a keyword or name for the battery plugin which is used while searching
-#: settings.js:68
-msgid "enable"
-msgstr "ਚਾਲੂ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:72
-msgid "bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:74
-msgid "headset"
-msgstr "ਹੈਡਸੈੱਟ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:76
-msgid "pair"
-msgstr "ਜੋੜਾ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:80
-msgid "discover"
-msgstr "ਖੋਜੋ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:82
-msgid "car"
-msgstr "ਕਾਰ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:84
-msgid "handsfree"
-msgstr "ਹੱਥ-ਮੁਕਤ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:86 settings.js:318
-msgid "wireless"
-msgstr "ਵਾਇਰਲੈੱਸ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:88 settings.js:300 settings.js:324
-msgid "connect"
-msgstr "ਕੁਨੈਕਟ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:90 settings.js:302 settings.js:326
-msgid "disconnect"
-msgstr "ਡਿਸ-ਕੁਨੈਕਟ"
-
-#. TRANSLATORS: This is a keyword or name for the bluetooth plugin which is used while searching
-#: settings.js:92
-msgid "stereo"
-msgstr "ਸਟੀਰਿਓ"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:96
-msgid "brightness"
-msgstr "ਚਮਕ"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:98 settings.js:158
-msgid "display"
-msgstr "ਡਿਸਪਲੇਅ"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:100 settings.js:226
-msgid "screen"
-msgstr "ਸਕਰੀਨ"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:102 settings.js:146 settings.js:294
-msgid "automatic"
-msgstr "ਆਪਣੇ ਆਪ"
-
-#. TRANSLATORS: This is a keyword or name for the brightness plugin which is used while searching
-#: settings.js:104
-msgid "adjust"
-msgstr "ਫ਼ੇਰਬਦਲ"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:106
-msgid "Example"
-msgstr "ਉਦਾਹਰਨ"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:108
-msgid "example"
-msgstr "ਉਦਾਹਰਨ"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:110
-msgid "test"
-msgstr "ਜਾਂਚ"
-
-#. TRANSLATORS: This is a keyword or name for the example plugin which is used while searching
-#: settings.js:112
-msgid "sample"
-msgstr "ਨਮੂਨਾ"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:114
-msgid "Flight Mode"
-msgstr "ਫ਼ਲਾਈਟ ਮੋਡ"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:116
-msgid "flight"
-msgstr "ਫ਼ਲਾਈਟ"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:118
-msgid "plane"
-msgstr "ਪਲੇਨ"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:120
-msgid "offline"
-msgstr "ਆਫ਼ਲਾਈਨ"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#: settings.js:122
-msgid "airplane"
-msgstr "ਹਵਾਈ ਜਹਾਜ਼"
-
-#. TRANSLATORS: This is a keyword or name for the flight-mode plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:124 settings.js:132 settings.js:298 settings.js:316
-msgid "network"
-msgstr "ਨੈੱਟਵਰਕ"
-
-#. TRANSLATORS: This is a keyword or name for the gestures plugin which is used while searching
-#: settings.js:128
 #, fuzzy
-#| msgid "Pictures"
-msgid "gestures"
-msgstr "ਤਸਵੀਰਾਂ"
+#~ msgid "Unavailable"
+#~ msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:134
+#~ msgid "Launcher"
+#~ msgstr "ਲਾਂਚਰ"
+
+#~ msgid "System;"
+#~ msgstr "ਸਿਸਟਮ;"
+
+#~ msgid "about"
+#~ msgstr "ਬਾਰੇ"
+
+#~ msgid "device"
+#~ msgstr "ਜੰਤਰ"
+
+#~ msgid "info"
+#~ msgstr "ਇੰਫ਼ੋ"
+
+#~ msgid "phone"
+#~ msgstr "ਫ਼ੋਨ"
+
+#~ msgid "number"
+#~ msgstr "ਨੰਬਰ"
+
+#~ msgid "imei"
+#~ msgstr "imei"
+
+#~ msgid "serial"
+#~ msgstr "ਸੀਰੀਅਲ"
+
+#~ msgid "address"
+#~ msgstr "ਪਤਾ"
+
+#~ msgid "mac"
+#~ msgstr "ਮੈਕ"
+
+#~ msgid "licenses"
+#~ msgstr "ਲਾਇਸੰਸ"
+
+#~ msgid "developer"
+#~ msgstr "ਡਿਵੈਲਪਰ"
+
+#~ msgid "software"
+#~ msgstr "ਸਾਫ਼ਟਵੇਅਰ"
+
+#~ msgid "storage"
+#~ msgstr "ਸਟੋਰੇਜ਼"
+
+#~ msgid "disk"
+#~ msgstr "ਡਿਸਕ"
+
+#~ msgid "space"
+#~ msgstr "ਸਪੇਸ"
+
+#~ msgid "version"
+#~ msgstr "ਵਰਜਨ"
+
+#~ msgid "revision"
+#~ msgstr "ਰੀਵਿਜ਼ਨ"
+
+#~ msgid "appearance"
+#~ msgstr "ਦਿੱਖ"
+
+#~ msgid "background"
+#~ msgstr "ਬੈਕਗਰਾਂਊਡ"
+
+#~ msgid "wallpaper"
+#~ msgstr "ਵਾਲਪੇਪਰ"
+
+#~ msgid "art"
+#~ msgstr "ਕਲਾ"
+
+#~ msgid "photo"
+#~ msgstr "ਫ਼ੋਟੋ"
+
+#~ msgid "picture"
+#~ msgstr "ਤਸਵੀਰ"
+
+#~ msgid "image"
+#~ msgstr "ਤਸਵੀਰ"
+
+#~ msgid "battery"
+#~ msgstr "ਬੈਟਰੀ"
+
+#~ msgid "power"
+#~ msgstr "ਪਾਵਰ"
+
+#~ msgid "charge"
+#~ msgstr "ਚਾਰਜ"
+
+#~ msgid "idle"
+#~ msgstr "ਵੇਹਲਾ"
+
+#~ msgid "lock"
+#~ msgstr "ਲਾਕ"
+
+#~ msgid "disable"
+#~ msgstr "ਬੰਦ"
+
+#~ msgid "enable"
+#~ msgstr "ਚਾਲੂ"
+
+#~ msgid "bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ"
+
+#~ msgid "headset"
+#~ msgstr "ਹੈਡਸੈੱਟ"
+
+#~ msgid "pair"
+#~ msgstr "ਜੋੜਾ"
+
+#~ msgid "discover"
+#~ msgstr "ਖੋਜੋ"
+
+#~ msgid "car"
+#~ msgstr "ਕਾਰ"
+
+#~ msgid "handsfree"
+#~ msgstr "ਹੱਥ-ਮੁਕਤ"
+
+#~ msgid "wireless"
+#~ msgstr "ਵਾਇਰਲੈੱਸ"
+
+#~ msgid "connect"
+#~ msgstr "ਕੁਨੈਕਟ"
+
+#~ msgid "disconnect"
+#~ msgstr "ਡਿਸ-ਕੁਨੈਕਟ"
+
+#~ msgid "stereo"
+#~ msgstr "ਸਟੀਰਿਓ"
+
+#~ msgid "brightness"
+#~ msgstr "ਚਮਕ"
+
+#~ msgid "display"
+#~ msgstr "ਡਿਸਪਲੇਅ"
+
+#~ msgid "screen"
+#~ msgstr "ਸਕਰੀਨ"
+
+#~ msgid "automatic"
+#~ msgstr "ਆਪਣੇ ਆਪ"
+
+#~ msgid "adjust"
+#~ msgstr "ਫ਼ੇਰਬਦਲ"
+
+#~ msgid "Example"
+#~ msgstr "ਉਦਾਹਰਨ"
+
+#~ msgid "example"
+#~ msgstr "ਉਦਾਹਰਨ"
+
+#~ msgid "test"
+#~ msgstr "ਜਾਂਚ"
+
+#~ msgid "sample"
+#~ msgstr "ਨਮੂਨਾ"
+
+#~ msgid "Flight Mode"
+#~ msgstr "ਫ਼ਲਾਈਟ ਮੋਡ"
+
+#~ msgid "flight"
+#~ msgstr "ਫ਼ਲਾਈਟ"
+
+#~ msgid "plane"
+#~ msgstr "ਪਲੇਨ"
+
+#~ msgid "offline"
+#~ msgstr "ਆਫ਼ਲਾਈਨ"
+
+#~ msgid "airplane"
+#~ msgstr "ਹਵਾਈ ਜਹਾਜ਼"
+
+#~ msgid "network"
+#~ msgstr "ਨੈੱਟਵਰਕ"
+
 #, fuzzy
-msgid "hotspot"
-msgstr "ਹਾਟਸਪਾਟ"
+#~| msgid "Pictures"
+#~ msgid "gestures"
+#~ msgstr "ਤਸਵੀਰਾਂ"
 
-#. TRANSLATORS: This is a keyword or name for the hotspot plugin which is used while searching
-#: settings.js:136
-msgid "tethering"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:140
-msgid "language"
-msgstr "ਭਾਸ਼ਾ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:142 settings.js:282
-msgid "keyboard"
-msgstr "ਕੀਬੋਰਡ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:144
-msgid "spellcheck"
-msgstr "ਸਪੈੱਲਚੈੱਕ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:148
-msgid "correct"
-msgstr "ਸਹੀ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:150
-msgid "suggestions"
-msgstr "ਸੁਝਾਅ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:152
-msgid "capitalization"
-msgstr "ਵੱਡੇ ਅੱਖਰ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:154
-msgid "punctuation"
-msgstr "ਵਿਰਾਮ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:156
-msgid "layout"
-msgstr "ਲੇਆਉਟ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:160
-msgid "words"
-msgstr "ਅੱਖਰ"
-
-#. TRANSLATORS: This is a keyword or name for the language plugin which is used while searching
-#: settings.js:162
-msgid "vibration"
-msgstr "ਕੰਬਣੀ"
-
-#. TRANSLATORS: This is a keyword or name for the launcher plugin which is used while searching
-#: settings.js:166
 #, fuzzy
-msgid "launcher"
-msgstr "ਲਾਂਚਰ"
+#~ msgid "hotspot"
+#~ msgstr "ਹਾਟਸਪਾਟ"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:172
+#~ msgid "language"
+#~ msgstr "ਭਾਸ਼ਾ"
+
+#~ msgid "keyboard"
+#~ msgstr "ਕੀਬੋਰਡ"
+
+#~ msgid "spellcheck"
+#~ msgstr "ਸਪੈੱਲਚੈੱਕ"
+
+#~ msgid "correct"
+#~ msgstr "ਸਹੀ"
+
+#~ msgid "suggestions"
+#~ msgstr "ਸੁਝਾਅ"
+
+#~ msgid "capitalization"
+#~ msgstr "ਵੱਡੇ ਅੱਖਰ"
+
+#~ msgid "punctuation"
+#~ msgstr "ਵਿਰਾਮ"
+
+#~ msgid "layout"
+#~ msgstr "ਲੇਆਉਟ"
+
+#~ msgid "words"
+#~ msgstr "ਅੱਖਰ"
+
+#~ msgid "vibration"
+#~ msgstr "ਕੰਬਣੀ"
+
 #, fuzzy
-msgid "mouse"
-msgstr "ਮਾਊਸ"
+#~ msgid "launcher"
+#~ msgstr "ਲਾਂਚਰ"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:174
-msgid "touchpad"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:176
 #, fuzzy
-msgid "tap"
-msgstr "apn"
+#~ msgid "mouse"
+#~ msgstr "ਮਾਊਸ"
 
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:178
-msgid "touch"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:180
-msgid "click"
-msgstr "ਕਲਿੱਕ"
-
-#. TRANSLATORS: This is a keyword or name for the mouse plugin which is used while searching
-#: settings.js:182
-msgid "input"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:186
-msgid "nfc"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:188
-msgid "near"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:190
-msgid "field"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the nfc plugin which is used while searching
-#: settings.js:192
 #, fuzzy
-msgid "communication"
-msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
+#~ msgid "tap"
+#~ msgstr "apn"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:198
-msgid "notifications"
-msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
+#~ msgid "click"
+#~ msgstr "ਕਲਿੱਕ"
 
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:200 settings.js:228
-msgid "apps"
-msgstr "ਐਪ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:202
-msgid "authorize"
-msgstr "ਅਧਿਕਾਰਕ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:204
-msgid "alerts"
-msgstr "ਚੇਤਾਵਨੀਆਂ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:206
-msgid "permissions"
-msgstr "ਅਧਿਕਾਰ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:208
-msgid "badges"
-msgstr "ਬੈਜ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:210
-msgid "facebook"
-msgstr "ਫ਼ੇਸਬੁੱਕ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:212
-msgid "twitter"
-msgstr "ਟਵਿੱਟਰ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:214
-msgid "flickr"
-msgstr "ਫ਼ਲਿਕਰ"
-
-#. TRANSLATORS: This is a keyword or name for the notifications plugin which is used while searching
-#: settings.js:216
-msgid "gmail"
-msgstr "ਜੀਮੇਲ"
-
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:218
 #, fuzzy
-msgid "Rotation Lock"
-msgstr "ਸਥਿਤੀ ਲਾਕ"
+#~ msgid "communication"
+#~ msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:220
-msgid "rotation"
-msgstr "ਘੁਮਾਵ"
+#~ msgid "notifications"
+#~ msgstr "ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ"
 
-#. TRANSLATORS: This is a keyword or name for the orientation-lock plugin which is used while searching
-#: settings.js:222
-msgid "orientation"
-msgstr "ਸਥਿਤੀ"
+#~ msgid "apps"
+#~ msgstr "ਐਪ"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:232
+#~ msgid "authorize"
+#~ msgstr "ਅਧਿਕਾਰਕ"
+
+#~ msgid "permissions"
+#~ msgstr "ਅਧਿਕਾਰ"
+
+#~ msgid "badges"
+#~ msgstr "ਬੈਜ"
+
+#~ msgid "facebook"
+#~ msgstr "ਫ਼ੇਸਬੁੱਕ"
+
+#~ msgid "twitter"
+#~ msgstr "ਟਵਿੱਟਰ"
+
+#~ msgid "flickr"
+#~ msgstr "ਫ਼ਲਿਕਰ"
+
+#~ msgid "gmail"
+#~ msgstr "ਜੀਮੇਲ"
+
 #, fuzzy
-msgid "printer"
-msgstr "ਪ੍ਰਿੰਟਰ"
+#~ msgid "Rotation Lock"
+#~ msgstr "ਸਥਿਤੀ ਲਾਕ"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:234
+#~ msgid "rotation"
+#~ msgstr "ਘੁਮਾਵ"
+
+#~ msgid "orientation"
+#~ msgstr "ਸਥਿਤੀ"
+
 #, fuzzy
-msgid "printers"
-msgstr "ਪ੍ਰਿੰਟਰ"
+#~ msgid "printer"
+#~ msgstr "ਪ੍ਰਿੰਟਰ"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:236
 #, fuzzy
-msgid "printing"
-msgstr "ਉਡੀਕ"
+#~ msgid "printers"
+#~ msgstr "ਪ੍ਰਿੰਟਰ"
 
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:238
-msgid "pdf"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:240
-msgid "ppd"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:242
-msgid "collate"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:244
-msgid "copies"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:246
-msgid "colormodel"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:248
-msgid "greyscale"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:250
-msgid "color"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:252
-msgid "laser"
-msgstr ""
-
-#. TRANSLATORS: This is a keyword or name for the printing plugin which is used while searching
-#: settings.js:254
 #, fuzzy
-msgid "ink"
-msgstr "ਪਿਨ"
+#~ msgid "printing"
+#~ msgstr "ਉਡੀਕ"
 
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:256
-msgid "Reset"
-msgstr "ਮੁੜ-ਸੈੱਟ"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:258
-msgid "reset"
-msgstr "ਮੁੜ-ਸੈੱਟ"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:260
-msgid "erase"
-msgstr "ਮਿਟਾਓ"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:262
-msgid "factory"
-msgstr "ਫ਼ੈਕਟਰੀ"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:264
-msgid "clear"
-msgstr "ਸਾਫ਼ ਕਰੋ"
-
-#. TRANSLATORS: This is a keyword or name for the reset plugin which is used while searching
-#: settings.js:266
-msgid "restore"
-msgstr "ਰਿਸਟੋਰ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:270
-msgid "sound"
-msgstr "ਅਵਾਜ਼"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:272
-msgid "silent"
-msgstr "ਚੁੱਪ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:274
-msgid "ringtone"
-msgstr "ਰਿੰਗਟੋਨ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:276
-msgid "vibrate"
-msgstr "ਕੰਬਣੀ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:278
-msgid "dialpad"
-msgstr "ਡਾਇਲਪੈਡ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:280
-msgid "message"
-msgstr "ਸੁਨੇਹਾ"
-
-#. TRANSLATORS: This is a keyword or name for the sound plugin which is used while searching
-#: settings.js:284
-msgid "volume"
-msgstr "ਅਵਾਜ਼"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:288
-msgid "time"
-msgstr "ਸਮਾਂ"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:290
-msgid "date"
-msgstr "ਮਿਤੀ"
-
-#. TRANSLATORS: This is a keyword or name for the time-date plugin which is used while searching
-#: settings.js:292
-msgid "timezone"
-msgstr "ਸਮਾਂ-ਖੇਤਰ"
-
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:304
 #, fuzzy
-msgid "vpn"
-msgstr "ਪਿਨ"
+#~ msgid "ink"
+#~ msgstr "ਪਿਨ"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:306
-msgid "openvpn"
-msgstr ""
+#~ msgid "Reset"
+#~ msgstr "ਮੁੜ-ਸੈੱਟ"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:308 settings.js:330
-msgid "ip"
-msgstr "ip"
+#~ msgid "reset"
+#~ msgstr "ਮੁੜ-ਸੈੱਟ"
 
-#. TRANSLATORS: This is a keyword or name for the vpn plugin which is used while searching
-#: settings.js:312
-msgid "routing"
-msgstr ""
+#~ msgid "erase"
+#~ msgstr "ਮਿਟਾਓ"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:320
-msgid "wifi"
-msgstr "ਵਾਈ-ਫ਼ਾਈ"
+#~ msgid "factory"
+#~ msgstr "ਫ਼ੈਕਟਰੀ"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:322
-msgid "WiFi"
-msgstr "ਵਾਈ-ਫ਼ਾਈ"
+#~ msgid "clear"
+#~ msgstr "ਸਾਫ਼ ਕਰੋ"
 
-#. TRANSLATORS: This is a keyword or name for the wifi plugin which is used while searching
-#: settings.js:328
-msgid "hidden"
-msgstr "ਓਹਲੇ"
+#~ msgid "restore"
+#~ msgstr "ਰਿਸਟੋਰ"
+
+#~ msgid "sound"
+#~ msgstr "ਅਵਾਜ਼"
+
+#~ msgid "silent"
+#~ msgstr "ਚੁੱਪ"
+
+#~ msgid "ringtone"
+#~ msgstr "ਰਿੰਗਟੋਨ"
+
+#~ msgid "vibrate"
+#~ msgstr "ਕੰਬਣੀ"
+
+#~ msgid "dialpad"
+#~ msgstr "ਡਾਇਲਪੈਡ"
+
+#~ msgid "message"
+#~ msgstr "ਸੁਨੇਹਾ"
+
+#~ msgid "volume"
+#~ msgstr "ਅਵਾਜ਼"
+
+#~ msgid "time"
+#~ msgstr "ਸਮਾਂ"
+
+#~ msgid "date"
+#~ msgstr "ਮਿਤੀ"
+
+#~ msgid "timezone"
+#~ msgstr "ਸਮਾਂ-ਖੇਤਰ"
+
+#, fuzzy
+#~ msgid "vpn"
+#~ msgstr "ਪਿਨ"
+
+#~ msgid "ip"
+#~ msgstr "ip"
+
+#~ msgid "wifi"
+#~ msgstr "ਵਾਈ-ਫ਼ਾਈ"
+
+#~ msgid "WiFi"
+#~ msgstr "ਵਾਈ-ਫ਼ਾਈ"
+
+#~ msgid "hidden"
+#~ msgstr "ਓਹਲੇ"
 
 #~ msgid "Used by Ubuntu"
 #~ msgstr "ਉਬੰਤੂ ਵੱਲੋਂ ਵਰਤਿਆ"
