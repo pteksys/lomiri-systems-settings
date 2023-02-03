@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-31 13:27+0000\n"
-"PO-Revision-Date: 2023-02-01 21:49+0000\n"
+"PO-Revision-Date: 2023-02-04 18:56+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/uk/>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:42+0000\n"
 
@@ -171,15 +171,15 @@ msgstr "Документи"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Звантаження"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -216,7 +216,7 @@ msgstr "Параметри збирання ОС"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Канал оновлення ОС"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -224,16 +224,15 @@ msgstr "Номер збірки ОС"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Ядро"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Збірка ABI"
 
 #: plugins/about/Version.qml:86
-#, fuzzy
 msgid "UBports Image part"
-msgstr "Частина образу Ubuntu"
+msgstr "Частина образу UBports"
 
 #: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
@@ -292,29 +291,24 @@ msgid "Remove images…"
 msgstr "Вилучити зображення…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Тло"
+msgstr "Тло та зовнішній вигляд"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Увімкнути ефекти розмиття"
 
 #: plugins/background/MainPage.qml:104
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Система"
+msgstr "Системне оформлення"
 
 #: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Своє значення"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
 msgid "Choose application"
-msgstr "Виберіть пароль"
+msgstr "Виберіть програму"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -429,9 +423,8 @@ msgstr[2] "за %1 хвилин"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
 #: plugins/battery/PageComponent.qml:374
-#, fuzzy
 msgid "Wi-Fi used for hotspot"
-msgstr "Точка Wi-Fi"
+msgstr "Точка доступу Wi-Fi"
 
 #: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
@@ -443,60 +436,52 @@ msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #: plugins/battery/SleepValues.qml:68
-#, fuzzy
 msgid "Lock the device when it's not in use:"
-msgstr "Блокувати телефон, якщо ним не користуються:"
+msgstr "Блокувати пристрій, коли він не використовується:"
 
 #: plugins/battery/SleepValues.qml:69
-#, fuzzy
 msgid "Put the device to sleep when it is not in use:"
-msgstr "Переводити телефон у стан очікування, якщо ним не користуються:"
+msgstr "Переводити пристрій у режим сну, коли він не використовується:"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: plugins/battery/SleepValues.qml:81
-#, fuzzy, qt-format
+#, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
-msgstr[0] "за %1 хвилину"
-msgstr[1] "за %1 хвилини"
-msgstr[2] "за %1 хвилин"
+msgstr[0] "за %1 секунду"
+msgstr[1] "за %1 секунди"
+msgstr[2] "за %1 секунд"
 
 #: plugins/battery/SleepValues.qml:125
-#, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr ""
-"Менші проміжки часу є безпечнішими. Телефон не переходитиме у стан "
-"блокування екрана під час дзвінків або відтворення відео."
+"Коротший час — безпечніший. Пристрій не блокується під час дзвінків або "
+"відтворення відео."
 
 #: plugins/battery/SleepValues.qml:125
-#, fuzzy
 msgid "Device won’t sleep during calls or video playback."
-msgstr ""
-"Телефон не переходитиме у стан очікування під час дзвінків або відтворення "
-"відео."
+msgstr "Пристрій не засинатиме під час дзвінків або відтворення відео."
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:26
-#, fuzzy
 msgid "Bluetooth Pairing Authorization Request"
-msgstr "Запит щодо пов’язування за допомогою Bluetooth"
+msgstr "Запит на авторизацію з'єднання Bluetooth"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
-msgstr ""
+msgstr "Пристрій %1 хоче створити пару з цим пристроєм. Ви дозволяєте?"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:39
-#, fuzzy
 msgid "Allow"
-msgstr "дозволити"
+msgstr "Дозволити"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
-msgstr ""
+msgstr "Відмовити"
 
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:26
@@ -600,7 +585,7 @@ msgstr "Відеокамера"
 
 #: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
-msgstr ""
+msgstr "Годинник"
 
 #: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
@@ -663,6 +648,7 @@ msgstr "Забути про цей пристрій"
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr ""
+"Будь ласка, введіть цей PIN-код на %1 та натисніть \"Enter\" на клавіатурі:"
 
 #: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
@@ -674,9 +660,8 @@ msgstr "Не можна виявити"
 
 #: plugins/bluetooth/PageComponent.qml:260
 #: plugins/bluetooth/PageComponent.qml:319
-#, fuzzy
 msgid "Searching…"
-msgstr "Перезавантаження…"
+msgstr "Пошук…"
 
 #: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
@@ -707,9 +692,8 @@ msgstr "Пов’язування"
 
 #: plugins/brightness/PageComponent.qml:35
 #: plugins/brightness/plugin/brightness-plugin.cpp:67
-#, fuzzy
 msgid "Brightness & Display"
-msgstr "Яскравість"
+msgstr "Яскравість та Екран"
 
 #: plugins/brightness/PageComponent.qml:35
 #: plugins/brightness/plugin/brightness-plugin.cpp:65
@@ -725,66 +709,56 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Коригує яскравість дисплея відповідно до зовнішнього освітлення."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "показ"
+msgstr "Екран"
 
 #: plugins/brightness/PageComponent.qml:141
-#, fuzzy
 msgid "External display"
-msgstr "показ"
+msgstr "Зовнішній дисплей"
 
 #: plugins/brightness/PageComponent.qml:158
-#, fuzzy
 msgid "Wireless display"
-msgstr "показ"
+msgstr "Бездротовий екран"
 
 #: plugins/brightness/PageComponent.qml:159
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
-#, fuzzy
 msgid "Not connected"
-msgstr "Останнє з’єднання"
+msgstr "Не під'єднано"
 
 #: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
-msgstr ""
+msgstr "Бездротовий екран"
 
 #: plugins/brightness/WifiDisplays.qml:112
-#, fuzzy
 msgid "No displays detected"
-msgstr "Не виявлено жодної"
+msgstr "Екрани не виявлені"
 
 #: plugins/brightness/WifiDisplays.qml:125
-#, fuzzy
 msgid "Connected display:"
-msgstr "З’єднані пристрої:"
+msgstr "Під’єднаний екран:"
 
 #: plugins/brightness/WifiDisplays.qml:140
-#, fuzzy
 msgid "Connecting"
-msgstr "З’єднуємося…"
+msgstr "З’єднуємося"
 
 #: plugins/brightness/WifiDisplays.qml:158
-#, fuzzy
 msgid "Use another display:"
-msgstr "З’єднатися з іншим пристроєм:"
+msgstr "Використати інший екран:"
 
 #: plugins/brightness/WifiDisplays.qml:158
-#, fuzzy
 msgid "Choose a display:"
-msgstr "Виберіть пароль"
+msgstr "Оберіть екран:"
 
 #: plugins/brightness/WifiDisplaysAlert.qml:32
-#, fuzzy, qt-format
+#, qt-format
 msgid "This device failed to connect to %1."
-msgstr "від’єднати"
+msgstr "Цей пристрій не вдалося під'єднати до %1."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
-msgstr ""
+msgstr "Виникла невідома помилка при підключенні до %1."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
@@ -792,18 +766,16 @@ msgid "OK"
 msgstr "ОК"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Зображення"
+msgstr "Жести"
 
 #: plugins/gestures/PageComponent.qml:44
 msgid "Tap to wake"
-msgstr ""
+msgstr "Торкніться для пробудження"
 
 #: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Двічі торкніться будь-де на екрані, щоб розбудити пристрій."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -933,27 +905,24 @@ msgid "A secondary connection of the base connection failed"
 msgstr "Не вдалося встановити вторинне щодо основного з’єднання"
 
 #: plugins/hotspot/HotspotSetup.qml:61
-#, fuzzy
 msgid "Change Hotspot Setup"
-msgstr "Змінити налаштування точки доступу"
+msgstr "Зміна налаштувань точки доступу"
 
 #: plugins/hotspot/HotspotSetup.qml:61
-#, fuzzy
 msgid "Set Up Hotspot"
-msgstr "Налаштувати точку доступу"
+msgstr "Налаштування точки доступу"
 
 #: plugins/hotspot/HotspotSetup.qml:167
 msgid "Hotspot name"
 msgstr "Назва точки"
 
 #: plugins/hotspot/HotspotSetup.qml:168
-#, fuzzy
 msgid "Choose a name"
-msgstr "Виберіть пароль"
+msgstr "Виберіть ім'я"
 
 #: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
-msgstr ""
+msgstr "Вимагати пароль (рекомендується):"
 
 #: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
@@ -962,7 +931,7 @@ msgstr "Показувати пароль"
 
 #: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
-msgstr ""
+msgstr "Запуск точки доступу увімкне Wi-Fi."
 
 #: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
@@ -970,7 +939,7 @@ msgstr "Змінити"
 
 #: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
-msgstr ""
+msgstr "Почати"
 
 #: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
@@ -995,28 +964,24 @@ msgstr ""
 "тарифного плану."
 
 #: plugins/hotspot/PageComponent.qml:124
-#, fuzzy
 msgid "Change Password/Setup…"
-msgstr "Змінити код-пароль…"
+msgstr "Зміна пароля/налаштувань…"
 
 #: plugins/hotspot/PageComponent.qml:124
-#, fuzzy
 msgid "Set Up Hotspot…"
-msgstr "Налаштувати точку доступу"
+msgstr "Налаштування точки доступу…"
 
 #: plugins/hotspot/PageComponent.qml:155
-#, fuzzy
 msgid "Wi-Fi is off"
-msgstr "Точка Wi-Fi"
+msgstr "Wi-Fi вимкнений"
 
 #: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
-msgstr ""
+msgstr "Для створення хот-споту потрібно увімкнути Wi-Fi."
 
 #: plugins/hotspot/PageComponent.qml:160
-#, fuzzy
 msgid "Turn on Wi-Fi"
-msgstr "якщо доступний WiFi"
+msgstr "Увімкнути Wi-Fi"
 
 #: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
@@ -1053,65 +1018,60 @@ msgid "Display language…"
 msgstr "Мова показу…"
 
 #: plugins/language/PageComponent.qml:150
-#, fuzzy
 msgid "Enable on-screen keyboard"
-msgstr "клавіатура"
+msgstr "Увімкнути екранну клавіатуру"
 
 #: plugins/language/PageComponent.qml:162
-#, fuzzy
 msgid "On-screen keyboard"
-msgstr "клавіатура"
+msgstr "Екранна клавіатура"
 
 #: plugins/language/PageComponent.qml:173
-#, fuzzy
 msgid "External keyboard"
-msgstr "клавіатура"
+msgstr "Зовнішня клавіатура"
 
 #: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
-msgstr "Ambiance"
+msgstr "Атмосфера"
 
 #: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
-msgstr ""
+msgstr "Suru темна"
 
 #: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
-msgstr ""
+msgstr "Suru чорна"
 
 #: plugins/language/PageComponent.qml:187
 msgid "Just White"
-msgstr ""
+msgstr "Біла"
 
 #: plugins/language/PageComponent.qml:188
 msgid "Just Black"
-msgstr ""
+msgstr "Чорна"
 
 #: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
-msgstr ""
+msgstr "Сіра"
 
 #: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr ""
+msgstr "Біла з контуром"
 
 #: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr ""
+msgstr "Чорна з контуром"
 
 #: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr ""
+msgstr "Сіра з контуром"
 
 #: plugins/language/PageComponent.qml:195
-#, fuzzy
 msgid "On-screen keyboard theme"
-msgstr "клавіатура"
+msgstr "Тема екранної клавіатури"
 
 #: plugins/language/PageComponent.qml:196
-#, fuzzy
 msgid "Keyboard theme"
-msgstr "Клавіатура"
+msgstr "Тема клавіатури"
 
 #: plugins/language/PageComponent.qml:209
 #: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
@@ -1140,14 +1100,12 @@ msgid "Auto punctuation"
 msgstr "Автопунктуація"
 
 #: plugins/language/PageComponent.qml:284
-#, fuzzy
 msgid "Inserts a period when you tap Space twice."
-msgstr ""
-"Додає крапки, пропущені лапки та дужки після подвійного натискання Пробілу."
+msgstr "Вставляє крапку, коли двічі натискаєте Пробіл."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Лупа для клавіш"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1158,24 +1116,20 @@ msgid "Keyboard vibration"
 msgstr "Клавіатурна вібрація"
 
 #: plugins/language/PageComponent.qml:324
-#, fuzzy
 msgid "Keyboard opacity"
-msgstr "Розкладки клавіатури"
+msgstr "Прозорість клавіатури"
 
 #: plugins/language/PageHardwareKeyboard.qml:33
-#, fuzzy
 msgid "Hardware keyboard"
-msgstr "клавіатура"
+msgstr "Апаратна клавіатура"
 
 #: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
-msgstr ""
+msgstr "Розкладки та інші джерела"
 
 #: plugins/language/RebootNecessary.qml:34
-#, fuzzy
 msgid "The device needs to restart for changes to take effect."
-msgstr ""
-"Щоб зміни набули чинності операційну систему телефону слід перезавантажити."
+msgstr "Щоб зміни набули чинності, пристрій потрібно перезавантажити."
 
 #: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
@@ -1190,79 +1144,76 @@ msgid "All languages available:"
 msgstr "Усі доступні мови:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Скинути засіб запуску"
+msgstr "Робочий стіл і панель запуску"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
-msgstr ""
+msgstr "На великих екранах:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Увімкнути робочі простори"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Supoprt for multiple virtual workspaces"
-msgstr ""
+msgstr "Підтримка декількох віртуальних робочих місць"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
-msgstr ""
+msgstr "Завжди показувати панель запуску"
 
 #: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
-msgstr ""
+msgstr "Відео та повноекранні ігри можуть її тимчасово приховувати."
 
 #: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
-msgstr ""
+msgstr "Розмір піктограм:"
 
 #: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
-msgstr ""
+msgstr "Швидкість курсору:"
 
 #: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
-msgstr ""
+msgstr "Швидкість прокрутки коліщатка:"
 
 #: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
-msgstr ""
+msgstr "Швидкість подвійного кліка:"
 
 #: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
-msgstr ""
+msgstr "Перевірка подвійного кліка:"
 
 #: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
-msgstr ""
+msgstr "Тачпад"
 
 #: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
-msgstr ""
+msgstr "Швидкість прокрутки пальцем:"
 
 #: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
-msgstr ""
+msgstr "Торкніться, щоб клацнути"
 
 #: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
-msgstr ""
+msgstr "Прокрутіть двома пальцями"
 
 #: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
-msgstr ""
+msgstr "Ігнорувати тачпад, коли:"
 
 #: plugins/mouse/Connected.qml:432
 msgid "Typing"
-msgstr ""
+msgstr "Набір тексту"
 
 #: plugins/mouse/Connected.qml:446
-#, fuzzy
 msgid "A mouse is connected"
-msgstr "Від’єднано"
+msgstr "Під'єднано мишу"
 
 #: plugins/mouse/None.qml:34
 msgid ""
@@ -1270,114 +1221,110 @@ msgid ""
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
 "are charged."
 msgstr ""
+"Під'єднайте мишу або тачпад через USB або Bluetooth. Якщо Bluetooth-пристрій "
+"не виявлено, переконайтеся, що він увімкнений і заряджений."
 
 #: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
+"З цим екраном потрібно використовувати Bluetooth-мишу або тачпад. "
+"Переконайтеся, що він знаходиться поруч із пристроєм і батарея заряджена."
 
 #: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Миша і тачпад"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
-msgstr ""
+msgstr "Основна кнопка:"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
-msgstr ""
+msgstr "Ліва"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:89
-#, fuzzy
 msgid "Right"
-msgstr "політ"
+msgstr "Права"
 
 #: plugins/mouse/TapArea.qml:38
-#, fuzzy
 msgid "Not fast enough"
-msgstr "Не надіслано"
+msgstr "Недостатньо швидко"
 
 #: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
-msgstr ""
+msgstr "Подвійний клік"
 
 #: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:73
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Екстрена трансляція"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Відкрито доступ до допоміжної програми"
+msgstr "Мобільний зв'язок недоступний"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Мобільний зв'язок увімкнено"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Мобільний зв'язок вимкнено"
 
 #: plugins/notifications/CellBroadcast.qml:165
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "нагадування"
+msgstr "Сповіщення:"
 
 #: plugins/notifications/CellBroadcast.qml:171
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Отримувати екстрені сповіщення"
 
 #: plugins/notifications/CellBroadcast.qml:184
 msgid "Extreme threats"
-msgstr ""
+msgstr "Надзвичайні загрози"
 
 #: plugins/notifications/CellBroadcast.qml:185
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Надзвичайні загрози життю та майну"
 
 #: plugins/notifications/CellBroadcast.qml:198
 msgid "Severe threats"
-msgstr ""
+msgstr "Серйозні загрози"
 
 #: plugins/notifications/CellBroadcast.qml:199
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Надзвичайні загрози життю та майну"
 
 #: plugins/notifications/CellBroadcast.qml:212
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "AMBER-сповіщення"
 
 #: plugins/notifications/CellBroadcast.qml:213
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Екстрені повідомлення про викрадення дітей"
 
 #: plugins/notifications/CellBroadcast.qml:226
 msgid "Public safety messages"
-msgstr ""
+msgstr "Повідомлення про громадську безпеку"
 
 #: plugins/notifications/CellBroadcast.qml:227
 msgid "Recommend actions to save life and property"
-msgstr ""
+msgstr "Рекомендації щодо збереження життя та майна"
 
 #: plugins/notifications/CellBroadcast.qml:240
 msgid "Tests"
-msgstr ""
+msgstr "Тести"
 
 #: plugins/notifications/CellBroadcast.qml:241
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "нагадування"
+msgstr "Тестові сповіщення"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:29
@@ -1386,30 +1333,26 @@ msgstr "Сповіщення"
 
 #: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
-msgstr ""
+msgstr "Дозволити цій програмі повідомляти мені за допомогою:"
 
 #: plugins/notifications/ClickAppNotifications.qml:91
 #: plugins/notifications/PageComponent.qml:208
-#, fuzzy
 msgid "Sounds"
-msgstr "Звук"
+msgstr "Звуки"
 
 #: plugins/notifications/ClickAppNotifications.qml:114
 #: plugins/notifications/PageComponent.qml:211
-#, fuzzy
 msgid "Vibrations"
-msgstr "вібрація"
+msgstr "Вібрації"
 
 #: plugins/notifications/ClickAppNotifications.qml:137
-#, fuzzy
 msgid "Notification Bubbles"
-msgstr "Сповіщення"
+msgstr "Бульбашкові сповіщення"
 
 #: plugins/notifications/ClickAppNotifications.qml:160
 #: plugins/notifications/PageComponent.qml:217
-#, fuzzy
 msgid "Notification List"
-msgstr "Сповіщення"
+msgstr "Список сповіщень"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:30
 #: plugins/sound/PageComponent.qml:39
@@ -1418,37 +1361,32 @@ msgstr "Звук"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
-msgstr ""
+msgstr "Програми, які сповіщають зі звуком:"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:30
-#, fuzzy
 msgid "Vibration"
-msgstr "вібрація"
+msgstr "Вібрація"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:50
-#, fuzzy
 msgid "When in Silent mode:"
-msgstr "Вібрація у тихому режимі"
+msgstr "У тихому режимі:"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:69
-#, fuzzy
 msgid "Vibrate as normal"
-msgstr "Вібрація з дзвінком"
+msgstr "Вібрація як типова"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:70
-#, fuzzy
 msgid "Don't vibrate"
-msgstr "вібрація"
+msgstr "Не вібрувати"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
-msgstr ""
+msgstr "Програми, які сповіщають з вібрацією:"
 
 #: plugins/notifications/PageComponent.qml:84
 #: plugins/notifications/PageComponent.qml:174
-#, fuzzy
 msgid "Applications:"
-msgstr "прописні"
+msgstr "Програми:"
 
 #: plugins/notifications/PageComponent.qml:106
 msgid ""
@@ -1460,71 +1398,63 @@ msgstr ""
 
 #: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
-msgstr ""
+msgstr "Програми, які сповіщають зі звуком"
 
 #: plugins/notifications/PageComponent.qml:148
 msgid "Apps that notify with vibration"
-msgstr ""
+msgstr "Програми, які сповіщають з вібрацією"
 
 #: plugins/notifications/PageComponent.qml:203
-#, fuzzy
 msgid "No notifications"
-msgstr "сповіщення"
+msgstr "Сповіщень немає"
 
 #: plugins/notifications/PageComponent.qml:214
 msgid "Bubbles"
-msgstr ""
+msgstr "Бульбашки"
 
 #: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
 #: plugins/printing/PageComponent.qml:38
-#, fuzzy
 msgid "Add printer"
-msgstr "Принтер"
+msgstr "Додати принтер"
 
 #: plugins/printing/AddPrinter.qml:65
-#, fuzzy
 msgid "Enter URI"
-msgstr "Введіть PIN-код SIM-картки"
+msgstr "Введіть URI"
 
 #: plugins/printing/AddPrinter.qml:78
-#, fuzzy
 msgid "Devices"
-msgstr "Служби"
+msgstr "Пристрої"
 
 #: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
-msgstr ""
+msgstr "Пристроїв не знайдено."
 
 #: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
-msgstr ""
+msgstr "Опис принтера"
 
 #: plugins/printing/AddPrinterDetails.qml:137
-#, fuzzy
 msgid "Connection"
-msgstr "З’єднуємося…"
+msgstr "Підключення"
 
 #: plugins/printing/AddPrinterDetails.qml:139
-#, fuzzy
 msgid "Choose a connection"
-msgstr "Виберіть пароль"
+msgstr "Виберіть підключення"
 
 #: plugins/printing/AddPrinterDetails.qml:165
-#, fuzzy
 msgid "Printer name"
-msgstr "Принтер"
+msgstr "Назва принтера"
 
 #: plugins/printing/AddPrinterDetails.qml:202
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
 #: plugins/printing/printer-sub-pages/Status.qml:66
-#, fuzzy
 msgid "Description"
-msgstr "Шифрування"
+msgstr "Опис"
 
 #: plugins/printing/AddPrinterDetails.qml:204
 #: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
-msgstr ""
+msgstr "Додатково"
 
 #: plugins/printing/AddPrinterDetails.qml:209
 #: plugins/printing/printer-sub-pages/Status.qml:72
@@ -1533,49 +1463,47 @@ msgstr "Місце перебування"
 
 #: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
-msgstr ""
+msgstr "Драйвер"
 
 #: plugins/printing/AddPrinterDetails.qml:225
-#, fuzzy
 msgid "Choose driver"
-msgstr "Виберіть сигнал носія:"
+msgstr "Оберіть драйвер"
 
 #: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
-msgstr ""
+msgstr "Обрати принтер з бази даних"
 
 #: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
-msgstr ""
+msgstr "Надати файл PPD"
 
 #: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
-msgstr ""
+msgstr "Фільтр драйверів"
 
 #: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
-msgstr ""
+msgstr "Файл PPD"
 
 #: plugins/printing/PageComponent.qml:32
-#, fuzzy
 msgid "Printing"
-msgstr "Принтер"
+msgstr "Друк"
 
 #: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
-msgstr ""
+msgstr "Менеджер завдань принтера"
 
 #: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
-msgstr ""
+msgstr "Типовий принтер"
 
 #: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
-msgstr ""
+msgstr "Налаштовані принтери"
 
 #: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
-msgstr ""
+msgstr "Виявлені принтери"
 
 #: plugins/printing/PageComponent.qml:136
 msgid "Delete"
@@ -1584,76 +1512,71 @@ msgstr "Видалити"
 #: plugins/printing/PageComponent.qml:149
 #: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
-msgstr ""
+msgstr "Встановити типовим"
 
 #: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
-msgstr ""
+msgstr "Принтери ще не налаштовані."
 
 #: plugins/printing/Printer.qml:42
-#, fuzzy
 msgid "Printer status"
-msgstr "Принтер"
+msgstr "Стан принтера"
 
 #: plugins/printing/Printer.qml:43
-#, fuzzy
 msgid "General settings"
-msgstr "Системні параметри"
+msgstr "Загальні налаштування"
 
 #: plugins/printing/Printer.qml:44
 msgid "Policies"
-msgstr ""
+msgstr "Правила"
 
 #: plugins/printing/Printer.qml:47
-#, fuzzy
 msgid "Copies and pages"
-msgstr "Час і дата"
+msgstr "Копії та сторінки"
 
 #: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
-msgstr ""
+msgstr "Хост"
 
 #: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
-msgstr ""
+msgstr "Копії"
 
 #: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
-msgstr ""
+msgstr "Розмір паперу"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
-msgstr ""
+msgstr "Дуплекс"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
-#, fuzzy
 msgid "Color model"
-msgstr "Режим розробника"
+msgstr "Колірна модель"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
-msgstr ""
+msgstr "Якість"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:27
-#, fuzzy
 msgid "Enabled"
-msgstr "увімкнути"
+msgstr "Увімкнено"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
-msgstr ""
+msgstr "Типовий"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
-msgstr ""
+msgstr "Це типовий принтер."
 
 #: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
-msgstr ""
+msgstr "Прийом завдань"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
-msgstr ""
+msgstr "Спільний"
 
 #: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
@@ -1676,7 +1599,7 @@ msgstr "Зупинено"
 #: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
-msgstr ""
+msgstr "%1 — %2"
 
 #: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
@@ -1684,47 +1607,43 @@ msgstr "Немає повідомлень"
 
 #: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
-msgstr ""
+msgstr "Завдання"
 
 #: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
-msgstr ""
+msgstr "Керування завданнями друку"
 
 #: plugins/printing/printer-sub-pages/Status.qml:78
-#, fuzzy
 msgid "Address"
-msgstr "адреса"
+msgstr "Адреса"
 
 #: plugins/printing/printer-sub-pages/Status.qml:84
-#, fuzzy
 msgid "Model"
-msgstr "Модем"
+msgstr "Модель"
 
 #: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
-msgstr ""
+msgstr "Локальний RAW-принтер"
 
 #: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
-msgstr ""
+msgstr "Друк тестової сторінки"
 
 #: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
-#, fuzzy
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
 "deleted from this device."
 msgstr ""
-"Усі документи, збережені ігри, параметри та інші записи буде остаточно "
-"вилучено з цього телефону."
+"Усі документи, збережені ігри, налаштування та інші елементи будуть "
+"остаточно вилучені з цього пристрою."
 
 #: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "Витерти і скинути усе"
 
 #: plugins/reset/PageComponent.qml:35
-#, fuzzy
 msgid "Reset device"
-msgstr "пристрій"
+msgstr "Очищення пристрою"
 
 #: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
@@ -1747,9 +1666,8 @@ msgstr ""
 "повернуто до початкових налаштувань."
 
 #: plugins/reset/PageComponent.qml:108
-#, fuzzy
 msgid "Erase & Reset All"
-msgstr "Витерти і скинути усе"
+msgstr "Стерти та скинути все"
 
 #: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
@@ -1765,7 +1683,7 @@ msgstr "Абонент:"
 
 #: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
-msgstr ""
+msgstr "Велика гучність може нашкодити Вашому слуху."
 
 #: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
@@ -1776,9 +1694,8 @@ msgid "Ringtone"
 msgstr "Мелодія дзвінка"
 
 #: plugins/sound/PageComponent.qml:171
-#, fuzzy
 msgid "Vibrate on ring"
-msgstr "Вібрація з дзвінком"
+msgstr "Вібрація на дзвінок"
 
 #: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
 msgid "Vibrate in Silent Mode"
@@ -1809,25 +1726,20 @@ msgid "Lock sound"
 msgstr "Звук блокування"
 
 #: plugins/sound/PageComponent.qml:278
-#, fuzzy
 msgid "Other vibrations"
-msgstr "вібрація"
+msgstr "Інші вібрації"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Вібрація зі звуком повідомлення"
+msgstr "Власний звук повідомлення"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
 msgid "Custom Ringtone"
-msgstr "Мелодія дзвінка"
+msgstr "Власна мелодія на виклик"
 
 #: plugins/sound/SoundsList.qml:213
-#, fuzzy
 msgid "Choose from"
-msgstr "Виберіть сигнал носія:"
+msgstr "Оберіть"
 
 #: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
@@ -1880,52 +1792,48 @@ msgid "Date"
 msgstr "Дата"
 
 #: plugins/vpn/PageComponent.qml:31
-#, fuzzy
 msgid "VPN"
-msgstr "APN"
+msgstr "VPN"
 
 #: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr ""
+"Щоб додати конфігурацію VPN, завантажте конфігураційний файл або налаштуйте "
+"вручну."
 
 #: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
-msgstr ""
+msgstr "Додати ручну конфігурацію…"
 
 #: plugins/vpn/PageComponent.qml:117
-#, fuzzy
 msgid "VPN reconnection required."
-msgstr "Критична помилка служби спільного використання з’єднання"
+msgstr "Потрібне перепідключення до VPN."
 
 #: plugins/vpn/PageComponent.qml:118
-#, fuzzy
 msgid "You need to reconnect for changes to have an effect."
-msgstr ""
-"Щоб зміни набули чинності операційну систему телефону слід перезавантажити."
+msgstr "Щоб зміни набули чинності, Вам потрібно приєднатися ще раз."
 
 #: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
-msgstr ""
+msgstr "Додати сертифікат?"
 
 #: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
-msgstr ""
+msgstr "Додати ключ?"
 
 #: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
-msgstr ""
+msgstr "Додати pac-файл?"
 
 #: plugins/wifi/CertDialog.qml:36
-#, fuzzy
 msgid "Content:"
-msgstr "Продовжити"
+msgstr "Вміст:"
 
 #: plugins/wifi/CertDialog.qml:49
-#, fuzzy
 msgid "No data available."
-msgstr "Доступні оновлення"
+msgstr "Даних немає."
 
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
@@ -1944,9 +1852,8 @@ msgid "Password"
 msgstr "Пароль"
 
 #: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
-#, fuzzy
 msgid "Forget this network"
-msgstr "Забути про мережу"
+msgstr "Забудьте цю мережу"
 
 #: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
@@ -1966,7 +1873,7 @@ msgstr "Назва мережі"
 
 #: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
-msgstr ""
+msgstr "SSID"
 
 #: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
@@ -1977,9 +1884,8 @@ msgid "WPA & WPA2 Personal"
 msgstr "Персональний WPA та WPA2"
 
 #: plugins/wifi/OtherNetwork.qml:320
-#, fuzzy
 msgid "WPA & WPA2 Enterprise"
-msgstr "Персональний WPA та WPA2"
+msgstr "WPA & WPA2 Enterprise"
 
 #: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
@@ -1987,15 +1893,15 @@ msgstr "WEP"
 
 #: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
-msgstr ""
+msgstr "Динамічний WEP (802.1x)"
 
 #: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
-msgstr ""
+msgstr "LEAP"
 
 #: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
-msgstr ""
+msgstr "Ця мережа незахищена."
 
 #: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
@@ -2003,11 +1909,11 @@ msgstr "Автентифікація"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
-msgstr ""
+msgstr "Внутрішня автентифікація"
 
 #: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
-msgstr ""
+msgstr "Сертифікат CA"
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
@@ -2015,14 +1921,14 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
-msgstr ""
+msgstr "%1…"
 
 #: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
 #: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
 #: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
 #: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
-msgstr ""
+msgstr "Обрати…"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -2032,7 +1938,7 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
-msgstr ""
+msgstr "%1…, чинний до: %2"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -2041,19 +1947,19 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
-msgstr ""
+msgstr "%1, чинний до: %2"
 
 #: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
-msgstr ""
+msgstr "Використання сертифікатів рекомендується, оскільки це підвищує безпеку."
 
 #: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
-msgstr ""
+msgstr "Клієнтський сертифікат"
 
 #: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
-msgstr ""
+msgstr "Особистий ключ користувача"
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
@@ -2061,47 +1967,43 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
-msgstr ""
+msgstr "%1, %2, %3 біт"
 
 #: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
-msgstr ""
+msgstr "Pac-файл"
 
 #: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
-msgstr ""
+msgstr "Забезпечення Pac"
 
 #: plugins/wifi/OtherNetwork.qml:686
-#, fuzzy
 msgid "Disabled"
-msgstr "вимкнути"
+msgstr "Вимкнено"
 
 #: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
-msgstr ""
+msgstr "Анонім"
 
 #: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
-msgstr ""
+msgstr "Аутентифіковано"
 
 #: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
-msgstr ""
+msgstr "Обидва"
 
 #: plugins/wifi/OtherNetwork.qml:699
-#, fuzzy
 msgid "PEAP version"
-msgstr "версія"
+msgstr "Версія PEAP"
 
 #: plugins/wifi/OtherNetwork.qml:713
-#, fuzzy
 msgid "Version 0"
-msgstr "Версія: "
+msgstr "Версія 0"
 
 #: plugins/wifi/OtherNetwork.qml:714
-#, fuzzy
 msgid "Version 1"
-msgstr "Версія: "
+msgstr "Версія 1"
 
 #: plugins/wifi/OtherNetwork.qml:715
 msgid "Automatic"
@@ -2109,11 +2011,11 @@ msgstr "Автоматично"
 
 #: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
-msgstr ""
+msgstr "Анонім"
 
 #: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
-msgstr ""
+msgstr "Ідентичність"
 
 #: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
@@ -2121,12 +2023,11 @@ msgstr "Користувач"
 
 #: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
-msgstr ""
+msgstr "Пароль приватного ключа"
 
 #: plugins/wifi/OtherNetwork.qml:857
-#, fuzzy
 msgid "Remember password"
-msgstr "пароль"
+msgstr "Запам'ятати пароль"
 
 #: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
@@ -2141,17 +2042,16 @@ msgid "Clear"
 msgstr "Очистити"
 
 #: plugins/wifi/certhandler.cpp:258
-#, fuzzy
 msgid "Private key"
-msgstr "Конфіденційність"
+msgstr "Приватний ключ"
 
 #: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
-msgstr ""
+msgstr "Відкритий ключ"
 
 #: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
-msgstr ""
+msgstr "Непрозорий"
 
 #: src/qml/MainWindow.qml:203
 msgid "Search"
