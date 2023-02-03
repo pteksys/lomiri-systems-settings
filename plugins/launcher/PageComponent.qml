@@ -71,7 +71,7 @@ ItemPage {
                 id: enableWorkspaces
                 objectName: "enableWorkspaces"
                 text: i18n.tr("Enable workspaces")
-                layout.subtitle.text: i18n.tr("Supoprt for multiple virtual workspaces")
+                layout.subtitle.text: i18n.tr("Support for multiple virtual workspaces")
 
                 Switch {
                     id: enableWorkspacesSwitch
