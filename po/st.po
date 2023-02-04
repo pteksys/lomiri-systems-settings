@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 13:27+0000\n"
+"POT-Creation-Date: 2023-02-04 18:55+0000\n"
 "PO-Revision-Date: 2014-02-13 13:59+0000\n"
 "Last-Translator: Pitso Mofokeng <pitso3000@gmail.com>\n"
 "Language-Team: Sotho, Southern <st@li.org>\n"
@@ -1128,7 +1128,7 @@ msgid "Enable workspaces"
 msgstr ""
 
 #: plugins/launcher/PageComponent.qml:74
-msgid "Supoprt for multiple virtual workspaces"
+msgid "Support for multiple virtual workspaces"
 msgstr ""
 
 #: plugins/launcher/PageComponent.qml:87
@@ -1285,7 +1285,7 @@ msgid "Public safety messages"
 msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:227
-msgid "Recommend actions to save life and property"
+msgid "Recommended actions to save life and property"
 msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:240
