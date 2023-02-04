@@ -224,7 +224,7 @@ ItemPage {
                 height: children.height + (divider.visible ? divider.height : 0)
                 ListItemLayout {
                     title.text: i18n.tr("Public safety messages")
-                    subtitle.text: i18n.tr("Recommend actions to save life and property")
+                    subtitle.text: i18n.tr("Recommended actions to save life and property")
                     Switch {
                         id: publicSafetyAlert
                         checked: isSubscribed(public_safety_topics)
