@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2023-02-04 18:56+0000\n"
+"PO-Revision-Date: 2023-02-06 03:01+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1149,8 +1149,6 @@ msgid "Enable workspaces"
 msgstr "Arbeitsflächen aktivieren"
 
 #: plugins/launcher/PageComponent.qml:74
-#, fuzzy
-#| msgid "Supoprt for multiple virtual workspaces"
 msgid "Support for multiple virtual workspaces"
 msgstr "Unterstützung für mehrere virtuelle Arbeitsflächen"
 
@@ -1313,8 +1311,6 @@ msgid "Public safety messages"
 msgstr "Nachrichten zur öffentlichen Sicherheit"
 
 #: plugins/notifications/CellBroadcast.qml:227
-#, fuzzy
-#| msgid "Recommend actions to save life and property"
 msgid "Recommended actions to save life and property"
 msgstr "Handlungsempfehlungen zum Schutz von Leben und Eigentum"
 
