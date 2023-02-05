@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2023-01-25 21:50+0000\n"
+"PO-Revision-Date: 2023-02-06 03:01+0000\n"
 "Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -214,7 +214,7 @@ msgstr "Detale kompilacji systemu"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Kanał aktualizacji systemu operacyjnego"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -222,7 +222,7 @@ msgstr "Numer OS build"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Jądro"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
@@ -289,14 +289,12 @@ msgid "Remove images…"
 msgstr "Usuń obrazki…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Tło"
+msgstr "Tło i wygląd"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Włącz efekty rozmycia"
 
 #: plugins/background/MainPage.qml:104
 msgid "System Art"
@@ -1143,10 +1141,8 @@ msgid "All languages available:"
 msgstr "Wszystkie dostępne języki:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Zresetuj pasek uruchamiania"
+msgstr "Pulpit i launcher"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1154,11 +1150,11 @@ msgstr "Na dużych ekranach:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Włącz obszary robocze"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Obsługa wielu wirtualnych obszarów roboczych"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1266,73 +1262,67 @@ msgstr "NFC"
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:73
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Transmisja alarmowa"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Suplikant jest teraz dostępny"
+msgstr "Transmisja komórkowa jest niedostępna"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Włączono transmisję komórkową"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Wyłączono transmisję komórkową"
 
 #: plugins/notifications/CellBroadcast.qml:165
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "powiadomienia"
+msgstr "Powiadomienia:"
 
 #: plugins/notifications/CellBroadcast.qml:171
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Otrzymuj powiadomienia alarmowe"
 
 #: plugins/notifications/CellBroadcast.qml:184
 msgid "Extreme threats"
-msgstr ""
+msgstr "Ekstremalne zagrożenia"
 
 #: plugins/notifications/CellBroadcast.qml:185
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Skrajne zagrożenia dla życia i mienia"
 
 #: plugins/notifications/CellBroadcast.qml:198
 msgid "Severe threats"
-msgstr ""
+msgstr "Poważne zagrożenia"
 
 #: plugins/notifications/CellBroadcast.qml:199
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Poważne zagrożenia dla życia i mienia"
 
 #: plugins/notifications/CellBroadcast.qml:212
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "Ostrzeżenia AMBER"
 
 #: plugins/notifications/CellBroadcast.qml:213
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Biuletyny alarmowe dotyczące uprowadzenia dziecka"
 
 #: plugins/notifications/CellBroadcast.qml:226
 msgid "Public safety messages"
-msgstr ""
+msgstr "Komunikaty dotyczące bezpieczeństwa publicznego"
 
 #: plugins/notifications/CellBroadcast.qml:227
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Zalecane działania w celu ratowania życia i mienia"
 
 #: plugins/notifications/CellBroadcast.qml:240
 msgid "Tests"
-msgstr ""
+msgstr "Testy"
 
 #: plugins/notifications/CellBroadcast.qml:241
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "powiadomienia"
+msgstr "Testowe powiadomienia"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:29
@@ -1572,7 +1562,7 @@ msgstr "Włączone"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
-msgstr "Domyślny"
+msgstr "Domyślne"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
@@ -1913,7 +1903,7 @@ msgstr "Ta sieć jest niezabezpieczona."
 
 #: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
-msgstr "Autoryzacja"
+msgstr "Uwierzytelnianie"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
