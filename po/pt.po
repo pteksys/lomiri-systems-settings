@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2023-02-06 17:51+0000\n"
+"PO-Revision-Date: 2023-02-07 09:55+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/pt/>\n"
@@ -215,7 +215,7 @@ msgstr "Detalhes da compilação do SO"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Canal de atualizações do SO"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -223,11 +223,11 @@ msgstr "Numero de compilação do SO"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Build ABI"
 
 #: plugins/about/Version.qml:86
 msgid "UBports Image part"
@@ -289,14 +289,12 @@ msgid "Remove images…"
 msgstr "Remover imagens…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Fundo do ecrã"
+msgstr "Fundo de ecrã e Aparência"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Ativar efeitos de desfoque"
 
 #: plugins/background/MainPage.qml:104
 msgid "System Art"
