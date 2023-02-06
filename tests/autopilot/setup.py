@@ -13,7 +13,7 @@ import setuptools
 
 setuptools.setup(
     name='lomiri-system-settings',
-    version='0.1',
+    version='1.0',
     description='Lomiri System Settings autopilot tests.',
     url='https://gitlab.com/ubports/core/lomiri-system-settings',
     license='GPLv3',

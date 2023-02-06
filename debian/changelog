@@ -1,4 +1,4 @@
-lomiri-system-settings (1.0) UNRELEASED; urgency=medium
+lomiri-system-settings (1.0) unstable; urgency=medium
 
   [ Guido Berhoerster ]
   * Update VCS and homepage URLs
@@ -6,7 +6,11 @@ lomiri-system-settings (1.0) UNRELEASED; urgency=medium
   * Switch to source format 3.0
   * Switch from url-dispatcher to lomiri-url-dispatcher
 
- -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Tue, 30 Mar 2021 01:41:47 +0700
+  [ UBports developers ]
+  * Upstream-provided Debian package for lomiri-system-settings. See
+    upstream ChangeLog for recent changes.
+
+ -- UBports developers <developers@ubports.com>  Mon, 06 Feb 2023 13:42:38 +0100
 
 ubuntu-system-settings (0.4.4~0ubports0) xenial; urgency=medium
 
