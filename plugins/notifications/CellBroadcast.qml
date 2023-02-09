@@ -129,9 +129,14 @@ ItemPage {
 
     Flickable {
         id: scrollWidget
-        anchors.fill: parent
+        anchors {
+            top: header.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
         contentWidth: parent.width
-        contentHeight: selectorColumn.childrenRect.height
+        contentHeight: selectorColumn.implicitHeight
         boundsBehavior: (contentHeight > height) ?
                             Flickable.DragAndOvershootBounds :
                             Flickable.StopAtBounds
@@ -142,16 +147,13 @@ ItemPage {
         Column {
             id: selectorColumn
             visible: ofonoCellBroadcast.valid
-            anchors {
-                left: parent.left
-                right: parent.right
-                top: header.bottom
-            }
+            width: parent.width
 
             ListItem {
-                height: children.height + (divider.visible ? divider.height : 0)
+                height: cbEnableLayout.height + (divider.visible ? divider.height : 0)
                 enabled: false // we can't set it to false ( bug or intentional ? )
                 ListItemLayout {
+                    id: cbEnableLayout
                     title.text: cbchecked.checked ? i18n.tr("Cell Broadcast Enabled") : i18n.tr("Cell Broadcast Disabled")
                     Switch {
                         id: cbchecked
