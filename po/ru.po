@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2023-02-18 17:33+0000\n"
+"PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ru/>\n"
@@ -81,7 +81,7 @@ msgstr "Серийный номер"
 #: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
 #: plugins/wifi/certhandler.cpp:318
 msgid "None"
-msgstr "Нічого"
+msgstr "Нет"
 
 #: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
@@ -1138,10 +1138,8 @@ msgid "All languages available:"
 msgstr "Все доступные языки:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Сброс панели запуска"
+msgstr "Рабочий стол и лаунчер"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1149,11 +1147,11 @@ msgstr "На больших экранах:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Включить рабочие пространства"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Поддержка нескольких виртуальных рабочих областей"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1265,73 +1263,67 @@ msgstr "NFC"
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:73
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Экстренное вещание"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Заявитель доступен"
+msgstr "Сотовая сеть недоступна"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Сотовая трансляция включена"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Сотовая трансляция отключена"
 
 #: plugins/notifications/CellBroadcast.qml:165
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "уведомления"
+msgstr "Уведомления:"
 
 #: plugins/notifications/CellBroadcast.qml:171
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Получать экстренные уведомления"
 
 #: plugins/notifications/CellBroadcast.qml:184
 msgid "Extreme threats"
-msgstr ""
+msgstr "Экстремальные угрозы"
 
 #: plugins/notifications/CellBroadcast.qml:185
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Чрезвычайные угрозы жизни и имуществу"
 
 #: plugins/notifications/CellBroadcast.qml:198
 msgid "Severe threats"
-msgstr ""
+msgstr "Серьезные угрозы"
 
 #: plugins/notifications/CellBroadcast.qml:199
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Серьезные угрозы жизни и имуществу"
 
 #: plugins/notifications/CellBroadcast.qml:212
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "AMBER-оповещения"
 
 #: plugins/notifications/CellBroadcast.qml:213
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Экстренные сообщения о похищении детей"
 
 #: plugins/notifications/CellBroadcast.qml:226
 msgid "Public safety messages"
-msgstr ""
+msgstr "Сообщения об общественной безопасности"
 
 #: plugins/notifications/CellBroadcast.qml:227
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Рекомендуемые действия по спасению жизни и имущества"
 
 #: plugins/notifications/CellBroadcast.qml:240
 msgid "Tests"
-msgstr ""
+msgstr "Тесты"
 
 #: plugins/notifications/CellBroadcast.qml:241
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "уведомления"
+msgstr "Тестовые уведомления"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:29
@@ -1913,7 +1905,7 @@ msgstr "Незащищённая сеть."
 
 #: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
-msgstr "Авторизация"
+msgstr "Аутентификация"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
