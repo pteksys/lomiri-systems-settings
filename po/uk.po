@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2023-02-12 17:38+0000\n"
+"PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/uk/>\n"
@@ -187,7 +187,7 @@ msgstr "Інші файли"
 
 #: plugins/about/Storage.qml:133
 msgid "Used by apps"
-msgstr "Використано застосунками"
+msgstr "Використано програмами"
 
 #: plugins/about/Storage.qml:191
 msgid "Total storage"
@@ -495,8 +495,7 @@ msgstr "Запит щодо пов’язування за допомогою Bl
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
-msgstr ""
-"Будь ласка, підтвердіть, що пінкод, показаний на «%1», відповідає показаному"
+msgstr "Підтвердіть, що пінкод, показаний на \"%1\", відповідає цьому"
 
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
@@ -683,7 +682,7 @@ msgstr "Не виявлено жодної"
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
-msgstr "Пінкод для «%1»"
+msgstr "Пінкод для \"%1\""
 
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:62
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:63
@@ -1145,7 +1144,7 @@ msgstr "Усі доступні мови:"
 
 #: plugins/launcher/PageComponent.qml:31
 msgid "Desktop & Launcher"
-msgstr "Робочий стіл і панель запуску"
+msgstr "Робочий стіл та запускач програм"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1393,8 +1392,8 @@ msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr ""
-"Застосунки можуть сповіщати вас за допомогою звуків, вібрації, бульбашок "
-"сповіщень та Списку сповіщень."
+"Програми можуть мати сповіщення у вигляді звуків, вібрації, текстових "
+"бульбашок та Списку сповіщень."
 
 #: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
@@ -1885,7 +1884,7 @@ msgstr "Персональний WPA та WPA2"
 
 #: plugins/wifi/OtherNetwork.qml:320
 msgid "WPA & WPA2 Enterprise"
-msgstr "WPA & WPA2 Enterprise"
+msgstr "WPA та WPA2 Enterprise"
 
 #: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
