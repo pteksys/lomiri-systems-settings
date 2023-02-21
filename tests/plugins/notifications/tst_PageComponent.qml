@@ -18,8 +18,9 @@
 
 import QtQuick 2.12
 import QtTest 1.0
+import MeeGo.QOfono 0.2
 import Lomiri.Components 1.3
-import Lomiri.SystemSettings.Notifications 1.0 
+import Lomiri.SystemSettings.Notifications 1.0
 
 import NotificationsSource 1.0
 
@@ -162,6 +163,16 @@ PageComponent {
             vibrationsModel.updateEnabledEntries()
             compare(vibrationsModel.count, 1)
             tryCompare(vibrationsLabel, "text", "1")
+        }
+
+        function test_cellBroadCastItem() {
+            MockQOfono.available = false;
+            var cbItem = findChild(root, "cellBroadcastItem")
+            tryCompare(cbItem, "visible", false);
+
+            MockQOfono.available = true;
+            var cbItem = findChild(root, "cellBroadcastItem")
+            tryCompare(cbItem, "visible", true);
         }
     }
 }

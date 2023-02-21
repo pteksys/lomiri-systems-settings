@@ -20,6 +20,7 @@ import QtQuick 2.12
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItems
 import Lomiri.SystemSettings.Notifications 1.0
+import MeeGo.QOfono 0.2
 import SystemSettings 1.0
 
 ItemPage {
@@ -50,6 +51,10 @@ ItemPage {
         sourceModel: ClickApplicationsModel
     }
 
+    OfonoManager {
+        id: ofonoManager
+    }
+
     Flickable {
         id: scrollWidget
         anchors.fill: parent
@@ -67,7 +72,9 @@ ItemPage {
             width: parent.width
 
             ListItem {
+                objectName: "cellBroadcastItem"
                 height: cbLayout.height + (divider.visible ? divider.height : 0)
+                visible: ofonoManager.available
                 ListItemLayout {
                     id: cbLayout
                     title.text: i18n.tr("Emergency Broadcast")
