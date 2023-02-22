@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-04 18:55+0000\n"
-"PO-Revision-Date: 2021-03-21 15:22+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
-"Language-Team: Dutch <https://translate.ubports.com/projects/ubports/system-"
-"settings/nl/>\n"
+"PO-Revision-Date: 2023-02-23 00:29+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -45,14 +45,15 @@ msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
 msgstr ""
-"In de ontwikkelaarsmodus heeft iedereen toegang en kan iedereen dingen "
+"In de ontwikkelaarsmodus heeft iedereen toegang tot en kan iedereen dingen "
 "wijzigen of verwijderen op deze telefoon door deze te verbinden met een "
 "ander apparaat."
 
 #: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
 msgstr ""
-"Stel een toegangscode of wachtwoordzin om de ontwikkelaarsmodus te gebruiken."
+"Stel een toegangscode of wachtwoordzin in om de ontwikkelaarsmodus in te "
+"schakelen."
 
 #: plugins/about/DevMode.qml:115
 msgid "Lock security"
@@ -88,7 +89,7 @@ msgstr "Wifi-adres"
 
 #: plugins/about/PageComponent.qml:136
 msgid "Bluetooth address"
-msgstr "Bluetooth-adres"
+msgstr "Bluetoothadres"
 
 #: plugins/about/PageComponent.qml:147 plugins/about/Storage.qml:31
 msgid "Storage"
@@ -106,7 +107,7 @@ msgstr "Software:"
 
 #: plugins/about/PageComponent.qml:168
 msgid "OS"
-msgstr "OS"
+msgstr "Besturingssysteem"
 
 #: plugins/about/PageComponent.qml:180
 msgid "Last updated"
@@ -143,16 +144,12 @@ msgid "Scanning"
 msgstr "Scannen"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Systeeminstellingen"
+msgstr "Systeemruimte"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "In gebruik door apps"
+msgstr "In gebruik door systeem"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -168,19 +165,19 @@ msgstr "Afbeeldingen"
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Documenten"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -217,7 +214,7 @@ msgstr "Bijzonderheden van besturingssysteemversie"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Systeemupdatekanaal"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -225,11 +222,11 @@ msgstr "Versienummer van besturingssysteem"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Bouw-abi"
 
 #: plugins/about/Version.qml:86
 msgid "UBports Image part"
@@ -237,7 +234,7 @@ msgstr "UBports-schijfkopiedeel"
 
 #: plugins/about/Version.qml:94
 msgid "Ubuntu build description"
-msgstr "Beschrijving van Ubuntu-versie"
+msgstr "Beschrijving van Ubuntuversie"
 
 #: plugins/about/Version.qml:100
 msgid "Device Image part"
@@ -253,7 +250,7 @@ msgstr "Aanpassingsschijfkopiedeel"
 
 #: plugins/about/click.cpp:134
 msgid "Unknown title"
-msgstr "Onbekende titel"
+msgstr "Onbekende naam"
 
 #: plugins/background/Components/AddRemove.qml:42
 #: plugins/background/Preview.qml:110
@@ -291,30 +288,24 @@ msgid "Remove images…"
 msgstr "Afbeeldingen verwijderen…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Achtergrond"
+msgstr "Achtergrond en vormgeving"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Vervagingseffecten gebruiken"
 
 #: plugins/background/MainPage.qml:104
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Systeem"
+msgstr "Systeemkunst"
 
 #: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Aangepast"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Kies een verbinding"
+msgstr "Kies een app"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -358,7 +349,7 @@ msgstr[1] "%1 uur geleden"
 
 #: plugins/battery/PageComponent.qml:104
 msgid "Charge level"
-msgstr "Laadniveau"
+msgstr "Oplaadniveau"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
 #: plugins/battery/PageComponent.qml:112
@@ -425,7 +416,7 @@ msgstr[1] "Na %1 minuten"
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
 #: plugins/battery/PageComponent.qml:374
 msgid "Wi-Fi used for hotspot"
-msgstr "Wi-Fi-hotspot"
+msgstr "Wifi-hotspot"
 
 #: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
@@ -438,11 +429,11 @@ msgstr "Bluetooth"
 
 #: plugins/battery/SleepValues.qml:68
 msgid "Lock the device when it's not in use:"
-msgstr "Telefoon vergrendelen bij inactiviteit:"
+msgstr "Telefoon vergrendelen indien niet in gebruik:"
 
 #: plugins/battery/SleepValues.qml:69
 msgid "Put the device to sleep when it is not in use:"
-msgstr "Slaapstand inschakelen bij inactiviteit:"
+msgstr "Slaapstand inschakelen indien niet in gebruik:"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: plugins/battery/SleepValues.qml:81
@@ -466,14 +457,14 @@ msgstr "Het apparaat gaat niet in de slaapstand tijdens gesprekken of video's."
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:26
 msgid "Bluetooth Pairing Authorization Request"
-msgstr "Bluetooth-koppelingsverzoek"
+msgstr "Bluetoothkoppelingsverzoek"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:34
 #, qt-format
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
-msgstr "%1 wil met dit apparaat koppelen. Wil je dit toestaan?"
+msgstr "‘%1’ wil aan dit apparaat worden gekoppeld. Wil je dit toestaan?"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 msgid "Allow"
@@ -489,13 +480,13 @@ msgstr "Weigeren"
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:28
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:28
 msgid "Bluetooth Pairing Request"
-msgstr "Bluetooth-koppelingsverzoek"
+msgstr "Bluetoothkoppelingsverzoek"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device being paired
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
-msgstr "Bevestig dat de op '%1' getoonde pincode gelijk is aan deze"
+msgstr "Bevestig dat de op ‘%1’ getoonde pincode gelijk is aan deze"
 
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
@@ -647,7 +638,7 @@ msgstr "Apparaat vergeten"
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
 msgstr ""
-"Voer de volgende pincode in op %1 en druk op 'Enter' op het toetsenbord:"
+"Voer de volgende pincode in op ‘%1’ en druk vervolgens op de entertoets:"
 
 #: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
@@ -676,13 +667,13 @@ msgstr "Verbind een apparaat:"
 
 #: plugins/bluetooth/PageComponent.qml:352
 msgid "None detected"
-msgstr "Geen apparaat gedetecteerd"
+msgstr "Er zijn geen apparaten aangetroffen"
 
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:36
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:36
 #, qt-format
 msgid "PIN for '%1'"
-msgstr "Pincode voor '%1'"
+msgstr "Pincode voor ‘%1’"
 
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:62
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:63
@@ -705,13 +696,13 @@ msgstr "Automatisch bijstellen"
 
 #: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
-msgstr "Maakt het scherm helderder of donkerder, afhankelijk van de omgeving."
+msgstr ""
+"Maakt het scherm automatisch helderder of donkerder, afhankelijk van de "
+"omgeving."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "scherm"
+msgstr "Scherm"
 
 #: plugins/brightness/PageComponent.qml:141
 msgid "External display"
@@ -733,7 +724,7 @@ msgstr "Wireless Display"
 
 #: plugins/brightness/WifiDisplays.qml:112
 msgid "No displays detected"
-msgstr "Geen beeldscherm gedetecteerd"
+msgstr "Er is geen beeldscherm aangetroffen"
 
 #: plugins/brightness/WifiDisplays.qml:125
 msgid "Connected display:"
@@ -754,41 +745,37 @@ msgstr "Kies een beeldscherm:"
 #: plugins/brightness/WifiDisplaysAlert.qml:32
 #, qt-format
 msgid "This device failed to connect to %1."
-msgstr "Dit apparaat kan geen verbinding maken met %1."
+msgstr "Er kan geen verbinding worden gemaakt met ‘%1’."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
-msgstr "Er is een onbekende fout opgetreden tijdens het verbinden met %1."
+msgstr "Er is een onbekende fout opgetreden tijdens het verbinden met ‘%1’."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Uitzetten"
+msgstr "Oké"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Afbeeldingen"
+msgstr "Gebaren"
 
 #: plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Tikken om te klikken"
+msgstr "Tikken om te ontwaken"
 
 #: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Dubbeltik op het scherm om het scherm in te schakelen."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
-msgstr "Onbekende fout"
+msgstr "Onbekende foutmelding"
 
 #: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
 msgid "No reason given"
-msgstr "Geen reden gegeven"
+msgstr "Zonder reden"
 
 #: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
 msgid "Device is now managed"
@@ -815,7 +802,7 @@ msgstr "De ip-configuratie is niet meer geldig"
 
 #: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
 msgid "Your authentication details were incorrect"
-msgstr "Je authenticatiegegevens zijn onjuist"
+msgstr "De inloggegevens zijn onjuist"
 
 #: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
 msgid "802.1X supplicant disconnected"
@@ -883,11 +870,11 @@ msgstr "De module is nu beschikbaar"
 
 #: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
 msgid "The modem could not be found"
-msgstr "Geen modem aangetroffen"
+msgstr "Er is geen modem aangetroffen"
 
 #: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
 msgid "The Bluetooth connection failed or timed out"
-msgstr "De Bluetooth-verbinding is mislukt of verlopen"
+msgstr "De bluetoothverbinding is mislukt of verlopen"
 
 #: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
 msgid "A dependency of the connection failed"
@@ -899,7 +886,7 @@ msgstr "Modembeheer is niet beschikbaar"
 
 #: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
 msgid "The Wi-Fi network could not be found"
-msgstr "Het Wi-Fi-netwerk kan niet worden gevonden"
+msgstr "Het wifinetwerk is niet aangetroffen"
 
 #: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
 msgid "A secondary connection of the base connection failed"
@@ -919,7 +906,7 @@ msgstr "Hotspotnaam"
 
 #: plugins/hotspot/HotspotSetup.qml:168
 msgid "Choose a name"
-msgstr "Kies een naam"
+msgstr "Geef de hotspot een naam"
 
 #: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
@@ -932,15 +919,15 @@ msgstr "Wachtwoord tonen"
 
 #: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
-msgstr "Wi-Fi wordt ingeschakeld als je de hotspot start."
+msgstr "Wifi wordt ingeschakeld zodra je de hotspot aanzet."
 
 #: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
-msgstr "Aanpassen"
+msgstr "Wijzigen"
 
 #: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
-msgstr "Starten"
+msgstr "Aanzetten"
 
 #: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
@@ -951,7 +938,7 @@ msgid ""
 "When hotspot is on, other devices can use your cellular data connection over "
 "Wi-Fi. Normal data charges apply."
 msgstr ""
-"Als de hotspot is ingeschakeld, kunnen andere apparaten via Wi-Fi "
+"Als de hotspot is ingeschakeld, kunnen andere apparaten via wifi "
 "gebruikmaken van je mobiele internet. Hiervoor worden mogelijk extra kosten "
 "in rekening gebracht."
 
@@ -960,7 +947,7 @@ msgid ""
 "Other devices can use your cellular data connection over the Wi-Fi network. "
 "Normal data charges apply."
 msgstr ""
-"Andere apparaten kunnen via Wi-Fi gebruikmaken van je mobiele internet. "
+"Andere apparaten kunnen via wifi gebruikmaken van je mobiele internet. "
 "Hiervoor worden mogelijk extra kosten in rekening gebracht."
 
 #: plugins/hotspot/PageComponent.qml:124
@@ -977,7 +964,7 @@ msgstr "Wifi is uitgeschakeld"
 
 #: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
-msgstr "Schakel Wifi in om een hotspot op te zetten."
+msgstr "Schakel wifi in om een hotspot op te zetten."
 
 #: plugins/hotspot/PageComponent.qml:160
 msgid "Turn on Wi-Fi"
@@ -990,7 +977,7 @@ msgstr "Weergavetaal"
 #: plugins/language/DisplayLanguage.qml:55
 #: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
-msgstr "Vorige"
+msgstr "Terug"
 
 #: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
@@ -1055,15 +1042,15 @@ msgstr "Gewoon grijs"
 
 #: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr "Omrand wit"
+msgstr "Wit omrand"
 
 #: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr "Omrand zwart"
+msgstr "Zwart omrand"
 
 #: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr "Omrand grijs"
+msgstr "Grijs omrand"
 
 #: plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
@@ -1081,20 +1068,20 @@ msgstr "Spellingcontrole"
 
 #: plugins/language/PageComponent.qml:229
 msgid "Auto correction"
-msgstr "Automatische woordcorrectie"
+msgstr "Automatisch corrigeren"
 
 #: plugins/language/PageComponent.qml:240
 msgid "Word suggestions"
-msgstr "Woordsuggesties"
+msgstr "Suggesties tonen"
 
 #: plugins/language/PageComponent.qml:254
 msgid "Auto capitalization"
-msgstr "Automatische hoofdletters"
+msgstr "Automatische beginhoofdletters"
 
 #: plugins/language/PageComponent.qml:265
 msgid "Turns on Shift to capitalize the first letter of each sentence."
 msgstr ""
-"Zet Shift vast om iedere zin automatisch met een hoofdletter te laten "
+"Zet shift vast om iedere zin automatisch met een hoofdletter te laten "
 "beginnen."
 
 #: plugins/language/PageComponent.qml:272
@@ -1103,11 +1090,11 @@ msgstr "Automatische interpunctie"
 
 #: plugins/language/PageComponent.qml:284
 msgid "Inserts a period when you tap Space twice."
-msgstr "Voegt een punt toe als je tweemaal op Spatie drukt."
+msgstr "Plaats een punt door tweemaal op de spatiebalk te drukken."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Toetsvergroting"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1146,10 +1133,8 @@ msgid "All languages available:"
 msgstr "Alle beschikbare talen:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Standaardwaarden herstellen"
+msgstr "Bureaublad en starter"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1157,11 +1142,11 @@ msgstr "Op grote schermen:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Werkbladen gebruiken"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Ondersteuning voor meerdere virtuele werkbladen"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1170,7 +1155,7 @@ msgstr "Starter altijd tonen"
 #: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
 msgstr ""
-"Video’s en beeldvullende spellen kunnen de starter tijdelijk verbergen."
+"Video’s en schermvullende spellen kunnen de starter tijdelijk verbergen."
 
 #: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
@@ -1218,7 +1203,7 @@ msgstr "Tijdens het typen"
 
 #: plugins/mouse/Connected.qml:446
 msgid "A mouse is connected"
-msgstr "Als er een muis is aangesloten"
+msgstr "Bij gebruik van een muis"
 
 #: plugins/mouse/None.qml:34
 msgid ""
@@ -1226,17 +1211,17 @@ msgid ""
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
 "are charged."
 msgstr ""
-"Sluit een muis of touchpad aan via USB, of verbind met een Bluetooth-"
-"apparaat. Als je Bluetooth-apparaat niet wordt gedetecteerd, controleer dan "
-"of deze aan staat en de batterijen zijn opgeladen."
+"Sluit een muis of touchpad aan via usb of maak verbinding met een "
+"bluetoothapparaat. Als je bluetoothapparaat niet wordt herkend, controleer "
+"dan of het apparaat aan staat en de batterijen/accu zijn opgeladen."
 
 #: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
-"Voor dit scherm is een Bluetooth-muis of -touchpad vereist. Controleer of "
-"het apparaat binnen bereik is en de batterijen zijn opgeladen."
+"Voor dit scherm is een bluetoothmuis of -touchpad vereist. Controleer of het "
+"apparaat binnen bereik is en de batterijen/accu zijn opgeladen."
 
 #: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
@@ -1264,79 +1249,73 @@ msgstr "Gedubbelklikt"
 
 #: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
-msgstr ""
+msgstr "Nfc"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:73
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Noodmeldingen"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "De module is nu beschikbaar"
+msgstr "Noodmeldingen zijn niet beschikbaar"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Noodmeldingen zijn ingeschakeld"
 
 #: plugins/notifications/CellBroadcast.qml:155
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Noodmeldingen zijn uitgeschakeld"
 
 #: plugins/notifications/CellBroadcast.qml:165
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "waarschuwingen"
+msgstr "Meldingen:"
 
 #: plugins/notifications/CellBroadcast.qml:171
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Noodmeldingen tonen"
 
 #: plugins/notifications/CellBroadcast.qml:184
 msgid "Extreme threats"
-msgstr ""
+msgstr "Extreem gevaar"
 
 #: plugins/notifications/CellBroadcast.qml:185
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Extreem levens- en eigendomsgevaar"
 
 #: plugins/notifications/CellBroadcast.qml:198
 msgid "Severe threats"
-msgstr ""
+msgstr "Ernstig gevaar"
 
 #: plugins/notifications/CellBroadcast.qml:199
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Ernstig levens- en eigendomsgevaar"
 
 #: plugins/notifications/CellBroadcast.qml:212
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "AMBER Alerts"
 
 #: plugins/notifications/CellBroadcast.qml:213
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Meldingen omtrent kindontvoeringen"
 
 #: plugins/notifications/CellBroadcast.qml:226
 msgid "Public safety messages"
-msgstr ""
+msgstr "Openbareveiligheidsmeldingen"
 
 #: plugins/notifications/CellBroadcast.qml:227
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Aanbevolen handelingen om levens en eigendommen te redden"
 
 #: plugins/notifications/CellBroadcast.qml:240
 msgid "Tests"
-msgstr ""
+msgstr "Testen"
 
 #: plugins/notifications/CellBroadcast.qml:241
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "waarschuwingen"
+msgstr "Testmeldingen"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:29
@@ -1405,8 +1384,8 @@ msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr ""
-"Apps kunnen je waarschuwen middels meldingen, geluiden, trillingen en de "
-"meldingenlijst."
+"Apps kunnen je op de hoogte brengen met behulp van meldingen, geluiden, "
+"trillingen en de meldingenlijst."
 
 #: plugins/notifications/PageComponent.qml:122
 msgid "Apps that notify with sound"
@@ -1439,11 +1418,11 @@ msgstr "Apparaten"
 
 #: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
-msgstr "Geen apparaten aangetroffen."
+msgstr "Er zijn geen apparaten aangetroffen."
 
 #: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
-msgstr "Omschrijf de printer"
+msgstr "Beschrijf de printer"
 
 #: plugins/printing/AddPrinterDetails.qml:137
 msgid "Connection"
@@ -1461,7 +1440,7 @@ msgstr "Printernaam"
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
 #: plugins/printing/printer-sub-pages/Status.qml:66
 msgid "Description"
-msgstr "Omschrijving"
+msgstr "Beschrijving"
 
 #: plugins/printing/AddPrinterDetails.qml:204
 #: plugins/printing/AddPrinterDetails.qml:211
@@ -1483,11 +1462,11 @@ msgstr "Kies een stuurprogramma"
 
 #: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
-msgstr "Kies een printer uit de lijst"
+msgstr "Kies een printer op de lijst"
 
 #: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
-msgstr "Geef een ppd-bestand op"
+msgstr "Kies een ppd-bestand"
 
 #: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
@@ -1495,7 +1474,7 @@ msgstr "Stuurprogramma's filteren"
 
 #: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
-msgstr "PPD-bestand"
+msgstr "Ppd-bestand"
 
 #: plugins/printing/PageComponent.qml:32
 msgid "Printing"
@@ -1528,7 +1507,7 @@ msgstr "Instellen als standaard"
 
 #: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
-msgstr "Je hebt nog geen printers ingesteld."
+msgstr "Er zijn nog geen printers ingesteld."
 
 #: plugins/printing/Printer.qml:42
 msgid "Printer status"
@@ -1615,7 +1594,7 @@ msgstr "%1 — %2"
 
 #: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
-msgstr "Geen berichten"
+msgstr "Er zijn geen berichten"
 
 #: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
@@ -1659,7 +1638,7 @@ msgstr "Apparaat opnieuw instellen"
 
 #: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
-msgstr "Standaardwaarden herstellen"
+msgstr "Starter opnieuw instellen"
 
 #: plugins/reset/PageComponent.qml:84 plugins/reset/ResetLauncherHome.qml:40
 msgid "The Launcher will be returned to its original contents."
@@ -1674,7 +1653,7 @@ msgid ""
 "The contents and layout of the launcher, and the filters in the home screen "
 "will be returned to their original settings."
 msgstr ""
-"De inhoud en vormgeving van de starter en de filters op het thuisscherm "
+"De inhoud en vormgeving van de starter en de filters op het startscherm "
 "worden teruggezet op de standaardinstellingen."
 
 #: plugins/reset/PageComponent.qml:108
@@ -1683,7 +1662,7 @@ msgstr "Alles wissen en terugzetten op standaardwaarden"
 
 #: plugins/reset/ResetAllSettings.qml:31
 msgid "Reset all system settings"
-msgstr "Systeeminstellingen herstellen"
+msgstr "Systeeminstellingen opnieuw instellen"
 
 #: plugins/sound/PageComponent.qml:76
 msgid "Silent Mode"
@@ -1742,10 +1721,8 @@ msgid "Other vibrations"
 msgstr "Andere trillingen"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Trillen en geluid afspelen"
+msgstr "Eigen berichtgeluid kiezen"
 
 #: plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
@@ -1779,7 +1756,7 @@ msgstr "Voer je huidige locatie in."
 
 #: plugins/time-date/ChooseTimeZone.qml:131
 msgid "No matching place"
-msgstr "Locatie niet gevonden"
+msgstr "Er is geen locatie gevonden"
 
 #: plugins/time-date/PageComponent.qml:31
 msgid "Time and Date"
@@ -1807,23 +1784,23 @@ msgstr "Datum"
 
 #: plugins/vpn/PageComponent.qml:31
 msgid "VPN"
-msgstr "VPN"
+msgstr "Vpn"
 
 #: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr ""
-"Om een VPN-configuratie toe te voegen, moet je het bijbehorende "
-"configbestand downloaden of handmatig instellen."
+"Om een vpn-configuratie toe te voegen, moet je het bijbehorende "
+"configuratiebestand downloaden of handmatig instellen."
 
 #: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
-msgstr "Handmatige configuratie toevoegen…"
+msgstr "Eigen configuratie toevoegen…"
 
 #: plugins/vpn/PageComponent.qml:117
 msgid "VPN reconnection required."
-msgstr "Herverbinden met VPN vereist."
+msgstr "Herverbind met de vpn."
 
 #: plugins/vpn/PageComponent.qml:118
 msgid "You need to reconnect for changes to have an effect."
@@ -1847,7 +1824,7 @@ msgstr "Inhoud:"
 
 #: plugins/wifi/CertDialog.qml:49
 msgid "No data available."
-msgstr "Geen updates beschikbaar."
+msgstr "Er zijn geen gegevens beschikbaar."
 
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
@@ -1871,7 +1848,7 @@ msgstr "Netwerk vergeten"
 
 #: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
-msgstr "IP-adres"
+msgstr "Ip-adres"
 
 #: plugins/wifi/OtherNetwork.qml:92
 msgid "Connect to Wi‑Fi"
@@ -1887,7 +1864,7 @@ msgstr "Netwerknaam"
 
 #: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
-msgstr "Wifi-naam (SSID)"
+msgstr "Wifinaam (SSID)"
 
 #: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
@@ -2049,7 +2026,7 @@ msgstr "Verbinden met verborgen netwerk…"
 
 #: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
-msgstr "Eerdere netwerken"
+msgstr "Eerder gebruikte netwerken"
 
 #: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
@@ -2077,7 +2054,7 @@ msgstr "Persoonlijk"
 
 #: src/qml/MainWindow.qml:251
 msgid "System"
-msgstr "Systeem"
+msgstr "Systeemthema"
 
 #~ msgid "Unavailable"
 #~ msgstr "Niet beschikbaar"
