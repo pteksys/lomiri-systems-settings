@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-04 18:55+0000\n"
+"POT-Creation-Date: 2023-02-24 06:53+0000\n"
 "PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/"
-"lomiri-system-settings/nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/lomiri/lomiri-"
+"system-settings/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1253,7 +1253,7 @@ msgstr "Nfc"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
-#: plugins/notifications/PageComponent.qml:73
+#: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
 msgstr "Noodmeldingen"
 
@@ -1261,64 +1261,64 @@ msgstr "Noodmeldingen"
 msgid "Cell Broadcast is not available"
 msgstr "Noodmeldingen zijn niet beschikbaar"
 
-#: plugins/notifications/CellBroadcast.qml:155
+#: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
 msgstr "Noodmeldingen zijn ingeschakeld"
 
-#: plugins/notifications/CellBroadcast.qml:155
+#: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
 msgstr "Noodmeldingen zijn uitgeschakeld"
 
-#: plugins/notifications/CellBroadcast.qml:165
+#: plugins/notifications/CellBroadcast.qml:167
 msgid "Alerts:"
 msgstr "Meldingen:"
 
-#: plugins/notifications/CellBroadcast.qml:171
+#: plugins/notifications/CellBroadcast.qml:173
 msgid "Receive emergency notifications"
 msgstr "Noodmeldingen tonen"
 
-#: plugins/notifications/CellBroadcast.qml:184
+#: plugins/notifications/CellBroadcast.qml:186
 msgid "Extreme threats"
 msgstr "Extreem gevaar"
 
-#: plugins/notifications/CellBroadcast.qml:185
+#: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
 msgstr "Extreem levens- en eigendomsgevaar"
 
-#: plugins/notifications/CellBroadcast.qml:198
+#: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
 msgstr "Ernstig gevaar"
 
-#: plugins/notifications/CellBroadcast.qml:199
+#: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
 msgstr "Ernstig levens- en eigendomsgevaar"
 
-#: plugins/notifications/CellBroadcast.qml:212
+#: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
 msgstr "AMBER Alerts"
 
-#: plugins/notifications/CellBroadcast.qml:213
+#: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
 msgstr "Meldingen omtrent kindontvoeringen"
 
-#: plugins/notifications/CellBroadcast.qml:226
+#: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
 msgstr "Openbareveiligheidsmeldingen"
 
-#: plugins/notifications/CellBroadcast.qml:227
+#: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
 msgstr "Aanbevolen handelingen om levens en eigendommen te redden"
 
-#: plugins/notifications/CellBroadcast.qml:240
+#: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
 msgstr "Testen"
 
-#: plugins/notifications/CellBroadcast.qml:241
+#: plugins/notifications/CellBroadcast.qml:243
 msgid "Tests alerts"
 msgstr "Testmeldingen"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
-#: plugins/notifications/PageComponent.qml:29
+#: plugins/notifications/PageComponent.qml:30
 msgid "Notifications"
 msgstr "Meldingen"
 
@@ -1327,12 +1327,12 @@ msgid "Let this app alert me using:"
 msgstr "Deze app mag meldingen geven middels:"
 
 #: plugins/notifications/ClickAppNotifications.qml:91
-#: plugins/notifications/PageComponent.qml:208
+#: plugins/notifications/PageComponent.qml:215
 msgid "Sounds"
 msgstr "Geluiden"
 
 #: plugins/notifications/ClickAppNotifications.qml:114
-#: plugins/notifications/PageComponent.qml:211
+#: plugins/notifications/PageComponent.qml:218
 msgid "Vibrations"
 msgstr "Trillingen"
 
@@ -1341,7 +1341,7 @@ msgid "Notification Bubbles"
 msgstr "Meldingsballonnen"
 
 #: plugins/notifications/ClickAppNotifications.qml:160
-#: plugins/notifications/PageComponent.qml:217
+#: plugins/notifications/PageComponent.qml:224
 msgid "Notification List"
 msgstr "Meldingenlijst"
 
@@ -1374,12 +1374,12 @@ msgstr "Niet trillen"
 msgid "Apps that notify with vibrations:"
 msgstr "Apps die trillen bij meldingen:"
 
-#: plugins/notifications/PageComponent.qml:84
-#: plugins/notifications/PageComponent.qml:174
+#: plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:181
 msgid "Applications:"
 msgstr "Apps:"
 
-#: plugins/notifications/PageComponent.qml:106
+#: plugins/notifications/PageComponent.qml:113
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
@@ -1387,19 +1387,19 @@ msgstr ""
 "Apps kunnen je op de hoogte brengen met behulp van meldingen, geluiden, "
 "trillingen en de meldingenlijst."
 
-#: plugins/notifications/PageComponent.qml:122
+#: plugins/notifications/PageComponent.qml:129
 msgid "Apps that notify with sound"
 msgstr "Apps die geluid maken bij meldingen"
 
-#: plugins/notifications/PageComponent.qml:148
+#: plugins/notifications/PageComponent.qml:155
 msgid "Apps that notify with vibration"
 msgstr "Apps die trillen bij meldingen"
 
-#: plugins/notifications/PageComponent.qml:203
+#: plugins/notifications/PageComponent.qml:210
 msgid "No notifications"
 msgstr "Geen meldingen"
 
-#: plugins/notifications/PageComponent.qml:214
+#: plugins/notifications/PageComponent.qml:221
 msgid "Bubbles"
 msgstr "Ballonnen"
 

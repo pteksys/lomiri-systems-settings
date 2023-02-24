@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-04 18:55+0000\n"
+"POT-Creation-Date: 2023-02-24 06:53+0000\n"
 "PO-Revision-Date: 2020-10-26 22:41+0000\n"
 "Last-Translator: Adria <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports/"
@@ -1282,7 +1282,7 @@ msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
-#: plugins/notifications/PageComponent.qml:73
+#: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
 msgstr ""
 
@@ -1292,68 +1292,68 @@ msgstr ""
 msgid "Cell Broadcast is not available"
 msgstr "Su suplicante est a disponimentu"
 
-#: plugins/notifications/CellBroadcast.qml:155
+#: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:155
+#: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:165
+#: plugins/notifications/CellBroadcast.qml:167
 #, fuzzy
 #| msgid "alerts"
 msgid "Alerts:"
 msgstr "avisos"
 
-#: plugins/notifications/CellBroadcast.qml:171
+#: plugins/notifications/CellBroadcast.qml:173
 msgid "Receive emergency notifications"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:184
+#: plugins/notifications/CellBroadcast.qml:186
 msgid "Extreme threats"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:185
+#: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:198
+#: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:199
+#: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:212
+#: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:213
+#: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:226
+#: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:227
+#: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:240
+#: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
 msgstr ""
 
-#: plugins/notifications/CellBroadcast.qml:241
+#: plugins/notifications/CellBroadcast.qml:243
 #, fuzzy
 #| msgid "alerts"
 msgid "Tests alerts"
 msgstr "avisos"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
-#: plugins/notifications/PageComponent.qml:29
+#: plugins/notifications/PageComponent.qml:30
 msgid "Notifications"
 msgstr "Notìficas"
 
@@ -1362,12 +1362,12 @@ msgid "Let this app alert me using:"
 msgstr "Permite chi custa aplicatzione m'avertat impreende:"
 
 #: plugins/notifications/ClickAppNotifications.qml:91
-#: plugins/notifications/PageComponent.qml:208
+#: plugins/notifications/PageComponent.qml:215
 msgid "Sounds"
 msgstr "Sonos"
 
 #: plugins/notifications/ClickAppNotifications.qml:114
-#: plugins/notifications/PageComponent.qml:211
+#: plugins/notifications/PageComponent.qml:218
 msgid "Vibrations"
 msgstr "Vibratziones"
 
@@ -1376,7 +1376,7 @@ msgid "Notification Bubbles"
 msgstr "Bussicas de notìfica"
 
 #: plugins/notifications/ClickAppNotifications.qml:160
-#: plugins/notifications/PageComponent.qml:217
+#: plugins/notifications/PageComponent.qml:224
 msgid "Notification List"
 msgstr "Lista de notìficas"
 
@@ -1409,12 +1409,12 @@ msgstr "Sena vibratzione"
 msgid "Apps that notify with vibrations:"
 msgstr "Aplicatziones chi impreant notìficas cun vibratzione:"
 
-#: plugins/notifications/PageComponent.qml:84
-#: plugins/notifications/PageComponent.qml:174
+#: plugins/notifications/PageComponent.qml:91
+#: plugins/notifications/PageComponent.qml:181
 msgid "Applications:"
 msgstr "Aplicatziones:"
 
-#: plugins/notifications/PageComponent.qml:106
+#: plugins/notifications/PageComponent.qml:113
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
@@ -1422,19 +1422,19 @@ msgstr ""
 "Unas cantas aplicatziones ti podent avèrtere cun sonos, vibratziones, "
 "bussicas e su Tzentru de notìficas."
 
-#: plugins/notifications/PageComponent.qml:122
+#: plugins/notifications/PageComponent.qml:129
 msgid "Apps that notify with sound"
 msgstr "Aplicatziones chi impreant notìficas de sonos"
 
-#: plugins/notifications/PageComponent.qml:148
+#: plugins/notifications/PageComponent.qml:155
 msgid "Apps that notify with vibration"
 msgstr "Aplicatziones chi impreant notìficas cun vibratzione"
 
-#: plugins/notifications/PageComponent.qml:203
+#: plugins/notifications/PageComponent.qml:210
 msgid "No notifications"
 msgstr "Sena notìficas"
 
-#: plugins/notifications/PageComponent.qml:214
+#: plugins/notifications/PageComponent.qml:221
 msgid "Bubbles"
 msgstr "Bussicas"
 
