@@ -1,6 +1,6 @@
 add_library(LomiriSystemSettings SHARED item-base.cpp item-base.h)
 set_target_properties(LomiriSystemSettings PROPERTIES
-VERSION 1.0.0
+VERSION 1.0.1
 SOVERSION 1
 )
 

@@ -1,6 +1,90 @@
+2023-02-24 Mike Gabriel
+
+        * Release 1.0.1 (HEAD -> main, tag: 1.0.1)
+
+2023-02-24 Hosted Weblate
+
+        * Update translation files (3ca3c620)
+
+2023-02-24 Mike Gabriel
+
+        * po/lomiri-system-settings.pot: Update file (line numbers in source
+          files only). (de04a6a5)
+
+2023-02-20 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (a2c579be)
+
+2023-02-19 Sergii Horichenko
+
+        * Translated using Weblate (Russian) (457d4b40)
+
+2023-02-22 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (ffcd6a51)
+
+2023-02-22 Mike Gabriel
+
+        * Merge branch 'personal/lduboeuf/cbdisplay_check' into 'main'
+          (6abbd453)
+
+2023-02-21 Lionel Duboeuf
+
+        * Only display Cell broadcast category if device support Ofono
+          (88fbc19a)
+
+2023-02-18 Sergii Horichenko
+
+        * Translated using Weblate (Russian) (69400634)
+
+2023-02-18 gnu-ewm
+
+        * Translated using Weblate (Polish) (619db4a9)
+
+2023-02-16 phlostically
+
+        * Translated using Weblate (Esperanto) (eafcbf46)
+
+2023-02-13 Adolfo Jayme Barrientos
+
+        * Translated using Weblate (Spanish) (db6c0bb0)
+
+2023-02-11 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (dff1963e)
+
+2023-02-09 Mike Gabriel
+
+        * Merge branch 'personal/lduboeuf/fix_cb_layout' into 'main'
+          (9fcadc2e)
+
+2023-02-09 Lionel Duboeuf
+
+        * fix cellbroadcast page layout issue (51ac0bd7)
+
+2023-02-07 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (ab0b5167)
+
+2023-02-06 Sergii Horichenko
+
+        * Translated using Weblate (Ukrainian) (d27f17c4)
+
+2023-02-06 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (4ca35c10)
+
+2023-02-06 Dan
+
+        * Translated using Weblate (Ukrainian) (2f702904)
+
+2023-02-06 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (33e036bd)
+
 2023-02-06 Mike Gabriel
 
-        * Release 1.0 (HEAD -> main, tag: 1.0)
+        * Release 1.0 (241a6fb5) (tag: 1.0)
 
 2023-02-05 gnu-ewm
 
