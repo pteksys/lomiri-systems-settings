@@ -25,7 +25,7 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Connectivity 1.0
 import Ubuntu.SystemSettings.Update 1.0
-
+import "ChUtils.js" as ChUtils
 
 ItemPage {
     id: root
@@ -53,21 +53,32 @@ ItemPage {
     }
 
     function appendChannels() {
+      /* FIXME: this code relies on channels being named in a certain way.
+       * TODO: it would be nice to have a labeled divider for each series.
+       */
+
       if (channelSelectorModel.count !== 0)
         return;
-      var prettyChannels = {"stable": i18n.tr("Stable"), "rc": i18n.tr("Release candidate"), "devel": i18n.tr("Development")}
+
+      let current = ChUtils.parseChannel(SystemImage.getSwitchChannel());
+
       SystemImage.getChannels().forEach(function (_channel) {
-          var channel = _channel.split("/");
-          var prettyChannel = prettyChannels[channel[channel.length-1]] ? prettyChannels[channel[channel.length-1]] : channel[channel.length-1];
-          channelSelectorModel.append({ name: prettyChannel, description: "", channel: _channel});
+          let channel = ChUtils.parseChannel(_channel)
+
+          /* Try to prevent series downgrading from the UI - still possible via CLI/installer.
+           * Because series value are in a certain format, we can rely on lexical ordering here */
+          if (channel.series < current.series)
+            return;
+
+          channelSelectorModel.append({ name: channel.prettyName, description: "", channel: _channel});
       });
       setSelectedChannel();
     }
 
     function setSelectedChannel() {
-      var selNum = 0;
+      var selNum = -1;
       var channel = SystemImage.getSwitchChannel();
-      for (var i = 0; i <= channelSelectorModel.count; i++) {
+      for (var i = 0; i < channelSelectorModel.count; i++) {
         if (channelSelectorModel.get(i).channel === channel){
             selNum = i;
             break;

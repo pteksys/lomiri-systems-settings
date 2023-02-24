@@ -24,7 +24,7 @@ import Ubuntu.Components 1.3
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Ubuntu.Connectivity 1.0
 import Ubuntu.SystemSettings.Update 1.0
-
+import "ChUtils.js" as ChUtils
 
 ItemPage {
     id: updatePage
@@ -68,11 +68,11 @@ ItemPage {
             SettingsListItems.SingleValueProgression {
                 objectName: "channel"
                 text: i18n.tr("Channels")
-                property var channel: SystemImage.getSwitchChannel().split("/")
+                property var channel: SystemImage.getSwitchChannel()
                 visible: channel.length < 2 ? false : true
                 value: {
-                  var prettyChannels = {"stable": i18n.tr("Stable"), "rc": i18n.tr("Release candidate"), "devel": i18n.tr("Development")}
-                  return prettyChannels[channel[channel.length-1]] ? prettyChannels[channel[channel.length-1]] : channel[channel.length-1]
+                  let parsed = ChUtils.parseChannel(channel);
+                  return parsed.prettyName;
                 }
                 onClicked: pageStack.addPageToNextColumn(updatePage, Qt.resolvedUrl("ChannelSettings.qml"))
             }
