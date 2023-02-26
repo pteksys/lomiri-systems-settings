@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2020-08-26 00:00+0000\n"
-"Last-Translator: Arvid Brodin <arvidb@fripost.org>\n"
-"Language-Team: Swedish <https://translate.ubports.com/projects/ubports/"
-"system-settings/sv/>\n"
+"PO-Revision-Date: 2023-02-27 18:38+0000\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -41,13 +41,12 @@ msgid "Developer Mode"
 msgstr "Utvecklarläge"
 
 #: plugins/about/DevMode.qml:83
-#, fuzzy
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
 msgstr ""
 "I utvecklarläge kan vem som helst komma åt, ändra eller ta bort vad som "
-"helst på denna telefon genom att ansluta den till en annan enhet."
+"helst på denna enheten genom att ansluta den till en annan enhet."
 
 #: plugins/about/DevMode.qml:108
 msgid "You need a passcode or passphrase set to use Developer Mode."
@@ -157,7 +156,7 @@ msgstr "Använd av program"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
-msgstr "Filmer"
+msgstr "Videor"
 
 #: plugins/about/Storage.qml:126
 msgid "Audio"
@@ -169,11 +168,11 @@ msgstr "Bilder"
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Dokument"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Nerladdningar"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
@@ -327,7 +326,7 @@ msgstr "Ta bort avbild"
 
 #: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
-msgstr "Ange"
+msgstr "Ställ in"
 
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
@@ -1057,7 +1056,7 @@ msgstr "tangentbord"
 
 #: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
-msgstr ""
+msgstr "Atmosfär"
 
 #: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
@@ -1645,11 +1644,11 @@ msgstr ""
 
 #: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
-msgstr ""
+msgstr "Inaktiv"
 
 #: plugins/printing/printer-sub-pages/Status.qml:32
 msgid "Aborted"
-msgstr ""
+msgstr "Avbruten"
 
 #: plugins/printing/printer-sub-pages/Status.qml:34
 msgid "Active"
@@ -1657,7 +1656,7 @@ msgstr "Aktiv"
 
 #: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
-msgstr ""
+msgstr "Stoppad"
 
 #. TRANSLATORS: %1 is the overall state of the printer, %2 is a more
 #. detailed message from the printer itself.
@@ -1667,9 +1666,8 @@ msgid "%1 — %2"
 msgstr ""
 
 #: plugins/printing/printer-sub-pages/Status.qml:43
-#, fuzzy
 msgid "No messages"
-msgstr "meddelande"
+msgstr "Inga meddelanden"
 
 #: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
@@ -1773,9 +1771,8 @@ msgid "Vibrate in Silent Mode"
 msgstr "Vibrera i tyst läge"
 
 #: plugins/sound/PageComponent.qml:194
-#, fuzzy
 msgid "Dialpad tones"
-msgstr "Ljud för knappsats"
+msgstr "Knappsats toner"
 
 #: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
