@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-02-27 18:38+0000\n"
+"PO-Revision-Date: 2023-03-01 12:36+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16-rc\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -140,19 +140,15 @@ msgstr "Utvecklarläge"
 
 #: plugins/about/Storage.qml:43
 msgid "Scanning"
-msgstr ""
+msgstr "Skanning"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Systeminställningar"
+msgstr "System reserverat"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Använd av program"
+msgstr "Används av system"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -176,11 +172,11 @@ msgstr "Nerladdningar"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -217,7 +213,7 @@ msgstr "OS-byggdetaljer"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "OS uppdateringskanal"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -225,11 +221,11 @@ msgstr "OS-byggnummer"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kärna"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "ByggABI"
 
 #: plugins/about/Version.qml:86
 #, fuzzy
@@ -292,29 +288,24 @@ msgid "Remove images…"
 msgstr "Tar bort bilder…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Bakgrund"
+msgstr "Bakgrund & utseende"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Aktivera oskärpa effekter"
 
 #: plugins/background/MainPage.qml:104
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "System"
+msgstr "Systemkonst"
 
 #: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Anpassad"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
 msgid "Choose application"
-msgstr "Välj lösenfras"
+msgstr "Välj applikationer"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -405,11 +396,11 @@ msgstr "Vänteläge om inaktiv"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: plugins/battery/PageComponent.qml:331
-#, fuzzy, qt-format
+#, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
-msgstr[0] "Efter %1 minut"
-msgstr[1] "Efter %1 minuter"
+msgstr[0] "Efter %1 sekund"
+msgstr[1] "Efter %1 sekunder"
 
 #. TRANSLATORS: %1 is the number of minutes
 #: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
@@ -424,9 +415,8 @@ msgstr[1] "Efter %1 minuter"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
 #: plugins/battery/PageComponent.qml:374
-#, fuzzy
 msgid "Wi-Fi used for hotspot"
-msgstr "Wi-Fi surfzon"
+msgstr "Wi-Fi används för hotspot"
 
 #: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
@@ -438,43 +428,36 @@ msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #: plugins/battery/SleepValues.qml:68
-#, fuzzy
 msgid "Lock the device when it's not in use:"
-msgstr "Lås telefonen när den inte används:"
+msgstr "Lås enheten när den inte används:"
 
 #: plugins/battery/SleepValues.qml:69
-#, fuzzy
 msgid "Put the device to sleep when it is not in use:"
-msgstr "Försätt telefonen i vänteläge när den inte används:"
+msgstr "Lägg enheten i sömn när den inte används:"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: plugins/battery/SleepValues.qml:81
-#, fuzzy, qt-format
+#, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
-msgstr[0] "Efter %1 minut"
-msgstr[1] "Efter %1 minuter"
+msgstr[0] "Efter %1 sekund"
+msgstr[1] "Efter %1 sekunder"
 
 #: plugins/battery/SleepValues.qml:125
-#, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr ""
-"Kortare tider ger mer säkerhet. Telefonen kommer inte att låsas under samtal "
+"Kortare tider ger mer säkerhet. Enheten kommer inte att låsas under samtal "
 "eller videouppspelning."
 
 #: plugins/battery/SleepValues.qml:125
-#, fuzzy
 msgid "Device won’t sleep during calls or video playback."
-msgstr ""
-"Telefon kommer inte att försättas i vänteläge under samtal eller "
-"videouppspelning."
+msgstr "Telefon kommer inte att sova under samtal eller videouppspelning."
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:26
-#, fuzzy
 msgid "Bluetooth Pairing Authorization Request"
-msgstr "Bluetooth-begäran om ihopparning"
+msgstr "Bluetooth parningsbehörighetsförfrågan"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:34
@@ -482,15 +465,15 @@ msgstr "Bluetooth-begäran om ihopparning"
 msgid ""
 "The device %1 wants to pair with this device. Do you want to allow this?"
 msgstr ""
+"Denna enhet %1 vill para ihop med den här enheten. Vill du tillåta detta?"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:39
-#, fuzzy
 msgid "Allow"
-msgstr "tillåt"
+msgstr "Tillåt"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
-msgstr ""
+msgstr "Vägra"
 
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:28
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:26
@@ -593,7 +576,7 @@ msgstr "Kamera"
 
 #: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
-msgstr ""
+msgstr "Klocka"
 
 #: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
@@ -655,7 +638,7 @@ msgstr "Glöm denna enhet"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
-msgstr ""
+msgstr "Ange följande PIN på %1 och tryck på \"Enter\" på tangentbordet:"
 
 #: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
@@ -667,9 +650,8 @@ msgstr "Ej upptäckbar"
 
 #: plugins/bluetooth/PageComponent.qml:260
 #: plugins/bluetooth/PageComponent.qml:319
-#, fuzzy
 msgid "Searching…"
-msgstr "Startar om…"
+msgstr "Söker…"
 
 #: plugins/bluetooth/PageComponent.qml:269
 msgid "Connected devices:"
@@ -700,9 +682,8 @@ msgstr "Parkoppla"
 
 #: plugins/brightness/PageComponent.qml:35
 #: plugins/brightness/plugin/brightness-plugin.cpp:67
-#, fuzzy
 msgid "Brightness & Display"
-msgstr "Ljusstyrka"
+msgstr "Ljusstyrka & skärm"
 
 #: plugins/brightness/PageComponent.qml:35
 #: plugins/brightness/plugin/brightness-plugin.cpp:65
@@ -718,66 +699,56 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Anpassar ljusstyrka och tonar ned displayen för passa omgivningarna."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "display"
+msgstr "Skärm"
 
 #: plugins/brightness/PageComponent.qml:141
-#, fuzzy
 msgid "External display"
-msgstr "display"
+msgstr "Extern skärm"
 
 #: plugins/brightness/PageComponent.qml:158
-#, fuzzy
 msgid "Wireless display"
-msgstr "display"
+msgstr "Trådlös skärm"
 
 #: plugins/brightness/PageComponent.qml:159
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
-#, fuzzy
 msgid "Not connected"
-msgstr "Senast ansluten"
+msgstr "Inte ansluten"
 
 #: plugins/brightness/WifiDisplays.qml:27
 msgid "Wireless Display"
-msgstr ""
+msgstr "Trådlös skärm"
 
 #: plugins/brightness/WifiDisplays.qml:112
-#, fuzzy
 msgid "No displays detected"
-msgstr "Ingen upptäckt"
+msgstr "Inga skärmar upptäckta"
 
 #: plugins/brightness/WifiDisplays.qml:125
-#, fuzzy
 msgid "Connected display:"
-msgstr "Anslutna enheter:"
+msgstr "Anslutna skärmar:"
 
 #: plugins/brightness/WifiDisplays.qml:140
-#, fuzzy
 msgid "Connecting"
-msgstr "Ansluter…"
+msgstr "Ansluter"
 
 #: plugins/brightness/WifiDisplays.qml:158
-#, fuzzy
 msgid "Use another display:"
-msgstr "Anslut annan enhet:"
+msgstr "Använd annan skärm:"
 
 #: plugins/brightness/WifiDisplays.qml:158
-#, fuzzy
 msgid "Choose a display:"
-msgstr "Välj lösenfras"
+msgstr "Välj en skärm:"
 
 #: plugins/brightness/WifiDisplaysAlert.qml:32
-#, fuzzy, qt-format
+#, qt-format
 msgid "This device failed to connect to %1."
-msgstr "koppla från"
+msgstr "Den här enheten misslyckades att ansluta till %1."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
-msgstr ""
+msgstr "Det uppstog ett okänt fel vid anslutning till %1."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
@@ -785,10 +756,8 @@ msgid "OK"
 msgstr "OK"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Bilder"
+msgstr "Gester"
 
 #: plugins/gestures/PageComponent.qml:44
 msgid "Tap to wake"
@@ -922,12 +891,10 @@ msgid "A secondary connection of the base connection failed"
 msgstr "En sekundär anslutning till basanslutningen misslyckades"
 
 #: plugins/hotspot/HotspotSetup.qml:61
-#, fuzzy
 msgid "Change Hotspot Setup"
-msgstr "Ändra surfzoninställning"
+msgstr "Ändra surfzonsinställningar"
 
 #: plugins/hotspot/HotspotSetup.qml:61
-#, fuzzy
 msgid "Set Up Hotspot"
 msgstr "Ställ in surfzon"
 
@@ -936,13 +903,12 @@ msgid "Hotspot name"
 msgstr "Namn på surfzon"
 
 #: plugins/hotspot/HotspotSetup.qml:168
-#, fuzzy
 msgid "Choose a name"
-msgstr "Välj lösenfras"
+msgstr "Välj ett namn"
 
 #: plugins/hotspot/HotspotSetup.qml:185
 msgid "Require a password (recommended):"
-msgstr ""
+msgstr "Kräver ett lösenord (rekommenderad):"
 
 #: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
@@ -951,7 +917,7 @@ msgstr "Visa lösenord"
 
 #: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
-msgstr ""
+msgstr "Uppstart av surfzonen kommer att slå på Wi-Fi."
 
 #: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
@@ -959,7 +925,7 @@ msgstr "Ändra"
 
 #: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
-msgstr ""
+msgstr "Starta"
 
 #: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
@@ -982,28 +948,24 @@ msgstr ""
 "Vanliga datakostnader gäller."
 
 #: plugins/hotspot/PageComponent.qml:124
-#, fuzzy
 msgid "Change Password/Setup…"
-msgstr "Ändra lösenkod…"
+msgstr "Ändra lösenord/inställningar…"
 
 #: plugins/hotspot/PageComponent.qml:124
-#, fuzzy
 msgid "Set Up Hotspot…"
-msgstr "Ställ in surfzon"
+msgstr "Ställ in surfzon…"
 
 #: plugins/hotspot/PageComponent.qml:155
-#, fuzzy
 msgid "Wi-Fi is off"
-msgstr "Wi-Fi surfzon"
+msgstr "Wi-Fi är av"
 
 #: plugins/hotspot/PageComponent.qml:156
 msgid "In order to create a hotspot, you need to turn Wi-Fi on."
-msgstr ""
+msgstr "För att skapa en surfzon måste du slå på Wi-Fi."
 
 #: plugins/hotspot/PageComponent.qml:160
-#, fuzzy
 msgid "Turn on Wi-Fi"
-msgstr "Om WiFi ansluten"
+msgstr "Slå på Wi-Fi"
 
 #: plugins/language/DisplayLanguage.qml:51
 msgid "Display language"
@@ -1040,19 +1002,16 @@ msgid "Display language…"
 msgstr "Visningsspråk…"
 
 #: plugins/language/PageComponent.qml:150
-#, fuzzy
 msgid "Enable on-screen keyboard"
-msgstr "tangentbord"
+msgstr "Aktivera skärm-tangentbord"
 
 #: plugins/language/PageComponent.qml:162
-#, fuzzy
 msgid "On-screen keyboard"
-msgstr "tangentbord"
+msgstr "Skärm-tangentbord"
 
 #: plugins/language/PageComponent.qml:173
-#, fuzzy
 msgid "External keyboard"
-msgstr "tangentbord"
+msgstr "Externt tangentbord"
 
 #: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
@@ -1060,45 +1019,43 @@ msgstr "Atmosfär"
 
 #: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
-msgstr ""
+msgstr "Suru Mörk"
 
 #: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
-msgstr ""
+msgstr "Saru Svart"
 
 #: plugins/language/PageComponent.qml:187
 msgid "Just White"
-msgstr ""
+msgstr "Bara Vit"
 
 #: plugins/language/PageComponent.qml:188
 msgid "Just Black"
-msgstr ""
+msgstr "Bara Svart"
 
 #: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
-msgstr ""
+msgstr "Bara Grå"
 
 #: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr ""
+msgstr "Kantad Vit"
 
 #: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr ""
+msgstr "Kantad Svart"
 
 #: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr ""
+msgstr "Kantad Grå"
 
 #: plugins/language/PageComponent.qml:195
-#, fuzzy
 msgid "On-screen keyboard theme"
-msgstr "tangentbord"
+msgstr "Skärm-tangentbord tema"
 
 #: plugins/language/PageComponent.qml:196
-#, fuzzy
 msgid "Keyboard theme"
-msgstr "Tangentbord"
+msgstr "Tangentbordstema"
 
 #: plugins/language/PageComponent.qml:209
 #: plugins/language/PageComponent.qml:218 plugins/language/SpellChecking.qml:29
@@ -1127,15 +1084,12 @@ msgid "Auto punctuation"
 msgstr "Autoskiljetecken"
 
 #: plugins/language/PageComponent.qml:284
-#, fuzzy
 msgid "Inserts a period when you tap Space twice."
-msgstr ""
-"Lägger till en punkt och saknade citat eller hakparenteser när du trycker på "
-"mellanslag två gånger."
+msgstr "Lägger till en punkt när du trycker på mellanslag två gånger."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Tangentförstorare"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1146,23 +1100,20 @@ msgid "Keyboard vibration"
 msgstr "Tangentbordsvibration"
 
 #: plugins/language/PageComponent.qml:324
-#, fuzzy
 msgid "Keyboard opacity"
-msgstr "Tangentbordslayouter"
+msgstr "Tangentbordsopacitet"
 
 #: plugins/language/PageHardwareKeyboard.qml:33
-#, fuzzy
 msgid "Hardware keyboard"
-msgstr "tangentbord"
+msgstr "Hårdvarutangentbord"
 
 #: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
-msgstr ""
+msgstr "Layouter och andra källor"
 
 #: plugins/language/RebootNecessary.qml:34
-#, fuzzy
 msgid "The device needs to restart for changes to take effect."
-msgstr "Telefonen behöver startas om för att fullborda ändringarna."
+msgstr "Enheten behöver startas om för att ändringarna ska börja gälla."
 
 #: plugins/language/RebootNecessary.qml:38
 msgid "Restart Now"
@@ -1177,58 +1128,56 @@ msgid "All languages available:"
 msgstr "Alla tillgängliga språk:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Återställ programhanteraren"
+msgstr "Skrivbord & appstartare"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
-msgstr ""
+msgstr "På stora skärmar:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Aktivera arbetsytor"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Stöd för flera virtuella arbetsytor"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
-msgstr ""
+msgstr "Visa alltid appstartare"
 
 #: plugins/launcher/PageComponent.qml:88
 msgid "Videos and full-screen games may hide it temporarily."
-msgstr ""
+msgstr "Videor och helskärmsspel kan dölja det tillfälligt."
 
 #: plugins/launcher/PageComponent.qml:99
 msgid "Icon size:"
-msgstr ""
+msgstr "Ikonstorlek:"
 
 #: plugins/mouse/Connected.qml:62 plugins/mouse/Connected.qml:228
 msgid "Cursor speed:"
-msgstr ""
+msgstr "Pekarhastighet:"
 
 #: plugins/mouse/Connected.qml:98
 msgid "Wheel scrolling speed:"
-msgstr ""
+msgstr "Hjul rullningshastighet:"
 
 #: plugins/mouse/Connected.qml:134 plugins/mouse/Connected.qml:301
 msgid "Double-click speed:"
-msgstr ""
+msgstr "Dubbelklickhastighet:"
 
 #: plugins/mouse/Connected.qml:168 plugins/mouse/Connected.qml:335
 msgid "Test double-click:"
-msgstr ""
+msgstr "Testa dubbelklick:"
 
 #: plugins/mouse/Connected.qml:214
 msgid "Touchpad"
-msgstr ""
+msgstr "Pekplatta"
 
 #: plugins/mouse/Connected.qml:264
 msgid "Finger scrolling speed:"
-msgstr ""
+msgstr "Finger rullningshastighet:"
 
 #: plugins/mouse/Connected.qml:389
 msgid "Tap to click"
@@ -1236,20 +1185,19 @@ msgstr ""
 
 #: plugins/mouse/Connected.qml:403
 msgid "Scroll with two fingers"
-msgstr ""
+msgstr "Scrolla med två fingrar"
 
 #: plugins/mouse/Connected.qml:410
 msgid "Ignore touchpad when:"
-msgstr ""
+msgstr "Ignorera pekplatta när:"
 
 #: plugins/mouse/Connected.qml:432
 msgid "Typing"
-msgstr ""
+msgstr "Skriver"
 
 #: plugins/mouse/Connected.qml:446
-#, fuzzy
 msgid "A mouse is connected"
-msgstr "Frånkopplad"
+msgstr "En mus är inkopplad"
 
 #: plugins/mouse/None.qml:34
 msgid ""
@@ -1257,68 +1205,67 @@ msgid ""
 "Bluetooth device isn’t detected, make sure it is turned on and its batteries "
 "are charged."
 msgstr ""
+"Anslut en mus eller pekplatta via USB, eller använd en Bluetooth enhet. Om "
+"en Bluetooth enhet inte upptäcks, se till att den är påslagen och dess "
+"batterier är laddade."
 
 #: plugins/mouse/None.qml:36
 msgid ""
 "You need to use a Bluetooth mouse or touchpad with this display. Make sure "
 "it is close to the device and its batteries are charged."
 msgstr ""
+"Du måste använda en Bluetooth mus eller pekplatta med den här skärmen. Se "
+"till att du är nära enheten och dess batterier är laddade."
 
 #: plugins/mouse/PageComponent.qml:29
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Mus & pekplatta"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:42
 msgid "Primary button:"
-msgstr ""
+msgstr "Primär knapp:"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:72
 msgid "Left"
-msgstr ""
+msgstr "Vänster"
 
 #: plugins/mouse/PrimaryButtonSelector.qml:89
-#, fuzzy
 msgid "Right"
-msgstr "flyg"
+msgstr "Höger"
 
 #: plugins/mouse/TapArea.qml:38
-#, fuzzy
 msgid "Not fast enough"
-msgstr "Inte skickat"
+msgstr "Inte snabb nog"
 
 #: plugins/mouse/TapArea.qml:77
 msgid "Double-clicked"
-msgstr ""
+msgstr "Dubbel-klickad"
 
 #: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Nödsändning"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Supplikanten finns nu tillgänglig"
+msgstr "Cellsändning är inte tillgänglig"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Cellsändning aktiverad"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Cellsändning inaktiverad"
 
 #: plugins/notifications/CellBroadcast.qml:167
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "varningar"
+msgstr "Varningar:"
 
 #: plugins/notifications/CellBroadcast.qml:173
 msgid "Receive emergency notifications"
@@ -1326,23 +1273,23 @@ msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:186
 msgid "Extreme threats"
-msgstr ""
+msgstr "Extrema hot"
 
 #: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Extrema hot mot liv och egendom"
 
 #: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
-msgstr ""
+msgstr "Allvarliga hot"
 
 #: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Allvarliga hot mot liv och egendom"
 
 #: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "AMBER Varningar"
 
 #: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
@@ -1350,21 +1297,19 @@ msgstr ""
 
 #: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
-msgstr ""
+msgstr "Allmänna säkerhetsmeddelanden"
 
 #: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Rekommenderade åtgärder för att rädda liv och egendom"
 
 #: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
-msgstr ""
+msgstr "Tester"
 
 #: plugins/notifications/CellBroadcast.qml:243
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "varningar"
+msgstr "Testa varningar"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:30
@@ -1373,30 +1318,26 @@ msgstr "Aviseringar"
 
 #: plugins/notifications/ClickAppNotifications.qml:81
 msgid "Let this app alert me using:"
-msgstr ""
+msgstr "Låt den här appen varna genom att använda:"
 
 #: plugins/notifications/ClickAppNotifications.qml:91
 #: plugins/notifications/PageComponent.qml:215
-#, fuzzy
 msgid "Sounds"
 msgstr "Ljud"
 
 #: plugins/notifications/ClickAppNotifications.qml:114
 #: plugins/notifications/PageComponent.qml:218
-#, fuzzy
 msgid "Vibrations"
-msgstr "vibration"
+msgstr "Vibrationer"
 
 #: plugins/notifications/ClickAppNotifications.qml:137
-#, fuzzy
 msgid "Notification Bubbles"
-msgstr "Aviseringar"
+msgstr "Aviseringsbubblor"
 
 #: plugins/notifications/ClickAppNotifications.qml:160
 #: plugins/notifications/PageComponent.qml:224
-#, fuzzy
 msgid "Notification List"
-msgstr "Aviseringar"
+msgstr "Aviseringslista"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:30
 #: plugins/sound/PageComponent.qml:39
@@ -1405,114 +1346,100 @@ msgstr "Ljud"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
-msgstr ""
+msgstr "Appar som notiferar med ljud:"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:30
-#, fuzzy
 msgid "Vibration"
-msgstr "vibration"
+msgstr "Vibration"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:50
-#, fuzzy
 msgid "When in Silent mode:"
-msgstr "Vibrera i tyst läge"
+msgstr "Vibrera i tyst läge:"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:69
-#, fuzzy
 msgid "Vibrate as normal"
-msgstr "Vibrera vid ringsignal"
+msgstr "Vibrera som normalt"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:70
-#, fuzzy
 msgid "Don't vibrate"
-msgstr "vibrera"
+msgstr "Vibrera inte"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
-msgstr ""
+msgstr "Appar som notiferar med vibrationer:"
 
 #: plugins/notifications/PageComponent.qml:91
 #: plugins/notifications/PageComponent.qml:181
-#, fuzzy
 msgid "Applications:"
-msgstr "versalisering"
+msgstr "Applikationer:"
 
 #: plugins/notifications/PageComponent.qml:113
-#, fuzzy
 msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr ""
-"Valda appar kan påkalla din uppmärksamhet genom aviseringsbubblor, ljud, "
-"vibrationer och aviseringscentret."
+"Appar kan påkalla din uppmärksamhet genom ljud, vibrationer, "
+"aviseringsbubblor, och aviseringscentret."
 
 #: plugins/notifications/PageComponent.qml:129
 msgid "Apps that notify with sound"
-msgstr ""
+msgstr "Apps som notiferar med ljud"
 
 #: plugins/notifications/PageComponent.qml:155
 msgid "Apps that notify with vibration"
-msgstr ""
+msgstr "Appar som notiferar med vibration"
 
 #: plugins/notifications/PageComponent.qml:210
-#, fuzzy
 msgid "No notifications"
-msgstr "aviseringar"
+msgstr "Inga aviseringar"
 
 #: plugins/notifications/PageComponent.qml:221
 msgid "Bubbles"
-msgstr ""
+msgstr "Bubblor"
 
 #: plugins/printing/AddPrinter.qml:34 plugins/printing/AddPrinterDetails.qml:54
 #: plugins/printing/PageComponent.qml:38
-#, fuzzy
 msgid "Add printer"
-msgstr "Skrivare"
+msgstr "Lägg till skrivare"
 
 #: plugins/printing/AddPrinter.qml:65
-#, fuzzy
 msgid "Enter URI"
-msgstr "Ange SIM PIN-kod"
+msgstr "Ange URI"
 
 #: plugins/printing/AddPrinter.qml:78
-#, fuzzy
 msgid "Devices"
-msgstr "Tjänster"
+msgstr "Enheter"
 
 #: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
-msgstr ""
+msgstr "Inga enheter hittades."
 
 #: plugins/printing/AddPrinterDetails.qml:37
 msgid "Describe printer"
-msgstr ""
+msgstr "Beskriv skrivare"
 
 #: plugins/printing/AddPrinterDetails.qml:137
-#, fuzzy
 msgid "Connection"
-msgstr "Ansluter…"
+msgstr "Anslutning"
 
 #: plugins/printing/AddPrinterDetails.qml:139
-#, fuzzy
 msgid "Choose a connection"
-msgstr "Välj lösenfras"
+msgstr "Välj en anslutning"
 
 #: plugins/printing/AddPrinterDetails.qml:165
-#, fuzzy
 msgid "Printer name"
-msgstr "Skrivare"
+msgstr "Skrivarnamn"
 
 #: plugins/printing/AddPrinterDetails.qml:202
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:32
 #: plugins/printing/printer-sub-pages/Status.qml:66
-#, fuzzy
 msgid "Description"
-msgstr "Kryptering"
+msgstr "Beskrivning"
 
 #: plugins/printing/AddPrinterDetails.qml:204
 #: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
-msgstr ""
+msgstr "Valfri"
 
 #: plugins/printing/AddPrinterDetails.qml:209
 #: plugins/printing/printer-sub-pages/Status.qml:72
@@ -1521,28 +1448,27 @@ msgstr "Plats"
 
 #: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
-msgstr ""
+msgstr "Drivrutin"
 
 #: plugins/printing/AddPrinterDetails.qml:225
-#, fuzzy
 msgid "Choose driver"
-msgstr "Välj operatör:"
+msgstr "Välj drivrutin"
 
 #: plugins/printing/AddPrinterDetails.qml:227
 msgid "Select printer from database"
-msgstr ""
+msgstr "Välj skrivare från databas"
 
 #: plugins/printing/AddPrinterDetails.qml:228
 msgid "Provide PPD file"
-msgstr ""
+msgstr "Ange PPD-fil"
 
 #: plugins/printing/AddPrinterDetails.qml:235
 msgid "Filter drivers"
-msgstr ""
+msgstr "Filter drivrutiner"
 
 #: plugins/printing/AddPrinterDetails.qml:304
 msgid "PPD file"
-msgstr ""
+msgstr "PPD-fil"
 
 #: plugins/printing/PageComponent.qml:32
 msgid "Printing"
@@ -1550,19 +1476,19 @@ msgstr "Skriver ut"
 
 #: plugins/printing/PageComponent.qml:45
 msgid "Manager Printer Jobs"
-msgstr ""
+msgstr "Hantera utskriftsjobb"
 
 #: plugins/printing/PageComponent.qml:106
 msgid "Default printer"
-msgstr ""
+msgstr "Standard skrivare"
 
 #: plugins/printing/PageComponent.qml:107
 msgid "Configured printers"
-msgstr ""
+msgstr "Konfigurade skrivare"
 
 #: plugins/printing/PageComponent.qml:115
 msgid "Discovered printers"
-msgstr ""
+msgstr "Upptäckta skrivare"
 
 #: plugins/printing/PageComponent.qml:136
 msgid "Delete"
@@ -1571,34 +1497,31 @@ msgstr "Radera"
 #: plugins/printing/PageComponent.qml:149
 #: plugins/printing/printer-sub-pages/Policies.qml:50
 msgid "Set as Default"
-msgstr ""
+msgstr "Ställ in som standard"
 
 #: plugins/printing/PageComponent.qml:190
 msgid "There are no printers configured yet."
-msgstr ""
+msgstr "Det finns inga skrivare konfigurerade än."
 
 #: plugins/printing/Printer.qml:42
-#, fuzzy
 msgid "Printer status"
-msgstr "Skrivare"
+msgstr "Skrivarstatus"
 
 #: plugins/printing/Printer.qml:43
-#, fuzzy
 msgid "General settings"
-msgstr "Systeminställningar"
+msgstr "Generella inställningar"
 
 #: plugins/printing/Printer.qml:44
 msgid "Policies"
-msgstr ""
+msgstr "Policyer"
 
 #: plugins/printing/Printer.qml:47
-#, fuzzy
 msgid "Copies and pages"
-msgstr "Tid & Datum"
+msgstr "Kopior och sidor"
 
 #: plugins/printing/PrinterConnection.qml:67
 msgid "Host"
-msgstr ""
+msgstr "Värd"
 
 #: plugins/printing/printer-sub-pages/CopiesAndPages.qml:26
 msgid "Copies"
@@ -1606,25 +1529,23 @@ msgstr "Kopioer"
 
 #: plugins/printing/printer-sub-pages/CopiesAndPages.qml:46
 msgid "Paper size"
-msgstr ""
+msgstr "Pappersstorlek"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:43
 msgid "Duplex"
-msgstr ""
+msgstr "Duplex"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:59
-#, fuzzy
 msgid "Color model"
-msgstr "Utvecklarläge"
+msgstr "Färgmodell"
 
 #: plugins/printing/printer-sub-pages/GeneralSettings.qml:75
 msgid "Quality"
 msgstr "Kvalitet"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:27
-#, fuzzy
 msgid "Enabled"
-msgstr "aktivera"
+msgstr "Aktiverad"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
@@ -1632,15 +1553,15 @@ msgstr "Standard"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
-msgstr ""
+msgstr "Detta är standardskrivaren."
 
 #: plugins/printing/printer-sub-pages/Policies.qml:60
 msgid "Accepting jobs"
-msgstr ""
+msgstr "Accepterar jobb"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:69
 msgid "Shared"
-msgstr ""
+msgstr "Delad"
 
 #: plugins/printing/printer-sub-pages/Status.qml:30
 msgid "Idle"
@@ -1663,7 +1584,7 @@ msgstr "Stoppad"
 #: plugins/printing/printer-sub-pages/Status.qml:40
 #, qt-format
 msgid "%1 — %2"
-msgstr ""
+msgstr "%1 — %2"
 
 #: plugins/printing/printer-sub-pages/Status.qml:43
 msgid "No messages"
@@ -1671,46 +1592,43 @@ msgstr "Inga meddelanden"
 
 #: plugins/printing/printer-sub-pages/Status.qml:48
 msgid "Jobs"
-msgstr ""
+msgstr "Jobb"
 
 #: plugins/printing/printer-sub-pages/Status.qml:53
 msgid "Manage Print Jobs"
-msgstr ""
+msgstr "Hantera utskriftsjobb"
 
 #: plugins/printing/printer-sub-pages/Status.qml:78
 msgid "Address"
 msgstr "Adress"
 
 #: plugins/printing/printer-sub-pages/Status.qml:84
-#, fuzzy
 msgid "Model"
-msgstr "Modem"
+msgstr "Modell"
 
 #: plugins/printing/printer-sub-pages/Status.qml:85
 msgid "Local Raw Printer"
-msgstr ""
+msgstr "Lokal råskrivare"
 
 #: plugins/printing/printer-sub-pages/Status.qml:88
 msgid "Print test page"
-msgstr ""
+msgstr "Skriv ut testsida"
 
 #: plugins/reset/EraseEverything.qml:41 plugins/reset/PageComponent.qml:116
-#, fuzzy
 msgid ""
 "All documents, saved games, settings, and other items will be permanently "
 "deleted from this device."
 msgstr ""
 "Alla dokument, sparade spel, inställningar och andra objekt kommer permanent "
-"att tas bort från denna telefon."
+"att tas bort från denna enhet."
 
 #: plugins/reset/EraseEverything.qml:44
 msgid "Erase & Reset Everything"
 msgstr "Radera & återställ allt"
 
 #: plugins/reset/PageComponent.qml:35
-#, fuzzy
 msgid "Reset device"
-msgstr "enhet"
+msgstr "Återställ enhet"
 
 #: plugins/reset/PageComponent.qml:76 plugins/reset/ResetLauncherHome.qml:44
 msgid "Reset Launcher"
@@ -1733,7 +1651,6 @@ msgstr ""
 "återställas till dess ursprungliga inställningar."
 
 #: plugins/reset/PageComponent.qml:108
-#, fuzzy
 msgid "Erase & Reset All"
 msgstr "Radera & återställ allt"
 
@@ -1751,7 +1668,7 @@ msgstr "Ringsignal:"
 
 #: plugins/sound/PageComponent.qml:141
 msgid "High volume can damage your hearing."
-msgstr ""
+msgstr "Hög volym kan skada din hörsel."
 
 #: plugins/sound/PageComponent.qml:145
 msgid "Phone calls:"
@@ -1762,7 +1679,6 @@ msgid "Ringtone"
 msgstr "Ringsignal"
 
 #: plugins/sound/PageComponent.qml:171
-#, fuzzy
 msgid "Vibrate on ring"
 msgstr "Vibrera vid ringsignal"
 
@@ -1795,25 +1711,20 @@ msgid "Lock sound"
 msgstr "Låsljud"
 
 #: plugins/sound/PageComponent.qml:278
-#, fuzzy
 msgid "Other vibrations"
-msgstr "vibration"
+msgstr "Andra vibrationer"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Vibrera med meddelandeljud"
+msgstr "Anpassat meddelandeljud"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
 msgid "Custom Ringtone"
-msgstr "Ringsignal"
+msgstr "Anpassad ringsignal"
 
 #: plugins/sound/SoundsList.qml:213
-#, fuzzy
 msgid "Choose from"
-msgstr "Välj operatör:"
+msgstr "Välj från"
 
 #: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
@@ -1866,51 +1777,48 @@ msgid "Date"
 msgstr "Datum"
 
 #: plugins/vpn/PageComponent.qml:31
-#, fuzzy
 msgid "VPN"
-msgstr "APN"
+msgstr "VPN"
 
 #: plugins/vpn/PageComponent.qml:76
 msgid ""
 "To add a VPN configuration, download its config file or configure it "
 "manually."
 msgstr ""
+"För att lägga till en VPN-konfiguration, ladda ner dess konfigurationsfil "
+"eller konfigurera den manuellt."
 
 #: plugins/vpn/PageComponent.qml:82
 msgid "Add Manual Configuration…"
-msgstr ""
+msgstr "Lägg till manuellkonfiguration…"
 
 #: plugins/vpn/PageComponent.qml:117
-#, fuzzy
 msgid "VPN reconnection required."
-msgstr "Tjänst för delad anslutning misslyckades"
+msgstr "VPN-återanslutning krävs."
 
 #: plugins/vpn/PageComponent.qml:118
-#, fuzzy
 msgid "You need to reconnect for changes to have an effect."
-msgstr "Telefonen behöver startas om för att fullborda ändringarna."
+msgstr "Du måste återansluta för att ändringar ska få effekt."
 
 #: plugins/wifi/CertDialog.qml:22
 msgid "Add certificate?"
-msgstr ""
+msgstr "Lägg till certifikat?"
 
 #: plugins/wifi/CertDialog.qml:24
 msgid "Add key?"
-msgstr ""
+msgstr "Lägg till nyckel?"
 
 #: plugins/wifi/CertDialog.qml:26
 msgid "Add pac file?"
-msgstr ""
+msgstr "Lägg till pac fil?"
 
 #: plugins/wifi/CertDialog.qml:36
-#, fuzzy
 msgid "Content:"
-msgstr "Fortsätt"
+msgstr "Innehåll:"
 
 #: plugins/wifi/CertDialog.qml:49
-#, fuzzy
 msgid "No data available."
-msgstr "Uppdateringar tillgängliga"
+msgstr "Ingen data tillgänglig."
 
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
@@ -1929,9 +1837,8 @@ msgid "Password"
 msgstr "Lösenord"
 
 #: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
-#, fuzzy
 msgid "Forget this network"
-msgstr "Glöm nätverk"
+msgstr "Glöm detta nätverk"
 
 #: plugins/wifi/NetworkDetailsBrief.qml:73
 msgid "IP address"
@@ -1951,7 +1858,7 @@ msgstr "Nätverksnamn"
 
 #: plugins/wifi/OtherNetwork.qml:298
 msgid "SSID"
-msgstr ""
+msgstr "SSID"
 
 #: plugins/wifi/OtherNetwork.qml:307
 msgid "Security"
@@ -1962,9 +1869,8 @@ msgid "WPA & WPA2 Personal"
 msgstr "WPA & WPA2 Personal"
 
 #: plugins/wifi/OtherNetwork.qml:320
-#, fuzzy
 msgid "WPA & WPA2 Enterprise"
-msgstr "WPA & WPA2 Personal"
+msgstr "WPA & WPA2 Enterprise"
 
 #: plugins/wifi/OtherNetwork.qml:321
 msgid "WEP"
@@ -1972,28 +1878,27 @@ msgstr "WEP"
 
 #: plugins/wifi/OtherNetwork.qml:322
 msgid "Dynamic WEP (802.1x)"
-msgstr ""
+msgstr "Dynamisk WEP (802.1x)"
 
 #: plugins/wifi/OtherNetwork.qml:323
 msgid "LEAP"
-msgstr ""
+msgstr "LEAP"
 
 #: plugins/wifi/OtherNetwork.qml:332
 msgid "This network is insecure."
-msgstr ""
+msgstr "Detta nätverk är osäkert."
 
 #: plugins/wifi/OtherNetwork.qml:338
-#, fuzzy
 msgid "Authentication"
-msgstr "aviseringar"
+msgstr "Autentisering"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
-msgstr ""
+msgstr "Inre autentisering"
 
 #: plugins/wifi/OtherNetwork.qml:396
 msgid "CA certificate"
-msgstr ""
+msgstr "CA certifikat"
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
@@ -2001,14 +1906,14 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:450
 #, qt-format
 msgid "%1…"
-msgstr ""
+msgstr "%1…"
 
 #: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
 #: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
 #: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
 #: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
-msgstr ""
+msgstr "Välj…"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -2018,7 +1923,7 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
-msgstr ""
+msgstr "%1…, Utg.: %2"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -2027,19 +1932,19 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
-msgstr ""
+msgstr "%1, Utg.: %2"
 
 #: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
-msgstr ""
+msgstr "Att använda certifikat rekommenderas eftersom det ökar säkerheten."
 
 #: plugins/wifi/OtherNetwork.qml:512
 msgid "Client certificate"
-msgstr ""
+msgstr "Klientcertifikat"
 
 #: plugins/wifi/OtherNetwork.qml:554
 msgid "User private key"
-msgstr ""
+msgstr "Användares privatanyckel"
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
@@ -2047,60 +1952,55 @@ msgstr ""
 #: plugins/wifi/OtherNetwork.qml:579
 #, qt-format
 msgid "%1, %2, %3 bit"
-msgstr ""
+msgstr "%1, %2, %3 bitar"
 
 #: plugins/wifi/OtherNetwork.qml:622
 msgid "Pac file"
-msgstr ""
+msgstr "Pac filer"
 
 #: plugins/wifi/OtherNetwork.qml:672
 msgid "Pac provisioning"
 msgstr ""
 
 #: plugins/wifi/OtherNetwork.qml:686
-#, fuzzy
 msgid "Disabled"
-msgstr "inaktivera"
+msgstr "Inaktiverad"
 
 #: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonym"
 
 #: plugins/wifi/OtherNetwork.qml:688
 msgid "Authenticated"
-msgstr ""
+msgstr "Autentiserad"
 
 #: plugins/wifi/OtherNetwork.qml:689
 msgid "Both"
-msgstr ""
+msgstr "Båda"
 
 #: plugins/wifi/OtherNetwork.qml:699
-#, fuzzy
 msgid "PEAP version"
-msgstr "version"
+msgstr "PEAP version"
 
 #: plugins/wifi/OtherNetwork.qml:713
-#, fuzzy
 msgid "Version 0"
-msgstr "Version: "
+msgstr "Version 0"
 
 #: plugins/wifi/OtherNetwork.qml:714
-#, fuzzy
 msgid "Version 1"
-msgstr "Version: "
+msgstr "Version 1"
 
 #: plugins/wifi/OtherNetwork.qml:715
-#, fuzzy
 msgid "Automatic"
-msgstr "automatisk"
+msgstr "Automatisk"
 
 #: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
-msgstr ""
+msgstr "Anonym identitet"
 
 #: plugins/wifi/OtherNetwork.qml:752
 msgid "Identity"
-msgstr ""
+msgstr "Identitet"
 
 #: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
@@ -2108,12 +2008,11 @@ msgstr "Användarnamn"
 
 #: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
-msgstr ""
+msgstr "Privat nyckel lösenord"
 
 #: plugins/wifi/OtherNetwork.qml:857
-#, fuzzy
 msgid "Remember password"
-msgstr "lösenord"
+msgstr "Kom ihåg lösenord"
 
 #: plugins/wifi/PageComponent.qml:129
 msgid "Connect to hidden network…"
@@ -2128,17 +2027,16 @@ msgid "Clear"
 msgstr "Rensa"
 
 #: plugins/wifi/certhandler.cpp:258
-#, fuzzy
 msgid "Private key"
-msgstr "Sekretess"
+msgstr "Privat nyckel"
 
 #: plugins/wifi/certhandler.cpp:259
 msgid "Public key"
-msgstr ""
+msgstr "Publik nyckel"
 
 #: plugins/wifi/certhandler.cpp:264
 msgid "Opaque"
-msgstr ""
+msgstr "Ogenomskinlig"
 
 #: src/qml/MainWindow.qml:203
 msgid "Search"
