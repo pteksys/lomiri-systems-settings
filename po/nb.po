@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-02-03 04:34+0000\n"
+"PO-Revision-Date: 2023-03-02 14:37+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/nb_NO/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -1455,7 +1455,7 @@ msgstr "Beskrivelse"
 #: plugins/printing/AddPrinterDetails.qml:204
 #: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
-msgstr "Valgfri"
+msgstr "Valgfritt"
 
 #: plugins/printing/AddPrinterDetails.qml:209
 #: plugins/printing/printer-sub-pages/Status.qml:72
@@ -1907,7 +1907,7 @@ msgstr "Dette nettverket er usikkert."
 
 #: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
-msgstr "Autentisering"
+msgstr "Identitetsbekreftelse"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
