@@ -54,6 +54,13 @@ ItemPage {
         onTriggered: pageStack.addPageToNextColumn(mainPage, picker)
     }
 
+    // Action at cancel selection mode
+    Action {
+        id: noAction
+        // empty action when cancel is pressed in selection mode
+        // needed changes happen by State changes
+    }
+
     // qml bindings for background stuff
     LomiriBackgroundPanel {
         id: backgroundPanel

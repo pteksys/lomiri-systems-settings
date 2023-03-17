@@ -40,6 +40,7 @@ Row {
             PropertyChanges {
                 target: add
                 text: i18n.tr("Cancel")
+                action: noAction
                 onClicked: {
                     parent.state = "";
                     leftQueueMode();
