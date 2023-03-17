@@ -142,6 +142,10 @@ Column {
                             target: selectionTick
                             visible: true
                         }
+                        PropertyChanges {
+                            target: addremove
+                            repeater: gridRepeater
+                        }
                     }
                 ]
                 Rectangle {
@@ -205,6 +209,7 @@ Column {
     }
 
     AddRemove {
+        id: addremove
         anchors {
             horizontalCenter: parent.horizontalCenter
         }
