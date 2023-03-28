@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2021-02-03 19:22+0000\n"
-"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
-"Language-Team: Czech <https://translate.ubports.com/projects/ubports/system-"
-"settings/cs/>\n"
+"PO-Revision-Date: 2023-03-29 17:41+0000\n"
+"Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.17-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -168,11 +168,11 @@ msgstr "Obrázky"
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenty"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Stažené"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
@@ -770,7 +770,7 @@ msgstr "Došlo k neznámé chybě  při připojování k %1."
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Přijmout"
+msgstr "OK"
 
 #: plugins/gestures/PageComponent.qml:25
 #, fuzzy
@@ -1469,7 +1469,7 @@ msgstr "Popis"
 #: plugins/printing/AddPrinterDetails.qml:204
 #: plugins/printing/AddPrinterDetails.qml:211
 msgid "Optional"
-msgstr "Volitelný"
+msgstr "Volitelné"
 
 #: plugins/printing/AddPrinterDetails.qml:209
 #: plugins/printing/printer-sub-pages/Status.qml:72
@@ -1922,7 +1922,7 @@ msgstr "Tato síť není zabezpečená."
 
 #: plugins/wifi/OtherNetwork.qml:338
 msgid "Authentication"
-msgstr "Ověření se"
+msgstr "Autentizace"
 
 #: plugins/wifi/OtherNetwork.qml:363
 msgid "Inner authentication"
@@ -1996,7 +1996,7 @@ msgstr "Pac provisioning"
 
 #: plugins/wifi/OtherNetwork.qml:686
 msgid "Disabled"
-msgstr "Zakázané"
+msgstr "Zakázáno"
 
 #: plugins/wifi/OtherNetwork.qml:687
 msgid "Anonymous"
