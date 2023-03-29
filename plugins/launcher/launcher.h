@@ -32,7 +32,7 @@ public:
     virtual ~LauncherPanelPlugin() {};
     // Return index of screen at which USS is currently rendered.
     virtual int screens() const = 0;
-public slots:
+public Q_SLOTS:
     virtual QRect screenGeometry(const int &screen = -1) const = 0;
     virtual int getCurrentScreenNumber() const = 0;
 Q_SIGNALS:
