@@ -28,6 +28,8 @@
 #include <QScopedPointer>
 #include <QUrl>
 
+#include <gio/gio.h>
+
 using namespace LomiriSystemSettings;
 
 class LauncherItem: public ItemBase
@@ -51,6 +53,14 @@ LauncherItem::LauncherItem(const QVariantMap &staticData, QObject *parent):
             setVisibility(true);
             return;
         }
+    }
+
+    // Show if Lomiri shell is in desktop mode
+    g_autoptr(GSettings) settings = g_settings_new("com.lomiri.Shell");
+    g_autofree gchar *usageMode = g_settings_get_string(settings, "usage-mode");
+    if (g_strcmp0(usageMode, "Windowed") == 0) {
+        setVisibility(true);
+        return;
     }
 
     // Show only if some screen is larger than the threshold.

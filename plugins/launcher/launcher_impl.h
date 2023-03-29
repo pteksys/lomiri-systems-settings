@@ -30,7 +30,7 @@ public:
     explicit LauncherPanelPluginImpl(QObject *parent = nullptr);
     ~LauncherPanelPluginImpl();
     virtual int screens() const override;
-public slots:
+public Q_SLOTS:
     virtual QRect screenGeometry(const int &screen = -1) const override;
     virtual int getCurrentScreenNumber() const override;
 private:
