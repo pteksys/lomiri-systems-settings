@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-03-29 17:41+0000\n"
+"PO-Revision-Date: 2023-03-30 13:46+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/cs/>\n"
@@ -143,16 +143,12 @@ msgid "Scanning"
 msgstr "Skenování"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Nastavení systému"
+msgstr "Vyhrazený systém"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Použito aplikacemi"
+msgstr "Použito systémem"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -176,11 +172,11 @@ msgstr "Stažené"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -217,7 +213,7 @@ msgstr "Podrobnosti o sestavení operačního systému"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Kanál pro aktualizace OS"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -225,11 +221,11 @@ msgstr "Číslo sestavení operačního systému"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Jádro"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Sestavení ABI"
 
 #: plugins/about/Version.qml:86
 msgid "UBports Image part"
@@ -292,30 +288,24 @@ msgid "Remove images…"
 msgstr "Odebrat obrazy…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Pozadí"
+msgstr "Pozadí a vzhled"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Povolit efekt rozmazání"
 
 #: plugins/background/MainPage.qml:104
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Systém"
+msgstr "Systémové tapety"
 
 #: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Uživatelsky určené"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Vyberte připojení"
+msgstr "Vyberte aplikaci"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -531,7 +521,7 @@ msgstr "Odpojeno"
 #: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
 #: plugins/wifi/Common.qml:96
 msgid "Unknown"
-msgstr "Neznámé"
+msgstr "Neznámo"
 
 #: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
@@ -714,10 +704,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Upravit jas displeje podle okolí."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "zobrazit"
+msgstr "Obrazovka"
 
 #: plugins/brightness/PageComponent.qml:141
 msgid "External display"
@@ -765,7 +753,7 @@ msgstr "Spojení zařízení s %1 se nezdařilo."
 #: plugins/brightness/WifiDisplaysAlert.qml:34
 #, qt-format
 msgid "There was an unknown error connecting to %1."
-msgstr "Došlo k neznámé chybě  při připojování k %1."
+msgstr "Došlo k neznámé chybě při připojování k %1."
 
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
@@ -773,20 +761,16 @@ msgid "OK"
 msgstr "OK"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Obrázky"
+msgstr "Gesta"
 
 #: plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Klikněte dotykem"
+msgstr "Probuzení poklepáním"
 
 #: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "Probuzení zařízení dvojím poklepáním na obrazovku."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1111,7 +1095,7 @@ msgstr "Přidá tečku, když klepnete dvakrát na mezerník."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Zvětšení kláves"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1150,10 +1134,8 @@ msgid "All languages available:"
 msgstr "Všechny dostupné jazyky:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Vrátit spouštěcí panel do výchozího stavu"
+msgstr "Plocha a Spouštěč"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1161,11 +1143,11 @@ msgstr "Na velkých obrazovkách:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Povolit pracovní plochy"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Podpora pro více virtuálních pracovních ploch"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1267,79 +1249,73 @@ msgstr "Dvakrát kliknuto"
 
 #: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Nouzové vysílání"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Zařízení pro Wi-Fi je nyní dostupné"
+msgstr "Mobilní vysílání není dostupné"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Mobilní vysílání povoleno"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Mobilní vysílání zakázáno"
 
 #: plugins/notifications/CellBroadcast.qml:167
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "alarmy"
+msgstr "Výstrahy:"
 
 #: plugins/notifications/CellBroadcast.qml:173
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Příjmat nouzové uporonění"
 
 #: plugins/notifications/CellBroadcast.qml:186
 msgid "Extreme threats"
-msgstr ""
+msgstr "Extrémní hrozby"
 
 #: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Extrémní ohrožení života a majetku"
 
 #: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
-msgstr ""
+msgstr "Závažné hrozby"
 
 #: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Závažné ohrožení života a majetku"
 
 #: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "Varování AMBER"
 
 #: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Oznámení o únosech dětí"
 
 #: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
-msgstr ""
+msgstr "Zprávy o veřejné bezpečnosti"
 
 #: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Doporučené akce pro záchranu života a majetku"
 
 #: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
-msgstr ""
+msgstr "Testy"
 
 #: plugins/notifications/CellBroadcast.qml:243
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "alarmy"
+msgstr "Testovací oznámení"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:30
