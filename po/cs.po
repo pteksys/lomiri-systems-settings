@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-03-30 13:46+0000\n"
+"PO-Revision-Date: 2023-04-02 03:46+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/cs/>\n"
@@ -1025,35 +1025,35 @@ msgstr "Ambiance"
 
 #: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
-msgstr "Suru Dark"
+msgstr "Suru Tmavý"
 
 #: plugins/language/PageComponent.qml:186
 msgid "Suru Black"
-msgstr "Suru Black"
+msgstr "Suru Černý"
 
 #: plugins/language/PageComponent.qml:187
 msgid "Just White"
-msgstr "Just White"
+msgstr "Prostě bílá"
 
 #: plugins/language/PageComponent.qml:188
 msgid "Just Black"
-msgstr "Just Black"
+msgstr "Prostě černá"
 
 #: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
-msgstr "Just Grey"
+msgstr "Prostě šedá"
 
 #: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr "Bordered White"
+msgstr "Orámovaná bílá"
 
 #: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr "Bordered Black"
+msgstr "Orámovaná černá"
 
 #: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr "Bordered Grey"
+msgstr "Orámovaná šedá"
 
 #: plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
@@ -1721,10 +1721,8 @@ msgid "Other vibrations"
 msgstr "Ostatní vibrace"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Vibrace se zvukem zprávy"
+msgstr "Vlastní zvuk zprávy"
 
 #: plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
@@ -1931,7 +1929,7 @@ msgstr "Zvolit…"
 #: plugins/wifi/OtherNetwork.qml:465
 #, qt-format
 msgid "%1…, Exp.: %2"
-msgstr "%1…, Exp.: %2"
+msgstr "%1…, Vypr.: %2"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -1940,7 +1938,7 @@ msgstr "%1…, Exp.: %2"
 #: plugins/wifi/OtherNetwork.qml:473
 #, qt-format
 msgid "%1, Exp.: %2"
-msgstr "%1, Exp.: %2"
+msgstr "%1, Vypr.: %2"
 
 #: plugins/wifi/OtherNetwork.qml:494
 msgid "Using certificates is recommended as it increases security."
