@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-03-30 13:46+0000\n"
+"PO-Revision-Date: 2023-04-02 03:46+0000\n"
 "Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/it/>\n"
@@ -148,16 +148,12 @@ msgid "Scanning"
 msgstr "Esaminando"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Impostazioni"
+msgstr "Riservato dal Sistema"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Usata dalle app"
+msgstr "Usato dal sistema"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -173,19 +169,19 @@ msgstr "Immagini"
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "Documenti"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "Scaricamenti"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -222,7 +218,7 @@ msgstr "Dettagli versione (build) SO"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Canale di aggiornamento del Sistema Operativo"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -230,11 +226,11 @@ msgstr "Versione (build) del SO"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Build ABI"
 
 #: plugins/about/Version.qml:86
 msgid "UBports Image part"
@@ -296,30 +292,24 @@ msgid "Remove images…"
 msgstr "Rimuovi immagini…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Sfondo"
+msgstr "Sfondo & Aspetto"
 
 #: plugins/background/MainPage.qml:87
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Abilita effetti di sfocatura"
 
 #: plugins/background/MainPage.qml:104
-#, fuzzy
-#| msgid "System"
 msgid "System Art"
-msgstr "Sistema"
+msgstr "Grafica del sistema"
 
 #: plugins/background/MainPage.qml:117
 msgid "Custom"
 msgstr "Personalizzato"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Scegli una connessione"
+msgstr "Scegli applicazione"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -502,7 +492,7 @@ msgstr "Richiesta associazione Bluetooth"
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:37
 #, qt-format
 msgid "Please confirm that the PIN displayed on '%1' matches this one"
-msgstr "Confermare che il PIN mostrato su  «%1» corrisponda a questo"
+msgstr "Confermare che il PIN mostrato su «%1» corrisponda a questo"
 
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:57
 msgid "Confirm PIN"
@@ -715,10 +705,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Illumina e attenua lo schermo adattandolo all'ambiente circostante."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "schermo"
+msgstr "Schermo"
 
 #: plugins/brightness/PageComponent.qml:141
 msgid "External display"
@@ -774,20 +762,17 @@ msgid "OK"
 msgstr "OK"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "Immagini"
+msgstr "Gesti"
 
 #: plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Tocca per cliccare"
+msgstr "Tocca per risvegliare"
 
 #: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
+"Doppio tocco in qualunque punto dello schermo per risvegliare il dispositivo."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1115,7 +1100,7 @@ msgstr "Inserisce un punto quando tocchi due volte la barra spaziatrice."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Lente di ingrandimento"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1155,10 +1140,8 @@ msgid "All languages available:"
 msgstr "Tutte le lingue disponibili:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Reset Launcher"
 msgid "Desktop & Launcher"
-msgstr "Ripristina il Launcher"
+msgstr "Desktop & Launcher"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1166,11 +1149,11 @@ msgstr "Su schermi grandi:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "Abilita spazi di lavoro"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Supporta multipli spazi di lavoro virtuali"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1272,79 +1255,73 @@ msgstr "Selezionato con un doppio click"
 
 #: plugins/nfc/PageComponent.qml:29 plugins/nfc/PageComponent.qml:47
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: plugins/notifications/CellBroadcast.qml:30
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Trasmissione di Emergenza"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "Il supplicant è ora disponibile"
+msgstr "Il Cell Broadcast è ora disponibile"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "Cell Broadcast Abilitato"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "Cell Broadcast Disabilitato"
 
 #: plugins/notifications/CellBroadcast.qml:167
-#, fuzzy
-#| msgid "alerts"
 msgid "Alerts:"
-msgstr "avvisi"
+msgstr "Avvisi:"
 
 #: plugins/notifications/CellBroadcast.qml:173
 msgid "Receive emergency notifications"
-msgstr ""
+msgstr "Ricevi notifiche di emergenza"
 
 #: plugins/notifications/CellBroadcast.qml:186
 msgid "Extreme threats"
-msgstr ""
+msgstr "Minacce estreme"
 
 #: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Minacce estreme alla vita e alla proprietà"
 
 #: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
-msgstr ""
+msgstr "Minacce serie"
 
 #: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Minacce serie alla vita e alla proprietà"
 
 #: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
-msgstr ""
+msgstr "Allerte AMBER"
 
 #: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Bollettini di emergenza per rapimento di bambini"
 
 #: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
-msgstr ""
+msgstr "Messaggi di sicurezza pubblica"
 
 #: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Azioni raccomandate per salvare la vita e la proprietà"
 
 #: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
-msgstr ""
+msgstr "Prove"
 
 #: plugins/notifications/CellBroadcast.qml:243
-#, fuzzy
-#| msgid "alerts"
 msgid "Tests alerts"
-msgstr "avvisi"
+msgstr "Avvisi di prova"
 
 #: plugins/notifications/ClickAppNotifications.qml:62
 #: plugins/notifications/PageComponent.qml:30
@@ -1548,7 +1525,7 @@ msgstr "Impostazioni generali"
 
 #: plugins/printing/Printer.qml:44
 msgid "Policies"
-msgstr "Policies"
+msgstr "Politiche"
 
 #: plugins/printing/Printer.qml:47
 msgid "Copies and pages"
@@ -1750,10 +1727,8 @@ msgid "Other vibrations"
 msgstr "Altre vibrazioni"
 
 #: plugins/sound/SoundsList.qml:132
-#, fuzzy
-#| msgid "Vibrate with message sound"
 msgid "Custom message sound"
-msgstr "Vibra con il suono messaggio"
+msgstr "Suono messaggio personalizzato"
 
 #: plugins/sound/SoundsList.qml:132
 msgid "Custom Ringtone"
