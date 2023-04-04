@@ -169,8 +169,31 @@ ItemPage {
         }
     }
 
+    Component {
+        id: errorDialog
+        Dialog {
+            id: errorDialog_
+            property int reason
+
+            title: i18n.tr("Failed to enable hotspot.")
+            text: common.reasonToString(reason)
+
+            Button {
+                text: i18n.tr("OK")
+                onClicked: PopupUtils.close(errorDialog_)
+            }
+
+            Common {
+                id: common
+            }
+        }
+    }
+
     Connections {
         target: Connectivity
         onHotspotEnabledUpdated: hotspotSwitch.checked = target.hotspotEnabled
+        onReportError: {
+            PopupUtils.open(errorDialog, /* caller */ undefined, { reason: reason });
+        }
     }
 }
