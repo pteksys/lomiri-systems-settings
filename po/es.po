@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-02-14 22:36+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/es/>\n"
+"PO-Revision-Date: 2023-04-06 21:55+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -305,10 +305,8 @@ msgid "Custom"
 msgstr "Personalizado"
 
 #: plugins/background/MainPage.qml:176
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "Elegir una conexión"
+msgstr "Elije la aplicación"
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
@@ -704,10 +702,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Aumenta o disminuye el brillo de la pantalla según la luz ambiental."
 
 #: plugins/brightness/PageComponent.qml:135
-#, fuzzy
-#| msgid "display"
 msgid "Display"
-msgstr "pantalla"
+msgstr "Pantalla"
 
 #: plugins/brightness/PageComponent.qml:141
 msgid "External display"
@@ -760,21 +756,20 @@ msgstr "Hubo un error desconocido conectando a %1."
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Aceptar"
+msgstr "De acuerdo"
 
 #: plugins/gestures/PageComponent.qml:25
 msgid "Gestures"
 msgstr "Gestos"
 
 #: plugins/gestures/PageComponent.qml:44
-#, fuzzy
-#| msgid "Tap to click"
 msgid "Tap to wake"
-msgstr "Toque para pulsar"
+msgstr "Pulsa para despertar"
 
 #: plugins/gestures/PageComponent.qml:59
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
+"Toca dos veces en cualquier lugar de la pantalla para activar el dispositivo."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
@@ -1025,7 +1020,7 @@ msgstr "Teclado externo"
 
 #: plugins/language/PageComponent.qml:184
 msgid "Ambiance"
-msgstr "Ambiance (Claro)"
+msgstr "Ambiente"
 
 #: plugins/language/PageComponent.qml:185
 msgid "Suru Dark"
@@ -1099,7 +1094,7 @@ msgstr "Inserta un punto cuando toca Espacio dos veces."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
-msgstr ""
+msgstr "Lupa"
 
 #: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
 msgid "Keyboard sound"
@@ -1151,7 +1146,7 @@ msgstr "Activar áreas de trabajo"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "Soporte para múltiples espacios de trabajo virtuales"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
@@ -1259,21 +1254,19 @@ msgstr "NFC"
 #: plugins/notifications/CellBroadcast.qml:47
 #: plugins/notifications/PageComponent.qml:80
 msgid "Emergency Broadcast"
-msgstr ""
+msgstr "Emisión de emergencia"
 
 #: plugins/notifications/CellBroadcast.qml:125
-#, fuzzy
-#| msgid "The supplicant is now available"
 msgid "Cell Broadcast is not available"
-msgstr "El suplicante está disponible ahora"
+msgstr "La difusión celular no está disponible"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
-msgstr ""
+msgstr "La difusión celular está activada"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Disabled"
-msgstr ""
+msgstr "La difusión celular está desactivada"
 
 #: plugins/notifications/CellBroadcast.qml:167
 msgid "Alerts:"
@@ -1289,7 +1282,7 @@ msgstr "Amenazas extremas"
 
 #: plugins/notifications/CellBroadcast.qml:187
 msgid "Extreme threats to life and property"
-msgstr ""
+msgstr "Amenazas extremas para la vida y la propiedad"
 
 #: plugins/notifications/CellBroadcast.qml:200
 msgid "Severe threats"
@@ -1297,7 +1290,7 @@ msgstr "Amenazas graves"
 
 #: plugins/notifications/CellBroadcast.qml:201
 msgid "Severe threats to life and property"
-msgstr ""
+msgstr "Graves amenazas para la vida y la propiedad"
 
 #: plugins/notifications/CellBroadcast.qml:214
 msgid "AMBER Alerts"
@@ -1305,15 +1298,15 @@ msgstr "Alertas AMBER"
 
 #: plugins/notifications/CellBroadcast.qml:215
 msgid "Child abduction emergency bulletins"
-msgstr ""
+msgstr "Boletines de emergencia sobre el secuestro de menores"
 
 #: plugins/notifications/CellBroadcast.qml:228
 msgid "Public safety messages"
-msgstr ""
+msgstr "Mensajes para la seguridad ciudadana"
 
 #: plugins/notifications/CellBroadcast.qml:229
 msgid "Recommended actions to save life and property"
-msgstr ""
+msgstr "Recomendaciones para salvar vidas y bienes"
 
 #: plugins/notifications/CellBroadcast.qml:242
 msgid "Tests"
