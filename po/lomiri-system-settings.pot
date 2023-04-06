@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-06 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -741,7 +741,7 @@ msgid "There was an unknown error connecting to %1."
 msgstr ""
 
 #: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
+#: plugins/hotspot/PageComponent.qml:182 plugins/vpn/PageComponent.qml:123
 msgid "OK"
 msgstr ""
 
@@ -949,6 +949,10 @@ msgstr ""
 
 #: plugins/hotspot/PageComponent.qml:160
 msgid "Turn on Wi-Fi"
+msgstr ""
+
+#: plugins/hotspot/PageComponent.qml:178
+msgid "Failed to enable hotspot."
 msgstr ""
 
 #: plugins/language/DisplayLanguage.qml:51
