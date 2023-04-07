@@ -55,9 +55,23 @@ ItemPage {
                 showDivider: false
             }
 
-            ListItem.Standard {
+            Label {
+                anchors {
+                    left:parent.left
+                    right:parent.right
+                    leftMargin: units.gu(2)
+                    rightMargin: units.gu(2)
+                }
                 text: i18n.tr("Double-tap anywhere on the screen to wake device.")
+                wrapMode: Text.WordWrap
                 visible: doubleTapToWake.visible
+            }
+
+            ListItem.Standard {
+                id: divider
+                height: divider.height + units.gu(2)
+                visible: doubleTapToWake.visible
+                showDivider: true
             }
         }
     }
