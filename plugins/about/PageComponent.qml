@@ -166,7 +166,7 @@ ItemPage {
                 }
                 objectName: "osItem"
                 text: i18n.tr("OS")
-                value: "Ubuntu %1%2"
+                value: "Ubuntu Touch %1%2"
                     .arg(deviceInfos.version(DeviceInfo.Os))
                     .arg(versionIdentifier ? " (%1)".arg(versionIdentifier) : "")
                 onClicked: pageStack.addPageToNextColumn(root, Qt.resolvedUrl("Version.qml"), {
