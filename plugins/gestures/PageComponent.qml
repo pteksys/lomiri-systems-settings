@@ -90,6 +90,7 @@ ItemPage {
             SettingsListItems.Standard {
                 Column {
                     spacing: units.gu(1)
+                    bottomPadding: units.gu(1)
                     anchors {
                         left: parent.left
                         leftMargin: units.gu(2)
