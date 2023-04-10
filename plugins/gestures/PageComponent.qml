@@ -103,14 +103,19 @@ ItemPage {
                     }
                     // slider row with min and max labels
                     Row {
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                        }
                         Label {
-                            //TRANSLATORS: minimum slider value
-                            text: i18n.tr("min. %1").arg(dragSensitivity.minimumValue)
+                            id: minValueLabel
+                            width: units.gu(2)
+                            text: dragSensitivity.minimumValue
                             anchors.verticalCenter: parent.verticalCenter
                         }
                         Menus.SliderMenu {
                             id: dragSensitivity
-                            width: parent.width * 0.75
+                            width: parent.width - (minValueLabel.width + maxValueLabel.width)
                             function formatValue(v) { return v }
                             minimumValue: 1
                             maximumValue: 5
@@ -132,8 +137,9 @@ ItemPage {
                         }
 
                         Label {
-                            //TRANSLATORS: maximum slider value
-                            text: i18n.tr("max. %1").arg(dragSensitivity.maximumValue)
+                            id: maxValueLabel
+                            width: units.gu(2)
+                            text: dragSensitivity.maximumValue
                             anchors.verticalCenter: parent.verticalCenter
                         }
                     }
