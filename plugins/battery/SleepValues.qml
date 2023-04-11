@@ -35,7 +35,7 @@ ItemPage {
 
     readonly property alias usePowerd: batteryBackend.powerdRunning
     property bool lockOnSuspend
-    readonly property variant idleValues: [30, 60, 120, 180, 240, 300, 600, 0]
+    readonly property variant idleValues: [30, 60, 120, 180, 240, 300, 600, 900, 1800, 0]
 
     LomiriBatteryPanel {
         id: batteryBackend
@@ -105,6 +105,14 @@ ItemPage {
                     i18n.tr("After %1 minute",
                             "After %1 minutes",
                             10).arg(10),
+                    // TRANSLATORS: %1 is the number of minutes
+                    i18n.tr("After %1 minute",
+                            "After %1 minutes",
+                            15).arg(15),
+                    // TRANSLATORS: %1 is the number of minutes
+                    i18n.tr("After %1 minute",
+                            "After %1 minutes",
+                            30).arg(30),
                     i18n.tr("Never")]
                 expanded: true
                 onDelegateClicked: {
