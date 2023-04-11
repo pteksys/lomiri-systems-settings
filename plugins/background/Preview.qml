@@ -46,27 +46,24 @@ ItemPage {
             headerStyle.textColor = Theme.palette.selected.backgroundText;
     }
 
-    states: [
-        State {
-            name: "saved"
-            StateChangeScript {
-                script: {
-                    save();
-                    pageStack.removePages(preview);
-                }
-            }
-        },
-        State {
-            name: "cancelled"
-            StateChangeScript {
-                script: {
-                    pageStack.removePages(preview);
-                }
-            }
-        }
-    ]
+    // keep the ItemPage components title, which is a predefined property, to avoid errors about translations
+    title: pageHeader.title
+    // override the ItemPage components header to allow actions in the header
+    header: PageHeader {
+        id: pageHeader
+        title: i18n.tr("Preview")
 
-    title: i18n.tr("Preview")
+        trailingActionBar { actions: [
+                    Action {
+                        text: i18n.tr("Set")
+                        iconName: "tick"
+                        onTriggered: {
+                            save();
+                            pageStack.removePages(preview);
+                        }
+                    }]
+                }
+    }
 
     Image {
         id: previewImage
@@ -74,61 +71,12 @@ ItemPage {
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: divider.top
+            bottom: parent.bottom
         }
         source: uri
         autoTransform: true
         sourceSize.height: height
         sourceSize.width: 0
         fillMode: Image.PreserveAspectCrop
-    }
-
-    SettingsListItems.ThinDivider {
-        id: divider
-        anchors.bottom: previewButtons.top
-        anchors.bottomMargin: units.gu(2)
-    }
-
-    ListItem {
-        id: previewButtons
-        anchors {
-            left: parent.left
-            right: parent.right
-            bottom: parent.bottom
-        }
-        divider.visible: false
-        height: buttonRow.height + units.gu(2)
-
-        Row {
-            id: buttonRow
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: units.gu(2)
-
-            Button {
-                objectName: "cancelButton"
-                text: preview.imported ?
-                    i18n.tr("Remove image") : i18n.tr("Cancel")
-                width: (previewButtons.width-units.gu(2)*4)/2
-                onClicked: preview.state = "cancelled"
-            }
-            Button {
-                objectName: "saveButton"
-                text: i18n.tr("Set")
-                width: (previewButtons.width-units.gu(2)*4)/2
-                onClicked: preview.state = "saved"
-            }
-        }
-    }
-
-    /* Make the header slightly darker to ease readability on light backgrounds */
-    Rectangle {
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-        }
-        color: "black"
-        opacity: 0.3
-        height: preview.header.height
     }
 }
