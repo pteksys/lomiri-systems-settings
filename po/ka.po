@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-04-11 20:27+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
 msgid "System Settings"
@@ -57,7 +59,7 @@ msgstr ""
 
 #: plugins/about/PageComponent.qml:33
 msgid "About"
-msgstr ""
+msgstr "პროგრამის შესახებ"
 
 #: plugins/about/PageComponent.qml:97
 msgid "Serial"
@@ -109,7 +111,7 @@ msgstr ""
 #: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
-msgstr ""
+msgstr "არასოდეს"
 
 #: plugins/about/PageComponent.qml:190
 msgid "Check for updates"
@@ -258,7 +260,7 @@ msgstr ""
 #: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
 #: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: plugins/background/Components/AddRemove.qml:52
 msgid "No images selected"
@@ -309,7 +311,7 @@ msgstr ""
 
 #: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
 msgid "Set"
-msgstr ""
+msgstr "დაყენება"
 
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
@@ -351,11 +353,11 @@ msgstr ""
 
 #: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
-msgstr ""
+msgstr "გუშინ"
 
 #: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
 msgid "Today"
-msgstr ""
+msgstr "დღეს"
 
 #: plugins/battery/PageComponent.qml:271
 msgid "Charging now"
@@ -513,7 +515,7 @@ msgstr ""
 
 #: plugins/bluetooth/DevicePage.qml:48 plugins/bluetooth/DevicePage.qml:49
 msgid "Phone"
-msgstr ""
+msgstr "ტელეფონი"
 
 #: plugins/bluetooth/DevicePage.qml:50
 msgid "Modem"
@@ -561,7 +563,7 @@ msgstr ""
 
 #: plugins/bluetooth/DevicePage.qml:61
 msgid "Camera"
-msgstr ""
+msgstr "კამერა"
 
 #: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
@@ -569,7 +571,7 @@ msgstr ""
 
 #: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
-msgstr ""
+msgstr "სხვა"
 
 #: plugins/bluetooth/DevicePage.qml:69
 msgid "Excellent"
@@ -742,7 +744,7 @@ msgstr ""
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr ""
+msgstr "დიახ"
 
 #: plugins/gestures/PageComponent.qml:25
 msgid "Gestures"
@@ -908,11 +910,11 @@ msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:267
 msgid "Change"
-msgstr ""
+msgstr "ცვლილება"
 
 #: plugins/hotspot/HotspotSetup.qml:268
 msgid "Start"
-msgstr ""
+msgstr "გაშვება"
 
 #: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
@@ -957,7 +959,7 @@ msgstr ""
 #: plugins/language/DisplayLanguage.qml:55
 #: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
-msgstr ""
+msgstr "უკან"
 
 #: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
@@ -1320,7 +1322,7 @@ msgstr ""
 #: plugins/notifications/ClickAppsSoundsNotify.qml:30
 #: plugins/sound/PageComponent.qml:39
 msgid "Sound"
-msgstr ""
+msgstr "ხმა"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
@@ -1328,7 +1330,7 @@ msgstr ""
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 msgid "Vibration"
-msgstr ""
+msgstr "ვიბრაცია"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:50
 msgid "When in Silent mode:"
@@ -1384,7 +1386,7 @@ msgstr ""
 
 #: plugins/printing/AddPrinter.qml:78
 msgid "Devices"
-msgstr ""
+msgstr "მოწყობილობა"
 
 #: plugins/printing/AddPrinter.qml:133
 msgid "No devices found."
@@ -1468,7 +1470,7 @@ msgstr ""
 
 #: plugins/printing/PageComponent.qml:136
 msgid "Delete"
-msgstr ""
+msgstr "წაშლა"
 
 #: plugins/printing/PageComponent.qml:149
 #: plugins/printing/printer-sub-pages/Policies.qml:50
@@ -1549,7 +1551,7 @@ msgstr ""
 
 #: plugins/printing/printer-sub-pages/Status.qml:34
 msgid "Active"
-msgstr ""
+msgstr "აქტიური"
 
 #: plugins/printing/printer-sub-pages/Status.qml:36
 msgid "Stopped"
@@ -1660,7 +1662,7 @@ msgstr ""
 
 #: plugins/sound/PageComponent.qml:194
 msgid "Dialpad tones"
-msgstr ""
+msgstr "ციფერბლატის ხმა"
 
 #: plugins/sound/PageComponent.qml:203
 msgid "Messages:"
@@ -1696,7 +1698,7 @@ msgstr ""
 
 #: plugins/sound/SoundsList.qml:213
 msgid "Choose from"
-msgstr ""
+msgstr "აირჩიეთ"
 
 #: plugins/time-date/ChooseTimeZone.qml:30
 msgid "Time zone"
@@ -1792,7 +1794,7 @@ msgstr ""
 
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
-msgstr ""
+msgstr "შენახვა"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
@@ -1994,7 +1996,7 @@ msgstr ""
 
 #: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
-msgstr ""
+msgstr "სუფთა ცა"
 
 #: plugins/wifi/certhandler.cpp:258
 msgid "Private key"
@@ -2010,7 +2012,7 @@ msgstr ""
 
 #: src/qml/MainWindow.qml:203
 msgid "Search"
-msgstr ""
+msgstr "ძებნა"
 
 #: src/qml/MainWindow.qml:246
 msgid "Personal"
