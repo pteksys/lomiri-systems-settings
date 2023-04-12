@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-04-11 20:27+0000\n"
+"PO-Revision-Date: 2023-04-13 05:14+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ka/>\n"
@@ -75,7 +75,7 @@ msgstr ""
 #: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
 #: plugins/wifi/certhandler.cpp:318
 msgid "None"
-msgstr ""
+msgstr "არაფერი"
 
 #: plugins/about/PageComponent.qml:128
 msgid "Wi-Fi address"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "დოკუმენტები"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
@@ -303,7 +303,7 @@ msgstr ""
 
 #: plugins/background/Preview.qml:69
 msgid "Preview"
-msgstr ""
+msgstr "მინიატურა"
 
 #: plugins/background/Preview.qml:110
 msgid "Remove image"
@@ -349,7 +349,7 @@ msgstr ""
 #: plugins/battery/PageComponent.qml:112
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
 msgid "Yesterday"
@@ -507,7 +507,7 @@ msgstr ""
 #: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
 #: plugins/wifi/Common.qml:96
 msgid "Unknown"
-msgstr ""
+msgstr "უცნობი"
 
 #: plugins/bluetooth/DevicePage.qml:47
 msgid "Computer"
@@ -593,7 +593,7 @@ msgstr ""
 #: plugins/printing/printer-sub-pages/Status.qml:61
 #: plugins/wifi/NetworkDetails.qml:59
 msgid "Name"
-msgstr ""
+msgstr "სახელი"
 
 #: plugins/bluetooth/DevicePage.qml:113
 msgid "Type"
@@ -602,7 +602,7 @@ msgstr ""
 #: plugins/bluetooth/DevicePage.qml:124
 #: plugins/printing/printer-sub-pages/Status.qml:26
 msgid "Status"
-msgstr ""
+msgstr "სტატუსი"
 
 #: plugins/bluetooth/DevicePage.qml:128
 msgid "Signal Strength"
@@ -679,7 +679,7 @@ msgstr ""
 #: plugins/brightness/PageComponent.qml:35
 #: plugins/brightness/plugin/brightness-plugin.cpp:65
 msgid "Brightness"
-msgstr ""
+msgstr "სიკაშკაშე"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -902,7 +902,7 @@ msgstr ""
 #: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
-msgstr ""
+msgstr "პაროლის ჩვენება"
 
 #: plugins/hotspot/HotspotSetup.qml:237
 msgid "Starting the hotspot will turn on Wi-Fi."
@@ -963,7 +963,7 @@ msgstr "უკან"
 
 #: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
-msgstr ""
+msgstr "დადასტურება"
 
 #: plugins/language/KeyboardLayouts.qml:29
 #: plugins/language/PageComponent.qml:163
@@ -1422,7 +1422,7 @@ msgstr ""
 #: plugins/printing/AddPrinterDetails.qml:209
 #: plugins/printing/printer-sub-pages/Status.qml:72
 msgid "Location"
-msgstr ""
+msgstr "მდებარეობა"
 
 #: plugins/printing/AddPrinterDetails.qml:219
 msgid "Driver"
@@ -1527,7 +1527,7 @@ msgstr ""
 
 #: plugins/printing/printer-sub-pages/Policies.qml:46
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმები"
 
 #: plugins/printing/printer-sub-pages/Policies.qml:47
 msgid "This is the default printer."
@@ -1748,11 +1748,11 @@ msgstr ""
 
 #: plugins/time-date/TimePicker.qml:56
 msgid "Date"
-msgstr ""
+msgstr "თარიღი"
 
 #: plugins/vpn/PageComponent.qml:31
 msgid "VPN"
-msgstr ""
+msgstr "VPN"
 
 #: plugins/vpn/PageComponent.qml:76
 msgid ""
@@ -1806,7 +1806,7 @@ msgstr ""
 
 #: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
 msgid "Password"
-msgstr ""
+msgstr "პაროლი"
 
 #: plugins/wifi/NetworkDetails.qml:99 plugins/wifi/NetworkDetailsBrief.qml:55
 msgid "Forget this network"
@@ -1885,7 +1885,7 @@ msgstr ""
 #: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
 #: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
 msgid "Choose…"
-msgstr ""
+msgstr "არჩევა…"
 
 #. TRANSLATORS: The first position is the name of
 #. the organization that has issued the certificate.
@@ -1964,7 +1964,7 @@ msgstr ""
 
 #: plugins/wifi/OtherNetwork.qml:715
 msgid "Automatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: plugins/wifi/OtherNetwork.qml:725
 msgid "Anonymous identity"
@@ -1976,7 +1976,7 @@ msgstr ""
 
 #: plugins/wifi/OtherNetwork.qml:754
 msgid "Username"
-msgstr ""
+msgstr "მომხმარებლის სახელი"
 
 #: plugins/wifi/OtherNetwork.qml:784
 msgid "Private key password"
@@ -2020,4 +2020,4 @@ msgstr ""
 
 #: src/qml/MainWindow.qml:251
 msgid "System"
-msgstr ""
+msgstr "სისტემა"
