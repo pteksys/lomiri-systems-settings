@@ -85,7 +85,7 @@ ItemPage {
 
             // edge drag with setting for changing the corresponding gsetting
             SettingsItemTitle {
-                text: i18n.tr("Width of edge drag area:")
+                text: i18n.tr("Edge drag sensitivity:")
             }
             SettingsListItems.Standard {
                 Column {
@@ -99,7 +99,7 @@ ItemPage {
                     }
 
                     Label {
-                        text: i18n.tr("Edge drag value: %1 (in grid units)").arg(edgeDragGsetting.edgeDragWidth)
+                        text: i18n.tr("Current value: %1").arg(edgeDragGsetting.edgeDragWidth)
                     }
                     // slider row with min and max labels
                     Row {
