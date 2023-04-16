@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2021-03-05 06:27+0000\n"
-"Last-Translator: Sam Zhang <sammyok@163.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports/system-settings/zh_Hans/>\n"
+"PO-Revision-Date: 2023-04-22 21:43+0000\n"
+"Last-Translator: Lu Xu <oliver_lew@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"lomiri/lomiri-system-settings/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-24 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -141,16 +141,12 @@ msgid "Scanning"
 msgstr "扫描"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "系统设置"
+msgstr "系统保留"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "应用程序所占空间"
+msgstr "系统使用"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -2020,7 +2016,7 @@ msgstr "连接到隐藏网络…"
 
 #: plugins/wifi/PageComponent.qml:139 plugins/wifi/PreviousNetworks.qml:27
 msgid "Previous networks"
-msgstr "前一网络"
+msgstr "曾连接网络"
 
 #: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
