@@ -38,7 +38,8 @@ Item {
             left: parent.left
             leftMargin: units.gu(2)
         }
-        fontSize: "small"
+        fontSize: "medium"
         opacity: 0.75
+        font.bold: true
     }
 }
