@@ -137,7 +137,7 @@ ItemPage {
 
                 SettingsListItems.Standard {
                     id: highVolumeWarning
-                    visible: volumeSlider.value > 0.9
+                    visible: soundActionGroup.highVolume.state == true
                     color: theme.palette.normal.negative
                     text: i18n.tr("High volume can damage your hearing.")
                     divider.visible: false
