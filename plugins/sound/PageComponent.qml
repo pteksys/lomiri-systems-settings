@@ -151,7 +151,7 @@ ItemPage {
                 }
 
                 SettingsListItems.SingleValueProgression {
-                    text: i18n.tr("Call received")
+                    text: i18n.tr("Ringtone")
                     value: Utilities.buildDisplayName(backendInfo.incomingCallSound)
                     divider.visible: false
 
@@ -223,7 +223,7 @@ ItemPage {
                     divider.visible: false
                     onClicked: pageStack.addPageToNextColumn(root,
                         Qt.resolvedUrl("SoundsList.qml"), {
-                            title: i18n.tr("Message received"),
+                            title: i18n.tr("Message sound"),
                             soundType: 1,
                             soundsDir:  "sounds/lomiri/notifications/"
                         }
