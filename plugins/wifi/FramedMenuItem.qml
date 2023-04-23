@@ -25,5 +25,5 @@ import Lomiri.Components 1.3
 SettingsListItems.IconProgression {
     // FIXME: use padding + padding + icon width
     divider.anchors.leftMargin: units.gu(6)
-    layout.subtitle.color: LomiriColors.green
+    layout.subtitle.color: theme.palette.normal.positive
 }

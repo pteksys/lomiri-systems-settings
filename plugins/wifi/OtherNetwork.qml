@@ -328,7 +328,7 @@ Component {
         Label {
             id: wepInsecureLabel
             objectName: "wepInsecureLabel"
-            color: "red"
+            color: theme.palette.normal.negative
             text: i18n.tr("This network is insecure.")
             visible: securityList.selectedIndex === 3
         }
@@ -903,7 +903,7 @@ Component {
                 objectName: "connect"
                 Layout.fillWidth: true
                 text: i18n.tr("Connect")
-                color: LomiriColors.green
+                color: theme.palette.normal.positive
                 enabled: connectAction.enabled
                 action: connectAction
                 Icon {

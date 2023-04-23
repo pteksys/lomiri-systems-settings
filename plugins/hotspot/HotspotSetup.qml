@@ -287,7 +287,7 @@ Component {
                         height: parent.height - units.gu(1.5)
                         width: parent.height - units.gu(1.5)
                         name: "tick"
-                        color: "green"
+                        color: theme.palette.normal.positive
                         visible: false
                     }
 
