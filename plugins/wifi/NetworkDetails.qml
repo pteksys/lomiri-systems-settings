@@ -97,7 +97,7 @@ ItemPage {
                 Button {
                     objectName: "forgetNetwork"
                     text : i18n.tr("Forget this network")
-                    color: LomiriColors.red
+                    color: theme.palette.normal.negative
                     anchors {
                         left: parent.left
                         right: parent.right

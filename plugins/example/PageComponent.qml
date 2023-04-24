@@ -28,6 +28,6 @@ ItemPage {
     Rectangle {
         anchors.fill: parent
         anchors.margins: 10
-        color: "red"
+        color: theme.palette.normal.negative
     }
 }
