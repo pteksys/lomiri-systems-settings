@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 06:53+0000\n"
-"PO-Revision-Date: 2023-04-02 03:46+0000\n"
-"Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
+"PO-Revision-Date: 2023-04-26 20:10+0000\n"
+"Last-Translator: Lorenzo Torracchi <lorenzotorracchi@mail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -1265,7 +1265,7 @@ msgstr "Trasmissione di Emergenza"
 
 #: plugins/notifications/CellBroadcast.qml:125
 msgid "Cell Broadcast is not available"
-msgstr "Il Cell Broadcast è ora disponibile"
+msgstr "Il Cell Broadcast non è disponibile"
 
 #: plugins/notifications/CellBroadcast.qml:157
 msgid "Cell Broadcast Enabled"
