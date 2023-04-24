@@ -108,7 +108,7 @@ ItemPage {
                 columns: 3
                 bgmodel: backgroundPanel.systemArt
                 backgroundPanel: backgroundPanel
-                title: i18n.tr("System Art")
+                title: i18n.tr("System art")
                 current: welcomeBackground
                 onSelected: preview({ uri: uri })
             }
