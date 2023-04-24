@@ -35,12 +35,6 @@ Item {
             bottom: parent.bottom
         }
 
-        SettingsListItems.ThinDivider {
-            anchors {
-                top: parent.top
-            }
-        }
-
         Label {
             id: label
             anchors {

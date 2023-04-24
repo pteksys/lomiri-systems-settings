@@ -87,17 +87,17 @@ ItemPage {
                 right: parent.right
             }
 
-            Column {
-                anchors.left: parent.left
-                anchors.right: parent.right
-                ListItem.Standard {
-                    text: i18n.tr("Enable blur effects")
-                    control: Switch {
-                        checked: shellSettings.enableBlur
-                        onCheckedChanged: shellSettings.enableBlur = checked
-                    }
-                    showDivider: false
+            ListItem.Standard {
+                text: i18n.tr("Enable blur effects")
+                control: Switch {
+                    checked: shellSettings.enableBlur
+                    onCheckedChanged: shellSettings.enableBlur = checked
                 }
+                showDivider: true
+            }
+
+            SettingsItemTitle {
+                text: i18n.tr("Background image:")
             }
 
             WallpaperGrid {
@@ -112,6 +112,7 @@ ItemPage {
                 current: welcomeBackground
                 onSelected: preview({ uri: uri })
             }
+            ListItem.ThinDivider { }
 
             WallpaperGrid {
                 id: customGrid
@@ -127,6 +128,7 @@ ItemPage {
                 isCustom: true
                 onSelected: preview({ uri: uri })
             }
+            ListItem.Divider { }
         }
     }
 
