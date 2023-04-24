@@ -49,7 +49,7 @@ Item {
                 verticalCenter: parent.verticalCenter
             }
 
-            color: "grey" // TODO karni: Update Ubuntu.Compoonents.Themes.Palette.
+            color: theme.palette.normal.foregroundText
             font.family: "Ubuntu"
             fontSize: "medium"
             elide: Text.ElideRight
