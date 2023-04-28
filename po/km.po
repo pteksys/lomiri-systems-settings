@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2014-09-02 07:48+0000\n"
 "Last-Translator: Sophea Sok <sksophea@gmail.com>\n"
 "Language-Team: Khmer <km@li.org>\n"
@@ -25,6 +25,10 @@ msgstr "ការ​កំណត់​ប្រព័ន្ធ"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
+msgstr ""
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
 msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
@@ -112,7 +116,7 @@ msgid "Last updated"
 msgstr "បាន​​ធ្វើ​បច្ចុប្បន្នភាព​ចុងក្រោយ"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "កុំ"
@@ -271,21 +275,21 @@ msgstr "មិនស្គាល់​ចំណងជើង"
 msgid "Cancel"
 msgstr "បោះ​បង់"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "មិន​បាន​ជ្រើស​រូបភាព"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "លុប​រូបភាព %1"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "បន្ថែម​រូបភាព..."
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "លុប​រូបភាព..."
 
@@ -295,21 +299,27 @@ msgstr "លុប​រូបភាព..."
 msgid "Background & Appearance"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr ""
 
-#: plugins/background/MainPage.qml:104
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "ផ្ទៃ​ខាងក្រោយ"
+
+#: plugins/background/MainPage.qml:111
 #, fuzzy
 #| msgid "System"
-msgid "System Art"
+msgid "System art"
 msgstr "ប្រព័ន្ធ"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 #, fuzzy
 msgid "Choose application"
 msgstr "ជ្រើស​ពាក្យ​សម្ងាត់"
@@ -410,6 +420,7 @@ msgstr[0] "បន្ទាប់​ពី %1 នាទី"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -447,14 +458,14 @@ msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
 msgstr[0] "បន្ទាប់​ពី %1 នាទី"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 #, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr "ពេលវេលា​កាន់តែ​ខ្លី​សុវត្ថិភាព​កាន់​តែ​ខ្ពស់។ ទូរស័ព្ទ​នឹង​មិន​ចាក់​សោ​ពេល​ហៅ ឬ​ចាក់​វីដេអូ។"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 #, fuzzy
 msgid "Device won’t sleep during calls or video playback."
 msgstr "ទូរស័ព្ទ​នឹង​មិន​ដេក​ពេល​ហៅ ឬ​ចាក់​វីដេអូ។"
@@ -779,7 +790,7 @@ msgstr "រូបភាព"
 msgid "Tap to wake"
 msgstr ""
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
@@ -2144,9 +2155,6 @@ msgstr "ប្រព័ន្ធ"
 
 #~ msgid "appearance"
 #~ msgstr "រូបរាង"
-
-#~ msgid "background"
-#~ msgstr "ផ្ទៃ​ខាងក្រោយ"
 
 #~ msgid "wallpaper"
 #~ msgstr "ផ្ទាំង​រូបភាព"

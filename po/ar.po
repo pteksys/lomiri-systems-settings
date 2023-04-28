@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2021-03-22 23:17+0000\n"
 "Last-Translator: abidin <abidin24@tutanota.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/ubports/system-"
@@ -28,6 +28,10 @@ msgstr "إعدادات النظام"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "خيارات;إعدادات;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -112,7 +116,7 @@ msgid "Last updated"
 msgstr "آخر تحديث"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "أبدا"
@@ -270,11 +274,11 @@ msgstr "عنوان مجهول"
 msgid "Cancel"
 msgstr "ألغ"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "لم تختر أي صورة"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
@@ -285,11 +289,11 @@ msgstr[3] "أزل %1 صور"
 msgstr[4] "أزل %1 صورة"
 msgstr[5] "أزل %1 صورة"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "أضف صورة…"
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "أزل صورًا…"
 
@@ -299,21 +303,27 @@ msgstr "أزل صورًا…"
 msgid "Background & Appearance"
 msgstr "الخلفية"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr ""
 
-#: plugins/background/MainPage.qml:104
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "الخلفية"
+
+#: plugins/background/MainPage.qml:111
 #, fuzzy
 #| msgid "System"
-msgid "System Art"
+msgid "System art"
 msgstr "النظام"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "مخصص"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 #, fuzzy
 #| msgid "Choose a connection"
 msgid "Choose application"
@@ -435,6 +445,7 @@ msgstr[5] "بعد %1 ثانية"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -479,7 +490,7 @@ msgstr[3] "بعد %1 ثوان"
 msgstr[4] "بعد %1 ثانية"
 msgstr[5] "بعد %1 ثانية"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -487,7 +498,7 @@ msgstr ""
 "الأوقات الأقصر تكون أكثر أمانا. لن يتم إيصاد الهاتف أثناء المكالمات أو أثناء "
 "تشغيل الفيديو."
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid "Device won’t sleep during calls or video playback."
 msgstr "لن يسبُت الهاتف أثناء إجراء المكالمات أو أثناء تشغيل الفيديو."
 
@@ -803,7 +814,7 @@ msgstr "صور"
 msgid "Tap to wake"
 msgstr "حول الضغط الى نقر"
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
@@ -2160,9 +2171,6 @@ msgstr "النظام"
 
 #~ msgid "appearance"
 #~ msgstr "المظهر"
-
-#~ msgid "background"
-#~ msgstr "الخلفية"
 
 #~ msgid "wallpaper"
 #~ msgstr "الخلفية"

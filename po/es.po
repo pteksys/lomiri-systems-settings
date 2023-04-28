@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2023-04-06 21:55+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/"
-"lomiri-system-settings/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/lomiri-"
+"system-settings/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,6 +27,10 @@ msgstr "Configuración del sistema"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferencias;Configuración;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -115,7 +119,7 @@ msgid "Last updated"
 msgstr "Última actualización"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nunca"
@@ -269,22 +273,22 @@ msgstr "Título desconocido"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "No hay imágenes seleccionadas"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "Eliminar %1 imagen"
 msgstr[1] "Eliminar %1 imágenes"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "Añadir una imagen…"
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "Eliminar imágenes…"
 
@@ -292,19 +296,27 @@ msgstr "Eliminar imágenes…"
 msgid "Background & Appearance"
 msgstr "Fondo y apariencia"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr "Activar efectos de desenfoque"
 
-#: plugins/background/MainPage.qml:104
-msgid "System Art"
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "fondo"
+
+#: plugins/background/MainPage.qml:111
+#, fuzzy
+#| msgid "System Art"
+msgid "System art"
 msgstr "Arte del sistema"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "Personalizado"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 msgid "Choose application"
 msgstr "Elije la aplicación"
 
@@ -408,6 +420,7 @@ msgstr[1] "Tras %1 segundos"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -444,7 +457,7 @@ msgid_plural "After %1 seconds"
 msgstr[0] "Tras %1 segundo"
 msgstr[1] "Tras %1 segundos"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -452,7 +465,7 @@ msgstr ""
 "Los tiempos más cortos son más seguros. El dispositivo no se bloqueará "
 "durante las llamadas o la reproducción de vídeo."
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid "Device won’t sleep during calls or video playback."
 msgstr ""
 "El dispositivo no entrará en reposo durante las llamadas o la reproducción "
@@ -766,7 +779,7 @@ msgstr "Gestos"
 msgid "Tap to wake"
 msgstr "Pulsa para despertar"
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 "Toca dos veces en cualquier lugar de la pantalla para activar el dispositivo."
@@ -2117,9 +2130,6 @@ msgstr "Sistema"
 
 #~ msgid "appearance"
 #~ msgstr "apariencia"
-
-#~ msgid "background"
-#~ msgstr "fondo"
 
 #~ msgid "wallpaper"
 #~ msgstr "fondo de pantalla"

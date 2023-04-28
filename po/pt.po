@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2023-02-07 21:41+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -27,6 +27,10 @@ msgstr "Definições"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferências;Definições;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -115,7 +119,7 @@ msgid "Last updated"
 msgstr "Última atualização"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nunca"
@@ -269,22 +273,22 @@ msgstr "Título desconhecido"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "Sem imagens selecionadas"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
 msgstr[0] "Remover %1 imagem"
 msgstr[1] "Remover %1 imagens"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "Adicionar imagem…"
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "Remover imagens…"
 
@@ -292,19 +296,27 @@ msgstr "Remover imagens…"
 msgid "Background & Appearance"
 msgstr "Fundo de ecrã e Aparência"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr "Ativar efeitos de desfoque"
 
-#: plugins/background/MainPage.qml:104
-msgid "System Art"
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "fundo"
+
+#: plugins/background/MainPage.qml:111
+#, fuzzy
+#| msgid "System Art"
+msgid "System art"
 msgstr "Arte do Sistema"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "Personalizar"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 msgid "Choose application"
 msgstr "Escolha a aplicação"
 
@@ -408,6 +420,7 @@ msgstr[1] "Após %1 minutos"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -444,7 +457,7 @@ msgid_plural "After %1 seconds"
 msgstr[0] "Após %1 minuto"
 msgstr[1] "Após %1 minutos"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -452,7 +465,7 @@ msgstr ""
 "Tempos mais curtos são mais seguros. O telemóvel não bloqueia durante "
 "chamadas ou reprodução de vídeo."
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid "Device won’t sleep during calls or video playback."
 msgstr "O telemóvel não hiberna durante chamadas ou reprodução de vídeo."
 
@@ -764,7 +777,7 @@ msgstr "Gestos"
 msgid "Tap to wake"
 msgstr "Toque para acordar"
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr "Toque duas vezes em qualquer lugar do ecrã para acordar o dispositivo."
 
@@ -2114,9 +2127,6 @@ msgstr "Sistema"
 
 #~ msgid "appearance"
 #~ msgstr "aparência"
-
-#~ msgid "background"
-#~ msgstr "fundo"
 
 #~ msgid "wallpaper"
 #~ msgstr "papel de parede"

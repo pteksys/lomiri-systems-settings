@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2023-02-18 17:33+0000\n"
 "Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -28,6 +28,10 @@ msgstr "Ustawienia systemowe"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferencje;Ustawienia;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -114,7 +118,7 @@ msgid "Last updated"
 msgstr "Ostatnia aktualizacja"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nigdy"
@@ -268,11 +272,11 @@ msgstr "Nieznany tytuł"
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "Nie wybrano żadnych obrazów"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
@@ -280,11 +284,11 @@ msgstr[0] "Usuń %1 obrazek"
 msgstr[1] "Usuń %1 obrazki"
 msgstr[2] "Usuń %1 obrazków"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "Dodaj obrazek…"
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "Usuń obrazki…"
 
@@ -292,19 +296,27 @@ msgstr "Usuń obrazki…"
 msgid "Background & Appearance"
 msgstr "Tło i wygląd"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr "Włącz efekty rozmycia"
 
-#: plugins/background/MainPage.qml:104
-msgid "System Art"
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "tło"
+
+#: plugins/background/MainPage.qml:111
+#, fuzzy
+#| msgid "System Art"
+msgid "System art"
 msgstr "Systemowe grafiki"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "Własne"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 msgid "Choose application"
 msgstr "Wybierz aplikację"
 
@@ -412,6 +424,7 @@ msgstr[2] "Po %1 sekundach"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -450,7 +463,7 @@ msgstr[0] "Po %1 sekundzie"
 msgstr[1] "Po %1 sekundach"
 msgstr[2] "Po %1 sekundach"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -458,7 +471,7 @@ msgstr ""
 "Krótsze czasy są bardziej bezpieczne. Podczas połączeń lub odtwarzania wideo "
 "urządzenie nie będzie blokowane."
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid "Device won’t sleep during calls or video playback."
 msgstr ""
 "Telefon nie będzie zablokowywany podczas rozmów lub odtwarzania filmów."
@@ -771,7 +784,7 @@ msgstr "Gesty"
 msgid "Tap to wake"
 msgstr "Dotknij, aby wybudzić"
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 "Stuknij dwukrotnie w dowolne miejsce na ekranie, aby wybudzić urządzenie."
@@ -2125,9 +2138,6 @@ msgstr "System"
 
 #~ msgid "appearance"
 #~ msgstr "wygląd"
-
-#~ msgid "background"
-#~ msgstr "tło"
 
 #~ msgid "wallpaper"
 #~ msgstr "tapeta"

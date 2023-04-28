@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 06:53+0000\n"
+"POT-Creation-Date: 2023-04-24 21:02+0000\n"
 "PO-Revision-Date: 2020-11-04 10:38+0000\n"
 "Last-Translator: Mihai <michael.mozart@protonmail.com>\n"
 "Language-Team: Romanian <https://translate.ubports.com/projects/ubports/"
@@ -28,6 +28,10 @@ msgstr "Configurări de sistem"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferințe;Configurări;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -117,7 +121,7 @@ msgid "Last updated"
 msgstr "Ultima actualizare"
 
 #: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:108
+#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Niciodată"
@@ -276,11 +280,11 @@ msgstr "Titlu necunoscut"
 msgid "Cancel"
 msgstr "Anulează"
 
-#: plugins/background/Components/AddRemove.qml:52
+#: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
 msgstr "Nicio imagine selectată"
 
-#: plugins/background/Components/AddRemove.qml:65
+#: plugins/background/Components/AddRemove.qml:66
 #, qt-format
 msgid "Remove %1 image"
 msgid_plural "Remove %1 images"
@@ -288,11 +292,11 @@ msgstr[0] "Șterge %1 fotografie"
 msgstr[1] "Șterge %1 fotografii"
 msgstr[2] "Șterge %1 de fotografii"
 
-#: plugins/background/Components/AddRemove.qml:79
+#: plugins/background/Components/AddRemove.qml:80
 msgid "Add an image…"
 msgstr "Adăugați o imagine…"
 
-#: plugins/background/Components/AddRemove.qml:89
+#: plugins/background/Components/AddRemove.qml:90
 msgid "Remove images…"
 msgstr "Eliminați imaginile…"
 
@@ -302,21 +306,27 @@ msgstr "Eliminați imaginile…"
 msgid "Background & Appearance"
 msgstr "Fundal"
 
-#: plugins/background/MainPage.qml:87
+#: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
 msgstr ""
 
-#: plugins/background/MainPage.qml:104
+#: plugins/background/MainPage.qml:100
+#, fuzzy
+#| msgid "background"
+msgid "Background image:"
+msgstr "fundal"
+
+#: plugins/background/MainPage.qml:111
 #, fuzzy
 #| msgid "System"
-msgid "System Art"
+msgid "System art"
 msgstr "Sistem"
 
-#: plugins/background/MainPage.qml:117
+#: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "Personalizat"
 
-#: plugins/background/MainPage.qml:176
+#: plugins/background/MainPage.qml:185
 #, fuzzy
 msgid "Choose application"
 msgstr "Alegeți un nume"
@@ -425,6 +435,7 @@ msgstr[2] "După %1 de secunde"
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
+#: plugins/battery/SleepValues.qml:109 plugins/battery/SleepValues.qml:113
 #, qt-format
 msgid "After %1 minute"
 msgid_plural "After %1 minutes"
@@ -463,7 +474,7 @@ msgstr[0] "După %1 minut"
 msgstr[1] "După %1 minute"
 msgstr[2] "După %1 de minute"
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
@@ -471,7 +482,7 @@ msgstr ""
 "Timpii mai scurți asigură o securizare mai bună. Dispozitivul nu se va bloca "
 "pe parcursul apelurilor sau a redării video."
 
-#: plugins/battery/SleepValues.qml:125
+#: plugins/battery/SleepValues.qml:133
 msgid "Device won’t sleep during calls or video playback."
 msgstr ""
 "Dispozitivul nu va intra în suspendare pe parcursul apelurilor sau a redării "
@@ -792,7 +803,7 @@ msgstr "Fotografii"
 msgid "Tap to wake"
 msgstr "Atinge pentru a face click"
 
-#: plugins/gestures/PageComponent.qml:59
+#: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
@@ -2181,9 +2192,6 @@ msgstr "Sistem"
 
 #~ msgid "appearance"
 #~ msgstr "aspect"
-
-#~ msgid "background"
-#~ msgstr "fundal"
 
 #~ msgid "wallpaper"
 #~ msgstr "imagine de fundal"
