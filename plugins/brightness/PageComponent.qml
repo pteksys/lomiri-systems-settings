@@ -74,7 +74,7 @@ ItemPage {
             anchors.right: parent.right
 
             SettingsItemTitle {
-                text: i18n.tr("Display brightness")
+                text: i18n.tr("Display brightness:")
             }
 
             /* Use the SliderMenu component instead of the Slider to avoid binding
@@ -131,8 +131,10 @@ ItemPage {
                 visible: adjust.visible
             }
 
+            ListItem.Divider {}
+
             SettingsItemTitle {
-                text: i18n.tr("Display")
+                text: i18n.tr("Display:")
                 visible: brightnessPanel.widiSupported
             }
 
