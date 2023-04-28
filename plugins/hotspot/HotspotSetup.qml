@@ -176,13 +176,16 @@ Component {
                 objectName: "ssidField"
                 text: Connectivity.hotspotSsid
                 inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                Component.onCompleted: forceActiveFocus()
+                Component.onCompleted: {
+                    forceActiveFocus()
+                    cursorTimer.start()
+                }
                 width: parent.width
             }
 
             SettingsListItems.Standard {
                 id: passwordRequired
-                text: i18n.tr("Require a password (recommended):")
+                text: i18n.tr("Require a password (recommended)")
                 showDivider: false
                 layout.padding.leading: 0
                 SlotsLayout.padding.leading: 0
@@ -381,6 +384,16 @@ Component {
             running: false
             repeat: false
             onTriggered: PopupUtils.close(hotspotSetupDialog)
+        }
+
+        /* Timer that moves the cursor to the end of the TextField content
+        after the OSK has risen. This avoids cursor indicator parts being stuck
+        at the position before the OSK came up.*/
+        Timer {
+            id: cursorTimer
+            interval: 250
+            running: false
+            onTriggered: ssidField.cursorPosition = ssidField.text.length
         }
 
         Connections {
