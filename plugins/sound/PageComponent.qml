@@ -97,7 +97,7 @@ ItemPage {
                 visible: NetworkingStatus.modemAvailable
 
                 SettingsItemTitle {
-                    text: i18n.tr("Ringer:")
+                    text: i18n.tr("Ringer volume:")
                 }
 
                 QDBusActionGroup {
@@ -138,8 +138,13 @@ ItemPage {
                 SettingsListItems.Standard {
                     id: highVolumeWarning
                     visible: soundActionGroup.highVolume.state == true
+                    color: theme.palette.normal.negative
                     text: i18n.tr("High volume can damage your hearing.")
+                    divider.visible: false
                 }
+
+                // with highVolumeWarning not visible there would be no divider -> enforce a divider here
+                SettingsListItems.Divider {}
 
                 SettingsItemTitle {
                     text: i18n.tr("Phone calls:")
@@ -148,6 +153,7 @@ ItemPage {
                 SettingsListItems.SingleValueProgression {
                     text: i18n.tr("Ringtone")
                     value: Utilities.buildDisplayName(backendInfo.incomingCallSound)
+                    divider.visible: false
 
                     onClicked: pageStack.addPageToNextColumn(root,
                         Qt.resolvedUrl("SoundsList.qml"), {
@@ -158,6 +164,7 @@ ItemPage {
                         }
                     )
                 }
+                SettingsListItems.ThinDivider {}
 
                 SettingsListItems.Standard {
                     CheckBox {
@@ -169,7 +176,9 @@ ItemPage {
                         onTriggered: backendInfo.incomingCallVibrate = checked
                     }
                     text: i18n.tr("Vibrate on ring")
+                    divider.visible: false
                 }
+                SettingsListItems.ThinDivider {}
 
                 SettingsListItems.Standard {
                     CheckBox {
@@ -181,7 +190,9 @@ ItemPage {
                         onTriggered: backendInfo.incomingCallVibrateSilentMode = checked
                     }
                     text: i18n.tr("Vibrate in Silent Mode")
+                    divider.visible: false
                 }
+                SettingsListItems.ThinDivider {}
 
                 SettingsListItems.Standard {
                     Switch {
@@ -209,14 +220,16 @@ ItemPage {
                     text: i18n.tr("Message received")
                     value:Utilities.buildDisplayName(
                               backendInfo.incomingMessageSound)
+                    divider.visible: false
                     onClicked: pageStack.addPageToNextColumn(root,
                         Qt.resolvedUrl("SoundsList.qml"), {
-                            title: i18n.tr("Message received"),
+                            title: i18n.tr("Message sound"),
                             soundType: 1,
                             soundsDir:  "sounds/lomiri/notifications/"
                         }
                     )
                 }
+                SettingsListItems.ThinDivider {}
 
                 SettingsListItems.Standard {
                     CheckBox {
@@ -228,7 +241,9 @@ ItemPage {
                         onTriggered: backendInfo.incomingMessageVibrate = checked
                     }
                     text: i18n.tr("Vibrate with message sound")
+                    divider.visible: false
                 }
+                SettingsListItems.ThinDivider {}
 
                 SettingsListItems.Standard {
                     CheckBox {
@@ -249,6 +264,7 @@ ItemPage {
 
             SettingsListItems.Standard {
                 text: i18n.tr("Keyboard sound")
+                divider.visible: false
 
                 Switch {
                     objectName: "keyboardSoundSwitch"
@@ -258,6 +274,7 @@ ItemPage {
                     onTriggered: keyboardSettings.keyPressFeedback = checked
                 }
             }
+            SettingsListItems.ThinDivider {}
 
             SettingsListItems.Standard {
                 id: lockSound
@@ -266,6 +283,10 @@ ItemPage {
                     checked: false
                 }
                 text: i18n.tr("Lock sound")
+                visible: showAllUI
+                divider.visible: false
+            }
+            SettingsListItems.ThinDivider {
                 visible: showAllUI
             }
 
