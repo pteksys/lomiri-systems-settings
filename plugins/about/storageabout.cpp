@@ -258,7 +258,7 @@ bool StorageAbout::getDeveloperMode()
 
 void StorageAbout::setDeveloperMode(bool enabled)
 {
-    QDBusReply<QString> reply = m_usbModed->call("mode_request"); // Currently applied mode.
+    QDBusReply<QString> reply = m_usbModed->call("get_config");
 
     if (!reply.isValid()) {
         qWarning("devMode: no reply from usb moded, unable to change developer mode");
@@ -266,14 +266,14 @@ void StorageAbout::setDeveloperMode(bool enabled)
     }
 
     QString current_mode = reply.value();
-    if (current_mode == "developer_mode" || current_mode == "charging_only") {
+    QString target_mode;
+
+    if (!current_mode.startsWith("mtp") && !current_mode.startsWith("rndis")) {
         // Special case for usb-moded's built-in modes.
-        current_mode = "mtp";
+        target_mode = enabled ? "mtp_adb" : "mtp";
     }
     // Possible modes are: mtp mtp_adb rndis rndis_adb
-
-    QString target_mode;
-    if (enabled && !current_mode.endsWith("_adb"))
+    else if (enabled && !current_mode.endsWith("_adb"))
         target_mode = current_mode + "_adb";
     else if (!enabled && current_mode.endsWith("_adb"))
         target_mode = current_mode.chopped(4);
