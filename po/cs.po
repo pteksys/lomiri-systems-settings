@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-24 21:02+0000\n"
-"PO-Revision-Date: 2023-04-02 03:46+0000\n"
+"PO-Revision-Date: 2023-05-02 21:02+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -30,7 +30,7 @@ msgstr "Předvolby;Nastavení;"
 
 #: lomiri-system-settings.desktop.in:6
 msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
+msgstr "/usr/share/lomiri-system-settings/system-settings.svg"
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -300,14 +300,10 @@ msgid "Enable blur effects"
 msgstr "Povolit efekt rozmazání"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "pozadí"
+msgstr "Obrázek pozadí:"
 
 #: plugins/background/MainPage.qml:111
-#, fuzzy
-#| msgid "System Art"
 msgid "System art"
 msgstr "Systémové tapety"
 
