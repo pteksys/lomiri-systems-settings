@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-24 21:02+0000\n"
-"PO-Revision-Date: 2023-04-07 11:41+0000\n"
+"PO-Revision-Date: 2023-05-02 21:02+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -300,14 +300,10 @@ msgid "Enable blur effects"
 msgstr "Unschärfeeffekte aktivieren"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "Hintergrund"
+msgstr "Hintergrundbild:"
 
 #: plugins/background/MainPage.qml:111
-#, fuzzy
-#| msgid "System Art"
 msgid "System art"
 msgstr "Vorinstallierte Bilder"
 
