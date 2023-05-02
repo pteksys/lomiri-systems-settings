@@ -106,6 +106,7 @@ ItemPage {
             onClicked: {
                 locationsListView.manuallySelected = displayName
                 timeDatePanel.setTimeZone(timeZone, city);
+                goBackTimer.start()
             }
             selected: locationsListView.manuallySelected === "" ?
                           timeDatePanel.timeZone == timeZone :
