@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-24 21:02+0000\n"
-"PO-Revision-Date: 2023-02-07 21:41+0000\n"
+"PO-Revision-Date: 2023-05-08 19:10+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/pt/>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-24 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -30,7 +30,7 @@ msgstr "Preferências;Definições;"
 
 #: lomiri-system-settings.desktop.in:6
 msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
+msgstr "/usr/share/lomiri-system-settings/system-settings.svg"
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -301,16 +301,12 @@ msgid "Enable blur effects"
 msgstr "Ativar efeitos de desfoque"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "fundo"
+msgstr "Imagem de fundo:"
 
 #: plugins/background/MainPage.qml:111
-#, fuzzy
-#| msgid "System Art"
 msgid "System art"
-msgstr "Arte do Sistema"
+msgstr "Arte do sistema"
 
 #: plugins/background/MainPage.qml:125
 msgid "Custom"
