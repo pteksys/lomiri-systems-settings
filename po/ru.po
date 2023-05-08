@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -28,10 +28,6 @@ msgstr "Настройки системы"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Настройки;Параметры;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -257,13 +253,12 @@ msgid "Unknown title"
 msgstr "Неизвестное название"
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -320,15 +315,11 @@ msgstr "Пользовательские"
 msgid "Choose application"
 msgstr "Выберите приложение"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "Просмотреть"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "Удалить файл образа"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Выбрать"
 
@@ -398,7 +389,6 @@ msgid "Ways to reduce battery use:"
 msgstr "Способы для продления использования от батареи:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "Яркость экрана"
 
@@ -515,7 +505,7 @@ msgid "Confirm PIN"
 msgstr "Подтвердите ПИН-код"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -712,6 +702,12 @@ msgstr "Яркость и экран"
 msgid "Brightness"
 msgstr "Яркость"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "Display brightness"
+msgid "Display brightness:"
+msgstr "Яркость экрана"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Автонастройка"
@@ -720,19 +716,21 @@ msgstr "Автонастройка"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Автонастройка яркости экрана в зависимости от освещённости."
 
-#: plugins/brightness/PageComponent.qml:135
-msgid "Display"
+#: plugins/brightness/PageComponent.qml:137
+#, fuzzy
+#| msgid "Display"
+msgid "Display:"
 msgstr "Экран"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 msgid "External display"
 msgstr "Внешний экран"
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 msgid "Wireless display"
 msgstr "Беспроводный экран"
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
@@ -928,24 +926,26 @@ msgstr "Имя точки доступа"
 msgid "Choose a name"
 msgstr "Выберите имя"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+#, fuzzy
+#| msgid "Require a password (recommended):"
+msgid "Require a password (recommended)"
 msgstr "Использовать пароль (рекомендуется):"
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Показать пароль"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Включение точки доступа также включит и Wi-Fi."
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "Изменить"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr "Начать"
 
@@ -1114,7 +1114,7 @@ msgstr "Добавляет точку при двойном нажатии пр�
 msgid "Key magnifier"
 msgstr "Лупа для кнопок"
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "Звук экранной клавиатуры"
 
@@ -1690,54 +1690,62 @@ msgid "Silent Mode"
 msgstr "беззвучный режим"
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+#, fuzzy
+#| msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr "Звонок:"
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr "Высокая громкость может повредить слух."
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "Телефонные вызовы:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "Мелодия вызова"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 msgid "Vibrate on ring"
 msgstr "Вибрация при звонке"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr "Вибрация при бесшумном режиме"
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 msgid "Dialpad tones"
 msgstr "Звук клавиш"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr "Сообщения:"
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "Сообщение принято"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "Custom message sound"
+msgid "Message sound"
+msgstr "Пользовательский звук сообщения"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr "Вибрировать при получении сообщения"
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "Другие звуки:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "Звук блокировки"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 msgid "Other vibrations"
 msgstr "Другие вибрации"
 
@@ -1771,11 +1779,11 @@ msgstr "Автоматически"
 msgid "Manually"
 msgstr "Вручную"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "Введите ваше текущее местоположение."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "Нет подходящих результатов"
 
@@ -2078,6 +2086,9 @@ msgstr "Личное"
 #: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "Система"
+
+#~ msgid "Remove image"
+#~ msgstr "Удалить файл образа"
 
 #~ msgid "Unavailable"
 #~ msgstr "Недоступно"

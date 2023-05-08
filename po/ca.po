@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2022-12-18 15:48+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -27,10 +27,6 @@ msgstr "Paràmetres del sistema"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferències;Paràmetres;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -264,13 +260,12 @@ msgid "Unknown title"
 msgstr "Títol desconegut"
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -330,15 +325,11 @@ msgstr "Personalitzat"
 msgid "Choose application"
 msgstr "Escolliu una connexió"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "Visualització prèvia"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "Suprmeix la imatge"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Estableix"
 
@@ -405,7 +396,6 @@ msgid "Ways to reduce battery use:"
 msgstr "Com reduir el consum de la bateria:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "Brillantor de la pantalla"
 
@@ -521,7 +511,7 @@ msgid "Confirm PIN"
 msgstr "Confirmeu el PIN"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -717,6 +707,12 @@ msgstr "Brillantor i pantalla"
 msgid "Brightness"
 msgstr "Brillantor"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "Display brightness"
+msgid "Display brightness:"
+msgstr "Brillantor de la pantalla"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Ajusta automàticament"
@@ -725,21 +721,21 @@ msgstr "Ajusta automàticament"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Augmenta i disminueix la brillantor per adaptar-se a l'entorn."
 
-#: plugins/brightness/PageComponent.qml:135
+#: plugins/brightness/PageComponent.qml:137
 #, fuzzy
 #| msgid "display"
-msgid "Display"
+msgid "Display:"
 msgstr "pantalla"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 msgid "External display"
 msgstr "Pantalla externa"
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 msgid "Wireless display"
 msgstr "Pantalla sense fil"
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
@@ -940,24 +936,26 @@ msgstr "Nom del punt d'accés Wi-Fi"
 msgid "Choose a name"
 msgstr "Escolliu un nom"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+#, fuzzy
+#| msgid "Require a password (recommended):"
+msgid "Require a password (recommended)"
 msgstr "Requereix una contrasenya (recomanat):"
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Mostra la contrasenya"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "En iniciar el punt d'accés s'activarà la xarxa sense fil."
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "Canvia"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr "Inicia"
 
@@ -1129,7 +1127,7 @@ msgstr "Afegeix un punt en fer un toc doble a la tecla Espai."
 msgid "Key magnifier"
 msgstr ""
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "So del teclat"
 
@@ -1710,54 +1708,62 @@ msgid "Silent Mode"
 msgstr "Mode Silenciós"
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+#, fuzzy
+#| msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr "To de trucada:"
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr "Un volum massa alt pot produir danys auditius."
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "Trucades:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "So de trucada"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 msgid "Vibrate on ring"
 msgstr "Vibra en trucar"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr "Vibra en mode silenciós"
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 msgid "Dialpad tones"
 msgstr "Tons de teclat"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr "Missatges:"
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "Missatge rebut"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "Vibrate with message sound"
+msgid "Message sound"
+msgstr "Vibra amb un to de missatge"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr "Vibra amb un to de missatge"
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "Altres sons:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "So de bloqueig"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 msgid "Other vibrations"
 msgstr "Altes vibracions"
 
@@ -1793,11 +1799,11 @@ msgstr "Automàticament"
 msgid "Manually"
 msgstr "Manualment"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "Introduïu la vostra ubicació actual."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "No hi ha cap lloc concordant"
 
@@ -2098,6 +2104,9 @@ msgstr "Personals"
 #: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "Sistema"
+
+#~ msgid "Remove image"
+#~ msgstr "Suprmeix la imatge"
 
 #~ msgid "Unavailable"
 #~ msgstr "No disponible"

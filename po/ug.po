@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2014-10-19 01:58+0000\n"
 "Last-Translator: Gheyret T.Kenji <Unknown>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -26,10 +26,6 @@ msgstr "سىستېما تەڭشەكلىرى"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;مايىللىق;تەڭشەكلەر;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -262,13 +258,12 @@ msgid "Unknown title"
 msgstr "نامەلۇم ماۋزۇ"
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -326,15 +321,11 @@ msgstr "ئىختىيارى"
 msgid "Choose application"
 msgstr "ئىم جۈملىسى تاللاڭ"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "ئالدىن كۆزەت"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "سۈرەت چىقىرىۋەت"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "بەلگىلە"
 
@@ -398,7 +389,6 @@ msgid "Ways to reduce battery use:"
 msgstr "توكداننىڭ ئىشلىتىلىشىنى ئازلىتىش ئۇسۇللىرى:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "كۆرسەتكۈچنىڭ يورۇقلۇقى"
 
@@ -514,7 +504,7 @@ msgid "Confirm PIN"
 msgstr "PIN جەزملە"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -712,6 +702,12 @@ msgstr "يورۇقلۇقى"
 msgid "Brightness"
 msgstr "يورۇقلۇقى"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "Display brightness"
+msgid "Display brightness:"
+msgstr "كۆرسەتكۈچنىڭ يورۇقلۇقى"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "ئاپتوماتىك تەڭشىسۇن"
@@ -720,23 +716,23 @@ msgstr "ئاپتوماتىك تەڭشىسۇن"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "ئېكراننىڭ يورۇقلۇقى ۋە غۇۋالىقىنى ئەتراپقا ئاپتوماتىك ماسلاشتۇرىدۇ"
 
-#: plugins/brightness/PageComponent.qml:135
+#: plugins/brightness/PageComponent.qml:137
 #, fuzzy
 #| msgid "display"
-msgid "Display"
+msgid "Display:"
 msgstr "كۆرسەتمەك؛ كۆرسەتكۈچ"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 #, fuzzy
 msgid "External display"
 msgstr "كۆرسەتمەك؛ كۆرسەتكۈچ"
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 #, fuzzy
 msgid "Wireless display"
 msgstr "كۆرسەتمەك؛ كۆرسەتكۈچ"
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 #, fuzzy
@@ -943,24 +939,24 @@ msgstr "قىزىق نۇقتا ئاتى"
 msgid "Choose a name"
 msgstr "ئىم جۈملىسى تاللاڭ"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "ئىم كۆرسەت"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "ئۆزگەرت"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr ""
 
@@ -1143,7 +1139,7 @@ msgstr ""
 msgid "Key magnifier"
 msgstr ""
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "ھەرپتاختا ئاۋازى"
 
@@ -1756,56 +1752,64 @@ msgid "Silent Mode"
 msgstr "جىمىغۇر ھالەت"
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+#, fuzzy
+#| msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr "قوڭغۇراق"
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "تېلېفونلار:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "قوڭغۇراق ئاۋازى"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 #, fuzzy
 msgid "Vibrate on ring"
 msgstr "جىرىڭلىغاندا تىترىسۇن"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr "ئۈنسىز ھالەتتە تىترىسۇن"
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 #, fuzzy
 msgid "Dialpad tones"
 msgstr "نومۇر تاختىسى ئاۋازلىرى"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr "ئۇچۇرلار:"
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "ئۇچۇر كەلدى"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "Vibrate with message sound"
+msgid "Message sound"
+msgstr "ئۇچۇر ئاۋازى بىلەن بىرگە تىترىسۇن"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr "ئۇچۇر ئاۋازى بىلەن بىرگە تىترىسۇن"
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "باشقا ئۈنلەر:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "ئۈننى قۇلۇپلا"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 #, fuzzy
 msgid "Other vibrations"
 msgstr "تىترەش"
@@ -1844,11 +1848,11 @@ msgstr "ئاپتوماتىك"
 msgid "Manually"
 msgstr "قولدا"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "نۆۋەتتىكى ئورنىڭىزنى كىرگۈزۈڭ."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "ماس ئورۇن يوق"
 
@@ -2162,6 +2166,9 @@ msgstr "شەخسىي"
 #: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "سىستېما"
+
+#~ msgid "Remove image"
+#~ msgstr "سۈرەت چىقىرىۋەت"
 
 #, fuzzy
 #~ msgid "Unavailable"

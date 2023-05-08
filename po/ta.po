@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2021-01-18 04:27+0000\n"
 "Last-Translator: GK <miscgk@pm.me>\n"
 "Language-Team: Tamil <https://translate.ubports.com/projects/ubports/system-"
@@ -27,10 +27,6 @@ msgstr "கணினி அமைப்புகள்"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "விருப்பங்கள்;அமைப்புகள்;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -260,13 +256,12 @@ msgid "Unknown title"
 msgstr ""
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -325,15 +320,11 @@ msgstr "தனிப்பயன்"
 msgid "Choose application"
 msgstr "கடவுச்சொல்லை தேர்வுச்செய்"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "முன்பார்வை"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "படிமத்தை நீக்குக"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "அமைக்க"
 
@@ -400,7 +391,6 @@ msgid "Ways to reduce battery use:"
 msgstr "மின்கலப் பயன்பாட்டடை குறைப்பதற்க்கான வழிகள்:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "ஒளியளவு"
 
@@ -513,7 +503,7 @@ msgid "Confirm PIN"
 msgstr "குறியீட்டை உறுதி செய்க"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -709,6 +699,12 @@ msgstr "ஒளிர்வளவு & திரை"
 msgid "Brightness"
 msgstr "ஒளிர்வளவு"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "Display brightness"
+msgid "Display brightness:"
+msgstr "ஒளியளவு"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "தானாகவே ஒழுங்குபடுத்து"
@@ -717,21 +713,21 @@ msgstr "தானாகவே ஒழுங்குபடுத்து"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "சுற்றுச் சூழலலிற்கேற்றவாரு திரையை ஒளிர மற்றும் மழுங்கச் செய்யும்."
 
-#: plugins/brightness/PageComponent.qml:135
+#: plugins/brightness/PageComponent.qml:137
 #, fuzzy
 #| msgid "Wireless Display"
-msgid "Display"
+msgid "Display:"
 msgstr "அருகலைத் திரை"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 msgid "External display"
 msgstr "வெளிப்புறத் திரை"
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 msgid "Wireless display"
 msgstr "அருகலைத் திரை"
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
@@ -929,24 +925,24 @@ msgstr ""
 msgid "Choose a name"
 msgstr "கடவுச்சொல்லை தேர்வுச்செய்"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "கடவுச்சொல்லைக் காண்பி"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "மாற்றுக"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr "தொடங்குக"
 
@@ -1113,7 +1109,7 @@ msgstr ""
 msgid "Key magnifier"
 msgstr ""
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "விசைப்பலகை ஒலி"
 
@@ -1702,55 +1698,61 @@ msgid "Silent Mode"
 msgstr ""
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "தொலைப்பேசி அழைப்புகள்:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "அழைப்பொலி"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 #, fuzzy
 msgid "Vibrate on ring"
 msgstr "அலறும்பொது அதிரும்படி வை"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 msgid "Dialpad tones"
 msgstr "அழைப்புத்தளத்தின் ஒளிகள்"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "தகவல் பெறப்பட்டது"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "No messages"
+msgid "Message sound"
+msgstr "செய்திகள் இல்லை"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr ""
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "மற்ற சத்தங்கள்:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "சத்தத்தை பூட்டு"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 #, fuzzy
 msgid "Other vibrations"
 msgstr "மற்ற சத்தங்கள்:"
@@ -1789,11 +1791,11 @@ msgstr "தன்னிச்சையாக"
 msgid "Manually"
 msgstr "கைமுறையாக"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "உங்களுடைய இருப்படத்தை உள்ளிடு."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "பொருந்திய இடங்கள் காணவில்லை"
 
@@ -2097,6 +2099,9 @@ msgstr "தனிப்பட்ட"
 #: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "கணினி"
+
+#~ msgid "Remove image"
+#~ msgstr "படிமத்தை நீக்குக"
 
 #~ msgid "System;"
 #~ msgstr "கணினி;"

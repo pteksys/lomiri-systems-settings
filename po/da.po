@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2020-08-09 07:30+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/system-"
@@ -32,10 +32,6 @@ msgstr "Systemindstillinger"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Indstillinger;Opsætning;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -266,13 +262,12 @@ msgid "Unknown title"
 msgstr ""
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -331,15 +326,11 @@ msgstr "Brugertilpasset"
 msgid "Choose application"
 msgstr "Vælg adgangsfrase"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "Forhåndsvisning"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "Fjern billede"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Vælg"
 
@@ -406,7 +397,6 @@ msgid "Ways to reduce battery use:"
 msgstr "Måder at reducere batteriforbrug på:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr ""
 
@@ -524,7 +514,7 @@ msgid "Confirm PIN"
 msgstr "Bekræft PIN"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -722,6 +712,12 @@ msgstr "Lysstyrke"
 msgid "Brightness"
 msgstr "Lysstyrke"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "brightness"
+msgid "Display brightness:"
+msgstr "lysstyrke"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Justér automatisk"
@@ -730,21 +726,21 @@ msgstr "Justér automatisk"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr ""
 
-#: plugins/brightness/PageComponent.qml:135
+#: plugins/brightness/PageComponent.qml:137
 #, fuzzy
 #| msgid "Display language"
-msgid "Display"
+msgid "Display:"
 msgstr "Grænsefladesprog"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 msgid "External display"
 msgstr ""
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 msgid "Wireless display"
 msgstr ""
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 #, fuzzy
@@ -953,24 +949,24 @@ msgstr "Navn på adgangspunkt"
 msgid "Choose a name"
 msgstr "Vælg adgangsfrase"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Vis adgangskode"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "Skift"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr "Start"
 
@@ -1139,7 +1135,7 @@ msgstr ""
 msgid "Key magnifier"
 msgstr ""
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "Tastaturlyd"
 
@@ -1731,54 +1727,62 @@ msgid "Silent Mode"
 msgstr "Lydløs indstilling"
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+#, fuzzy
+#| msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr "Ringer:"
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr "Høj lydstyrke kan skade din hørelse."
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "Telefonopkald:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "Ringetone"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 msgid "Vibrate on ring"
 msgstr "Vibrér ved opkald"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr "Vibrér i stille tilstand"
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 msgid "Dialpad tones"
 msgstr "Knaplyde ved opkald"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr "Meddelelser:"
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "Meddelelse modtaget"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "Vibrate with message sound"
+msgid "Message sound"
+msgstr "Vibrér ved meddelelseslyd"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr "Vibrér ved meddelelseslyd"
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "Andre lyde:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "Låselyd"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 msgid "Other vibrations"
 msgstr "Andre vibrationer"
 
@@ -1814,11 +1818,11 @@ msgstr "Automatisk"
 msgid "Manually"
 msgstr "Manuelt"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "Indtast din nuværende placering."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "Intet sted matcher"
 
@@ -2121,6 +2125,9 @@ msgstr "Personligt"
 msgid "System"
 msgstr "System"
 
+#~ msgid "Remove image"
+#~ msgstr "Fjern billede"
+
 #, fuzzy
 #~ msgid "Unavailable"
 #~ msgstr "Opdateringer tilgængelige"
@@ -2163,9 +2170,6 @@ msgstr "System"
 
 #~ msgid "wireless"
 #~ msgstr "trådløs"
-
-#~ msgid "brightness"
-#~ msgstr "lysstyrke"
 
 #~ msgid "screen"
 #~ msgstr "skærm"

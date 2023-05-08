@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 21:02+0000\n"
+"POT-Creation-Date: 2023-05-08 21:09+0200\n"
 "PO-Revision-Date: 2023-04-06 21:55+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -27,10 +27,6 @@ msgstr "Configuración del sistema"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferencias;Configuración;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -258,13 +254,12 @@ msgid "Unknown title"
 msgstr "Título desconocido"
 
 #: plugins/background/Components/AddRemove.qml:42
-#: plugins/background/Preview.qml:110
 #: plugins/bluetooth/ConfirmPasskeyDialog.qml:49
 #: plugins/bluetooth/DisplayPasskeyDialog.qml:51
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:255 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -320,15 +315,11 @@ msgstr "Personalizado"
 msgid "Choose application"
 msgstr "Elije la aplicación"
 
-#: plugins/background/Preview.qml:69
+#: plugins/background/Preview.qml:54
 msgid "Preview"
 msgstr "Previsualizar"
 
-#: plugins/background/Preview.qml:110
-msgid "Remove image"
-msgstr "Eliminar imagen"
-
-#: plugins/background/Preview.qml:116 plugins/time-date/TimePicker.qml:85
+#: plugins/background/Preview.qml:58 plugins/time-date/TimePicker.qml:85
 msgid "Set"
 msgstr "Definir"
 
@@ -395,7 +386,6 @@ msgid "Ways to reduce battery use:"
 msgstr "Formas de reducir el uso de la batería:"
 
 #: plugins/battery/PageComponent.qml:298
-#: plugins/brightness/PageComponent.qml:77
 msgid "Display brightness"
 msgstr "Brillo de pantalla"
 
@@ -510,7 +500,7 @@ msgid "Confirm PIN"
 msgstr "Confirmar PIN"
 
 #: plugins/bluetooth/DevicePage.qml:37 plugins/bluetooth/PageComponent.qml:290
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184 plugins/wifi/AccessPoint.qml:51
 #: plugins/wifi/StandardMenuItem.qml:31
@@ -706,6 +696,12 @@ msgstr "Brillo y pantalla"
 msgid "Brightness"
 msgstr "Brillo"
 
+#: plugins/brightness/PageComponent.qml:77
+#, fuzzy
+#| msgid "Display brightness"
+msgid "Display brightness:"
+msgstr "Brillo de pantalla"
+
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
 msgstr "Ajuste automático"
@@ -714,19 +710,21 @@ msgstr "Ajuste automático"
 msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Aumenta o disminuye el brillo de la pantalla según la luz ambiental."
 
-#: plugins/brightness/PageComponent.qml:135
-msgid "Display"
+#: plugins/brightness/PageComponent.qml:137
+#, fuzzy
+#| msgid "Display"
+msgid "Display:"
 msgstr "Pantalla"
 
-#: plugins/brightness/PageComponent.qml:141
+#: plugins/brightness/PageComponent.qml:143
 msgid "External display"
 msgstr "Pantalla externa"
 
-#: plugins/brightness/PageComponent.qml:158
+#: plugins/brightness/PageComponent.qml:160
 msgid "Wireless display"
 msgstr "Pantalla inalámbrica"
 
-#: plugins/brightness/PageComponent.qml:159
+#: plugins/brightness/PageComponent.qml:161
 #: plugins/brightness/WifiDisplays.qml:140
 #: plugins/brightness/WifiDisplays.qml:184
 msgid "Not connected"
@@ -923,24 +921,26 @@ msgstr "Nombre del punto de acceso"
 msgid "Choose a name"
 msgstr "Elegir un nombre"
 
-#: plugins/hotspot/HotspotSetup.qml:185
-msgid "Require a password (recommended):"
+#: plugins/hotspot/HotspotSetup.qml:188
+#, fuzzy
+#| msgid "Require a password (recommended):"
+msgid "Require a password (recommended)"
 msgstr "Requerir una contraseña (recomendado):"
 
-#: plugins/hotspot/HotspotSetup.qml:216 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Mostrar contraseña"
 
-#: plugins/hotspot/HotspotSetup.qml:237
+#: plugins/hotspot/HotspotSetup.qml:240
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Iniciar el punto de acceso encenderá la conexión inalámbrica."
 
-#: plugins/hotspot/HotspotSetup.qml:267
+#: plugins/hotspot/HotspotSetup.qml:270
 msgid "Change"
 msgstr "Cambiar"
 
-#: plugins/hotspot/HotspotSetup.qml:268
+#: plugins/hotspot/HotspotSetup.qml:271
 msgid "Start"
 msgstr "Iniciar"
 
@@ -1109,7 +1109,7 @@ msgstr "Inserta un punto cuando toca Espacio dos veces."
 msgid "Key magnifier"
 msgstr "Lupa"
 
-#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:251
+#: plugins/language/PageComponent.qml:302 plugins/sound/PageComponent.qml:266
 msgid "Keyboard sound"
 msgstr "Sonido del teclado"
 
@@ -1681,54 +1681,62 @@ msgid "Silent Mode"
 msgstr "Modo silencioso"
 
 #: plugins/sound/PageComponent.qml:100
-msgid "Ringer:"
+#, fuzzy
+#| msgid "Ringer:"
+msgid "Ringer volume:"
 msgstr "Timbre:"
 
-#: plugins/sound/PageComponent.qml:141
+#: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
 msgstr "Un volumen demasiado alto puede causarle daños auditivos."
 
-#: plugins/sound/PageComponent.qml:145
+#: plugins/sound/PageComponent.qml:150
 msgid "Phone calls:"
 msgstr "Llamadas telefónicas:"
 
-#: plugins/sound/PageComponent.qml:149 plugins/sound/PageComponent.qml:154
+#: plugins/sound/PageComponent.qml:154 plugins/sound/PageComponent.qml:160
 msgid "Ringtone"
 msgstr "Tono de llamada"
 
-#: plugins/sound/PageComponent.qml:171
+#: plugins/sound/PageComponent.qml:178
 msgid "Vibrate on ring"
 msgstr "Vibrar con el timbre de llamada"
 
-#: plugins/sound/PageComponent.qml:183 plugins/sound/PageComponent.qml:242
+#: plugins/sound/PageComponent.qml:192 plugins/sound/PageComponent.qml:257
 msgid "Vibrate in Silent Mode"
 msgstr "Vibrar en modo silencioso"
 
-#: plugins/sound/PageComponent.qml:194
+#: plugins/sound/PageComponent.qml:205
 msgid "Dialpad tones"
 msgstr "Tonos de teclado"
 
-#: plugins/sound/PageComponent.qml:203
+#: plugins/sound/PageComponent.qml:214
 msgid "Messages:"
 msgstr "Mensajes:"
 
-#: plugins/sound/PageComponent.qml:209 plugins/sound/PageComponent.qml:214
+#: plugins/sound/PageComponent.qml:220
 msgid "Message received"
 msgstr "Mensaje recibido"
 
-#: plugins/sound/PageComponent.qml:230
+#: plugins/sound/PageComponent.qml:226
+#, fuzzy
+#| msgid "Custom message sound"
+msgid "Message sound"
+msgstr "Sonido de mensaje personalizado"
+
+#: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
 msgstr "Sonar y vibrar al recibir mensajes"
 
-#: plugins/sound/PageComponent.qml:247
+#: plugins/sound/PageComponent.qml:262
 msgid "Other sounds:"
 msgstr "Otros sonidos:"
 
-#: plugins/sound/PageComponent.qml:268
+#: plugins/sound/PageComponent.qml:285
 msgid "Lock sound"
 msgstr "Sonido de bloqueo"
 
-#: plugins/sound/PageComponent.qml:278
+#: plugins/sound/PageComponent.qml:299
 msgid "Other vibrations"
 msgstr "Otras vibraciones"
 
@@ -1762,11 +1770,11 @@ msgstr "Automáticamente"
 msgid "Manually"
 msgstr "Manualmente"
 
-#: plugins/time-date/ChooseTimeZone.qml:130
+#: plugins/time-date/ChooseTimeZone.qml:131
 msgid "Enter your current location."
 msgstr "Escriba su ubicación actual."
 
-#: plugins/time-date/ChooseTimeZone.qml:131
+#: plugins/time-date/ChooseTimeZone.qml:132
 msgid "No matching place"
 msgstr "No hay ubicaciones que coincidan"
 
@@ -2067,6 +2075,9 @@ msgstr "Personal"
 #: src/qml/MainWindow.qml:251
 msgid "System"
 msgstr "Sistema"
+
+#~ msgid "Remove image"
+#~ msgstr "Eliminar imagen"
 
 #~ msgid "Unavailable"
 #~ msgstr "No disponible"
