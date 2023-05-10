@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 21:09+0200\n"
-"PO-Revision-Date: 2023-05-02 21:02+0000\n"
+"PO-Revision-Date: 2023-05-14 20:09+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -693,10 +693,8 @@ msgid "Brightness"
 msgstr "Helligkeit"
 
 #: plugins/brightness/PageComponent.qml:77
-#, fuzzy
-#| msgid "Display brightness"
 msgid "Display brightness:"
-msgstr "Bildschirmhelligkeit"
+msgstr "Bildschirmhelligkeit:"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -707,10 +705,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Passt die Bildschirmhelligkeit der Umgebung an."
 
 #: plugins/brightness/PageComponent.qml:137
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Anzeige"
+msgstr "Anzeige:"
 
 #: plugins/brightness/PageComponent.qml:143
 msgid "External display"
@@ -919,10 +915,8 @@ msgid "Choose a name"
 msgstr "Einen Namen auswählen"
 
 #: plugins/hotspot/HotspotSetup.qml:188
-#, fuzzy
-#| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
-msgstr "Benötigt ein Passwort (empfohlen):"
+msgstr "Benötigt ein Passwort (empfohlen)"
 
 #: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
@@ -1683,10 +1677,8 @@ msgid "Silent Mode"
 msgstr "Stiller Modus"
 
 #: plugins/sound/PageComponent.qml:100
-#, fuzzy
-#| msgid "Ringer:"
 msgid "Ringer volume:"
-msgstr "Klingelton:"
+msgstr "Klingeltonlautstärke:"
 
 #: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
@@ -1721,10 +1713,8 @@ msgid "Message received"
 msgstr "Nachricht empfangen"
 
 #: plugins/sound/PageComponent.qml:226
-#, fuzzy
-#| msgid "Custom message sound"
 msgid "Message sound"
-msgstr "Benutzerdefinierter Nachrichtenton"
+msgstr "Nachrichtenton"
 
 #: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
