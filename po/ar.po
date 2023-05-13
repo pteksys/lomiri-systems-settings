@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 21:09+0200\n"
-"PO-Revision-Date: 2021-03-22 23:17+0000\n"
-"Last-Translator: abidin <abidin24@tutanota.com>\n"
-"Language-Team: Arabic <https://translate.ubports.com/projects/ubports/system-"
-"settings/ar/>\n"
+"PO-Revision-Date: 2023-05-14 20:09+0000\n"
+"Last-Translator: abidin toumi <abidin24@disroot.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:39+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
@@ -148,10 +148,8 @@ msgid "System Reserved"
 msgstr "إعدادات النظام"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "تستخدمه تطبيقات"
+msgstr "يستخدمه النظام"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -167,19 +165,21 @@ msgstr "صور"
 
 #: plugins/about/Storage.qml:128
 msgid "Documents"
-msgstr ""
+msgstr "وثائق"
 
 #: plugins/about/Storage.qml:129
 msgid "Downloads"
-msgstr ""
+msgstr "تنزيلات"
 
 #: plugins/about/Storage.qml:130
+#, fuzzy
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
+#, fuzzy
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -216,7 +216,7 @@ msgstr "تفاصيل بناء النظام"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "قناة تحديث النظام"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -224,7 +224,7 @@ msgstr "رقم بناء النظام"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "النواة"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
@@ -293,20 +293,16 @@ msgid "Remove images…"
 msgstr "أزل صورًا…"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "الخلفية"
+msgstr "الخلفية والمظهر"
 
 #: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
-msgstr ""
+msgstr "فعّل تأثير الطمس"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "الخلفية"
+msgstr "صورة الخلفية:"
 
 #: plugins/background/MainPage.qml:111
 #, fuzzy
@@ -319,10 +315,8 @@ msgid "Custom"
 msgstr "مخصص"
 
 #: plugins/background/MainPage.qml:185
-#, fuzzy
-#| msgid "Choose a connection"
 msgid "Choose application"
-msgstr "اختر اتصالا"
+msgstr "اختر تطبيقًا"
 
 #: plugins/background/Preview.qml:54
 msgid "Preview"
@@ -674,7 +668,7 @@ msgstr "انسى هذا الجهاز"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:34
 #, qt-format
 msgid "Please enter the following PIN on %1 and press “Enter” on the keyboard:"
-msgstr ""
+msgstr "أدخل الرقم السري في %1 واضغط على زر الإدخال من لوحة المفاتيح :"
 
 #: plugins/bluetooth/PageComponent.qml:252
 msgid "Discoverable"
@@ -727,10 +721,8 @@ msgid "Brightness"
 msgstr "السطوع"
 
 #: plugins/brightness/PageComponent.qml:77
-#, fuzzy
-#| msgid "Display brightness"
 msgid "Display brightness:"
-msgstr "سطوع الشاشة"
+msgstr "سطوع الشاشة:"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -738,13 +730,11 @@ msgstr "اضبط تلقائيا"
 
 #: plugins/brightness/PageComponent.qml:130
 msgid "Brightens and dims the display to suit the surroundings."
-msgstr ""
+msgstr "يضيء الشاشة ويعتمها لتتناسب مع الوسط المحيط."
 
 #: plugins/brightness/PageComponent.qml:137
-#, fuzzy
-#| msgid "display"
 msgid "Display:"
-msgstr "العرض"
+msgstr "العرض:"
 
 #: plugins/brightness/PageComponent.qml:143
 msgid "External display"
@@ -800,19 +790,16 @@ msgid "OK"
 msgstr "موافق"
 
 #: plugins/gestures/PageComponent.qml:25
-#, fuzzy
-#| msgid "Pictures"
 msgid "Gestures"
-msgstr "صور"
+msgstr "الإيماءات"
 
 #: plugins/gestures/PageComponent.qml:44
-#, fuzzy
 msgid "Tap to wake"
-msgstr "حول الضغط الى نقر"
+msgstr "اضغط للإيقاظ"
 
 #: plugins/gestures/PageComponent.qml:65
 msgid "Double-tap anywhere on the screen to wake device."
-msgstr ""
+msgstr "اضغط ضغطًا مزدوجًا على الشاشة لإيقاظ الجهاز."
 
 #: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
 msgid "Unknown error"
