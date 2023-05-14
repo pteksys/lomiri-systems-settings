@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2014-08-26 14:40+0000\n"
 "Last-Translator: Ante Karamatić <ante.karamatic@canonical.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -27,6 +27,10 @@ msgstr "Postavke sustava"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Osobitosti;Postavke;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -255,7 +259,7 @@ msgstr ""
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -517,8 +521,7 @@ msgstr "Odspajanje"
 msgid "Disconnected"
 msgstr "Odspojen"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Nepoznato"
 
@@ -788,129 +791,6 @@ msgstr ""
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "Nepoznata greška"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "Nije dan razlog"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "Uređajem se sada upravlja"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "Uređajem se više ne upravlja"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "Uređaj nije pripremljen za podešavanje"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr ""
-"IP podešavanje ne može biti podržano (nema dostupne adrese, vremena čekanja, "
-"itd.)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "IP podešavanje nije više valjano"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "Vaše pojedinosti ovjere su pogrešne"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "802.1X opskrbitelj odspojen"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "Neuspjelo podešavanje 802.1X opskrbitelja"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "802.1X opskrbitelj nije uspio"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "802.1X opskrbitelju je trebalo previše vremena za ovjeru"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "DHCP klijent se nije uspio pokrenuti"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "Greška DHCP klijenta"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "DHCP kijent nije uspio"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "Usluga dijeljenih veza se nije uspjela pokrenuti"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "Usluga dijeljenih veza nije uspjela"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "Potreban firmware uređaja možda nedostaje"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "Uređaj je uklonjen"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "NetworkManager je otišao spavati"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "Aktivna veza uređaja je nestala"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "Uređaj je odspojen od strane korisnika ili klijenta"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "Uređaj postojeće mreže je predpostavljen"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "Opskrbitelj je sada dostupan"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "Modem nije pronađen"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "Bluetoot povezivanje nije uspjeo ili je isteklo vrijeme"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "Ovisnost povezivanja nije uspjela"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "ModemManager je nedostupan"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "Wi-Fi mreža se ne može pronaći"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "Pomoćno povezivanje glavnog povezivanja je neuspjelo"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr ""
@@ -920,33 +800,33 @@ msgstr ""
 msgid "Set Up Hotspot"
 msgstr "Hotspot"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 #, fuzzy
 msgid "Choose a name"
 msgstr "Odaberite operatera:"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Prikaži lozinku"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "Promijeni"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr ""
 
@@ -1887,6 +1767,129 @@ msgstr "Svi dostupni rasporedi:"
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr ""
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "Nepoznata greška"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "Nije dan razlog"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "Uređajem se sada upravlja"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "Uređajem se više ne upravlja"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "Uređaj nije pripremljen za podešavanje"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr ""
+"IP podešavanje ne može biti podržano (nema dostupne adrese, vremena čekanja, "
+"itd.)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "IP podešavanje nije više valjano"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "Vaše pojedinosti ovjere su pogrešne"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "802.1X opskrbitelj odspojen"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "Neuspjelo podešavanje 802.1X opskrbitelja"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "802.1X opskrbitelj nije uspio"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "802.1X opskrbitelju je trebalo previše vremena za ovjeru"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "DHCP klijent se nije uspio pokrenuti"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "Greška DHCP klijenta"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "DHCP kijent nije uspio"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "Usluga dijeljenih veza se nije uspjela pokrenuti"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "Usluga dijeljenih veza nije uspjela"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "Potreban firmware uređaja možda nedostaje"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "Uređaj je uklonjen"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "NetworkManager je otišao spavati"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "Aktivna veza uređaja je nestala"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "Uređaj je odspojen od strane korisnika ili klijenta"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "Uređaj postojeće mreže je predpostavljen"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "Opskrbitelj je sada dostupan"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "Modem nije pronađen"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "Bluetoot povezivanje nije uspjeo ili je isteklo vrijeme"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "Ovisnost povezivanja nije uspjela"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "ModemManager je nedostupan"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "Wi-Fi mreža se ne može pronaći"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "Pomoćno povezivanje glavnog povezivanja je neuspjelo"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

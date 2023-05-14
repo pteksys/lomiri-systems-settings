@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2020-10-26 22:41+0000\n"
 "Last-Translator: Adria <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports/"
@@ -26,6 +26,10 @@ msgstr "Cunfiguratzione"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferèntzias;Cunfiguratzione;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -265,7 +269,7 @@ msgstr "Tìtulu disconnottu"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -530,8 +534,7 @@ msgstr "Disconnetende·si…"
 msgid "Disconnected"
 msgstr "Disconnètidu"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Disconnotu"
 
@@ -796,131 +799,6 @@ msgstr "Toca pro incarcare"
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "Faddina disconnota"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "Perunu motivu inditadu"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "Su dispositivu est immoe gestidu"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "Su dispositivu immoe no est gestidu"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "Impossìbile preparare su dispositivu pro sa cunfiguratzione"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr ""
-"Sa cunfiguratzione IP no at pòdidu èssere riservada (fortzes non bi fiat "
-"perunu indiritzu disponìbile, o est acabadu su tempus de isettare)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "Sa cunfiguratzione IP no est prus vàlida"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "Detàllios de autenticatzione no vàlidos"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "Suplicante de protocollu 802.1X disconnètidu"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "Faddina in sa cunfiguratzione de su suplicante de protocollu 802.1X"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "Faddina de su suplicante de protocollu 802.1X"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr ""
-"S'autenticatzione de su suplicante de protocollu 802.1X at trigadu tropu"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "Faddina in s'aviu de su cliente DHCP"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "Faddina de su cliente DHCP"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "Faddina in su cliente DHCP"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "Faddina in s'aviu de su servìtziu de connessione cumpartzida"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "Faddina in su servìtziu de connessione cumpartzida"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr ""
-"Pòdet èssere chi ammanchet su microprogramma rechèdidu pro su dispositivu"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "Su dispositivu est istadu tiradu"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "NetworkManager s'est asseliadu"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "Est isparèssida sa connessione ativa de su dispositivu"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "Dispositivu disconnètidu dae s'usuàriu o cliente"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "S'est assùmida sa connessione ativa de su dispositivu"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "Su suplicante est a disponimentu"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "Perunu modem agatadu"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "Faddina in sa connessione Bluetooth o tempus iscàdidu"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "Faddina in una dipendèntzia de sa connessione"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "Su ModemManager no est a disponimentu"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "Peruna rete Wi-Fi agatada"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "Faddina in una connessione segundària de sa connessione printzipale"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr "Muda sa cunfiguratzione de su puntu de atzessu Wi-Fi"
@@ -929,34 +807,34 @@ msgstr "Muda sa cunfiguratzione de su puntu de atzessu Wi-Fi"
 msgid "Set Up Hotspot"
 msgstr "Cunfigura su puntu de atzessu Wi-Fi"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr "Nòmine de su puntu de atzessu Wi-Fi"
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 msgid "Choose a name"
 msgstr "Sèbera unu nòmine"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 #, fuzzy
 #| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
 msgstr "Rechede una crae (cussigiadu):"
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Ammustra sa crae"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "S'ativatzione de su puntu de atzessu at a allumare su Wi-Fi."
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "Muda"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr "Cumintza"
 
@@ -1884,6 +1762,131 @@ msgstr "Non bi sunt datos disponìbiles."
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "Sarva"
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "Faddina disconnota"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "Perunu motivu inditadu"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "Su dispositivu est immoe gestidu"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "Su dispositivu immoe no est gestidu"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "Impossìbile preparare su dispositivu pro sa cunfiguratzione"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr ""
+"Sa cunfiguratzione IP no at pòdidu èssere riservada (fortzes non bi fiat "
+"perunu indiritzu disponìbile, o est acabadu su tempus de isettare)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "Sa cunfiguratzione IP no est prus vàlida"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "Detàllios de autenticatzione no vàlidos"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "Suplicante de protocollu 802.1X disconnètidu"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "Faddina in sa cunfiguratzione de su suplicante de protocollu 802.1X"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "Faddina de su suplicante de protocollu 802.1X"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr ""
+"S'autenticatzione de su suplicante de protocollu 802.1X at trigadu tropu"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "Faddina in s'aviu de su cliente DHCP"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "Faddina de su cliente DHCP"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "Faddina in su cliente DHCP"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "Faddina in s'aviu de su servìtziu de connessione cumpartzida"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "Faddina in su servìtziu de connessione cumpartzida"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr ""
+"Pòdet èssere chi ammanchet su microprogramma rechèdidu pro su dispositivu"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "Su dispositivu est istadu tiradu"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "NetworkManager s'est asseliadu"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "Est isparèssida sa connessione ativa de su dispositivu"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "Dispositivu disconnètidu dae s'usuàriu o cliente"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "S'est assùmida sa connessione ativa de su dispositivu"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "Su suplicante est a disponimentu"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "Perunu modem agatadu"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "Faddina in sa connessione Bluetooth o tempus iscàdidu"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "Faddina in una dipendèntzia de sa connessione"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "Su ModemManager no est a disponimentu"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "Peruna rete Wi-Fi agatada"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "Faddina in una connessione segundària de sa connessione printzipale"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

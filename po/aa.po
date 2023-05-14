@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2015-07-19 00:16+0000\n"
 "Last-Translator: Charif AYFARAH <ayfarah@ymail.com>\n"
 "Language-Team: Afar <aa@li.org>\n"
@@ -26,6 +26,10 @@ msgstr "Siirâ Massoosu"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Lafootu; Massoosu"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -254,7 +258,7 @@ msgstr ""
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -512,8 +516,7 @@ msgstr ""
 msgid "Disconnected"
 msgstr ""
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Iginnoh"
 
@@ -774,127 +777,6 @@ msgstr ""
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "Aaxigewan soka"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "Sabab mayan"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "Away aalat makkaabiseenih"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "Away aalat ma makkaabisinnon"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "A aalat okkoroh bicat mayan"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr "IP okkoro ma cigsimta (sigma, orba, ww... ma geytimta)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "IP okkoro bica mali"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "Ku asliinoh addaffakoot massah ma suginna"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "802.1X kallacsime yuftuceh"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "802.1X kallacsimeh okkoro makinna"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "802.1X kallacsime makinna"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "802.1X kallacsime asliino geyuh raageh"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "DHCP maqmiil qimbisam makinna"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "DHCP maqmiil soka"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "DHCP maqmiil makinna"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "Kurutan fantaaxawih ayfaf qimbisam makkinna"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "Kurutan fantaaxawih ayfaf makkinna"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "Aalatah faxxiima diggaase deedalam bictah"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "Aalat kalliimeh"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "Retta makkaabise xiinih gexe"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "Aalat fantaaxawih taafit qelliteh"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "Aalat tuyfuttucem xoqoysime akkiiy maqmiil akki"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "Aalat fantaaxaway yene yukkuqsumeh"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "Kallacsime away geytimah"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "Modem ma geytiminna"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "Blutuus fantaaxaw makkinna hinnay orbeh"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "Fantaaxaw gubakiyyi makkinna"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "Modem makkaabise ma geytima"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "Wi-Fi  retta ma geytimta"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "Namayhatô fantaaxaw makkinna"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr ""
@@ -903,32 +785,32 @@ msgstr ""
 msgid "Set Up Hotspot"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 msgid "Choose a name"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Cuumita uybulluy"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr ""
 
@@ -1853,6 +1735,127 @@ msgstr "Modem makkaabise ma geytima"
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr ""
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "Aaxigewan soka"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "Sabab mayan"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "Away aalat makkaabiseenih"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "Away aalat ma makkaabisinnon"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "A aalat okkoroh bicat mayan"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr "IP okkoro ma cigsimta (sigma, orba, ww... ma geytimta)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "IP okkoro bica mali"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "Ku asliinoh addaffakoot massah ma suginna"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "802.1X kallacsime yuftuceh"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "802.1X kallacsimeh okkoro makinna"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "802.1X kallacsime makinna"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "802.1X kallacsime asliino geyuh raageh"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "DHCP maqmiil qimbisam makinna"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "DHCP maqmiil soka"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "DHCP maqmiil makinna"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "Kurutan fantaaxawih ayfaf qimbisam makkinna"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "Kurutan fantaaxawih ayfaf makkinna"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "Aalatah faxxiima diggaase deedalam bictah"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "Aalat kalliimeh"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "Retta makkaabise xiinih gexe"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "Aalat fantaaxawih taafit qelliteh"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "Aalat tuyfuttucem xoqoysime akkiiy maqmiil akki"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "Aalat fantaaxaway yene yukkuqsumeh"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "Kallacsime away geytimah"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "Modem ma geytiminna"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "Blutuus fantaaxaw makkinna hinnay orbeh"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "Fantaaxaw gubakiyyi makkinna"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "Modem makkaabise ma geytima"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "Wi-Fi  retta ma geytimta"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "Namayhatô fantaaxaw makkinna"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

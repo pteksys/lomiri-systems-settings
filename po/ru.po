@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2023-02-23 00:29+0000\n"
 "Last-Translator: Sergii Horichenko <m@sgg.im>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -28,6 +28,10 @@ msgstr "Настройки системы"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Настройки;Параметры;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -258,7 +262,7 @@ msgstr "Неизвестное название"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -524,8 +528,7 @@ msgstr "Отключение…"
 msgid "Disconnected"
 msgstr "Отключено"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Неизвестно"
 
@@ -787,129 +790,6 @@ msgstr "Нажмите для пробуждения"
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr "Для пробуждения устройста дважды коснитесь экрана."
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "Неизвестная ошибка"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "Причина не указана"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "Устройство обслуживается"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "Устройство не обслуживается"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "Не может быть считана конфигурация устройства"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr ""
-"Конфигурация IP не может быть зарезервирована (отсутствует доступный адрес, "
-"истекло время ожидания и т.д.)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "Настройки IP-адреса не актуальны"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "Некорректные данные аутентификации"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "Заявитель 802.1X отключён"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "Ошибка настройки заявителя 802.1X"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "Ошибка заявителя 802.1X"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "Превышено время ожидания при проверке подлинности заявителя 802.1X"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "Ошибка запуска клиента DHCP"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "Ошибка клиента DHCP"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "Ошибка клиента DHCP"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "Ошибка запуска службы общедоступного соединения"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "Ошибка службы общедоступного соединения"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "Возможно для устройства отсутствует микропрограммное обеспечение"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "Устройство извлечено"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "NetworkManager выполняет переход в спящий режим"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "Задействованное соединение устройства исчезло"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "Устройство отключено пользователем или клиентом"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "Существующее соединение устройства принято"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "Заявитель доступен"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "Не удалось обнаружить модем"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "Время ожидания соединения по Bluetooth истекло или произошла ошибка"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "Ошибка зависимости соединения"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "ModemManager недоступен"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "Не удалось обнаружить сеть Wi-Fi"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "Сбой вторичного подключения основого соединения"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr "Изменение настроек точки доступа"
@@ -918,34 +798,34 @@ msgstr "Изменение настроек точки доступа"
 msgid "Set Up Hotspot"
 msgstr "Настройка точки доступа"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr "Имя точки доступа"
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 msgid "Choose a name"
 msgstr "Выберите имя"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 #, fuzzy
 #| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
 msgstr "Использовать пароль (рекомендуется):"
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Показать пароль"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Включение точки доступа также включит и Wi-Fi."
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "Изменить"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr "Начать"
 
@@ -1859,6 +1739,129 @@ msgstr "Нет данных."
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "Сохранить"
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "Неизвестная ошибка"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "Причина не указана"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "Устройство обслуживается"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "Устройство не обслуживается"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "Не может быть считана конфигурация устройства"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr ""
+"Конфигурация IP не может быть зарезервирована (отсутствует доступный адрес, "
+"истекло время ожидания и т.д.)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "Настройки IP-адреса не актуальны"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "Некорректные данные аутентификации"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "Заявитель 802.1X отключён"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "Ошибка настройки заявителя 802.1X"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "Ошибка заявителя 802.1X"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "Превышено время ожидания при проверке подлинности заявителя 802.1X"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "Ошибка запуска клиента DHCP"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "Ошибка клиента DHCP"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "Ошибка клиента DHCP"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "Ошибка запуска службы общедоступного соединения"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "Ошибка службы общедоступного соединения"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "Возможно для устройства отсутствует микропрограммное обеспечение"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "Устройство извлечено"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "NetworkManager выполняет переход в спящий режим"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "Задействованное соединение устройства исчезло"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "Устройство отключено пользователем или клиентом"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "Существующее соединение устройства принято"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "Заявитель доступен"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "Не удалось обнаружить модем"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "Время ожидания соединения по Bluetooth истекло или произошла ошибка"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "Ошибка зависимости соединения"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "ModemManager недоступен"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "Не удалось обнаружить сеть Wi-Fi"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "Сбой вторичного подключения основого соединения"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

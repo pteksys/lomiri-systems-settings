@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2023-04-22 21:43+0000\n"
 "Last-Translator: Lundrin <berenyi.vilmos@tutanota.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -27,6 +27,10 @@ msgstr "Rendszerbeállítások"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Tulajdonságok;Beállítások;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -265,7 +269,7 @@ msgstr "Ismeretlen cím"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -532,8 +536,7 @@ msgstr "Leválasztás…"
 msgid "Disconnected"
 msgstr "Leválasztva"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "Ismeretlen"
 
@@ -808,129 +811,6 @@ msgstr ""
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "Ismeretlen hiba"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "Nincs megadva ok"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "Az eszköz mostantól kezelt"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "Az eszköz mostantól nem kezelt"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "Az eszköz nem készíthető fel a beállításra"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr ""
-"Az IP-beállításokat nem lehet fenntartani (nem elérhető a cím, időtúllépés, "
-"stb.)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "Az IP-beállítások már nem érvényesek"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "A hitelesítési adatok helytelenek"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "A 802.1X-kliens bontotta a kapcsolatot"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "A 802.1X-kliens beállítása meghiúsult"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "A 802.1X-kliens sikertelen"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "A 802.1X-kliens hitelesítése túl sokáig tartott"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "A DHCP kliens nem indult el"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "DHCP-klienshiba"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "A DHCP-kliens sikertelen"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "A megosztott kapcsolat szolgáltatás nem indult el"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "A megosztott kapcsolat szolgáltatás sikertelen"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "Az eszközhöz szükséges firmware hiányozhat"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "Az eszköz eltávolításra került"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "A Hálózatkezelő altatva"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "Az eszköz aktív kapcsolata eltűnt"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "Az eszközt a felhasználó vagy a kliens leválasztotta"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "Az eszköz meglévő kapcsolata felvéve"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "A kliens nem érhető el"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "A modem nem található"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "A Bluetooth kapcsolódás sikertelen, vagy túllépte az időkorlátot"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "Egy sikertelen kapcsolódási függőség"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "ModemManager nem elérhető"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "A Wi-FI hálózat nem található"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "Az alap kapcsolat másodlagos kapcsolata sikertelen"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Change Hotspot Setup"
@@ -941,33 +821,33 @@ msgstr "Hotspot beállításainak megváltoztatása"
 msgid "Set Up Hotspot"
 msgstr "Hotspot beállítása"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr "Hotspot neve"
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 #, fuzzy
 msgid "Choose a name"
 msgstr "Válasszon jelmondatot"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "Jelszó megjelenítése"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "Módosítás"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr ""
 
@@ -1937,6 +1817,129 @@ msgstr "Frissítések érhetők el"
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "Mentés"
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "Ismeretlen hiba"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "Nincs megadva ok"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "Az eszköz mostantól kezelt"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "Az eszköz mostantól nem kezelt"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "Az eszköz nem készíthető fel a beállításra"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr ""
+"Az IP-beállításokat nem lehet fenntartani (nem elérhető a cím, időtúllépés, "
+"stb.)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "Az IP-beállítások már nem érvényesek"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "A hitelesítési adatok helytelenek"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "A 802.1X-kliens bontotta a kapcsolatot"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "A 802.1X-kliens beállítása meghiúsult"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "A 802.1X-kliens sikertelen"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "A 802.1X-kliens hitelesítése túl sokáig tartott"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "A DHCP kliens nem indult el"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "DHCP-klienshiba"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "A DHCP-kliens sikertelen"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "A megosztott kapcsolat szolgáltatás nem indult el"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "A megosztott kapcsolat szolgáltatás sikertelen"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "Az eszközhöz szükséges firmware hiányozhat"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "Az eszköz eltávolításra került"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "A Hálózatkezelő altatva"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "Az eszköz aktív kapcsolata eltűnt"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "Az eszközt a felhasználó vagy a kliens leválasztotta"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "Az eszköz meglévő kapcsolata felvéve"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "A kliens nem érhető el"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "A modem nem található"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "A Bluetooth kapcsolódás sikertelen, vagy túllépte az időkorlátot"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "Egy sikertelen kapcsolódási függőség"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "ModemManager nem elérhető"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "A Wi-FI hálózat nem található"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "Az alap kapcsolat másodlagos kapcsolata sikertelen"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

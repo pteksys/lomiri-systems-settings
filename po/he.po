@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2020-12-25 08:26+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.ubports.com/projects/ubports/system-"
@@ -28,6 +28,10 @@ msgstr "הגדרות מערכת"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "העדפות;הגדרות;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -260,7 +264,7 @@ msgstr "כותרת לא ידועה"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -527,8 +531,7 @@ msgstr "מתבצע ניתוק…"
 msgid "Disconnected"
 msgstr "מנותק"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "לא ידוע"
 
@@ -793,127 +796,6 @@ msgstr "גע בכדי להקליק"
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "שגיאה בלתי ידועה"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "לא ניתנה סיבה"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "ההתקן מנוהל כעת"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "ההתקן אינו מנוהל כעת"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "לא ניתן להכין את ההתקן לתצורה"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr "הגדרות IP נכשלו ( אין כתובות זמינות, הבקשה לקחה זמן רב מידי, וכו... )"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "הגדרות ה IP לא תקפות יותר"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "פרטי הזיהוי שלכם אינן נכונות"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "מאמת 802.1X התנתק"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "הגדרת מאמת 802.1X נכשלה"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "מאמת 802.1X נכשל"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "אימות  802.1X לקח זמן רב מידי"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "הפעלת לקוח DHCP נכשלה"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "שגיאת לקוח DHCP"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "לקוח DCHP נכשל"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "התחלת שירות חיבור משותף נכשלה"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "שירות חיבור משותף נכשל"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "יכול להיות שחסרה קושחה הכרחית למכשיר"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "המכשיר הוסר"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "NetworkManager מושהה"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "החיבור הפעיל של המכשיר נעלם"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "מכשיר נותק על ידי המשתמש או הלקוח"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "החיבור הקיים של המכשיר הניחה"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "המאמת זמין עכשיו"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "לא ניתן למצוא את המודם"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "חיבור Bluetooth נכשל או לקח זמן רב מידי"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "תלות כלשהי של החיבור נכשלה"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "ModemManager לא זמין"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "הרשת האלחוטית לא נמצאה"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "חיבור משני של החיבור הראשי נכשל"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
 msgstr "שינוי הגדרות נקודת הגישה"
@@ -922,34 +804,34 @@ msgstr "שינוי הגדרות נקודת הגישה"
 msgid "Set Up Hotspot"
 msgstr "הגדרת נקודת גישה"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr "שם נקודת הגישה"
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 msgid "Choose a name"
 msgstr "בחרו שם"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 #, fuzzy
 #| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
 msgstr "מילת צופן נדרשת (מומלץ):"
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "הצגת הססמה"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "הפעלה של נקודת הגישה תדליק את הרשת האלחוטית."
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "שינוי"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr "התחלה"
 
@@ -1859,6 +1741,127 @@ msgstr "אין מידע זמין."
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "שמירה"
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "שגיאה בלתי ידועה"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "לא ניתנה סיבה"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "ההתקן מנוהל כעת"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "ההתקן אינו מנוהל כעת"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "לא ניתן להכין את ההתקן לתצורה"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr "הגדרות IP נכשלו ( אין כתובות זמינות, הבקשה לקחה זמן רב מידי, וכו... )"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "הגדרות ה IP לא תקפות יותר"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "פרטי הזיהוי שלכם אינן נכונות"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "מאמת 802.1X התנתק"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "הגדרת מאמת 802.1X נכשלה"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "מאמת 802.1X נכשל"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "אימות  802.1X לקח זמן רב מידי"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "הפעלת לקוח DHCP נכשלה"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "שגיאת לקוח DHCP"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "לקוח DCHP נכשל"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "התחלת שירות חיבור משותף נכשלה"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "שירות חיבור משותף נכשל"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "יכול להיות שחסרה קושחה הכרחית למכשיר"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "המכשיר הוסר"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "NetworkManager מושהה"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "החיבור הפעיל של המכשיר נעלם"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "מכשיר נותק על ידי המשתמש או הלקוח"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "החיבור הקיים של המכשיר הניחה"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "המאמת זמין עכשיו"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "לא ניתן למצוא את המודם"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "חיבור Bluetooth נכשל או לקח זמן רב מידי"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "תלות כלשהי של החיבור נכשלה"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "ModemManager לא זמין"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "הרשת האלחוטית לא נמצאה"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "חיבור משני של החיבור הראשי נכשל"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"

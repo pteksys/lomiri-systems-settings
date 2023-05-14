@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 21:09+0200\n"
+"POT-Creation-Date: 2023-05-11 09:32+0000\n"
 "PO-Revision-Date: 2015-03-11 04:49+0000\n"
 "Last-Translator: Gursharnjit_Singh <ubuntuser13@gmail.com>\n"
 "Language-Team: pa-l10n  Owner:Amanpreet Alam\n"
@@ -26,6 +26,10 @@ msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "ਮੇਰੀ ਪਸੰਦ;ਸੈਟਿੰਗ;"
+
+#: lomiri-system-settings.desktop.in:6
+msgid "/usr/share/lomiri-system-settings/system-settings.svg"
+msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -261,7 +265,7 @@ msgstr "ਅਣਜਾਣ ਟਾਈਟਲ"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:258 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
@@ -526,8 +530,7 @@ msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਕਰ ਰਿਹਾ..."
 msgid "Disconnected"
 msgstr "ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
 
-#: plugins/bluetooth/DevicePage.qml:41 plugins/hotspot/Common.qml:94
-#: plugins/wifi/Common.qml:96
+#: plugins/bluetooth/DevicePage.qml:41 plugins/wifi/Common.qml:96
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
@@ -800,128 +803,6 @@ msgstr ""
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
-#: plugins/hotspot/Common.qml:34 plugins/wifi/Common.qml:36
-msgid "Unknown error"
-msgstr "ਅਣਜਾਣ ਗਲਤੀ"
-
-#: plugins/hotspot/Common.qml:36 plugins/wifi/Common.qml:38
-msgid "No reason given"
-msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ ਦਿੱਤਾ"
-
-#: plugins/hotspot/Common.qml:38 plugins/wifi/Common.qml:40
-msgid "Device is now managed"
-msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਹੈ"
-
-#: plugins/hotspot/Common.qml:40 plugins/wifi/Common.qml:42
-msgid "Device is now unmanaged"
-msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਨਹੀਂ ਹੈ"
-
-#: plugins/hotspot/Common.qml:42 plugins/wifi/Common.qml:44
-msgid "The device could not be readied for configuration"
-msgstr "ਜੰਤਰ ਨੂੰ ਸੰਰਚਨਾ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
-
-#: plugins/hotspot/Common.qml:44 plugins/wifi/Common.qml:46
-msgid ""
-"IP configuration could not be reserved (no available address, timeout, etc.)"
-msgstr ""
-"IP ਸੰਰਚਨਾ ਨੂੰ ਰਾਖਵਾਂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ (ਕੋਈ ਐਡਰੈਸ ਉਪਲੱਬਧ ਨਹੀਂ, ਸਮਾਂ ਸਮਾਪਤ ਹੋਣਾ ਆਦਿ)"
-
-#: plugins/hotspot/Common.qml:46 plugins/wifi/Common.qml:48
-msgid "The IP configuration is no longer valid"
-msgstr "IP ਸੰਰਚਨਾ ਹੁਣ ਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ"
-
-#: plugins/hotspot/Common.qml:48 plugins/wifi/Common.qml:50
-msgid "Your authentication details were incorrect"
-msgstr "ਤੁਹਾਡੇ ਪ੍ਰਮਾਣਿਕਤਾ ਵੇਰਵੇ ਗਲਤ ਸਨ"
-
-#: plugins/hotspot/Common.qml:50 plugins/wifi/Common.qml:52
-msgid "802.1X supplicant disconnected"
-msgstr "802.1X ਸਪਲੀਕੈਂਟ ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
-
-#: plugins/hotspot/Common.qml:52 plugins/wifi/Common.qml:54
-msgid "802.1X supplicant configuration failed"
-msgstr "802.1X ਸਪਲੀਕੈਂਟ ਸੰਰਚਨਾ ਫੇਲ੍ਹ ਹੋਈ"
-
-#: plugins/hotspot/Common.qml:54 plugins/wifi/Common.qml:56
-msgid "802.1X supplicant failed"
-msgstr "802.1X ਸਪਲੀਕੈਂਟ ਫੇਲ੍ਹ ਹੋਇਆ"
-
-#: plugins/hotspot/Common.qml:56 plugins/wifi/Common.qml:58
-msgid "802.1X supplicant took too long to authenticate"
-msgstr "802.1X ਸਪਲੀਕੈਂਟ ਨੇ ਪ੍ਰਮਾਣਿਤ ਹੋਣ ਲਈ ਬਹੁਤ ਲੰਮਾ ਸਮਾਂ ਲਿਆ"
-
-#: plugins/hotspot/Common.qml:58 plugins/wifi/Common.qml:60
-msgid "DHCP client failed to start"
-msgstr "DHCP ਕਲਾਇਟ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫੇਲ੍ਹ"
-
-#: plugins/hotspot/Common.qml:60 plugins/wifi/Common.qml:62
-msgid "DHCP client error"
-msgstr "DHCP ਕਲਾਇਟ ਖਾਮੀ"
-
-#: plugins/hotspot/Common.qml:62 plugins/wifi/Common.qml:64
-msgid "DHCP client failed"
-msgstr "DHCP ਕਲਾਇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
-
-#: plugins/hotspot/Common.qml:64 plugins/wifi/Common.qml:66
-msgid "Shared connection service failed to start"
-msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫ਼ੇਲ੍ਹ"
-
-#: plugins/hotspot/Common.qml:66 plugins/wifi/Common.qml:68
-msgid "Shared connection service failed"
-msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਫ਼ੇਲ੍ਹ ਹੋਈ"
-
-#: plugins/hotspot/Common.qml:68 plugins/wifi/Common.qml:70
-msgid "Necessary firmware for the device may be missing"
-msgstr "ਜੰਤਰ ਲਈ ਲੋੜੀਂਦਾ ਫ਼ਰਮਵੇਅਰ ਸ਼ਾਇਦ ਮੌਜੂਦ ਨਹੀਂ"
-
-#: plugins/hotspot/Common.qml:70 plugins/wifi/Common.qml:72
-msgid "The device was removed"
-msgstr "ਜੰਤਰ ਹਟਾਇਆ ਗਿਆ ਸੀ"
-
-#: plugins/hotspot/Common.qml:72 plugins/wifi/Common.qml:74
-msgid "NetworkManager went to sleep"
-msgstr "ਨੈੱਟਵਰਕਮੈਨੇਜਰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਗਿਆ"
-
-#: plugins/hotspot/Common.qml:74 plugins/wifi/Common.qml:76
-msgid "The device's active connection disappeared"
-msgstr "ਜੰਤਰ ਦਾ ਸਰਗਰਮ ਕੁਨੈਕਸ਼ਨ ਅਲੋਪ ਹੋਇਆ"
-
-#: plugins/hotspot/Common.qml:76 plugins/wifi/Common.qml:78
-msgid "Device disconnected by user or client"
-msgstr "ਜੰਤਰ ਯੂਜ਼ਰ ਜਾਂ ਕਲਾਇਟ ਵਲੋਂ ਡਿਸ-ਕੁਨੈਕਟ ਕੀਤਾ ਗਿਆ"
-
-#: plugins/hotspot/Common.qml:78 plugins/wifi/Common.qml:80
-msgid "The device's existing connection was assumed"
-msgstr "ਜੰਤਰ ਦਾ ਮੌਜੂਦਾ ਕੁਨੈਕਸ਼ਨ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਗਿਆ"
-
-#: plugins/hotspot/Common.qml:80 plugins/wifi/Common.qml:82
-msgid "The supplicant is now available"
-msgstr "ਸਪਲੀਕੈਂਟ ਹੁਣ ਉਪਲੱਬਧ ਹੈ"
-
-#: plugins/hotspot/Common.qml:82 plugins/wifi/Common.qml:84
-msgid "The modem could not be found"
-msgstr "ਮਾਡਮ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
-
-#: plugins/hotspot/Common.qml:84 plugins/wifi/Common.qml:86
-msgid "The Bluetooth connection failed or timed out"
-msgstr "ਬਲਿਊਟੁੱਥ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਜਾਂ ਸਮਾਂ ਸਮਾਪਤ ਹੋਇਆ"
-
-#: plugins/hotspot/Common.qml:86 plugins/wifi/Common.qml:88
-msgid "A dependency of the connection failed"
-msgstr "ਕੁਨੈਕਸ਼ਨ ਦੀ ਨਿਰਭਰਤਾ ਫੇਲ੍ਹ ਹੋਈ"
-
-#: plugins/hotspot/Common.qml:88 plugins/wifi/Common.qml:90
-msgid "ModemManager is unavailable"
-msgstr "ਮਾਡਮਮੈਨੇਜਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
-
-#: plugins/hotspot/Common.qml:90 plugins/wifi/Common.qml:92
-msgid "The Wi-Fi network could not be found"
-msgstr "ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
-
-#: plugins/hotspot/Common.qml:92 plugins/wifi/Common.qml:94
-msgid "A secondary connection of the base connection failed"
-msgstr "ਮੂਲ ਕੁਨੈਕਸ਼ਨ ਦਾ ਸੈਕੰਡਰੀ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਹੋਇਆ"
-
 #: plugins/hotspot/HotspotSetup.qml:61
 #, fuzzy
 msgid "Change Hotspot Setup"
@@ -932,33 +813,33 @@ msgstr "ਹਾਟਸਪਾਟ ਸੈੱਟਅੱਪ ਬਦਲੋ"
 msgid "Set Up Hotspot"
 msgstr "ਹਾਟਸਪਾਟ ਸੈੱਟ ਕਰੋ"
 
-#: plugins/hotspot/HotspotSetup.qml:167
+#: plugins/hotspot/HotspotSetup.qml:145
 msgid "Hotspot name"
 msgstr "ਹਾਟਸਪਾਟ ਨਾਂ"
 
-#: plugins/hotspot/HotspotSetup.qml:168
+#: plugins/hotspot/HotspotSetup.qml:146
 #, fuzzy
 msgid "Choose a name"
 msgstr "ਪਾਸਪਰੇਜ ਚੁਣੋ"
 
-#: plugins/hotspot/HotspotSetup.qml:188
+#: plugins/hotspot/HotspotSetup.qml:166
 msgid "Require a password (recommended)"
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:219 plugins/wifi/NetworkDetails.qml:87
+#: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:821
 msgid "Show password"
 msgstr "ਪਾਸਵਰਡ ਵਿਖਾਓ"
 
-#: plugins/hotspot/HotspotSetup.qml:240
+#: plugins/hotspot/HotspotSetup.qml:218
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:270
+#: plugins/hotspot/HotspotSetup.qml:248
 msgid "Change"
 msgstr "ਬਦਲੋ"
 
-#: plugins/hotspot/HotspotSetup.qml:271
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Start"
 msgstr ""
 
@@ -1924,6 +1805,128 @@ msgstr "ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ"
 #: plugins/wifi/CertDialog.qml:74
 msgid "Save"
 msgstr "ਸੰਭਾਲ੍ਹੋ"
+
+#: plugins/wifi/Common.qml:36
+msgid "Unknown error"
+msgstr "ਅਣਜਾਣ ਗਲਤੀ"
+
+#: plugins/wifi/Common.qml:38
+msgid "No reason given"
+msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ ਦਿੱਤਾ"
+
+#: plugins/wifi/Common.qml:40
+msgid "Device is now managed"
+msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਹੈ"
+
+#: plugins/wifi/Common.qml:42
+msgid "Device is now unmanaged"
+msgstr "ਜੰਤਰ ਹੁਣ ਪ੍ਰਬੰਧ ਅਧੀਨ ਨਹੀਂ ਹੈ"
+
+#: plugins/wifi/Common.qml:44
+msgid "The device could not be readied for configuration"
+msgstr "ਜੰਤਰ ਨੂੰ ਸੰਰਚਨਾ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
+
+#: plugins/wifi/Common.qml:46
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr ""
+"IP ਸੰਰਚਨਾ ਨੂੰ ਰਾਖਵਾਂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ (ਕੋਈ ਐਡਰੈਸ ਉਪਲੱਬਧ ਨਹੀਂ, ਸਮਾਂ ਸਮਾਪਤ ਹੋਣਾ ਆਦਿ)"
+
+#: plugins/wifi/Common.qml:48
+msgid "The IP configuration is no longer valid"
+msgstr "IP ਸੰਰਚਨਾ ਹੁਣ ਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ"
+
+#: plugins/wifi/Common.qml:50
+msgid "Your authentication details were incorrect"
+msgstr "ਤੁਹਾਡੇ ਪ੍ਰਮਾਣਿਕਤਾ ਵੇਰਵੇ ਗਲਤ ਸਨ"
+
+#: plugins/wifi/Common.qml:52
+msgid "802.1X supplicant disconnected"
+msgstr "802.1X ਸਪਲੀਕੈਂਟ ਡਿਸ-ਕੁਨੈਕਟ ਹੋਇਆ"
+
+#: plugins/wifi/Common.qml:54
+msgid "802.1X supplicant configuration failed"
+msgstr "802.1X ਸਪਲੀਕੈਂਟ ਸੰਰਚਨਾ ਫੇਲ੍ਹ ਹੋਈ"
+
+#: plugins/wifi/Common.qml:56
+msgid "802.1X supplicant failed"
+msgstr "802.1X ਸਪਲੀਕੈਂਟ ਫੇਲ੍ਹ ਹੋਇਆ"
+
+#: plugins/wifi/Common.qml:58
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "802.1X ਸਪਲੀਕੈਂਟ ਨੇ ਪ੍ਰਮਾਣਿਤ ਹੋਣ ਲਈ ਬਹੁਤ ਲੰਮਾ ਸਮਾਂ ਲਿਆ"
+
+#: plugins/wifi/Common.qml:60
+msgid "DHCP client failed to start"
+msgstr "DHCP ਕਲਾਇਟ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫੇਲ੍ਹ"
+
+#: plugins/wifi/Common.qml:62
+msgid "DHCP client error"
+msgstr "DHCP ਕਲਾਇਟ ਖਾਮੀ"
+
+#: plugins/wifi/Common.qml:64
+msgid "DHCP client failed"
+msgstr "DHCP ਕਲਾਇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
+
+#: plugins/wifi/Common.qml:66
+msgid "Shared connection service failed to start"
+msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਫ਼ੇਲ੍ਹ"
+
+#: plugins/wifi/Common.qml:68
+msgid "Shared connection service failed"
+msgstr "ਸਾਂਝਾ ਕੁਨੇਕਸ਼ਨ ਸੇਵਾ ਫ਼ੇਲ੍ਹ ਹੋਈ"
+
+#: plugins/wifi/Common.qml:70
+msgid "Necessary firmware for the device may be missing"
+msgstr "ਜੰਤਰ ਲਈ ਲੋੜੀਂਦਾ ਫ਼ਰਮਵੇਅਰ ਸ਼ਾਇਦ ਮੌਜੂਦ ਨਹੀਂ"
+
+#: plugins/wifi/Common.qml:72
+msgid "The device was removed"
+msgstr "ਜੰਤਰ ਹਟਾਇਆ ਗਿਆ ਸੀ"
+
+#: plugins/wifi/Common.qml:74
+msgid "NetworkManager went to sleep"
+msgstr "ਨੈੱਟਵਰਕਮੈਨੇਜਰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਗਿਆ"
+
+#: plugins/wifi/Common.qml:76
+msgid "The device's active connection disappeared"
+msgstr "ਜੰਤਰ ਦਾ ਸਰਗਰਮ ਕੁਨੈਕਸ਼ਨ ਅਲੋਪ ਹੋਇਆ"
+
+#: plugins/wifi/Common.qml:78
+msgid "Device disconnected by user or client"
+msgstr "ਜੰਤਰ ਯੂਜ਼ਰ ਜਾਂ ਕਲਾਇਟ ਵਲੋਂ ਡਿਸ-ਕੁਨੈਕਟ ਕੀਤਾ ਗਿਆ"
+
+#: plugins/wifi/Common.qml:80
+msgid "The device's existing connection was assumed"
+msgstr "ਜੰਤਰ ਦਾ ਮੌਜੂਦਾ ਕੁਨੈਕਸ਼ਨ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਗਿਆ"
+
+#: plugins/wifi/Common.qml:82
+msgid "The supplicant is now available"
+msgstr "ਸਪਲੀਕੈਂਟ ਹੁਣ ਉਪਲੱਬਧ ਹੈ"
+
+#: plugins/wifi/Common.qml:84
+msgid "The modem could not be found"
+msgstr "ਮਾਡਮ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
+
+#: plugins/wifi/Common.qml:86
+msgid "The Bluetooth connection failed or timed out"
+msgstr "ਬਲਿਊਟੁੱਥ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਜਾਂ ਸਮਾਂ ਸਮਾਪਤ ਹੋਇਆ"
+
+#: plugins/wifi/Common.qml:88
+msgid "A dependency of the connection failed"
+msgstr "ਕੁਨੈਕਸ਼ਨ ਦੀ ਨਿਰਭਰਤਾ ਫੇਲ੍ਹ ਹੋਈ"
+
+#: plugins/wifi/Common.qml:90
+msgid "ModemManager is unavailable"
+msgstr "ਮਾਡਮਮੈਨੇਜਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
+
+#: plugins/wifi/Common.qml:92
+msgid "The Wi-Fi network could not be found"
+msgstr "ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
+
+#: plugins/wifi/Common.qml:94
+msgid "A secondary connection of the base connection failed"
+msgstr "ਮੂਲ ਕੁਨੈਕਸ਼ਨ ਦਾ ਸੈਕੰਡਰੀ ਕੁਨੈਕਸ਼ਨ ਫੇਲ੍ਹ ਹੋਇਆ"
 
 #: plugins/wifi/NetworkDetails.qml:38
 msgid "Network details"
