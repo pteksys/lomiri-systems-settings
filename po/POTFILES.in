@@ -121,7 +121,6 @@ plugins/gestures/plugin.cpp
 plugins/gestures/plugin.h
 plugins/gestures/plugin/gestures-plugin.cpp
 plugins/gestures/plugin/gestures-plugin.h
-plugins/hotspot/Common.qml
 plugins/hotspot/HotspotSetup.qml
 plugins/hotspot/PageComponent.qml
 plugins/hotspot/plugin/hotspot-plugin.cpp

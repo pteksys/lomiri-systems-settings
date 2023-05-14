@@ -59,11 +59,6 @@ Component {
 
         title: stored ?
             i18n.tr("Change Hotspot Setup") : i18n.tr("Set Up Hotspot")
-        text: feedback.enabled ? feedback.text : "";
-
-        Common {
-            id: common
-        }
 
         states: [
             State {
@@ -89,10 +84,6 @@ Component {
                     enabled: false
                 }
                 PropertyChanges {
-                    target: feedback
-                    enabled: true
-                }
-                PropertyChanges {
                     target: confirmButton
                     enabled: false
                 }
@@ -100,10 +91,6 @@ Component {
 
             State {
                 name: "FAILED"
-                PropertyChanges {
-                    target: feedback
-                    enabled: true
-                }
                 PropertyChanges {
                     target: ssidField
                     errorHighlight: true
@@ -152,15 +139,6 @@ Component {
                 right: parent.right
             }
             spacing: units.gu(1)
-
-            Label {
-                property bool enabled: false
-                id: feedback
-                horizontalAlignment: Text.AlignHCenter
-                height: contentHeight
-                wrapMode: Text.WordWrap
-                visible: false
-            }
 
             Label {
                 id: ssidLabel
@@ -402,7 +380,6 @@ Component {
             onReportError: {
                 if (hotspotSetupDialog.state === "STARTING") {
                     hotspotSetupDialog.state = "FAILED";
-                    feedback.text = common.reasonToString(reason);
                 }
             }
         }
