@@ -22,7 +22,7 @@ import Lomiri.Components 1.3
 Item {
     id: root
 
-    property string layout: "grid"
+    property string layout: ""
     property string text: i18n.dtr(model.item.translations, model.displayName)
     property string iconSource: model.icon
     property var color: "transparent"
@@ -30,26 +30,33 @@ Item {
     signal clicked
 
     objectName: "entryComponent-" + model.item.baseName
-    implicitHeight: layout == "grid" ? gridComponent.implicitHeight : listComponent.implicitHeight
+    implicitHeight: childrenRect.height
 
-    EntryComponentList {
+    Component {
         id: listComponent
-        text: root.text
-        iconSource: root.iconSource
-        color: root.color
-        opacity: root.layout == "column" ? 1 : 0
-        onClicked: root.clicked()
-        Behavior on opacity { LomiriNumberAnimation {}}
+        EntryComponentList {
+            text: root.text
+            iconSource: root.iconSource
+            color: root.color
+            onClicked: root.clicked()
+            Behavior on opacity { LomiriNumberAnimation {}}
+        }
     }
 
-    EntryComponentGrid {
+    Component {
         id: gridComponent
-        anchors { left: parent.left; right: parent.right }
-        text: root.text
-        iconSource: root.iconSource
-        color: root.color
-        opacity: root.layout == "grid" ? 1 : 0
-        onClicked: root.clicked()
-        Behavior on opacity { LomiriNumberAnimation {}}
+        EntryComponentGrid {
+            text: root.text
+            iconSource: root.iconSource
+            color: root.color
+            onClicked: root.clicked()
+            Behavior on opacity { LomiriNumberAnimation {}}
+        }
+    }
+
+    Loader {
+        width: parent.width
+        active: root.layout !== ""
+        sourceComponent: root.layout == "column" ? listComponent : gridComponent
     }
 }
