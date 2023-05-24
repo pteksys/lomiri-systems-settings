@@ -1,4 +1,5 @@
-debian/ubuntu-system-settings-keyboard-accountsservice-to-gsettings.py
-debian/ubuntu-system-settings-sound-gsettings-to-accountsservice.py
-debian/lomiri-system-settings-gsettings-schema-name-change.sh
-debian/lomiri-system-settings-greeter-data-rename.sh
+debian/session-migrations/ubuntu-system-settings-keyboard-accountsservice-to-gsettings.py
+debian/session-migrations/ubuntu-system-settings-sound-gsettings-to-accountsservice.py
+debian/session-migrations/lomiri-system-settings-datahome-migration.sh
+debian/session-migrations/lomiri-system-settings-gsettings-schema-name-change.sh
+debian/session-migrations/lomiri-system-settings-greeter-data-rename.sh
