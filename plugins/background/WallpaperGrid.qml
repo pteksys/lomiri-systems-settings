@@ -192,7 +192,11 @@ Column {
                             }
 
                             if (grid.state === "selection") {
-                                gridItem.state = gridItem.state === "" ? "selected" : "";
+                                if (current === modelData){
+                                    PopupUtils.open(nodelete)
+                                } else {
+                                    gridItem.state = gridItem.state === "" ? "selected" : "";
+                                }
                             }
                         }
                     }
@@ -252,4 +256,19 @@ Column {
         }
     }
 
+    // Dialog to notify the user that the current backgroundimage can not be deleted
+    Component {
+        id: nodelete
+        Dialog {
+            id: nodeleteDialog
+            title: i18n.tr("Not possible")
+
+            text: i18n.tr("The currently active background image cannot be deleted!")
+
+            Button {
+                text: i18n.tr("OK")
+                onClicked: PopupUtils.close(nodeleteDialog)
+            }
+        }
+    }
 }
