@@ -18,12 +18,21 @@ import QtQuick 2.12
 import SystemSettings 1.0
 import Lomiri.Components 1.3
 import Lomiri.Components.ListItems 1.3 as ListItem
+import SystemSettings.ListItems 1.0 as SettingsListItems
+import Lomiri.Settings.Menus 0.1 as Menus
+import Lomiri.Settings.Components 0.1 as LSC
 import Lomiri.SystemSettings.Gestures 1.0
+import GSettings 1.0
 
 ItemPage {
     id: root
     title: i18n.tr("Gestures")
     flickable: gesturesFlickable
+
+    GSettings {
+        id: edgeDragGsetting
+        schema.id: "com.lomiri.Shell"
+    }
 
     Flickable {
         id: gesturesFlickable
@@ -72,6 +81,76 @@ ItemPage {
                 height: divider.height + units.gu(2)
                 visible: doubleTapToWake.visible
                 showDivider: true
+            }
+
+            // edge drag with setting for changing the corresponding gsetting
+            SettingsItemTitle {
+                text: i18n.tr("Edge drag sensitivity:")
+            }
+            SettingsListItems.Standard {
+                Column {
+                    spacing: units.gu(1)
+                    bottomPadding: units.gu(1)
+                    anchors {
+                        left: parent.left
+                        leftMargin: units.gu(2)
+                        right: parent.right
+                        rightMargin: units.gu(2)
+                    }
+
+                    Label {
+                        text: i18n.tr("Current value: %1").arg(edgeDragGsetting.edgeDragWidth)
+                    }
+                    // slider row with min and max labels
+                    Row {
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                        }
+                        Label {
+                            id: minValueLabel
+                            width: units.gu(2)
+                            text: dragSensitivity.minimumValue
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                        Menus.SliderMenu {
+                            id: dragSensitivity
+                            width: parent.width - (minValueLabel.width + maxValueLabel.width)
+                            function formatValue(v) { return v }
+                            minimumValue: 1
+                            maximumValue: 5
+                            value: edgeDragGsetting.edgeDragWidth
+                            live: true
+
+                            property real sliderValue: Math.round(dragSensitivity.value)
+
+                            LSC.ServerPropertySynchroniser {
+                                userTarget: dragSensitivity
+                                userProperty: "value"
+                                serverTarget: dragSensitivity
+                                serverProperty: "sliderValue"
+
+                                onSyncTriggered: edgeDragGsetting.edgeDragWidth = Math.round(value);
+                            }
+                            // apply the current value once the component has finished initial loading
+                            Component.onCompleted: value = edgeDragGsetting.edgeDragWidth
+                        }
+
+                        Label {
+                            id: maxValueLabel
+                            width: units.gu(2)
+                            text: dragSensitivity.maximumValue
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                    }
+
+                    Label {
+                        text: i18n.tr("With a higher value, the swipe area at the edges to trigger an action is wider. The default value is 2.")
+                        anchors.left:parent.left
+                        anchors.right:parent.right
+                        wrapMode: Text.WordWrap
+                    }
+                }
             }
         }
     }
