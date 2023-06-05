@@ -217,7 +217,7 @@ ItemPage {
                 visible: !isSnap || showAllUI
 
                 SettingsListItems.SingleValueProgression {
-                    text: i18n.tr("Message received")
+                    text: i18n.tr("Message sound")
                     value:Utilities.buildDisplayName(
                               backendInfo.incomingMessageSound)
                     divider.visible: false
