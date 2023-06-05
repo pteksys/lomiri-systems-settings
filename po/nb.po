@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2023-03-02 14:37+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
@@ -19,17 +19,13 @@ msgstr ""
 "X-Generator: Weblate 4.16.2-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Systeminnstillinger"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Brukervalg;Innstillinger;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -329,6 +325,20 @@ msgstr "Forhåndsvis"
 msgid "Set"
 msgstr "Velg"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "OK"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Batteri"
@@ -539,7 +549,7 @@ msgstr "Telefon"
 msgid "Modem"
 msgstr "Modem"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Nettverk"
 
@@ -767,22 +777,33 @@ msgstr "Enheten klarte ikke å koble seg til %1."
 msgid "There was an unknown error connecting to %1."
 msgstr "Ukjent feil ved tilkobling til %1."
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "OK"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 msgid "Gestures"
 msgstr "Håndvendinger"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 msgid "Tap to wake"
 msgstr "Trykk for å vekke"
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr "Dobbelttrykk hvor som helst for å vekke enheten."
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, fuzzy, qt-format
+#| msgid "Current layouts:"
+msgid "Current value: %1"
+msgstr "Gjeldende utforminger:"
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
+msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
@@ -2080,15 +2101,15 @@ msgstr "Offentlig nøkkel"
 msgid "Opaque"
 msgstr "Ugjennomsiktighet"
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr "Søk"
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr "Personlig"
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "System"
 

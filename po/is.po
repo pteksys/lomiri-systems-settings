@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po_lomiri-system-settings-is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2014-11-14 02:30+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
@@ -21,17 +21,13 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 "X-Generator: Launchpad (build 17628)\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Kerfisstillingar"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Valkostir;Stillingar;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -330,6 +326,20 @@ msgstr "Forskoðun"
 msgid "Set"
 msgstr "Stilla"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "Í lagi"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Rafhlaða"
@@ -539,7 +549,7 @@ msgstr "Sími"
 msgid "Modem"
 msgstr "Mótald"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Netkerfi"
 
@@ -777,23 +787,34 @@ msgstr "aftengja"
 msgid "There was an unknown error connecting to %1."
 msgstr ""
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "Í lagi"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Myndir"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 msgid "Tap to wake"
 msgstr ""
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, fuzzy, qt-format
+#| msgid "Current PIN:"
+msgid "Current value: %1"
+msgstr "Núverandi PIN-númer:"
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
 msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
@@ -2124,15 +2145,15 @@ msgstr ""
 msgid "Opaque"
 msgstr ""
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr "Leita"
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr "Einka"
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "Kerfi"
 
@@ -2678,9 +2699,6 @@ msgstr "Kerfi"
 #, fuzzy
 #~ msgid "No more attempts allowed"
 #~ msgstr "%1 tilraunir leyfðar."
-
-#~ msgid "Current PIN:"
-#~ msgstr "Núverandi PIN-númer:"
 
 #, qt-format
 #~ msgid "%1 attempt allowed."

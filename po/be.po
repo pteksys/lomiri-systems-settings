@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2021-03-09 20:27+0000\n"
 "Last-Translator: Zmicer <nashtlumach@gmail.com>\n"
 "Language-Team: Belarusian <https://translate.ubports.com/projects/ubports/"
@@ -21,17 +21,13 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Налады сістэмы"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Налады;Параметры;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -335,6 +331,20 @@ msgstr "Прагляд"
 msgid "Set"
 msgstr "Вызначыць"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "Добра"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Батарэя"
@@ -553,7 +563,7 @@ msgstr "Тэлефон"
 msgid "Modem"
 msgstr "Мадэм"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Сетка"
 
@@ -783,25 +793,36 @@ msgstr "Не атрымалася падлучыцца да %1."
 msgid "There was an unknown error connecting to %1."
 msgstr "Пры злучэнні з \"%1\" адбылася невядомая памылка."
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "Добра"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Выявы"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 #, fuzzy
 #| msgid "Tap to click"
 msgid "Tap to wake"
 msgstr "Націск як пстрычка"
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, fuzzy, qt-format
+#| msgid "Current layouts:"
+msgid "Current value: %1"
+msgstr "Бягучыя раскладкі:"
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
 msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
@@ -2096,15 +2117,15 @@ msgstr "Публічны ключ"
 msgid "Opaque"
 msgstr "Непразрысты"
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr "Пошук"
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr "Асабістыя налады"
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "Сістэма"
 

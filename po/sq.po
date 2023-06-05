@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2020-12-18 15:26+0000\n"
 "Last-Translator: Enkli Ylli <eylli@yahoo.com>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports/"
@@ -20,17 +20,13 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:39+0000\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Parametrat e Sistemit"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Preferencat;Parametrat;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -335,6 +331,20 @@ msgstr "Parapamje"
 msgid "Set"
 msgstr "Vendos"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "OK"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Bateria"
@@ -545,7 +555,7 @@ msgstr "Telefoni"
 msgid "Modem"
 msgstr "Modemi"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Rrjeti"
 
@@ -773,25 +783,36 @@ msgstr "Kjo pajisje nuk u lidh me %1."
 msgid "There was an unknown error connecting to %1."
 msgstr "Një gabim i papritur ndodhi gjatë lidhjes në %1."
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "OK"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Fotot"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 #, fuzzy
 #| msgid "Tap to click"
 msgid "Tap to wake"
 msgstr "Trokitni për të klikuar"
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, fuzzy, qt-format
+#| msgid "Current layouts:"
+msgid "Current value: %1"
+msgstr "Formatet e tanishme:"
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
 msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
@@ -2089,15 +2110,15 @@ msgstr "Çelësi publik"
 msgid "Opaque"
 msgstr "I errët"
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr "Kërko"
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr "Personal"
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "Sistemi"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2020-06-16 19:14+0000\n"
 "Last-Translator: Phu1237 <phuvip867@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.ubports.com/projects/ubports/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:42+0000\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Cài đặt hệ thống"
 
@@ -28,10 +28,6 @@ msgstr "Cài đặt hệ thống"
 #, fuzzy
 msgid "Preferences;Settings;"
 msgstr "Cấu hình;Cài đặt;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -333,6 +329,20 @@ msgstr "Xem trước"
 msgid "Set"
 msgstr "Cài đặt"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "Chấp nhận"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Pin"
@@ -537,7 +547,7 @@ msgstr "Điện thoại"
 msgid "Modem"
 msgstr "Modem"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Mạng"
 
@@ -772,23 +782,33 @@ msgstr "Thiết bị này đã kết nối thất bại đến %1."
 msgid "There was an unknown error connecting to %1."
 msgstr "Có lỗi không xác định khi kết nối với %1."
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "Chấp nhận"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 #, fuzzy
 #| msgid "Pictures"
 msgid "Gestures"
 msgstr "Ảnh"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 msgid "Tap to wake"
 msgstr ""
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, qt-format
+msgid "Current value: %1"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
 msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
@@ -2051,15 +2071,15 @@ msgstr ""
 msgid "Opaque"
 msgstr ""
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr ""
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr ""
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr ""
 

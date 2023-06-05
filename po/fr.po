@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 09:32+0000\n"
+"POT-Creation-Date: 2023-06-05 15:41+0000\n"
 "PO-Revision-Date: 2023-01-17 13:48+0000\n"
 "Last-Translator: Timothy G. <22472919+GTimothy@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -20,17 +20,13 @@ msgstr ""
 "X-Generator: Weblate 4.15.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
-#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:170
+#: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
 msgstr "Paramètres du système"
 
 #: lomiri-system-settings.desktop.in:5
 msgid "Preferences;Settings;"
 msgstr "Préférences;Réglages;"
-
-#: lomiri-system-settings.desktop.in:6
-msgid "/usr/share/lomiri-system-settings/system-settings.svg"
-msgstr ""
 
 #: lib/LomiriSystemSettingsPrivate/systemimage.cpp:233
 msgid "Can't cancel current request (can't contact service)"
@@ -330,6 +326,20 @@ msgstr "Afficher un aperçu"
 msgid "Set"
 msgstr "Valider"
 
+#: plugins/background/WallpaperGrid.qml:264
+msgid "Not possible"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:266
+msgid "The currently active background image cannot be deleted!"
+msgstr ""
+
+#: plugins/background/WallpaperGrid.qml:269
+#: plugins/brightness/WifiDisplaysAlert.qml:38
+#: plugins/vpn/PageComponent.qml:123
+msgid "OK"
+msgstr "OK"
+
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
 msgstr "Batterie"
@@ -543,7 +553,7 @@ msgstr "Téléphone"
 msgid "Modem"
 msgstr "Modem"
 
-#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:241
+#: plugins/bluetooth/DevicePage.qml:51 src/qml/MainWindow.qml:236
 msgid "Network"
 msgstr "Réseau"
 
@@ -773,22 +783,33 @@ msgstr "Cet appareil n'a pas pu se connecter à %1."
 msgid "There was an unknown error connecting to %1."
 msgstr "Une erreur inconnue est survenue en se connectant à %1."
 
-#: plugins/brightness/WifiDisplaysAlert.qml:38
-#: plugins/vpn/PageComponent.qml:123
-msgid "OK"
-msgstr "OK"
-
-#: plugins/gestures/PageComponent.qml:25
+#: plugins/gestures/PageComponent.qml:29
 msgid "Gestures"
 msgstr "Gestes"
 
-#: plugins/gestures/PageComponent.qml:44
+#: plugins/gestures/PageComponent.qml:53
 msgid "Tap to wake"
 msgstr "Toucher pour réveiller"
 
-#: plugins/gestures/PageComponent.qml:65
+#: plugins/gestures/PageComponent.qml:74
 msgid "Double-tap anywhere on the screen to wake device."
 msgstr "Appuyez deux fois n'importe où sur l'écran pour réveiller l'appareil."
+
+#: plugins/gestures/PageComponent.qml:88
+msgid "Edge drag sensitivity:"
+msgstr ""
+
+#: plugins/gestures/PageComponent.qml:102
+#, fuzzy, qt-format
+#| msgid "Current layouts:"
+msgid "Current value: %1"
+msgstr "Agencements actuels :"
+
+#: plugins/gestures/PageComponent.qml:148
+msgid ""
+"With a higher value, the swipe area at the edges to trigger an action is "
+"wider. The default value is 2."
+msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
@@ -2086,15 +2107,15 @@ msgstr "Clé publique"
 msgid "Opaque"
 msgstr "Opaque"
 
-#: src/qml/MainWindow.qml:203
+#: src/qml/MainWindow.qml:198
 msgid "Search"
 msgstr "Rechercher"
 
-#: src/qml/MainWindow.qml:246
+#: src/qml/MainWindow.qml:241
 msgid "Personal"
 msgstr "Personnel"
 
-#: src/qml/MainWindow.qml:251
+#: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "Système"
 
