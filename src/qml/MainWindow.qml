@@ -16,16 +16,18 @@
  *
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
- */ 
+ */
 
 import QtQuick 2.12
+import QtQuick.Window 2.12
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components 1.3
 
 MainView {
     id: main
-    implicitWidth: units.gu(140)
+    // on phone, this prevent the app from starting with 2 columns and then resize to 1 column
+    implicitWidth: Screen.width >= units.gu(90) ? units.gu(140) : units.gu(45)
     implicitHeight: units.gu(90)
     applicationName: "lomiri-system-settings"
     objectName: "systemSettingsMainView"
@@ -143,13 +145,6 @@ MainView {
                 }
                 PageColumn {
                     fillWidth: true
-                }
-            },
-            PageColumnsLayout {
-                when: true
-                PageColumn {
-                    fillWidth: true
-                    minimumWidth: units.gu(40)
                 }
             }
         ]
