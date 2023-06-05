@@ -263,7 +263,7 @@ Column {
             id: nodeleteDialog
             title: i18n.tr("Not possible")
 
-            text: i18n.tr("The current background image can not be deleted!")
+            text: i18n.tr("The currently active background image cannot be deleted!")
 
             Button {
                 text: i18n.tr("OK")
