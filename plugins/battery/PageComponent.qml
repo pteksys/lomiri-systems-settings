@@ -57,7 +57,7 @@ ItemPage {
     
     GSettings {
         id: indicatorSettings
-        schema.id: "com.canonical.indicator.power"
+        schema.id: "org.ayatana.indicator.power"
     }
 
     LomiriSecurityPrivacyPanel {
