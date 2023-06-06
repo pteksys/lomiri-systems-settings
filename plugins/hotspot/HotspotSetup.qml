@@ -370,7 +370,7 @@ Component {
         at the position before the OSK came up.*/
         Timer {
             id: cursorTimer
-            interval: 250
+            interval: 300
             running: false
             onTriggered: ssidField.cursorPosition = ssidField.text.length
         }
