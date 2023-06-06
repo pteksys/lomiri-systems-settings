@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-05 15:41+0000\n"
-"PO-Revision-Date: 2023-05-14 20:09+0000\n"
+"PO-Revision-Date: 2023-06-08 07:40+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -320,11 +320,11 @@ msgstr "Vybrat"
 
 #: plugins/background/WallpaperGrid.qml:264
 msgid "Not possible"
-msgstr ""
+msgstr "Není možné"
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "Nelze smazat právě používaný obrázek pozadí!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -785,19 +785,18 @@ msgstr "Probuzení zařízení dvojím poklepáním na obrazovku."
 
 #: plugins/gestures/PageComponent.qml:88
 msgid "Edge drag sensitivity:"
-msgstr ""
+msgstr "Citlivost potáhnutí na okraji:"
 
 #: plugins/gestures/PageComponent.qml:102
-#, fuzzy, qt-format
-#| msgid "Current layouts:"
+#, qt-format
 msgid "Current value: %1"
-msgstr "Stávající rozložení:"
+msgstr "Stávající hodnota:"
 
 #: plugins/gestures/PageComponent.qml:148
 msgid ""
 "With a higher value, the swipe area at the edges to trigger an action is "
 "wider. The default value is 2."
-msgstr ""
+msgstr "Oblast kraje je s vyšší hodnotou větší. Výchozí hodnota je 2."
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
