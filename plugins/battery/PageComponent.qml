@@ -54,6 +54,11 @@ ItemPage {
         id: powerSettings
         schema.id: batteryBackend.powerdRunning ? "com.lomiri.touch.system" : "org.gnome.desktop.session"
     }
+    
+    GSettings {
+        id: indicatorSettings
+        schema.id: "org.ayatana.indicator.power"
+    }
 
     LomiriSecurityPrivacyPanel {
         id: securityPrivacy
@@ -288,6 +293,18 @@ ItemPage {
                         return ""
                 }
                 showDivider: false
+            }
+
+            SettingsListItems.Standard {
+                CheckBox {
+                    objectName: "batteryPercentage"
+                    SlotsLayout.position: SlotsLayout.First
+                    property bool serverChecked: indicatorSettings.showPercentage
+                    onServerCheckedChanged: checked = serverChecked
+                    Component.onCompleted: checked = serverChecked
+                    onTriggered: indicatorSettings.showPercentage = checked
+                }
+                text: i18n.tr("Show battery percentage in indicator")
             }
 
             SettingsItemTitle {
