@@ -87,9 +87,7 @@ Component {
         }
 
         title: ssid ?
-               /* TODO(jgdx): Hack to avoid breaking string freeze. This will be
-               changed to i18n.tr("Connect to %1").arg(ssid) per spec. */
-               i18n.tr("Connect to Wi‑Fi") + " " + ssid :
+               i18n.trc("%1 will be filled with the SSID of the wifi network","Connect to %1").arg(ssid) :
                i18n.tr("Connect to Hidden Network")
         text: feedback.enabled ? feedback.text : "";
 
@@ -329,7 +327,7 @@ Component {
             id: wepInsecureLabel
             objectName: "wepInsecureLabel"
             color: theme.palette.normal.negative
-            text: i18n.tr("This network is insecure.")
+            text: i18n.tr("This network is insecure!")
             visible: securityList.selectedIndex === 3
         }
 
