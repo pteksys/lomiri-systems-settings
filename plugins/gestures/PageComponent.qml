@@ -85,7 +85,7 @@ ItemPage {
 
             // edge drag with setting for changing the corresponding gsetting
             SettingsItemTitle {
-                text: i18n.tr("Edge drag sensitivity:")
+                text: i18n.tr("Edge drag areas width:")
             }
             SettingsListItems.Standard {
                 Column {
