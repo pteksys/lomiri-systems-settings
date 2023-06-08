@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-05 15:41+0000\n"
+"POT-Creation-Date: 2023-06-08 07:38+0000\n"
 "PO-Revision-Date: 2023-03-01 12:36+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/lomiri/lomiri-"
@@ -74,8 +74,8 @@ msgstr "Serienummer"
 #: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
 #: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
 #: plugins/printing/printer-sub-pages/Status.qml:50
-#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
-#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/OtherNetwork.qml:316 plugins/wifi/OtherNetwork.qml:455
+#: plugins/wifi/OtherNetwork.qml:572 plugins/wifi/certhandler.cpp:105
 #: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
 #: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
 #: plugins/wifi/certhandler.cpp:318
@@ -112,8 +112,8 @@ msgstr "OS"
 msgid "Last updated"
 msgstr "Senast uppdaterad"
 
-#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:345
+#: plugins/battery/PageComponent.qml:363 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Aldrig"
@@ -202,8 +202,8 @@ msgstr "Efter namn"
 msgid "By size"
 msgstr "Efter storlek"
 
-#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
-#: plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:114
+#: plugins/battery/PageComponent.qml:290
 msgid "N/A"
 msgstr "Ej tillämplig"
 
@@ -258,12 +258,12 @@ msgstr "Okänd titel"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:237 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
 #: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
-#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:887
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -364,54 +364,58 @@ msgid_plural "%1 hours ago"
 msgstr[0] "%1 timme sedan"
 msgstr[1] "%1 timmar sedan"
 
-#: plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:109
 msgid "Charge level"
 msgstr "Laddnivå"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:117
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:196 plugins/battery/PageComponent.qml:198
 msgid "Yesterday"
 msgstr "Igår"
 
-#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:204 plugins/battery/PageComponent.qml:206
 msgid "Today"
 msgstr "Idag"
 
-#: plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:276
 msgid "Charging now"
 msgstr "Laddar nu"
 
-#: plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:278
 msgid "Last full charge"
 msgstr "Senast fulladdad"
 
-#: plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:280
 msgid "Fully charged"
 msgstr "Fulladdat"
 
-#: plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:307
+msgid "Show battery percentage in indicator"
+msgstr ""
+
+#: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
 msgstr "Sätt att minska batterianvändningen:"
 
-#: plugins/battery/PageComponent.qml:298
+#: plugins/battery/PageComponent.qml:315
 msgid "Display brightness"
 msgstr "Ljusstyrka för display"
 
-#: plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:340
 msgid "Lock when idle"
 msgstr "Lås om inaktiv"
 
-#: plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:340
 msgid "Sleep when idle"
 msgstr "Vänteläge om inaktiv"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:348
 #, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -419,7 +423,7 @@ msgstr[0] "Efter %1 sekund"
 msgstr[1] "Efter %1 sekunder"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/PageComponent.qml:352 plugins/battery/PageComponent.qml:360
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
@@ -431,15 +435,15 @@ msgstr[0] "Efter %1 minut"
 msgstr[1] "Efter %1 minuter"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:391
 msgid "Wi-Fi used for hotspot"
 msgstr "Wi-Fi används för hotspot"
 
-#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+#: plugins/battery/PageComponent.qml:391 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/battery/PageComponent.qml:427 plugins/bluetooth/PageComponent.qml:33
 #: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "Bluetooth"
@@ -641,7 +645,7 @@ msgstr "Anslut hittad enhet automatiskt:"
 msgid "Disconnect"
 msgstr "Koppla från"
 
-#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:903
 msgid "Connect"
 msgstr "Anslut"
 
@@ -787,7 +791,7 @@ msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:88
-msgid "Edge drag sensitivity:"
+msgid "Edge drag areas width:"
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:102
@@ -825,19 +829,19 @@ msgid "Require a password (recommended)"
 msgstr "Kräver ett lösenord (rekommenderad):"
 
 #: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
-#: plugins/wifi/OtherNetwork.qml:821
+#: plugins/wifi/OtherNetwork.qml:819
 msgid "Show password"
 msgstr "Visa lösenord"
 
-#: plugins/hotspot/HotspotSetup.qml:218
+#: plugins/hotspot/HotspotSetup.qml:219
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr "Uppstart av surfzonen kommer att slå på Wi-Fi."
 
-#: plugins/hotspot/HotspotSetup.qml:248
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Change"
 msgstr "Ändra"
 
-#: plugins/hotspot/HotspotSetup.qml:249
+#: plugins/hotspot/HotspotSetup.qml:250
 msgid "Start"
 msgstr "Starta"
 
@@ -1610,11 +1614,7 @@ msgstr "Knappsats toner"
 msgid "Messages:"
 msgstr "Meddelanden:"
 
-#: plugins/sound/PageComponent.qml:220
-msgid "Message received"
-msgstr "Meddelande mottaget"
-
-#: plugins/sound/PageComponent.qml:226
+#: plugins/sound/PageComponent.qml:220 plugins/sound/PageComponent.qml:226
 #, fuzzy
 #| msgid "Custom message sound"
 msgid "Message sound"
@@ -1877,7 +1877,7 @@ msgstr "Nätverksdetaljer"
 msgid "Last connected"
 msgstr "Senast ansluten"
 
-#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:784
 msgid "Password"
 msgstr "Lösenord"
 
@@ -1889,71 +1889,69 @@ msgstr "Glöm detta nätverk"
 msgid "IP address"
 msgstr "IP-adress"
 
-#: plugins/wifi/OtherNetwork.qml:92
-msgid "Connect to Wi‑Fi"
-msgstr "Anslut till Wi-Fi"
-
-#: plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:91
 msgid "Connect to Hidden Network"
 msgstr "Anslut till dolt nätverk"
 
-#: plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:283
 msgid "Network name"
 msgstr "Nätverksnamn"
 
-#: plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:296
 msgid "SSID"
 msgstr "SSID"
 
-#: plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:305
 msgid "Security"
 msgstr "Säkerhet"
 
-#: plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:317
 msgid "WPA & WPA2 Personal"
 msgstr "WPA & WPA2 Personal"
 
-#: plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:318
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA & WPA2 Enterprise"
 
-#: plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WEP"
 msgstr "WEP"
 
-#: plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:320
 msgid "Dynamic WEP (802.1x)"
 msgstr "Dynamisk WEP (802.1x)"
 
-#: plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "LEAP"
 msgstr "LEAP"
 
-#: plugins/wifi/OtherNetwork.qml:332
-msgid "This network is insecure."
+#: plugins/wifi/OtherNetwork.qml:330
+#, fuzzy
+#| msgid "This network is insecure."
+msgid "This network is insecure!"
 msgstr "Detta nätverk är osäkert."
 
-#: plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:336
 msgid "Authentication"
 msgstr "Autentisering"
 
-#: plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:361
 msgid "Inner authentication"
 msgstr "Inre autentisering"
 
-#: plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:394
 msgid "CA certificate"
 msgstr "CA certifikat"
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:448
 #, qt-format
 msgid "%1…"
 msgstr "%1…"
 
-#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/OtherNetwork.qml:456 plugins/wifi/OtherNetwork.qml:573
 #: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
 #: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
 #: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
@@ -1965,7 +1963,7 @@ msgstr "Välj…"
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:463
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr "%1…, Utg.: %2"
@@ -1974,88 +1972,88 @@ msgstr "%1…, Utg.: %2"
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:471
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr "%1, Utg.: %2"
 
-#: plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:492
 msgid "Using certificates is recommended as it increases security."
 msgstr "Att använda certifikat rekommenderas eftersom det ökar säkerheten."
 
-#: plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:510
 msgid "Client certificate"
 msgstr "Klientcertifikat"
 
-#: plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:552
 msgid "User private key"
 msgstr "Användares privatanyckel"
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:577
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr "%1, %2, %3 bitar"
 
-#: plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:620
 msgid "Pac file"
 msgstr "Pac filer"
 
-#: plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:670
 msgid "Pac provisioning"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:684
 msgid "Disabled"
 msgstr "Inaktiverad"
 
-#: plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:685
 msgid "Anonymous"
 msgstr "Anonym"
 
-#: plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:686
 msgid "Authenticated"
 msgstr "Autentiserad"
 
-#: plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Both"
 msgstr "Båda"
 
-#: plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:697
 msgid "PEAP version"
 msgstr "PEAP version"
 
-#: plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:711
 msgid "Version 0"
 msgstr "Version 0"
 
-#: plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:712
 msgid "Version 1"
 msgstr "Version 1"
 
-#: plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:713
 msgid "Automatic"
 msgstr "Automatisk"
 
-#: plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:723
 msgid "Anonymous identity"
 msgstr "Anonym identitet"
 
-#: plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:750
 msgid "Identity"
 msgstr "Identitet"
 
-#: plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Username"
 msgstr "Användarnamn"
 
-#: plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:782
 msgid "Private key password"
 msgstr "Privat nyckel lösenord"
 
-#: plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:855
 msgid "Remember password"
 msgstr "Kom ihåg lösenord"
 
@@ -2094,6 +2092,12 @@ msgstr "Personligt"
 #: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "System"
+
+#~ msgid "Message received"
+#~ msgstr "Meddelande mottaget"
+
+#~ msgid "Connect to Wi‑Fi"
+#~ msgstr "Anslut till Wi-Fi"
 
 #~ msgid "Remove image"
 #~ msgstr "Ta bort avbild"

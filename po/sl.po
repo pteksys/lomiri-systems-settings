@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-05 15:41+0000\n"
+"POT-Creation-Date: 2023-06-08 07:38+0000\n"
 "PO-Revision-Date: 2020-02-17 19:40+0000\n"
 "Last-Translator: Riccardo Riccio <rickyriccio@tiscali.it>\n"
 "Language-Team: Slovenian <https://translate.ubports.com/projects/ubports/"
@@ -77,8 +77,8 @@ msgstr "Zaporedna številka"
 #: plugins/about/PageComponent.qml:119 plugins/bluetooth/DevicePage.qml:73
 #: plugins/bluetooth/DevicePage.qml:82 plugins/bluetooth/DevicePage.qml:110
 #: plugins/printing/printer-sub-pages/Status.qml:50
-#: plugins/wifi/OtherNetwork.qml:318 plugins/wifi/OtherNetwork.qml:457
-#: plugins/wifi/OtherNetwork.qml:574 plugins/wifi/certhandler.cpp:105
+#: plugins/wifi/OtherNetwork.qml:316 plugins/wifi/OtherNetwork.qml:455
+#: plugins/wifi/OtherNetwork.qml:572 plugins/wifi/certhandler.cpp:105
 #: plugins/wifi/certhandler.cpp:140 plugins/wifi/certhandler.cpp:192
 #: plugins/wifi/certhandler.cpp:224 plugins/wifi/certhandler.cpp:289
 #: plugins/wifi/certhandler.cpp:318
@@ -115,8 +115,8 @@ msgstr "OS"
 msgid "Last updated"
 msgstr "Nazadnje posodobljeno"
 
-#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:328
-#: plugins/battery/PageComponent.qml:346 plugins/battery/SleepValues.qml:116
+#: plugins/about/PageComponent.qml:182 plugins/battery/PageComponent.qml:345
+#: plugins/battery/PageComponent.qml:363 plugins/battery/SleepValues.qml:116
 #: plugins/wifi/NetworkDetails.qml:67
 msgid "Never"
 msgstr "Nikoli"
@@ -209,8 +209,8 @@ msgstr "Po imenu"
 msgid "By size"
 msgstr "Po velikosti"
 
-#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:109
-#: plugins/battery/PageComponent.qml:285
+#: plugins/about/Storage.qml:274 plugins/battery/PageComponent.qml:114
+#: plugins/battery/PageComponent.qml:290
 msgid "N/A"
 msgstr "Ni na voljo"
 
@@ -265,12 +265,12 @@ msgstr "Neznan naslov"
 #: plugins/bluetooth/DisplayPinCodeDialog.qml:46
 #: plugins/bluetooth/ProvidePasskeyDialog.qml:54
 #: plugins/bluetooth/ProvidePinCodeDialog.qml:55
-#: plugins/hotspot/HotspotSetup.qml:236 plugins/hotspot/PageComponent.qml:166
+#: plugins/hotspot/HotspotSetup.qml:237 plugins/hotspot/PageComponent.qml:166
 #: plugins/language/DisplayLanguage.qml:46
 #: plugins/language/RebootNecessary.qml:48 plugins/printing/AddPrinter.qml:41
 #: plugins/reset/EraseEverything.qml:55 plugins/reset/ResetAllSettings.qml:39
 #: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
-#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:889
+#: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:887
 msgid "Cancel"
 msgstr "Prekliči"
 
@@ -382,54 +382,58 @@ msgstr[1] "pred %1 uro"
 msgstr[2] "pred %1 urama"
 msgstr[3] "pred %1 urami"
 
-#: plugins/battery/PageComponent.qml:104
+#: plugins/battery/PageComponent.qml:109
 msgid "Charge level"
 msgstr "Raven napolnjenosti"
 
 #. TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery
-#: plugins/battery/PageComponent.qml:112
+#: plugins/battery/PageComponent.qml:117
 #, qt-format
 msgid "%1%"
 msgstr "%1%"
 
-#: plugins/battery/PageComponent.qml:191 plugins/battery/PageComponent.qml:193
+#: plugins/battery/PageComponent.qml:196 plugins/battery/PageComponent.qml:198
 msgid "Yesterday"
 msgstr "Včeraj"
 
-#: plugins/battery/PageComponent.qml:199 plugins/battery/PageComponent.qml:201
+#: plugins/battery/PageComponent.qml:204 plugins/battery/PageComponent.qml:206
 msgid "Today"
 msgstr "Danes"
 
-#: plugins/battery/PageComponent.qml:271
+#: plugins/battery/PageComponent.qml:276
 msgid "Charging now"
 msgstr "Polnjenje"
 
-#: plugins/battery/PageComponent.qml:273
+#: plugins/battery/PageComponent.qml:278
 msgid "Last full charge"
 msgstr "Zadnja napolnitev"
 
-#: plugins/battery/PageComponent.qml:275
+#: plugins/battery/PageComponent.qml:280
 msgid "Fully charged"
 msgstr "Popolnoma napolnjeno"
 
-#: plugins/battery/PageComponent.qml:294
+#: plugins/battery/PageComponent.qml:307
+msgid "Show battery percentage in indicator"
+msgstr ""
+
+#: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
 msgstr "Načini za zmanjšanje porabe baterije:"
 
-#: plugins/battery/PageComponent.qml:298
+#: plugins/battery/PageComponent.qml:315
 msgid "Display brightness"
 msgstr "Svetlost zaslona"
 
-#: plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:340
 msgid "Lock when idle"
 msgstr "Zakleni med nedejavnostjo"
 
-#: plugins/battery/PageComponent.qml:323
+#: plugins/battery/PageComponent.qml:340
 msgid "Sleep when idle"
 msgstr "V pripravljenost med nedejavnostjo"
 
 #. TRANSLATORS: %1 is the number of seconds
-#: plugins/battery/PageComponent.qml:331
+#: plugins/battery/PageComponent.qml:348
 #, fuzzy, qt-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -439,7 +443,7 @@ msgstr[2] "Po %1 minutah"
 msgstr[3] "Po %1 minutah"
 
 #. TRANSLATORS: %1 is the number of minutes
-#: plugins/battery/PageComponent.qml:335 plugins/battery/PageComponent.qml:343
+#: plugins/battery/PageComponent.qml:352 plugins/battery/PageComponent.qml:360
 #: plugins/battery/SleepValues.qml:85 plugins/battery/SleepValues.qml:89
 #: plugins/battery/SleepValues.qml:93 plugins/battery/SleepValues.qml:97
 #: plugins/battery/SleepValues.qml:101 plugins/battery/SleepValues.qml:105
@@ -453,16 +457,16 @@ msgstr[2] "Po %1 minutah"
 msgstr[3] "Po %1 minutah"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
-#: plugins/battery/PageComponent.qml:374
+#: plugins/battery/PageComponent.qml:391
 #, fuzzy
 msgid "Wi-Fi used for hotspot"
 msgstr "Vroča vstopna točka Wi-Fi"
 
-#: plugins/battery/PageComponent.qml:374 plugins/wifi/PageComponent.qml:28
+#: plugins/battery/PageComponent.qml:391 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: plugins/battery/PageComponent.qml:410 plugins/bluetooth/PageComponent.qml:33
+#: plugins/battery/PageComponent.qml:427 plugins/bluetooth/PageComponent.qml:33
 #: plugins/bluetooth/PageComponent.qml:235
 msgid "Bluetooth"
 msgstr "Bluetooth"
@@ -672,7 +676,7 @@ msgstr "Poveži samodejno, ko je zaznano:"
 msgid "Disconnect"
 msgstr "Prekini povezavo"
 
-#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:905
+#: plugins/bluetooth/DevicePage.qml:150 plugins/wifi/OtherNetwork.qml:903
 msgid "Connect"
 msgstr "Poveži"
 
@@ -830,7 +834,7 @@ msgid "Double-tap anywhere on the screen to wake device."
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:88
-msgid "Edge drag sensitivity:"
+msgid "Edge drag areas width:"
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:102
@@ -869,19 +873,19 @@ msgid "Require a password (recommended)"
 msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
-#: plugins/wifi/OtherNetwork.qml:821
+#: plugins/wifi/OtherNetwork.qml:819
 msgid "Show password"
 msgstr "Pokaži geslo"
 
-#: plugins/hotspot/HotspotSetup.qml:218
+#: plugins/hotspot/HotspotSetup.qml:219
 msgid "Starting the hotspot will turn on Wi-Fi."
 msgstr ""
 
-#: plugins/hotspot/HotspotSetup.qml:248
+#: plugins/hotspot/HotspotSetup.qml:249
 msgid "Change"
 msgstr "Spremeni"
 
-#: plugins/hotspot/HotspotSetup.qml:249
+#: plugins/hotspot/HotspotSetup.qml:250
 msgid "Start"
 msgstr "Začni"
 
@@ -1707,11 +1711,7 @@ msgstr "Zvoki številčnice"
 msgid "Messages:"
 msgstr "Sporočila:"
 
-#: plugins/sound/PageComponent.qml:220
-msgid "Message received"
-msgstr "Sporočilo je bilo prejeto"
-
-#: plugins/sound/PageComponent.qml:226
+#: plugins/sound/PageComponent.qml:220 plugins/sound/PageComponent.qml:226
 #, fuzzy
 #| msgid "Vibrate with message sound"
 msgid "Message sound"
@@ -1982,7 +1982,7 @@ msgstr "Podrobnosti omrežja"
 msgid "Last connected"
 msgstr "Nazadnje povezano"
 
-#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:786
+#: plugins/wifi/NetworkDetails.qml:72 plugins/wifi/OtherNetwork.qml:784
 msgid "Password"
 msgstr "Geslo"
 
@@ -1995,73 +1995,69 @@ msgstr "Pozabi omrežje"
 msgid "IP address"
 msgstr "Naslov IP"
 
-#: plugins/wifi/OtherNetwork.qml:92
-msgid "Connect to Wi‑Fi"
-msgstr "Poveži se z Wi-Fi-jem"
-
-#: plugins/wifi/OtherNetwork.qml:93
+#: plugins/wifi/OtherNetwork.qml:91
 msgid "Connect to Hidden Network"
 msgstr "Poveži se s skritim omrežjem"
 
-#: plugins/wifi/OtherNetwork.qml:285
+#: plugins/wifi/OtherNetwork.qml:283
 msgid "Network name"
 msgstr "Ime omrežja"
 
-#: plugins/wifi/OtherNetwork.qml:298
+#: plugins/wifi/OtherNetwork.qml:296
 msgid "SSID"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:307
+#: plugins/wifi/OtherNetwork.qml:305
 msgid "Security"
 msgstr "Varnost"
 
-#: plugins/wifi/OtherNetwork.qml:319
+#: plugins/wifi/OtherNetwork.qml:317
 msgid "WPA & WPA2 Personal"
 msgstr "Osebni WPA in WPA2"
 
-#: plugins/wifi/OtherNetwork.qml:320
+#: plugins/wifi/OtherNetwork.qml:318
 #, fuzzy
 msgid "WPA & WPA2 Enterprise"
 msgstr "Osebni WPA in WPA2"
 
-#: plugins/wifi/OtherNetwork.qml:321
+#: plugins/wifi/OtherNetwork.qml:319
 msgid "WEP"
 msgstr "WEP"
 
-#: plugins/wifi/OtherNetwork.qml:322
+#: plugins/wifi/OtherNetwork.qml:320
 msgid "Dynamic WEP (802.1x)"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:323
+#: plugins/wifi/OtherNetwork.qml:321
 msgid "LEAP"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:332
-msgid "This network is insecure."
+#: plugins/wifi/OtherNetwork.qml:330
+msgid "This network is insecure!"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:338
+#: plugins/wifi/OtherNetwork.qml:336
 #, fuzzy
 msgid "Authentication"
 msgstr "obvestila"
 
-#: plugins/wifi/OtherNetwork.qml:363
+#: plugins/wifi/OtherNetwork.qml:361
 msgid "Inner authentication"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:396
+#: plugins/wifi/OtherNetwork.qml:394
 msgid "CA certificate"
 msgstr ""
 
 #. TRANSLATORS: %1 is the name of a certificate file.
 #. The ellipsis indicates that the file name has been
 #. truncated to 30 characters.
-#: plugins/wifi/OtherNetwork.qml:450
+#: plugins/wifi/OtherNetwork.qml:448
 #, qt-format
 msgid "%1…"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:458 plugins/wifi/OtherNetwork.qml:575
+#: plugins/wifi/OtherNetwork.qml:456 plugins/wifi/OtherNetwork.qml:573
 #: plugins/wifi/certhandler.cpp:106 plugins/wifi/certhandler.cpp:141
 #: plugins/wifi/certhandler.cpp:193 plugins/wifi/certhandler.cpp:225
 #: plugins/wifi/certhandler.cpp:290 plugins/wifi/certhandler.cpp:319
@@ -2073,7 +2069,7 @@ msgstr ""
 #. The organization name has been truncated, as
 #. indicated by the ellipsis. The latter position is
 #. the expiry date of the certificate.
-#: plugins/wifi/OtherNetwork.qml:465
+#: plugins/wifi/OtherNetwork.qml:463
 #, qt-format
 msgid "%1…, Exp.: %2"
 msgstr ""
@@ -2082,93 +2078,93 @@ msgstr ""
 #. the organization that has issued the certificate.
 #. The latter position is the expiry date of the
 #. certificate.
-#: plugins/wifi/OtherNetwork.qml:473
+#: plugins/wifi/OtherNetwork.qml:471
 #, qt-format
 msgid "%1, Exp.: %2"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:494
+#: plugins/wifi/OtherNetwork.qml:492
 msgid "Using certificates is recommended as it increases security."
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:512
+#: plugins/wifi/OtherNetwork.qml:510
 msgid "Client certificate"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:554
+#: plugins/wifi/OtherNetwork.qml:552
 msgid "User private key"
 msgstr ""
 
 #. TRANSLATORS: The first position is the type of
 #. private key, second the key algorithm, and third the
 #. length of the key in bits.
-#: plugins/wifi/OtherNetwork.qml:579
+#: plugins/wifi/OtherNetwork.qml:577
 #, qt-format
 msgid "%1, %2, %3 bit"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:622
+#: plugins/wifi/OtherNetwork.qml:620
 msgid "Pac file"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:672
+#: plugins/wifi/OtherNetwork.qml:670
 msgid "Pac provisioning"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:686
+#: plugins/wifi/OtherNetwork.qml:684
 #, fuzzy
 msgid "Disabled"
 msgstr "onemogoči"
 
-#: plugins/wifi/OtherNetwork.qml:687
+#: plugins/wifi/OtherNetwork.qml:685
 msgid "Anonymous"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:688
+#: plugins/wifi/OtherNetwork.qml:686
 msgid "Authenticated"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:689
+#: plugins/wifi/OtherNetwork.qml:687
 msgid "Both"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:699
+#: plugins/wifi/OtherNetwork.qml:697
 #, fuzzy
 msgid "PEAP version"
 msgstr "različica"
 
-#: plugins/wifi/OtherNetwork.qml:713
+#: plugins/wifi/OtherNetwork.qml:711
 #, fuzzy
 msgid "Version 0"
 msgstr "Različica: "
 
-#: plugins/wifi/OtherNetwork.qml:714
+#: plugins/wifi/OtherNetwork.qml:712
 #, fuzzy
 msgid "Version 1"
 msgstr "Različica: "
 
-#: plugins/wifi/OtherNetwork.qml:715
+#: plugins/wifi/OtherNetwork.qml:713
 #, fuzzy
 msgid "Automatic"
 msgstr "samodejno"
 
-#: plugins/wifi/OtherNetwork.qml:725
+#: plugins/wifi/OtherNetwork.qml:723
 msgid "Anonymous identity"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:752
+#: plugins/wifi/OtherNetwork.qml:750
 msgid "Identity"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:754
+#: plugins/wifi/OtherNetwork.qml:752
 msgid "Username"
 msgstr "Uporabniško ime"
 
-#: plugins/wifi/OtherNetwork.qml:784
+#: plugins/wifi/OtherNetwork.qml:782
 msgid "Private key password"
 msgstr ""
 
-#: plugins/wifi/OtherNetwork.qml:857
+#: plugins/wifi/OtherNetwork.qml:855
 #, fuzzy
 msgid "Remember password"
 msgstr "geslo"
@@ -2209,6 +2205,12 @@ msgstr "Osebno"
 #: src/qml/MainWindow.qml:246
 msgid "System"
 msgstr "Sistem"
+
+#~ msgid "Message received"
+#~ msgstr "Sporočilo je bilo prejeto"
+
+#~ msgid "Connect to Wi‑Fi"
+#~ msgstr "Poveži se z Wi-Fi-jem"
 
 #~ msgid "Remove image"
 #~ msgstr "Odstrani sliko"
