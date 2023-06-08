@@ -48,16 +48,16 @@ ItemPage {
             anchors.left: parent.left
             anchors.right: parent.right
 
-            ListItem.Standard {
+            SettingsListItems.Standard {
                 id: doubleTapToWake
                 text: i18n.tr("Tap to wake")
                 visible: DbusHelper.isDT2WSupported
-                control: Switch {
+                Switch {
                     id: doubleTapToWakeSwitch
                     objectName: "doubleTapToWake"
                     checked: DbusHelper.getDT2WEnabled()
                     SlotsLayout.position: SlotsLayout.Trailing
-                    onCheckedChanged: {
+                    onClicked: {
                         DbusHelper.setDT2WEnabled(checked)
                     }
                 }
