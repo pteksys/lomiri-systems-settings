@@ -195,6 +195,7 @@ Component {
                 id: passwordVisible
                 enabled: passwordRequiredToggle.checked
                 text: i18n.tr("Show password")
+                showDivider: false
                 layout.padding.leading: 0
                 SlotsLayout.padding.leading: 0
 
