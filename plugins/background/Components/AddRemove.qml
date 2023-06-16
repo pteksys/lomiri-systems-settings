@@ -29,6 +29,7 @@ Row {
 
     property int buttonWidth
     property var repeater
+    property var grid
 
     signal enteredQueueMode ()
     signal leftQueueMode ()
@@ -56,14 +57,20 @@ Row {
         State {
             name: "someQueued"
             extend: "noneQueued"
-            when: Utilities.getSelected(repeater) > 0
+            when: (Utilities.getSelected(repeater) > 0 || grid.state == "selection")
             PropertyChanges {
                 target: queue
                 enabled: true
                 opacity: 1
                 text: {
                     var count = Utilities.getSelected(repeater);
-                    return i18n.tr("Remove %1 image", "Remove %1 images", count).arg(count)
+                    if (count == 0) {
+                        queue.enabled = false
+                        return i18n.tr("No images selected")
+                    } else {
+                        queue.enabled = true
+                        return i18n.tr("Remove %1 image", "Remove %1 images", count).arg(count)
+                    }
                 }
                 onClicked: {
                     parent.state = "";

@@ -223,6 +223,7 @@ Column {
         height: children[0].height + (spacing * 2)
         buttonWidth: (width - spacing) / 2
         repeater: gridRepeater
+        grid: grid
         onEnteredQueueMode: {
             grid.state = "selection"
         }
