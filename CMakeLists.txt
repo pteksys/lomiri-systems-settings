@@ -52,6 +52,7 @@ pkg_search_module(ICU REQUIRED icu-i18n)
 pkg_search_module(ANDR_PROP libandroid-properties)
 pkg_search_module(CLICK REQUIRED click-0.4)
 pkg_check_modules(QTGSETTINGS REQUIRED gsettings-qt)
+pkg_check_modules(DEVICEINFO IMPORTED_TARGET deviceinfo)
 
 set(DATA_DIR share)
 set(MODULE_DIR lomiri-system-settings)

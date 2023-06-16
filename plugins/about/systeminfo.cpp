@@ -17,7 +17,15 @@
 
 #include <QSysInfo>
 
+#ifdef ENABLE_DEVICEINFO
+#include <deviceinfo.h>
+#endif
+
 #include "systeminfo.h"
+
+#ifdef ENABLE_DEVICEINFO
+std::shared_ptr<DeviceInfo> info = std::make_shared<DeviceInfo>();
+#endif
 
 SystemInfo::SystemInfo(QObject *parent) : QObject(parent)
 {
@@ -40,4 +48,21 @@ QString SystemInfo::cpuArch()
 QString SystemInfo::kernelVersion()
 {
     return QSysInfo::kernelVersion();
+}
+
+#ifdef ENABLE_DEVICEINFO
+QString SystemInfo::prettyName()
+{
+    QString str = QString::fromStdString(info->prettyName());
+    return str;
+}
+#endif
+
+bool SystemInfo::useDeviceinfo()
+{
+#ifdef ENABLE_DEVICEINFO
+    return true;
+#else
+    return false;
+#endif
 }

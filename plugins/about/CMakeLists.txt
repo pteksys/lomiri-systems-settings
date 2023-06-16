@@ -1,10 +1,14 @@
 include_directories(${ANDR_PROP_INCLUDE_DIRS})
+include_directories(${DEVICEINFO_INCLUDE_DIRS})
 include_directories(${GLIB_INCLUDE_DIRS})
 include_directories(${GIO_INCLUDE_DIRS})
 include_directories(${CLICK_INCLUDE_DIRS})
 include_directories(${CLICK_INCLUDE_DIRS})
 add_definitions(-DQT_NO_KEYWORDS)
 
+if (DEVICEINFO_FOUND)
+    add_definitions(-DENABLE_DEVICEINFO)
+endif ()
 
 set(QML_SOURCES
     EntryComponent.qml
@@ -32,8 +36,7 @@ add_library(LomiriStorageAboutPanel MODULE
 )
 
 target_link_libraries(LomiriStorageAboutPanel Qt5::Qml Qt5::Quick Qt5::DBus
-${ANDR_PROP_LDFLAGS} ${GLIB_LDFLAGS} ${GIO_LDFLAGS} ${CLICK_LDFLAGS} LomiriSystemSettingsPrivate)
-
+${ANDR_PROP_LDFLAGS} ${DEVICEINFO_LDFLAGS} ${GLIB_LDFLAGS} ${GIO_LDFLAGS} ${CLICK_LDFLAGS} LomiriSystemSettingsPrivate)
 
 set(PLUG_DIR ${PLUGIN_PRIVATE_MODULE_DIR}/Lomiri/SystemSettings/StorageAbout)
 install(TARGETS LomiriStorageAboutPanel DESTINATION ${PLUG_DIR})
