@@ -87,7 +87,7 @@ ItemPage {
                     id: deviceLabel
                     objectName: "deviceLabel"
                     anchors.horizontalCenter: parent.horizontalCenter
-                    text: SystemInfo.use_deviceinfo ? SystemInfo.prettyName : deviceInfos.manufacturer
+                    text: SystemInfo.useDeviceinfo ? SystemInfo.prettyName : deviceInfos.manufacturer() + " " + deviceInfos.model()
                 }
             }
 
