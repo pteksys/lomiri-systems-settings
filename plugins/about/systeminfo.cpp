@@ -16,12 +16,16 @@
  */
 
 #include <QSysInfo>
+#include <fstream>
+#include <sstream>
+#include <unistd.h>
 
 #ifdef ENABLE_DEVICEINFO
 #include <deviceinfo.h>
 #endif
 
 #include "systeminfo.h"
+#include "storageabout.h"
 
 #ifdef ENABLE_DEVICEINFO
 std::shared_ptr<DeviceInfo> info = std::make_shared<DeviceInfo>();
@@ -50,19 +54,42 @@ QString SystemInfo::kernelVersion()
     return QSysInfo::kernelVersion();
 }
 
-#ifdef ENABLE_DEVICEINFO
-QString SystemInfo::prettyName()
+static std::string dmi_devicename()
 {
-    QString str = QString::fromStdString(info->prettyName());
+    std::string str1;
+    std::string str2;
+    std::ifstream dmi_vendor("/sys/devices/virtual/dmi/id/sys_vendor");
+    std::ifstream dmi_model("/sys/devices/virtual/dmi/id/product_name");
+
+    std::getline(dmi_vendor, str1);
+    std::getline(dmi_model, str2);
+    return str1 + " " + str2;
+}
+
+static std::string devicetree_devicename()
+{
+    std::string str;
+    std::ifstream devicetree_model("/proc/device-tree/model");
+
+    std::getline(devicetree_model, str);
     return str;
 }
-#endif
 
-bool SystemInfo::useDeviceinfo()
+QString SystemInfo::prettyName()
 {
+    QString str = "unknown";
+    auto storageAbout = new StorageAbout();
 #ifdef ENABLE_DEVICEINFO
-    return true;
-#else
-    return false;
+    str = QString::fromStdString(info->prettyName());
 #endif
+    if (str.toStdString() == "unknown") {
+        if (!storageAbout->vendorString().isEmpty()) {
+            return storageAbout->vendorString();
+        } else if (access("/sys/devices/virtual/dmi/id/sys_vendor", F_OK) != -1) {
+            return QString::fromStdString(dmi_devicename());
+        } else {
+            return QString::fromStdString(devicetree_devicename());
+        }
+    }
+    return str;
 }

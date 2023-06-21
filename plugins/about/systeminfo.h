@@ -26,11 +26,7 @@ class SystemInfo : public QObject
     Q_PROPERTY(QString buildAbi READ buildAbi CONSTANT)
     Q_PROPERTY(QString cpuArch READ cpuArch CONSTANT)
     Q_PROPERTY(QString kernelVersion READ kernelVersion CONSTANT)
-
-#   ifdef ENABLE_DEVICEINFO
     Q_PROPERTY(QString prettyName READ prettyName CONSTANT)
-#   endif
-    Q_PROPERTY(bool useDeviceinfo READ useDeviceinfo CONSTANT)
 
 public:
     SystemInfo(QObject *parent = 0);
@@ -38,9 +34,5 @@ public:
     QString buildAbi();
     QString cpuArch();
     QString kernelVersion();
-
-#   ifdef ENABLE_DEVICEINFO
     QString prettyName();
-#   endif
-    bool useDeviceinfo();
 };
