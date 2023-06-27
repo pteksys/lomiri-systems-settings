@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-06-28 04:33+0000\n"
+"Last-Translator: \"Rudra Harsh V.Singh\" <rudraHarsh45@proton.me>\n"
+"Language-Team: English (Canada) <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/en_CA/>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
@@ -257,7 +259,7 @@ msgstr ""
 #: plugins/reset/ResetLauncherHome.qml:56 plugins/time-date/TimePicker.qml:76
 #: plugins/wifi/CertDialog.qml:65 plugins/wifi/OtherNetwork.qml:887
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: plugins/background/Components/AddRemove.qml:53
 msgid "No images selected"
@@ -322,7 +324,7 @@ msgstr ""
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
@@ -817,11 +819,11 @@ msgstr ""
 
 #: plugins/hotspot/HotspotSetup.qml:249
 msgid "Change"
-msgstr ""
+msgstr "Change"
 
 #: plugins/hotspot/HotspotSetup.qml:250
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 #: plugins/hotspot/PageComponent.qml:33 plugins/hotspot/PageComponent.qml:85
 msgid "Hotspot"
@@ -866,7 +868,7 @@ msgstr ""
 #: plugins/language/DisplayLanguage.qml:55
 #: plugins/printing/AddPrinterDetails.qml:44
 msgid "Back"
-msgstr ""
+msgstr "Back"
 
 #: plugins/language/DisplayLanguage.qml:66
 msgid "Confirm"
@@ -1377,7 +1379,7 @@ msgstr ""
 
 #: plugins/printing/PageComponent.qml:136
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: plugins/printing/PageComponent.qml:149
 #: plugins/printing/printer-sub-pages/Policies.qml:50
