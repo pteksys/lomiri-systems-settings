@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-06-16 19:48+0000\n"
-"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
+"PO-Revision-Date: 2023-06-28 04:33+0000\n"
+"Last-Translator: \"J. Lavoie\" <j.lavoie@net-c.ca>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/de/>\n"
 "Language: de\n"
@@ -331,7 +331,7 @@ msgstr ""
 #: plugins/brightness/WifiDisplaysAlert.qml:38
 #: plugins/vpn/PageComponent.qml:123
 msgid "OK"
-msgstr "Ok"
+msgstr "OK"
 
 #: plugins/battery/PageComponent.qml:35
 msgid "Battery"
