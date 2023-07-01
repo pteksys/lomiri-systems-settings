@@ -23,33 +23,37 @@
 #include <libupower-glib/upower.h>
 #include <QtCore/QDebug>
 
-Battery::Battery(QObject *parent) :
+BatteryBackend::BatteryBackend(QObject *parent) :
     QObject(parent),
     m_systemBusConnection (QDBusConnection::systemBus()),
     m_powerdIface ("com.lomiri.Repowerd",
                    "/com/lomiri/Repowerd",
                    "com.lomiri.Repowerd",
                    m_systemBusConnection),
-    m_deviceString("")
+    m_primaryBattery(nullptr)
 {
-    m_device = up_device_new();
-
-    buildDeviceString();
-    getLastFullCharge();
+    choosePrimaryDevice();
 
     m_powerdRunning = m_powerdIface.isValid();
 }
 
-bool Battery::powerdRunning() const
+bool BatteryBackend::powerdRunning() const
 {
     return m_powerdRunning;
 }
 
-void Battery::buildDeviceString() {
+Battery * BatteryBackend::primaryBattery() const
+{
+    return m_primaryBattery;
+}
+
+/* FIXME: this logic could fall apart if there's >1 battery e.g. PinePhone w/ keyboard battery/ */
+void BatteryBackend::choosePrimaryDevice() {
     UpClient *client;
     GPtrArray *devices;
     UpDeviceKind kind;
     UpDeviceTechnology technology;
+    UpDevice *primaryDevice = nullptr;
 
     client = up_client_new();
 
@@ -71,18 +75,58 @@ void Battery::buildDeviceString() {
         g_object_get(device, "technology", &technology, nullptr);
         if (kind == UP_DEVICE_KIND_BATTERY &&
             (technology == UP_DEVICE_TECHNOLOGY_LITHIUM_ION ||
-             technology == UP_DEVICE_TECHNOLOGY_LITHIUM_POLYMER)) {
-            m_deviceString = QString(up_device_get_object_path(device));
+             technology == UP_DEVICE_TECHNOLOGY_LITHIUM_POLYMER))
+        {
+            primaryDevice = device;
         }
+    }
+
+    if (primaryDevice) {
+        m_primaryBattery = new Battery(
+            static_cast<UpDevice *>(g_object_ref(primaryDevice)), this);
     }
 
     g_ptr_array_unref(devices);
     g_object_unref(client);
 }
 
-QString Battery::deviceString() const
+BatteryBackend::~BatteryBackend() {}
+
+Battery::Battery(UpDevice * device, QObject *parent) :
+    QObject(parent),
+    m_device(device),
+    m_lastFullCharge(0)
 {
-    return m_deviceString;
+    getLastFullCharge();
+
+    g_object_connect(m_device,
+        "signal::notify::percentage", G_CALLBACK(&handleNotifyPercentage), this,
+        "signal::notify::state",      G_CALLBACK(&handleNotifyState),      this,
+        nullptr);
+}
+
+Battery::~Battery()
+{
+    g_signal_handlers_disconnect_by_data(m_device, this);
+    g_object_unref(m_device);
+}
+
+double Battery::batteryLevel() const
+{
+    double percentage;
+    g_object_get (m_device, "percentage", &percentage, nullptr);
+
+    return percentage;
+}
+
+Battery::State Battery::state() const
+{
+   guint state;
+   g_object_get (m_device, "state", &state, nullptr);
+
+    /* Because we define the enum values to be the same as libupower-glib's
+     * values, no conversion has to be done here. */
+   return State(state);
 }
 
 int Battery::lastFullCharge() const
@@ -94,7 +138,6 @@ void Battery::getLastFullCharge()
 {
     GPtrArray *values = nullptr;
     gint32 offset = g_get_real_time() / 1000000;
-    up_device_set_object_path_sync(m_device, m_deviceString.toStdString().c_str(), nullptr, nullptr);
     values = up_device_get_history_sync(m_device, "charge", 864000, 1000, nullptr, nullptr);
 
     if (values == nullptr) {
@@ -126,17 +169,14 @@ void Battery::getLastFullCharge()
 }
 
 /* TODO: refresh values over time for dynamic update */
-QVariantList Battery::getHistory(const QString &deviceString, const int timespan, const int resolution)
+QVariantList Battery::getHistory(const int timespan, const int resolution)
 {
-    if (deviceString.isNull() || deviceString.isEmpty())
-        return QVariantList();
-
     GPtrArray *values = nullptr;
     gint32 offset = g_get_real_time() / 1000000;
     QVariantList listValues;
     QVariantMap listItem;
     gdouble currentValue = 0;
-    up_device_set_object_path_sync(m_device, deviceString.toStdString().c_str(), nullptr, nullptr);
+
     values = up_device_get_history_sync(m_device, "charge", timespan, resolution, nullptr, nullptr);
 
     if (values == nullptr) {
@@ -185,6 +225,16 @@ QVariantList Battery::getHistory(const QString &deviceString, const int timespan
     return listValues;
 }
 
-Battery::~Battery() {
-    g_object_unref(m_device);
+/* static */
+void Battery::handleNotifyPercentage(GObject* , GParamSpec* , gpointer user_data)
+{
+    auto self = static_cast<Battery *>(user_data);
+    Q_EMIT(self->batteryLevelChanged());
+}
+
+/* static */
+void Battery::handleNotifyState(GObject* , GParamSpec* , gpointer user_data)
+{
+    auto self = static_cast<Battery *>(user_data);
+    Q_EMIT(self->stateChanged());
 }

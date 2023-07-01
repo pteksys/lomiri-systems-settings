@@ -29,7 +29,9 @@ void BackendPlugin::registerTypes(const char *uri)
 {
     Q_ASSERT(uri == QLatin1String("Lomiri.SystemSettings.Battery"));
 
-    qmlRegisterType<Battery>(uri, 1, 0, "LomiriBatteryPanel");
+    qmlRegisterType<BatteryBackend>(uri, 1, 0, "LomiriBatteryPanel");
+    qmlRegisterUncreatableType<Battery>(uri, 1, 0, "Battery",
+        QStringLiteral("Obtain Battery instance through LomiriBatteryPanel."));
 }
 
 void BackendPlugin::initializeEngine(QQmlEngine *engine, const char *uri)
