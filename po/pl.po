@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-05-02 21:02+0000\n"
+"PO-Revision-Date: 2023-07-20 12:03+0000\n"
 "Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Launchpad-Export-Date: 2015-07-21 05:34+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -321,11 +321,11 @@ msgstr "Ustaw"
 
 #: plugins/background/WallpaperGrid.qml:264
 msgid "Not possible"
-msgstr ""
+msgstr "Niemożliwe"
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "Obecnie używany obraz tła nie może zostać usunięty!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -396,7 +396,7 @@ msgstr "Naładowany"
 
 #: plugins/battery/PageComponent.qml:307
 msgid "Show battery percentage in indicator"
-msgstr ""
+msgstr "Pokaż procent naładowania baterii we wskaźniku"
 
 #: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
@@ -715,10 +715,8 @@ msgid "Brightness"
 msgstr "Jasność"
 
 #: plugins/brightness/PageComponent.qml:77
-#, fuzzy
-#| msgid "Display brightness"
 msgid "Display brightness:"
-msgstr "Jasność wyświetlacza"
+msgstr "Jasność wyświetlacza:"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -729,10 +727,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Automatycznie dopasowuje jasność wyświetlacza do jasności otoczenia."
 
 #: plugins/brightness/PageComponent.qml:137
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Wyświetlacz"
+msgstr "Wyświetlacz:"
 
 #: plugins/brightness/PageComponent.qml:143
 msgid "External display"
@@ -800,16 +796,17 @@ msgid "Edge drag areas width:"
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:102
-#, fuzzy, qt-format
-#| msgid "Current layouts:"
+#, qt-format
 msgid "Current value: %1"
-msgstr "Bieżące układy:"
+msgstr "Obecna wartość: %1"
 
 #: plugins/gestures/PageComponent.qml:148
 msgid ""
 "With a higher value, the swipe area at the edges to trigger an action is "
 "wider. The default value is 2."
 msgstr ""
+"Przy wyższej wartości obszar przesuwania palcem po krawędziach w celu "
+"wyzwolenia akcji jest szerszy. Domyślną wartością jest 2."
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
@@ -828,10 +825,8 @@ msgid "Choose a name"
 msgstr "Wybierz nazwę"
 
 #: plugins/hotspot/HotspotSetup.qml:166
-#, fuzzy
-#| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
-msgstr "Wymagaj hasła (zalecane):"
+msgstr "Wymagaj hasła (zalecane)"
 
 #: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:819
@@ -1590,10 +1585,8 @@ msgid "Silent Mode"
 msgstr "Tryb cichy"
 
 #: plugins/sound/PageComponent.qml:100
-#, fuzzy
-#| msgid "Ringer:"
 msgid "Ringer volume:"
-msgstr "Dzwonek:"
+msgstr "Głośność dzwonka:"
 
 #: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
@@ -1624,10 +1617,8 @@ msgid "Messages:"
 msgstr "Wiadomości:"
 
 #: plugins/sound/PageComponent.qml:220 plugins/sound/PageComponent.qml:226
-#, fuzzy
-#| msgid "Custom message sound"
 msgid "Message sound"
-msgstr "Niestandardowy dźwięk wiadomości"
+msgstr "Dźwięk wiadomości"
 
 #: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
@@ -1935,10 +1926,8 @@ msgid "LEAP"
 msgstr "LEAP"
 
 #: plugins/wifi/OtherNetwork.qml:330
-#, fuzzy
-#| msgid "This network is insecure."
 msgid "This network is insecure!"
-msgstr "Ta sieć jest niezabezpieczona."
+msgstr "Ta sieć jest niezabezpieczona!"
 
 #: plugins/wifi/OtherNetwork.qml:336
 msgid "Authentication"
