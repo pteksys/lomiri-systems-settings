@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-01-04 18:20+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-20 12:03+0000\n"
+"Last-Translator: \"Rudra Harsh V.Singh\" <rudraHarsh45@proton.me>\n"
 "Language-Team: French (Switzerland) <https://hosted.weblate.org/projects/"
 "lomiri/lomiri-system-settings/fr_CH/>\n"
 "Language: fr_CH\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
 msgid "System Settings"
@@ -478,7 +478,7 @@ msgstr ""
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:39
 msgid "Allow"
-msgstr ""
+msgstr "Autoriser"
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:46
 msgid "Refuse"
