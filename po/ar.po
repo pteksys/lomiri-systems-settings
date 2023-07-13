@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-05-14 20:09+0000\n"
+"PO-Revision-Date: 2023-07-20 12:03+0000\n"
 "Last-Translator: abidin toumi <abidin24@disroot.org>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/ar/>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:39+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -332,7 +332,7 @@ msgstr ""
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "يتعذر حذف صورة الخلفية المستعملة حاليًا!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -623,7 +623,7 @@ msgstr "الكاميرا"
 
 #: plugins/bluetooth/DevicePage.qml:62
 msgid "Watch"
-msgstr ""
+msgstr "راقب"
 
 #: plugins/bluetooth/DevicePage.qml:63
 msgid "Other"
@@ -818,10 +818,9 @@ msgid "Edge drag areas width:"
 msgstr ""
 
 #: plugins/gestures/PageComponent.qml:102
-#, fuzzy, qt-format
-#| msgid "Current layouts:"
+#, qt-format
 msgid "Current value: %1"
-msgstr "التخطيطات الحالية:"
+msgstr "القيمة الحالية: %1"
 
 #: plugins/gestures/PageComponent.qml:148
 msgid ""
@@ -846,10 +845,8 @@ msgid "Choose a name"
 msgstr "اختر اسمًا"
 
 #: plugins/hotspot/HotspotSetup.qml:166
-#, fuzzy
-#| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
-msgstr "كلمة السر مطلوبة (مستحسن):"
+msgstr "كلمة السر مطلوبة (مستحسن)"
 
 #: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:819
@@ -967,27 +964,27 @@ msgstr ""
 
 #: plugins/language/PageComponent.qml:187
 msgid "Just White"
-msgstr ""
+msgstr "أبيض فقط"
 
 #: plugins/language/PageComponent.qml:188
 msgid "Just Black"
-msgstr ""
+msgstr "أسود فقط"
 
 #: plugins/language/PageComponent.qml:189
 msgid "Just Grey"
-msgstr ""
+msgstr "رمادي فقط"
 
 #: plugins/language/PageComponent.qml:190
 msgid "Bordered White"
-msgstr ""
+msgstr "أبيض الحواف"
 
 #: plugins/language/PageComponent.qml:191
 msgid "Bordered Black"
-msgstr ""
+msgstr "أسود الحواف"
 
 #: plugins/language/PageComponent.qml:192
 msgid "Bordered Grey"
-msgstr ""
+msgstr "رمادي الحواف"
 
 #: plugins/language/PageComponent.qml:195
 msgid "On-screen keyboard theme"
@@ -1021,11 +1018,11 @@ msgstr "شغّل مفتاح Shift لتكبير الأحرف الأولية من 
 
 #: plugins/language/PageComponent.qml:272
 msgid "Auto punctuation"
-msgstr ""
+msgstr "علامات ترقيم تلقائية"
 
 #: plugins/language/PageComponent.qml:284
 msgid "Inserts a period when you tap Space twice."
-msgstr ""
+msgstr "إدراج نقطة عند ضغط زر المسافة مرتين."
 
 #: plugins/language/PageComponent.qml:291
 msgid "Key magnifier"
@@ -1044,8 +1041,9 @@ msgid "Keyboard opacity"
 msgstr "شفافية لوحة المفاتيح"
 
 #: plugins/language/PageHardwareKeyboard.qml:33
+#, fuzzy
 msgid "Hardware keyboard"
-msgstr ""
+msgstr "لوحة مفاتيح حقيقية"
 
 #: plugins/language/PageHardwareKeyboard.qml:63
 msgid "Layouts and other sources"
@@ -1068,10 +1066,8 @@ msgid "All languages available:"
 msgstr "جميع اللغات المتوفرة:"
 
 #: plugins/launcher/PageComponent.qml:31
-#, fuzzy
-#| msgid "Launcher"
 msgid "Desktop & Launcher"
-msgstr "المُطلِق"
+msgstr "سطح المكتل والمُطلِق"
 
 #: plugins/launcher/PageComponent.qml:65
 msgid "On large screens:"
@@ -1079,11 +1075,11 @@ msgstr "في الشاشات الكبيرة:"
 
 #: plugins/launcher/PageComponent.qml:73
 msgid "Enable workspaces"
-msgstr ""
+msgstr "فعّل مساحات العمل"
 
 #: plugins/launcher/PageComponent.qml:74
 msgid "Support for multiple virtual workspaces"
-msgstr ""
+msgstr "دعم عدة مساحات عمل افتراضية"
 
 #: plugins/launcher/PageComponent.qml:87
 msgid "Always show the launcher"
