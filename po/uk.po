@@ -9,17 +9,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-02-23 00:29+0000\n"
-"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/uk/>\n"
+"PO-Revision-Date: 2023-07-28 17:07+0000\n"
+"Last-Translator: Serhii Horichenko <m@sgg.im>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:42+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -298,14 +298,10 @@ msgid "Enable blur effects"
 msgstr "Увімкнути ефекти розмиття"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "тло"
+msgstr "Фонове зображення:"
 
 #: plugins/background/MainPage.qml:111
-#, fuzzy
-#| msgid "System Art"
 msgid "System art"
 msgstr "Системне оформлення"
 
@@ -327,11 +323,11 @@ msgstr "Встановити"
 
 #: plugins/background/WallpaperGrid.qml:264
 msgid "Not possible"
-msgstr ""
+msgstr "Неможливо"
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "Активне фонове зображення видалити не можна!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -402,7 +398,7 @@ msgstr "Повністю заряджено"
 
 #: plugins/battery/PageComponent.qml:307
 msgid "Show battery percentage in indicator"
-msgstr ""
+msgstr "Показати відсоток заряду батареї в індикаторі"
 
 #: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
@@ -720,10 +716,8 @@ msgid "Brightness"
 msgstr "Яскравість"
 
 #: plugins/brightness/PageComponent.qml:77
-#, fuzzy
-#| msgid "Display brightness"
 msgid "Display brightness:"
-msgstr "Яскравість дисплея"
+msgstr "Яскравість екрана:"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -734,10 +728,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Коригує яскравість дисплея відповідно до зовнішнього освітлення."
 
 #: plugins/brightness/PageComponent.qml:137
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Екран"
+msgstr "Екран:"
 
 #: plugins/brightness/PageComponent.qml:143
 msgid "External display"
@@ -801,19 +793,20 @@ msgstr "Двічі торкніться будь-де на екрані, щоб 
 
 #: plugins/gestures/PageComponent.qml:88
 msgid "Edge drag areas width:"
-msgstr ""
+msgstr "Ширина зони перетягування країв:"
 
 #: plugins/gestures/PageComponent.qml:102
-#, fuzzy, qt-format
-#| msgid "Current layouts:"
+#, qt-format
 msgid "Current value: %1"
-msgstr "Поточні розкладки:"
+msgstr "Поточне значення: %1"
 
 #: plugins/gestures/PageComponent.qml:148
 msgid ""
 "With a higher value, the swipe area at the edges to trigger an action is "
 "wider. The default value is 2."
 msgstr ""
+"Чим більше значення, тим ширша по краях область для гортання для запуску "
+"дії. Типове значення 2."
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
@@ -832,10 +825,8 @@ msgid "Choose a name"
 msgstr "Виберіть ім'я"
 
 #: plugins/hotspot/HotspotSetup.qml:166
-#, fuzzy
-#| msgid "Require a password (recommended):"
 msgid "Require a password (recommended)"
-msgstr "Вимагати пароль (рекомендується):"
+msgstr "Потрібен пароль (рекомендовано)"
 
 #: plugins/hotspot/HotspotSetup.qml:197 plugins/wifi/NetworkDetails.qml:87
 #: plugins/wifi/OtherNetwork.qml:819
@@ -1591,10 +1582,8 @@ msgid "Silent Mode"
 msgstr "Тихий режим"
 
 #: plugins/sound/PageComponent.qml:100
-#, fuzzy
-#| msgid "Ringer:"
 msgid "Ringer volume:"
-msgstr "Абонент:"
+msgstr "Гучність дзвінка:"
 
 #: plugins/sound/PageComponent.qml:142
 msgid "High volume can damage your hearing."
@@ -1625,10 +1614,8 @@ msgid "Messages:"
 msgstr "Повідомлення:"
 
 #: plugins/sound/PageComponent.qml:220 plugins/sound/PageComponent.qml:226
-#, fuzzy
-#| msgid "Custom message sound"
 msgid "Message sound"
-msgstr "Власний звук повідомлення"
+msgstr "Звук повідомлення"
 
 #: plugins/sound/PageComponent.qml:243
 msgid "Vibrate with message sound"
@@ -1940,10 +1927,8 @@ msgid "LEAP"
 msgstr "LEAP"
 
 #: plugins/wifi/OtherNetwork.qml:330
-#, fuzzy
-#| msgid "This network is insecure."
 msgid "This network is insecure!"
-msgstr "Ця мережа незахищена."
+msgstr "Ця мережа незахищена!"
 
 #: plugins/wifi/OtherNetwork.qml:336
 msgid "Authentication"
