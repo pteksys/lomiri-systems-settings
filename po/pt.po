@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-06-28 04:33+0000\n"
+"PO-Revision-Date: 2023-07-28 17:07+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Launchpad-Export-Date: 2015-07-24 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -186,7 +186,7 @@ msgstr "Outros ficheiros"
 
 #: plugins/about/Storage.qml:133
 msgid "Used by apps"
-msgstr "Usado pelas apps"
+msgstr "Usado pelas aplicações"
 
 #: plugins/about/Storage.qml:191
 msgid "Total storage"
@@ -1258,7 +1258,7 @@ msgstr "Som"
 
 #: plugins/notifications/ClickAppsSoundsNotify.qml:44
 msgid "Apps that notify with sound:"
-msgstr "Apps que notificam com sons:"
+msgstr "Aplicações que notificam com sons:"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:30
 msgid "Vibration"
@@ -1278,7 +1278,7 @@ msgstr "Não vibrar"
 
 #: plugins/notifications/ClickAppsVibrationsNotify.qml:85
 msgid "Apps that notify with vibrations:"
-msgstr "Apps que notificam com vibrações:"
+msgstr "Aplicações que notificam com vibrações:"
 
 #: plugins/notifications/PageComponent.qml:91
 #: plugins/notifications/PageComponent.qml:181
@@ -1290,16 +1290,16 @@ msgid ""
 "Apps can alert you using sounds, vibrations, notification bubbles and the "
 "Notification list."
 msgstr ""
-"Selecione as apps que podem emitir notificações, sons, vibrações e alertas "
-"na central de notificações."
+"Selecione as aplicações que podem emitir notificações, sons, vibrações e "
+"alertas na lista de notificações."
 
 #: plugins/notifications/PageComponent.qml:129
 msgid "Apps that notify with sound"
-msgstr "Apps que notificam usando som"
+msgstr "Aplicações que notificam com som"
 
 #: plugins/notifications/PageComponent.qml:155
 msgid "Apps that notify with vibration"
-msgstr "Apps que notificam com vibração"
+msgstr "Aplicações que notificam com vibração"
 
 #: plugins/notifications/PageComponent.qml:210
 msgid "No notifications"
