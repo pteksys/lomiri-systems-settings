@@ -119,8 +119,6 @@ plugins/gestures/gestures_dbushelper.cpp
 plugins/gestures/gestures_dbushelper.h
 plugins/gestures/plugin.cpp
 plugins/gestures/plugin.h
-plugins/gestures/plugin/gestures-plugin.cpp
-plugins/gestures/plugin/gestures-plugin.h
 plugins/hotspot/HotspotSetup.qml
 plugins/hotspot/PageComponent.qml
 plugins/hotspot/plugin/hotspot-plugin.cpp
