@@ -82,7 +82,11 @@ QString SystemInfo::prettyName()
 #ifdef ENABLE_DEVICEINFO
     str = QString::fromStdString(info->prettyName());
 #endif
-    if (str.toStdString() == "unknown") {
+    if (str.toStdString() == "unknown"
+        || str.toStdString() == "Generic device"
+        || str.toStdString() == "Generic Halium device"
+        || str.toStdString() == "Generic linux device") {
+    // Fallback if we happen to stumble onto default values.
         if (!storageAbout->vendorString().isEmpty()) {
             return storageAbout->vendorString();
         } else if (access("/sys/devices/virtual/dmi/id/sys_vendor", F_OK) != -1) {
