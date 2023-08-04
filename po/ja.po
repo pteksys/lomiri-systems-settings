@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-07-20 12:03+0000\n"
+"PO-Revision-Date: 2023-08-08 18:04+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/ja/>\n"
@@ -2091,7 +2091,7 @@ msgstr "以前のネットワーク"
 
 #: plugins/wifi/RemoveBackground.qml:28
 msgid "Clear"
-msgstr "クリア"
+msgstr "削除"
 
 #: plugins/wifi/certhandler.cpp:258
 #, fuzzy
