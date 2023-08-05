@@ -16,6 +16,7 @@ set(LIBDIR ${CMAKE_INSTALL_LIBDIR})
 enable_testing()
 
 option(ENABLE_TESTS "Build tests" ON)
+option(ENABLE_LIBDEVICEINFO "Build with libdeviceinfo support" OFF)
 
 if(cmake_build_type_lower MATCHES coverage)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage" )
@@ -52,7 +53,9 @@ pkg_search_module(ICU REQUIRED icu-i18n)
 pkg_search_module(ANDR_PROP libandroid-properties)
 pkg_search_module(CLICK REQUIRED click-0.4)
 pkg_check_modules(QTGSETTINGS REQUIRED gsettings-qt)
-pkg_check_modules(DEVICEINFO IMPORTED_TARGET deviceinfo)
+if(ENABLE_LIBDEVICEINFO)
+    pkg_check_modules(DEVICEINFO REQUIRED deviceinfo)
+endif()
 
 set(DATA_DIR share)
 set(MODULE_DIR lomiri-system-settings)

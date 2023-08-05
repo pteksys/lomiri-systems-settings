@@ -6,9 +6,9 @@ include_directories(${CLICK_INCLUDE_DIRS})
 include_directories(${CLICK_INCLUDE_DIRS})
 add_definitions(-DQT_NO_KEYWORDS)
 
-if (DEVICEINFO_FOUND)
+if(DEVICEINFO_FOUND)
     add_definitions(-DENABLE_DEVICEINFO)
-endif ()
+endif()
 
 set(QML_SOURCES
     EntryComponent.qml
