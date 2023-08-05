@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-03-02 14:37+0000\n"
+"PO-Revision-Date: 2023-08-08 18:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/lomiri/"
 "lomiri-system-settings/nb_NO/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -326,12 +326,14 @@ msgid "Set"
 msgstr "Velg"
 
 #: plugins/background/WallpaperGrid.qml:264
+#, fuzzy
 msgid "Not possible"
-msgstr ""
+msgstr "Ikke mulig"
 
 #: plugins/background/WallpaperGrid.qml:266
+#, fuzzy
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "Aktivt bakgrunnsbilde kan ikke slettes."
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -399,7 +401,7 @@ msgstr "Fulladet"
 
 #: plugins/battery/PageComponent.qml:307
 msgid "Show battery percentage in indicator"
-msgstr ""
+msgstr "Vis batteriprosent i indikator"
 
 #: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
@@ -794,20 +796,21 @@ msgid "Double-tap anywhere on the screen to wake device."
 msgstr "Dobbelttrykk hvor som helst for å vekke enheten."
 
 #: plugins/gestures/PageComponent.qml:88
+#, fuzzy
 msgid "Edge drag areas width:"
-msgstr ""
+msgstr "Bredde for dragningskanter:"
 
 #: plugins/gestures/PageComponent.qml:102
-#, fuzzy, qt-format
-#| msgid "Current layouts:"
+#, qt-format
 msgid "Current value: %1"
-msgstr "Gjeldende utforminger:"
+msgstr "Nåværende verdi: %1"
 
 #: plugins/gestures/PageComponent.qml:148
+#, fuzzy
 msgid ""
 "With a higher value, the swipe area at the edges to trigger an action is "
 "wider. The default value is 2."
-msgstr ""
+msgstr "Høyere verdi gir kantene mer rom for sveip. Forvalgt verdi er «2»."
 
 #: plugins/hotspot/HotspotSetup.qml:61
 msgid "Change Hotspot Setup"
