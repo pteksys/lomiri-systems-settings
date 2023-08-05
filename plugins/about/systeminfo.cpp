@@ -27,10 +27,6 @@
 #include "systeminfo.h"
 #include "storageabout.h"
 
-#ifdef ENABLE_DEVICEINFO
-std::shared_ptr<DeviceInfo> info = std::make_shared<DeviceInfo>();
-#endif
-
 SystemInfo::SystemInfo(QObject *parent) : QObject(parent)
 {
 }
@@ -80,7 +76,8 @@ QString SystemInfo::prettyName()
     QString str = "unknown";
     auto storageAbout = new StorageAbout();
 #ifdef ENABLE_DEVICEINFO
-    str = QString::fromStdString(info->prettyName());
+    DeviceInfo info;
+    str = QString::fromStdString(info.prettyName());
 #endif
     if (str.toStdString() == "unknown"
         || str.toStdString() == "Generic device"
@@ -89,7 +86,7 @@ QString SystemInfo::prettyName()
     // Fallback if we happen to stumble onto default values.
         if (!storageAbout->vendorString().isEmpty()) {
             return storageAbout->vendorString();
-        } else if (access("/sys/devices/virtual/dmi/id/sys_vendor", F_OK) != -1) {
+        } else if (access("/sys/devices/virtual/dmi", F_OK) != -1) {
             return QString::fromStdString(dmi_devicename());
         } else {
             return QString::fromStdString(devicetree_devicename());
