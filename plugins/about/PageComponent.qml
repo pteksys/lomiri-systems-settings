@@ -87,7 +87,7 @@ ItemPage {
                     id: deviceLabel
                     objectName: "deviceLabel"
                     anchors.horizontalCenter: parent.horizontalCenter
-                    text: deviceInfos.manufacturer() ? deviceInfos.manufacturer() + " " + deviceInfos.model() : backendInfos.vendorString
+                    text: SystemInfo.prettyName
                 }
             }
 

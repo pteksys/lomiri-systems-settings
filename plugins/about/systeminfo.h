@@ -26,6 +26,7 @@ class SystemInfo : public QObject
     Q_PROPERTY(QString buildAbi READ buildAbi CONSTANT)
     Q_PROPERTY(QString cpuArch READ cpuArch CONSTANT)
     Q_PROPERTY(QString kernelVersion READ kernelVersion CONSTANT)
+    Q_PROPERTY(QString prettyName READ prettyName CONSTANT)
 
 public:
     SystemInfo(QObject *parent = 0);
@@ -33,4 +34,5 @@ public:
     QString buildAbi();
     QString cpuArch();
     QString kernelVersion();
+    QString prettyName();
 };
