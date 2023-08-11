@@ -93,7 +93,6 @@ Q_SIGNALS:
 
 private:
     LomiriSystemSettings::AccountsService m_accountsService;
-    QDBusInterface m_usensordIface;
 
     QString getIncomingCallSound();
     void setIncomingCallSound(QString sound);

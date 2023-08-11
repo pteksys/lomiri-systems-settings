@@ -29,15 +29,12 @@
 #include <unistd.h>
 
 #define AS_INTERFACE "com.lomiri.touch.AccountsService.Sound"
-#define US_INTERFACE "com.canonical.usensord"
-#define US_PATH "/com/canonical/usensord/haptic"
+
+const auto HFD_ASSETTINGS_INTERFACE = QStringLiteral("com.lomiri.hfd.AccountsService.Settings");
+const auto HFD_ASSETTINGS_ALLOWGENERALVIBRATION = QStringLiteral("AllowGeneralVibration");
 
 Sound::Sound(QObject *parent) :
-    QObject(parent),
-    m_usensordIface (US_INTERFACE,
-                     US_PATH,
-                     "org.freedesktop.DBus.Properties",
-                     QDBusConnection::sessionBus())
+    QObject(parent)
 {
     connect (&m_accountsService,
              SIGNAL (propertyChanged (QString, QString)),
@@ -53,23 +50,26 @@ Sound::Sound(QObject *parent) :
 void Sound::slotChanged(QString interface,
                         QString property)
 {
-    if (interface != AS_INTERFACE)
-        return;
-
-    if (property == "IncomingCallSound") {
-        Q_EMIT incomingCallSoundChanged();
-    } else if (property == "IncomingMessageSound") {
-        Q_EMIT incomingMessageSoundChanged();
-    } else if (property == "IncomingCallVibrate") {
-        Q_EMIT incomingCallVibrateChanged();
-    } else if (property == "IncomingMessageVibrate") {
-        Q_EMIT incomingMessageVibrateChanged();
-    } else if (property == "IncomingCallVibrateSilentMode") {
-        Q_EMIT incomingCallVibrateSilentModeChanged();
-    } else if (property == "IncomingMessageVibrateSilentMode") {
-        Q_EMIT incomingMessageVibrateSilentModeChanged();
-    } else if (property == "DialpadSoundsEnabled") {
-        Q_EMIT dialpadSoundsEnabledChanged();
+    if (interface == AS_INTERFACE) {
+        if (property == "IncomingCallSound") {
+            Q_EMIT incomingCallSoundChanged();
+        } else if (property == "IncomingMessageSound") {
+            Q_EMIT incomingMessageSoundChanged();
+        } else if (property == "IncomingCallVibrate") {
+            Q_EMIT incomingCallVibrateChanged();
+        } else if (property == "IncomingMessageVibrate") {
+            Q_EMIT incomingMessageVibrateChanged();
+        } else if (property == "IncomingCallVibrateSilentMode") {
+            Q_EMIT incomingCallVibrateSilentModeChanged();
+        } else if (property == "IncomingMessageVibrateSilentMode") {
+            Q_EMIT incomingMessageVibrateSilentModeChanged();
+        } else if (property == "DialpadSoundsEnabled") {
+            Q_EMIT dialpadSoundsEnabledChanged();
+        }
+    } else if (interface == HFD_ASSETTINGS_INTERFACE) {
+        if (property == HFD_ASSETTINGS_ALLOWGENERALVIBRATION) {
+            Q_EMIT otherVibrateChanged();
+        }
     }
 }
 
@@ -83,6 +83,8 @@ void Sound::slotNameOwnerChanged()
     Q_EMIT incomingCallVibrateSilentModeChanged();
     Q_EMIT incomingMessageVibrateSilentModeChanged();
     Q_EMIT dialpadSoundsEnabledChanged();
+
+    Q_EMIT otherVibrateChanged();
 }
 
 QString Sound::getIncomingCallSound()
@@ -214,20 +216,18 @@ void Sound::setIncomingMessageVibrateSilentMode(bool enabled)
 
 bool Sound::getOtherVibrate()
 {
-    QDBusReply<QDBusVariant> reply = m_usensordIface.call("Get", "com.canonical.usensord.haptic", "OtherVibrate");
-
-    if (reply.isValid()) {
-      return reply.value().variant().toBool();
-    } else {
-        qWarning() << "no value from sensor service" << reply.error();
-        return false;
-    }
+    return m_accountsService.getUserProperty(
+        HFD_ASSETTINGS_INTERFACE,
+        HFD_ASSETTINGS_ALLOWGENERALVIBRATION
+    ).value<bool>();
 }
 
 void Sound::setOtherVibrate(bool enabled)
 {
-    quint32 result = enabled ? 1 : 0;
-    m_usensordIface.call("Set", "com.canonical.usensord.haptic", "OtherVibrate", result);
+    m_accountsService.setUserProperty(
+        HFD_ASSETTINGS_INTERFACE,
+        HFD_ASSETTINGS_ALLOWGENERALVIBRATION,
+        QVariant::fromValue(enabled));
 }
 
 bool Sound::getDialpadSoundsEnabled()
