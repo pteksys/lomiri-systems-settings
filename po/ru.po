@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-02-23 00:29+0000\n"
-"Last-Translator: Sergii Horichenko <m@sgg.im>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/ru/>\n"
+"PO-Revision-Date: 2023-08-27 08:59+0000\n"
+"Last-Translator: AlTeveD2v <nuromskij_em_0819@1511.ru>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:41+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -296,10 +296,8 @@ msgid "Enable blur effects"
 msgstr "Включить эффекты размытия"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "фон"
+msgstr "Фоновое изображение:"
 
 #: plugins/background/MainPage.qml:111
 #, fuzzy
@@ -329,7 +327,7 @@ msgstr ""
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "Активное фоновое изображение не может быть удалено!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -400,7 +398,7 @@ msgstr "Полностью заряжен"
 
 #: plugins/battery/PageComponent.qml:307
 msgid "Show battery percentage in indicator"
-msgstr ""
+msgstr "Показывать процент заряда в индикаторе"
 
 #: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
@@ -720,10 +718,8 @@ msgid "Brightness"
 msgstr "Яркость"
 
 #: plugins/brightness/PageComponent.qml:77
-#, fuzzy
-#| msgid "Display brightness"
 msgid "Display brightness:"
-msgstr "Яркость экрана"
+msgstr "Яркость экрана:"
 
 #: plugins/brightness/PageComponent.qml:115
 msgid "Adjust automatically"
@@ -734,10 +730,8 @@ msgid "Brightens and dims the display to suit the surroundings."
 msgstr "Автонастройка яркости экрана в зависимости от освещённости."
 
 #: plugins/brightness/PageComponent.qml:137
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Экран"
+msgstr "Экран:"
 
 #: plugins/brightness/PageComponent.qml:143
 msgid "External display"
