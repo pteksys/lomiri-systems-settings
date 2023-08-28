@@ -35,6 +35,8 @@ ItemPage {
     title: i18n.tr("Battery")
     flickable: scrollWidget
 
+    property alias primaryBattery: batteryBackend.primaryBattery
+
     function timeDeltaString(timeDelta) {
         var sec = timeDelta,
             min = Math.round (timeDelta / 60),
@@ -62,17 +64,6 @@ ItemPage {
 
     LomiriSecurityPrivacyPanel {
         id: securityPrivacy
-    }
-
-    QDBusActionGroup {
-        id: indicatorPower
-        busType: 1
-        busName: "org.ayatana.indicator.power"
-        objectPath: "/org/ayatana/indicator/power"
-        property variant brightness: action("brightness").state
-        property variant batteryLevel: action("battery-level").state
-        property variant deviceState: action("device-state").state
-        Component.onCompleted: start()
     }
 
     LomiriBatteryPanel {
@@ -108,10 +99,10 @@ ItemPage {
                 id: chargingLevel
                 text: i18n.tr("Charge level")
                 value: {
-                    var chargeLevel = indicatorPower.batteryLevel
-
-                    if (chargeLevel === undefined)
+                    if (!primaryBattery)
                         return i18n.tr("N/A")
+
+                    var chargeLevel = primaryBattery.batteryLevel;
 
                     /* TRANSLATORS: %1 refers to a percentage that indicates the charging level of the battery */
                     return i18n.tr("%1%".arg(chargeLevel))
@@ -254,7 +245,7 @@ ItemPage {
 
                     /* Get infos from battery0, on a day (60*24*24=86400 seconds), with 150 points on the graph.
                      * To ensure we get a valid starting point, we query the values up to two days ago */
-                    var chargeDatas = batteryBackend.getHistory(batteryBackend.deviceString, 86400 * 2, 150)
+                    var chargeDatas = primaryBattery.getHistory(86400 * 2, 150)
 
                     /* time is the offset in seconds compared to the current time (negative value)
                        we display the charge on a day, which is 86400 seconds, the value is the % */
@@ -272,20 +263,23 @@ ItemPage {
             SettingsListItems.SingleValue {
                 id: chargingEntry
                 text: {
-                    if (indicatorPower.deviceState === "charging")
+                    if (!primaryBattery)
+                        return "";
+
+                    if (primaryBattery.state === Battery.Charging)
                         return i18n.tr("Charging now")
-                    else if (indicatorPower.deviceState === "discharging")
+                    else if (primaryBattery.state === Battery.Discharging)
                         return i18n.tr("Last full charge")
-                    else if (indicatorPower.deviceState === "fully-charged")
+                    else if (primaryBattery.state === Battery.FullyCharged)
                         return i18n.tr("Fully charged")
                     else
                         return ""
                 }
 
                 value: {
-                    if (indicatorPower.deviceState === "discharging") {
-                        if (batteryBackend.lastFullCharge)
-                            return timeDeltaString(batteryBackend.lastFullCharge)
+                    if (primaryBattery && primaryBattery.state === Battery.Discharging) {
+                        if (primaryBattery.lastFullCharge)
+                            return timeDeltaString(primaryBattery.lastFullCharge)
                         else
                             return i18n.tr("N/A")
                     }
