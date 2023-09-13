@@ -6,6 +6,7 @@ import Lomiri.Content 1.3
 
 PopupBase  {
     id: picker
+    anchorToKeyboard: false
 
     signal fileImportSignal (var file)
     property var activeTransfer
@@ -35,6 +36,10 @@ PopupBase  {
                 picker.activeTransfer = peer.request(appStore);
             }
             onCancelPressed: PopupUtils.close(picker)
+
+            Component.onCompleted: {
+                peerPicker.forceActiveFocus();
+            }
         }
     }
 
