@@ -20,14 +20,16 @@
 import QtQuick 2.12
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
-import Lomiri.Components 1.3
+ import Lomiri.Components 1.3
 
 
 Column {
+    id: root
     anchors {
         left: parent.left
         right: parent.right
     }
+
     spacing: units.gu(1)
 
     property string category
@@ -41,38 +43,47 @@ Column {
         visible: repeater.count > 0
     }
 
-    AdaptiveContainer {
-        id: container
+    Grid {
+        id: grid
         anchors {
             left: parent.left
             right: parent.right
         }
-        layout: apl.columns > 1 ? "column" : "grid"
-        gridItemWidth: units.gu(12)
-        gridColumnSpacing: units.gu(1)
-        gridRowSpacing: units.gu(3)
 
-        Behavior on y { LomiriNumberAnimation {}}
-        Behavior on height { LomiriNumberAnimation {}}
+        readonly property int gridItemWidth: units.gu(12)
+        readonly property int gridColumnSpacing: units.gu(1.5)
+        readonly property int gridRowSpacing: units.gu(3)
+        readonly property int gridCellWidth: gridItemWidth + gridColumnSpacing
+        property string layout: apl.columns > 1 ? "column" : "grid"
+
+        states: [
+            State {
+                name: "grid"
+                when: grid.layout === "grid"
+                PropertyChanges { target: grid; rowSpacing: grid.gridRowSpacing; columnSpacing: grid.gridColumnSpacing; columns: Math.floor(root.width / (grid.gridCellWidth)) }
+                PropertyChanges { target: grid; anchors.leftMargin: (root.width - (grid.columns * grid.gridCellWidth)) / 2 }
+            },
+            State {
+                name: "column"
+                when: grid.layout === "column"
+                PropertyChanges { target: grid; rowSpacing: 0; columns: 1 }
+            }
+        ]
 
         Repeater {
             id: repeater
 
-            visible: false // AdaptiveContainer must ignore the Repeater
             model: pluginManager.itemModel(category)
-
-            onCountChanged: {
-                // when doing search, the doLayout is called too early.
-                // force re-rendering of items
-                container.doLayout()
-            }
 
             delegate: Loader {
                 id: loader
                 property string layout: ""
                 sourceComponent: model.item.entryComponent
+                width: grid.layout === "grid" ? grid.gridItemWidth : grid.width
+
                 visible: model.item.visible
                 active: model.item.visible
+
                 Connections {
                     ignoreUnknownSignals: true
                     target: loader.item
@@ -99,7 +110,7 @@ Column {
                 Binding {
                     target: loader.item
                     property: "layout"
-                    value: loader.layout
+                    value: grid.layout
                 }
             }
         }
@@ -111,7 +122,7 @@ Column {
             colorFrom: "#EEEEEE"
             colorTo: "#EEEEEE"
         }
-        visible: header.visible && container.layout == "grid"
+        visible: header.visible && grid.layout == "grid"
         height: divider.height
     }
 }
