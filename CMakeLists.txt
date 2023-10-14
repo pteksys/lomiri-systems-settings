@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lomiri-system-settings VERSION 1.0.1 LANGUAGES C CXX)
+project(lomiri-system-settings VERSION 1.0.2 LANGUAGES C CXX)
 
 if(${PROJECT_BINARY_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
    message(FATAL_ERROR "In-tree build attempt detected, aborting. Set your build dir outside your source dir, delete CMakeCache.txt from source root and try again.")

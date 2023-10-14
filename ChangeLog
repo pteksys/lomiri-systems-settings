@@ -1,6 +1,605 @@
+2023-10-15 Mike Gabriel
+
+        * Release 1.0.2 (HEAD -> main, tag: 1.0.2)
+
+2023-10-03 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/206-certpicker-glitch' into
+          'main' (8b9442ce)
+
+2023-09-13 Ratchanan Srirattanamet
+
+        * plugins/wifi: fix weird behavior with the peer picker for cert
+          (c1d95246)
+          Fixes:
+          https://gitlab.com/ubports/development/core/lomiri-system-settings/-/issues/206
+
+2023-09-19 Eryk Michalak
+
+        * Translated using Weblate (Polish) (9a077c90)
+
+2023-09-06 bittin1ddc447d824349b2
+
+        * Translated using Weblate (Swedish) (1740517c)
+
+2023-08-28 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/battery-no-indicator' into
+          'main' (579794e9)
+
+2023-07-02 Ratchanan Srirattanamet
+
+        * plugins/battery: stop relying on a-i-battery (efa53fee)
+          Fixes:
+          https://gitlab.com/ubports/development/core/lomiri-system-settings/-/issues/355
+
+2023-08-20 AlTeveD2v
+
+        * Translated using Weblate (Russian) (aa881ea1)
+
+2023-08-13 Abdullah AL Shohag
+
+        * Translated using Weblate (Bengali (Bangladesh)) (d660cb44)
+
+2023-08-18 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/hfd-othervibrate' into 'main'
+          (b24ce176)
+
+2023-08-11 Ratchanan Srirattanamet
+
+        * plugins/sound: migrate "other vibrate" to HFD's AS settings
+          (f90461de)
+          Fixes:
+          https://gitlab.com/ubports/development/core/lomiri-system-settings/-/issues/356
+
+2023-08-10 Ratchanan Srirattanamet
+
+        * Merge branch 'main' into 'main' (720b1dc0)
+
+2023-08-05 Muhammad
+
+        * plugins/about: make DeviceInfo a stack variable (d75a1927)
+        * tree: use an option to enable deviceinfo support (94899bf4)
+
+2023-08-04 Muhammad
+
+        * systeminfo: fallback if deviceinfo produces default output
+          (bf5fbef0)
+
+2023-06-21 Muhammad
+
+        * plugins: about: add different methods for getting device name
+          (71229f26)
+
+2023-06-17 Muhammad
+
+        * control: actually build with deviceinfo (d85c10bc)
+
+2023-06-16 Muhammad
+
+        * plugins: about: add second fallback to backendInfos.vendorString
+          (b6555782)
+        * plugins: about: fix fallback for displaying device name (a0b18f68)
+        * plugins: about: add deviceinfo support for device name;  uses
+          PrettyName key from deviceinfo (6abf761d)
+
+2023-08-05 Allan Nordhøy
+
+        * Translated using Weblate (Norwegian Bokmål) (a578bad3)
+
+2023-08-04 NPL
+
+        * Translated using Weblate (Japanese) (ebfbfbd9)
+
+2023-08-04 Ratchanan Srirattanamet
+
+        * Merge branch 'main' into 'main' (bacadba5)
+
+2023-07-28 Muhammad
+
+        * plugins: gestures: don't depend on DT2W anymore;  with the addition
+          of edge sensitivity in gestures tab, depending on   DT2W
+          doesn't really make any sense. So remove it outright.
+          (4548b2e7)
+
+2023-07-21 Serhii Horichenko
+
+        * Translated using Weblate (Ukrainian) (44585382)
+
+2023-07-21 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (6d5072ee)
+
+2023-07-11 Rudra Harsh V.Singh
+
+        * Translated using Weblate (French (Switzerland)) (95dde14b)
+        * Translated using Weblate (English (Canada)) (05994454)
+
+2023-06-30 Rudra Harsh V.Singh
+
+        * Translated using Weblate (Sanskrit) (5b5bd2b4)
+
+2023-07-09 Eryk Michalak
+
+        * Translated using Weblate (Polish) (4e9d1ddb)
+
+2023-07-07 NPL
+
+        * Translated using Weblate (Japanese) (60dc599b)
+
+2023-06-28 Sylke Vicious
+
+        * Translated using Weblate (Italian) (4bf2939d)
+
+2023-07-11 Rudra Harsh V.Singh
+
+        * Translated using Weblate (English (United States)) (2b99a84e)
+
+2023-07-13 abidin toumi
+
+        * Translated using Weblate (Arabic) (9a5abd32)
+
+2023-06-27 Rudra Harsh V.Singh
+
+        * Translated using Weblate (English (Canada)) (42b4b88d)
+
+2023-06-20 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (1cc4dadc)
+
+2023-06-22 Timothy G
+
+        * Translated using Weblate (French) (218b9d77)
+
+2023-06-28 J. Lavoie
+
+        * Translated using Weblate (German) (bb88487c)
+
+2023-06-08 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (890b72e8)
+
+2023-06-09 Daniel Frost
+
+        * Translated using Weblate (German) (3be209f9)
+
+2023-06-08 Jozef Mlich
+
+        * Translated using Weblate (Czech) (790db01f)
+
+2023-06-16 Mike Gabriel
+
+        * Merge branch 'fixselection' into 'main' (1f6a22c0)
+
+2023-06-14 Danfro
+
+        * fix #353 by adding grid state check and disable remove button at
+          count=0 (d07a5fc8)
+
+2023-06-09 Mike Gabriel
+
+        * Merge branch 'fixdividercolors' into 'main' (60f6ecb3)
+
+2023-06-08 Danfro
+
+        * fix two dividers in background+gestures to use the correct darker
+          color (3a15b1db)
+
+2023-06-08 Hosted Weblate
+
+        * Update translation files (c3af63d8)
+
+2023-06-05 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (158e9f6e)
+
+2023-06-06 Daniel Frost
+
+        * Translated using Weblate (German) (3965b5d7)
+
+2023-06-06 Jozef Mlich
+
+        * Translated using Weblate (Czech) (e6804f07)
+
+2023-06-08 Mike Gabriel
+
+        * po/: Update lomiri-system-settings.pot translation template.
+          (26566da1)
+        * Merge branch 'edgedragwidth' into 'main' (ae532a82)
+
+2023-06-07 Danfro
+
+        * rename to avoid conflict with other gsettings value (5cd050c5)
+
+2023-06-08 Mike Gabriel
+
+        * Merge branch 'increaseduration' into 'main' (5860622f)
+
+2023-06-06 Danfro
+
+        * increase duration of cursor reposition timer (fd05ed1d)
+
+2023-06-08 Mike Gabriel
+
+        * Merge branch 'fixhotspotsetup' into 'main' (9c58d338)
+
+2023-06-08 Daniel Frost
+
+        * remove unwanted divider in hotspot setup page (3a5a9d5f)
+
+2023-06-06 Mike Gabriel
+
+        * Merge branch 'github/fork/kugiigi/xenial_-_batterypercentage' into
+          'main' (03df0e54)
+        * plugins/battery/PageComponent.qml: Adjust gschema scheme name to
+          ayatana-indicator-power. (80d8e5ec)
+
+2021-03-15 Kugi Eusebio
+
+        * Updated text and removed section header (76664234)
+
+2020-05-29 Kugi Eusebio
+
+        * Update PageComponent.qml (69b77b32)
+        * Update PageComponent.qml (f3638ea2)
+
+2023-06-06 Mike Gabriel
+
+        * Merge branch 'matchwording' into 'main' (c1d30f82)
+
+2023-06-05 Danfro
+
+        * match wording to sound list title (130c3b22)
+
+2023-06-06 Mike Gabriel
+
+        * Merge branch 'translationworks' into 'main' (b67b2c76)
+
+2023-06-05 Danfro
+
+        * remove workaround, add translators context and add exclamation mark
+          (b65786a5)
+
+2023-06-05 Hosted Weblate
+
+        * Update translation files (521bbee7)
+
+2023-06-05 Mike Gabriel
+
+        * po/: Update lomiri-system-settings.pot translation template.
+          (fd590ff4)
+        * Merge branch 'nocurrentdelete' into 'main' (c15baa23)
+
+2023-06-05 Danfro
+
+        * rephrase message as suggested (67805ed8)
+
+2023-06-04 Danfro
+
+        * add dialog with message that current background image can not be
+          deleted (30dd3825)
+
+2023-06-05 Mike Gabriel
+
+        * Merge branch 'personal/lduboeuf/fix_anim' into 'main' (79b038c2)
+
+2023-05-24 Lionel Duboeuf
+
+        * only instantiate Components when needed (394abdf9)
+        * on phone, prevent loading app with 2 columns then 1 #fixes
+          https://gitlab.com/ubports/development/core/lomiri-system-settings/-/issues/351
+          (db8e97fc)
+
+2023-06-05 Mike Gabriel
+
+        * Merge branch 'edgedrag' into 'main' (41f87d79)
+
+2023-04-13 Danfro
+
+        * rephrase naming to use sensitivity and remove the grid units part
+          (5c7bd1f3)
+
+2023-04-11 Danfro
+
+        * add colon at the end of the title (06cb6bb0)
+
+2023-04-10 Danfro
+
+        * make the slider use full width and only show numbers without
+          min/max (efa84ad4)
+
+2023-04-09 Danfro
+
+        * increase bottom padding to match other components bottom gap
+          (cc5dbb03)
+        * add setting for adjusting the edge drag sensitivity using gsetting
+          (14ad2fe8)
+
+2023-05-26 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/migrate-updatestore' into 'main'
+          (762b06e5)
+
+2023-05-25 Ratchanan Srirattanamet
+
+        * session-migration: do migration of
+          .local/share/lomiri-system-settings (db41f092)
+
+2023-05-14 Hosted Weblate
+
+        * Update translation files (eaad4348)
+
+2023-05-08 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (07dda838)
+
+2023-05-10 Daniel Frost
+
+        * Translated using Weblate (German) (6b5a92e0)
+
+2023-05-09 Jozef Mlich
+
+        * Translated using Weblate (Czech) (c0754664)
+
+2023-05-13 abidin toumi
+
+        * Translated using Weblate (Arabic) (e7b1658b)
+
+2023-05-14 Mike Gabriel
+
+        * Merge branch 'personal/peat-psuwit/349-duplicated-hotspot-error'
+          into 'main' (7299004e)
+
+2023-05-11 Ratchanan Srirattanamet
+
+        * po: update .pot file (ff9da22b)
+        * plugins/hotspot: remove error reporting from hotspot setup dialog
+          (4160398e)
+
+2023-05-08 Hosted Weblate
+
+        * Update translation files (a605a3b9)
+
+2023-05-04 Ivo Xavier
+
+        * Translated using Weblate (Portuguese) (f69dc8ba)
+
+2023-05-08 Mike Gabriel
+
+        * po/lomiri-system-settings.pot: Update translation template file.
+          (f588d249)
+
+2023-05-02 Eryk Michalak
+
+        * Translated using Weblate (Polish) (c5f72f5b)
+
+2023-04-28 Heimen Stoffels
+
+        * Translated using Weblate (Dutch) (3fd2b4dd)
+
+2023-05-02 Daniel Frost
+
+        * Translated using Weblate (German) (fae30fc6)
+
+2023-04-30 Jozef Mlich
+
+        * Translated using Weblate (Czech) (03d0342a)
+
+2023-05-02 Mike Gabriel
+
+        * Merge branch 'fixtimzonenameclick' into 'main' (f5d70b46)
+
+2023-04-30 Danfro
+
+        * fix #348 by adding the goBackTimer to the onClicked event
+          (e62dc3c0)
+
+2023-04-30 Mike Gabriel
+
+        * Merge branch 'fixhotspotcursor' into 'main' (b19410db)
+
+2023-04-28 Danfro
+
+        * fix #165 by moving the cursor to the end of the TextField content
+          (528e36f8)
+
+2023-04-29 Marius Gripsgard
+
+        * Merge branch 'personal/peat-psuwit/344-devel-mode-while-unplugged'
+          into 'main' (b604922a)
+
+2023-04-29 Ratchanan Srirattanamet
+
+        * plugins/about: fix enabling/disabling developer mode while
+          unplugged (4ab06148)
+          Fixes:
+          https://gitlab.com/ubports/development/core/lomiri-system-settings/-/issues/344
+
+2023-04-28 Mike Gabriel
+
+        * Merge branch 'settoheader' into 'main' (81bf0bb8)
+
+2023-04-11 Danfro
+
+        * fix 207 by moving the set option into the header (e7f29c4e)
+
+2023-04-28 Hosted Weblate
+
+        * Update translation files (1dbebaf7)
+
+2023-04-28 Mike Gabriel
+
+        * Merge branch 'reworksound' into 'main' (c6f2b9f4)
+
+2023-04-23 Danfro
+
+        * rename the sound words, restore Ringtone, use Message sound
+          (3538edfd)
+        * restore original sound volume check since my "random" 90% is not
+          valid (68287977)
+        * rework sound page for more consistency (25a80b96)
+
+2023-04-28 Mike Gabriel
+
+        * Merge branch 'backgroudrework' into 'main' (fdf8c6c2)
+
+2023-04-24 Danfro
+
+        * correct "System Art" to "System art" (52c0f73e)
+        * add pot file with new string (a4b63954)
+        * use dividers and thin dividers for grouping and remove double
+          column (4d04df4e)
+        * make image categories use foregroundText color instead of hardcoded
+          grey (228d18bc)
+
+2023-04-28 Mike Gabriel
+
+        * Merge branch 'reworkbrightness' into 'main' (10910fa1)
+
+2023-04-25 Danfro
+
+        * use colons on captions and add divider between groups (fbc7ac0d)
+
+2023-04-24 Lorenzo Torracchi
+
+        * Translated using Weblate (Italian) (b9e6ccaa)
+
+2023-04-24 Mike Gabriel
+
+        * Merge branch 'colors' into 'main' (3b548768)
+
+2023-04-23 Danfro
+
+        * replace hardcoded colors or LomiriColors with themed colors
+          (1fb20547)
+
+2023-04-16 Lu Xu
+
+        * Translated using Weblate (Chinese (Simplified)) (37d6a062)
+
+2023-04-15 Lundrin
+
+        * Translated using Weblate (Hungarian) (2f3a1179)
+
+2023-04-21 Mike Gabriel
+
+        * Merge branch 'backgrounddelete' into 'main' (1b57e1d7)
+
+2023-03-17 Danfro
+
+        * fix #274 and #319 by reapplying the updated repeater to the
+          component (52fa41e6)
+
+2023-04-21 Mike Gabriel
+
+        * Merge branch 'addwrap' into 'main' (4b47a716)
+
+2023-04-07 Danfro
+
+        * fix 345 by adding wordwrap to the dt2w description (9117ba79)
+
+2023-04-21 Mike Gabriel
+
+        * Merge branch 'settingsitemtitle' into 'main' (44175861)
+
+2023-04-10 Danfro
+
+        * set text size to medium and use bold (fd136cf2)
+
+2023-04-14 Lundrin
+
+        * Translated using Weblate (Hungarian) (e5ef5fe3)
+
+2023-04-12 Temuri Doghonadze
+
+        * Translated using Weblate (Georgian) (1568cdab)
+
+2023-04-13 Marius Gripsgard
+
+        * Merge branch 'ubuntutouch' into 'main' (170a3a38)
+
+2023-04-09 Danfro
+
+        * fix #340 by adding Touch after Ubuntu (c9bf1311)
+
+2023-04-13 Marius Gripsgard
+
+        * Merge branch 'moredisplayofftimes' into 'main' (da944bbb)
+
+2023-04-11 Danfro
+
+        * fix #10 by adding two more display off times with 15 and 30 minutes
+          (a940c585)
+
+2023-04-11 Temuri Doghonadze
+
+        * Translated using Weblate (Georgian) (0cbf5cb7)
+
+2023-04-07 Daniel Frost
+
+        * Translated using Weblate (German) (812d38bf)
+
+2023-04-04 gallegonovato
+
+        * Translated using Weblate (Spanish) (c0a9ad8c)
+
+2023-04-06 Marius Gripsgard
+
+        * Merge branch 'fixcancelaction' into 'main' (c195729a)
+
+2023-03-17 Danfro
+
+        * fix cancel button opening content hub (8e3be12b)
+
+2023-03-31 Sylke Vicious
+
+        * Translated using Weblate (Italian) (f16ca051)
+
+2023-03-30 Jozef Mlich
+
+        * Translated using Weblate (Czech) (2a9fb0e0)
+
+2023-03-30 Sylke Vicious
+
+        * Translated using Weblate (Italian) (5277d835)
+
+2023-03-30 Jozef Mlich
+
+        * Translated using Weblate (Czech) (9cfac1a2)
+
+2023-03-28 Jozef Mlich
+
+        * Translated using Weblate (Czech) (d28f8ae4)
+
+2023-03-29 Ratchanan Srirattanamet
+
+        * Merge branch 'personal/gberh/launcher-desktop-mode' into 'main'
+          (cf474a0b)
+
+2023-03-29 Guido Berhoerster
+
+        * Always show launcher plugin in desktop mode (0fdf2074)
+
+2023-03-22 phlostically
+
+        * Translated using Weblate (Esperanto) (595b25b5)
+
+2023-03-01 Allan Nordhøy
+
+        * Translated using Weblate (Norwegian Bokmål) (732bd411)
+
+2023-02-28 Luna Jernberg
+
+        * Translated using Weblate (Swedish) (48bf9336)
+
+2023-02-26 Luna Jernberg
+
+        * Translated using Weblate (Swedish) (780cdac6)
+
 2023-02-24 Mike Gabriel
 
-        * Release 1.0.1 (HEAD -> main, tag: 1.0.1)
+        * Release 1.0.1 (e2bcd687) (tag: 1.0.1)
 
 2023-02-24 Hosted Weblate
 
