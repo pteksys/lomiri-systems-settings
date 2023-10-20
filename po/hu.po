@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: lomiri-system-settings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-08 07:38+0000\n"
-"PO-Revision-Date: 2023-04-22 21:43+0000\n"
+"PO-Revision-Date: 2023-10-23 15:06+0000\n"
 "Last-Translator: Lundrin <berenyi.vilmos@tutanota.com>\n"
-"Language-Team: Hungarian <https://hosted.weblate.org/projects/lomiri/lomiri-"
-"system-settings/hu/>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/lomiri/"
+"lomiri-system-settings/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.1.1-dev\n"
 "X-Launchpad-Export-Date: 2015-07-16 05:40+0000\n"
 
 #: lomiri-system-settings.desktop.in:3 src/qml/MainWindow.qml:165
@@ -45,7 +45,6 @@ msgid "Developer Mode"
 msgstr "Fejlesztői mód"
 
 #: plugins/about/DevMode.qml:83
-#, fuzzy
 msgid ""
 "In Developer Mode, anyone can access, change or delete anything on this "
 "device by connecting it to another device."
@@ -143,19 +142,15 @@ msgstr "Fejlesztői mód"
 
 #: plugins/about/Storage.qml:43
 msgid "Scanning"
-msgstr ""
+msgstr "Szkennelés"
 
 #: plugins/about/Storage.qml:123
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Reserved"
-msgstr "Rendszerbeállítások"
+msgstr "Rendszer számára lefoglalt"
 
 #: plugins/about/Storage.qml:124
-#, fuzzy
-#| msgid "Used by apps"
 msgid "Used by system"
-msgstr "Alkalmazások által használt"
+msgstr "Rendszer által használt"
 
 #: plugins/about/Storage.qml:125
 msgid "Videos"
@@ -179,11 +174,11 @@ msgstr "Letöltések"
 
 #: plugins/about/Storage.qml:130
 msgid "Anbox"
-msgstr ""
+msgstr "Anbox"
 
 #: plugins/about/Storage.qml:131
 msgid "Libertine"
-msgstr ""
+msgstr "Libertine"
 
 #: plugins/about/Storage.qml:132
 msgid "Other files"
@@ -220,7 +215,7 @@ msgstr "Rendszer fordítás részletei"
 
 #: plugins/about/Version.qml:60
 msgid "OS update channel"
-msgstr ""
+msgstr "Operációs rendszer frissítési csatorna"
 
 #: plugins/about/Version.qml:67
 msgid "OS build number"
@@ -228,11 +223,11 @@ msgstr "Rendszer buildszám"
 
 #: plugins/about/Version.qml:74
 msgid "Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #: plugins/about/Version.qml:80
 msgid "Build ABI"
-msgstr ""
+msgstr "Build ABI"
 
 #: plugins/about/Version.qml:86
 #, fuzzy
@@ -294,35 +289,28 @@ msgid "Remove images…"
 msgstr "Képek eltávolítása"
 
 #: plugins/background/MainPage.qml:35
-#, fuzzy
-#| msgid "Background"
 msgid "Background & Appearance"
-msgstr "Háttér"
+msgstr "Háttér & megjelenítés"
 
 #: plugins/background/MainPage.qml:91
 msgid "Enable blur effects"
-msgstr ""
+msgstr "Elmosódási effekt bekapcsolása"
 
 #: plugins/background/MainPage.qml:100
-#, fuzzy
-#| msgid "background"
 msgid "Background image:"
-msgstr "háttér"
+msgstr "Háttérkép:"
 
 #: plugins/background/MainPage.qml:111
-#, fuzzy
-#| msgid "System"
 msgid "System art"
-msgstr "Rendszer"
+msgstr "Rendszer képek"
 
 #: plugins/background/MainPage.qml:125
 msgid "Custom"
 msgstr "Egyéni"
 
 #: plugins/background/MainPage.qml:185
-#, fuzzy
 msgid "Choose application"
-msgstr "Válasszon jelmondatot"
+msgstr "Válasszon alkalmazást"
 
 #: plugins/background/Preview.qml:54
 msgid "Preview"
@@ -334,11 +322,11 @@ msgstr "Beállít"
 
 #: plugins/background/WallpaperGrid.qml:264
 msgid "Not possible"
-msgstr ""
+msgstr "Nem lehetséges"
 
 #: plugins/background/WallpaperGrid.qml:266
 msgid "The currently active background image cannot be deleted!"
-msgstr ""
+msgstr "A jelenleg aktív háttérképet nem lehet törölni!"
 
 #: plugins/background/WallpaperGrid.qml:269
 #: plugins/brightness/WifiDisplaysAlert.qml:38
@@ -406,7 +394,7 @@ msgstr "Teljesen feltöltve"
 
 #: plugins/battery/PageComponent.qml:307
 msgid "Show battery percentage in indicator"
-msgstr ""
+msgstr "Akkumlátor százalék mutatása"
 
 #: plugins/battery/PageComponent.qml:311
 msgid "Ways to reduce battery use:"
@@ -446,9 +434,8 @@ msgstr[1] "%1 perc után"
 
 #. TRANSLATORS: “Wi-Fi used for hotspot” is hidden.
 #: plugins/battery/PageComponent.qml:391
-#, fuzzy
 msgid "Wi-Fi used for hotspot"
-msgstr "Wi-Fi hotspot"
+msgstr "Wi-Fi-t használja a hotspot"
 
 #: plugins/battery/PageComponent.qml:391 plugins/wifi/PageComponent.qml:28
 msgid "Wi-Fi"
@@ -460,41 +447,36 @@ msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #: plugins/battery/SleepValues.qml:68
-#, fuzzy
 msgid "Lock the device when it's not in use:"
 msgstr "Telefon zárolása, ha nincs használatban:"
 
 #: plugins/battery/SleepValues.qml:69
-#, fuzzy
 msgid "Put the device to sleep when it is not in use:"
 msgstr "Telefon altatása, ha nincs használatban:"
 
 #. TRANSLATORS: %1 is the number of seconds
 #: plugins/battery/SleepValues.qml:81
-#, fuzzy, qt-format
+#, qt-format
 msgid "After %1 seconds"
 msgid_plural "After %1 seconds"
-msgstr[0] "%1 perc után"
-msgstr[1] "%1 perc után"
+msgstr[0] "%1 másodperc után"
+msgstr[1] "%1 másodperc után"
 
 #: plugins/battery/SleepValues.qml:133
-#, fuzzy
 msgid ""
 "Shorter times are more secure. Device won't lock during calls or video "
 "playback."
 msgstr ""
-"Biztonságosabb kisebb értéket választani. A telefon nem kerül zárolásra "
-"telefonhívások vagy videó lejátszás közben."
+"Biztonságosabb kisebb időt. A telefon nem kerül zárolásra telefonhívások "
+"vagy videó lejátszás közben."
 
 #: plugins/battery/SleepValues.qml:133
-#, fuzzy
 msgid "Device won’t sleep during calls or video playback."
 msgstr "A telefon nem alszik el telefonhívások vagy videólejátszás közben."
 
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:26
-#, fuzzy
 msgid "Bluetooth Pairing Authorization Request"
-msgstr "Bluetooth párosítási kérés"
+msgstr "Bluetooth párosítás megerősítés kérés"
 
 #. TRANSLATORS: %1 is the name of the bluetooth device which requires authorization
 #: plugins/bluetooth/AuthorizationRequestDialog.qml:34
