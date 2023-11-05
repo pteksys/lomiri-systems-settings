@@ -32,6 +32,7 @@ Rectangle {
     color: "#39368f"
     border.color: "white"
     border.width: 2
+    clip: true
 
     function doLayout() {
         if (layout == "grid") {

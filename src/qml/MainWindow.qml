@@ -169,54 +169,12 @@ MainView {
                 visible: mainPage.header === standardHeader
                 title: i18n.tr("System Settings")
                 flickable: mainFlickable
-                trailingActionBar.actions: [
-                    Action {
-                        objectName: "searchAction"
-                        iconName: "find"
-                        shortcut: StandardKey.Find
-                        onTriggered: {
-                            pluginManager.filter = "";
-                            mainPage.header = searchHeader;
-                        }
-                    }
-                ]
-            }
 
-            PageHeader {
-                id: searchHeader
-                objectName: "searchHeader"
-                // turn off automatic height
-                // so when in APL the height doesn't change
-                automaticHeight: false
-                visible: mainPage.header === searchHeader
-                flickable: mainFlickable
-                contents: TextField {
-                    id: searchField
-                    objectName: "searchField"
-                    anchors {
-                        left: parent.left
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                    }
-                    inputMethodHints: Qt.ImhNoPredictiveText
-                    onDisplayTextChanged: pluginManager.filter = displayText
-                    placeholderText: i18n.tr("Search")
-                    hasClearButton: false
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor: "#4868d5"
+                    dividerColor: "#4868d5"
                 }
-                onVisibleChanged: if (visible) searchField.forceActiveFocus()
-                trailingActionBar.actions: [
-                    Action {
-                        objectName: "searchCancel"
-                        iconName: "close"
-                        shortcut: StandardKey.Cancel
-                        onTriggered: {
-                            pluginManager.filter = "";
-                            searchField.text = "";
-                            mainPage.header = standardHeader;
-                        }
-                    }
-                ]
-                z: 1
             }
 
             Flickable {
@@ -231,6 +189,31 @@ MainView {
                 Column {
                     anchors.left: parent.left
                     anchors.right: parent.right
+
+                    Item {
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                        }
+
+                        height: 60
+
+                        TextField {
+                            id: searchField
+                            objectName: "searchField"
+                            anchors {
+                                left: parent.left
+                                right: parent.right
+                                leftMargin: 10
+                                rightMargin: 10
+                                verticalCenter: parent.verticalCenter
+                            }
+                            inputMethodHints: Qt.ImhNoPredictiveText
+                            onDisplayTextChanged: pluginManager.filter = displayText
+                            placeholderText: i18n.tr("Search")
+                            hasClearButton: false
+                        }
+                    }
 
                     UncategorizedItemsView {
                         model: pluginManager.itemModel("uncategorized-top")

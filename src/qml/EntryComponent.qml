@@ -44,6 +44,9 @@ Item {
             divider.colorFrom: "#3d4cc9"
             divider.colorTo: "#3d4cc9"
             showDivider: root.showDivider
+            highlightWhenPressed: false
+            highlightColor: "transparent"
+            layout.title.color: "white"
         }
     }
 
