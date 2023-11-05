@@ -47,7 +47,7 @@ Column {
             left: parent.left
             right: parent.right
         }
-        layout: apl.columns > 1 ? "column" : "grid"
+        layout: "column"
         gridItemWidth: units.gu(12)
         gridColumnSpacing: units.gu(1)
         gridRowSpacing: units.gu(3)
