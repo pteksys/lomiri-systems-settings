@@ -155,6 +155,11 @@ MainView {
             visible: false
             header: standardHeader
 
+            Rectangle {
+                anchors.fill: parent
+                color: "#4868d5"
+            }
+
             PageHeader {
                 id: standardHeader
                 objectName: "standardHeader"

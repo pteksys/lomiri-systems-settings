@@ -26,3 +26,4 @@ system-settings.pro.user
 .settings
 __pycache__
 *.gch
+install/

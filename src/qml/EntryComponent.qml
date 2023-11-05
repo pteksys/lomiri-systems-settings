@@ -26,6 +26,7 @@ Item {
     property string text: i18n.dtr(model.item.translations, model.displayName)
     property string iconSource: model.icon
     property var color: "transparent"
+    property bool showDivider: true
 
     signal clicked
 
@@ -40,6 +41,9 @@ Item {
             color: root.color
             onClicked: root.clicked()
             Behavior on opacity { LomiriNumberAnimation {}}
+            divider.colorFrom: "#3d4cc9"
+            divider.colorTo: "#3d4cc9"
+            showDivider: root.showDivider
         }
     }
 

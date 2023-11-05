@@ -27,6 +27,8 @@ Column {
     anchors {
         left: parent.left
         right: parent.right
+        leftMargin: 10
+        rightMargin: 10
     }
     spacing: units.gu(1)
 
@@ -73,6 +75,12 @@ Column {
                 sourceComponent: model.item.entryComponent
                 visible: model.item.visible
                 active: model.item.visible
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    leftMargin: container.border.width
+                    rightMargin: container.border.width
+                }
                 Connections {
                     ignoreUnknownSignals: true
                     target: loader.item
@@ -100,6 +108,11 @@ Column {
                     target: loader.item
                     property: "layout"
                     value: loader.layout
+                }
+                Binding {
+                    target: loader.item
+                    property: "showDivider"
+                    value: index != repeater.count-1
                 }
             }
         }

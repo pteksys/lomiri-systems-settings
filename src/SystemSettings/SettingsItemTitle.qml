@@ -41,5 +41,6 @@ Item {
         fontSize: "medium"
         opacity: 0.75
         font.bold: true
+        color: "white"
     }
 }

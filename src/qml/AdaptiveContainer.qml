@@ -18,7 +18,7 @@
 
 import QtQuick 2.12
 
-Item {
+Rectangle {
     property string layout: "list"
     property int gridItemWidth: 100
     property int gridColumnSpacing: 0
@@ -27,6 +27,11 @@ Item {
     onWidthChanged: doLayout()
     onLayoutChanged: doLayout()
     onVisibleChildrenChanged: doLayout()
+
+    radius: 10
+    color: "#39368f"
+    border.color: "white"
+    border.width: 2
 
     function doLayout() {
         if (layout == "grid") {
