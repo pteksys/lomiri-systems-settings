@@ -36,6 +36,8 @@ Column {
         Column {
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.leftMargin: 10
+            anchors.rightMargin: 10
 
             Loader {
                 id: loader
@@ -65,6 +67,16 @@ Column {
                     property: "color"
                     value: "transparent"
                     when: currentPlugin != model.item.baseName || apl.columns == 1
+                }
+                Binding {
+                    target: loader.item
+                    property: "showDivider"
+                    value: index != repeater.count-1
+                }
+                Binding {
+                    target: loader.item
+                    property: "layout.title.color"
+                    value: "white"
                 }
             }
         }
