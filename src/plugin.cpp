@@ -214,6 +214,9 @@ QString Plugin::category() const
     if(d->m_data.value(keyName).toString() == "Flight Mode")
         return "network";
 
+    if(d->m_data.value(keyName).toString() == "Updates available")
+        return "uncategorized-bottom";
+
     return d->m_data.value(keyCategory).toString();
 }
 

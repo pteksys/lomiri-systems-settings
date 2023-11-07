@@ -280,6 +280,15 @@ MainView {
                     UncategorizedItemsView {
                         model: pluginManager.itemModel("uncategorized-bottom")
                     }
+
+                    Item {
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                        }
+
+                        height: 10
+                    }
                 }
             }
         }
