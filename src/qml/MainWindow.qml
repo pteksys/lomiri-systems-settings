@@ -20,9 +20,11 @@
 
 import QtQuick 2.12
 import QtQuick.Window 2.12
+import QtQuick.Layouts 1.12
 import SystemSettings 1.0
 import SystemSettings.ListItems 1.0 as SettingsListItems
 import Lomiri.Components 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 
 MainView {
     id: main
@@ -196,22 +198,59 @@ MainView {
                             right: parent.right
                         }
 
-                        height: 60
+                        height: 40
 
-                        TextField {
-                            id: searchField
-                            objectName: "searchField"
-                            anchors {
-                                left: parent.left
-                                right: parent.right
-                                leftMargin: 10
-                                rightMargin: 10
-                                verticalCenter: parent.verticalCenter
+                        Rectangle {
+                            anchors.fill: parent
+                            anchors.leftMargin: 10
+                            anchors.rightMargin: 10
+                            color: "transparent"
+                            border.color: "white"
+                            border.width: 2
+                            radius: 10
+
+                            RowLayout {
+                                anchors.fill: parent
+
+                                Item {
+                                    Layout.preferredWidth: 10
+                                }
+
+                                Image {
+                                    Layout.preferredHeight: parent.height / 3
+                                    Layout.preferredWidth: height
+                                    source: "qrc:/qml/magnifyingglass.svg"
+                                }
+
+                                TextField {
+                                    Layout.fillWidth: true
+                                    Layout.alignment: Qt.AlignVCenter
+
+                                    id: searchField
+                                    objectName: "searchField"
+                                    inputMethodHints: Qt.ImhNoPredictiveText
+                                    onDisplayTextChanged: pluginManager.filter = displayText
+                                    hasClearButton: false
+
+                                    color: "white"
+                                    style: TextFieldStyle {
+                                        background: Item {
+                                            Label {
+                                                anchors.fill: parent
+                                                anchors.leftMargin: 10
+                                                color: "white"
+                                                text: i18n.tr("Search")
+                                                verticalAlignment: Qt.AlignVCenter
+                                                visible: searchField.text == ""
+                                            }
+                                        }
+                                    }
+                                }
+
+                                Item {
+                                    Layout.preferredWidth: 10
+                                }
                             }
-                            inputMethodHints: Qt.ImhNoPredictiveText
-                            onDisplayTextChanged: pluginManager.filter = displayText
-                            placeholderText: i18n.tr("Search")
-                            hasClearButton: false
                         }
                     }
 

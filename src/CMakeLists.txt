@@ -28,6 +28,7 @@ set(QML_SOURCES
     qml/EntryComponentList.qml
     qml/MainWindow.qml
     qml/UncategorizedItemsView.qml
+    qml/magnifyingglass.svg
     SystemSettings/ItemPage.qml
     SystemSettings/SettingsItemTitle.qml
 )
