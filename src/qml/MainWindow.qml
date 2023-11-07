@@ -177,6 +177,10 @@ MainView {
                     backgroundColor: "#4868d5"
                     dividerColor: "#4868d5"
                 }
+
+                style: PageHeaderStyle {
+                    contentHeight: 100
+                }
             }
 
             Flickable {
