@@ -264,12 +264,12 @@ MainView {
 
                     CategorySection {
                         category: "network"
-                        categoryName: i18n.tr("Network")
+                        categoryName: i18n.tr("Controls")
                     }
 
                     CategorySection {
                         category: "personal"
-                        categoryName: i18n.tr("Personal")
+                        categoryName: i18n.tr("General")
                     }
 
                     CategorySection {
