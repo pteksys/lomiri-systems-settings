@@ -207,6 +207,13 @@ QUrl Plugin::icon() const
 QString Plugin::category() const
 {
     Q_D(const Plugin);
+
+    if(d->m_data.value(keyName).toString() == "Rotation Lock")
+        return "network";
+
+    if(d->m_data.value(keyName).toString() == "Flight Mode")
+        return "network";
+
     return d->m_data.value(keyCategory).toString();
 }
 

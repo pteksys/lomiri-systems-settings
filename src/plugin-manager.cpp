@@ -108,6 +108,7 @@ void PluginManagerPrivate::reload()
 
     Q_FOREACH(const QFileInfo &fileInfo, searchPaths) {
         Plugin *plugin = new Plugin(fileInfo);
+        qDebug() << "Plugin" << fileInfo;
         QQmlEngine::setContextForObject(plugin, ctx);
         QMap<QString, Plugin*> &pluginList = m_plugins[plugin->category()];
         if (showAll || !plugin->hideByDefault())
