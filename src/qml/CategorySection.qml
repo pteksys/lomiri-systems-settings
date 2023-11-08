@@ -84,7 +84,7 @@ Column {
                 Connections {
                     ignoreUnknownSignals: true
                     target: loader.item
-                    onClicked: {
+                    function onClicked() {
                         var pageComponent = model.item.pageComponent
                         if (pageComponent) {
                             Haptics.play();
@@ -113,6 +113,59 @@ Column {
                     target: loader.item
                     property: "showDivider"
                     value: index != repeater.count-1
+                }
+                Binding {
+                    target: loader.item
+                    property: "layout.title.color"
+                    value: "white"
+                }
+                Binding {
+                    target: loader.item
+                    property: "divider.colorFrom"
+                    value: "#3d4cc9"
+                }
+                Binding {
+                    target: loader.item
+                    property: "divider.colorTo"
+                    value: "#3d4cc9"
+                }
+                Binding {
+                    target: loader.item
+                    property: "highlightWhenPressed"
+                    value: false
+                }
+
+                Component {
+                    id: customSwitchStyle
+                    CustomSwitchStyle {}
+                }
+
+                onStatusChanged: {
+                    if (loader.status == Loader.Ready) {
+                        console.log(model.item.baseName)
+                        console.log(loader.item.text)
+                        console.log(loader.item.children.length)
+
+                        if(!loader.item.children.length) {
+                            return
+                        }
+
+                        for(var i = 0; i < loader.item.children.length; i++) {
+                            console.log(loader.item.children[i])
+                            console.log(loader.item.children[i].children.length)
+                            for(var j = 0; j < loader.item.children[i].children.length; j++) {
+                                console.log("    " + loader.item.children[i].children[j])
+                                console.log("    " + loader.item.children[i].children[j].children.length)
+                                for(var k = 0; k < loader.item.children[i].children[j].children.length; k++) {
+                                    console.log("        " + loader.item.children[i].children[j].children[k])
+                                    console.log("        " + loader.item.children[i].children[j].children[k].style)
+                                    if(loader.item.children[i].children[j].children[k].style !== undefined) {
+                                        loader.item.children[i].children[j].children[k].style = customSwitchStyle
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

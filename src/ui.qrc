@@ -8,5 +8,6 @@
         <file>qml/MainWindow.qml</file>
         <file>qml/UncategorizedItemsView.qml</file>
         <file>qml/magnifyingglass.svg</file>
+        <file>qml/CustomSwitchStyle.qml</file>
     </qresource>
 </RCC>

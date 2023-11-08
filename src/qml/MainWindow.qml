@@ -90,7 +90,7 @@ MainView {
     Connections {
         id: aplConnections
         ignoreUnknownSignals: true
-        onColumnsChanged: {
+        function onColumnsChanged() {
             var columns = target.columns;
             if (columns > 1 && !currentPlugin) {
                 loadPluginByName(placeholderPlugin);
@@ -102,7 +102,7 @@ MainView {
 
     Connections {
         target: UriHandler
-        onOpened: {
+        function onOpened() {
             var url = String(uris);
             url = Utilities.mapUrl(url);
             var panelAndOptions = url.replace("settings:///system/", "")
