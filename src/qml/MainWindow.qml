@@ -159,7 +159,11 @@ MainView {
 
             Rectangle {
                 anchors.fill: parent
-                color: "#4868d5"
+                gradient: Gradient {
+                    GradientStop { position: 0.0; color: "red" }
+                    GradientStop { position: 0.5; color: "green" }
+                    GradientStop { position: 1.0; color: "blue" }
+                }
             }
 
             PageHeader {
@@ -174,8 +178,8 @@ MainView {
 
                 StyleHints {
                     foregroundColor: "white"
-                    backgroundColor: "#4868d5"
-                    dividerColor: "#4868d5"
+                    backgroundColor: "transparent"
+                    dividerColor: "transparent"
                 }
 
                 style: PageHeaderStyle {
